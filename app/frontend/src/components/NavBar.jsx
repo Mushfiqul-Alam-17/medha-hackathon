@@ -10,7 +10,7 @@ export default function NavBar({ view, examDone, onNav, onRetake, lang, onToggle
       { key: "notes", label: t("navNotes", lang) },
       { key: "readiness", label: t("navReadiness", lang) },
       { key: "anxiety", label: t("navAnxiety", lang) },
-      { key: "share", label: "Share" },
+      { key: "share", label: t("share", lang) },
     ] : []),
   ];
 
