@@ -91,6 +91,8 @@ h1, h2, h3 { font-family: var(--display); letter-spacing: -0.02em; margin: 0; }
 }
 .nav-tab:hover { color: var(--text); background: rgba(255,255,255,0.04); }
 .nav-tab.active { color: #fff; background: rgba(124, 111, 255, 0.16); }
+.nav-tab.lang-toggle { margin-left: 8px; border: 1px solid rgba(124, 111, 255, 0.3); background: rgba(124, 111, 255, 0.05); }
+.nav-tab.lang-toggle:hover { background: rgba(124, 111, 255, 0.15); border-color: rgba(124, 111, 255, 0.5); }
 
 /* ---------- Pills / eyebrow ---------- */
 .pill {

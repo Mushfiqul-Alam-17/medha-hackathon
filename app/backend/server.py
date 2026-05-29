@@ -237,30 +237,30 @@ def fallback_notes(dna_report: Dict[str, Any]) -> Dict[str, Any]:
     for it in dna_report.get("slow", []):
         notes["slow"].append({
             "topic": it.get("concept") or it.get("chapter") or "বিষয়",
-            "explanation": it.get("explanation", ""),
-            "memoryTrick": it.get("memoryTrick", ""),
+            "explanation": f"তুমি সঠিক উত্তর দিয়েছ, কিন্তু অনেক সময় নিয়েছ। {it.get('explanation', '')} ধারণাটি পরিষ্কার, কিন্তু দ্রুত সিদ্ধান্ত নিতে হবে।",
+            "memoryTrick": it.get("memoryTrick", "দ্রুত মনে রাখার জন্য বারবার রিভিশন দাও।"),
             "trapQuestion": it.get("trap", ""),
         })
 
     for it in dna_report.get("confused", []):
-        table = [{"concept": it.get("correctAnswerText", ""), "description": it.get("explanation", "")}]
+        table = [{"concept": it.get("correctAnswerText", ""), "description": f"সঠিক: {it.get('explanation', '')}"}]
         for idx, opt in enumerate(it.get("options", [])):
             if idx != it.get("correctAnswerIndex"):
-                table.append({"concept": opt, "description": "এই অপশনটি ভিন্ন একটি ধারণা — সঠিকটির সাথে গুলিয়ে ফেলো না।"})
+                table.append({"concept": opt, "description": "ভুল বিকল্প — এটি কনসেপ্টের সাথে সম্পর্কিত নয়, পরীক্ষায় সময় নষ্ট করার জন্য দেওয়া হয়েছে।"})
         notes["confused"].append({
             "topic": it.get("concept") or it.get("chapter") or "বিষয়",
             "comparisonTable": table,
-            "memoryTrick": it.get("memoryTrick", ""),
-            "trapQuestion": it.get("trap", ""),
+            "memoryTrick": it.get("memoryTrick", "কনসেপ্টগুলোর পার্থক্য লিখে প্র্যাকটিস করো।"),
+            "trapQuestion": it.get("trap", "পরীক্ষক প্রায়ই কাছাকাছি উত্তর দিয়ে বিভ্রান্ত করার চেষ্টা করে।"),
         })
 
     for it in dna_report.get("danger", []):
         notes["danger"].append({
             "topic": it.get("concept") or it.get("chapter") or "বিষয়",
-            "explanation": it.get("explanation", ""),
-            "whyCorrect": f"সঠিক উত্তর '{it.get('correctAnswerText','')}' — {it.get('explanation','')}",
-            "whyTricked": it.get("trap", ""),
-            "trapQuestion": it.get("trap", ""),
+            "explanation": f"তুমি দ্রুত উত্তর দিয়েছ কিন্তু ভুল করেছ। এটি নেগেটিভ মার্কিংয়ের বড় কারণ।",
+            "whyCorrect": f"আসল সঠিক উত্তর হলো '{it.get('correctAnswerText','')}' — {it.get('explanation','')}",
+            "whyTricked": f"তুমি খুব আত্মবিশ্বাসের সাথে ভুল করেছ। {it.get('trap', 'সাধারণত ওভার-কনফিডেন্সের কারণে এমন হয়।')}",
+            "trapQuestion": it.get("trap", "সিমিলার অপশন থাকলে সতর্ক হও।"),
         })
 
     return notes
