@@ -269,6 +269,10 @@ def fallback_notes(dna_report: Dict[str, Any]) -> Dict[str, Any]:
 # ──────────────────────────────────────────────────────────────
 #  Routes
 # ──────────────────────────────────────────────────────────────
+@app.get("/")
+async def health_check():
+    return {"message": "MEDHA API is alive and running!"}
+
 @api_router.get("/")
 async def root():
     return {"message": "MEDHA API live"}

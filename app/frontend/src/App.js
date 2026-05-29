@@ -15,7 +15,8 @@ import Readiness from "@/components/Readiness";
 import AnxietyScore from "@/components/AnxietyScore";
 import ShareCard from "@/components/ShareCard";
 
-const API = `${process.env.REACT_APP_BACKEND_URL}/api`;
+const BACKEND = process.env.REACT_APP_BACKEND_URL || "https://medha-api.onrender.com";
+const API = `${BACKEND}/api`;
 
 function notesToMarkdown(notes) {
   let md = "# MEDHA — Personalized Study Notes\n\n";
