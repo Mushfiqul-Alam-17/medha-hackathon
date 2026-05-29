@@ -1,14 +1,18 @@
-import { Activity, BarChart3, Sparkles, Zap, Brain, FileText } from "lucide-react";
+import { Activity, BarChart3, Sparkles } from "lucide-react";
 import { t } from "../utils/lang";
 
 export default function Landing({ onStart, onDemo, lang }) {
   return (
     <div className="view" data-testid="landing-view">
       <div className="wrap">
+        {/* Hero */}
         <div className="hero">
           <div>
             <span className="pill"><span className="dot" />{t("heroEyebrow", lang)}</span>
-            <h1>{t("heroTitle1", lang)}<span className="accent">{t("heroTitleAccent", lang)}</span>{t("heroTitle2", lang)}<br />{t("heroTitle3", lang)}</h1>
+            <h1>
+              {t("heroTitle1", lang)}<span className="accent">{t("heroTitleAccent", lang)}</span>{t("heroTitle2", lang)}<br />
+              {t("heroTitle3", lang)}
+            </h1>
             <p>{t("heroSub", lang)}</p>
             <div className="hero-btns">
               <button className="btn btn-primary" data-testid="start-exam-button" onClick={onStart}>{t("startExam", lang)}</button>
@@ -23,45 +27,55 @@ export default function Landing({ onStart, onDemo, lang }) {
           </div>
         </div>
 
+        {/* Stats */}
         <div className="stats-row">
           <div className="stat"><div className="num">{t("stat1", lang)}</div><div className="lbl">{t("stat1l", lang)}</div></div>
           <div className="stat"><div className="num">{t("stat2", lang)}</div><div className="lbl">{t("stat2l", lang)}</div></div>
           <div className="stat"><div className="num">{t("stat3", lang)}</div><div className="lbl">{t("stat3l", lang)}</div></div>
         </div>
 
-        <div className="section-head" style={{ marginTop: 80 }}><h2>{t("featTitle", lang)}</h2></div>
-        <div className="feature-grid">
-          {[[Activity, "feat1h", "feat1p"], [BarChart3, "feat2h", "feat2p"], [Sparkles, "feat3h", "feat3p"]].map(([Ic, hk, pk]) => (
-            <div className="card feature-card" key={hk}>
-              <div className="feature-ic"><Ic size={20} /></div>
-              <h3>{t(hk, lang)}</h3><p>{t(pk, lang)}</p>
-            </div>
-          ))}
+        {/* Features */}
+        <div className="section-gap">
+          <div className="section-head"><h2>{t("featTitle", lang)}</h2></div>
+          <div className="feature-grid">
+            {[[Activity, "feat1h", "feat1p"], [BarChart3, "feat2h", "feat2p"], [Sparkles, "feat3h", "feat3p"]].map(([Ic, hk, pk]) => (
+              <div className="card feature-card" key={hk}>
+                <div className="feature-ic"><Ic size={20} /></div>
+                <h3>{t(hk, lang)}</h3><p>{t(pk, lang)}</p>
+              </div>
+            ))}
+          </div>
         </div>
 
-        <div className="section-head" style={{ marginTop: 64 }}><h2>{t("classTitle", lang)}</h2></div>
-        <div className="classifier-grid">
-          {[
-            ["cls-master", "clsMasterTag", "clsMasterH", "clsMasterP"],
-            ["cls-slow", "clsSlowTag", "clsSlowH", "clsSlowP"],
-            ["cls-confused", "clsConfusedTag", "clsConfusedH", "clsConfusedP"],
-            ["cls-danger", "clsDangerTag", "clsDangerH", "clsDangerP"],
-          ].map(([cls, tag, h, p]) => (
-            <div className={`cls-card ${cls}`} key={cls}>
-              <span className="cls-tag">{t(tag, lang)}</span>
-              <h4>{t(h, lang)}</h4><p>{t(p, lang)}</p>
-            </div>
-          ))}
+        {/* Classifier */}
+        <div className="section-gap">
+          <div className="section-head"><h2>{t("classTitle", lang)}</h2></div>
+          <div className="classifier-grid">
+            {[
+              ["cls-master", "clsMasterTag", "clsMasterH", "clsMasterP"],
+              ["cls-slow", "clsSlowTag", "clsSlowH", "clsSlowP"],
+              ["cls-confused", "clsConfusedTag", "clsConfusedH", "clsConfusedP"],
+              ["cls-danger", "clsDangerTag", "clsDangerH", "clsDangerP"],
+            ].map(([cls, tag, h, p]) => (
+              <div className={`cls-card ${cls}`} key={cls}>
+                <span className="cls-tag">{t(tag, lang)}</span>
+                <h4>{t(h, lang)}</h4><p>{t(p, lang)}</p>
+              </div>
+            ))}
+          </div>
         </div>
 
-        <div className="section-head" style={{ marginTop: 64 }}><h2>{t("howTitle", lang)}</h2></div>
-        <div className="how-grid">
-          {["how1", "how2", "how3", "how4", "how5"].map((k, i) => (
-            <div className="how-step" key={k}>
-              <span className="how-n">0{i + 1}</span>
-              <h4>{t(k, lang)}</h4><p>{t(k + "p", lang)}</p>
-            </div>
-          ))}
+        {/* How it works */}
+        <div className="section-gap">
+          <div className="section-head"><h2>{t("howTitle", lang)}</h2></div>
+          <div className="how-grid">
+            {["how1", "how2", "how3", "how4", "how5"].map((k, i) => (
+              <div className="how-step" key={k}>
+                <span className="how-n">0{i + 1}</span>
+                <h4>{t(k, lang)}</h4><p>{t(k + "p", lang)}</p>
+              </div>
+            ))}
+          </div>
         </div>
 
         <div className="footer">{t("footer", lang)}</div>

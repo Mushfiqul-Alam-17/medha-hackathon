@@ -63,8 +63,9 @@ h1, h2, h3 { font-family: var(--display); letter-spacing: -0.02em; margin: 0; }
 .mono { font-family: var(--mono); }
 
 /* ---------- Layout ---------- */
-.wrap { max-width: var(--maxw); margin: 0 auto; padding: 0 24px; }
-.view { min-height: 100vh; padding-top: 84px; padding-bottom: 80px; animation: fadeUp 0.5s ease both; }
+.wrap { max-width: var(--maxw); margin: 0 auto; padding: 0 32px; }
+.view { min-height: 100vh; padding-top: 96px; padding-bottom: 96px; animation: fadeUp 0.4s ease both; }
+.view--narrow { max-width: 720px; margin: 0 auto; }
 
 @keyframes fadeUp { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: translateY(0); } }
 
@@ -72,20 +73,23 @@ h1, h2, h3 { font-family: var(--display); letter-spacing: -0.02em; margin: 0; }
 .nav {
   position: fixed; top: 0; left: 0; right: 0; z-index: 50;
   display: flex; align-items: center; justify-content: space-between;
-  padding: 14px 24px;
-  background: rgba(14, 14, 17, 0.7);
-  backdrop-filter: blur(16px);
+  padding: 12px 32px;
+  background: rgba(14, 14, 17, 0.75);
+  backdrop-filter: blur(20px);
   border-bottom: 1px solid var(--border);
+  min-height: 60px;
 }
-.nav-logo { font-family: var(--display); font-weight: 800; font-size: 22px; letter-spacing: -0.03em; cursor: pointer; }
+.nav-logo { font-family: var(--display); font-weight: 800; font-size: 20px; letter-spacing: -0.03em; cursor: pointer; flex-shrink: 0; }
 .nav-logo span { color: var(--accent); }
-.nav-tabs { display: flex; gap: 4px; overflow-x: auto; }
+.nav-tabs { display: flex; gap: 2px; overflow-x: auto; scrollbar-width: none; align-items: center; }
+.nav-tabs::-webkit-scrollbar { display: none; }
 .nav-tab {
   font-family: var(--body); font-size: 13px; font-weight: 500;
   color: var(--text-dim); background: transparent; border: none; cursor: pointer;
-  padding: 8px 14px; border-radius: 999px; white-space: nowrap; transition: color .2s, background .2s;
+  padding: 7px 12px; border-radius: 999px; white-space: nowrap; transition: color .2s, background .2s;
+  line-height: 1;
 }
-.nav-tab:hover { color: var(--text); }
+.nav-tab:hover { color: var(--text); background: rgba(255,255,255,0.04); }
 .nav-tab.active { color: #fff; background: rgba(124, 111, 255, 0.16); }
 
 /* ---------- Pills / eyebrow ---------- */
@@ -118,9 +122,12 @@ h1, h2, h3 { font-family: var(--display); letter-spacing: -0.02em; margin: 0; }
 }
 .card-hi { background: var(--surface-2); }
 
-.section-head { margin-bottom: 28px; }
-.section-head h2 { font-size: clamp(26px, 4vw, 40px); }
-.section-head p { color: var(--text-dim); margin-top: 8px; font-size: 15px; }
+.section-head { margin-bottom: 32px; }
+.section-head h2 { font-size: clamp(24px, 3.5vw, 36px); line-height: 1.15; }
+.section-head p { color: var(--text-dim); margin-top: 10px; font-size: 15px; line-height: 1.6; max-width: 580px; }
+/* Consistent section spacing */
+.section-gap { margin-top: 72px; }
+.section-gap-sm { margin-top: 48px; }
 
 /* ============================================================
    LANDING
@@ -146,10 +153,9 @@ h1, h2, h3 { font-family: var(--display); letter-spacing: -0.02em; margin: 0; }
 .gt-3 { bottom: 12%; left: 12%; animation-delay: 1.6s; }
 @keyframes floaty { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
 
-.stats-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 64px; }
-.stat { text-align: left; }
-.stat .num { font-family: var(--mono); font-size: 30px; color: #fff; }
-.stat .lbl { color: var(--text-dim); font-size: 13px; margin-top: 4px; }
+.stats-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 56px; padding-top: 56px; border-top: 1px solid var(--border); }
+.stat .num { font-family: var(--mono); font-size: 28px; color: #fff; }
+.stat .lbl { color: var(--text-dim); font-size: 13px; margin-top: 5px; }
 
 .feature-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 28px; }
 .feature-ic { width: 42px; height: 42px; border-radius: 10px; display: grid; place-items: center; background: rgba(124, 111, 255, 0.12); color: var(--accent); margin-bottom: 14px; }
@@ -176,42 +182,36 @@ h1, h2, h3 { font-family: var(--display); letter-spacing: -0.02em; margin: 0; }
 .how-step h4 { font-size: 15px; margin: 8px 0 6px; font-family: var(--display); }
 .how-step p { color: var(--text-dim); font-size: 13px; line-height: 1.5; }
 
-.footer { border-top: 1px solid var(--border); margin-top: 80px; padding: 40px 0; color: var(--text-faint); font-size: 13px; }
+.footer { border-top: 1px solid var(--border); margin-top: 96px; padding: 40px 0; color: var(--text-faint); font-size: 13px; }
 
 /* ============================================================
    MOOD CHECK
    ============================================================ */
-.mood-wrap { max-width: 560px; margin: 40px auto 0; text-align: center; }
-.mood-opts { display: flex; gap: 12px; justify-content: center; margin: 28px 0; flex-wrap: wrap; }
-.mood-opt {
-  width: 92px; padding: 16px 10px; border-radius: var(--r-md); border: 1px solid var(--border);
-  background: var(--surface); cursor: pointer; transition: border-color .2s, transform .15s, background .2s;
-}
-.mood-opt:hover { transform: translateY(-3px); border-color: var(--border-hi); }
-.mood-opt.sel { border-color: var(--accent); background: rgba(124, 111, 255, 0.1); }
-.mood-opt .m-ic { color: var(--text); margin-bottom: 8px; display: grid; place-items: center; }
-.mood-opt .m-lbl { font-size: 13px; color: var(--text-dim); }
-.mood-note { color: var(--amber); font-size: 14px; margin-bottom: 20px; }
+.mood-wrap { max-width: 540px; margin: 0 auto; text-align: center; padding-top: 20px; }
+.mood-wrap h2 { font-size: clamp(22px, 3vw, 30px); margin-bottom: 10px; }
+.mood-wrap > p { color: var(--text-dim); font-size: 15px; margin-bottom: 0; }
+.mood-note { color: var(--amber); font-size: 13px; margin-bottom: 24px; margin-top: 4px; }
 
 /* ============================================================
    EXAM
    ============================================================ */
-.exam-wrap { max-width: 760px; margin: 0 auto; }
-.exam-top { display: flex; align-items: center; gap: 18px; margin-bottom: 30px; }
+.exam-wrap { max-width: 720px; margin: 0 auto; }
+.exam-top { display: flex; align-items: center; gap: 20px; margin-bottom: 32px; padding: 16px 20px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--r-md); }
 .progress { flex: 1; }
-.progress-bar { height: 6px; background: var(--surface-2); border-radius: 999px; overflow: hidden; }
+.progress-bar { height: 5px; background: var(--surface-2); border-radius: 999px; overflow: hidden; }
 .progress-fill { height: 100%; background: linear-gradient(90deg, var(--accent), #9b8cff); border-radius: 999px; transition: width .4s ease; }
-.progress-lbl { font-family: var(--mono); font-size: 12px; color: var(--text-dim); margin-top: 8px; display: block; }
-.timer { position: relative; width: 52px; height: 52px; flex-shrink: 0; }
+.progress-lbl { font-family: var(--mono); font-size: 11px; color: var(--text-dim); margin-top: 7px; display: block; }
+.timer { position: relative; width: 48px; height: 48px; flex-shrink: 0; }
 .timer svg { transform: rotate(-90deg); }
 .timer .track { fill: none; stroke: var(--surface-2); stroke-width: 4; }
 .timer .ring { fill: none; stroke: var(--accent); stroke-width: 4; stroke-linecap: round; transition: stroke-dashoffset 1s linear, stroke .3s; }
-.timer .ring.urgent { stroke: var(--red); }
-.timer .num { position: absolute; inset: 0; display: grid; place-items: center; font-family: var(--mono); font-size: 15px; }
+.timer .ring.urgent { stroke: var(--red); animation: urgentPulse 0.5s ease infinite alternate; }
+@keyframes urgentPulse { from { opacity: 1; } to { opacity: 0.5; } }
+.timer .num { position: absolute; inset: 0; display: grid; place-items: center; font-family: var(--mono); font-size: 14px; }
 
-.q-box { margin-bottom: 24px; }
-.q-tag { font-family: var(--mono); font-size: 11px; color: var(--accent); text-transform: uppercase; letter-spacing: .1em; }
-.q-text { font-size: 22px; font-weight: 500; line-height: 1.4; margin-top: 10px; }
+.q-box { margin-bottom: 20px; padding: 20px 0 0; }
+.q-tag { font-family: var(--mono); font-size: 11px; color: var(--accent); text-transform: uppercase; letter-spacing: .1em; display: inline-block; margin-bottom: 12px; }
+.q-text { font-size: clamp(17px, 2.5vw, 21px); font-weight: 500; line-height: 1.45; margin: 0; }
 .opts { display: grid; gap: 12px; }
 .opt {
   display: flex; align-items: center; gap: 14px; text-align: left;
@@ -237,7 +237,7 @@ h1, h2, h3 { font-family: var(--display); letter-spacing: -0.02em; margin: 0; }
 }
 .conf-opt:hover { border-color: var(--border-hi); color: var(--text); }
 .conf-opt.sel { border-color: var(--accent); color: #fff; background: rgba(124, 111, 255, 0.12); }
-.exam-nav { display: flex; justify-content: space-between; margin-top: 30px; }
+.exam-nav { display: flex; justify-content: space-between; align-items: center; margin-top: 28px; gap: 12px; }
 
 /* ============================================================
    RESULT
@@ -250,8 +250,8 @@ h1, h2, h3 { font-family: var(--display); letter-spacing: -0.02em; margin: 0; }
 .score-ring .inner { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; }
 .score-ring .num { font-family: var(--mono); font-size: 40px; line-height: 1; }
 .score-ring .den { font-family: var(--mono); color: var(--text-dim); font-size: 15px; }
-.score-title { font-family: var(--display); font-size: 28px; font-weight: 700; }
-.score-sub { color: var(--text-dim); margin-top: 6px; }
+.score-title { font-family: var(--display); font-size: clamp(22px, 3vw, 30px); font-weight: 700; line-height: 1.2; }
+.score-sub { color: var(--text-dim); margin-top: 8px; font-size: 14px; line-height: 1.5; }
 
 .result-list { display: grid; gap: 14px; }
 .result-card { padding: 18px 20px; }
@@ -266,7 +266,7 @@ h1, h2, h3 { font-family: var(--display); letter-spacing: -0.02em; margin: 0; }
 /* ============================================================
    DNA REPORT
    ============================================================ */
-.dna-group { margin-bottom: 26px; border-radius: var(--r-lg); border: 1px solid var(--border); padding: 20px; }
+.dna-group { margin-bottom: 20px; border-radius: var(--r-lg); border: 1px solid var(--border); padding: 22px 24px; }
 .dna-group-head { display: flex; align-items: center; gap: 14px; margin-bottom: 16px; }
 .dna-group-ic { width: 40px; height: 40px; border-radius: 10px; display: grid; place-items: center; flex-shrink: 0; }
 .dna-group-meta { flex: 1; }
