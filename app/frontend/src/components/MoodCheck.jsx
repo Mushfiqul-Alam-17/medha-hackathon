@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { t } from "../utils/lang";
+import { Brain } from "lucide-react";
 
 const MOODS = [
   { key: "great", emoji: "😊" },
@@ -11,6 +12,7 @@ const MOODS = [
 
 export default function MoodCheck({ onContinue, lang }) {
   const [mood, setMood] = useState(null);
+  const [confidence, setConfidence] = useState(true); // default ON
 
   return (
     <div className="view" data-testid="mood-view">
@@ -28,10 +30,42 @@ export default function MoodCheck({ onContinue, lang }) {
           ))}
         </div>
 
+        {/* Confidence Tracking Toggle */}
+        <div className="conf-toggle-card">
+          <div className="conf-toggle-info">
+            <div className="conf-toggle-icon"><Brain size={18} /></div>
+            <div>
+              <div className="conf-toggle-title">
+                {lang === "bn" ? "আত্মবিশ্বাস ট্র্যাকিং" : "Confidence Tracking"}
+              </div>
+              <div className="conf-toggle-desc">
+                {confidence
+                  ? (lang === "bn"
+                    ? "প্রতিটি প্রশ্নে Sure / Unsure / Guessing বেছে নিতে হবে।"
+                    : "You'll rate Sure / Unsure / Guessing after each answer.")
+                  : (lang === "bn"
+                    ? "বন্ধ — শুধু উত্তর বেছে নাও, দ্রুত মোড।"
+                    : "Off — just pick an answer, faster exam mode.")}
+              </div>
+            </div>
+          </div>
+          <button
+            className={`toggle-btn ${confidence ? "on" : "off"}`}
+            data-testid="confidence-toggle"
+            onClick={() => setConfidence((v) => !v)}
+            aria-label="Toggle confidence tracking"
+          >
+            <span className="toggle-knob" />
+          </button>
+        </div>
+
         <p className="mood-note">{t("moodNote", lang)}</p>
 
         <button className="btn btn-primary" data-testid="mood-continue"
-          disabled={!mood} onClick={() => onContinue(mood)}>{t("moodStart", lang)}</button>
+          disabled={!mood}
+          onClick={() => onContinue(mood, confidence)}>
+          {t("moodStart", lang)}
+        </button>
       </div>
     </div>
   );

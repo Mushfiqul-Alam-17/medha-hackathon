@@ -45,6 +45,7 @@ export default function App() {
   const [notesSource, setNotesSource] = useState(null);
   const [history, setHistory] = useState([]);
   const [lang, setLang] = useState("en");
+  const [showConfidence, setShowConfidence] = useState(true);
 
   useEffect(() => {
     axios.get(`${API}/questions`).then((r) => setQuestions(r.data.questions)).catch(() => {});
@@ -55,7 +56,8 @@ export default function App() {
 
   const handleStart = () => setView("mood");
 
-  const handleMoodContinue = (mood) => {
+  const handleMoodContinue = (mood, confidenceEnabled) => {
+    setShowConfidence(confidenceEnabled);
     setView("exam");
     window.__medhaMood = mood;
   };
@@ -134,7 +136,7 @@ export default function App() {
             onDemo={() => document.querySelector(".classifier-grid")?.scrollIntoView({ behavior: "smooth" })} />}
           {view === "mood" && <MoodCheck onContinue={handleMoodContinue} lang={lang} />}
           {view === "exam" && questions.length > 0 && (
-            <Exam questions={questions} mood={window.__medhaMood} onFinish={handleFinish} lang={lang} />
+            <Exam questions={questions} mood={window.__medhaMood} onFinish={handleFinish} lang={lang} showConfidence={showConfidence} />
           )}
           {view === "result" && attempt && <Result attempt={attempt} onViewDNA={() => setView("dna")} lang={lang} />}
           {view === "dna" && attempt && <DnaReport groups={attempt.groups} onViewNotes={loadNotes} lang={lang} />}

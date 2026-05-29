@@ -4,7 +4,7 @@ import { LETTERS, t } from "../utils/lang";
 const PER_Q_SECONDS = 30;
 const CIRC = 2 * Math.PI * 24;
 
-export default function Exam({ questions, mood, onFinish, lang }) {
+export default function Exam({ questions, mood, onFinish, lang, showConfidence = true }) {
   const [qi, setQi] = useState(0);
   const [selected, setSelected] = useState(null);
   const [confidence, setConfidence] = useState(null);
@@ -107,7 +107,7 @@ export default function Exam({ questions, mood, onFinish, lang }) {
           ))}
         </div>
 
-        {selected !== null && (
+        {showConfidence && selected !== null && (
           <div className="confidence" data-testid="confidence-block">
             <div className="c-label">{t("confLabel", lang)}</div>
             <div className="conf-opts">
@@ -122,8 +122,8 @@ export default function Exam({ questions, mood, onFinish, lang }) {
         <div className="exam-nav">
           <button className="btn btn-ghost" data-testid="skip-button" onClick={() => goNext(selected, confidence)}>{t("skip", lang)}</button>
           <button className="btn btn-primary" data-testid="next-button"
-            disabled={selected === null || confidence === null}
-            onClick={() => goNext(selected, confidence)}>
+            disabled={selected === null || (showConfidence && confidence === null)}
+            onClick={() => goNext(selected, showConfidence ? confidence : "none")}>
             {isLast ? t("finishExam", lang) : t("next", lang)}
           </button>
         </div>
