@@ -426,17 +426,56 @@ async def get_attempt(attempt_id: str):
     raise HTTPException(status_code=404, detail="Attempt not found")
 
 
+OPENROUTER_KEY = os.getenv("OPENROUTER_API_KEY", "")
+
+async def call_openrouter(prompt: str) -> Optional[Dict]:
+    if not OPENROUTER_KEY:
+        return None
+    url = "https://openrouter.ai/api/v1/chat/completions"
+    payload = {
+        "model": "google/gemma-4-31b-it:free", # Stable free endpoint for Google Gemma
+        "messages": [
+            {"role": "system", "content": NOTES_SYSTEM_PROMPT},
+            {"role": "user", "content": f"Student DNA Report:\n{prompt}"}
+        ],
+        "response_format": {"type": "json_object"}
+    }
+    headers = {
+        "Authorization": f"Bearer {OPENROUTER_KEY}", 
+        "Content-Type": "application/json",
+        "HTTP-Referer": "https://medha.vercel.app", 
+        "X-Title": "MEDHA"
+    }
+    try:
+        async with httpx.AsyncClient(timeout=20) as client:
+            resp = await client.post(url, json=payload, headers=headers)
+            if resp.status_code != 200:
+                logger.warning(f"OpenRouter returned {resp.status_code}: {resp.text[:200]}")
+                return None
+            data = resp.json()
+            text = data["choices"][0]["message"]["content"]
+            return json.loads(text)
+    except Exception as e:
+        logger.warning(f"OpenRouter failed: {e}")
+        return None
+
 @api_router.post("/notes")
 async def generate_notes(req: NotesRequest):
     prompt = build_llm_prompt(req.dnaReport)
 
-    # Try Gemini first
+    # Try OpenRouter first (reliable free tier)
+    notes = await call_openrouter(prompt)
+    if notes:
+        logger.info("✅ Notes generated via OpenRouter")
+        return {"notes": notes, "source": "ai"}
+
+    # Try Gemini 
     notes = await call_gemini(prompt)
     if notes:
         logger.info("✅ Notes generated via Gemini")
         return {"notes": notes, "source": "ai"}
 
-    # Fallback to Groq
+    # Try Groq
     notes = await call_groq(prompt)
     if notes:
         logger.info("✅ Notes generated via Groq")
