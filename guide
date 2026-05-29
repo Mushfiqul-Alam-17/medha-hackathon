@@ -1,0 +1,2685 @@
+Perfect — I'll proceed with the best setup: **React + FastAPI + MongoDB** (gives you a live preview to judge), **Emergent LLM Key** for AI notes (free, built-in), **MongoDB storage** with an attempt history, and **no login** for a frictionless demo. 
+
+Crucially, I'll engineer the AI Study Notes with a **smart deterministic fallback** built from the behavioral classifier — so even if AI is unavailable (e.g., a frontend-only Vercel deploy), the app still produces polished, professional notes and **never looks broken**. Content will be clean, professional Bangla + English (no cringe).
+
+Let me set up the foundation: get design guidelines, the Emergent LLM integration playbook, and inspect the current project scaffold — in parallel.
+Action: Create a UI/UX design blueprint for "MEDHA" — a behavioral intelligence exam platform for Bangladeshi medical admission students (Biology only, for now). It must look premium, professional, and serious (NOT childish/cringe) — judges and ambitious students should immediately trust it.
+
+original_problem_statement: "Create a complete demo website to pass a hackathon. For a Bangladeshi aspiring medical admission student with limited daily time — minimal and effective, not overly complex. Focus on Biology only. Build a DNA report/analysis section that tracks exam behavior (timing, hesitation, answer switches) and classifies each answer, then generates AI study notes. Make the DNA report simpler, styled like the existing demo on the site. Must look professional, no cringe Bangla/English. Should win the hackathon."
+
+user_choices: "Must look professional, no cringe-type Bangla or English so students don't feel it's bogus. Minimal and effective for a time-limited student. Keep it not overly complex. DNA report should be simple and clean, similar to a demo that already exists on the site. Reference aesthetics from the existing build: dark theme, fonts Syne + DM Sans, accent indigo/purple (#7c6fff), status colors green (#22c97a correct/mastered), red (#ff4f6a danger/wrong), amber for slow/confused. Existing inspirations cited: Raycast, Linear, Resend, Clerk."
+
+key_functionalities: ["Cinematic intro animation (MEDHA word reveal)", "Landing/Hero page with animated behavior visualization", "Mood check before exam", "Live Biology MCQ exam with timer + behavior tracking (clicks, time, answer switches, confidence)", "Result screen with score ring", "DNA Report — 4 behavior groups (Mastered, Slow, Confused, Danger/Confidently-Wrong) with per-question click-path replay and insight lines", "AI-generated Study Notes (explanation, memory trick, trap question, comparison tables)", "Readiness/progress dashboard", "Attempt history"]
+
+app_type: hybrid_fullstack (exam SaaS web app, dark premium aesthetic, data-dense but minimal and fast)
+
+Important: This is a refinement of an existing dark, premium aesthetic. Keep it dark, sophisticated, data-focused (DM Mono for numbers/data), with smooth micro-interactions. Produce concrete CSS variables (colors, spacing, radii, shadows), typography scale, component styles for cards/buttons/pills/tables/progress bars, and the DNA report group card styling. Output /app/design_guidelines.json.
+Observation: ## MEDHA Design Blueprint Complete
+- Created UI/UX design blueprint based on user's exact preferences: dark theme, Syne + DM Sans fonts, indigo accent, and behavior status colors.
+- Generated dark mode biology/DNA and data analytics background assets using the AI image generation tool.
+- Output strictly formatted as valid JSON at `/app/design_guidelines.json` ready for main agent implementation.
+- Next Action Items: Main agent can begin component and page implementation relying on the created design_guidelines.json and media assets.
+
+Now let me get the Emergent LLM integration playbook and inspect the current scaffold.
+Action: Calling memory tool: 'INTEGRATION: Claude Haiku 4.5 text generation via Emergent LLM key for generating structured JSON study notes from a behavioral exam report. The backend is FastAPI (Python). I need to send a system prompt + JSON behavior data and get back structured JSON (study notes with topic, explanation, memory trick, trap question, and comparison tables). Content must be generated in Bangla (Bengali). Need to keep token usage minimal.
+CONSTRAINTS: Backend is Python FastAPI + MongoDB. Need reliable JSON output parsing. Low token usage / cheap model preferred.'
+Observation: Memory Fetched
+
+
+Action: {"type": "mcp_tool", "tool_name": "mcp_view_bulk", "tool_arguments": {"paths": ["/app/design_guidelines.json", "/app/backend/server.py", "/app/backend/.env", "/app/frontend/.env", "/app/frontend/package.json", "/app/backend/requirements.txt", "/app/frontend/src/App.js"]}}
+Observation: ===FILE: /app/design_guidelines.json
+/app/design_guidelines.json:
+1|{
+2|  "theme": "dark",
+3|  "archetype": "4_swiss_high_contrast_dark_variant",
+4|  "emotion_and_vibe": "Premium, serious, clinical precision, high-trust, data-dense but clean. Minimalist 'Linear/Raycast' aesthetic tailored for high-stakes medical admission.",
+5|  "colors": {
+6|    "background": "#0e0e11",
+7|    "surface": "#16161a",
+8|    "surface_elevated": "#1c1c22",
+9|    "border": "rgba(255, 255, 255, 0.08)",
+10|    "border_hover": "rgba(255, 255, 255, 0.15)",
+11|    "text_primary": "#ffffff",
+12|    "text_secondary": "#a1a1aa",
+13|    "accent_primary": "#7c6fff",
+14|    "accent_primary_hover": "#6b5ce6",
+15|    "status": {
+16|      "mastered": "#22c97a",
+17|      "danger": "#ff4f6a",
+18|      "confused": "#f5a623"
+19|    }
+20|  },
+21|  "typography": {
+22|    "fonts": {
+23|      "heading": "Syne",
+24|      "body": "DM Sans",
+25|      "mono": "DM Mono"
+26|    },
+27|    "scale": {
+28|      "h1": "text-5xl lg:text-6xl tracking-tighter font-bold",
+29|      "h2": "text-3xl lg:text-4xl tracking-tight font-bold",
+30|      "h3": "text-xl lg:text-2xl tracking-tight font-semibold",
+31|      "body": "text-base leading-relaxed text-zinc-400",
+32|      "data_label": "text-xs tracking-[0.1em] uppercase font-mono text-zinc-500",
+33|      "data_value": "text-2xl font-mono text-zinc-100"
+34|    }
+35|  },
+36|  "spacing_and_layout": {
+37|    "container": "max-w-7xl mx-auto px-6 md:px-12",
+38|    "section_gap": "py-24 md:py-32",
+39|    "grid_dashboard": "grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6",
+40|    "card_padding": "p-6 md:p-8"
+41|  },
+42|  "components": {
+43|    "buttons": {
+44|      "primary": "bg-[#7c6fff] hover:bg-[#6b5ce6] text-white font-semibold py-3 px-6 rounded-md transition-all shadow-[0_0_15px_rgba(124,111,255,0.3)]",
+45|      "secondary": "bg-transparent border border-white/10 hover:border-white/20 text-white font-medium py-3 px-6 rounded-md transition-all",
+46|      "icon_button": "p-2 rounded-md hover:bg-white/5 transition-colors text-zinc-400 hover:text-white"
+47|    },
+48|    "cards": {
+49|      "base": "bg-[#16161a] border border-white/10 rounded-xl overflow-hidden",
+50|      "hover_effect": "hover:-translate-y-1 hover:border-white/20 hover:shadow-lg transition-all duration-300",
+51|      "dna_group_mastered": "border-[#22c97a]/20 bg-gradient-to-b from-[#22c97a]/10 to-transparent",
+52|      "dna_group_danger": "border-[#ff4f6a]/20 bg-gradient-to-b from-[#ff4f6a]/10 to-transparent",
+53|      "dna_group_confused": "border-[#f5a623]/20 bg-gradient-to-b from-[#f5a623]/10 to-transparent"
+54|    },
+55|    "inputs_and_forms": {
+56|      "input": "bg-transparent border-b border-white/10 focus:border-[#7c6fff] text-white py-3 px-0 rounded-none outline-none transition-colors w-full"
+57|    },
+58|    "pills": {
+59|      "mastered": "bg-[#22c97a]/10 text-[#22c97a] border border-[#22c97a]/20 px-3 py-1 rounded-full text-xs font-mono uppercase tracking-wider",
+60|      "danger": "bg-[#ff4f6a]/10 text-[#ff4f6a] border border-[#ff4f6a]/20 px-3 py-1 rounded-full text-xs font-mono uppercase tracking-wider",
+61|      "confused": "bg-[#f5a623]/10 text-[#f5a623] border border-[#f5a623]/20 px-3 py-1 rounded-full text-xs font-mono uppercase tracking-wider"
+62|    }
+63|  },
+64|  "motion": {
+65|    "default_transition": "transition-all duration-300 ease-in-out",
+66|    "page_entrance": "framer-motion initial opacity-0 y-4, animate opacity-100 y-0 stagger 0.1s",
+67|    "hover_lift": "-translate-y-1"
+68|  },
+69|  "media": {
+70|    "hero_dna_visual": {
+71|      "url": "https://static.prod-images.emergentagent.com/jobs/60022136-80a9-4a74-b8e8-b42dc49e9be7/images/018a280c091d4daf0516f9d7580cf662b6020925e99a798ecd17efe9f32bbaa0.png",
+72|      "description": "Abstract 3D glowing DNA helix on dark background, used for the main hero section visualization.",
+73|      "category": "hero_background"
+74|    },
+75|    "dashboard_bg_texture": {
+76|      "url": "https://static.prod-images.emergentagent.com/jobs/60022136-80a9-4a74-b8e8-b42dc49e9be7/images/214c22d8a65d1fe5111dbf627c18b9921fce736ef9b67aa06469e98ac13da1c3.png",
+77|      "description": "Subtle dark glassmorphism texture with faint indigo light bleed, used as underlying texture for dashboard or result screens.",
+78|      "category": "background_texture"
+79|    },
+80|    "behavior_data_visual": {
+81|      "url": "https://static.prod-images.emergentagent.com/jobs/60022136-80a9-4a74-b8e8-b42dc49e9be7/images/17e53531bfb1b99ebc70ffd8d98c1237ce560db0fbe46b9d8abe0564146f99bf.png",
+82|      "description": "Abstract network of glowing dots (green, red, amber) representing behavioral analysis. Used in the DNA Report section.",
+83|      "category": "section_illustration"
+84|    }
+85|  },
+86|  "icons": {
+87|    "library": "lucide-react",
+88|    "style": "stroke-width 1.5, text-zinc-400"
+89|  },
+90|  "instructions_to_main_agent": [
+91|    "Install required dependencies: framer-motion, lucide-react, @radix-ui/react-slot, clsx, tailwind-merge.",
+92|    "Ensure Syne font is loaded from Google Fonts for headings, DM Sans for body text, and DM Mono for numbers.",
+93|    "Implement the cinematic 'MEDHA' text reveal on initial load using framer-motion (mask image or stagger text).",
+94|    "For the DNA Report: utilize the 'Control Room' grid (grid-cols-1 md:grid-cols-3). Do NOT use generic soft shadows. Use 1px borders (border-white/10) with subtle tinted backgrounds based on status colors.",
+95|    "Data components (timers, scores, attempt counts) MUST use the 'DM Mono' font for alignment and precise feel.",
+96|    "Include data-testid attributes on all interactive elements (e.g., 'data-testid=\"start-exam-button\"').",
+97|    "Use Lucide icons for UI markers. Avoid filling up the UI with decorative graphics; rely on the provided generated images for atmosphere.",
+98|    "Apply `bg-black/40` to `bg-black/60` gradient overlays over the hero image to ensure Syne headings pop.",
+99|    "AI Study Notes section should look like a highly legible, markdown-styled card using DM Sans, with small mono tags for 'TRAP QUESTION' or 'MEMORY TRICK'."
+100|  ]
+101|}
+
+===END
+
+===FILE: /app/backend/server.py
+/app/backend/server.py:
+1|from fastapi import FastAPI, APIRouter
+2|from dotenv import load_dotenv
+3|from starlette.middleware.cors import CORSMiddleware
+4|from motor.motor_asyncio import AsyncIOMotorClient
+5|import os
+6|import logging
+7|from pathlib import Path
+8|from pydantic import BaseModel, Field, ConfigDict
+9|from typing import List
+10|import uuid
+11|from datetime import datetime, timezone
+12|
+13|
+14|ROOT_DIR = Path(__file__).parent
+15|load_dotenv(ROOT_DIR / '.env')
+16|
+17|# MongoDB connection
+18|mongo_url = os.environ['MONGO_URL']
+19|client = AsyncIOMotorClient(mongo_url)
+20|db = client[os.environ['DB_NAME']]
+21|
+22|# Create the main app without a prefix
+23|app = FastAPI()
+24|
+25|# Create a router with the /api prefix
+26|api_router = APIRouter(prefix="/api")
+27|
+28|
+29|# Define Models
+30|class StatusCheck(BaseModel):
+31|    model_config = ConfigDict(extra="ignore")  # Ignore MongoDB's _id field
+32|    
+33|    id: str = Field(default_factory=lambda: str(uuid.uuid4()))
+34|    client_name: str
+35|    timestamp: datetime = Field(default_factory=lambda: datetime.now(timezone.utc))
+36|
+37|class StatusCheckCreate(BaseModel):
+38|    client_name: str
+39|
+40|# Add your routes to the router instead of directly to app
+41|@api_router.get("/")
+42|async def root():
+43|    return {"message": "Hello World"}
+44|
+45|@api_router.post("/status", response_model=StatusCheck)
+46|async def create_status_check(input: StatusCheckCreate):
+47|    status_dict = input.model_dump()
+48|    status_obj = StatusCheck(**status_dict)
+49|    
+50|    # Convert to dict and serialize datetime to ISO string for MongoDB
+51|    doc = status_obj.model_dump()
+52|    doc['timestamp'] = doc['timestamp'].isoformat()
+53|    
+54|    _ = await db.status_checks.insert_one(doc)
+55|    return status_obj
+56|
+57|@api_router.get("/status", response_model=List[StatusCheck])
+58|async def get_status_checks():
+59|    # Exclude MongoDB's _id field from the query results
+60|    status_checks = await db.status_checks.find({}, {"_id": 0}).to_list(1000)
+61|    
+62|    # Convert ISO string timestamps back to datetime objects
+63|    for check in status_checks:
+64|        if isinstance(check['timestamp'], str):
+65|            check['timestamp'] = datetime.fromisoformat(check['timestamp'])
+66|    
+67|    return status_checks
+68|
+69|# Include the router in the main app
+70|app.include_router(api_router)
+71|
+72|app.add_middleware(
+73|    CORSMiddleware,
+74|    allow_credentials=True,
+75|    allow_origins=os.environ.get('CORS_ORIGINS', '*').split(','),
+76|    allow_methods=["*"],
+77|    allow_headers=["*"],
+78|)
+79|
+80|# Configure logging
+81|logging.basicConfig(
+82|    level=logging.INFO,
+83|    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+84|)
+85|logger = logging.getLogger(__name__)
+86|
+87|@app.on_event("shutdown")
+88|async def shutdown_db_client():
+89|    client.close()
+
+===END
+
+===FILE: /app/backend/.env
+/app/backend/.env:
+1|MONGO_URL="mongodb://localhost:27017"
+2|DB_NAME="test_database"
+3|CORS_ORIGINS="*"
+
+===END
+
+===FILE: /app/frontend/.env
+/app/frontend/.env:
+1|REACT_APP_BACKEND_URL=https://dna-bio-learn.preview.emergentagent.com
+2|WDS_SOCKET_PORT=443
+3|ENABLE_HEALTH_CHECK=false
+
+===END
+
+===FILE: /app/frontend/package.json
+/app/frontend/package.json:
+1|{
+2|  "name": "frontend",
+3|  "version": "0.1.0",
+4|  "private": true,
+5|  "dependencies": {
+6|    "@hookform/resolvers": "5.0.1",
+7|    "@radix-ui/react-accordion": "1.2.8",
+8|    "@radix-ui/react-alert-dialog": "1.1.11",
+9|    "@radix-ui/react-aspect-ratio": "1.1.4",
+10|    "@radix-ui/react-avatar": "1.1.7",
+11|    "@radix-ui/react-checkbox": "1.2.3",
+12|    "@radix-ui/react-collapsible": "1.1.8",
+13|    "@radix-ui/react-context-menu": "2.2.12",
+14|    "@radix-ui/react-dialog": "1.1.11",
+15|    "@radix-ui/react-dropdown-menu": "2.1.12",
+16|    "@radix-ui/react-hover-card": "1.1.11",
+17|    "@radix-ui/react-label": "2.1.4",
+18|    "@radix-ui/react-menubar": "1.1.12",
+19|    "@radix-ui/react-navigation-menu": "1.2.10",
+20|    "@radix-ui/react-popover": "1.1.11",
+21|    "@radix-ui/react-progress": "1.1.4",
+22|    "@radix-ui/react-radio-group": "1.3.4",
+23|    "@radix-ui/react-scroll-area": "1.2.6",
+24|    "@radix-ui/react-select": "2.2.2",
+25|    "@radix-ui/react-separator": "1.1.4",
+26|    "@radix-ui/react-slider": "1.3.2",
+27|    "@radix-ui/react-slot": "1.2.0",
+28|    "@radix-ui/react-switch": "1.2.2",
+29|    "@radix-ui/react-tabs": "1.1.9",
+30|    "@radix-ui/react-toast": "1.2.11",
+31|    "@radix-ui/react-toggle": "1.1.6",
+32|    "@radix-ui/react-toggle-group": "1.1.7",
+33|    "@radix-ui/react-tooltip": "1.2.4",
+34|    "@tanstack/react-query": "5.56.2",
+35|    "axios": "1.8.4",
+36|    "class-variance-authority": "0.7.1",
+37|    "clsx": "2.1.1",
+38|    "cmdk": "1.1.1",
+39|    "cra-template": "1.2.0",
+40|    "date-fns": "4.1.0",
+41|    "dayjs": "1.11.13",
+42|    "embla-carousel-react": "8.6.0",
+43|    "framer-motion": "11.18.0",
+44|    "input-otp": "1.4.2",
+45|    "lodash": "4.18.1",
+46|    "lucide-react": "0.516.0",
+47|    "next-themes": "0.4.6",
+48|    "react": "19.0.0",
+49|    "react-day-picker": "8.10.1",
+50|    "react-dom": "19.0.0",
+51|    "react-hook-form": "7.56.2",
+52|    "react-resizable-panels": "3.0.1",
+53|    "react-router-dom": "7.5.1",
+54|    "react-scripts": "5.0.1",
+55|    "recharts": "3.6.0",
+56|    "sonner": "2.0.3",
+57|    "swr": "2.3.8",
+58|    "tailwind-merge": "3.2.0",
+59|    "tailwindcss-animate": "1.0.7",
+60|    "vaul": "1.1.2",
+61|    "zod": "3.24.4"
+62|  },
+63|  "scripts": {
+64|    "start": "craco start",
+65|    "build": "craco build",
+66|    "test": "craco test"
+67|  },
+68|  "browserslist": {
+69|    "production": [
+70|      ">0.2%",
+71|      "not dead",
+72|      "not op_mini all"
+73|    ],
+74|    "development": [
+75|      "last 1 chrome version",
+76|      "last 1 firefox version",
+77|      "last 1 safari version"
+78|    ]
+79|  },
+80|  "devDependencies": {
+81|    "@babel/plugin-proposal-private-property-in-object": "7.21.11",
+82|    "@craco/craco": "7.1.0",
+83|    "@emergentbase/visual-edits": "https://assets.emergent.sh/npm/emergentbase-visual-edits-1.0.8.tgz",
+84|    "@eslint/js": "9.23.0",
+85|    "@types/lodash": "4.17.24",
+86|    "autoprefixer": "10.4.20",
+87|    "dotenv": "16.4.5",
+88|    "eslint": "9.23.0",
+89|    "eslint-plugin-import": "2.31.0",
+90|    "eslint-plugin-jsx-a11y": "6.10.2",
+91|    "eslint-plugin-react": "7.37.4",
+92|    "eslint-plugin-react-hooks": "5.2.0",
+93|    "globals": "15.15.0",
+94|    "postcss": "8.4.49",
+95|    "tailwindcss": "3.4.17"
+96|  },
+97|  "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
+98|}
+99|
+
+===END
+
+===FILE: /app/backend/requirements.txt
+/app/backend/requirements.txt:
+1|fastapi==0.110.1
+2|uvicorn==0.25.0
+3|boto3>=1.34.129
+4|requests-oauthlib>=2.0.0
+5|cryptography>=42.0.8
+6|python-dotenv>=1.0.1
+7|pymongo==4.5.0
+8|pydantic>=2.6.4
+9|email-validator>=2.2.0
+10|pyjwt>=2.10.1
+11|bcrypt==4.1.3
+12|passlib>=1.7.4
+13|tzdata>=2024.2
+14|motor==3.3.1
+15|pytest>=8.0.0
+16|black>=24.1.1
+17|isort>=5.13.2
+18|flake8>=7.0.0
+19|mypy>=1.8.0
+20|python-jose>=3.3.0
+21|requests>=2.31.0
+22|pandas>=2.2.0
+23|numpy>=1.26.0
+24|python-multipart>=0.0.9
+25|jq>=1.6.0
+26|typer>=0.9.0
+27|emergentintegrations==0.1.2
+28|
+
+===END
+
+===FILE: /app/frontend/src/App.js
+/app/frontend/src/App.js:
+1|import { useEffect } from "react";
+2|import "@/App.css";
+3|import { BrowserRouter, Routes, Route } from "react-router-dom";
+4|import axios from "axios";
+5|import { HOME } from "@/constants/testIds";
+6|
+7|const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
+8|const API = `${BACKEND_URL}/api`;
+9|
+10|const Home = () => {
+11|  const helloWorldApi = async () => {
+12|    try {
+13|      const response = await axios.get(`${API}/`);
+14|      console.log(response.data.message);
+15|    } catch (e) {
+16|      console.error(e, `errored out requesting / api`);
+17|    }
+18|  };
+19|
+20|  useEffect(() => {
+21|    helloWorldApi();
+22|  }, []);
+23|
+24|  return (
+25|    <div>
+26|      <header className="App-header">
+27|        <a
+28|          data-testid={HOME.emergentLink}
+29|          className="App-link"
+30|          href="https://emergent.sh"
+31|          target="_blank"
+32|          rel="noopener noreferrer"
+33|        >
+34|          <img src="https://avatars.githubusercontent.com/in/1201222?s=120&u=2686cf91179bbafbc7a71bfbc43004cf9ae1acea&v=4" />
+35|        </a>
+36|        <p className="mt-5">Building something incredible ~!</p>
+37|      </header>
+38|    </div>
+39|  );
+40|};
+41|
+42|function App() {
+43|  return (
+44|    <div className="App">
+45|      <BrowserRouter>
+46|        <Routes>
+47|          <Route path="/" element={<Home />}>
+48|            <Route index element={<Home />} />
+49|          </Route>
+50|        </Routes>
+51|      </BrowserRouter>
+52|    </div>
+53|  );
+54|}
+55|
+56|export default App;
+57|
+
+===END
+
+Library is installed and I'll use **Claude Haiku 4.5** (`claude-haiku-4-5-20251001`). Let me check the remaining scaffold files, then build.
+Action: {"type": "mcp_tool", "tool_name": "mcp_view_bulk", "tool_arguments": {"paths": ["/app/frontend/public/index.html", "/app/frontend/src/index.css", "/app/frontend/src/index.js", "/app/frontend/tailwind.config.js", "/app/frontend/craco.config.js"]}}
+Observation: ===FILE: /app/frontend/public/index.html
+/app/frontend/public/index.html:
+1|<!doctype html>
+2|<html lang="en">
+3|    <head>
+4|        <meta charset="utf-8" />
+5|        <meta name="viewport" content="width=device-width, initial-scale=1" />
+6|        <meta name="theme-color" content="#000000" />
+7|        <meta name="description" content="A product of emergent.sh" />
+8|        <link rel="preconnect" href="https://fonts.googleapis.com" />
+9|        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+10|        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap" rel="stylesheet" />
+11|        <!--
+12|        manifest.json provides metadata used when your web app is installed on a
+13|        user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+14|        -->
+15|        <!--
+16|        Notice the use of %PUBLIC_URL% in the tags above.
+17|        It will be replaced with the URL of the `public` folder during the build.
+18|        Only files inside the `public` folder can be referenced from the HTML.
+19|
+20|        Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+21|        work correctly both with client-side routing and a non-root public URL.
+22|        Learn how to configure a non-root public URL by running `npm run build`.
+23|        -->
+24|        <title>Emergent | Fullstack App</title>
+25|        <script>window.addEventListener("error",function(e){if(e.error instanceof DOMException&&e.error.name==="DataCloneError"&&e.message&&e.message.includes("PerformanceServerTiming")){e.stopImmediatePropagation();e.preventDefault()}},true);</script>
+26|        <script src="https://assets.emergent.sh/scripts/emergent-main.js"></script>
+27|    </head>
+28|    <body>
+29|        <noscript>You need to enable JavaScript to run this app.</noscript>
+30|        <div id="root"></div>
+31|        <!--
+32|      This HTML file is a template.
+33|      If you open it directly in the browser, you will see an empty page.
+34|
+35|      You can add webfonts, meta tags, or analytics to this file.
+36|      The build step will place the bundled scripts into the <body> tag.
+37|
+38|      To begin the development, run `npm start` or `yarn start`.
+39|      To create a production bundle, use `npm run build` or `yarn build`.
+40|    -->
+41|        <a
+42|            id="emergent-badge"
+43|            target="_blank"
+44|            href="https://app.emergent.sh/?utm_source=emergent-badge"
+45|            style="
+46|                display: inline-flex !important;
+47|                box-sizing: border-box;
+48|                width: 178px;
+49|                height: 40px;
+50|                padding: 8px 12px 8px 12px;
+51|                align-items: center !important;
+52|                gap: 8px;
+53|                border-radius: 50px !important;
+54|                background: #000 !important;
+55|                position: fixed !important;
+56|                bottom: 16px;
+57|                right: 16px;
+58|                text-decoration: none;
+59|                font-family: -apple-system, BlinkMacSystemFont,
+60|                    &quot;Segoe UI&quot;, Roboto, Oxygen, Ubuntu, Cantarell,
+61|                    &quot;Open Sans&quot;, &quot;Helvetica Neue&quot;,
+62|                    sans-serif !important;
+63|                font-size: 12px !important;
+64|                z-index: 9999 !important;
+65|            "
+66|        >
+67|            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+68|                <path d="M15.5702 8.13142C15.7729 8.0412 16.0007 8.18878 15.9892 8.4103C15.8374 11.3192 14.0965 14.0405 11.2531 15.3065C8.40964 16.5725 5.2224 16.0453 2.95912 14.2117C2.78676 14.072 2.82955 13.804 3.03219 13.7137L4.95677 12.8568C5.04866 12.8159 5.15446 12.823 5.24204 12.8725C6.73377 13.7153 8.59176 13.8649 10.2772 13.1145C11.9626 12.3641 13.0947 10.8833 13.4665 9.21075C13.4883 9.11256 13.5539 9.02918 13.6457 8.98827L15.5702 8.13142Z" fill="white"/>
+69|                <path fill-rule="evenodd" clip-rule="evenodd" d="M15.3066 4.74698L15.5067 5.19653C15.5759 5.35178 15.5061 5.53366 15.3508 5.60278L1.29992 11.8586C1.14467 11.9278 0.962794 11.8579 0.893675 11.7027L0.701732 11.2716L0.693457 11.2531C-1.10317 7.21778 0.711626 2.49007 4.74692 0.693443C8.78221 -1.10318 13.51 0.711693 15.3066 4.74698ZM2.82356 8.55367C2.63552 8.63739 2.41991 8.51617 2.40853 8.31065C2.28373 6.05724 3.53858 3.85787 5.72286 2.88536C7.90715 1.91286 10.3813 2.45199 11.9724 4.05256C12.1175 4.19854 12.0633 4.43988 11.8753 4.5236L2.82356 8.55367Z" fill="white"/>
+70|            </svg>
+71|            <p
+72|                style="
+73|                    color: #FFF !important;
+74|                    font-family: 'Inter', sans-serif !important;
+75|                    font-size: 13px !important;
+76|                    font-style: normal !important;
+77|                    font-weight: 600 !important;
+78|                    line-height: 20px !important;
+79|                    margin: 0 !important;
+80|                    white-space: nowrap !important;
+81|                "
+82|            >
+83|                Made with Emergent
+84|            </p>
+85|        </a>
+86|        <script>
+87|            !(function (t, e) {
+88|                var o, n, p, r;
+89|                e.__SV ||
+90|                    ((window.posthog = e),
+91|                    (e._i = []),
+92|                    (e.init = function (i, s, a) {
+93|                        function g(t, e) {
+94|                            var o = e.split(".");
+95|                            2 == o.length && ((t = t[o[0]]), (e = o[1])),
+96|                                (t[e] = function () {
+97|                                    t.push(
+98|                                        [e].concat(
+99|                                            Array.prototype.slice.call(
+100|                                                arguments,
+101|                                                0,
+102|                                            ),
+103|                                        ),
+104|                                    );
+105|                                });
+106|                        }
+107|                        ((p = t.createElement("script")).type =
+108|                            "text/javascript"),
+109|                            (p.crossOrigin = "anonymous"),
+110|                            (p.async = !0),
+111|                            (p.src =
+112|                                s.api_host.replace(
+113|                                    ".i.posthog.com",
+114|                                    "-assets.i.posthog.com",
+115|                                ) + "/static/array.js"),
+116|                            (r =
+117|                                t.getElementsByTagName(
+118|                                    "script",
+119|                                )[0]).parentNode.insertBefore(p, r);
+120|                        var u = e;
+121|                        for (
+122|                            void 0 !== a ? (u = e[a] = []) : (a = "posthog"),
+123|                                u.people = u.people || [],
+124|                                u.toString = function (t) {
+125|                                    var e = "posthog";
+126|                                    return (
+127|                                        "posthog" !== a && (e += "." + a),
+128|                                        t || (e += " (stub)"),
+129|                                        e
+130|                                    );
+131|                                },
+132|                                u.people.toString = function () {
+133|                                    return u.toString(1) + ".people (stub)";
+134|                                },
+135|                                o =
+136|                                    "init me ws ys ps bs capture je Di ks register register_once register_for_session unregister unregister_for_session Ps getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSurveysLoaded onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey canRenderSurveyAsync identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty Es $s createPersonProfile Is opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing Ss debug xs getPageViewId captureTraceFeedback captureTraceMetric".split(
+137|                                        " ",
+138|                                    ),
+139|                                n = 0;
+140|                            n < o.length;
+141|                            n++
+142|                        )
+143|                            g(u, o[n]);
+144|                        e._i.push([i, s, a]);
+145|                    }),
+146|                    (e.__SV = 1));
+147|            })(document, window.posthog || []);
+148|            posthog.init("phc_xAvL2Iq4tFmANRE7kzbKwaSqp1HJjN7x48s3vr0CMjs", {
+149|                api_host: "https://us.i.posthog.com",
+150|                person_profiles: "identified_only", // or 'always' to create profiles for anonymous users as well,
+151|                session_recording: {
+152|                    recordCrossOriginIframes: true,
+153|                    capturePerformance: false,
+154|                },
+155|            });
+156|        </script>
+157|    </body>
+158|</html>
+159|
+
+===END
+
+===FILE: /app/frontend/src/index.css
+/app/frontend/src/index.css:
+1|@tailwind base;
+2|@tailwind components;
+3|@tailwind utilities;
+4|
+5|body {
+6|    margin: 0;
+7|    font-family:
+8|        -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+9|        "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+10|        sans-serif;
+11|    -webkit-font-smoothing: antialiased;
+12|    -moz-osx-font-smoothing: grayscale;
+13|}
+14|
+15|code {
+16|    font-family:
+17|        source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+18|}
+19|
+20|@layer base {
+21|    :root {
+22|        --background: 0 0% 100%;
+23|        --foreground: 0 0% 3.9%;
+24|        --card: 0 0% 100%;
+25|        --card-foreground: 0 0% 3.9%;
+26|        --popover: 0 0% 100%;
+27|        --popover-foreground: 0 0% 3.9%;
+28|        --primary: 0 0% 9%;
+29|        --primary-foreground: 0 0% 98%;
+30|        --secondary: 0 0% 96.1%;
+31|        --secondary-foreground: 0 0% 9%;
+32|        --muted: 0 0% 96.1%;
+33|        --muted-foreground: 0 0% 45.1%;
+34|        --accent: 0 0% 96.1%;
+35|        --accent-foreground: 0 0% 9%;
+36|        --destructive: 0 84.2% 60.2%;
+37|        --destructive-foreground: 0 0% 98%;
+38|        --border: 0 0% 89.8%;
+39|        --input: 0 0% 89.8%;
+40|        --ring: 0 0% 3.9%;
+41|        --chart-1: 12 76% 61%;
+42|        --chart-2: 173 58% 39%;
+43|        --chart-3: 197 37% 24%;
+44|        --chart-4: 43 74% 66%;
+45|        --chart-5: 27 87% 67%;
+46|        --radius: 0.5rem;
+47|    }
+48|    .dark {
+49|        --background: 0 0% 3.9%;
+50|        --foreground: 0 0% 98%;
+51|        --card: 0 0% 3.9%;
+52|        --card-foreground: 0 0% 98%;
+53|        --popover: 0 0% 3.9%;
+54|        --popover-foreground: 0 0% 98%;
+55|        --primary: 0 0% 98%;
+56|        --primary-foreground: 0 0% 9%;
+57|        --secondary: 0 0% 14.9%;
+58|        --secondary-foreground: 0 0% 98%;
+59|        --muted: 0 0% 14.9%;
+60|        --muted-foreground: 0 0% 63.9%;
+61|        --accent: 0 0% 14.9%;
+62|        --accent-foreground: 0 0% 98%;
+63|        --destructive: 0 62.8% 30.6%;
+64|        --destructive-foreground: 0 0% 98%;
+65|        --border: 0 0% 14.9%;
+66|        --input: 0 0% 14.9%;
+67|        --ring: 0 0% 83.1%;
+68|        --chart-1: 220 70% 50%;
+69|        --chart-2: 160 60% 45%;
+70|        --chart-3: 30 80% 55%;
+71|        --chart-4: 280 65% 60%;
+72|        --chart-5: 340 75% 55%;
+73|    }
+74|}
+75|
+76|@layer base {
+77|    * {
+78|        @apply border-border;
+79|    }
+80|    body {
+81|        @apply bg-background text-foreground;
+82|    }
+83|}
+84|
+85|@layer base {
+86|    [data-debug-wrapper="true"] {
+87|        display: contents !important;
+88|    }
+89|
+90|    [data-debug-wrapper="true"] > * {
+91|        margin-left: inherit;
+92|        margin-right: inherit;
+93|        margin-top: inherit;
+94|        margin-bottom: inherit;
+95|        padding-left: inherit;
+96|        padding-right: inherit;
+97|        padding-top: inherit;
+98|        padding-bottom: inherit;
+99|        column-gap: inherit;
+100|        row-gap: inherit;
+101|        gap: inherit;
+102|        border-left-width: inherit;
+103|        border-right-width: inherit;
+104|        border-top-width: inherit;
+105|        border-bottom-width: inherit;
+106|        border-left-style: inherit;
+107|        border-right-style: inherit;
+108|        border-top-style: inherit;
+109|        border-bottom-style: inherit;
+110|        border-left-color: inherit;
+111|        border-right-color: inherit;
+112|        border-top-color: inherit;
+113|        border-bottom-color: inherit;
+114|    }
+115|}
+116|
+
+===END
+
+===FILE: /app/frontend/src/index.js
+/app/frontend/src/index.js:
+1|import React from "react";
+2|import ReactDOM from "react-dom/client";
+3|import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+4|import "@/index.css";
+5|import App from "@/App";
+6|
+7|const queryClient = new QueryClient({
+8|  defaultOptions: {
+9|    queries: {
+10|      staleTime: 60_000,
+11|      refetchOnWindowFocus: false,
+12|    },
+13|  },
+14|});
+15|
+16|const root = ReactDOM.createRoot(document.getElementById("root"));
+17|root.render(
+18|  <React.StrictMode>
+19|    <QueryClientProvider client={queryClient}>
+20|      <App />
+21|    </QueryClientProvider>
+22|  </React.StrictMode>,
+23|);
+24|
+
+===END
+
+===FILE: /app/frontend/tailwind.config.js
+/app/frontend/tailwind.config.js:
+1|/** @type {import('tailwindcss').Config} */
+2|module.exports = {
+3|    darkMode: ["class"],
+4|    content: [
+5|    "./src/**/*.{js,jsx,ts,tsx}",
+6|    "./public/index.html"
+7|  ],
+8|  theme: {
+9|        extend: {
+10|                borderRadius: {
+11|                        lg: 'var(--radius)',
+12|                        md: 'calc(var(--radius) - 2px)',
+13|                        sm: 'calc(var(--radius) - 4px)'
+14|                },
+15|                colors: {
+16|                        background: 'hsl(var(--background))',
+17|                        foreground: 'hsl(var(--foreground))',
+18|                        card: {
+19|                                DEFAULT: 'hsl(var(--card))',
+20|                                foreground: 'hsl(var(--card-foreground))'
+21|                        },
+22|                        popover: {
+23|                                DEFAULT: 'hsl(var(--popover))',
+24|                                foreground: 'hsl(var(--popover-foreground))'
+25|                        },
+26|                        primary: {
+27|                                DEFAULT: 'hsl(var(--primary))',
+28|                                foreground: 'hsl(var(--primary-foreground))'
+29|                        },
+30|                        secondary: {
+31|                                DEFAULT: 'hsl(var(--secondary))',
+32|                                foreground: 'hsl(var(--secondary-foreground))'
+33|                        },
+34|                        muted: {
+35|                                DEFAULT: 'hsl(var(--muted))',
+36|                                foreground: 'hsl(var(--muted-foreground))'
+37|                        },
+38|                        accent: {
+39|                                DEFAULT: 'hsl(var(--accent))',
+40|                                foreground: 'hsl(var(--accent-foreground))'
+41|                        },
+42|                        destructive: {
+43|                                DEFAULT: 'hsl(var(--destructive))',
+44|                                foreground: 'hsl(var(--destructive-foreground))'
+45|                        },
+46|                        border: 'hsl(var(--border))',
+47|                        input: 'hsl(var(--input))',
+48|                        ring: 'hsl(var(--ring))',
+49|                        chart: {
+50|                                '1': 'hsl(var(--chart-1))',
+51|                                '2': 'hsl(var(--chart-2))',
+52|                                '3': 'hsl(var(--chart-3))',
+53|                                '4': 'hsl(var(--chart-4))',
+54|                                '5': 'hsl(var(--chart-5))'
+55|                        }
+56|                },
+57|                keyframes: {
+58|                        'accordion-down': {
+59|                                from: {
+60|                                        height: '0'
+61|                                },
+62|                                to: {
+63|                                        height: 'var(--radix-accordion-content-height)'
+64|                                }
+65|                        },
+66|                        'accordion-up': {
+67|                                from: {
+68|                                        height: 'var(--radix-accordion-content-height)'
+69|                                },
+70|                                to: {
+71|                                        height: '0'
+72|                                }
+73|                        }
+74|                },
+75|                animation: {
+76|                        'accordion-down': 'accordion-down 0.2s ease-out',
+77|                        'accordion-up': 'accordion-up 0.2s ease-out'
+78|                }
+79|        }
+80|  },
+81|  plugins: [require("tailwindcss-animate")],
+82|};
+
+===END
+
+===FILE: /app/frontend/craco.config.js
+/app/frontend/craco.config.js:
+1|// craco.config.js
+2|const path = require("path");
+3|require("dotenv").config();
+4|
+5|// Check if we're in development/preview mode (not production build)
+6|// Craco sets NODE_ENV=development for start, NODE_ENV=production for build
+7|const isDevServer = process.env.NODE_ENV !== "production";
+8|
+9|// Environment variable overrides
+10|const config = {
+11|  enableHealthCheck: process.env.ENABLE_HEALTH_CHECK === "true",
+12|};
+13|
+14|// Conditionally load health check modules only if enabled
+15|let WebpackHealthPlugin;
+16|let setupHealthEndpoints;
+17|let healthPluginInstance;
+18|
+19|if (config.enableHealthCheck) {
+20|  WebpackHealthPlugin = require("./plugins/health-check/webpack-health-plugin");
+21|  setupHealthEndpoints = require("./plugins/health-check/health-endpoints");
+22|  healthPluginInstance = new WebpackHealthPlugin();
+23|}
+24|
+25|let webpackConfig = {
+26|  eslint: {
+27|    configure: {
+28|      extends: ["plugin:react-hooks/recommended"],
+29|      rules: {
+30|        "react-hooks/rules-of-hooks": "error",
+31|        "react-hooks/exhaustive-deps": "warn",
+32|      },
+33|    },
+34|  },
+35|  webpack: {
+36|    alias: {
+37|      '@': path.resolve(__dirname, 'src'),
+38|    },
+39|    configure: (webpackConfig) => {
+40|
+41|      // Add ignored patterns to reduce watched directories
+42|        webpackConfig.watchOptions = {
+43|          ...webpackConfig.watchOptions,
+44|          ignored: [
+45|            '**/node_modules/**',
+46|            '**/.git/**',
+47|            '**/build/**',
+48|            '**/dist/**',
+49|            '**/coverage/**',
+50|            '**/public/**',
+51|        ],
+52|      };
+53|
+54|      // Add health check plugin to webpack if enabled
+55|      if (config.enableHealthCheck && healthPluginInstance) {
+56|        webpackConfig.plugins.push(healthPluginInstance);
+57|      }
+58|      return webpackConfig;
+59|    },
+60|  },
+61|};
+62|
+63|webpackConfig.devServer = (devServerConfig) => {
+64|  // Add health check endpoints if enabled
+65|  if (config.enableHealthCheck && setupHealthEndpoints && healthPluginInstance) {
+66|    const originalSetupMiddlewares = devServerConfig.setupMiddlewares;
+67|
+68|    devServerConfig.setupMiddlewares = (middlewares, devServer) => {
+69|      // Call original setup if exists
+70|      if (originalSetupMiddlewares) {
+71|        middlewares = originalSetupMiddlewares(middlewares, devServer);
+72|      }
+73|
+74|      // Setup health endpoints
+75|      setupHealthEndpoints(devServer, healthPluginInstance);
+76|
+77|      return middlewares;
+78|    };
+79|  }
+80|
+81|  return devServerConfig;
+82|};
+83|
+84|// Wrap with visual edits (automatically adds babel plugin, dev server, and overlay in dev mode)
+85|if (isDevServer) {
+86|  try {
+87|    const { withVisualEdits } = require("@emergentbase/visual-edits/craco");
+88|    webpackConfig = withVisualEdits(webpackConfig);
+89|  } catch (err) {
+90|    if (err.code === 'MODULE_NOT_FOUND' && err.message.includes('@emergentbase/visual-edits/craco')) {
+91|      console.warn(
+92|        "[visual-edits] @emergentbase/visual-edits not installed — visual editing disabled."
+93|      );
+94|    } else {
+95|      throw err;
+96|    }
+97|  }
+98|}
+99|
+100|module.exports = webpackConfig;
+101|
+
+===END
+
+I have full context now. Let me build the backend first — questions API, attempt storage, and AI notes generation (Claude Haiku) with a robust deterministic fallback.
+Action: file_editor create /app/backend/server.py --file-text "from fastapi import FastAPI, APIRouter, HTTPException
+from dotenv import load_dotenv
+from starlette.middleware.cors import CORSMiddleware
+from motor.motor_asyncio import AsyncIOMotorClient
+import os
+import json
+import logging
+from pathlib import Path
+from pydantic import BaseModel, Field
+from typing import List, Optional, Any, Dict
+import uuid
+from datetime import datetime, timezone
+
+ROOT_DIR = Path(__file__).parent
+load_dotenv(ROOT_DIR / '.env')
+
+# MongoDB connection
+mongo_url = os.environ['MONGO_URL']
+client = AsyncIOMotorClient(mongo_url)
+db = client[os.environ['DB_NAME']]
+
+app = FastAPI(title=\"MEDHA API\")
+api_router = APIRouter(prefix=\"/api\")
+
+logging.basicConfig(level=logging.INFO,
+                    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+logger = logging.getLogger(\"medha\")
+
+# ──────────────────────────────────────────────────────────────
+#  Biology question bank (HSC level — Bangladesh medical admission)
+#  Each question carries teaching metadata so notes always work,
+#  even without AI (deterministic fallback).
+# ──────────────────────────────────────────────────────────────
+QUESTIONS: List[Dict[str, Any]] = [
+    {
+        \"id\": 1,
+        \"chapter\": \"কোষ ও এর গঠন\",
+        \"text\": \"ইউক্যারিওটিক কোষে কোন অঙ্গাণু কোষীয় শ্বসনের মাধ্যমে ATP উৎপন্ন করে?\",
+        \"options\": [\"নিউক্লিয়াস\", \"রাইবোজোম\", \"মাইটোকন্ড্রিয়া\", \"লাইসোজোম\"],
+        \"correctIndex\": 2,
+        \"concept\": \"মাইটোকন্ড্রিয়া ও ATP উৎপাদন\",
+        \"explanation\": \"মাইটোকন্ড্রিয়া কোষের শক্তি-কারখানা; এটি গ্লুকোজ ও অক্সিজেন ব্যবহার করে কোষীয় শ্বসনের মাধ্যমে ATP তৈরি করে।\",
+        \"memoryTrick\": \"মাইটো = শক্তির কারখানা (powerhouse)। ATP মানেই মাইটোকন্ড্রিয়া।\",
+        \"trap\": \"ক্লোরোপ্লাস্ট আলোক-শক্তি ধরে, কিন্তু ATP-এর প্রধান উৎস মাইটোকন্ড্রিয়া — দুটো গুলিয়ে ফেলো না।\"
+    },
+    {
+        \"id\": 2,
+        \"chapter\": \"সালোকসংশ্লেষণ\",
+        \"text\": \"উদ্ভিদ সূর্যালোককে রাসায়নিক শক্তিতে রূপান্তরিত করার প্রক্রিয়াকে কী বলে?\",
+        \"options\": [\"কোষীয় শ্বসন\", \"প্রস্বেদন\", \"সালোকসংশ্লেষণ\", \"গাঁজন\"],
+        \"correctIndex\": 2,
+        \"concept\": \"সালোকসংশ্লেষণ বনাম অনুরূপ প্রক্রিয়া\",
+        \"explanation\": \"সালোকসংশ্লেষণে উদ্ভিদ CO₂ ও জল থেকে সূর্যালোকের সাহায্যে গ্লুকোজ ও অক্সিজেন তৈরি করে।\",
+        \"memoryTrick\": \"ফটো = আলো, সিন্থেসিস = তৈরি — আলো দিয়ে খাদ্য তৈরি।\",
+        \"trap\": \"কোষীয় শ্বসন উল্টো প্রক্রিয়া — এটি খাদ্য ভেঙে শক্তি মুক্ত করে।\"
+    },
+    {
+        \"id\": 3,
+        \"chapter\": \"কোষ বিভাজন\",
+        \"text\": \"কোষ চক্রের কোন দশায় DNA-এর প্রতিলিপি (replication) সম্পন্ন হয়?\",
+        \"options\": [\"G₁ দশা\", \"G₂ দশা\", \"S দশা\", \"M দশা\"],
+        \"correctIndex\": 2,
+        \"concept\": \"S দশা ও DNA প্রতিলিপি\",
+        \"explanation\": \"কোষ চক্র G₁ → S → G₂ → M ক্রমে চলে। DNA কেবল S (Synthesis) দশায় কপি হয়।\",
+        \"memoryTrick\": \"S = Synthesis = DNA সংশ্লেষণ। শুধু S দশাতেই DNA দ্বিগুণ হয়।\",
+        \"trap\": \"G₂ দেখে মনে হয় 'বিভাজনের প্রস্তুতি', কিন্তু তখন DNA কপি আগেই শেষ।\"
+    },
+    {
+        \"id\": 4,
+        \"chapter\": \"নিউক্লিক অ্যাসিড\",
+        \"text\": \"নিউক্লিয়াস থেকে রাইবোজোমে জিনগত তথ্য বহন করে কোন অণু?\",
+        \"options\": [\"tRNA\", \"mRNA\", \"rRNA\", \"snRNA\"],
+        \"correctIndex\": 1,
+        \"concept\": \"RNA-এর প্রকারভেদ ও কাজ\",
+        \"explanation\": \"mRNA (messenger RNA) DNA থেকে কোডন কপি করে রাইবোজোমে বহন করে, যেখানে প্রোটিন তৈরি হয়।\",
+        \"memoryTrick\": \"m = messenger = বার্তাবাহক। তথ্য বহন করলেই mRNA।\",
+        \"trap\": \"tRNA অ্যামিনো অ্যাসিড আনে, rRNA রাইবোজোম গঠন করে — তথ্য বহন করে না।\"
+    },
+    {
+        \"id\": 5,
+        \"chapter\": \"এনজাইম\",
+        \"text\": \"এনজাইম কীভাবে রাসায়নিক বিক্রিয়ার হার বৃদ্ধি করে?\",
+        \"options\": [\"সক্রিয়ন শক্তি কমিয়ে\", \"তাপমাত্রা বাড়িয়ে\", \"বিক্রিয়ক ধ্বংস করে\", \"pH বাড়িয়ে\"],
+        \"correctIndex\": 0,
+        \"concept\": \"এনজাইম ও সক্রিয়ন শক্তি\",
+        \"explanation\": \"এনজাইম জৈব অনুঘটক; এটি বিক্রিয়ার সক্রিয়ন শক্তি (activation energy) কমিয়ে বিক্রিয়ার হার বাড়ায়, নিজে অপরিবর্তিত থাকে।\",
+        \"memoryTrick\": \"এনজাইম = শর্টকাট পথ — কম শক্তিতেই বিক্রিয়া হয়।\",
+        \"trap\": \"এনজাইম তাপমাত্রা বা pH পরিবর্তন করে না; বরং নির্দিষ্ট তাপ-pH-এ সর্বোচ্চ কাজ করে।\"
+    },
+    {
+        \"id\": 6,
+        \"chapter\": \"রক্ত ও সংবহন\",
+        \"text\": \"রক্তে অক্সিজেন পরিবহনের জন্য দায়ী প্রোটিন কোনটি?\",
+        \"options\": [\"অ্যালবুমিন\", \"হিমোগ্লোবিন\", \"ফাইব্রিনোজেন\", \"গ্লোবিউলিন\"],
+        \"correctIndex\": 1,
+        \"concept\": \"হিমোগ্লোবিন ও অক্সিজেন পরিবহন\",
+        \"explanation\": \"হিমোগ্লোবিন লোহিত রক্তকণিকার লৌহযুক্ত প্রোটিন; এটি ফুসফুস থেকে অক্সিজেন গ্রহণ করে কোষে পৌঁছে দেয়।\",
+        \"memoryTrick\": \"হিমো = লোহা (heme) → লোহা অক্সিজেন ধরে।\",
+        \"trap\": \"ফাইব্রিনোজেন রক্ত জমাট বাঁধায়, অক্সিজেন বহন করে না।\"
+    },
+    {
+        \"id\": 7,
+        \"chapter\": \"শ্বসন\",
+        \"text\": \"অক্সিজেনের অনুপস্থিতিতে মানব পেশিকোষে গ্লুকোজ ভেঙে কী উৎপন্ন হয়?\",
+        \"options\": [\"ইথানল\", \"ল্যাকটিক অ্যাসিড\", \"কার্বন ডাই-অক্সাইড\", \"অ্যাসিটিক অ্যাসিড\"],
+        \"correctIndex\": 1,
+        \"concept\": \"অবাত শ্বসন (Anaerobic respiration)\",
+        \"explanation\": \"অক্সিজেন ছাড়া মানব পেশিকোষে গ্লুকোজ অবাত শ্বসনে ল্যাকটিক অ্যাসিডে পরিণত হয়, যা পেশিতে ক্লান্তি সৃষ্টি করে।\",
+        \"memoryTrick\": \"মানুষ → ল্যাকটিক অ্যাসিড; ইস্ট → ইথানল।\",
+        \"trap\": \"ইথানল উৎপন্ন হয় ইস্ট/উদ্ভিদে, মানব পেশিতে নয়।\"
+    },
+    {
+        \"id\": 8,
+        \"chapter\": \"বংশগতি\",
+        \"text\": \"মেন্ডেলের একসংকর জননে F₂ জনুতে ফেনোটাইপিক অনুপাত কত?\",
+        \"options\": [\"1 : 1\", \"9 : 3 : 3 : 1\", \"3 : 1\", \"1 : 2 : 1\"],
+        \"correctIndex\": 2,
+        \"concept\": \"মেন্ডেলের একসংকর জনন\",
+        \"explanation\": \"একসংকর জননে (একটি বৈশিষ্ট্য) F₂ জনুতে প্রকট ও প্রচ্ছন্নের ফেনোটাইপিক অনুপাত হয় 3 : 1।\",
+        \"memoryTrick\": \"একসংকর = 3:1 (ফেনোটাইপ), 1:2:1 (জিনোটাইপ)।\",
+        \"trap\": \"9:3:3:1 হলো দ্বিসংকর জননের অনুপাত — একসংকরের সাথে মিলিয়ে ফেলো না।\"
+    }
+]
+
+# Chapter frequency in admission exams (static reference data)
+CHAPTER_FREQUENCY: List[Dict[str, Any]] = [
+    {\"chapter\": \"কোষ ও এর গঠন\", \"frequency\": 18},
+    {\"chapter\": \"কোষ বিভাজন\", \"frequency\": 15},
+    {\"chapter\": \"নিউক্লিক অ্যাসিড\", \"frequency\": 14},
+    {\"chapter\": \"সালোকসংশ্লেষণ\", \"frequency\": 12},
+    {\"chapter\": \"বংশগতি\", \"frequency\": 11},
+    {\"chapter\": \"রক্ত ও সংবহন\", \"frequency\": 10},
+    {\"chapter\": \"এনজাইম\", \"frequency\": 9},
+    {\"chapter\": \"শ্বসন\", \"frequency\": 8},
+]
+
+QUESTION_BY_ID = {q[\"id\"]: q for q in QUESTIONS}
+
+
+# ──────────────────────────────────────────────────────────────
+#  Models
+# ──────────────────────────────────────────────────────────────
+class AttemptItem(BaseModel):
+    questionId: int
+    finalAnswerIndex: Optional[int] = None
+    clickSequence: List[str] = []
+    timeTaken: float = 0
+    confidence: Optional[str] = None  # sure | unsure | guessing
+
+
+class AttemptCreate(BaseModel):
+    mood: Optional[str] = None
+    items: List[AttemptItem]
+
+
+class NotesRequest(BaseModel):
+    dnaReport: Dict[str, Any]
+
+
+# ──────────────────────────────────────────────────────────────
+#  Classification (mirrors the frontend classifier)
+# ──────────────────────────────────────────────────────────────
+def classify_item(it: AttemptItem) -> Dict[str, Any]:
+    q = QUESTION_BY_ID[it.questionId]
+    correct_index = q[\"correctIndex\"]
+    is_correct = it.finalAnswerIndex == correct_index
+    fast = it.timeTaken <= 6
+    switched = len(it.clickSequence) >= 2
+
+    if switched:
+        group = \"confused\"
+    elif fast and not is_correct:
+        group = \"danger\"
+    elif fast and is_correct:
+        group = \"master\"
+    else:
+        group = \"slow\"
+
+    return {
+        \"questionId\": q[\"id\"],
+        \"chapter\": q[\"chapter\"],
+        \"questionText\": q[\"text\"],
+        \"options\": q[\"options\"],
+        \"correctAnswerIndex\": correct_index,
+        \"correctAnswerText\": q[\"options\"][correct_index],
+        \"finalAnswerIndex\": it.finalAnswerIndex,
+        \"finalAnswerText\": q[\"options\"][it.finalAnswerIndex] if it.finalAnswerIndex is not None else None,
+        \"timeTaken\": round(it.timeTaken, 1),
+        \"clickSequence\": it.clickSequence,
+        \"switchCount\": max(0, len(it.clickSequence) - 1),
+        \"confidence\": it.confidence,
+        \"isCorrect\": is_correct,
+        \"group\": group,
+        \"concept\": q[\"concept\"],
+        \"explanation\": q[\"explanation\"],
+        \"memoryTrick\": q[\"memoryTrick\"],
+        \"trap\": q[\"trap\"],
+    }
+
+
+def build_groups(items: List[Dict[str, Any]]) -> Dict[str, List[Dict[str, Any]]]:
+    groups = {\"slow\": [], \"confused\": [], \"master\": [], \"danger\": []}
+    for c in items:
+        groups[c[\"group\"]].append(c)
+    return groups
+
+
+def compute_readiness(items: List[Dict[str, Any]]) -> Dict[str, Any]:
+    total = len(items) or 1
+    correct = sum(1 for c in items if c[\"isCorrect\"])
+    master = sum(1 for c in items if c[\"group\"] == \"master\")
+    danger = sum(1 for c in items if c[\"group\"] == \"danger\")
+    confused = sum(1 for c in items if c[\"group\"] == \"confused\")
+    slow = sum(1 for c in items if c[\"group\"] == \"slow\")
+    avg_time = round(sum(c[\"timeTaken\"] for c in items) / total, 1)
+
+    # Readiness: accuracy weighted, penalise danger & confusion, reward mastery
+    score = (correct / total) * 70 + (master / total) * 30
+    score -= (danger / total) * 20 + (confused / total) * 8
+    score = max(0, min(100, round(score)))
+
+    return {
+        \"score\": score,
+        \"correct\": correct,
+        \"total\": total,
+        \"master\": master,
+        \"danger\": danger,
+        \"confused\": confused,
+        \"slow\": slow,
+        \"avgTime\": avg_time,
+    }
+
+
+# ──────────────────────────────────────────────────────────────
+#  Deterministic fallback notes (always works, zero tokens)
+# ──────────────────────────────────────────────────────────────
+def fallback_notes(dna_report: Dict[str, Any]) -> Dict[str, Any]:
+    notes = {\"slow\": [], \"confused\": [], \"danger\": []}
+
+    for it in dna_report.get(\"slow\", []):
+        notes[\"slow\"].append({
+            \"topic\": it.get(\"concept\") or it.get(\"chapter\") or \"বিষয়\",
+            \"explanation\": it.get(\"explanation\", \"\"),
+            \"memoryTrick\": it.get(\"memoryTrick\", \"\"),
+            \"trapQuestion\": it.get(\"trap\", \"\"),
+        })
+
+    for it in dna_report.get(\"confused\", []):
+        table = [{\"concept\": it.get(\"correctAnswerText\", \"\"), \"description\": it.get(\"explanation\", \"\")}]
+        for idx, opt in enumerate(it.get(\"options\", [])):
+            if idx != it.get(\"correctAnswerIndex\"):
+                table.append({\"concept\": opt, \"description\": \"এই অপশনটি ভিন্ন একটি ধারণা — সঠিকটির সাথে গুলিয়ে ফেলো না।\"})
+        notes[\"confused\"].append({
+            \"topic\": it.get(\"concept\") or it.get(\"chapter\") or \"বিষয়\",
+            \"comparisonTable\": table,
+            \"memoryTrick\": it.get(\"memoryTrick\", \"\"),
+            \"trapQuestion\": it.get(\"trap\", \"\"),
+        })
+
+    for it in dna_report.get(\"danger\", []):
+        notes[\"danger\"].append({
+            \"topic\": it.get(\"concept\") or it.get(\"chapter\") or \"বিষয়\",
+            \"explanation\": it.get(\"explanation\", \"\"),
+            \"whyCorrect\": f\"সঠিক উত্তর '{it.get('correctAnswerText','')}' — {it.get('explanation','')}\",
+            \"whyTricked\": it.get(\"trap\", \"\"),
+            \"trapQuestion\": it.get(\"trap\", \"\"),
+        })
+
+    return notes
+
+
+# ──────────────────────────────────────────────────────────────
+#  AI notes via Emergent LLM key (Claude Haiku 4.5)
+# ──────────────────────────────────────────────────────────────
+async def ai_notes(dna_report: Dict[str, Any]) -> Optional[Dict[str, Any]]:
+    api_key = os.environ.get(\"EMERGENT_LLM_KEY\")
+    if not api_key:
+        return None
+
+    # Trim payload to essentials to minimise tokens
+    def slim(items):
+        return [{
+            \"concept\": i.get(\"concept\"),
+            \"questionText\": i.get(\"questionText\"),
+            \"options\": i.get(\"options\"),
+            \"correctAnswerText\": i.get(\"correctAnswerText\"),
+            \"finalAnswerText\": i.get(\"finalAnswerText\"),
+        } for i in items]
+
+    slim_report = {
+        \"slow\": slim(dna_report.get(\"slow\", [])),
+        \"confused\": slim(dna_report.get(\"confused\", [])),
+        \"danger\": slim(dna_report.get(\"danger\", [])),
+    }
+
+    if not (slim_report[\"slow\"] or slim_report[\"confused\"] or slim_report[\"danger\"]):
+        return {\"slow\": [], \"confused\": [], \"danger\": []}
+
+    system_message = (
+        \"You are MEDHA's study-note generator for Bangladeshi medical admission students. \"
+        \"You receive a behavioural exam report and produce concise, exam-focused Biology study notes. \"
+        \"RULES: 1) Respond with ONLY valid JSON, no markdown, no backticks. 2) Write ALL content in clean, \"
+        \"professional Bangla (Bengali). Keep it precise and academic — no slang. 3) Derive the topic from the \"
+        \"correct concept, never copy the raw question. 4) For 'confused', the comparisonTable first entry is ALWAYS \"
+        \"the correct concept; include each wrong option as a row. Keep it short.\n\n\"
+        \"OUTPUT SCHEMA:\n\"
+        '{\"slow\":[{\"topic\":\"\",\"explanation\":\"\",\"memoryTrick\":\"\",\"trapQuestion\":\"\"}],'
+        '\"confused\":[{\"topic\":\"\",\"comparisonTable\":[{\"concept\":\"\",\"description\":\"\"}],\"memoryTrick\":\"\",\"trapQuestion\":\"\"}],'
+        '\"danger\":[{\"topic\":\"\",\"explanation\":\"\",\"whyCorrect\":\"\",\"whyTricked\":\"\",\"trapQuestion\":\"\"}]}'
+    )
+
+    try:
+        from emergentintegrations.llm.chat import LlmChat, UserMessage
+        chat = LlmChat(
+            api_key=api_key,
+            session_id=f\"medha-notes-{uuid.uuid4()}\",
+            system_message=system_message,
+        ).with_model(\"anthropic\", \"claude-haiku-4-5-20251001\")
+
+        user_msg = UserMessage(text=\"DNA REPORT JSON:\n\" + json.dumps(slim_report, ensure_ascii=False))
+        resp = await chat.send_message(user_msg)
+
+        text = (resp or \"\").strip()
+        if text.startswith(\"```\"):
+            text = text.strip(\"`\")
+            if text.lower().startswith(\"json\"):
+                text = text[4:]
+            text = text.strip()
+        # find JSON braces
+        start, end = text.find(\"{\"), text.rfind(\"}\")
+        if start != -1 and end != -1:
+            text = text[start:end + 1]
+        data = json.loads(text)
+        # basic shape guard
+        for k in (\"slow\", \"confused\", \"danger\"):
+            data.setdefault(k, [])
+        return data
+    except Exception as e:  # noqa
+        logger.warning(f\"AI notes failed, using fallback: {e}\")
+        return None
+
+
+# ──────────────────────────────────────────────────────────────
+#  Routes
+# ──────────────────────────────────────────────────────────────
+@api_router.get(\"/\")
+async def root():
+    return {\"message\": \"MEDHA API live\"}
+
+
+@api_router.get(\"/questions\")
+async def get_questions():
+    # Return questions without revealing the correct answer index
+    public = [{
+        \"id\": q[\"id\"],
+        \"chapter\": q[\"chapter\"],
+        \"text\": q[\"text\"],
+        \"options\": q[\"options\"],
+    } for q in QUESTIONS]
+    return {\"questions\": public, \"total\": len(public)}
+
+
+@api_router.get(\"/chapters\")
+async def get_chapters():
+    return {\"chapters\": CHAPTER_FREQUENCY}
+
+
+@api_router.post(\"/attempts\")
+async def create_attempt(payload: AttemptCreate):
+    classified = [classify_item(it) for it in payload.items]
+    groups = build_groups(classified)
+    readiness = compute_readiness(classified)
+
+    doc = {
+        \"id\": str(uuid.uuid4()),
+        \"createdAt\": datetime.now(timezone.utc).isoformat(),
+        \"mood\": payload.mood,
+        \"items\": classified,
+        \"groups\": groups,
+        \"readiness\": readiness,
+    }
+    await db.attempts.insert_one({**doc})
+    doc.pop(\"_id\", None)
+    return doc
+
+
+@api_router.get(\"/attempts\")
+async def list_attempts():
+    rows = await db.attempts.find({}, {\"_id\": 0}).sort(\"createdAt\", -1).to_list(50)
+    summary = [{
+        \"id\": r[\"id\"],
+        \"createdAt\": r[\"createdAt\"],
+        \"mood\": r.get(\"mood\"),
+        \"readiness\": r.get(\"readiness\", {}),
+    } for r in rows]
+    return {\"attempts\": summary}
+
+
+@api_router.get(\"/attempts/{attempt_id}\")
+async def get_attempt(attempt_id: str):
+    r = await db.attempts.find_one({\"id\": attempt_id}, {\"_id\": 0})
+    if not r:
+        raise HTTPException(status_code=404, detail=\"Attempt not found\")
+    return r
+
+
+@api_router.post(\"/notes\")
+async def generate_notes(req: NotesRequest):
+    data = await ai_notes(req.dnaReport)
+    if data is None:
+        return {\"notes\": fallback_notes(req.dnaReport), \"source\": \"fallback\"}
+    return {\"notes\": data, \"source\": \"ai\"}
+
+
+app.include_router(api_router)
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_credentials=True,
+    allow_origins=os.environ.get('CORS_ORIGINS', '*').split(','),
+    allow_methods=[\"*\"],
+    allow_headers=[\"*\"],
+)
+
+
+@app.on_event(\"shutdown\")
+async def shutdown_db_client():
+    client.close()
+"
+Observation: Overwrite successful: /app/backend/server.py
+
+
+Action: file_editor str_replace /app/backend/.env --old-str "CORS_ORIGINS=\"*\"" --new-str "CORS_ORIGINS=\"*\"
+EMERGENT_LLM_KEY=sk-emergent-dA5890fF7233437A38"
+Observation: Edit was successful.
+
+Now let me restart the backend and build the frontend. First the design system CSS and data/utils files.
+Action: $ sudo supervisorctl restart backend && sleep 3 && curl -s http://localhost:8001/api/questions | head -c 300 && echo "" && curl -s http://localhost:8001/api/chapters | head -c 200
+Observation: backend: stopped
+backend: started
+{"questions":[{"id":1,"chapter":"কোষ ও এর গঠন","text":"ইউক্যারিওটিক কোষে কোন অঙ্গাণু কোষীয় শ্বসনের মাধ্যমে ATP উৎপন্ন করে?","options":["নিউক্লিয়াস",
+{"chapters":[{"chapter":"কোষ ও এর গঠন","frequency":18},{"chapter":"কোষ বিভাজন","frequency":15},{"chapter":"নিউক্লিক অ্যাসিড","frequenc
+Exit code: 0
+
+
+Backend is live. Now let me build the frontend design system and all components. Starting with the CSS design system and the main app shell.
+Action: file_editor create /app/frontend/src/App.css --file-text "/* ============================================================
+   MEDHA — Premium dark design system
+   Fonts: Syne (display) · DM Sans (body) · DM Mono (data)
+   ============================================================ */
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@500;600;700;800&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=DM+Mono:wght@400;500&display=swap');
+
+:root {
+  --bg: #0e0e11;
+  --bg-2: #121216;
+  --surface: #16161a;
+  --surface-2: #1c1c22;
+  --border: rgba(255, 255, 255, 0.08);
+  --border-hi: rgba(255, 255, 255, 0.16);
+  --text: #f4f4f6;
+  --text-dim: #a1a1aa;
+  --text-faint: #6b6b76;
+  --accent: #7c6fff;
+  --accent-hi: #6b5ce6;
+  --green: #22c97a;
+  --red: #ff4f6a;
+  --amber: #f5a623;
+  --r-sm: 8px;
+  --r-md: 12px;
+  --r-lg: 18px;
+  --maxw: 1120px;
+  --mono: 'DM Mono', ui-monospace, monospace;
+  --display: 'Syne', sans-serif;
+  --body: 'DM Sans', sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+body, .App {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--body);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* subtle noise + radial light */
+.app-bg {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background:
+    radial-gradient(900px 500px at 50% -10%, rgba(124, 111, 255, 0.16), transparent 70%),
+    radial-gradient(700px 500px at 90% 10%, rgba(124, 111, 255, 0.06), transparent 60%),
+    var(--bg);
+}
+.app-bg::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  opacity: 0.035;
+  background-image: url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E\");
+}
+
+::selection { background: rgba(124, 111, 255, 0.35); color: #fff; }
+
+h1, h2, h3 { font-family: var(--display); letter-spacing: -0.02em; margin: 0; }
+
+.mono { font-family: var(--mono); }
+
+/* ---------- Layout ---------- */
+.wrap { max-width: var(--maxw); margin: 0 auto; padding: 0 24px; }
+.view { min-height: 100vh; padding-top: 84px; padding-bottom: 80px; animation: fadeUp 0.5s ease both; }
+
+@keyframes fadeUp { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: translateY(0); } }
+
+/* ---------- NavBar ---------- */
+.nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 50;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 14px 24px;
+  background: rgba(14, 14, 17, 0.7);
+  backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--border);
+}
+.nav-logo { font-family: var(--display); font-weight: 800; font-size: 22px; letter-spacing: -0.03em; cursor: pointer; }
+.nav-logo span { color: var(--accent); }
+.nav-tabs { display: flex; gap: 4px; overflow-x: auto; }
+.nav-tab {
+  font-family: var(--body); font-size: 13px; font-weight: 500;
+  color: var(--text-dim); background: transparent; border: none; cursor: pointer;
+  padding: 8px 14px; border-radius: 999px; white-space: nowrap; transition: color .2s, background .2s;
+}
+.nav-tab:hover { color: var(--text); }
+.nav-tab.active { color: #fff; background: rgba(124, 111, 255, 0.16); }
+
+/* ---------- Pills / eyebrow ---------- */
+.pill {
+  display: inline-flex; align-items: center; gap: 8px;
+  font-family: var(--mono); font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase;
+  color: var(--text-dim); padding: 6px 12px; border: 1px solid var(--border);
+  border-radius: 999px; background: rgba(255, 255, 255, 0.02);
+}
+.pill .dot { width: 7px; height: 7px; border-radius: 50%; background: var(--accent); animation: blink 1.6s infinite; }
+@keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0.25; } }
+
+/* ---------- Buttons ---------- */
+.btn {
+  font-family: var(--body); font-weight: 600; font-size: 15px; cursor: pointer;
+  border-radius: var(--r-sm); padding: 13px 22px; border: 1px solid transparent;
+  transition: transform .15s, background .2s, border-color .2s, box-shadow .2s;
+}
+.btn:active { transform: translateY(1px); }
+.btn-primary { background: var(--accent); color: #fff; box-shadow: 0 0 24px rgba(124, 111, 255, 0.3); }
+.btn-primary:hover { background: var(--accent-hi); box-shadow: 0 0 32px rgba(124, 111, 255, 0.45); }
+.btn-ghost { background: transparent; color: var(--text); border-color: var(--border-hi); }
+.btn-ghost:hover { border-color: var(--text-dim); background: rgba(255, 255, 255, 0.03); }
+.btn:disabled { opacity: 0.4; cursor: not-allowed; box-shadow: none; }
+
+/* ---------- Cards ---------- */
+.card {
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--r-lg); padding: 24px;
+}
+.card-hi { background: var(--surface-2); }
+
+.section-head { margin-bottom: 28px; }
+.section-head h2 { font-size: clamp(26px, 4vw, 40px); }
+.section-head p { color: var(--text-dim); margin-top: 8px; font-size: 15px; }
+
+/* ============================================================
+   LANDING
+   ============================================================ */
+.hero { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 48px; align-items: center; padding-top: 40px; }
+.hero h1 { font-size: clamp(40px, 6vw, 68px); line-height: 1.02; font-weight: 800; margin: 22px 0; }
+.hero h1 .accent { background: linear-gradient(120deg, #9b8cff, #7c6fff); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.hero p { color: var(--text-dim); font-size: 17px; line-height: 1.6; max-width: 480px; }
+.hero-btns { display: flex; gap: 14px; margin-top: 30px; flex-wrap: wrap; }
+
+.hero-visual { position: relative; aspect-ratio: 1; border-radius: var(--r-lg); overflow: hidden; border: 1px solid var(--border); }
+.hero-visual img { width: 100%; height: 100%; object-fit: cover; }
+.hero-visual .glass-tag {
+  position: absolute; display: flex; align-items: center; gap: 10px;
+  background: rgba(20, 20, 26, 0.7); backdrop-filter: blur(12px);
+  border: 1px solid var(--border-hi); border-radius: var(--r-sm); padding: 10px 14px;
+  font-size: 13px; animation: floaty 5s ease-in-out infinite;
+}
+.glass-tag .gt-val { font-family: var(--mono); font-weight: 500; }
+.glass-tag .gt-lbl { color: var(--text-dim); font-size: 11px; }
+.gt-1 { top: 16%; left: 6%; }
+.gt-2 { top: 44%; right: 6%; animation-delay: .8s; }
+.gt-3 { bottom: 12%; left: 12%; animation-delay: 1.6s; }
+@keyframes floaty { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
+
+.stats-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 64px; }
+.stat { text-align: left; }
+.stat .num { font-family: var(--mono); font-size: 30px; color: #fff; }
+.stat .lbl { color: var(--text-dim); font-size: 13px; margin-top: 4px; }
+
+.feature-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 28px; }
+.feature-ic { width: 42px; height: 42px; border-radius: 10px; display: grid; place-items: center; background: rgba(124, 111, 255, 0.12); color: var(--accent); margin-bottom: 14px; }
+.feature-card h3 { font-size: 18px; margin-bottom: 8px; }
+.feature-card p { color: var(--text-dim); font-size: 14px; line-height: 1.55; }
+
+/* classifier explainer */
+.classifier-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin-top: 24px; }
+.cls-card { border-radius: var(--r-md); padding: 18px; border: 1px solid var(--border); }
+.cls-card .cls-tag { font-family: var(--mono); font-size: 11px; text-transform: uppercase; letter-spacing: .1em; }
+.cls-card h4 { font-family: var(--display); font-size: 16px; margin: 8px 0 6px; }
+.cls-card p { color: var(--text-dim); font-size: 13px; line-height: 1.5; }
+.cls-master { border-color: rgba(34, 201, 122, 0.25); background: linear-gradient(180deg, rgba(34, 201, 122, 0.08), transparent); }
+.cls-master .cls-tag { color: var(--green); }
+.cls-slow { border-color: rgba(245, 166, 35, 0.25); background: linear-gradient(180deg, rgba(245, 166, 35, 0.08), transparent); }
+.cls-slow .cls-tag { color: var(--amber); }
+.cls-confused { border-color: rgba(124, 111, 255, 0.3); background: linear-gradient(180deg, rgba(124, 111, 255, 0.1), transparent); }
+.cls-confused .cls-tag { color: var(--accent); }
+.cls-danger { border-color: rgba(255, 79, 106, 0.25); background: linear-gradient(180deg, rgba(255, 79, 106, 0.08), transparent); }
+.cls-danger .cls-tag { color: var(--red); }
+
+.how-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 14px; margin-top: 24px; }
+.how-step .how-n { font-family: var(--mono); color: var(--accent); font-size: 13px; }
+.how-step h4 { font-size: 15px; margin: 8px 0 6px; font-family: var(--display); }
+.how-step p { color: var(--text-dim); font-size: 13px; line-height: 1.5; }
+
+.footer { border-top: 1px solid var(--border); margin-top: 80px; padding: 40px 0; color: var(--text-faint); font-size: 13px; }
+
+/* ============================================================
+   MOOD CHECK
+   ============================================================ */
+.mood-wrap { max-width: 560px; margin: 40px auto 0; text-align: center; }
+.mood-opts { display: flex; gap: 12px; justify-content: center; margin: 28px 0; flex-wrap: wrap; }
+.mood-opt {
+  width: 92px; padding: 16px 10px; border-radius: var(--r-md); border: 1px solid var(--border);
+  background: var(--surface); cursor: pointer; transition: border-color .2s, transform .15s, background .2s;
+}
+.mood-opt:hover { transform: translateY(-3px); border-color: var(--border-hi); }
+.mood-opt.sel { border-color: var(--accent); background: rgba(124, 111, 255, 0.1); }
+.mood-opt .m-ic { color: var(--text); margin-bottom: 8px; display: grid; place-items: center; }
+.mood-opt .m-lbl { font-size: 13px; color: var(--text-dim); }
+.mood-note { color: var(--amber); font-size: 14px; margin-bottom: 20px; }
+
+/* ============================================================
+   EXAM
+   ============================================================ */
+.exam-wrap { max-width: 760px; margin: 0 auto; }
+.exam-top { display: flex; align-items: center; gap: 18px; margin-bottom: 30px; }
+.progress { flex: 1; }
+.progress-bar { height: 6px; background: var(--surface-2); border-radius: 999px; overflow: hidden; }
+.progress-fill { height: 100%; background: linear-gradient(90deg, var(--accent), #9b8cff); border-radius: 999px; transition: width .4s ease; }
+.progress-lbl { font-family: var(--mono); font-size: 12px; color: var(--text-dim); margin-top: 8px; display: block; }
+.timer { position: relative; width: 52px; height: 52px; flex-shrink: 0; }
+.timer svg { transform: rotate(-90deg); }
+.timer .track { fill: none; stroke: var(--surface-2); stroke-width: 4; }
+.timer .ring { fill: none; stroke: var(--accent); stroke-width: 4; stroke-linecap: round; transition: stroke-dashoffset 1s linear, stroke .3s; }
+.timer .ring.urgent { stroke: var(--red); }
+.timer .num { position: absolute; inset: 0; display: grid; place-items: center; font-family: var(--mono); font-size: 15px; }
+
+.q-box { margin-bottom: 24px; }
+.q-tag { font-family: var(--mono); font-size: 11px; color: var(--accent); text-transform: uppercase; letter-spacing: .1em; }
+.q-text { font-size: 22px; font-weight: 500; line-height: 1.4; margin-top: 10px; }
+.opts { display: grid; gap: 12px; }
+.opt {
+  display: flex; align-items: center; gap: 14px; text-align: left;
+  padding: 16px 18px; border-radius: var(--r-md); border: 1px solid var(--border);
+  background: var(--surface); color: var(--text); cursor: pointer; font-size: 16px;
+  transition: border-color .15s, background .15s, transform .1s; font-family: var(--body);
+}
+.opt:hover { border-color: var(--border-hi); }
+.opt.sel { border-color: var(--accent); background: rgba(124, 111, 255, 0.1); }
+.opt-letter {
+  width: 30px; height: 30px; flex-shrink: 0; border-radius: 8px; display: grid; place-items: center;
+  font-family: var(--mono); font-size: 14px; background: var(--surface-2); color: var(--text-dim);
+}
+.opt.sel .opt-letter { background: var(--accent); color: #fff; }
+
+.confidence { margin-top: 24px; animation: fadeUp .35s ease both; }
+.confidence .c-label { font-size: 14px; color: var(--text-dim); margin-bottom: 12px; }
+.conf-opts { display: flex; gap: 10px; }
+.conf-opt {
+  flex: 1; padding: 12px; border-radius: var(--r-sm); border: 1px solid var(--border);
+  background: var(--surface); cursor: pointer; font-size: 14px; color: var(--text-dim);
+  transition: all .15s; font-family: var(--body);
+}
+.conf-opt:hover { border-color: var(--border-hi); color: var(--text); }
+.conf-opt.sel { border-color: var(--accent); color: #fff; background: rgba(124, 111, 255, 0.12); }
+.exam-nav { display: flex; justify-content: space-between; margin-top: 30px; }
+
+/* ============================================================
+   RESULT
+   ============================================================ */
+.result-hero { display: flex; align-items: center; gap: 28px; margin-bottom: 36px; }
+.score-ring { position: relative; width: 132px; height: 132px; flex-shrink: 0; }
+.score-ring svg { transform: rotate(-90deg); }
+.score-ring .track { fill: none; stroke: var(--surface-2); stroke-width: 9; }
+.score-ring .arc { fill: none; stroke: var(--green); stroke-width: 9; stroke-linecap: round; transition: stroke-dashoffset 1.1s cubic-bezier(.4, 0, .2, 1); }
+.score-ring .inner { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+.score-ring .num { font-family: var(--mono); font-size: 40px; line-height: 1; }
+.score-ring .den { font-family: var(--mono); color: var(--text-dim); font-size: 15px; }
+.score-title { font-family: var(--display); font-size: 28px; font-weight: 700; }
+.score-sub { color: var(--text-dim); margin-top: 6px; }
+
+.result-list { display: grid; gap: 14px; }
+.result-card { padding: 18px 20px; }
+.result-q { font-size: 15px; font-weight: 500; margin-bottom: 14px; line-height: 1.4; }
+.result-opts { display: grid; gap: 8px; }
+.r-opt { display: flex; align-items: center; gap: 10px; padding: 10px 12px; border-radius: var(--r-sm); font-size: 14px; border: 1px solid transparent; color: var(--text-dim); }
+.r-opt .r-let { font-family: var(--mono); font-size: 12px; width: 22px; }
+.r-opt.correct { background: rgba(34, 201, 122, 0.1); border-color: rgba(34, 201, 122, 0.3); color: #c8f5dd; }
+.r-opt.wrong { background: rgba(255, 79, 106, 0.1); border-color: rgba(255, 79, 106, 0.3); color: #ffced6; }
+.r-icon { margin-left: auto; font-family: var(--mono); }
+
+/* ============================================================
+   DNA REPORT
+   ============================================================ */
+.dna-group { margin-bottom: 26px; border-radius: var(--r-lg); border: 1px solid var(--border); padding: 20px; }
+.dna-group-head { display: flex; align-items: center; gap: 14px; margin-bottom: 16px; }
+.dna-group-ic { width: 40px; height: 40px; border-radius: 10px; display: grid; place-items: center; flex-shrink: 0; }
+.dna-group-meta { flex: 1; }
+.dna-group-tag { font-family: var(--mono); font-size: 11px; text-transform: uppercase; letter-spacing: .1em; }
+.dna-group-label { display: block; font-family: var(--display); font-size: 18px; font-weight: 600; margin-top: 2px; }
+.dna-group-count { font-family: var(--mono); font-size: 12px; color: var(--text-dim); }
+.dna-cards { display: grid; gap: 14px; }
+.no-group { color: var(--text-faint); font-size: 14px; padding: 8px 2px; }
+
+.g-master { border-color: rgba(34, 201, 122, 0.22); background: linear-gradient(180deg, rgba(34, 201, 122, 0.06), transparent); }
+.g-master .dna-group-ic { background: rgba(34, 201, 122, 0.14); color: var(--green); }
+.g-master .dna-group-tag { color: var(--green); }
+.g-slow { border-color: rgba(245, 166, 35, 0.22); background: linear-gradient(180deg, rgba(245, 166, 35, 0.06), transparent); }
+.g-slow .dna-group-ic { background: rgba(245, 166, 35, 0.14); color: var(--amber); }
+.g-slow .dna-group-tag { color: var(--amber); }
+.g-confused { border-color: rgba(124, 111, 255, 0.28); background: linear-gradient(180deg, rgba(124, 111, 255, 0.08), transparent); }
+.g-confused .dna-group-ic { background: rgba(124, 111, 255, 0.16); color: var(--accent); }
+.g-confused .dna-group-tag { color: var(--accent); }
+.g-danger { border-color: rgba(255, 79, 106, 0.22); background: linear-gradient(180deg, rgba(255, 79, 106, 0.06), transparent); }
+.g-danger .dna-group-ic { background: rgba(255, 79, 106, 0.14); color: var(--red); }
+.g-danger .dna-group-tag { color: var(--red); }
+
+.dna-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--r-md); padding: 18px; }
+.dna-card-time { font-family: var(--mono); font-size: 12px; color: var(--text-dim); display: inline-flex; align-items: center; gap: 6px; margin-bottom: 10px; }
+.dna-q { font-size: 15px; font-weight: 500; line-height: 1.45; margin-bottom: 14px; }
+.dna-opts { display: grid; gap: 7px; margin-bottom: 14px; }
+.dna-opt { display: flex; align-items: center; gap: 10px; padding: 9px 12px; border-radius: var(--r-sm); font-size: 14px; border: 1px solid var(--border); color: var(--text-dim); }
+.dna-opt .d-let { font-family: var(--mono); font-size: 12px; width: 20px; }
+.dna-opt.correct { background: rgba(34, 201, 122, 0.1); border-color: rgba(34, 201, 122, 0.3); color: #c8f5dd; }
+.dna-opt.wrong { background: rgba(255, 79, 106, 0.1); border-color: rgba(255, 79, 106, 0.3); color: #ffced6; }
+.d-icon { margin-left: auto; font-family: var(--mono); }
+.click-path { font-size: 13px; color: var(--text-dim); display: flex; align-items: center; gap: 8px; flex-wrap: wrap; margin-bottom: 12px; }
+.cp-label { font-family: var(--mono); font-size: 11px; text-transform: uppercase; letter-spacing: .08em; }
+.cp-node { font-family: var(--mono); width: 26px; height: 26px; display: grid; place-items: center; border-radius: 7px; background: var(--surface-2); border: 1px solid var(--border); font-size: 12px; }
+.cp-node.final-right { background: rgba(34, 201, 122, 0.18); border-color: var(--green); color: #c8f5dd; }
+.cp-node.final-wrong { background: rgba(255, 79, 106, 0.18); border-color: var(--red); color: #ffced6; }
+.cp-arrow { color: var(--text-faint); }
+.dna-insight { font-size: 13.5px; line-height: 1.5; padding: 12px 14px; border-radius: var(--r-sm); border-left: 3px solid var(--border-hi); background: rgba(255, 255, 255, 0.02); }
+.ins-master { border-left-color: var(--green); }
+.ins-slow { border-left-color: var(--amber); }
+.ins-confused { border-left-color: var(--accent); }
+.ins-danger { border-left-color: var(--red); }
+
+/* ============================================================
+   STUDY NOTES
+   ============================================================ */
+.notes-loading { display: flex; flex-direction: column; align-items: center; gap: 16px; padding: 80px 0; }
+.pulse-ring { width: 54px; height: 54px; border-radius: 50%; border: 2px solid var(--accent); border-top-color: transparent; animation: spin 0.9s linear infinite; }
+@keyframes spin { to { transform: rotate(360deg); } }
+.note-card { padding: 22px; margin-bottom: 16px; }
+.note-badge { font-family: var(--mono); font-size: 11px; text-transform: uppercase; letter-spacing: .1em; padding: 5px 11px; border-radius: 999px; display: inline-block; margin-bottom: 14px; }
+.nb-slow { background: rgba(245, 166, 35, 0.12); color: var(--amber); }
+.nb-confused { background: rgba(124, 111, 255, 0.14); color: var(--accent); }
+.nb-danger { background: rgba(255, 79, 106, 0.12); color: var(--red); }
+.note-topic { font-family: var(--display); font-size: 19px; font-weight: 600; margin-bottom: 14px; }
+.note-row { margin-bottom: 12px; }
+.note-lbl { font-family: var(--mono); font-size: 11px; text-transform: uppercase; letter-spacing: .08em; color: var(--text-faint); display: block; margin-bottom: 4px; }
+.note-val { font-size: 14.5px; line-height: 1.6; color: var(--text); }
+.note-trap { font-size: 13.5px; line-height: 1.55; color: #ffe0b8; background: rgba(245, 166, 35, 0.08); border: 1px solid rgba(245, 166, 35, 0.2); border-radius: var(--r-sm); padding: 12px 14px; margin-top: 8px; }
+.cmp-table { border: 1px solid var(--border); border-radius: var(--r-sm); overflow: hidden; margin: 6px 0 12px; }
+.cmp-row { display: grid; grid-template-columns: 1fr 1.6fr; border-top: 1px solid var(--border); }
+.cmp-row:first-child { border-top: none; }
+.cmp-c { padding: 10px 13px; font-size: 13.5px; }
+.cmp-c.concept { font-family: var(--mono); font-size: 12.5px; border-right: 1px solid var(--border); }
+.cmp-row.correct { background: rgba(34, 201, 122, 0.07); }
+.cmp-row.correct .concept { color: var(--green); }
+.note-src { font-family: var(--mono); font-size: 11px; color: var(--text-faint); text-align: center; margin-top: 8px; }
+
+/* ============================================================
+   READINESS / DASHBOARD
+   ============================================================ */
+.ready-top { display: grid; grid-template-columns: 280px 1fr; gap: 24px; margin-bottom: 28px; }
+.ready-score { text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+.ready-num { font-family: var(--display); font-weight: 800; font-size: 72px; line-height: 1; background: linear-gradient(120deg, #9b8cff, #7c6fff); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.ready-lbl { font-family: var(--mono); font-size: 12px; text-transform: uppercase; letter-spacing: .12em; color: var(--text-dim); margin-top: 8px; }
+.metric-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
+.metric { padding: 16px 18px; }
+.metric .m-val { font-family: var(--mono); font-size: 26px; }
+.metric .m-lbl { font-size: 13px; color: var(--text-dim); margin-top: 4px; }
+.chap-bar { margin-bottom: 14px; }
+.chap-bar-top { display: flex; justify-content: space-between; font-size: 14px; margin-bottom: 6px; }
+.chap-bar-top .pct { font-family: var(--mono); color: var(--text-dim); }
+.chap-track { height: 8px; background: var(--surface-2); border-radius: 999px; overflow: hidden; }
+.chap-fill { height: 100%; background: linear-gradient(90deg, var(--accent), #9b8cff); border-radius: 999px; transition: width 1s ease; }
+
+/* history */
+.hist-row { display: flex; align-items: center; justify-content: space-between; padding: 16px 20px; margin-bottom: 12px; }
+.hist-row .h-date { font-family: var(--mono); font-size: 13px; color: var(--text-dim); }
+.hist-badge { font-family: var(--mono); font-size: 13px; padding: 4px 12px; border-radius: 999px; background: rgba(124, 111, 255, 0.14); color: var(--accent); }
+
+/* ---------- Intro ---------- */
+.intro { position: fixed; inset: 0; z-index: 999; background: #07070a; display: grid; place-items: center; }
+.intro-words { display: flex; gap: 8px; flex-wrap: wrap; justify-content: center; }
+.intro-word { font-family: var(--display); font-weight: 800; font-size: clamp(20px, 4vw, 38px); color: var(--text-dim); }
+.intro-word b { color: var(--accent); }
+.intro-medha { font-family: var(--display); font-weight: 800; font-size: clamp(48px, 12vw, 120px); letter-spacing: -0.04em; }
+.intro-medha span { color: var(--accent); }
+.intro-tag { font-family: var(--body); color: var(--text-dim); text-align: center; margin-top: 14px; font-size: 18px; }
+
+@media (max-width: 880px) {
+  .hero { grid-template-columns: 1fr; }
+  .hero-visual { max-width: 420px; }
+  .feature-grid, .classifier-grid, .how-grid, .stats-row { grid-template-columns: 1fr 1fr; }
+  .ready-top { grid-template-columns: 1fr; }
+  .metric-grid { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 560px) {
+  .feature-grid, .classifier-grid, .how-grid, .stats-row, .metric-grid { grid-template-columns: 1fr; }
+  .result-hero { flex-direction: column; text-align: center; }
+}
+"
+Observation: Overwrite successful: /app/frontend/src/App.css
+
+Now the utilities and components — creating them in parallel.
+Action: file_editor create /app/frontend/src/utils/medha.js --file-text "// MEDHA shared helpers — insight lines & formatting
+export const LETTERS = [\"A\", \"B\", \"C\", \"D\"];
+
+export function buildInsight(item) {
+  const t = item.timeTaken;
+  const switched = item.switchCount >= 1;
+  const correct = item.isCorrect;
+  const fast = t <= 6;
+
+  if (switched) {
+    return correct
+      ? { cls: \"ins-confused\", text: `সঠিক উত্তরে পৌঁছেছ — তবে ${item.clickSequence.join(\"→\")} পথ দেখাচ্ছে ধারণায় দ্বিধা ছিল।` }
+      : { cls: \"ins-confused\", text: `ভুল ও দ্বিধাগ্রস্ত — একাধিকবার বদলেও সঠিক উত্তর আসেনি। ধারণাটি স্পষ্ট করা দরকার।` };
+  }
+  if (fast && !correct) {
+    return { cls: \"ins-danger\", text: `ভুল অথচ দ্রুত — কোনো দ্বিধা ছাড়াই ভুল বেছেছ। আত্মবিশ্বাসী ভুলই সবচেয়ে বিপজ্জনক।` };
+  }
+  if (fast && correct) {
+    return { cls: \"ins-master\", text: `আয়ত্তে — দ্রুত, সঠিক, কোনো দ্বিধা নেই। এই ধারণাটি তোমার পুরোপুরি জানা।` };
+  }
+  return correct
+    ? { cls: \"ins-slow\", text: `সঠিক — কিন্তু ${t}s লেগেছে। এই গতিতে পরীক্ষায় সময় ফুরিয়ে যেতে পারে।` }
+    : { cls: \"ins-slow\", text: `ভুল ও ধীর — ${t}s নিয়েও সঠিক উত্তর আসেনি। বিষয়টি আবার পড়া দরকার।` };
+}
+
+export const GROUP_DEFS = {
+  master: { cls: \"g-master\", tag: \"ins-master\", tagText: \"Group 1 — Mastered\", label: \"আয়ত্তে\", empty: \"এখনো কোনো আয়ত্ত প্রশ্ন নেই।\" },
+  slow: { cls: \"g-slow\", tag: \"ins-slow\", tagText: \"Group 2 — Slow\", label: \"ধীর গতি\", empty: \"কোনো ধীর প্রশ্ন নেই — গতি দুর্দান্ত!\" },
+  confused: { cls: \"g-confused\", tag: \"ins-confused\", tagText: \"Group 3 — Confused\", label: \"বিভ্রান্ত\", empty: \"কোনো বিভ্রান্তি নেই — সিদ্ধান্ত দৃঢ় ছিল!\" },
+  danger: { cls: \"g-danger\", tag: \"ins-danger\", tagText: \"Group 4 — Confidently Wrong\", label: \"আত্মবিশ্বাসী ভুল\", empty: \"কোনো আত্মবিশ্বাসী ভুল নেই — চমৎকার!\" },
+};
+
+export function scoreTitle(pct) {
+  if (pct === 1) return \"Perfect Score\";
+  if (pct >= 0.8) return \"Excellent Work\";
+  if (pct >= 0.6) return \"Good Effort\";
+  if (pct >= 0.4) return \"Keep Pushing\";
+  return \"Needs Practice\";
+}
+"
+Observation: Create successful: /app/frontend/src/utils/medha.js
+
+
+Action: file_editor create /app/frontend/src/components/IntroAnimation.jsx --file-text "import { useEffect, useState } from \"react\";
+import { AnimatePresence, motion } from \"framer-motion\";
+
+const WORDS = [\"Merit\", \"Excellence\", \"Dedication\", \"Hustle\", \"Achievement\"];
+
+export default function IntroAnimation({ onComplete }) {
+  const [phase, setPhase] = useState(0); // 0 words, 1 medha, 2 done
+
+  useEffect(() => {
+    const t1 = setTimeout(() => setPhase(1), 2200);
+    const t2 = setTimeout(() => setPhase(2), 4000);
+    const t3 = setTimeout(() => onComplete && onComplete(), 4600);
+    return () => { [t1, t2, t3].forEach(clearTimeout); };
+  }, [onComplete]);
+
+  return (
+    <AnimatePresence>
+      {phase < 2 && (
+        <motion.div className=\"intro\" exit={{ opacity: 0 }} transition={{ duration: 0.6 }} data-testid=\"intro-animation\">
+          {phase === 0 && (
+            <div className=\"intro-words\">
+              {WORDS.map((w, i) => (
+                <motion.span key={w} className=\"intro-word\"
+                  initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: i * 0.28, duration: 0.5 }}>
+                  <b>{w[0]}</b>{w.slice(1)}
+                </motion.span>
+              ))}
+            </div>
+          )}
+          {phase === 1 && (
+            <motion.div initial={{ opacity: 0, scale: 0.92 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.6 }} style={{ textAlign: \"center\" }}>
+              <div className=\"intro-medha\">MEDH<span>A</span></div>
+              <div className=\"intro-tag\">Know how you think.</div>
+            </motion.div>
+          )}
+        </motion.div>
+      )}
+    </AnimatePresence>
+  );
+}
+"
+Observation: Create successful: /app/frontend/src/components/IntroAnimation.jsx
+
+
+Action: file_editor create /app/frontend/src/components/NavBar.jsx --file-text "export default function NavBar({ view, examDone, onNav, onRetake }) {
+  const tabs = [
+    { key: \"result\", label: \"Result\" },
+    { key: \"dna\", label: \"DNA Report\" },
+    { key: \"notes\", label: \"Study Notes\" },
+    { key: \"readiness\", label: \"Readiness\" },
+  ];
+  return (
+    <nav className=\"nav\">
+      <div className=\"nav-logo\" onClick={() => onNav(\"landing\")} data-testid=\"nav-logo\">Medha<span>.</span></div>
+      {examDone && (
+        <div className=\"nav-tabs\" data-testid=\"nav-tabs\">
+          {tabs.map((t) => (
+            <button key={t.key} className={`nav-tab ${view === t.key ? \"active\" : \"\"}`}
+              data-testid={`nav-tab-${t.key}`} onClick={() => onNav(t.key)}>
+              {t.label}
+            </button>
+          ))}
+        </div>
+      )}
+      <div>
+        {examDone ? (
+          <button className=\"nav-tab\" data-testid=\"nav-retake\" onClick={onRetake}>Retake ↻</button>
+        ) : (
+          view !== \"exam\" && view !== \"mood\" && (
+            <button className=\"btn btn-primary\" style={{ padding: \"9px 18px\", fontSize: 14 }}
+              data-testid=\"nav-start\" onClick={() => onNav(\"mood\")}>Start Exam</button>
+          )
+        )}
+      </div>
+    </nav>
+  );
+}
+"
+Observation: Create successful: /app/frontend/src/components/NavBar.jsx
+
+
+Action: file_editor create /app/frontend/src/components/Landing.jsx --file-text "import { motion } from \"framer-motion\";
+import { Timer, Repeat2, Gauge, Sparkles, Dna, Brain, ScanLine } from \"lucide-react\";
+
+const HERO_IMG = \"https://static.prod-images.emergentagent.com/jobs/60022136-80a9-4a74-b8e8-b42dc49e9be7/images/018a280c091d4daf0516f9d7580cf662b6020925e99a798ecd17efe9f32bbaa0.png\";
+
+const fade = { initial: { opacity: 0, y: 18 }, whileInView: { opacity: 1, y: 0 }, viewport: { once: true }, transition: { duration: 0.5 } };
+
+export default function Landing({ onStart, onDemo }) {
+  return (
+    <div className=\"view\" data-testid=\"landing-view\">
+      <div className=\"wrap\">
+        {/* HERO */}
+        <div className=\"hero\">
+          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
+            <span className=\"pill\"><span className=\"dot\" />Behavior Intelligence · Biology</span>
+            <h1>Exams that<br />understand<br /><span className=\"accent\">how you think</span></h1>
+            <p>MEDHA নীরবে প্রতিটি ক্লিক, দ্বিধা ও পরিবর্তন ট্র্যাক করে — তারপর তোমার আচরণকে রূপান্তরিত করে ব্যক্তিগত AI স্টাডি নোটে।</p>
+            <div className=\"hero-btns\">
+              <button className=\"btn btn-primary\" data-testid=\"start-exam-button\" onClick={onStart}>Start Exam →</button>
+              <button className=\"btn btn-ghost\" data-testid=\"see-demo-button\" onClick={onDemo}>See How It Works</button>
+            </div>
+          </motion.div>
+
+          <motion.div className=\"hero-visual\" initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.7 }}>
+            <img src={HERO_IMG} alt=\"DNA behavioral analysis\" />
+            <div className=\"glass-tag gt-1\"><Timer size={16} color=\"#f5a623\" /><div><div className=\"gt-val\">18s</div><div className=\"gt-lbl\">Avg response</div></div></div>
+            <div className=\"glass-tag gt-2\"><Dna size={16} color=\"#7c6fff\" /><div><div className=\"gt-val\">DNA</div><div className=\"gt-lbl\">Behavior mapped</div></div></div>
+            <div className=\"glass-tag gt-3\"><Sparkles size={16} color=\"#22c97a\" /><div><div className=\"gt-val\">AI Notes</div><div className=\"gt-lbl\">Generated instantly</div></div></div>
+          </motion.div>
+        </div>
+
+        {/* STATS */}
+        <div className=\"stats-row\">
+          {[[\"1,30,000+\", \"প্রতি বছর আবেদনকারী\"], [\"~4,500\", \"সরকারি মেডিকেল আসন\"], [\"29:1\", \"প্রতিযোগিতার অনুপাত\"]].map(([n, l]) => (
+            <div className=\"stat\" key={l}><div className=\"num mono\">{n}</div><div className=\"lbl\">{l}</div></div>
+          ))}
+        </div>
+
+        {/* TRACKED BEHAVIORS */}
+        <motion.div className=\"section-head\" style={{ marginTop: 80 }} {...fade}>
+          <span className=\"pill\">What MEDHA tracks</span>
+          <h2 style={{ marginTop: 16 }}>প্রতিটি সিদ্ধান্তের পেছনের আচরণ</h2>
+        </motion.div>
+        <div className=\"feature-grid\">
+          {[
+            { ic: <Timer size={20} />, t: \"সময় প্রতি প্রশ্ন\", d: \"প্রতিটি প্রশ্নে কত সেকেন্ড ব্যয় হয়েছে — দ্রুততা নাকি দ্বিধা তা প্রকাশ করে।\" },
+            { ic: <Repeat2 size={20} />, t: \"উত্তর পরিবর্তন\", d: \"তুমি কতবার অপশন বদলেছ — ধারণাগত বিভ্রান্তির স্পষ্ট সংকেত।\" },
+            { ic: <Gauge size={20} />, t: \"আত্মবিশ্বাসের মাত্রা\", d: \"প্রতিটি উত্তরে তোমার নিজের আস্থা — জ্ঞান ও আত্মবিশ্বাসের ফারাক ধরে।\" },
+          ].map((f) => (
+            <motion.div className=\"card feature-card\" key={f.t} {...fade}>
+              <div className=\"feature-ic\">{f.ic}</div>
+              <h3>{f.t}</h3><p>{f.d}</p>
+            </motion.div>
+          ))}
+        </div>
+
+        {/* CLASSIFIER EXPLAINER */}
+        <motion.div className=\"section-head\" style={{ marginTop: 80 }} {...fade}>
+          <span className=\"pill\">The Classifier</span>
+          <h2 style={{ marginTop: 16 }}>চারটি আচরণগত অবস্থা</h2>
+          <p>প্রতিটি উত্তর — গতি, সঠিকতা ও আত্মবিশ্বাসের ভিত্তিতে — চারটি ভাগের একটিতে শ্রেণিবদ্ধ হয়।</p>
+        </motion.div>
+        <div className=\"classifier-grid\">
+          {[
+            { c: \"cls-master\", tag: \"MASTERED\", h: \"দ্রুত · সঠিক\", d: \"আত্মবিশ্বাসী ও সঠিক — ধারণা পুরোপুরি আয়ত্তে।\" },
+            { c: \"cls-slow\", tag: \"SLOW\", h: \"ধীর · সঠিক/ভুল\", d: \"জানো, কিন্তু সময় বেশি নিচ্ছ — গতি বাড়ানো দরকার।\" },
+            { c: \"cls-confused\", tag: \"CONFUSED\", h: \"একাধিক পরিবর্তন\", d: \"অপশন বদলেছ — ধারণায় দ্বিধা ছিল।\" },
+            { c: \"cls-danger\", tag: \"DANGER\", h: \"দ্রুত · ভুল\", d: \"দ্বিধা ছাড়াই ভুল — সবচেয়ে বিপজ্জনক অবস্থা।\" },
+          ].map((x) => (
+            <motion.div className={`cls-card ${x.c}`} key={x.tag} {...fade}>
+              <span className=\"cls-tag\">{x.tag}</span>
+              <h4>{x.h}</h4><p>{x.d}</p>
+            </motion.div>
+          ))}
+        </div>
+
+        {/* HOW IT WORKS */}
+        <motion.div className=\"section-head\" style={{ marginTop: 80 }} {...fade}>
+          <span className=\"pill\">How it works</span>
+          <h2 style={{ marginTop: 16 }}>পাঁচ ধাপে প্রস্তুতি</h2>
+        </motion.div>
+        <div className=\"how-grid\">
+          {[
+            { n: \"01\", h: \"মুড চেক\", d: \"শুরুর আগে আজকের মানসিক অবস্থা।\" },
+            { n: \"02\", h: \"পরীক্ষা\", d: \"৮টি বায়োলজি MCQ, আচরণ ট্র্যাকিংসহ।\" },
+            { n: \"03\", h: \"DNA রিপোর্ট\", d: \"আচরণ অনুযায়ী শ্রেণিবদ্ধ বিশ্লেষণ।\" },
+            { n: \"04\", h: \"AI নোটস\", d: \"দুর্বলতা ধরে ব্যক্তিগত নোট।\" },
+            { n: \"05\", h: \"রেডিনেস\", d: \"প্রস্তুতির স্কোর ও অধ্যায় ফোকাস।\" },
+          ].map((s) => (
+            <motion.div className=\"card how-step\" key={s.n} {...fade}>
+              <div className=\"how-n mono\">{s.n}</div><h4>{s.h}</h4><p>{s.d}</p>
+            </motion.div>
+          ))}
+        </div>
+
+        <footer className=\"footer\">
+          <strong style={{ color: \"var(--text)\", fontFamily: \"var(--display)\" }}>MEDHA</strong> — Merit · Excellence · Dedication · Hustle · Achievement<br />
+          Know how you think. · Hackathon demo · Biology edition
+        </footer>
+      </div>
+    </div>
+  );
+}
+"
+Observation: Create successful: /app/frontend/src/components/Landing.jsx
+
+
+Action: file_editor create /app/frontend/src/components/MoodCheck.jsx --file-text "import { useState } from \"react\";
+import { BatteryLow, CloudRain, Meh, Smile, Zap } from \"lucide-react\";
+
+const MOODS = [
+  { key: \"tired\", label: \"ক্লান্ত\", ic: BatteryLow },
+  { key: \"low\", label: \"মন খারাপ\", ic: CloudRain },
+  { key: \"okay\", label: \"মোটামুটি\", ic: Meh },
+  { key: \"good\", label: \"ভালো\", ic: Smile },
+  { key: \"focused\", label: \"মনোযোগী\", ic: Zap },
+];
+
+export default function MoodCheck({ onContinue }) {
+  const [mood, setMood] = useState(null);
+  const low = mood === \"tired\" || mood === \"low\";
+  return (
+    <div className=\"view\" data-testid=\"mood-view\">
+      <div className=\"wrap mood-wrap\">
+        <span className=\"pill\">Step 01</span>
+        <h2 style={{ fontSize: 32, marginTop: 18 }}>আজ কেমন লাগছে?</h2>
+        <p style={{ color: \"var(--text-dim)\", marginTop: 10 }}>সৎ উত্তর দাও — এটি তোমার আচরণ বুঝতে সাহায্য করে।</p>
+        <div className=\"mood-opts\">
+          {MOODS.map((m) => {
+            const Ic = m.ic;
+            return (
+              <div key={m.key} className={`mood-opt ${mood === m.key ? \"sel\" : \"\"}`}
+                data-testid={`mood-${m.key}`} onClick={() => setMood(m.key)}>
+                <div className=\"m-ic\"><Ic size={26} /></div>
+                <div className=\"m-lbl\">{m.label}</div>
+              </div>
+            );
+          })}
+        </div>
+        {low && <div className=\"mood-note\">আজ একটু চাপ লাগছে — ছোট লক্ষ্য রাখো, ৮টি প্রশ্নই যথেষ্ট। তুমি পারবে।</div>}
+        <button className=\"btn btn-primary\" disabled={!mood} data-testid=\"mood-continue\"
+          onClick={() => onContinue(mood)}>পরীক্ষা শুরু করো →</button>
+      </div>
+    </div>
+  );
+}
+"
+Observation: Create successful: /app/frontend/src/components/MoodCheck.jsx
+
+
+
+Action: file_editor create /app/frontend/src/components/Exam.jsx --file-text "import { useState, useEffect, useRef, useCallback } from \"react\";
+import { LETTERS } from \"../utils/medha\";
+
+const PER_Q_SECONDS = 30;
+const CIRC = 2 * Math.PI * 24;
+
+export default function Exam({ questions, mood, onFinish }) {
+  const [qi, setQi] = useState(0);
+  const [selected, setSelected] = useState(null);
+  const [confidence, setConfidence] = useState(null);
+  const [secLeft, setSecLeft] = useState(PER_Q_SECONDS);
+
+  const startRef = useRef(Date.now());
+  const clicksRef = useRef([]); // letters clicked this question
+  const itemsRef = useRef([]);
+  const tickRef = useRef(null);
+
+  const q = questions[qi];
+
+  const commitQuestion = useCallback((finalIndex, conf) => {
+    const timeTaken = (Date.now() - startRef.current) / 1000;
+    itemsRef.current.push({
+      questionId: q.id,
+      finalAnswerIndex: finalIndex,
+      clickSequence: [...clicksRef.current],
+      timeTaken: Math.max(0.5, timeTaken),
+      confidence: conf,
+    });
+  }, [q]);
+
+  const goNext = useCallback((finalIndex, conf) => {
+    clearInterval(tickRef.current);
+    commitQuestion(finalIndex, conf);
+    if (qi < questions.length - 1) {
+      setQi((p) => p + 1);
+    } else {
+      onFinish(itemsRef.current, mood);
+    }
+  }, [qi, questions.length, commitQuestion, onFinish, mood]);
+
+  // reset per-question state + timer
+  useEffect(() => {
+    setSelected(null);
+    setConfidence(null);
+    setSecLeft(PER_Q_SECONDS);
+    startRef.current = Date.now();
+    clicksRef.current = [];
+    clearInterval(tickRef.current);
+    tickRef.current = setInterval(() => {
+      setSecLeft((s) => {
+        if (s <= 1) {
+          clearInterval(tickRef.current);
+          // auto-advance using whatever is selected (may be null)
+          setSelected((selNow) => {
+            setConfidence((confNow) => {
+              goNext(selNow, confNow);
+              return confNow;
+            });
+            return selNow;
+          });
+          return 0;
+        }
+        return s - 1;
+      });
+    }, 1000);
+    return () => clearInterval(tickRef.current);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [qi]);
+
+  const pickOption = (i) => {
+    setSelected(i);
+    clicksRef.current.push(LETTERS[i]);
+  };
+
+  const progress = ((qi + 1) / questions.length) * 100;
+  const offset = CIRC * (1 - secLeft / PER_Q_SECONDS);
+  const urgent = secLeft <= 8;
+  const isLast = qi === questions.length - 1;
+
+  return (
+    <div className=\"view\" data-testid=\"exam-view\">
+      <div className=\"wrap exam-wrap\">
+        <div className=\"exam-top\">
+          <div className=\"progress\">
+            <div className=\"progress-bar\"><div className=\"progress-fill\" style={{ width: progress + \"%\" }} /></div>
+            <span className=\"progress-lbl\" data-testid=\"exam-progress\">{qi + 1} / {questions.length}</span>
+          </div>
+          <div className=\"timer\">
+            <svg viewBox=\"0 0 52 52\" width=\"52\" height=\"52\">
+              <circle className=\"track\" cx=\"26\" cy=\"26\" r=\"24\" />
+              <circle className={`ring ${urgent ? \"urgent\" : \"\"}`} cx=\"26\" cy=\"26\" r=\"24\"
+                strokeDasharray={CIRC} strokeDashoffset={offset} />
+            </svg>
+            <span className=\"num\" data-testid=\"exam-timer\">{secLeft}</span>
+          </div>
+        </div>
+
+        <div className=\"q-box\">
+          <span className=\"q-tag\">{q.chapter}</span>
+          <p className=\"q-text\" data-testid=\"question-text\">{q.text}</p>
+        </div>
+
+        <div className=\"opts\">
+          {q.options.map((opt, i) => (
+            <button key={i} className={`opt ${selected === i ? \"sel\" : \"\"}`}
+              data-testid={`option-${i}`} onClick={() => pickOption(i)}>
+              <span className=\"opt-letter\">{LETTERS[i]}</span>{opt}
+            </button>
+          ))}
+        </div>
+
+        {selected !== null && (
+          <div className=\"confidence\" data-testid=\"confidence-block\">
+            <div className=\"c-label\">কতটা নিশ্চিত তুমি?</div>
+            <div className=\"conf-opts\">
+              {[[\"sure\", \"নিশ্চিত\"], [\"unsure\", \"অনিশ্চিত\"], [\"guessing\", \"অনুমান\"]].map(([k, l]) => (
+                <button key={k} className={`conf-opt ${confidence === k ? \"sel\" : \"\"}`}
+                  data-testid={`confidence-${k}`} onClick={() => setConfidence(k)}>{l}</button>
+              ))}
+            </div>
+          </div>
+        )}
+
+        <div className=\"exam-nav\">
+          <button className=\"btn btn-ghost\" data-testid=\"skip-button\" onClick={() => goNext(selected, confidence)}>Skip</button>
+          <button className=\"btn btn-primary\" data-testid=\"next-button\"
+            disabled={selected === null || confidence === null}
+            onClick={() => goNext(selected, confidence)}>
+            {isLast ? \"Finish Exam →\" : \"Next →\"}
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+}
+"
+Observation: Create successful: /app/frontend/src/components/Exam.jsx
+
+
+Action: file_editor create /app/frontend/src/components/Result.jsx --file-text "import { useEffect, useState } from \"react\";
+import { Check, X } from \"lucide-react\";
+import { LETTERS, scoreTitle } from \"../utils/medha\";
+
+const CIRC = 2 * Math.PI * 50;
+
+export default function Result({ attempt, onViewDNA }) {
+  const items = attempt.items;
+  const correct = attempt.readiness.correct;
+  const total = attempt.readiness.total;
+  const [offset, setOffset] = useState(CIRC);
+
+  useEffect(() => {
+    const t = setTimeout(() => setOffset(CIRC * (1 - correct / total)), 250);
+    return () => clearTimeout(t);
+  }, [correct, total]);
+
+  return (
+    <div className=\"view\" data-testid=\"result-view\">
+      <div className=\"wrap\">
+        <div className=\"result-hero\">
+          <div className=\"score-ring\">
+            <svg viewBox=\"0 0 120 120\" width=\"132\" height=\"132\">
+              <circle className=\"track\" cx=\"60\" cy=\"60\" r=\"50\" />
+              <circle className=\"arc\" cx=\"60\" cy=\"60\" r=\"50\" strokeDasharray={CIRC} strokeDashoffset={offset} />
+            </svg>
+            <div className=\"inner\">
+              <span className=\"num\" data-testid=\"score-num\">{correct}</span>
+              <span className=\"den\">/ {total}</span>
+            </div>
+          </div>
+          <div>
+            <div className=\"score-title\" data-testid=\"score-title\">{scoreTitle(correct / total)}</div>
+            <div className=\"score-sub\">Biology · {total} Questions · গড় সময় {attempt.readiness.avgTime}s</div>
+          </div>
+        </div>
+
+        <div className=\"result-list\">
+          {items.map((it, i) => (
+            <div className=\"card result-card\" key={it.questionId} data-testid={`result-card-${i}`}>
+              <div className=\"result-q\">{i + 1}. {it.questionText}</div>
+              <div className=\"result-opts\">
+                {it.options.map((opt, j) => {
+                  let cls = \"r-opt\", icon = null;
+                  if (j === it.correctAnswerIndex) { cls += \" correct\"; icon = <Check size={15} className=\"r-icon\" />; }
+                  else if (j === it.finalAnswerIndex && !it.isCorrect) { cls += \" wrong\"; icon = <X size={15} className=\"r-icon\" />; }
+                  return (
+                    <div className={cls} key={j}>
+                      <span className=\"r-let\">{LETTERS[j]}</span>{opt}{icon}
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <div style={{ marginTop: 28, display: \"flex\", justifyContent: \"center\" }}>
+          <button className=\"btn btn-primary\" data-testid=\"view-dna-button\" onClick={onViewDNA}>View DNA Report →</button>
+        </div>
+      </div>
+    </div>
+  );
+}
+"
+Observation: Create successful: /app/frontend/src/components/Result.jsx
+
+
+Action: file_editor create /app/frontend/src/components/DnaReport.jsx --file-text "import { Check, X, Timer, Award, Repeat2, AlertTriangle, Sparkles } from \"lucide-react\";
+import { LETTERS, buildInsight, GROUP_DEFS } from \"../utils/medha\";
+
+const ORDER = [\"master\", \"slow\", \"confused\", \"danger\"];
+const ICONS = { master: Award, slow: Timer, confused: Repeat2, danger: AlertTriangle };
+
+function DnaCard({ item }) {
+  const insight = buildInsight(item);
+  return (
+    <div className=\"dna-card\">
+      <div className=\"dna-card-time\"><Timer size={13} /> {item.timeTaken}s · {item.chapter}</div>
+      <div className=\"dna-q\">{item.questionText}</div>
+      <div className=\"dna-opts\">
+        {item.options.map((opt, i) => {
+          let cls = \"dna-opt\", icon = null;
+          if (i === item.correctAnswerIndex) { cls += \" correct\"; icon = <Check size={14} className=\"d-icon\" />; }
+          else if (i === item.finalAnswerIndex && !item.isCorrect) { cls += \" wrong\"; icon = <X size={14} className=\"d-icon\" />; }
+          return <div className={cls} key={i}><span className=\"d-let\">{LETTERS[i]}</span>{opt}{icon}</div>;
+        })}
+      </div>
+      {item.clickSequence?.length > 0 && (
+        <div className=\"click-path\">
+          <span className=\"cp-label\">Click path:</span>
+          {item.clickSequence.map((l, idx) => {
+            const isLast = idx === item.clickSequence.length - 1;
+            const cls = \"cp-node\" + (isLast ? (item.isCorrect ? \" final-right\" : \" final-wrong\") : \"\");
+            return (
+              <span key={idx} style={{ display: \"inline-flex\", alignItems: \"center\", gap: 8 }}>
+                <span className={cls}>{l}</span>
+                {idx < item.clickSequence.length - 1 && <span className=\"cp-arrow\">→</span>}
+              </span>
+            );
+          })}
+        </div>
+      )}
+      <div className={`dna-insight ${insight.cls}`}>{insight.text}</div>
+    </div>
+  );
+}
+
+export default function DnaReport({ groups, onViewNotes }) {
+  return (
+    <div className=\"view\" data-testid=\"dna-view\">
+      <div className=\"wrap\">
+        <div className=\"section-head\">
+          <span className=\"pill\"><Sparkles size={13} /> Behavior Replay</span>
+          <h2 style={{ marginTop: 16 }}>তোমার DNA রিপোর্ট</h2>
+          <p>প্রতিটি উত্তর চিন্তার ধরন অনুযায়ী শ্রেণিবদ্ধ — গতি, দ্বিধা ও সঠিকতার ভিত্তিতে।</p>
+        </div>
+
+        {ORDER.map((key) => {
+          const def = GROUP_DEFS[key];
+          const items = groups[key] || [];
+          const Ic = ICONS[key];
+          return (
+            <div className={`dna-group ${def.cls}`} key={key} data-testid={`dna-group-${key}`}>
+              <div className=\"dna-group-head\">
+                <div className=\"dna-group-ic\"><Ic size={20} /></div>
+                <div className=\"dna-group-meta\">
+                  <span className=\"dna-group-tag\">{def.tagText}</span>
+                  <span className=\"dna-group-label\">{def.label}</span>
+                </div>
+                <span className=\"dna-group-count\">{items.length}টি প্রশ্ন</span>
+              </div>
+              {items.length === 0 ? (
+                <div className=\"no-group\">{def.empty}</div>
+              ) : (
+                <div className=\"dna-cards\">{items.map((it) => <DnaCard key={it.questionId} item={it} />)}</div>
+              )}
+            </div>
+          );
+        })}
+
+        <div style={{ marginTop: 12, display: \"flex\", justifyContent: \"center\" }}>
+          <button className=\"btn btn-primary\" data-testid=\"generate-notes-button\" onClick={onViewNotes}>Generate Study Notes →</button>
+        </div>
+      </div>
+    </div>
+  );
+}
+"
+Observation: Create successful: /app/frontend/src/components/DnaReport.jsx
+
+
+Action: file_editor create /app/frontend/src/components/StudyNotes.jsx --file-text "import { Download } from \"lucide-react\";
+
+function NoteRow({ label, children }) {
+  return (
+    <div className=\"note-row\">
+      <span className=\"note-lbl\">{label}</span>
+      <div className=\"note-val\">{children}</div>
+    </div>
+  );
+}
+
+export default function StudyNotes({ loading, notes, source, onDownload }) {
+  const empty = notes && !notes.slow?.length && !notes.confused?.length && !notes.danger?.length;
+
+  return (
+    <div className=\"view\" data-testid=\"notes-view\">
+      <div className=\"wrap\">
+        <div className=\"section-head\" style={{ display: \"flex\", justifyContent: \"space-between\", alignItems: \"flex-end\", flexWrap: \"wrap\", gap: 16 }}>
+          <div>
+            <span className=\"pill\">AI Generated</span>
+            <h2 style={{ marginTop: 16 }}>ব্যক্তিগত স্টাডি নোট</h2>
+            <p>তোমার DNA রিপোর্টের দুর্বল জায়গাগুলোর জন্য তৈরি — শক্তির জায়গা বাদ।</p>
+          </div>
+          {notes && !empty && (
+            <button className=\"btn btn-ghost\" style={{ padding: \"10px 18px\", fontSize: 14 }}
+              data-testid=\"download-notes\" onClick={onDownload}><Download size={15} style={{ marginRight: 8, verticalAlign: \"middle\" }} />Download .md</button>
+          )}
+        </div>
+
+        {loading && (
+          <div className=\"notes-loading\" data-testid=\"notes-loading\">
+            <div className=\"pulse-ring\" />
+            <p style={{ color: \"var(--text)\" }}>AI তোমার আচরণ বিশ্লেষণ করছে…</p>
+            <p style={{ color: \"var(--text-dim)\", fontSize: 14 }}>ব্যক্তিগত স্টাডি নোট তৈরি হচ্ছে</p>
+          </div>
+        )}
+
+        {!loading && empty && (
+          <div className=\"card\" data-testid=\"notes-empty\">
+            <p style={{ color: \"var(--text-dim)\" }}>চমৎকার! কোনো দুর্বল জায়গা পাওয়া যায়নি — সব প্রশ্ন আয়ত্তে ছিল। নতুন চ্যালেঞ্জের জন্য আবার চেষ্টা করো।</p>
+          </div>
+        )}
+
+        {!loading && notes && !empty && (
+          <>
+            {notes.slow?.map((n, i) => (
+              <div className=\"card note-card\" key={\"s\" + i} data-testid={`note-slow-${i}`}>
+                <span className=\"note-badge nb-slow\">Slow — গতি বাড়াও</span>
+                <div className=\"note-topic\">{n.topic}</div>
+                {n.explanation && <NoteRow label=\"ব্যাখ্যা\">{n.explanation}</NoteRow>}
+                {n.memoryTrick && <NoteRow label=\"Memory Trick\">{n.memoryTrick}</NoteRow>}
+                {n.trapQuestion && <div className=\"note-trap\">ফাঁদ প্রশ্ন: {n.trapQuestion}</div>}
+              </div>
+            ))}
+
+            {notes.confused?.map((n, i) => (
+              <div className=\"card note-card\" key={\"c\" + i} data-testid={`note-confused-${i}`}>
+                <span className=\"note-badge nb-confused\">Confused — পার্থক্য বোঝো</span>
+                <div className=\"note-topic\">{n.topic}</div>
+                {n.comparisonTable?.length > 0 && (
+                  <div className=\"cmp-table\">
+                    {n.comparisonTable.map((row, j) => (
+                      <div className={`cmp-row ${j === 0 ? \"correct\" : \"\"}`} key={j}>
+                        <div className=\"cmp-c concept\">{row.concept}</div>
+                        <div className=\"cmp-c\">{row.description}</div>
+                      </div>
+                    ))}
+                  </div>
+                )}
+                {n.memoryTrick && <NoteRow label=\"Memory Trick\">{n.memoryTrick}</NoteRow>}
+                {n.trapQuestion && <div className=\"note-trap\">ফাঁদ প্রশ্ন: {n.trapQuestion}</div>}
+              </div>
+            ))}
+
+            {notes.danger?.map((n, i) => (
+              <div className=\"card note-card\" key={\"d\" + i} data-testid={`note-danger-${i}`}>
+                <span className=\"note-badge nb-danger\">Danger — ভুল ধারণা সংশোধন</span>
+                <div className=\"note-topic\">{n.topic}</div>
+                {n.explanation && <NoteRow label=\"ব্যাখ্যা\">{n.explanation}</NoteRow>}
+                {n.whyCorrect && <NoteRow label=\"কেন সঠিক\">{n.whyCorrect}</NoteRow>}
+                {n.whyTricked && <NoteRow label=\"কেন ভুল করো\">{n.whyTricked}</NoteRow>}
+                {n.trapQuestion && <div className=\"note-trap\">ফাঁদ প্রশ্ন: {n.trapQuestion}</div>}
+              </div>
+            ))}
+
+            {source && <div className=\"note-src\">— {source === \"ai\" ? \"AI-generated · Claude Haiku\" : \"MEDHA classifier notes\"} —</div>}
+          </>
+        )}
+      </div>
+    </div>
+  );
+}
+"
+Observation: Create successful: /app/frontend/src/components/StudyNotes.jsx
+
+
+
+Action: file_editor create /app/frontend/src/components/Readiness.jsx --file-text "import { useEffect, useState } from \"react\";
+import { motion } from \"framer-motion\";
+
+export default function Readiness({ attempt, chapters, history, onRetake }) {
+  const r = attempt.readiness;
+  const [animScore, setAnimScore] = useState(0);
+  const [bars, setBars] = useState(false);
+
+  useEffect(() => {
+    let i = 0;
+    const step = Math.max(1, Math.round(r.score / 30));
+    const iv = setInterval(() => {
+      i += step;
+      if (i >= r.score) { i = r.score; clearInterval(iv); }
+      setAnimScore(i);
+    }, 24);
+    const t = setTimeout(() => setBars(true), 200);
+    return () => { clearInterval(iv); clearTimeout(t); };
+  }, [r.score]);
+
+  const maxFreq = Math.max(...chapters.map((c) => c.frequency), 1);
+
+  return (
+    <div className=\"view\" data-testid=\"readiness-view\">
+      <div className=\"wrap\">
+        <div className=\"section-head\">
+          <span className=\"pill\">Readiness</span>
+          <h2 style={{ marginTop: 16 }}>প্রস্তুতির স্কোর</h2>
+          <p>তোমার সঠিকতা, আয়ত্ত ও আত্মবিশ্বাসী ভুলের ভিত্তিতে গণনা করা।</p>
+        </div>
+
+        <div className=\"ready-top\">
+          <div className=\"card ready-score\">
+            <div className=\"ready-num\" data-testid=\"readiness-score\">{animScore}</div>
+            <div className=\"ready-lbl\">Readiness / 100</div>
+          </div>
+          <div className=\"metric-grid\">
+            {[
+              { v: `${r.correct}/${r.total}`, l: \"সঠিক উত্তর\", c: \"var(--green)\" },
+              { v: r.master, l: \"আয়ত্তে (Mastered)\", c: \"var(--green)\" },
+              { v: r.danger, l: \"আত্মবিশ্বাসী ভুল\", c: \"var(--red)\" },
+              { v: `${r.avgTime}s`, l: \"গড় সময় / প্রশ্ন\", c: \"var(--accent)\" },
+            ].map((m) => (
+              <div className=\"card metric\" key={m.l}>
+                <div className=\"m-val\" style={{ color: m.c }}>{m.v}</div>
+                <div className=\"m-lbl\">{m.l}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div className=\"card\" style={{ marginBottom: 24 }}>
+          <h3 style={{ fontSize: 18, marginBottom: 6 }}>অধ্যায় ফ্রিকোয়েন্সি হিটম্যাপ</h3>
+          <p style={{ color: \"var(--text-dim)\", fontSize: 14, marginBottom: 20 }}>ভর্তি পরীক্ষায় কোন অধ্যায় থেকে বেশি প্রশ্ন আসে — ফোকাস এখানে।</p>
+          {chapters.map((c, i) => (
+            <div className=\"chap-bar\" key={c.chapter}>
+              <div className=\"chap-bar-top\"><span>{c.chapter}</span><span className=\"pct\">{c.frequency}%</span></div>
+              <div className=\"chap-track\">
+                <motion.div className=\"chap-fill\" initial={{ width: 0 }}
+                  animate={{ width: bars ? `${(c.frequency / maxFreq) * 100}%` : 0 }}
+                  transition={{ duration: 0.9, delay: i * 0.06 }} />
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {history?.length > 1 && (
+          <div className=\"card\" style={{ marginBottom: 24 }}>
+            <h3 style={{ fontSize: 18, marginBottom: 16 }}>আগের প্রচেষ্টা</h3>
+            {history.slice(0, 6).map((h) => (
+              <div className=\"hist-row\" key={h.id} style={{ background: \"var(--surface-2)\", borderRadius: 10 }}>
+                <span className=\"h-date\">{new Date(h.createdAt).toLocaleString(\"en-GB\", { day: \"2-digit\", month: \"short\", hour: \"2-digit\", minute: \"2-digit\" })}</span>
+                <span className=\"hist-badge\">Readiness {h.readiness?.score ?? \"—\"}</span>
+              </div>
+            ))}
+          </div>
+        )}
+
+        <div style={{ display: \"flex\", justifyContent: \"center\" }}>
+          <button className=\"btn btn-primary\" data-testid=\"readiness-retake\" onClick={onRetake}>আবার চেষ্টা করো ↻</button>
+        </div>
+      </div>
+    </div>
+  );
+}
+"
+Observation: Create successful: /app/frontend/src/components/Readiness.jsx
+
+
+Now the main orchestrator `App.js`:
+Action: file_editor create /app/frontend/src/App.js --file-text "import { useEffect, useState, useCallback } from \"react\";
+import axios from \"axios\";
+import { Toaster, toast } from \"sonner\";
+import \"@/App.css\";
+
+import IntroAnimation from \"@/components/IntroAnimation\";
+import NavBar from \"@/components/NavBar\";
+import Landing from \"@/components/Landing\";
+import MoodCheck from \"@/components/MoodCheck\";
+import Exam from \"@/components/Exam\";
+import Result from \"@/components/Result\";
+import DnaReport from \"@/components/DnaReport\";
+import StudyNotes from \"@/components/StudyNotes\";
+import Readiness from \"@/components/Readiness\";
+
+const API = `${process.env.REACT_APP_BACKEND_URL}/api`;
+
+function notesToMarkdown(notes) {
+  let md = \"# MEDHA — Personalized Study Notes\n\n\";
+  (notes.slow || []).forEach((n) => {
+    md += `## [Slow] ${n.topic}\n- **ব্যাখ্যা:** ${n.explanation || \"\"}\n- **Memory Trick:** ${n.memoryTrick || \"\"}\n- **ফাঁদ প্রশ্ন:** ${n.trapQuestion || \"\"}\n\n`;
+  });
+  (notes.confused || []).forEach((n) => {
+    md += `## [Confused] ${n.topic}\n\n| Concept | Description |\n| --- | --- |\n`;
+    (n.comparisonTable || []).forEach((r) => { md += `| ${r.concept} | ${r.description} |\n`; });
+    md += `\n- **Memory Trick:** ${n.memoryTrick || \"\"}\n- **ফাঁদ প্রশ্ন:** ${n.trapQuestion || \"\"}\n\n`;
+  });
+  (notes.danger || []).forEach((n) => {
+    md += `## [Danger] ${n.topic}\n- **ব্যাখ্যা:** ${n.explanation || \"\"}\n- **কেন সঠিক:** ${n.whyCorrect || \"\"}\n- **কেন ভুল করো:** ${n.whyTricked || \"\"}\n- **ফাঁদ প্রশ্ন:** ${n.trapQuestion || \"\"}\n\n`;
+  });
+  return md;
+}
+
+export default function App() {
+  const [introDone, setIntroDone] = useState(false);
+  const [view, setView] = useState(\"landing\");
+  const [questions, setQuestions] = useState([]);
+  const [chapters, setChapters] = useState([]);
+  const [attempt, setAttempt] = useState(null);
+  const [notes, setNotes] = useState(null);
+  const [notesLoading, setNotesLoading] = useState(false);
+  const [notesSource, setNotesSource] = useState(null);
+  const [history, setHistory] = useState([]);
+
+  // load static data
+  useEffect(() => {
+    axios.get(`${API}/questions`).then((r) => setQuestions(r.data.questions)).catch(() => {});
+    axios.get(`${API}/chapters`).then((r) => setChapters(r.data.chapters)).catch(() => {});
+  }, []);
+
+  const examDone = !!attempt;
+
+  const handleStart = () => setView(\"mood\");
+
+  const handleMoodContinue = (mood) => {
+    setView(\"exam\");
+    // store mood on a ref via closure: pass through finish
+    setAttempt((a) => a); // no-op
+    window.__medhaMood = mood;
+  };
+
+  const handleFinish = async (items, mood) => {
+    try {
+      const { data } = await axios.post(`${API}/attempts`, { mood, items });
+      setAttempt(data);
+      setNotes(null);
+      setNotesSource(null);
+      setView(\"result\");
+      axios.get(`${API}/attempts`).then((r) => setHistory(r.data.attempts)).catch(() => {});
+    } catch (e) {
+      toast.error(\"ফলাফল সংরক্ষণে সমস্যা হয়েছে। আবার চেষ্টা করো।\");
+    }
+  };
+
+  const loadNotes = useCallback(async () => {
+    setView(\"notes\");
+    if (notes || !attempt) return;
+    setNotesLoading(true);
+    const dnaReport = {
+      slow: attempt.groups.slow,
+      confused: attempt.groups.confused,
+      danger: attempt.groups.danger,
+    };
+    try {
+      const { data } = await axios.post(`${API}/notes`, { dnaReport });
+      setNotes(data.notes);
+      setNotesSource(data.source);
+      if (data.source === \"fallback\") toast(\"নোট তৈরি হয়েছে (অফলাইন মোড)।\");
+    } catch (e) {
+      toast.error(\"নোট তৈরিতে সমস্যা হয়েছে।\");
+    } finally {
+      setNotesLoading(false);
+    }
+  }, [notes, attempt]);
+
+  const handleNav = (key) => {
+    if (key === \"landing\") { setView(\"landing\"); return; }
+    if (key === \"mood\") { setView(\"mood\"); return; }
+    if (key === \"notes\") { loadNotes(); return; }
+    setView(key);
+  };
+
+  const handleRetake = () => {
+    setAttempt(null);
+    setNotes(null);
+    setNotesSource(null);
+    setView(\"landing\");
+  };
+
+  const downloadNotes = () => {
+    const blob = new Blob([notesToMarkdown(notes)], { type: \"text/markdown\" });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement(\"a\");
+    a.href = url; a.download = \"medha-study-notes.md\"; a.click();
+    URL.revokeObjectURL(url);
+    toast.success(\"নোট ডাউনলোড হয়েছে।\");
+  };
+
+  return (
+    <div className=\"App\">
+      <div className=\"app-bg\" />
+      <Toaster theme=\"dark\" position=\"top-right\" />
+      {!introDone && <IntroAnimation onComplete={() => setIntroDone(true)} />}
+
+      {introDone && (
+        <>
+          <NavBar view={view} examDone={examDone} onNav={handleNav} onRetake={handleRetake} />
+
+          {view === \"landing\" && <Landing onStart={handleStart} onDemo={() => document.querySelector(\".classifier-grid\")?.scrollIntoView({ behavior: \"smooth\" })} />}
+          {view === \"mood\" && <MoodCheck onContinue={handleMoodContinue} />}
+          {view === \"exam\" && questions.length > 0 && (
+            <Exam questions={questions} mood={window.__medhaMood} onFinish={handleFinish} />
+          )}
+          {view === \"result\" && attempt && <Result attempt={attempt} onViewDNA={() => setView(\"dna\")} />}
+          {view === \"dna\" && attempt && <DnaReport groups={attempt.groups} onViewNotes={loadNotes} />}
+          {view === \"notes\" && attempt && (
+            <StudyNotes loading={notesLoading} notes={notes} source={notesSource} onDownload={downloadNotes} />
+          )}
+          {view === \"readiness\" && attempt && (
+            <Readiness attempt={attempt} chapters={chapters} history={history} onRetake={handleRetake} />
+          )}
+        </>
+      )}
+    </div>
+  );
+}
+"
+Observation: Overwrite successful: /app/frontend/src/App.js
