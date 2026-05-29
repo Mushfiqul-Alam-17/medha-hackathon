@@ -84,7 +84,7 @@ export default function StudyNotes({ loading, notes, source, onDownload, lang })
               </div>
             ))}
 
-            {source && <div className="note-src">— {source === "ai" ? "AI-generated · Claude Haiku" : "MEDHA classifier notes"} —</div>}
+            {source && <div className="note-src">— {source === "ai" ? "✨ AI-generated · Powered by Google Gemini" : "MEDHA classifier notes"} —</div>}
           </>
         )}
       </div>

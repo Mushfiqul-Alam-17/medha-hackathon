@@ -269,6 +269,100 @@ def fallback_notes(dna_report: Dict[str, Any]) -> Dict[str, Any]:
 # ──────────────────────────────────────────────────────────────
 #  Routes
 # ──────────────────────────────────────────────────────────────
+GEMINI_KEY = os.getenv("GEMINI_API_KEY", "")
+GROQ_KEY = os.getenv("GROQ_API_KEY", "")
+
+import httpx
+
+NOTES_SYSTEM_PROMPT = """You are MEDHA, a Bangladeshi medical admission exam tutor AI.
+You receive a student's behavioral DNA report — questions classified as "slow", "confused", or "danger" based on their real-time exam behavior (timing, answer switching, confidence).
+
+Generate personalized study notes in this EXACT JSON format:
+{
+  "slow": [{"topic":"...","explanation":"...","memoryTrick":"...","trapQuestion":"..."}],
+  "confused": [{"topic":"...","comparisonTable":[{"concept":"...","description":"..."}],"memoryTrick":"...","trapQuestion":"..."}],
+  "danger": [{"topic":"...","explanation":"...","whyCorrect":"...","whyTricked":"...","trapQuestion":"..."}]
+}
+
+Rules:
+- Write in Bangla (Bengali script) for explanations, memory tricks, and trap questions
+- For "slow" items: explain the concept clearly and give a speed-boosting memory trick
+- For "confused" items: create a comparison table showing the correct answer vs what they confused it with
+- For "danger" items: explain WHY the student's wrong answer felt correct and WHY the actual answer is right
+- Memory tricks should be catchy, exam-focused, and memorable
+- Trap questions should be realistic MCQ traps an admission student might face
+- Return ONLY valid JSON, no markdown, no backticks"""
+
+
+def build_llm_prompt(dna_report: Dict[str, Any]) -> str:
+    parts = []
+    for group in ["slow", "confused", "danger"]:
+        items = dna_report.get(group, [])
+        if not items:
+            continue
+        parts.append(f"\n## {group.upper()} questions ({len(items)}):")
+        for it in items:
+            parts.append(f"- Question: {it.get('questionText', '')}")
+            parts.append(f"  Correct: {it.get('correctAnswerText', '')}")
+            chosen = it.get('finalAnswerText', 'skipped')
+            parts.append(f"  Student chose: {chosen}")
+            parts.append(f"  Time: {it.get('timeTaken', 0)}s, Switches: {it.get('switchCount', 0)}")
+            parts.append(f"  Chapter: {it.get('chapter', '')}")
+            parts.append(f"  Concept: {it.get('concept', '')}")
+    return "\n".join(parts) if parts else "No weak areas found."
+
+
+async def call_gemini(prompt: str) -> Optional[Dict]:
+    if not GEMINI_KEY:
+        return None
+    url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key={GEMINI_KEY}"
+    payload = {
+        "contents": [{"parts": [{"text": NOTES_SYSTEM_PROMPT + "\n\nStudent DNA Report:\n" + prompt}]}],
+        "generationConfig": {"temperature": 0.7, "maxOutputTokens": 4096, "responseMimeType": "application/json"}
+    }
+    try:
+        async with httpx.AsyncClient(timeout=15) as client:
+            resp = await client.post(url, json=payload)
+            if resp.status_code != 200:
+                logger.warning(f"Gemini returned {resp.status_code}: {resp.text[:200]}")
+                return None
+            data = resp.json()
+            text = data["candidates"][0]["content"]["parts"][0]["text"]
+            return json.loads(text)
+    except Exception as e:
+        logger.warning(f"Gemini failed: {e}")
+        return None
+
+
+async def call_groq(prompt: str) -> Optional[Dict]:
+    if not GROQ_KEY:
+        return None
+    url = "https://api.groq.com/openai/v1/chat/completions"
+    payload = {
+        "model": "llama-3.3-70b-versatile",
+        "messages": [
+            {"role": "system", "content": NOTES_SYSTEM_PROMPT},
+            {"role": "user", "content": f"Student DNA Report:\n{prompt}"}
+        ],
+        "temperature": 0.7,
+        "max_tokens": 4096,
+        "response_format": {"type": "json_object"}
+    }
+    headers = {"Authorization": f"Bearer {GROQ_KEY}", "Content-Type": "application/json"}
+    try:
+        async with httpx.AsyncClient(timeout=15) as client:
+            resp = await client.post(url, json=payload, headers=headers)
+            if resp.status_code != 200:
+                logger.warning(f"Groq returned {resp.status_code}: {resp.text[:200]}")
+                return None
+            data = resp.json()
+            text = data["choices"][0]["message"]["content"]
+            return json.loads(text)
+    except Exception as e:
+        logger.warning(f"Groq failed: {e}")
+        return None
+
+
 @app.get("/")
 async def health_check():
     return {"message": "MEDHA API is alive and running!"}
@@ -280,7 +374,6 @@ async def root():
 
 @api_router.get("/questions")
 async def get_questions():
-    # Return questions without revealing the correct answer index
     public = [{
         "id": q["id"],
         "chapter": q["chapter"],
@@ -335,6 +428,22 @@ async def get_attempt(attempt_id: str):
 
 @api_router.post("/notes")
 async def generate_notes(req: NotesRequest):
+    prompt = build_llm_prompt(req.dnaReport)
+
+    # Try Gemini first
+    notes = await call_gemini(prompt)
+    if notes:
+        logger.info("✅ Notes generated via Gemini")
+        return {"notes": notes, "source": "ai"}
+
+    # Fallback to Groq
+    notes = await call_groq(prompt)
+    if notes:
+        logger.info("✅ Notes generated via Groq")
+        return {"notes": notes, "source": "ai"}
+
+    # Final fallback: deterministic
+    logger.info("⚠️ Using deterministic fallback notes")
     return {"notes": fallback_notes(req.dnaReport), "source": "fallback"}
 
 
@@ -347,3 +456,4 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+

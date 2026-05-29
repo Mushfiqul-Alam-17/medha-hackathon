@@ -88,7 +88,8 @@ export default function App() {
       const { data } = await axios.post(`${API}/notes`, { dnaReport });
       setNotes(data.notes);
       setNotesSource(data.source);
-      if (data.source === "fallback") toast("Notes generated (offline mode).");
+      if (data.source === "ai") toast.success("✨ AI-powered study notes generated!");
+      else toast("Notes generated (offline mode).");
     } catch (e) {
       toast.error("Failed to generate notes.");
     } finally {
