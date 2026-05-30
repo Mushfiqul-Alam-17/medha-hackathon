@@ -23,6 +23,7 @@ export default function Exam({ questions, mood, onFinish, lang, showConfidence =
   confidenceRef.current = confidence;
 
   const commitQuestion = useCallback((finalIndex, conf) => {
+    if (!q) return;
     if (itemsRef.current.length > qi) return; // Prevent duplicate commits for the same question
     
     const timeTaken = (Date.now() - startRef.current) / 1000;
@@ -39,6 +40,7 @@ export default function Exam({ questions, mood, onFinish, lang, showConfidence =
 
   const goNext = useCallback((finalIndex, conf) => {
     if (submitting) return;
+    if (itemsRef.current.length > qi) return; // Prevent duplicate transitions
     
     clearInterval(tickRef.current);
     commitQuestion(finalIndex, conf);
@@ -77,6 +79,8 @@ export default function Exam({ questions, mood, onFinish, lang, showConfidence =
     setSelected(i);
     clicksRef.current.push(LETTERS[i]);
   };
+
+  if (!q) return null;
 
   const progress = ((qi + 1) / questions.length) * 100;
   const offset = CIRC * (1 - secLeft / PER_Q_SECONDS);
