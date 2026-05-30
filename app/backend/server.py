@@ -21,9 +21,27 @@ logging.basicConfig(level=logging.INFO,
 logger = logging.getLogger("medha")
 
 # ──────────────────────────────────────────────────────────────
-#  In-memory storage (no MongoDB required for demo)
+#  Persistent storage (JSON fallback for demo)
 # ──────────────────────────────────────────────────────────────
-ATTEMPTS_DB: List[Dict[str, Any]] = []
+DB_FILE = "attempts.json"
+
+def load_db() -> List[Dict[str, Any]]:
+    if os.path.exists(DB_FILE):
+        try:
+            with open(DB_FILE, "r", encoding="utf-8") as f:
+                return json.load(f)
+        except Exception as e:
+            logger.error(f"Failed to load DB: {e}")
+    return []
+
+def save_db(db: List[Dict[str, Any]]):
+    try:
+        with open(DB_FILE, "w", encoding="utf-8") as f:
+            json.dump(db, f, ensure_ascii=False, indent=2)
+    except Exception as e:
+        logger.error(f"Failed to save DB: {e}")
+
+ATTEMPTS_DB: List[Dict[str, Any]] = load_db()
 
 # ──────────────────────────────────────────────────────────────
 #  Biology question bank (HSC level — Bangladesh medical admission)
@@ -199,6 +217,7 @@ class AttemptCreate(BaseModel):
 
 class NotesRequest(BaseModel):
     dnaReport: Dict[str, Any]
+    attemptId: Optional[str] = None
 
 
 # ──────────────────────────────────────────────────────────────
@@ -474,6 +493,7 @@ async def create_attempt(payload: AttemptCreate):
         "readiness": readiness,
     }
     ATTEMPTS_DB.append(doc)
+    save_db(ATTEMPTS_DB)
     return doc
 
 
@@ -532,29 +552,55 @@ async def call_openrouter(prompt: str) -> Optional[Dict]:
 
 @api_router.post("/notes")
 async def generate_notes(req: NotesRequest):
+    target_attempt = None
+    if req.attemptId:
+        for r in ATTEMPTS_DB:
+            if r["id"] == req.attemptId:
+                target_attempt = r
+                if "notes" in r and "notesSource" in r:
+                    return {"notes": r["notes"], "source": r["notesSource"]}
+                break
+
     prompt = build_llm_prompt(req.dnaReport)
+
+    result_notes = None
+    source = None
 
     # Try OpenRouter first (reliable free tier)
     notes = await call_openrouter(prompt)
     if notes:
         logger.info("✅ Notes generated via OpenRouter")
-        return {"notes": notes, "source": "ai"}
+        result_notes = notes
+        source = "ai"
 
     # Try Gemini 
-    notes = await call_gemini(prompt)
-    if notes:
-        logger.info("✅ Notes generated via Gemini")
-        return {"notes": notes, "source": "ai"}
+    if not result_notes:
+        notes = await call_gemini(prompt)
+        if notes:
+            logger.info("✅ Notes generated via Gemini")
+            result_notes = notes
+            source = "ai"
 
     # Try Groq
-    notes = await call_groq(prompt)
-    if notes:
-        logger.info("✅ Notes generated via Groq")
-        return {"notes": notes, "source": "ai"}
+    if not result_notes:
+        notes = await call_groq(prompt)
+        if notes:
+            logger.info("✅ Notes generated via Groq")
+            result_notes = notes
+            source = "ai"
 
     # Final fallback: deterministic
-    logger.info("⚠️ Using deterministic fallback notes")
-    return {"notes": fallback_notes(req.dnaReport), "source": "fallback"}
+    if not result_notes:
+        logger.info("⚠️ Using deterministic fallback notes")
+        result_notes = fallback_notes(req.dnaReport)
+        source = "fallback"
+
+    if target_attempt is not None:
+        target_attempt["notes"] = result_notes
+        target_attempt["notesSource"] = source
+        save_db(ATTEMPTS_DB)
+
+    return {"notes": result_notes, "source": source}
 
 
 app.include_router(api_router)

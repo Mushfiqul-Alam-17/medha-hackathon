@@ -94,7 +94,7 @@ export default function App() {
       danger: attempt.groups.danger,
     };
     try {
-      const { data } = await axios.post(`${API}/notes`, { dnaReport });
+      const { data } = await axios.post(`${API}/notes`, { dnaReport, attemptId: attempt.id });
       setNotes(data.notes);
       setNotesSource(data.source);
       if (data.source === "ai") toast.success("✨ AI-powered study notes generated!");
@@ -111,8 +111,13 @@ export default function App() {
     try {
       const { data } = await axios.get(`${API}/attempts/${attemptId}`);
       setAttempt(data);
-      setNotes(null);
-      setNotesSource(null);
+      if (data.notes) {
+        setNotes(data.notes);
+        setNotesSource(data.notesSource || null);
+      } else {
+        setNotes(null);
+        setNotesSource(null);
+      }
       setView("result");
     } catch (e) {
       toast.error("Failed to load attempt.");
