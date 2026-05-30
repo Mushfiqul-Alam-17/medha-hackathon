@@ -296,60 +296,90 @@ def compute_readiness(items: List[Dict[str, Any]]) -> Dict[str, Any]:
 
 import random
 
-_SLOW_PREFIXES = [
-    "sathi ujtor diyecho kintu onek somoy niyecho. Medical admission e proti proshne gorh 36 second - ei speed e porikkhay tumi shesh korte parbena.",
-    "Thik kintu dhir. Amol porikkhay 100 ta proshno 60 minute e - orthath dwidha korar sujog nei. Speed barao.",
-    "Tumi jano, kintu somoy niyontron durbhol. Shesher diker proshno skip korte hobe ja marks komabe.",
+# ── Rich Bengali fallback templates per behavioral group ──
+
+_SLOW_EXPLANATIONS = [
+    "উত্তর সঠিক, কিন্তু অনেক সময় নিয়েছ। মেডিকেল ভর্তি পরীক্ষায় প্রতি প্রশ্নে গড়ে ৩৬ সেকেন্ড — এই গতিতে শেষের দিকের প্রশ্নগুলো স্কিপ করতে হবে।",
+    "ঠিক কিন্তু ধীর। আসল পরীক্ষায় ১০০টা প্রশ্ন ৬০ মিনিটে — অর্থাৎ দ্বিধা করার সুযোগ নেই। স্পিড বাড়াও।",
+    "তুমি জানো, কিন্তু সময় নিয়ন্ত্রণ দুর্বল। এই টপিকে দ্রুত recall-এর জন্য মেমোরি ট্রিক ব্যবহার করো।",
 ]
 
-_DANGER_PREFIXES = [
-    "Tumi druto uttor diyecho ebong atmobishwashi chile - kintu bhul korecho. Eta sobar cheye bipojjonok pattern karon tumi jano-o na je tumi bhul jano.",
-    "Druto uttor + bhul = negative marking. Medical porikkhay proti bhul uttore 0.25 kata jay. Atmobishwashi bhul theke sobcheye beshi marks jay.",
-    "Over-confidence sobcheye boro shotru. Tumi bhebecho jano, kintu aslei bhul tottho mukhostho korecho.",
+_DANGER_EXPLANATIONS = [
+    "তুমি দ্রুত উত্তর দিয়েছ এবং আত্মবিশ্বাসী ছিলে — কিন্তু ভুল করেছ। এটা সবচেয়ে বিপজ্জনক pattern কারণ তুমি জানোও না যে তুমি ভুল জানো।",
+    "দ্রুত উত্তর + ভুল = নেগেটিভ মার্কিং। মেডিকেল পরীক্ষায় প্রতি ভুল উত্তরে ০.২৫ কাটা যায়। আত্মবিশ্বাসী ভুল থেকে সবচেয়ে বেশি marks যায়।",
+    "Over-confidence সবচেয়ে বড় শত্রু। তুমি ভেবেছ জানো, কিন্তু আসলে ভুল তথ্য মুখস্থ করেছ।",
+]
+
+_DANGER_TRICKED = [
+    "ভুল অপশনটি সঠিক উত্তরের সাথে একই ক্যাটাগরির — তাই পরিচিত মনে হয়েছে। কিন্তু কাজ সম্পূর্ণ আলাদা।",
+    "এই ধরনের প্রশ্নে পরীক্ষক ইচ্ছাকৃতভাবে কাছাকাছি শব্দ দিয়ে বিভ্রান্ত করেন। NCTB textbook থেকে আবার পড়ো।",
+    "শুধু মুখস্থ নয়, কেন সঠিক সেটা বুঝতে হবে। তাহলে এই ধরনের ফাঁদে পড়বে না।",
 ]
 
 
 def fallback_notes(dna_report: Dict[str, Any]) -> Dict[str, Any]:
+    """Generate rich, personalized Bengali study notes from question metadata."""
     notes = {"slow": [], "confused": [], "danger": []}
 
+    # ── SLOW: Explanation + Memory Trick + Trap ──
     for it in dna_report.get("slow", []):
-        prefix = random.choice(_SLOW_PREFIXES)
+        topic = it.get("concept") or it.get("chapter") or "Topic"
+        base_explanation = it.get("explanation", "")
+        speed_note = random.choice(_SLOW_EXPLANATIONS)
         notes["slow"].append({
-            "topic": it.get("concept") or it.get("chapter") or "Topic",
-            "explanation": f"{it.get('explanation', '')} {prefix}",
-            "memoryTrick": it.get("memoryTrick", "Practice with a timer - do 10 questions in 200 seconds daily."),
-            "trapQuestion": it.get("trap", "Similar options thakle sobcheye specific uttorta bechhe nao."),
+            "topic": topic,
+            "explanation": f"{base_explanation}",
+            "speedNote": speed_note,
+            "memoryTrick": it.get("memoryTrick", "টাইমার দিয়ে প্র্যাকটিস করো — ১০টা প্রশ্ন ২০০ সেকেন্ডে।"),
+            "trapQuestion": it.get("trap", "কাছাকাছি অপশন থাকলে সবচেয়ে specific উত্তরটা বেছে নাও।"),
         })
 
-    _confused_descs = [
-        "Bhul bikolpo - eta concept er sathe related holeo, porikkhay confused korar jonno deya hoyeche.",
-        "Bhul bikolpo - namer mil thakleo function alada. Ei fandey poro na.",
-        "Bhul bikolpo - eki category-r kintu kaj sompurno alada. Parthokko ta mone rakho.",
-    ]
-
+    # ── CONFUSED: Multi-column Comparison Table + Memory Trick + Trap ──
     for it in dna_report.get("confused", []):
+        topic = it.get("concept") or it.get("chapter") or "Topic"
         correct_text = it.get("correctAnswerText", "")
-        table = [{"concept": correct_text, "description": f"Sothik uttor: {it.get('explanation', '')}"}]
-        descs = list(_confused_descs)
-        random.shuffle(descs)
-        for idx, opt in enumerate(it.get("options", [])):
-            if idx != it.get("correctAnswerIndex"):
-                table.append({"concept": opt, "description": descs[idx % len(descs)]})
+        chosen_text = it.get("finalAnswerText", "")
+        base_explanation = it.get("explanation", "")
+
+        # Build a rich comparison table: correct answer vs wrong options
+        # Each row has concept name + what it does (function/role)
+        table = []
+        options = it.get("options", [])
+        correct_idx = it.get("correctAnswerIndex", 0)
+
+        for idx, opt in enumerate(options):
+            if idx == correct_idx:
+                table.append({"concept": opt, "description": base_explanation, "isCorrect": True})
+            elif opt == chosen_text:
+                table.append({"concept": opt, "description": f"তুমি এটা বেছেছ — কিন্তু এটা ভুল। {it.get('trap', '')}", "isCorrect": False})
+            else:
+                table.append({"concept": opt, "description": "ভুল বিকল্প — নামের মিল থাকলেও কাজ আলাদা।", "isCorrect": False})
+
         notes["confused"].append({
-            "topic": it.get("concept") or it.get("chapter") or "Topic",
+            "topic": topic,
+            "explanation": f"{base_explanation} ধীরে ভাবলেও এবং একাধিকবার পরিবর্তন করলেও — {correct_text} সঠিক।",
             "comparisonTable": table,
-            "memoryTrick": it.get("memoryTrick", "Concept gulo-r parthokko nije haate likhe barbar practice koro."),
-            "trapQuestion": it.get("trap", "Porikkhok pray-i kachakachi shobdo diye confused korar cheshta kore. Shotorko thako."),
+            "memoryTrick": it.get("memoryTrick", "কনসেপ্টগুলোর পার্থক্য নিজে হাতে লিখে বারবার প্র্যাকটিস করো।"),
+            "trapQuestion": it.get("trap", "পরীক্ষক প্রায়ই কাছাকাছি শব্দ দিয়ে confused করার চেষ্টা করেন। সতর্ক থাকো।"),
         })
 
+    # ── DANGER: Explanation + Why Correct + Why Tricked + Trap ──
     for it in dna_report.get("danger", []):
-        prefix = random.choice(_DANGER_PREFIXES)
+        topic = it.get("concept") or it.get("chapter") or "Topic"
+        correct_text = it.get("correctAnswerText", "")
+        chosen_text = it.get("finalAnswerText", "skipped")
+        base_explanation = it.get("explanation", "")
+        danger_explain = random.choice(_DANGER_EXPLANATIONS)
+        tricked_reason = random.choice(_DANGER_TRICKED)
+
         notes["danger"].append({
-            "topic": it.get("concept") or it.get("chapter") or "Topic",
-            "explanation": prefix,
-            "whyCorrect": f"Sothik uttor holo '{it.get('correctAnswerText','')}' - {it.get('explanation', '')}",
-            "whyTricked": f"{it.get('trap', 'Sadhranoto ekta concept er sathe arekta guliye felar karone emon hoy.')} NCTB textbook theke abar poro - shudhu mukhostho noy, keno sothik seta bojho.",
-            "trapQuestion": it.get("trap", "Similar option thakle protita option er mul parthokko chinta koro - druto uttor dio na."),
+            "topic": topic,
+            "explanation": base_explanation,
+            "dangerNote": danger_explain,
+            "whyCorrect": f"সঠিক উত্তর হলো '{correct_text}' — {base_explanation}",
+            "whyTricked": f"তুমি '{chosen_text}' বেছেছ। {it.get('trap', tricked_reason)}",
+            "memoryTrick": it.get("memoryTrick", ""),
+            "trapQuestion": it.get("trap", "একই ক্যাটাগরির অপশন থাকলে প্রতিটার মূল পার্থক্য চিন্তা করো — দ্রুত উত্তর দিও না।"),
         })
 
     return notes
@@ -369,18 +399,41 @@ You receive a student's behavioral DNA report — questions classified as "slow"
 
 Generate personalized study notes in this EXACT JSON format:
 {
-  "slow": [{"topic":"...","explanation":"...","memoryTrick":"...","trapQuestion":"..."}],
-  "confused": [{"topic":"...","comparisonTable":[{"concept":"...","description":"..."}],"memoryTrick":"...","trapQuestion":"..."}],
-  "danger": [{"topic":"...","explanation":"...","whyCorrect":"...","whyTricked":"...","trapQuestion":"..."}]
+  "slow": [{
+    "topic":"কনসেপ্ট নাম",
+    "explanation":"বিষয়টির সম্পূর্ণ ব্যাখ্যা বাংলায়",
+    "speedNote":"কেন ধীর হওয়া ক্ষতিকর সেটার coaching note",
+    "memoryTrick":"মনে রাখার সহজ ট্রিক — bold করো",
+    "trapQuestion":"ফাঁদ প্রশ্ন: 'পরীক্ষায় আসতে পারে এমন tricky MCQ'"
+  }],
+  "confused": [{
+    "topic":"কনসেপ্ট নাম",
+    "explanation":"ব্যাখ্যা + কেন confused হয়েছ সেটার বিশ্লেষণ",
+    "comparisonTable":[
+      {"concept":"অপশন ১","description":"এটার কাজ কী","isCorrect":true},
+      {"concept":"অপশন ২","description":"এটা কেন ভুল","isCorrect":false}
+    ],
+    "memoryTrick":"পার্থক্য মনে রাখার ট্রিক",
+    "trapQuestion":"ফাঁদ প্রশ্ন: 'কাছাকাছি concept নিয়ে tricky MCQ'"
+  }],
+  "danger": [{
+    "topic":"কনসেপ্ট নাম",
+    "explanation":"সঠিক ব্যাখ্যা",
+    "dangerNote":"কেন confidently wrong হওয়া সবচেয়ে বিপজ্জনক — coaching",
+    "whyCorrect":"সঠিক উত্তর কেন সঠিক তার ব্যাখ্যা",
+    "whyTricked":"ছাত্র কেন ভুল অপশনে আটকে গেছে তার বিশ্লেষণ",
+    "memoryTrick":"মনে রাখার ট্রিক",
+    "trapQuestion":"ফাঁদ প্রশ্ন: 'এই concept এ পরীক্ষক কীভাবে ফাঁদ পাতে'"
+  }]
 }
 
 Rules:
-- Write in Bangla (Bengali script) for explanations, memory tricks, and trap questions
-- For "slow" items: explain the concept clearly and give a speed-boosting memory trick
-- For "confused" items: create a comparison table showing the correct answer vs what they confused it with
-- For "danger" items: explain WHY the student's wrong answer felt correct and WHY the actual answer is right
-- Memory tricks should be catchy, exam-focused, and memorable
-- Trap questions should be realistic MCQ traps an admission student might face
+- Write EVERYTHING in Bangla (Bengali script) — no Banglish, no English (except scientific terms like DNA, ATP, mRNA)
+- For "slow" items: explain the concept clearly, add a speed coaching note, give a catchy memory trick
+- For "confused" items: create a COMPARISON TABLE with ALL 4 options showing what each one does, mark isCorrect:true for correct answer
+- For "danger" items: explain WHY the student's wrong answer felt correct (whyTricked) and WHY the actual answer is right (whyCorrect), add a dangerNote about overconfidence
+- Memory tricks should be catchy, exam-focused, bold — like a real tutor coaching
+- Trap questions should be realistic MCQ traps a medical admission student would face
 - Return ONLY valid JSON, no markdown, no backticks"""
 
 
@@ -393,12 +446,16 @@ def build_llm_prompt(dna_report: Dict[str, Any]) -> str:
         parts.append(f"\n## {group.upper()} questions ({len(items)}):")
         for it in items:
             parts.append(f"- Question: {it.get('questionText', '')}")
-            parts.append(f"  Correct: {it.get('correctAnswerText', '')}")
+            parts.append(f"  Correct Answer: {it.get('correctAnswerText', '')}")
             chosen = it.get('finalAnswerText', 'skipped')
             parts.append(f"  Student chose: {chosen}")
+            parts.append(f"  All Options: {', '.join(it.get('options', []))}")
             parts.append(f"  Time: {it.get('timeTaken', 0)}s, Switches: {it.get('switchCount', 0)}")
             parts.append(f"  Chapter: {it.get('chapter', '')}")
             parts.append(f"  Concept: {it.get('concept', '')}")
+            parts.append(f"  Base explanation: {it.get('explanation', '')}")
+            parts.append(f"  Memory trick hint: {it.get('memoryTrick', '')}")
+            parts.append(f"  Trap hint: {it.get('trap', '')}")
     return "\n".join(parts) if parts else "No weak areas found."
 
 

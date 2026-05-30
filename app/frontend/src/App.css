@@ -327,7 +327,29 @@ h1, h2, h3 { font-family: var(--display); letter-spacing: -0.02em; margin: 0; }
 .note-row { margin-bottom: 12px; }
 .note-lbl { font-family: var(--mono); font-size: 11px; text-transform: uppercase; letter-spacing: .08em; color: var(--text-faint); display: block; margin-bottom: 4px; }
 .note-val { font-size: 14.5px; line-height: 1.6; color: var(--text); }
-.note-trap { font-size: 13.5px; line-height: 1.55; color: #ffe0b8; background: rgba(245, 166, 35, 0.08); border: 1px solid rgba(245, 166, 35, 0.2); border-radius: var(--r-sm); padding: 12px 14px; margin-top: 8px; }
+.note-trap { font-size: 13.5px; line-height: 1.55; color: #ffe0b8; background: rgba(245, 166, 35, 0.08); border: 1px solid rgba(245, 166, 35, 0.2); border-radius: var(--r-sm); padding: 12px 14px; margin-top: 12px; }
+
+/* Speed callout (amber) — for slow questions */
+.note-speed-callout { font-size: 13.5px; line-height: 1.55; color: var(--amber); background: rgba(245, 166, 35, 0.06); border-left: 3px solid var(--amber); border-radius: 0 var(--r-sm) var(--r-sm) 0; padding: 10px 14px; margin: 10px 0; }
+
+/* Memory trick callout (green) — universal */
+.note-memory-callout { font-size: 14px; line-height: 1.55; color: var(--green); background: rgba(34, 201, 122, 0.06); border: 1px solid rgba(34, 201, 122, 0.2); border-radius: var(--r-sm); padding: 12px 14px; margin: 10px 0; }
+.note-memory-callout strong { color: #3df598; }
+
+/* Danger callout (red) — for confidently wrong */
+.note-danger-callout { font-size: 13.5px; line-height: 1.55; color: #ffb3be; background: rgba(255, 79, 106, 0.06); border-left: 3px solid var(--red); border-radius: 0 var(--r-sm) var(--r-sm) 0; padding: 10px 14px; margin: 10px 0; }
+
+/* Comparison table v2 — richer format */
+.cmp-table-v2 { border: 1px solid var(--border); border-radius: var(--r-sm); overflow: hidden; margin: 10px 0 14px; }
+.cmp-row-v2 { display: grid; grid-template-columns: 160px 1fr; border-top: 1px solid var(--border); }
+.cmp-row-v2:first-child { border-top: none; }
+.cmp-row-v2.correct { background: rgba(34, 201, 122, 0.07); }
+.cmp-row-v2.correct .cmp-concept { color: var(--green); }
+.cmp-row-v2.wrong .cmp-concept { color: var(--text-dim); }
+.cmp-concept { padding: 10px 13px; font-family: var(--mono); font-size: 12.5px; border-right: 1px solid var(--border); font-weight: 500; }
+.cmp-desc { padding: 10px 13px; font-size: 13.5px; line-height: 1.5; }
+
+/* Legacy table kept for backwards compat */
 .cmp-table { border: 1px solid var(--border); border-radius: var(--r-sm); overflow: hidden; margin: 6px 0 12px; }
 .cmp-row { display: grid; grid-template-columns: 1fr 1.6fr; border-top: 1px solid var(--border); }
 .cmp-row:first-child { border-top: none; }

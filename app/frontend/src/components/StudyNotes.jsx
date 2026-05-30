@@ -10,8 +10,25 @@ function NoteRow({ label, children }) {
   );
 }
 
+function ComparisonTable({ rows }) {
+  if (!rows || rows.length === 0) return null;
+  return (
+    <div className="cmp-table-v2">
+      {rows.map((row, j) => (
+        <div className={`cmp-row-v2 ${row.isCorrect ? "correct" : "wrong"}`} key={j}>
+          <div className="cmp-concept">{row.isCorrect ? "✓" : "✗"} {row.concept}</div>
+          <div className="cmp-desc">{row.description}</div>
+        </div>
+      ))}
+    </div>
+  );
+}
+
 export default function StudyNotes({ loading, notes, source, onDownload, lang }) {
   const empty = notes && !notes.slow?.length && !notes.confused?.length && !notes.danger?.length;
+
+  // Section counter for numbering
+  let sectionNum = 0;
 
   return (
     <div className="view" data-testid="notes-view">
@@ -44,47 +61,80 @@ export default function StudyNotes({ loading, notes, source, onDownload, lang })
 
         {!loading && notes && !empty && (
           <>
-            {notes.slow?.map((n, i) => (
-              <div className="card note-card" key={"s" + i} data-testid={`note-slow-${i}`}>
-                <span className="note-badge nb-slow">{t("slowBadge", lang)}</span>
-                <div className="note-topic">{n.topic}</div>
-                {n.explanation && <NoteRow label={t("explanation", lang)}>{n.explanation}</NoteRow>}
-                {n.memoryTrick && <NoteRow label={t("memoryTrick", lang)}>{n.memoryTrick}</NoteRow>}
-                {n.trapQuestion && <div className="note-trap">{t("trapQ", lang)} {n.trapQuestion}</div>}
-              </div>
-            ))}
+            {/* ── SLOW SECTIONS ── */}
+            {notes.slow?.map((n, i) => {
+              sectionNum++;
+              return (
+                <div className="card note-card" key={"s" + i} data-testid={`note-slow-${i}`}>
+                  <span className="note-badge nb-slow">
+                    {lang === "bn" ? `সেকশন ${sectionNum} — ধীর` : `Section ${sectionNum} — Slow`}
+                  </span>
+                  <div className="note-topic">{n.topic}</div>
+                  {n.explanation && <NoteRow label={t("explanation", lang)}>{n.explanation}</NoteRow>}
+                  {n.speedNote && (
+                    <div className="note-speed-callout">
+                      ⏱ {n.speedNote}
+                    </div>
+                  )}
+                  {n.memoryTrick && (
+                    <div className="note-memory-callout">
+                      💡 {lang === "bn" ? "মনে রাখো:" : "Remember:"} <strong>{n.memoryTrick}</strong>
+                    </div>
+                  )}
+                  {n.trapQuestion && <div className="note-trap">🪤 {t("trapQ", lang)} "{n.trapQuestion}"</div>}
+                </div>
+              );
+            })}
 
-            {notes.confused?.map((n, i) => (
-              <div className="card note-card" key={"c" + i} data-testid={`note-confused-${i}`}>
-                <span className="note-badge nb-confused">{t("confusedBadge", lang)}</span>
-                <div className="note-topic">{n.topic}</div>
-                {n.comparisonTable?.length > 0 && (
-                  <div className="cmp-table">
-                    {n.comparisonTable.map((row, j) => (
-                      <div className={`cmp-row ${j === 0 ? "correct" : ""}`} key={j}>
-                        <div className="cmp-c concept">{row.concept}</div>
-                        <div className="cmp-c">{row.description}</div>
-                      </div>
-                    ))}
-                  </div>
-                )}
-                {n.memoryTrick && <NoteRow label={t("memoryTrick", lang)}>{n.memoryTrick}</NoteRow>}
-                {n.trapQuestion && <div className="note-trap">{t("trapQ", lang)} {n.trapQuestion}</div>}
-              </div>
-            ))}
+            {/* ── CONFUSED SECTIONS ── */}
+            {notes.confused?.map((n, i) => {
+              sectionNum++;
+              return (
+                <div className="card note-card" key={"c" + i} data-testid={`note-confused-${i}`}>
+                  <span className="note-badge nb-confused">
+                    {lang === "bn" ? `সেকশন ${sectionNum} — কগনিটিভ কনফ্লিক্ট` : `Section ${sectionNum} — Cognitive Conflict`}
+                  </span>
+                  <div className="note-topic">{n.topic}</div>
+                  {n.explanation && <NoteRow label={t("explanation", lang)}>{n.explanation}</NoteRow>}
+                  <ComparisonTable rows={n.comparisonTable} />
+                  {n.memoryTrick && (
+                    <div className="note-memory-callout">
+                      💡 {lang === "bn" ? "মনে রাখো:" : "Remember:"} <strong>{n.memoryTrick}</strong>
+                    </div>
+                  )}
+                  {n.trapQuestion && <div className="note-trap">🪤 {t("trapQ", lang)} "{n.trapQuestion}"</div>}
+                </div>
+              );
+            })}
 
-            {notes.danger?.map((n, i) => (
-              <div className="card note-card" key={"d" + i} data-testid={`note-danger-${i}`}>
-                <span className="note-badge nb-danger">{t("dangerBadge", lang)}</span>
-                <div className="note-topic">{n.topic}</div>
-                {n.explanation && <NoteRow label={t("explanation", lang)}>{n.explanation}</NoteRow>}
-                {n.whyCorrect && <NoteRow label={t("whyCorrect", lang)}>{n.whyCorrect}</NoteRow>}
-                {n.whyTricked && <NoteRow label={t("whyTricked", lang)}>{n.whyTricked}</NoteRow>}
-                {n.trapQuestion && <div className="note-trap">{t("trapQ", lang)} {n.trapQuestion}</div>}
-              </div>
-            ))}
+            {/* ── DANGER SECTIONS ── */}
+            {notes.danger?.map((n, i) => {
+              sectionNum++;
+              return (
+                <div className="card note-card" key={"d" + i} data-testid={`note-danger-${i}`}>
+                  <span className="note-badge nb-danger">
+                    {lang === "bn" ? `সেকশন ${sectionNum} — Confidently Wrong` : `Section ${sectionNum} — Confidently Wrong`}
+                  </span>
+                  <div className="note-topic">{n.topic}</div>
+                  {n.explanation && <NoteRow label={t("explanation", lang)}>{n.explanation}</NoteRow>}
+                  {n.dangerNote && (
+                    <div className="note-danger-callout">
+                      ⚠️ {n.dangerNote}
+                    </div>
+                  )}
+                  {n.whyCorrect && <NoteRow label={t("whyCorrect", lang)}>{n.whyCorrect}</NoteRow>}
+                  {n.whyTricked && <NoteRow label={t("whyTricked", lang)}>{n.whyTricked}</NoteRow>}
+                  {n.memoryTrick && (
+                    <div className="note-memory-callout">
+                      💡 {lang === "bn" ? "মনে রাখো:" : "Remember:"} <strong>{n.memoryTrick}</strong>
+                    </div>
+                  )}
+                  {n.trapQuestion && <div className="note-trap">🪤 {t("trapQ", lang)} "{n.trapQuestion}"</div>}
+                </div>
+              );
+            })}
 
-            {source && <div className="note-src">— {source === "ai" ? "✨ AI-generated · Powered by Google Gemini" : "MEDHA classifier notes"} —</div>}
+            {source && <div className="note-src">— {source === "ai" ? "✨ AI-generated · Powered by Google Gemini" : "📚 MEDHA Behavioral Notes"} —</div>}
           </>
         )}
       </div>
