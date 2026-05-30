@@ -459,6 +459,25 @@ def build_llm_prompt(dna_report: Dict[str, Any]) -> str:
     return "\n".join(parts) if parts else "No weak areas found."
 
 
+def clean_and_parse_json(text: str) -> Optional[Dict]:
+    """Clean markdown code block backticks from LLM responses and parse as JSON."""
+    if not text:
+        return None
+    text = text.strip()
+    if text.startswith("```"):
+        lines = text.split("\n")
+        if lines[0].startswith("```"):
+            lines = lines[1:]
+        if lines and lines[-1].startswith("```"):
+            lines = lines[:-1]
+        text = "\n".join(lines).strip()
+    try:
+        return json.loads(text)
+    except Exception as e:
+        logger.warning(f"JSON parsing failed: {e}. Raw text was: {text[:500]}")
+        return None
+
+
 async def call_gemini(prompt: str) -> Optional[Dict]:
     if not GEMINI_KEY:
         return None
@@ -468,14 +487,14 @@ async def call_gemini(prompt: str) -> Optional[Dict]:
         "generationConfig": {"temperature": 0.7, "maxOutputTokens": 4096, "responseMimeType": "application/json"}
     }
     try:
-        async with httpx.AsyncClient(timeout=15) as client:
+        async with httpx.AsyncClient(timeout=30) as client:
             resp = await client.post(url, json=payload)
             if resp.status_code != 200:
                 logger.warning(f"Gemini returned {resp.status_code}: {resp.text[:200]}")
                 return None
             data = resp.json()
             text = data["candidates"][0]["content"]["parts"][0]["text"]
-            return json.loads(text)
+            return clean_and_parse_json(text)
     except Exception as e:
         logger.warning(f"Gemini failed: {e}")
         return None
@@ -497,14 +516,14 @@ async def call_groq(prompt: str) -> Optional[Dict]:
     }
     headers = {"Authorization": f"Bearer {GROQ_KEY}", "Content-Type": "application/json"}
     try:
-        async with httpx.AsyncClient(timeout=15) as client:
+        async with httpx.AsyncClient(timeout=30) as client:
             resp = await client.post(url, json=payload, headers=headers)
             if resp.status_code != 200:
                 logger.warning(f"Groq returned {resp.status_code}: {resp.text[:200]}")
                 return None
             data = resp.json()
             text = data["choices"][0]["message"]["content"]
-            return json.loads(text)
+            return clean_and_parse_json(text)
     except Exception as e:
         logger.warning(f"Groq failed: {e}")
         return None
@@ -595,14 +614,14 @@ async def call_openrouter(prompt: str) -> Optional[Dict]:
         "X-Title": "MEDHA"
     }
     try:
-        async with httpx.AsyncClient(timeout=20) as client:
+        async with httpx.AsyncClient(timeout=30) as client:
             resp = await client.post(url, json=payload, headers=headers)
             if resp.status_code != 200:
                 logger.warning(f"OpenRouter returned {resp.status_code}: {resp.text[:200]}")
                 return None
             data = resp.json()
             text = data["choices"][0]["message"]["content"]
-            return json.loads(text)
+            return clean_and_parse_json(text)
     except Exception as e:
         logger.warning(f"OpenRouter failed: {e}")
         return None
@@ -623,26 +642,26 @@ async def generate_notes(req: NotesRequest):
     result_notes = None
     source = None
 
-    # Try OpenRouter first (reliable free tier)
-    notes = await call_openrouter(prompt)
+    # Try Groq FIRST (it is extremely fast, reliable, and has valid key quota!)
+    notes = await call_groq(prompt)
     if notes:
-        logger.info("✅ Notes generated via OpenRouter")
+        logger.info("✅ Notes generated via Groq")
         result_notes = notes
         source = "ai"
 
-    # Try Gemini 
+    # Try OpenRouter second
+    if not result_notes:
+        notes = await call_openrouter(prompt)
+        if notes:
+            logger.info("✅ Notes generated via OpenRouter")
+            result_notes = notes
+            source = "ai"
+
+    # Try Gemini third
     if not result_notes:
         notes = await call_gemini(prompt)
         if notes:
             logger.info("✅ Notes generated via Gemini")
-            result_notes = notes
-            source = "ai"
-
-    # Try Groq
-    if not result_notes:
-        notes = await call_groq(prompt)
-        if notes:
-            logger.info("✅ Notes generated via Groq")
             result_notes = notes
             source = "ai"
 

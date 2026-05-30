@@ -9,7 +9,7 @@ OPENROUTER_KEY = os.getenv("OPENROUTER_API_KEY", "")
 async def test_openrouter():
     url = "https://openrouter.ai/api/v1/chat/completions"
     payload = {
-        "model": "google/gemma-4-31b-it:free",
+        "model": "deepseek/deepseek-v4-flash:free",
         "messages": [{"role": "user", "content": "Say hello in Bengali"}]
     }
     headers = {
@@ -17,7 +17,7 @@ async def test_openrouter():
         "Content-Type": "application/json",
     }
     async with httpx.AsyncClient() as client:
-        resp = await client.post(url, json=payload, headers=headers, timeout=10)
+        resp = await client.post(url, json=payload, headers=headers, timeout=15)
         if resp.status_code == 200:
             print("SUCCESS")
             print(resp.json()['choices'][0]['message']['content'])

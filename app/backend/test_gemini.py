@@ -8,7 +8,7 @@ GEMINI_KEY = os.getenv("GEMINI_API_KEY", "")
 
 async def test_gemini():
     print(f"Key loaded: {'Yes' if GEMINI_KEY else 'No'}")
-    url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key={GEMINI_KEY}"
+    url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key={GEMINI_KEY}"
     payload = {
         "contents": [{"parts": [{"text": "Hello, are you working?"}]}],
     }
