@@ -11,8 +11,8 @@ const MOODS = [
 ];
 
 export default function MoodCheck({ onContinue, lang }) {
-  const [mood, setMood] = useState(null);
-  const [confidence, setConfidence] = useState(true); // default ON
+  const [mood, setMood] = useState("okay");
+  const [confidence, setConfidence] = useState(false); // default ON
 
   return (
     <div className="view" data-testid="mood-view">
