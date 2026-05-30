@@ -275,42 +275,66 @@ def compute_readiness(items: List[Dict[str, Any]]) -> Dict[str, Any]:
     }
 
 
-# ──────────────────────────────────────────────────────────────
-#  Deterministic fallback notes (always works, zero tokens)
-# ──────────────────────────────────────────────────────────────
+import random
+
+_SLOW_PREFIXES = [
+    "sathi ujtor diyecho kintu onek somoy niyecho. Medical admission e proti proshne gorh 36 second - ei speed e porikkhay tumi shesh korte parbena.",
+    "Thik kintu dhir. Amol porikkhay 100 ta proshno 60 minute e - orthath dwidha korar sujog nei. Speed barao.",
+    "Tumi jano, kintu somoy niyontron durbhol. Shesher diker proshno skip korte hobe ja marks komabe.",
+]
+
+_DANGER_PREFIXES = [
+    "Tumi druto uttor diyecho ebong atmobishwashi chile - kintu bhul korecho. Eta sobar cheye bipojjonok pattern karon tumi jano-o na je tumi bhul jano.",
+    "Druto uttor + bhul = negative marking. Medical porikkhay proti bhul uttore 0.25 kata jay. Atmobishwashi bhul theke sobcheye beshi marks jay.",
+    "Over-confidence sobcheye boro shotru. Tumi bhebecho jano, kintu aslei bhul tottho mukhostho korecho.",
+]
+
+
 def fallback_notes(dna_report: Dict[str, Any]) -> Dict[str, Any]:
     notes = {"slow": [], "confused": [], "danger": []}
 
     for it in dna_report.get("slow", []):
+        prefix = random.choice(_SLOW_PREFIXES)
         notes["slow"].append({
-            "topic": it.get("concept") or it.get("chapter") or "বিষয়",
-            "explanation": f"তুমি সঠিক উত্তর দিয়েছ, কিন্তু অনেক সময় নিয়েছ। {it.get('explanation', '')} ধারণাটি পরিষ্কার, কিন্তু দ্রুত সিদ্ধান্ত নিতে হবে।",
-            "memoryTrick": it.get("memoryTrick", "দ্রুত মনে রাখার জন্য বারবার রিভিশন দাও।"),
-            "trapQuestion": it.get("trap", ""),
+            "topic": it.get("concept") or it.get("chapter") or "Topic",
+            "explanation": f"{it.get('explanation', '')} {prefix}",
+            "memoryTrick": it.get("memoryTrick", "Practice with a timer - do 10 questions in 200 seconds daily."),
+            "trapQuestion": it.get("trap", "Similar options thakle sobcheye specific uttorta bechhe nao."),
         })
 
+    _confused_descs = [
+        "Bhul bikolpo - eta concept er sathe related holeo, porikkhay confused korar jonno deya hoyeche.",
+        "Bhul bikolpo - namer mil thakleo function alada. Ei fandey poro na.",
+        "Bhul bikolpo - eki category-r kintu kaj sompurno alada. Parthokko ta mone rakho.",
+    ]
+
     for it in dna_report.get("confused", []):
-        table = [{"concept": it.get("correctAnswerText", ""), "description": f"সঠিক: {it.get('explanation', '')}"}]
+        correct_text = it.get("correctAnswerText", "")
+        table = [{"concept": correct_text, "description": f"Sothik uttor: {it.get('explanation', '')}"}]
+        descs = list(_confused_descs)
+        random.shuffle(descs)
         for idx, opt in enumerate(it.get("options", [])):
             if idx != it.get("correctAnswerIndex"):
-                table.append({"concept": opt, "description": "ভুল বিকল্প — এটি কনসেপ্টের সাথে সম্পর্কিত নয়, পরীক্ষায় সময় নষ্ট করার জন্য দেওয়া হয়েছে।"})
+                table.append({"concept": opt, "description": descs[idx % len(descs)]})
         notes["confused"].append({
-            "topic": it.get("concept") or it.get("chapter") or "বিষয়",
+            "topic": it.get("concept") or it.get("chapter") or "Topic",
             "comparisonTable": table,
-            "memoryTrick": it.get("memoryTrick", "কনসেপ্টগুলোর পার্থক্য লিখে প্র্যাকটিস করো।"),
-            "trapQuestion": it.get("trap", "পরীক্ষক প্রায়ই কাছাকাছি উত্তর দিয়ে বিভ্রান্ত করার চেষ্টা করে।"),
+            "memoryTrick": it.get("memoryTrick", "Concept gulo-r parthokko nije haate likhe barbar practice koro."),
+            "trapQuestion": it.get("trap", "Porikkhok pray-i kachakachi shobdo diye confused korar cheshta kore. Shotorko thako."),
         })
 
     for it in dna_report.get("danger", []):
+        prefix = random.choice(_DANGER_PREFIXES)
         notes["danger"].append({
-            "topic": it.get("concept") or it.get("chapter") or "বিষয়",
-            "explanation": f"তুমি দ্রুত উত্তর দিয়েছ কিন্তু ভুল করেছ। এটি নেগেটিভ মার্কিংয়ের বড় কারণ।",
-            "whyCorrect": f"আসল সঠিক উত্তর হলো '{it.get('correctAnswerText','')}' — {it.get('explanation','')}",
-            "whyTricked": f"তুমি খুব আত্মবিশ্বাসের সাথে ভুল করেছ। {it.get('trap', 'সাধারণত ওভার-কনফিডেন্সের কারণে এমন হয়।')}",
-            "trapQuestion": it.get("trap", "সিমিলার অপশন থাকলে সতর্ক হও।"),
+            "topic": it.get("concept") or it.get("chapter") or "Topic",
+            "explanation": prefix,
+            "whyCorrect": f"Sothik uttor holo '{it.get('correctAnswerText','')}' - {it.get('explanation', '')}",
+            "whyTricked": f"{it.get('trap', 'Sadhranoto ekta concept er sathe arekta guliye felar karone emon hoy.')} NCTB textbook theke abar poro - shudhu mukhostho noy, keno sothik seta bojho.",
+            "trapQuestion": it.get("trap", "Similar option thakle protita option er mul parthokko chinta koro - druto uttor dio na."),
         })
 
     return notes
+
 
 
 # ──────────────────────────────────────────────────────────────

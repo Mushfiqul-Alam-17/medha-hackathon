@@ -106,6 +106,19 @@ export default function App() {
     }
   }, [notes, attempt]);
 
+  // Load a past attempt from history  
+  const handleViewAttempt = async (attemptId) => {
+    try {
+      const { data } = await axios.get(`${API}/attempts/${attemptId}`);
+      setAttempt(data);
+      setNotes(null);
+      setNotesSource(null);
+      setView("result");
+    } catch (e) {
+      toast.error("Failed to load attempt.");
+    }
+  };
+
   const handleNav = (key) => {
     if (key === "landing") { setView("landing"); return; }
     if (key === "mood") { setView("mood"); return; }
@@ -159,7 +172,9 @@ export default function App() {
           )}
           {view === "anxiety" && attempt && <AnxietyScore attempt={attempt} lang={lang} />}
           {view === "share" && attempt && <ShareCard attempt={attempt} lang={lang} />}
-          {view === "history" && <History history={history} onRetake={handleRetake} lang={lang} />}
+          {view === "history" && (
+            <History history={history} onViewAttempt={handleViewAttempt} onRetake={handleRetake} lang={lang} />
+          )}
         </>
       )}
     </div>
