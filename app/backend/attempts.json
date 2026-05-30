@@ -1,0 +1,1740 @@
+[
+  {
+    "id": "ba36ece7-8576-4af5-90e1-0a4eb727fcfb",
+    "createdAt": "2026-05-30T04:50:22.248999+00:00",
+    "mood": "Good",
+    "items": [],
+    "groups": {
+      "slow": [],
+      "confused": [],
+      "master": [],
+      "danger": []
+    },
+    "readiness": {
+      "score": 0,
+      "correct": 0,
+      "total": 1,
+      "master": 0,
+      "danger": 0,
+      "confused": 0,
+      "slow": 0,
+      "avgTime": 0.0
+    }
+  },
+  {
+    "id": "1f4855eb-b045-4e9b-8c60-7554fd3b8037",
+    "createdAt": "2026-05-30T04:51:45.047290+00:00",
+    "mood": "Good",
+    "items": [
+      {
+        "questionId": 1,
+        "chapter": "কোষ ও এর গঠন",
+        "questionText": "ইউক্যারিওটিক কোষে কোন অঙ্গাণু কোষীয় শ্বসনের মাধ্যমে ATP উৎপন্ন করে?",
+        "options": [
+          "নিউক্লিয়াস",
+          "রাইবোজোম",
+          "মাইটোকন্ড্রিয়া",
+          "লাইসোজোম"
+        ],
+        "correctAnswerIndex": 2,
+        "correctAnswerText": "মাইটোকন্ড্রিয়া",
+        "finalAnswerIndex": 2,
+        "finalAnswerText": "মাইটোকন্ড্রিয়া",
+        "timeTaken": 5.0,
+        "clickSequence": [
+          "2"
+        ],
+        "switchCount": 0,
+        "confidence": "sure",
+        "isCorrect": true,
+        "group": "master",
+        "concept": "মাইটোকন্ড্রিয়া ও ATP উৎপাদন",
+        "explanation": "মাইটোকন্ড্রিয়া কোষের শক্তি-কারখানা; এটি গ্লুকোজ ও অক্সিজেন ব্যবহার করে কোষীয় শ্বসনের মাধ্যমে ATP তৈরি করে।",
+        "memoryTrick": "মাইটো = শক্তির কারখানা (powerhouse)। ATP মানেই মাইটোকন্ড্রিয়া।",
+        "trap": "ক্লোরোপ্লাস্ট আলোক-শক্তি ধরে, কিন্তু ATP-এর প্রধান উৎস মাইটোকন্ড্রিয়া — দুটো গুলিয়ে ফেলো না।"
+      }
+    ],
+    "groups": {
+      "slow": [],
+      "confused": [],
+      "master": [
+        {
+          "questionId": 1,
+          "chapter": "কোষ ও এর গঠন",
+          "questionText": "ইউক্যারিওটিক কোষে কোন অঙ্গাণু কোষীয় শ্বসনের মাধ্যমে ATP উৎপন্ন করে?",
+          "options": [
+            "নিউক্লিয়াস",
+            "রাইবোজোম",
+            "মাইটোকন্ড্রিয়া",
+            "লাইসোজোম"
+          ],
+          "correctAnswerIndex": 2,
+          "correctAnswerText": "মাইটোকন্ড্রিয়া",
+          "finalAnswerIndex": 2,
+          "finalAnswerText": "মাইটোকন্ড্রিয়া",
+          "timeTaken": 5.0,
+          "clickSequence": [
+            "2"
+          ],
+          "switchCount": 0,
+          "confidence": "sure",
+          "isCorrect": true,
+          "group": "master",
+          "concept": "মাইটোকন্ড্রিয়া ও ATP উৎপাদন",
+          "explanation": "মাইটোকন্ড্রিয়া কোষের শক্তি-কারখানা; এটি গ্লুকোজ ও অক্সিজেন ব্যবহার করে কোষীয় শ্বসনের মাধ্যমে ATP তৈরি করে।",
+          "memoryTrick": "মাইটো = শক্তির কারখানা (powerhouse)। ATP মানেই মাইটোকন্ড্রিয়া।",
+          "trap": "ক্লোরোপ্লাস্ট আলোক-শক্তি ধরে, কিন্তু ATP-এর প্রধান উৎস মাইটোকন্ড্রিয়া — দুটো গুলিয়ে ফেলো না।"
+        }
+      ],
+      "danger": []
+    },
+    "readiness": {
+      "score": 100,
+      "correct": 1,
+      "total": 1,
+      "master": 1,
+      "danger": 0,
+      "confused": 0,
+      "slow": 0,
+      "avgTime": 5.0
+    },
+    "notes": {
+      "slow": [],
+      "confused": [],
+      "danger": []
+    },
+    "notesSource": "fallback"
+  },
+  {
+    "id": "ea299ec3-37a8-4873-9dd1-08f346454ab7",
+    "createdAt": "2026-05-30T05:31:14.908401+00:00",
+    "mood": "good",
+    "items": [
+      {
+        "questionId": 1,
+        "chapter": "কোষ ও এর গঠন",
+        "questionText": "ইউক্যারিওটিক কোষে কোন অঙ্গাণু কোষীয় শ্বসনের মাধ্যমে ATP উৎপন্ন করে?",
+        "options": [
+          "নিউক্লিয়াস",
+          "রাইবোজোম",
+          "মাইটোকন্ড্রিয়া",
+          "লাইসোজোম"
+        ],
+        "correctAnswerIndex": 2,
+        "correctAnswerText": "মাইটোকন্ড্রিয়া",
+        "finalAnswerIndex": 0,
+        "finalAnswerText": "নিউক্লিয়াস",
+        "timeTaken": 2.5,
+        "clickSequence": [
+          "A"
+        ],
+        "switchCount": 0,
+        "confidence": "none",
+        "isCorrect": false,
+        "group": "danger",
+        "concept": "মাইটোকন্ড্রিয়া ও ATP উৎপাদন",
+        "explanation": "মাইটোকন্ড্রিয়া কোষের শক্তি-কারখানা; এটি গ্লুকোজ ও অক্সিজেন ব্যবহার করে কোষীয় শ্বসনের মাধ্যমে ATP তৈরি করে।",
+        "memoryTrick": "মাইটো = শক্তির কারখানা (powerhouse)। ATP মানেই মাইটোকন্ড্রিয়া।",
+        "trap": "ক্লোরোপ্লাস্ট আলোক-শক্তি ধরে, কিন্তু ATP-এর প্রধান উৎস মাইটোকন্ড্রিয়া — দুটো গুলিয়ে ফেলো না।"
+      },
+      {
+        "questionId": 2,
+        "chapter": "সালোকসংশ্লেষণ",
+        "questionText": "উদ্ভিদ সূর্যালোককে রাসায়নিক শক্তিতে রূপান্তরিত করার প্রক্রিয়াকে কী বলে?",
+        "options": [
+          "কোষীয় শ্বসন",
+          "প্রস্বেদন",
+          "সালোকসংশ্লেষণ",
+          "গাঁজন"
+        ],
+        "correctAnswerIndex": 2,
+        "correctAnswerText": "সালোকসংশ্লেষণ",
+        "finalAnswerIndex": 1,
+        "finalAnswerText": "প্রস্বেদন",
+        "timeTaken": 0.8,
+        "clickSequence": [
+          "B"
+        ],
+        "switchCount": 0,
+        "confidence": "none",
+        "isCorrect": false,
+        "group": "danger",
+        "concept": "সালোকসংশ্লেষণ বনাম অনুরূপ প্রক্রিয়া",
+        "explanation": "সালোকসংশ্লেষণে উদ্ভিদ CO₂ ও জল থেকে সূর্যালোকের সাহায্যে গ্লুকোজ ও অক্সিজেন তৈরি করে।",
+        "memoryTrick": "ফটো = আলো, সিন্থেসিস = তৈরি — আলো দিয়ে খাদ্য তৈরি।",
+        "trap": "কোষীয় শ্বসন উল্টো প্রক্রিয়া — এটি খাদ্য ভেঙে শক্তি মুক্ত করে।"
+      },
+      {
+        "questionId": 3,
+        "chapter": "কোষ বিভাজন",
+        "questionText": "কোষ চক্রের কোন দশায় DNA-এর প্রতিলিপি (replication) সম্পন্ন হয়?",
+        "options": [
+          "G₁ দশা",
+          "G₂ দশা",
+          "S দশা",
+          "M দশা"
+        ],
+        "correctAnswerIndex": 2,
+        "correctAnswerText": "S দশা",
+        "finalAnswerIndex": null,
+        "finalAnswerText": null,
+        "timeTaken": 0.5,
+        "clickSequence": [],
+        "switchCount": 0,
+        "confidence": null,
+        "isCorrect": false,
+        "group": "danger",
+        "concept": "S দশা ও DNA প্রতিলিপি",
+        "explanation": "কোষ চক্র G₁ → S → G₂ → M ক্রমে চলে। DNA কেবল S (Synthesis) দশায় কপি হয়।",
+        "memoryTrick": "S = Synthesis = DNA সংশ্লেষণ। শুধু S দশাতেই DNA দ্বিগুণ হয়।",
+        "trap": "G₂ দেখে মনে হয় 'বিভাজনের প্রস্তুতি', কিন্তু তখন DNA কপি আগেই শেষ।"
+      },
+      {
+        "questionId": 4,
+        "chapter": "নিউক্লিক অ্যাসিড",
+        "questionText": "নিউক্লিয়াস থেকে রাইবোজোমে জিনগত তথ্য বহন করে কোন অণু?",
+        "options": [
+          "tRNA",
+          "mRNA",
+          "rRNA",
+          "snRNA"
+        ],
+        "correctAnswerIndex": 1,
+        "correctAnswerText": "mRNA",
+        "finalAnswerIndex": 1,
+        "finalAnswerText": "mRNA",
+        "timeTaken": 1.5,
+        "clickSequence": [
+          "B"
+        ],
+        "switchCount": 0,
+        "confidence": "none",
+        "isCorrect": true,
+        "group": "master",
+        "concept": "RNA-এর প্রকারভেদ ও কাজ",
+        "explanation": "mRNA (messenger RNA) DNA থেকে কোডন কপি করে রাইবোজোমে বহন করে, যেখানে প্রোটিন তৈরি হয়।",
+        "memoryTrick": "m = messenger = বার্তাবাহক। তথ্য বহন করলেই mRNA।",
+        "trap": "tRNA অ্যামিনো অ্যাসিড আনে, rRNA রাইবোজোম গঠন করে — তথ্য বহন করে না।"
+      },
+      {
+        "questionId": 5,
+        "chapter": "এনজাইম",
+        "questionText": "এনজাইম কীভাবে রাসায়নিক বিক্রিয়ার হার বৃদ্ধি করে?",
+        "options": [
+          "সক্রিয়ন শক্তি কমিয়ে",
+          "তাপমাত্রা বাড়িয়ে",
+          "বিক্রিয়ক ধ্বংস করে",
+          "pH বাড়িয়ে"
+        ],
+        "correctAnswerIndex": 0,
+        "correctAnswerText": "সক্রিয়ন শক্তি কমিয়ে",
+        "finalAnswerIndex": 0,
+        "finalAnswerText": "সক্রিয়ন শক্তি কমিয়ে",
+        "timeTaken": 2.4,
+        "clickSequence": [
+          "A"
+        ],
+        "switchCount": 0,
+        "confidence": "none",
+        "isCorrect": true,
+        "group": "master",
+        "concept": "এনজাইম ও সক্রিয়ন শক্তি",
+        "explanation": "এনজাইম জৈব অনুঘটক; এটি বিক্রিয়ার সক্রিয়ন শক্তি (activation energy) কমিয়ে বিক্রিয়ার হার বাড়ায়, নিজে অপরিবর্তিত থাকে।",
+        "memoryTrick": "এনজাইম = শর্টকাট পথ — কম শক্তিতেই বিক্রিয়া হয়।",
+        "trap": "এনজাইম তাপমাত্রা বা pH পরিবর্তন করে না; বরং নির্দিষ্ট তাপ-pH-এ সর্বোচ্চ কাজ করে।"
+      },
+      {
+        "questionId": 6,
+        "chapter": "রক্ত ও সংবহন",
+        "questionText": "রক্তে অক্সিজেন পরিবহনের জন্য দায়ী প্রোটিন কোনটি?",
+        "options": [
+          "অ্যালবুমিন",
+          "হিমোগ্লোবিন",
+          "ফাইব্রিনোজেন",
+          "গ্লোবিউলিন"
+        ],
+        "correctAnswerIndex": 1,
+        "correctAnswerText": "হিমোগ্লোবিন",
+        "finalAnswerIndex": 1,
+        "finalAnswerText": "হিমোগ্লোবিন",
+        "timeTaken": 0.9,
+        "clickSequence": [
+          "B"
+        ],
+        "switchCount": 0,
+        "confidence": "none",
+        "isCorrect": true,
+        "group": "master",
+        "concept": "হিমোগ্লোবিন ও অক্সিজেন পরিবহন",
+        "explanation": "হিমোগ্লোবিন লোহিত রক্তকণিকার লৌহযুক্ত প্রোটিন; এটি ফুসফুস থেকে অক্সিজেন গ্রহণ করে কোষে পৌঁছে দেয়।",
+        "memoryTrick": "হিমো = লোহা (heme) → লোহা অক্সিজেন ধরে।",
+        "trap": "ফাইব্রিনোজেন রক্ত জমাট বাঁধায়, অক্সিজেন বহন করে না।"
+      },
+      {
+        "questionId": 7,
+        "chapter": "শ্বসন",
+        "questionText": "অক্সিজেনের অনুপস্থিতিতে মানব পেশিকোষে গ্লুকোজ ভেঙে কী উৎপন্ন হয়?",
+        "options": [
+          "ইথানল",
+          "ল্যাকটিক অ্যাসিড",
+          "কার্বন ডাই-অক্সাইড",
+          "অ্যাসিটিক অ্যাসিড"
+        ],
+        "correctAnswerIndex": 1,
+        "correctAnswerText": "ল্যাকটিক অ্যাসিড",
+        "finalAnswerIndex": 1,
+        "finalAnswerText": "ল্যাকটিক অ্যাসিড",
+        "timeTaken": 1.1,
+        "clickSequence": [
+          "B"
+        ],
+        "switchCount": 0,
+        "confidence": null,
+        "isCorrect": true,
+        "group": "master",
+        "concept": "অবাত শ্বসন (Anaerobic respiration)",
+        "explanation": "অক্সিজেন ছাড়া মানব পেশিকোষে গ্লুকোজ অবাত শ্বসনে ল্যাকটিক অ্যাসিডে পরিণত হয়, যা পেশিতে ক্লান্তি সৃষ্টি করে।",
+        "memoryTrick": "মানুষ → ল্যাকটিক অ্যাসিড; ইস্ট → ইথানল।",
+        "trap": "ইথানল উৎপন্ন হয় ইস্ট/উদ্ভিদে, মানব পেশিতে নয়।"
+      },
+      {
+        "questionId": 8,
+        "chapter": "বংশগতি",
+        "questionText": "মেন্ডেলের একসংকর জননে F₂ জনুতে ফেনোটাইপিক অনুপাত কত?",
+        "options": [
+          "1 : 1",
+          "9 : 3 : 3 : 1",
+          "3 : 1",
+          "1 : 2 : 1"
+        ],
+        "correctAnswerIndex": 2,
+        "correctAnswerText": "3 : 1",
+        "finalAnswerIndex": 2,
+        "finalAnswerText": "3 : 1",
+        "timeTaken": 1.4,
+        "clickSequence": [
+          "B",
+          "C"
+        ],
+        "switchCount": 1,
+        "confidence": "none",
+        "isCorrect": true,
+        "group": "confused",
+        "concept": "মেন্ডেলের একসংকর জনন",
+        "explanation": "একসংকর জননে (একটি বৈশিষ্ট্য) F₂ জনুতে প্রকট ও প্রচ্ছন্নের ফেনোটাইপিক অনুপাত হয় 3 : 1।",
+        "memoryTrick": "একসংকর = 3:1 (ফেনোটাইপ), 1:2:1 (জিনোটাইপ)।",
+        "trap": "9:3:3:1 হলো দ্বিসংকর জননের অনুপাত — একসংকরের সাথে মিলিয়ে ফেলো না।"
+      },
+      {
+        "questionId": 9,
+        "chapter": "স্নায়ুতন্ত্র",
+        "questionText": "মানবদেহে স্নায়ুকোষের (neuron) দীর্ঘ প্রবর্ধনকে কী বলে?",
+        "options": [
+          "ডেনড্রাইট",
+          "অ্যাক্সন",
+          "সোমা",
+          "সিন্যাপস"
+        ],
+        "correctAnswerIndex": 1,
+        "correctAnswerText": "অ্যাক্সন",
+        "finalAnswerIndex": 1,
+        "finalAnswerText": "অ্যাক্সন",
+        "timeTaken": 1.1,
+        "clickSequence": [
+          "B"
+        ],
+        "switchCount": 0,
+        "confidence": "none",
+        "isCorrect": true,
+        "group": "master",
+        "concept": "নিউরনের গঠন",
+        "explanation": "অ্যাক্সন স্নায়ুকোষের দীর্ঘ প্রবর্ধন যা বৈদ্যুতিক সংকেত কোষদেহ (soma) থেকে দূরে পরবর্তী নিউরন বা পেশিকোষে বহন করে।",
+        "memoryTrick": "অ্যাক্সন = Arrow (তীর) — সংকেতকে দূরে নিয়ে যায়।",
+        "trap": "ডেনড্রাইট সংকেত গ্রহণ করে, প্রেরণ করে না — উল্টো কাজ।"
+      },
+      {
+        "questionId": 10,
+        "chapter": "কোষ বিভাজন",
+        "questionText": "মিয়োসিস কোষ বিভাজনের ফলে কতটি অপত্য কোষ তৈরি হয়?",
+        "options": [
+          "২টি",
+          "৩টি",
+          "৪টি",
+          "৮টি"
+        ],
+        "correctAnswerIndex": 2,
+        "correctAnswerText": "৪টি",
+        "finalAnswerIndex": 2,
+        "finalAnswerText": "৪টি",
+        "timeTaken": 1.2,
+        "clickSequence": [
+          "C"
+        ],
+        "switchCount": 0,
+        "confidence": null,
+        "isCorrect": true,
+        "group": "master",
+        "concept": "মিয়োসিস ও হ্যাপ্লয়েড কোষ",
+        "explanation": "মিয়োসিসে একটি ডিপ্লয়েড কোষ দুইবার বিভাজিত হয়ে ৪টি হ্যাপ্লয়েড কোষ তৈরি করে — গ্যামেট (শুক্রাণু/ডিম্বাণু) তৈরির জন্য।",
+        "memoryTrick": "মিয়োসিস = 'মি' = 4 (চারটি কোষ)। মাইটোসিস = 2।",
+        "trap": "মাইটোসিসে ২টি কোষ হয়; মিয়োসিসে ৪টি — দুটো গুলিয়ে ফেলার ফাঁদ।"
+      },
+      {
+        "questionId": 11,
+        "chapter": "বাস্তুবিদ্যা",
+        "questionText": "বাস্তুসংস্থানে (ecosystem) শক্তি প্রবাহের প্রথম স্তর কোনটি?",
+        "options": [
+          "গৌণ খাদক",
+          "প্রাথমিক খাদক",
+          "উৎপাদক",
+          "বিয়োজক"
+        ],
+        "correctAnswerIndex": 2,
+        "correctAnswerText": "উৎপাদক",
+        "finalAnswerIndex": 1,
+        "finalAnswerText": "প্রাথমিক খাদক",
+        "timeTaken": 1.0,
+        "clickSequence": [
+          "B"
+        ],
+        "switchCount": 0,
+        "confidence": "none",
+        "isCorrect": false,
+        "group": "danger",
+        "concept": "শক্তি প্রবাহ ও ট্রফিক স্তর",
+        "explanation": "উৎপাদক (Producer) সালোকসংশ্লেষণের মাধ্যমে সৌরশক্তিকে রাসায়নিক শক্তিতে রূপান্তর করে — তারাই শক্তি প্রবাহের প্রথম স্তর।",
+        "memoryTrick": "উৎপাদক = Producer = প্রথম (P = P)। প্রথমে তৈরি হয়, তারপর খাওয়া হয়।",
+        "trap": "প্রাথমিক খাদক দ্বিতীয় স্তর — 'প্রাথমিক' শব্দ দেখে প্রথম মনে হতে পারে।"
+      },
+      {
+        "questionId": 12,
+        "chapter": "রেচন",
+        "questionText": "মানবদেহে রক্ত পরিস্রাবণ (filtration) কোন অঙ্গে হয়?",
+        "options": [
+          "যকৃৎ",
+          "বৃক্ক (কিডনি)",
+          "ফুসফুস",
+          "অগ্ন্যাশয়"
+        ],
+        "correctAnswerIndex": 1,
+        "correctAnswerText": "বৃক্ক (কিডনি)",
+        "finalAnswerIndex": 1,
+        "finalAnswerText": "বৃক্ক (কিডনি)",
+        "timeTaken": 1.6,
+        "clickSequence": [
+          "A",
+          "B"
+        ],
+        "switchCount": 1,
+        "confidence": "none",
+        "isCorrect": true,
+        "group": "confused",
+        "concept": "বৃক্কের কার্যপ্রণালী",
+        "explanation": "বৃক্কের নেফ্রনে গ্লোমেরুলাসের মাধ্যমে রক্ত পরিস্রাবিত হয় — বর্জ্য ও অতিরিক্ত পানি আলাদা হয়ে মূত্র তৈরি করে।",
+        "memoryTrick": "কিডনি = ক্লিনার (K = Kidney = Kleen)। রক্ত ফিল্টার করে।",
+        "trap": "যকৃৎ বিষাক্ত পদার্থ ভাঙে (detoxify), কিন্তু রক্ত ফিল্টার করে বৃক্ক — দুটো আলাদা কাজ।"
+      },
+      {
+        "questionId": 12,
+        "chapter": "রেচন",
+        "questionText": "মানবদেহে রক্ত পরিস্রাবণ (filtration) কোন অঙ্গে হয়?",
+        "options": [
+          "যকৃৎ",
+          "বৃক্ক (কিডনি)",
+          "ফুসফুস",
+          "অগ্ন্যাশয়"
+        ],
+        "correctAnswerIndex": 1,
+        "correctAnswerText": "বৃক্ক (কিডনি)",
+        "finalAnswerIndex": 1,
+        "finalAnswerText": "বৃক্ক (কিডনি)",
+        "timeTaken": 2.5,
+        "clickSequence": [
+          "A",
+          "B"
+        ],
+        "switchCount": 1,
+        "confidence": "none",
+        "isCorrect": true,
+        "group": "confused",
+        "concept": "বৃক্কের কার্যপ্রণালী",
+        "explanation": "বৃক্কের নেফ্রনে গ্লোমেরুলাসের মাধ্যমে রক্ত পরিস্রাবিত হয় — বর্জ্য ও অতিরিক্ত পানি আলাদা হয়ে মূত্র তৈরি করে।",
+        "memoryTrick": "কিডনি = ক্লিনার (K = Kidney = Kleen)। রক্ত ফিল্টার করে।",
+        "trap": "যকৃৎ বিষাক্ত পদার্থ ভাঙে (detoxify), কিন্তু রক্ত ফিল্টার করে বৃক্ক — দুটো আলাদা কাজ।"
+      },
+      {
+        "questionId": 12,
+        "chapter": "রেচন",
+        "questionText": "মানবদেহে রক্ত পরিস্রাবণ (filtration) কোন অঙ্গে হয়?",
+        "options": [
+          "যকৃৎ",
+          "বৃক্ক (কিডনি)",
+          "ফুসফুস",
+          "অগ্ন্যাশয়"
+        ],
+        "correctAnswerIndex": 1,
+        "correctAnswerText": "বৃক্ক (কিডনি)",
+        "finalAnswerIndex": 1,
+        "finalAnswerText": "বৃক্ক (কিডনি)",
+        "timeTaken": 4.0,
+        "clickSequence": [
+          "A",
+          "B"
+        ],
+        "switchCount": 1,
+        "confidence": "none",
+        "isCorrect": true,
+        "group": "confused",
+        "concept": "বৃক্কের কার্যপ্রণালী",
+        "explanation": "বৃক্কের নেফ্রনে গ্লোমেরুলাসের মাধ্যমে রক্ত পরিস্রাবিত হয় — বর্জ্য ও অতিরিক্ত পানি আলাদা হয়ে মূত্র তৈরি করে।",
+        "memoryTrick": "কিডনি = ক্লিনার (K = Kidney = Kleen)। রক্ত ফিল্টার করে।",
+        "trap": "যকৃৎ বিষাক্ত পদার্থ ভাঙে (detoxify), কিন্তু রক্ত ফিল্টার করে বৃক্ক — দুটো আলাদা কাজ।"
+      },
+      {
+        "questionId": 12,
+        "chapter": "রেচন",
+        "questionText": "মানবদেহে রক্ত পরিস্রাবণ (filtration) কোন অঙ্গে হয়?",
+        "options": [
+          "যকৃৎ",
+          "বৃক্ক (কিডনি)",
+          "ফুসফুস",
+          "অগ্ন্যাশয়"
+        ],
+        "correctAnswerIndex": 1,
+        "correctAnswerText": "বৃক্ক (কিডনি)",
+        "finalAnswerIndex": 1,
+        "finalAnswerText": "বৃক্ক (কিডনি)",
+        "timeTaken": 6.9,
+        "clickSequence": [
+          "A",
+          "B"
+        ],
+        "switchCount": 1,
+        "confidence": "none",
+        "isCorrect": true,
+        "group": "confused",
+        "concept": "বৃক্কের কার্যপ্রণালী",
+        "explanation": "বৃক্কের নেফ্রনে গ্লোমেরুলাসের মাধ্যমে রক্ত পরিস্রাবিত হয় — বর্জ্য ও অতিরিক্ত পানি আলাদা হয়ে মূত্র তৈরি করে।",
+        "memoryTrick": "কিডনি = ক্লিনার (K = Kidney = Kleen)। রক্ত ফিল্টার করে।",
+        "trap": "যকৃৎ বিষাক্ত পদার্থ ভাঙে (detoxify), কিন্তু রক্ত ফিল্টার করে বৃক্ক — দুটো আলাদা কাজ।"
+      },
+      {
+        "questionId": 12,
+        "chapter": "রেচন",
+        "questionText": "মানবদেহে রক্ত পরিস্রাবণ (filtration) কোন অঙ্গে হয়?",
+        "options": [
+          "যকৃৎ",
+          "বৃক্ক (কিডনি)",
+          "ফুসফুস",
+          "অগ্ন্যাশয়"
+        ],
+        "correctAnswerIndex": 1,
+        "correctAnswerText": "বৃক্ক (কিডনি)",
+        "finalAnswerIndex": 1,
+        "finalAnswerText": "বৃক্ক (কিডনি)",
+        "timeTaken": 2547.5,
+        "clickSequence": [
+          "A",
+          "B"
+        ],
+        "switchCount": 1,
+        "confidence": "none",
+        "isCorrect": true,
+        "group": "confused",
+        "concept": "বৃক্কের কার্যপ্রণালী",
+        "explanation": "বৃক্কের নেফ্রনে গ্লোমেরুলাসের মাধ্যমে রক্ত পরিস্রাবিত হয় — বর্জ্য ও অতিরিক্ত পানি আলাদা হয়ে মূত্র তৈরি করে।",
+        "memoryTrick": "কিডনি = ক্লিনার (K = Kidney = Kleen)। রক্ত ফিল্টার করে।",
+        "trap": "যকৃৎ বিষাক্ত পদার্থ ভাঙে (detoxify), কিন্তু রক্ত ফিল্টার করে বৃক্ক — দুটো আলাদা কাজ।"
+      }
+    ],
+    "groups": {
+      "slow": [],
+      "confused": [
+        {
+          "questionId": 8,
+          "chapter": "বংশগতি",
+          "questionText": "মেন্ডেলের একসংকর জননে F₂ জনুতে ফেনোটাইপিক অনুপাত কত?",
+          "options": [
+            "1 : 1",
+            "9 : 3 : 3 : 1",
+            "3 : 1",
+            "1 : 2 : 1"
+          ],
+          "correctAnswerIndex": 2,
+          "correctAnswerText": "3 : 1",
+          "finalAnswerIndex": 2,
+          "finalAnswerText": "3 : 1",
+          "timeTaken": 1.4,
+          "clickSequence": [
+            "B",
+            "C"
+          ],
+          "switchCount": 1,
+          "confidence": "none",
+          "isCorrect": true,
+          "group": "confused",
+          "concept": "মেন্ডেলের একসংকর জনন",
+          "explanation": "একসংকর জননে (একটি বৈশিষ্ট্য) F₂ জনুতে প্রকট ও প্রচ্ছন্নের ফেনোটাইপিক অনুপাত হয় 3 : 1।",
+          "memoryTrick": "একসংকর = 3:1 (ফেনোটাইপ), 1:2:1 (জিনোটাইপ)।",
+          "trap": "9:3:3:1 হলো দ্বিসংকর জননের অনুপাত — একসংকরের সাথে মিলিয়ে ফেলো না।"
+        },
+        {
+          "questionId": 12,
+          "chapter": "রেচন",
+          "questionText": "মানবদেহে রক্ত পরিস্রাবণ (filtration) কোন অঙ্গে হয়?",
+          "options": [
+            "যকৃৎ",
+            "বৃক্ক (কিডনি)",
+            "ফুসফুস",
+            "অগ্ন্যাশয়"
+          ],
+          "correctAnswerIndex": 1,
+          "correctAnswerText": "বৃক্ক (কিডনি)",
+          "finalAnswerIndex": 1,
+          "finalAnswerText": "বৃক্ক (কিডনি)",
+          "timeTaken": 1.6,
+          "clickSequence": [
+            "A",
+            "B"
+          ],
+          "switchCount": 1,
+          "confidence": "none",
+          "isCorrect": true,
+          "group": "confused",
+          "concept": "বৃক্কের কার্যপ্রণালী",
+          "explanation": "বৃক্কের নেফ্রনে গ্লোমেরুলাসের মাধ্যমে রক্ত পরিস্রাবিত হয় — বর্জ্য ও অতিরিক্ত পানি আলাদা হয়ে মূত্র তৈরি করে।",
+          "memoryTrick": "কিডনি = ক্লিনার (K = Kidney = Kleen)। রক্ত ফিল্টার করে।",
+          "trap": "যকৃৎ বিষাক্ত পদার্থ ভাঙে (detoxify), কিন্তু রক্ত ফিল্টার করে বৃক্ক — দুটো আলাদা কাজ।"
+        },
+        {
+          "questionId": 12,
+          "chapter": "রেচন",
+          "questionText": "মানবদেহে রক্ত পরিস্রাবণ (filtration) কোন অঙ্গে হয়?",
+          "options": [
+            "যকৃৎ",
+            "বৃক্ক (কিডনি)",
+            "ফুসফুস",
+            "অগ্ন্যাশয়"
+          ],
+          "correctAnswerIndex": 1,
+          "correctAnswerText": "বৃক্ক (কিডনি)",
+          "finalAnswerIndex": 1,
+          "finalAnswerText": "বৃক্ক (কিডনি)",
+          "timeTaken": 2.5,
+          "clickSequence": [
+            "A",
+            "B"
+          ],
+          "switchCount": 1,
+          "confidence": "none",
+          "isCorrect": true,
+          "group": "confused",
+          "concept": "বৃক্কের কার্যপ্রণালী",
+          "explanation": "বৃক্কের নেফ্রনে গ্লোমেরুলাসের মাধ্যমে রক্ত পরিস্রাবিত হয় — বর্জ্য ও অতিরিক্ত পানি আলাদা হয়ে মূত্র তৈরি করে।",
+          "memoryTrick": "কিডনি = ক্লিনার (K = Kidney = Kleen)। রক্ত ফিল্টার করে।",
+          "trap": "যকৃৎ বিষাক্ত পদার্থ ভাঙে (detoxify), কিন্তু রক্ত ফিল্টার করে বৃক্ক — দুটো আলাদা কাজ।"
+        },
+        {
+          "questionId": 12,
+          "chapter": "রেচন",
+          "questionText": "মানবদেহে রক্ত পরিস্রাবণ (filtration) কোন অঙ্গে হয়?",
+          "options": [
+            "যকৃৎ",
+            "বৃক্ক (কিডনি)",
+            "ফুসফুস",
+            "অগ্ন্যাশয়"
+          ],
+          "correctAnswerIndex": 1,
+          "correctAnswerText": "বৃক্ক (কিডনি)",
+          "finalAnswerIndex": 1,
+          "finalAnswerText": "বৃক্ক (কিডনি)",
+          "timeTaken": 4.0,
+          "clickSequence": [
+            "A",
+            "B"
+          ],
+          "switchCount": 1,
+          "confidence": "none",
+          "isCorrect": true,
+          "group": "confused",
+          "concept": "বৃক্কের কার্যপ্রণালী",
+          "explanation": "বৃক্কের নেফ্রনে গ্লোমেরুলাসের মাধ্যমে রক্ত পরিস্রাবিত হয় — বর্জ্য ও অতিরিক্ত পানি আলাদা হয়ে মূত্র তৈরি করে।",
+          "memoryTrick": "কিডনি = ক্লিনার (K = Kidney = Kleen)। রক্ত ফিল্টার করে।",
+          "trap": "যকৃৎ বিষাক্ত পদার্থ ভাঙে (detoxify), কিন্তু রক্ত ফিল্টার করে বৃক্ক — দুটো আলাদা কাজ।"
+        },
+        {
+          "questionId": 12,
+          "chapter": "রেচন",
+          "questionText": "মানবদেহে রক্ত পরিস্রাবণ (filtration) কোন অঙ্গে হয়?",
+          "options": [
+            "যকৃৎ",
+            "বৃক্ক (কিডনি)",
+            "ফুসফুস",
+            "অগ্ন্যাশয়"
+          ],
+          "correctAnswerIndex": 1,
+          "correctAnswerText": "বৃক্ক (কিডনি)",
+          "finalAnswerIndex": 1,
+          "finalAnswerText": "বৃক্ক (কিডনি)",
+          "timeTaken": 6.9,
+          "clickSequence": [
+            "A",
+            "B"
+          ],
+          "switchCount": 1,
+          "confidence": "none",
+          "isCorrect": true,
+          "group": "confused",
+          "concept": "বৃক্কের কার্যপ্রণালী",
+          "explanation": "বৃক্কের নেফ্রনে গ্লোমেরুলাসের মাধ্যমে রক্ত পরিস্রাবিত হয় — বর্জ্য ও অতিরিক্ত পানি আলাদা হয়ে মূত্র তৈরি করে।",
+          "memoryTrick": "কিডনি = ক্লিনার (K = Kidney = Kleen)। রক্ত ফিল্টার করে।",
+          "trap": "যকৃৎ বিষাক্ত পদার্থ ভাঙে (detoxify), কিন্তু রক্ত ফিল্টার করে বৃক্ক — দুটো আলাদা কাজ।"
+        },
+        {
+          "questionId": 12,
+          "chapter": "রেচন",
+          "questionText": "মানবদেহে রক্ত পরিস্রাবণ (filtration) কোন অঙ্গে হয়?",
+          "options": [
+            "যকৃৎ",
+            "বৃক্ক (কিডনি)",
+            "ফুসফুস",
+            "অগ্ন্যাশয়"
+          ],
+          "correctAnswerIndex": 1,
+          "correctAnswerText": "বৃক্ক (কিডনি)",
+          "finalAnswerIndex": 1,
+          "finalAnswerText": "বৃক্ক (কিডনি)",
+          "timeTaken": 2547.5,
+          "clickSequence": [
+            "A",
+            "B"
+          ],
+          "switchCount": 1,
+          "confidence": "none",
+          "isCorrect": true,
+          "group": "confused",
+          "concept": "বৃক্কের কার্যপ্রণালী",
+          "explanation": "বৃক্কের নেফ্রনে গ্লোমেরুলাসের মাধ্যমে রক্ত পরিস্রাবিত হয় — বর্জ্য ও অতিরিক্ত পানি আলাদা হয়ে মূত্র তৈরি করে।",
+          "memoryTrick": "কিডনি = ক্লিনার (K = Kidney = Kleen)। রক্ত ফিল্টার করে।",
+          "trap": "যকৃৎ বিষাক্ত পদার্থ ভাঙে (detoxify), কিন্তু রক্ত ফিল্টার করে বৃক্ক — দুটো আলাদা কাজ।"
+        }
+      ],
+      "master": [
+        {
+          "questionId": 4,
+          "chapter": "নিউক্লিক অ্যাসিড",
+          "questionText": "নিউক্লিয়াস থেকে রাইবোজোমে জিনগত তথ্য বহন করে কোন অণু?",
+          "options": [
+            "tRNA",
+            "mRNA",
+            "rRNA",
+            "snRNA"
+          ],
+          "correctAnswerIndex": 1,
+          "correctAnswerText": "mRNA",
+          "finalAnswerIndex": 1,
+          "finalAnswerText": "mRNA",
+          "timeTaken": 1.5,
+          "clickSequence": [
+            "B"
+          ],
+          "switchCount": 0,
+          "confidence": "none",
+          "isCorrect": true,
+          "group": "master",
+          "concept": "RNA-এর প্রকারভেদ ও কাজ",
+          "explanation": "mRNA (messenger RNA) DNA থেকে কোডন কপি করে রাইবোজোমে বহন করে, যেখানে প্রোটিন তৈরি হয়।",
+          "memoryTrick": "m = messenger = বার্তাবাহক। তথ্য বহন করলেই mRNA।",
+          "trap": "tRNA অ্যামিনো অ্যাসিড আনে, rRNA রাইবোজোম গঠন করে — তথ্য বহন করে না।"
+        },
+        {
+          "questionId": 5,
+          "chapter": "এনজাইম",
+          "questionText": "এনজাইম কীভাবে রাসায়নিক বিক্রিয়ার হার বৃদ্ধি করে?",
+          "options": [
+            "সক্রিয়ন শক্তি কমিয়ে",
+            "তাপমাত্রা বাড়িয়ে",
+            "বিক্রিয়ক ধ্বংস করে",
+            "pH বাড়িয়ে"
+          ],
+          "correctAnswerIndex": 0,
+          "correctAnswerText": "সক্রিয়ন শক্তি কমিয়ে",
+          "finalAnswerIndex": 0,
+          "finalAnswerText": "সক্রিয়ন শক্তি কমিয়ে",
+          "timeTaken": 2.4,
+          "clickSequence": [
+            "A"
+          ],
+          "switchCount": 0,
+          "confidence": "none",
+          "isCorrect": true,
+          "group": "master",
+          "concept": "এনজাইম ও সক্রিয়ন শক্তি",
+          "explanation": "এনজাইম জৈব অনুঘটক; এটি বিক্রিয়ার সক্রিয়ন শক্তি (activation energy) কমিয়ে বিক্রিয়ার হার বাড়ায়, নিজে অপরিবর্তিত থাকে।",
+          "memoryTrick": "এনজাইম = শর্টকাট পথ — কম শক্তিতেই বিক্রিয়া হয়।",
+          "trap": "এনজাইম তাপমাত্রা বা pH পরিবর্তন করে না; বরং নির্দিষ্ট তাপ-pH-এ সর্বোচ্চ কাজ করে।"
+        },
+        {
+          "questionId": 6,
+          "chapter": "রক্ত ও সংবহন",
+          "questionText": "রক্তে অক্সিজেন পরিবহনের জন্য দায়ী প্রোটিন কোনটি?",
+          "options": [
+            "অ্যালবুমিন",
+            "হিমোগ্লোবিন",
+            "ফাইব্রিনোজেন",
+            "গ্লোবিউলিন"
+          ],
+          "correctAnswerIndex": 1,
+          "correctAnswerText": "হিমোগ্লোবিন",
+          "finalAnswerIndex": 1,
+          "finalAnswerText": "হিমোগ্লোবিন",
+          "timeTaken": 0.9,
+          "clickSequence": [
+            "B"
+          ],
+          "switchCount": 0,
+          "confidence": "none",
+          "isCorrect": true,
+          "group": "master",
+          "concept": "হিমোগ্লোবিন ও অক্সিজেন পরিবহন",
+          "explanation": "হিমোগ্লোবিন লোহিত রক্তকণিকার লৌহযুক্ত প্রোটিন; এটি ফুসফুস থেকে অক্সিজেন গ্রহণ করে কোষে পৌঁছে দেয়।",
+          "memoryTrick": "হিমো = লোহা (heme) → লোহা অক্সিজেন ধরে।",
+          "trap": "ফাইব্রিনোজেন রক্ত জমাট বাঁধায়, অক্সিজেন বহন করে না।"
+        },
+        {
+          "questionId": 7,
+          "chapter": "শ্বসন",
+          "questionText": "অক্সিজেনের অনুপস্থিতিতে মানব পেশিকোষে গ্লুকোজ ভেঙে কী উৎপন্ন হয়?",
+          "options": [
+            "ইথানল",
+            "ল্যাকটিক অ্যাসিড",
+            "কার্বন ডাই-অক্সাইড",
+            "অ্যাসিটিক অ্যাসিড"
+          ],
+          "correctAnswerIndex": 1,
+          "correctAnswerText": "ল্যাকটিক অ্যাসিড",
+          "finalAnswerIndex": 1,
+          "finalAnswerText": "ল্যাকটিক অ্যাসিড",
+          "timeTaken": 1.1,
+          "clickSequence": [
+            "B"
+          ],
+          "switchCount": 0,
+          "confidence": null,
+          "isCorrect": true,
+          "group": "master",
+          "concept": "অবাত শ্বসন (Anaerobic respiration)",
+          "explanation": "অক্সিজেন ছাড়া মানব পেশিকোষে গ্লুকোজ অবাত শ্বসনে ল্যাকটিক অ্যাসিডে পরিণত হয়, যা পেশিতে ক্লান্তি সৃষ্টি করে।",
+          "memoryTrick": "মানুষ → ল্যাকটিক অ্যাসিড; ইস্ট → ইথানল।",
+          "trap": "ইথানল উৎপন্ন হয় ইস্ট/উদ্ভিদে, মানব পেশিতে নয়।"
+        },
+        {
+          "questionId": 9,
+          "chapter": "স্নায়ুতন্ত্র",
+          "questionText": "মানবদেহে স্নায়ুকোষের (neuron) দীর্ঘ প্রবর্ধনকে কী বলে?",
+          "options": [
+            "ডেনড্রাইট",
+            "অ্যাক্সন",
+            "সোমা",
+            "সিন্যাপস"
+          ],
+          "correctAnswerIndex": 1,
+          "correctAnswerText": "অ্যাক্সন",
+          "finalAnswerIndex": 1,
+          "finalAnswerText": "অ্যাক্সন",
+          "timeTaken": 1.1,
+          "clickSequence": [
+            "B"
+          ],
+          "switchCount": 0,
+          "confidence": "none",
+          "isCorrect": true,
+          "group": "master",
+          "concept": "নিউরনের গঠন",
+          "explanation": "অ্যাক্সন স্নায়ুকোষের দীর্ঘ প্রবর্ধন যা বৈদ্যুতিক সংকেত কোষদেহ (soma) থেকে দূরে পরবর্তী নিউরন বা পেশিকোষে বহন করে।",
+          "memoryTrick": "অ্যাক্সন = Arrow (তীর) — সংকেতকে দূরে নিয়ে যায়।",
+          "trap": "ডেনড্রাইট সংকেত গ্রহণ করে, প্রেরণ করে না — উল্টো কাজ।"
+        },
+        {
+          "questionId": 10,
+          "chapter": "কোষ বিভাজন",
+          "questionText": "মিয়োসিস কোষ বিভাজনের ফলে কতটি অপত্য কোষ তৈরি হয়?",
+          "options": [
+            "২টি",
+            "৩টি",
+            "৪টি",
+            "৮টি"
+          ],
+          "correctAnswerIndex": 2,
+          "correctAnswerText": "৪টি",
+          "finalAnswerIndex": 2,
+          "finalAnswerText": "৪টি",
+          "timeTaken": 1.2,
+          "clickSequence": [
+            "C"
+          ],
+          "switchCount": 0,
+          "confidence": null,
+          "isCorrect": true,
+          "group": "master",
+          "concept": "মিয়োসিস ও হ্যাপ্লয়েড কোষ",
+          "explanation": "মিয়োসিসে একটি ডিপ্লয়েড কোষ দুইবার বিভাজিত হয়ে ৪টি হ্যাপ্লয়েড কোষ তৈরি করে — গ্যামেট (শুক্রাণু/ডিম্বাণু) তৈরির জন্য।",
+          "memoryTrick": "মিয়োসিস = 'মি' = 4 (চারটি কোষ)। মাইটোসিস = 2।",
+          "trap": "মাইটোসিসে ২টি কোষ হয়; মিয়োসিসে ৪টি — দুটো গুলিয়ে ফেলার ফাঁদ।"
+        }
+      ],
+      "danger": [
+        {
+          "questionId": 1,
+          "chapter": "কোষ ও এর গঠন",
+          "questionText": "ইউক্যারিওটিক কোষে কোন অঙ্গাণু কোষীয় শ্বসনের মাধ্যমে ATP উৎপন্ন করে?",
+          "options": [
+            "নিউক্লিয়াস",
+            "রাইবোজোম",
+            "মাইটোকন্ড্রিয়া",
+            "লাইসোজোম"
+          ],
+          "correctAnswerIndex": 2,
+          "correctAnswerText": "মাইটোকন্ড্রিয়া",
+          "finalAnswerIndex": 0,
+          "finalAnswerText": "নিউক্লিয়াস",
+          "timeTaken": 2.5,
+          "clickSequence": [
+            "A"
+          ],
+          "switchCount": 0,
+          "confidence": "none",
+          "isCorrect": false,
+          "group": "danger",
+          "concept": "মাইটোকন্ড্রিয়া ও ATP উৎপাদন",
+          "explanation": "মাইটোকন্ড্রিয়া কোষের শক্তি-কারখানা; এটি গ্লুকোজ ও অক্সিজেন ব্যবহার করে কোষীয় শ্বসনের মাধ্যমে ATP তৈরি করে।",
+          "memoryTrick": "মাইটো = শক্তির কারখানা (powerhouse)। ATP মানেই মাইটোকন্ড্রিয়া।",
+          "trap": "ক্লোরোপ্লাস্ট আলোক-শক্তি ধরে, কিন্তু ATP-এর প্রধান উৎস মাইটোকন্ড্রিয়া — দুটো গুলিয়ে ফেলো না।"
+        },
+        {
+          "questionId": 2,
+          "chapter": "সালোকসংশ্লেষণ",
+          "questionText": "উদ্ভিদ সূর্যালোককে রাসায়নিক শক্তিতে রূপান্তরিত করার প্রক্রিয়াকে কী বলে?",
+          "options": [
+            "কোষীয় শ্বসন",
+            "প্রস্বেদন",
+            "সালোকসংশ্লেষণ",
+            "গাঁজন"
+          ],
+          "correctAnswerIndex": 2,
+          "correctAnswerText": "সালোকসংশ্লেষণ",
+          "finalAnswerIndex": 1,
+          "finalAnswerText": "প্রস্বেদন",
+          "timeTaken": 0.8,
+          "clickSequence": [
+            "B"
+          ],
+          "switchCount": 0,
+          "confidence": "none",
+          "isCorrect": false,
+          "group": "danger",
+          "concept": "সালোকসংশ্লেষণ বনাম অনুরূপ প্রক্রিয়া",
+          "explanation": "সালোকসংশ্লেষণে উদ্ভিদ CO₂ ও জল থেকে সূর্যালোকের সাহায্যে গ্লুকোজ ও অক্সিজেন তৈরি করে।",
+          "memoryTrick": "ফটো = আলো, সিন্থেসিস = তৈরি — আলো দিয়ে খাদ্য তৈরি।",
+          "trap": "কোষীয় শ্বসন উল্টো প্রক্রিয়া — এটি খাদ্য ভেঙে শক্তি মুক্ত করে।"
+        },
+        {
+          "questionId": 3,
+          "chapter": "কোষ বিভাজন",
+          "questionText": "কোষ চক্রের কোন দশায় DNA-এর প্রতিলিপি (replication) সম্পন্ন হয়?",
+          "options": [
+            "G₁ দশা",
+            "G₂ দশা",
+            "S দশা",
+            "M দশা"
+          ],
+          "correctAnswerIndex": 2,
+          "correctAnswerText": "S দশা",
+          "finalAnswerIndex": null,
+          "finalAnswerText": null,
+          "timeTaken": 0.5,
+          "clickSequence": [],
+          "switchCount": 0,
+          "confidence": null,
+          "isCorrect": false,
+          "group": "danger",
+          "concept": "S দশা ও DNA প্রতিলিপি",
+          "explanation": "কোষ চক্র G₁ → S → G₂ → M ক্রমে চলে। DNA কেবল S (Synthesis) দশায় কপি হয়।",
+          "memoryTrick": "S = Synthesis = DNA সংশ্লেষণ। শুধু S দশাতেই DNA দ্বিগুণ হয়।",
+          "trap": "G₂ দেখে মনে হয় 'বিভাজনের প্রস্তুতি', কিন্তু তখন DNA কপি আগেই শেষ।"
+        },
+        {
+          "questionId": 11,
+          "chapter": "বাস্তুবিদ্যা",
+          "questionText": "বাস্তুসংস্থানে (ecosystem) শক্তি প্রবাহের প্রথম স্তর কোনটি?",
+          "options": [
+            "গৌণ খাদক",
+            "প্রাথমিক খাদক",
+            "উৎপাদক",
+            "বিয়োজক"
+          ],
+          "correctAnswerIndex": 2,
+          "correctAnswerText": "উৎপাদক",
+          "finalAnswerIndex": 1,
+          "finalAnswerText": "প্রাথমিক খাদক",
+          "timeTaken": 1.0,
+          "clickSequence": [
+            "B"
+          ],
+          "switchCount": 0,
+          "confidence": "none",
+          "isCorrect": false,
+          "group": "danger",
+          "concept": "শক্তি প্রবাহ ও ট্রফিক স্তর",
+          "explanation": "উৎপাদক (Producer) সালোকসংশ্লেষণের মাধ্যমে সৌরশক্তিকে রাসায়নিক শক্তিতে রূপান্তর করে — তারাই শক্তি প্রবাহের প্রথম স্তর।",
+          "memoryTrick": "উৎপাদক = Producer = প্রথম (P = P)। প্রথমে তৈরি হয়, তারপর খাওয়া হয়।",
+          "trap": "প্রাথমিক খাদক দ্বিতীয় স্তর — 'প্রাথমিক' শব্দ দেখে প্রথম মনে হতে পারে।"
+        }
+      ]
+    },
+    "readiness": {
+      "score": 56,
+      "correct": 12,
+      "total": 16,
+      "master": 6,
+      "danger": 4,
+      "confused": 6,
+      "slow": 0,
+      "avgTime": 161.1
+    }
+  },
+  {
+    "id": "1997eb05-7f75-4f2f-9c58-37c22668e415",
+    "createdAt": "2026-05-30T05:37:35.355043+00:00",
+    "mood": "good",
+    "items": [
+      {
+        "questionId": 1,
+        "chapter": "কোষ ও এর গঠন",
+        "questionText": "ইউক্যারিওটিক কোষে কোন অঙ্গাণু কোষীয় শ্বসনের মাধ্যমে ATP উৎপন্ন করে?",
+        "options": [
+          "নিউক্লিয়াস",
+          "রাইবোজোম",
+          "মাইটোকন্ড্রিয়া",
+          "লাইসোজোম"
+        ],
+        "correctAnswerIndex": 2,
+        "correctAnswerText": "মাইটোকন্ড্রিয়া",
+        "finalAnswerIndex": 0,
+        "finalAnswerText": "নিউক্লিয়াস",
+        "timeTaken": 2.0,
+        "clickSequence": [
+          "A"
+        ],
+        "switchCount": 0,
+        "confidence": "none",
+        "isCorrect": false,
+        "group": "danger",
+        "concept": "মাইটোকন্ড্রিয়া ও ATP উৎপাদন",
+        "explanation": "মাইটোকন্ড্রিয়া কোষের শক্তি-কারখানা; এটি গ্লুকোজ ও অক্সিজেন ব্যবহার করে কোষীয় শ্বসনের মাধ্যমে ATP তৈরি করে।",
+        "memoryTrick": "মাইটো = শক্তির কারখানা (powerhouse)। ATP মানেই মাইটোকন্ড্রিয়া।",
+        "trap": "ক্লোরোপ্লাস্ট আলোক-শক্তি ধরে, কিন্তু ATP-এর প্রধান উৎস মাইটোকন্ড্রিয়া — দুটো গুলিয়ে ফেলো না।"
+      },
+      {
+        "questionId": 2,
+        "chapter": "সালোকসংশ্লেষণ",
+        "questionText": "উদ্ভিদ সূর্যালোককে রাসায়নিক শক্তিতে রূপান্তরিত করার প্রক্রিয়াকে কী বলে?",
+        "options": [
+          "কোষীয় শ্বসন",
+          "প্রস্বেদন",
+          "সালোকসংশ্লেষণ",
+          "গাঁজন"
+        ],
+        "correctAnswerIndex": 2,
+        "correctAnswerText": "সালোকসংশ্লেষণ",
+        "finalAnswerIndex": 1,
+        "finalAnswerText": "প্রস্বেদন",
+        "timeTaken": 0.8,
+        "clickSequence": [
+          "B"
+        ],
+        "switchCount": 0,
+        "confidence": "none",
+        "isCorrect": false,
+        "group": "danger",
+        "concept": "সালোকসংশ্লেষণ বনাম অনুরূপ প্রক্রিয়া",
+        "explanation": "সালোকসংশ্লেষণে উদ্ভিদ CO₂ ও জল থেকে সূর্যালোকের সাহায্যে গ্লুকোজ ও অক্সিজেন তৈরি করে।",
+        "memoryTrick": "ফটো = আলো, সিন্থেসিস = তৈরি — আলো দিয়ে খাদ্য তৈরি।",
+        "trap": "কোষীয় শ্বসন উল্টো প্রক্রিয়া — এটি খাদ্য ভেঙে শক্তি মুক্ত করে।"
+      },
+      {
+        "questionId": 3,
+        "chapter": "কোষ বিভাজন",
+        "questionText": "কোষ চক্রের কোন দশায় DNA-এর প্রতিলিপি (replication) সম্পন্ন হয়?",
+        "options": [
+          "G₁ দশা",
+          "G₂ দশা",
+          "S দশা",
+          "M দশা"
+        ],
+        "correctAnswerIndex": 2,
+        "correctAnswerText": "S দশা",
+        "finalAnswerIndex": 0,
+        "finalAnswerText": "G₁ দশা",
+        "timeTaken": 0.8,
+        "clickSequence": [
+          "A"
+        ],
+        "switchCount": 0,
+        "confidence": "none",
+        "isCorrect": false,
+        "group": "danger",
+        "concept": "S দশা ও DNA প্রতিলিপি",
+        "explanation": "কোষ চক্র G₁ → S → G₂ → M ক্রমে চলে। DNA কেবল S (Synthesis) দশায় কপি হয়।",
+        "memoryTrick": "S = Synthesis = DNA সংশ্লেষণ। শুধু S দশাতেই DNA দ্বিগুণ হয়।",
+        "trap": "G₂ দেখে মনে হয় 'বিভাজনের প্রস্তুতি', কিন্তু তখন DNA কপি আগেই শেষ।"
+      },
+      {
+        "questionId": 4,
+        "chapter": "নিউক্লিক অ্যাসিড",
+        "questionText": "নিউক্লিয়াস থেকে রাইবোজোমে জিনগত তথ্য বহন করে কোন অণু?",
+        "options": [
+          "tRNA",
+          "mRNA",
+          "rRNA",
+          "snRNA"
+        ],
+        "correctAnswerIndex": 1,
+        "correctAnswerText": "mRNA",
+        "finalAnswerIndex": 2,
+        "finalAnswerText": "rRNA",
+        "timeTaken": 0.8,
+        "clickSequence": [
+          "C"
+        ],
+        "switchCount": 0,
+        "confidence": "none",
+        "isCorrect": false,
+        "group": "danger",
+        "concept": "RNA-এর প্রকারভেদ ও কাজ",
+        "explanation": "mRNA (messenger RNA) DNA থেকে কোডন কপি করে রাইবোজোমে বহন করে, যেখানে প্রোটিন তৈরি হয়।",
+        "memoryTrick": "m = messenger = বার্তাবাহক। তথ্য বহন করলেই mRNA।",
+        "trap": "tRNA অ্যামিনো অ্যাসিড আনে, rRNA রাইবোজোম গঠন করে — তথ্য বহন করে না।"
+      },
+      {
+        "questionId": 5,
+        "chapter": "এনজাইম",
+        "questionText": "এনজাইম কীভাবে রাসায়নিক বিক্রিয়ার হার বৃদ্ধি করে?",
+        "options": [
+          "সক্রিয়ন শক্তি কমিয়ে",
+          "তাপমাত্রা বাড়িয়ে",
+          "বিক্রিয়ক ধ্বংস করে",
+          "pH বাড়িয়ে"
+        ],
+        "correctAnswerIndex": 0,
+        "correctAnswerText": "সক্রিয়ন শক্তি কমিয়ে",
+        "finalAnswerIndex": 1,
+        "finalAnswerText": "তাপমাত্রা বাড়িয়ে",
+        "timeTaken": 0.7,
+        "clickSequence": [
+          "B"
+        ],
+        "switchCount": 0,
+        "confidence": "none",
+        "isCorrect": false,
+        "group": "danger",
+        "concept": "এনজাইম ও সক্রিয়ন শক্তি",
+        "explanation": "এনজাইম জৈব অনুঘটক; এটি বিক্রিয়ার সক্রিয়ন শক্তি (activation energy) কমিয়ে বিক্রিয়ার হার বাড়ায়, নিজে অপরিবর্তিত থাকে।",
+        "memoryTrick": "এনজাইম = শর্টকাট পথ — কম শক্তিতেই বিক্রিয়া হয়।",
+        "trap": "এনজাইম তাপমাত্রা বা pH পরিবর্তন করে না; বরং নির্দিষ্ট তাপ-pH-এ সর্বোচ্চ কাজ করে।"
+      },
+      {
+        "questionId": 6,
+        "chapter": "রক্ত ও সংবহন",
+        "questionText": "রক্তে অক্সিজেন পরিবহনের জন্য দায়ী প্রোটিন কোনটি?",
+        "options": [
+          "অ্যালবুমিন",
+          "হিমোগ্লোবিন",
+          "ফাইব্রিনোজেন",
+          "গ্লোবিউলিন"
+        ],
+        "correctAnswerIndex": 1,
+        "correctAnswerText": "হিমোগ্লোবিন",
+        "finalAnswerIndex": 1,
+        "finalAnswerText": "হিমোগ্লোবিন",
+        "timeTaken": 0.7,
+        "clickSequence": [
+          "B"
+        ],
+        "switchCount": 0,
+        "confidence": "none",
+        "isCorrect": true,
+        "group": "master",
+        "concept": "হিমোগ্লোবিন ও অক্সিজেন পরিবহন",
+        "explanation": "হিমোগ্লোবিন লোহিত রক্তকণিকার লৌহযুক্ত প্রোটিন; এটি ফুসফুস থেকে অক্সিজেন গ্রহণ করে কোষে পৌঁছে দেয়।",
+        "memoryTrick": "হিমো = লোহা (heme) → লোহা অক্সিজেন ধরে।",
+        "trap": "ফাইব্রিনোজেন রক্ত জমাট বাঁধায়, অক্সিজেন বহন করে না।"
+      },
+      {
+        "questionId": 7,
+        "chapter": "শ্বসন",
+        "questionText": "অক্সিজেনের অনুপস্থিতিতে মানব পেশিকোষে গ্লুকোজ ভেঙে কী উৎপন্ন হয়?",
+        "options": [
+          "ইথানল",
+          "ল্যাকটিক অ্যাসিড",
+          "কার্বন ডাই-অক্সাইড",
+          "অ্যাসিটিক অ্যাসিড"
+        ],
+        "correctAnswerIndex": 1,
+        "correctAnswerText": "ল্যাকটিক অ্যাসিড",
+        "finalAnswerIndex": 0,
+        "finalAnswerText": "ইথানল",
+        "timeTaken": 0.9,
+        "clickSequence": [
+          "A"
+        ],
+        "switchCount": 0,
+        "confidence": "none",
+        "isCorrect": false,
+        "group": "danger",
+        "concept": "অবাত শ্বসন (Anaerobic respiration)",
+        "explanation": "অক্সিজেন ছাড়া মানব পেশিকোষে গ্লুকোজ অবাত শ্বসনে ল্যাকটিক অ্যাসিডে পরিণত হয়, যা পেশিতে ক্লান্তি সৃষ্টি করে।",
+        "memoryTrick": "মানুষ → ল্যাকটিক অ্যাসিড; ইস্ট → ইথানল।",
+        "trap": "ইথানল উৎপন্ন হয় ইস্ট/উদ্ভিদে, মানব পেশিতে নয়।"
+      },
+      {
+        "questionId": 8,
+        "chapter": "বংশগতি",
+        "questionText": "মেন্ডেলের একসংকর জননে F₂ জনুতে ফেনোটাইপিক অনুপাত কত?",
+        "options": [
+          "1 : 1",
+          "9 : 3 : 3 : 1",
+          "3 : 1",
+          "1 : 2 : 1"
+        ],
+        "correctAnswerIndex": 2,
+        "correctAnswerText": "3 : 1",
+        "finalAnswerIndex": 2,
+        "finalAnswerText": "3 : 1",
+        "timeTaken": 0.8,
+        "clickSequence": [
+          "C"
+        ],
+        "switchCount": 0,
+        "confidence": "none",
+        "isCorrect": true,
+        "group": "master",
+        "concept": "মেন্ডেলের একসংকর জনন",
+        "explanation": "একসংকর জননে (একটি বৈশিষ্ট্য) F₂ জনুতে প্রকট ও প্রচ্ছন্নের ফেনোটাইপিক অনুপাত হয় 3 : 1।",
+        "memoryTrick": "একসংকর = 3:1 (ফেনোটাইপ), 1:2:1 (জিনোটাইপ)।",
+        "trap": "9:3:3:1 হলো দ্বিসংকর জননের অনুপাত — একসংকরের সাথে মিলিয়ে ফেলো না।"
+      },
+      {
+        "questionId": 9,
+        "chapter": "স্নায়ুতন্ত্র",
+        "questionText": "মানবদেহে স্নায়ুকোষের (neuron) দীর্ঘ প্রবর্ধনকে কী বলে?",
+        "options": [
+          "ডেনড্রাইট",
+          "অ্যাক্সন",
+          "সোমা",
+          "সিন্যাপস"
+        ],
+        "correctAnswerIndex": 1,
+        "correctAnswerText": "অ্যাক্সন",
+        "finalAnswerIndex": 2,
+        "finalAnswerText": "সোমা",
+        "timeTaken": 0.8,
+        "clickSequence": [
+          "C"
+        ],
+        "switchCount": 0,
+        "confidence": "none",
+        "isCorrect": false,
+        "group": "danger",
+        "concept": "নিউরনের গঠন",
+        "explanation": "অ্যাক্সন স্নায়ুকোষের দীর্ঘ প্রবর্ধন যা বৈদ্যুতিক সংকেত কোষদেহ (soma) থেকে দূরে পরবর্তী নিউরন বা পেশিকোষে বহন করে।",
+        "memoryTrick": "অ্যাক্সন = Arrow (তীর) — সংকেতকে দূরে নিয়ে যায়।",
+        "trap": "ডেনড্রাইট সংকেত গ্রহণ করে, প্রেরণ করে না — উল্টো কাজ।"
+      },
+      {
+        "questionId": 10,
+        "chapter": "কোষ বিভাজন",
+        "questionText": "মিয়োসিস কোষ বিভাজনের ফলে কতটি অপত্য কোষ তৈরি হয়?",
+        "options": [
+          "২টি",
+          "৩টি",
+          "৪টি",
+          "৮টি"
+        ],
+        "correctAnswerIndex": 2,
+        "correctAnswerText": "৪টি",
+        "finalAnswerIndex": 0,
+        "finalAnswerText": "২টি",
+        "timeTaken": 1.1,
+        "clickSequence": [
+          "A"
+        ],
+        "switchCount": 0,
+        "confidence": null,
+        "isCorrect": false,
+        "group": "danger",
+        "concept": "মিয়োসিস ও হ্যাপ্লয়েড কোষ",
+        "explanation": "মিয়োসিসে একটি ডিপ্লয়েড কোষ দুইবার বিভাজিত হয়ে ৪টি হ্যাপ্লয়েড কোষ তৈরি করে — গ্যামেট (শুক্রাণু/ডিম্বাণু) তৈরির জন্য।",
+        "memoryTrick": "মিয়োসিস = 'মি' = 4 (চারটি কোষ)। মাইটোসিস = 2।",
+        "trap": "মাইটোসিসে ২টি কোষ হয়; মিয়োসিসে ৪টি — দুটো গুলিয়ে ফেলার ফাঁদ।"
+      },
+      {
+        "questionId": 11,
+        "chapter": "বাস্তুবিদ্যা",
+        "questionText": "বাস্তুসংস্থানে (ecosystem) শক্তি প্রবাহের প্রথম স্তর কোনটি?",
+        "options": [
+          "গৌণ খাদক",
+          "প্রাথমিক খাদক",
+          "উৎপাদক",
+          "বিয়োজক"
+        ],
+        "correctAnswerIndex": 2,
+        "correctAnswerText": "উৎপাদক",
+        "finalAnswerIndex": 1,
+        "finalAnswerText": "প্রাথমিক খাদক",
+        "timeTaken": 1.1,
+        "clickSequence": [
+          "B"
+        ],
+        "switchCount": 0,
+        "confidence": null,
+        "isCorrect": false,
+        "group": "danger",
+        "concept": "শক্তি প্রবাহ ও ট্রফিক স্তর",
+        "explanation": "উৎপাদক (Producer) সালোকসংশ্লেষণের মাধ্যমে সৌরশক্তিকে রাসায়নিক শক্তিতে রূপান্তর করে — তারাই শক্তি প্রবাহের প্রথম স্তর।",
+        "memoryTrick": "উৎপাদক = Producer = প্রথম (P = P)। প্রথমে তৈরি হয়, তারপর খাওয়া হয়।",
+        "trap": "প্রাথমিক খাদক দ্বিতীয় স্তর — 'প্রাথমিক' শব্দ দেখে প্রথম মনে হতে পারে।"
+      },
+      {
+        "questionId": 12,
+        "chapter": "রেচন",
+        "questionText": "মানবদেহে রক্ত পরিস্রাবণ (filtration) কোন অঙ্গে হয়?",
+        "options": [
+          "যকৃৎ",
+          "বৃক্ক (কিডনি)",
+          "ফুসফুস",
+          "অগ্ন্যাশয়"
+        ],
+        "correctAnswerIndex": 1,
+        "correctAnswerText": "বৃক্ক (কিডনি)",
+        "finalAnswerIndex": 1,
+        "finalAnswerText": "বৃক্ক (কিডনি)",
+        "timeTaken": 1.6,
+        "clickSequence": [
+          "B"
+        ],
+        "switchCount": 0,
+        "confidence": "none",
+        "isCorrect": true,
+        "group": "master",
+        "concept": "বৃক্কের কার্যপ্রণালী",
+        "explanation": "বৃক্কের নেফ্রনে গ্লোমেরুলাসের মাধ্যমে রক্ত পরিস্রাবিত হয় — বর্জ্য ও অতিরিক্ত পানি আলাদা হয়ে মূত্র তৈরি করে।",
+        "memoryTrick": "কিডনি = ক্লিনার (K = Kidney = Kleen)। রক্ত ফিল্টার করে।",
+        "trap": "যকৃৎ বিষাক্ত পদার্থ ভাঙে (detoxify), কিন্তু রক্ত ফিল্টার করে বৃক্ক — দুটো আলাদা কাজ।"
+      }
+    ],
+    "groups": {
+      "slow": [],
+      "confused": [],
+      "master": [
+        {
+          "questionId": 6,
+          "chapter": "রক্ত ও সংবহন",
+          "questionText": "রক্তে অক্সিজেন পরিবহনের জন্য দায়ী প্রোটিন কোনটি?",
+          "options": [
+            "অ্যালবুমিন",
+            "হিমোগ্লোবিন",
+            "ফাইব্রিনোজেন",
+            "গ্লোবিউলিন"
+          ],
+          "correctAnswerIndex": 1,
+          "correctAnswerText": "হিমোগ্লোবিন",
+          "finalAnswerIndex": 1,
+          "finalAnswerText": "হিমোগ্লোবিন",
+          "timeTaken": 0.7,
+          "clickSequence": [
+            "B"
+          ],
+          "switchCount": 0,
+          "confidence": "none",
+          "isCorrect": true,
+          "group": "master",
+          "concept": "হিমোগ্লোবিন ও অক্সিজেন পরিবহন",
+          "explanation": "হিমোগ্লোবিন লোহিত রক্তকণিকার লৌহযুক্ত প্রোটিন; এটি ফুসফুস থেকে অক্সিজেন গ্রহণ করে কোষে পৌঁছে দেয়।",
+          "memoryTrick": "হিমো = লোহা (heme) → লোহা অক্সিজেন ধরে।",
+          "trap": "ফাইব্রিনোজেন রক্ত জমাট বাঁধায়, অক্সিজেন বহন করে না।"
+        },
+        {
+          "questionId": 8,
+          "chapter": "বংশগতি",
+          "questionText": "মেন্ডেলের একসংকর জননে F₂ জনুতে ফেনোটাইপিক অনুপাত কত?",
+          "options": [
+            "1 : 1",
+            "9 : 3 : 3 : 1",
+            "3 : 1",
+            "1 : 2 : 1"
+          ],
+          "correctAnswerIndex": 2,
+          "correctAnswerText": "3 : 1",
+          "finalAnswerIndex": 2,
+          "finalAnswerText": "3 : 1",
+          "timeTaken": 0.8,
+          "clickSequence": [
+            "C"
+          ],
+          "switchCount": 0,
+          "confidence": "none",
+          "isCorrect": true,
+          "group": "master",
+          "concept": "মেন্ডেলের একসংকর জনন",
+          "explanation": "একসংকর জননে (একটি বৈশিষ্ট্য) F₂ জনুতে প্রকট ও প্রচ্ছন্নের ফেনোটাইপিক অনুপাত হয় 3 : 1।",
+          "memoryTrick": "একসংকর = 3:1 (ফেনোটাইপ), 1:2:1 (জিনোটাইপ)।",
+          "trap": "9:3:3:1 হলো দ্বিসংকর জননের অনুপাত — একসংকরের সাথে মিলিয়ে ফেলো না।"
+        },
+        {
+          "questionId": 12,
+          "chapter": "রেচন",
+          "questionText": "মানবদেহে রক্ত পরিস্রাবণ (filtration) কোন অঙ্গে হয়?",
+          "options": [
+            "যকৃৎ",
+            "বৃক্ক (কিডনি)",
+            "ফুসফুস",
+            "অগ্ন্যাশয়"
+          ],
+          "correctAnswerIndex": 1,
+          "correctAnswerText": "বৃক্ক (কিডনি)",
+          "finalAnswerIndex": 1,
+          "finalAnswerText": "বৃক্ক (কিডনি)",
+          "timeTaken": 1.6,
+          "clickSequence": [
+            "B"
+          ],
+          "switchCount": 0,
+          "confidence": "none",
+          "isCorrect": true,
+          "group": "master",
+          "concept": "বৃক্কের কার্যপ্রণালী",
+          "explanation": "বৃক্কের নেফ্রনে গ্লোমেরুলাসের মাধ্যমে রক্ত পরিস্রাবিত হয় — বর্জ্য ও অতিরিক্ত পানি আলাদা হয়ে মূত্র তৈরি করে।",
+          "memoryTrick": "কিডনি = ক্লিনার (K = Kidney = Kleen)। রক্ত ফিল্টার করে।",
+          "trap": "যকৃৎ বিষাক্ত পদার্থ ভাঙে (detoxify), কিন্তু রক্ত ফিল্টার করে বৃক্ক — দুটো আলাদা কাজ।"
+        }
+      ],
+      "danger": [
+        {
+          "questionId": 1,
+          "chapter": "কোষ ও এর গঠন",
+          "questionText": "ইউক্যারিওটিক কোষে কোন অঙ্গাণু কোষীয় শ্বসনের মাধ্যমে ATP উৎপন্ন করে?",
+          "options": [
+            "নিউক্লিয়াস",
+            "রাইবোজোম",
+            "মাইটোকন্ড্রিয়া",
+            "লাইসোজোম"
+          ],
+          "correctAnswerIndex": 2,
+          "correctAnswerText": "মাইটোকন্ড্রিয়া",
+          "finalAnswerIndex": 0,
+          "finalAnswerText": "নিউক্লিয়াস",
+          "timeTaken": 2.0,
+          "clickSequence": [
+            "A"
+          ],
+          "switchCount": 0,
+          "confidence": "none",
+          "isCorrect": false,
+          "group": "danger",
+          "concept": "মাইটোকন্ড্রিয়া ও ATP উৎপাদন",
+          "explanation": "মাইটোকন্ড্রিয়া কোষের শক্তি-কারখানা; এটি গ্লুকোজ ও অক্সিজেন ব্যবহার করে কোষীয় শ্বসনের মাধ্যমে ATP তৈরি করে।",
+          "memoryTrick": "মাইটো = শক্তির কারখানা (powerhouse)। ATP মানেই মাইটোকন্ড্রিয়া।",
+          "trap": "ক্লোরোপ্লাস্ট আলোক-শক্তি ধরে, কিন্তু ATP-এর প্রধান উৎস মাইটোকন্ড্রিয়া — দুটো গুলিয়ে ফেলো না।"
+        },
+        {
+          "questionId": 2,
+          "chapter": "সালোকসংশ্লেষণ",
+          "questionText": "উদ্ভিদ সূর্যালোককে রাসায়নিক শক্তিতে রূপান্তরিত করার প্রক্রিয়াকে কী বলে?",
+          "options": [
+            "কোষীয় শ্বসন",
+            "প্রস্বেদন",
+            "সালোকসংশ্লেষণ",
+            "গাঁজন"
+          ],
+          "correctAnswerIndex": 2,
+          "correctAnswerText": "সালোকসংশ্লেষণ",
+          "finalAnswerIndex": 1,
+          "finalAnswerText": "প্রস্বেদন",
+          "timeTaken": 0.8,
+          "clickSequence": [
+            "B"
+          ],
+          "switchCount": 0,
+          "confidence": "none",
+          "isCorrect": false,
+          "group": "danger",
+          "concept": "সালোকসংশ্লেষণ বনাম অনুরূপ প্রক্রিয়া",
+          "explanation": "সালোকসংশ্লেষণে উদ্ভিদ CO₂ ও জল থেকে সূর্যালোকের সাহায্যে গ্লুকোজ ও অক্সিজেন তৈরি করে।",
+          "memoryTrick": "ফটো = আলো, সিন্থেসিস = তৈরি — আলো দিয়ে খাদ্য তৈরি।",
+          "trap": "কোষীয় শ্বসন উল্টো প্রক্রিয়া — এটি খাদ্য ভেঙে শক্তি মুক্ত করে।"
+        },
+        {
+          "questionId": 3,
+          "chapter": "কোষ বিভাজন",
+          "questionText": "কোষ চক্রের কোন দশায় DNA-এর প্রতিলিপি (replication) সম্পন্ন হয়?",
+          "options": [
+            "G₁ দশা",
+            "G₂ দশা",
+            "S দশা",
+            "M দশা"
+          ],
+          "correctAnswerIndex": 2,
+          "correctAnswerText": "S দশা",
+          "finalAnswerIndex": 0,
+          "finalAnswerText": "G₁ দশা",
+          "timeTaken": 0.8,
+          "clickSequence": [
+            "A"
+          ],
+          "switchCount": 0,
+          "confidence": "none",
+          "isCorrect": false,
+          "group": "danger",
+          "concept": "S দশা ও DNA প্রতিলিপি",
+          "explanation": "কোষ চক্র G₁ → S → G₂ → M ক্রমে চলে। DNA কেবল S (Synthesis) দশায় কপি হয়।",
+          "memoryTrick": "S = Synthesis = DNA সংশ্লেষণ। শুধু S দশাতেই DNA দ্বিগুণ হয়।",
+          "trap": "G₂ দেখে মনে হয় 'বিভাজনের প্রস্তুতি', কিন্তু তখন DNA কপি আগেই শেষ।"
+        },
+        {
+          "questionId": 4,
+          "chapter": "নিউক্লিক অ্যাসিড",
+          "questionText": "নিউক্লিয়াস থেকে রাইবোজোমে জিনগত তথ্য বহন করে কোন অণু?",
+          "options": [
+            "tRNA",
+            "mRNA",
+            "rRNA",
+            "snRNA"
+          ],
+          "correctAnswerIndex": 1,
+          "correctAnswerText": "mRNA",
+          "finalAnswerIndex": 2,
+          "finalAnswerText": "rRNA",
+          "timeTaken": 0.8,
+          "clickSequence": [
+            "C"
+          ],
+          "switchCount": 0,
+          "confidence": "none",
+          "isCorrect": false,
+          "group": "danger",
+          "concept": "RNA-এর প্রকারভেদ ও কাজ",
+          "explanation": "mRNA (messenger RNA) DNA থেকে কোডন কপি করে রাইবোজোমে বহন করে, যেখানে প্রোটিন তৈরি হয়।",
+          "memoryTrick": "m = messenger = বার্তাবাহক। তথ্য বহন করলেই mRNA।",
+          "trap": "tRNA অ্যামিনো অ্যাসিড আনে, rRNA রাইবোজোম গঠন করে — তথ্য বহন করে না।"
+        },
+        {
+          "questionId": 5,
+          "chapter": "এনজাইম",
+          "questionText": "এনজাইম কীভাবে রাসায়নিক বিক্রিয়ার হার বৃদ্ধি করে?",
+          "options": [
+            "সক্রিয়ন শক্তি কমিয়ে",
+            "তাপমাত্রা বাড়িয়ে",
+            "বিক্রিয়ক ধ্বংস করে",
+            "pH বাড়িয়ে"
+          ],
+          "correctAnswerIndex": 0,
+          "correctAnswerText": "সক্রিয়ন শক্তি কমিয়ে",
+          "finalAnswerIndex": 1,
+          "finalAnswerText": "তাপমাত্রা বাড়িয়ে",
+          "timeTaken": 0.7,
+          "clickSequence": [
+            "B"
+          ],
+          "switchCount": 0,
+          "confidence": "none",
+          "isCorrect": false,
+          "group": "danger",
+          "concept": "এনজাইম ও সক্রিয়ন শক্তি",
+          "explanation": "এনজাইম জৈব অনুঘটক; এটি বিক্রিয়ার সক্রিয়ন শক্তি (activation energy) কমিয়ে বিক্রিয়ার হার বাড়ায়, নিজে অপরিবর্তিত থাকে।",
+          "memoryTrick": "এনজাইম = শর্টকাট পথ — কম শক্তিতেই বিক্রিয়া হয়।",
+          "trap": "এনজাইম তাপমাত্রা বা pH পরিবর্তন করে না; বরং নির্দিষ্ট তাপ-pH-এ সর্বোচ্চ কাজ করে।"
+        },
+        {
+          "questionId": 7,
+          "chapter": "শ্বসন",
+          "questionText": "অক্সিজেনের অনুপস্থিতিতে মানব পেশিকোষে গ্লুকোজ ভেঙে কী উৎপন্ন হয়?",
+          "options": [
+            "ইথানল",
+            "ল্যাকটিক অ্যাসিড",
+            "কার্বন ডাই-অক্সাইড",
+            "অ্যাসিটিক অ্যাসিড"
+          ],
+          "correctAnswerIndex": 1,
+          "correctAnswerText": "ল্যাকটিক অ্যাসিড",
+          "finalAnswerIndex": 0,
+          "finalAnswerText": "ইথানল",
+          "timeTaken": 0.9,
+          "clickSequence": [
+            "A"
+          ],
+          "switchCount": 0,
+          "confidence": "none",
+          "isCorrect": false,
+          "group": "danger",
+          "concept": "অবাত শ্বসন (Anaerobic respiration)",
+          "explanation": "অক্সিজেন ছাড়া মানব পেশিকোষে গ্লুকোজ অবাত শ্বসনে ল্যাকটিক অ্যাসিডে পরিণত হয়, যা পেশিতে ক্লান্তি সৃষ্টি করে।",
+          "memoryTrick": "মানুষ → ল্যাকটিক অ্যাসিড; ইস্ট → ইথানল।",
+          "trap": "ইথানল উৎপন্ন হয় ইস্ট/উদ্ভিদে, মানব পেশিতে নয়।"
+        },
+        {
+          "questionId": 9,
+          "chapter": "স্নায়ুতন্ত্র",
+          "questionText": "মানবদেহে স্নায়ুকোষের (neuron) দীর্ঘ প্রবর্ধনকে কী বলে?",
+          "options": [
+            "ডেনড্রাইট",
+            "অ্যাক্সন",
+            "সোমা",
+            "সিন্যাপস"
+          ],
+          "correctAnswerIndex": 1,
+          "correctAnswerText": "অ্যাক্সন",
+          "finalAnswerIndex": 2,
+          "finalAnswerText": "সোমা",
+          "timeTaken": 0.8,
+          "clickSequence": [
+            "C"
+          ],
+          "switchCount": 0,
+          "confidence": "none",
+          "isCorrect": false,
+          "group": "danger",
+          "concept": "নিউরনের গঠন",
+          "explanation": "অ্যাক্সন স্নায়ুকোষের দীর্ঘ প্রবর্ধন যা বৈদ্যুতিক সংকেত কোষদেহ (soma) থেকে দূরে পরবর্তী নিউরন বা পেশিকোষে বহন করে।",
+          "memoryTrick": "অ্যাক্সন = Arrow (তীর) — সংকেতকে দূরে নিয়ে যায়।",
+          "trap": "ডেনড্রাইট সংকেত গ্রহণ করে, প্রেরণ করে না — উল্টো কাজ।"
+        },
+        {
+          "questionId": 10,
+          "chapter": "কোষ বিভাজন",
+          "questionText": "মিয়োসিস কোষ বিভাজনের ফলে কতটি অপত্য কোষ তৈরি হয়?",
+          "options": [
+            "২টি",
+            "৩টি",
+            "৪টি",
+            "৮টি"
+          ],
+          "correctAnswerIndex": 2,
+          "correctAnswerText": "৪টি",
+          "finalAnswerIndex": 0,
+          "finalAnswerText": "২টি",
+          "timeTaken": 1.1,
+          "clickSequence": [
+            "A"
+          ],
+          "switchCount": 0,
+          "confidence": null,
+          "isCorrect": false,
+          "group": "danger",
+          "concept": "মিয়োসিস ও হ্যাপ্লয়েড কোষ",
+          "explanation": "মিয়োসিসে একটি ডিপ্লয়েড কোষ দুইবার বিভাজিত হয়ে ৪টি হ্যাপ্লয়েড কোষ তৈরি করে — গ্যামেট (শুক্রাণু/ডিম্বাণু) তৈরির জন্য।",
+          "memoryTrick": "মিয়োসিস = 'মি' = 4 (চারটি কোষ)। মাইটোসিস = 2।",
+          "trap": "মাইটোসিসে ২টি কোষ হয়; মিয়োসিসে ৪টি — দুটো গুলিয়ে ফেলার ফাঁদ।"
+        },
+        {
+          "questionId": 11,
+          "chapter": "বাস্তুবিদ্যা",
+          "questionText": "বাস্তুসংস্থানে (ecosystem) শক্তি প্রবাহের প্রথম স্তর কোনটি?",
+          "options": [
+            "গৌণ খাদক",
+            "প্রাথমিক খাদক",
+            "উৎপাদক",
+            "বিয়োজক"
+          ],
+          "correctAnswerIndex": 2,
+          "correctAnswerText": "উৎপাদক",
+          "finalAnswerIndex": 1,
+          "finalAnswerText": "প্রাথমিক খাদক",
+          "timeTaken": 1.1,
+          "clickSequence": [
+            "B"
+          ],
+          "switchCount": 0,
+          "confidence": null,
+          "isCorrect": false,
+          "group": "danger",
+          "concept": "শক্তি প্রবাহ ও ট্রফিক স্তর",
+          "explanation": "উৎপাদক (Producer) সালোকসংশ্লেষণের মাধ্যমে সৌরশক্তিকে রাসায়নিক শক্তিতে রূপান্তর করে — তারাই শক্তি প্রবাহের প্রথম স্তর।",
+          "memoryTrick": "উৎপাদক = Producer = প্রথম (P = P)। প্রথমে তৈরি হয়, তারপর খাওয়া হয়।",
+          "trap": "প্রাথমিক খাদক দ্বিতীয় স্তর — 'প্রাথমিক' শব্দ দেখে প্রথম মনে হতে পারে।"
+        }
+      ]
+    },
+    "readiness": {
+      "score": 10,
+      "correct": 3,
+      "total": 12,
+      "master": 3,
+      "danger": 9,
+      "confused": 0,
+      "slow": 0,
+      "avgTime": 1.0
+    },
+    "notes": {
+      "danger": [
+        {
+          "topic": "ইউক্যারিওটিক কোষে কোষীয় শ্বসন",
+          "explanation": "মাইটোকন্ড্রিয়া হলো কোষের শক্তি কেন্দ্র, যেখানে খাদ্য থেকে শক্তি উৎপাদন হয়। নিউক্লিয়াস হলো কোষের নিয়ন্ত্রণ কেন্দ্র, যেখানে জেনেটিক তথ্য সংরক্ষিত থাকে।",
+          "whyCorrect": "মাইটোকন্ড্রিয়া কোষীয় শ্বসনের জন্য দায়ী, যেখানে গ্লুকোজ থেকে ATP উৎপাদন হয়।",
+          "whyTricked": "নিউক্লিয়াস কোষের নিয়ন্ত্রণ কেন্দ্র, তাই কোষীয় শ্বসনের সাথে সম্পর্কিত নয়।",
+          "trapQuestion": "ইউক্যারিওটিক কোষে কোন অঙ্গাণুটি কোষীয় শ্বসনের জন্য দায়ী?"
+        },
+        {
+          "topic": "সালোকসংশ্লেষণ",
+          "explanation": "সালোকসংশ্লেষণ হলো একটি প্রক্রিয়া, যেখানে উদ্ভিদ সূর্যালোককে রাসায়নিক শক্তিতে রূপান্তরিত করে। প্রস্বেদন হলো একটি প্রক্রিয়া, যেখানে উদ্ভিদ পানি শোষণ করে।",
+          "whyCorrect": "সালোকসংশ্লেষণ হলো উদ্ভিদের শক্তি উৎপাদনের প্রধান প্রক্রিয়া।",
+          "whyTricked": "প্রস্বেদন হলো একটি প্রক্রিয়া, যেখানে উদ্ভিদ পানি শোষণ করে, তবে এটি সালোকসংশ্লেষণের সাথে সম্পর্কিত নয়।",
+          "trapQuestion": "উদ্ভিদ কীভাবে সূর্যালোককে রাসায়নিক শক্তিতে রূপান্তরিত করে?"
+        },
+        {
+          "topic": "কোষ চক্র",
+          "explanation": "কোষ চক্র হলো একটি প্রক্রিয়া, যেখানে কোষ বিভাজন হয়। S দশা হলো কোষ চক্রের একটি দশা, যেখানে DNA প্রতিলিপি হয়। G₁ দশা হলো কোষ চক্রের একটি দশা, যেখানে কোষ বৃদ্ধি পায়।",
+          "whyCorrect": "S দশা হলো কোষ চক্রের একটি দশা, যেখানে DNA প্রতিলিপি হয়।",
+          "whyTricked": "G₁ দশা হলো কোষ চক্রের একটি দশা, যেখানে কোষ বৃদ্ধি পায়, তবে এটি DNA প্রতিলিপির সাথে সম্পর্কিত নয়।",
+          "trapQuestion": "কোষ চক্রের কোন দশায় DNA প্রতিলিপি হয়?"
+        },
+        {
+          "topic": "নিউক্লিক অ্যাসিড",
+          "explanation": "mRNA হলো একটি নিউক্লিক অ্যাসিড, যা নিউক্লিয়াস থেকে রাইবোজোমে জিনগত তথ্য বহন করে। rRNA হলো একটি নিউক্লিক অ্যাসিড, যা রাইবোজোমের গঠনে সাহায্য করে।",
+          "whyCorrect": "mRNA হলো জিনগত তথ্য বহন করার জন্য দায়ী।",
+          "whyTricked": "rRNA হলো রাইবোজোমের গঠনে সাহায্য করার জন্য দায়ী, তবে এটি জিনগত তথ্য বহন করার সাথে সম্পর্কিত নয়।",
+          "trapQuestion": "নিউক্লিয়াস থেকে রাইবোজোমে জিনগত তথ্য বহন করে কোন নিউক্লিক অ্যাসিড?"
+        },
+        {
+          "topic": "এনজাইম",
+          "explanation": "এনজাইম হলো একটি জৈব অণু, যা রাসায়নিক বিক্রিয়ার হার বৃদ্ধি করে। এনজাইম সক্রিয়ন শক্তি কমিয়ে রাসায়নিক বিক্রিয়ার হার বৃদ্ধি করে।",
+          "whyCorrect": "এনজাইম সক্রিয়ন শক্তি কমিয়ে রাসায়নিক বিক্রিয়ার হার বৃদ্ধি করে।",
+          "whyTricked": "তাপমাত্রা বৃদ্ধি করলে রাসায়নিক বিক্রিয়ার হার বৃদ্ধি পায়, তবে এটি এনজাইমের কাজের সাথে সম্পর্কিত নয়।",
+          "trapQuestion": "এনজাইম কীভাবে রাসায়নিক বিক্রিয়ার হার বৃদ্ধি করে?"
+        },
+        {
+          "topic": "অবাত শ্বসন",
+          "explanation": "অবাত শ্বসন হলো একটি প্রক্রিয়া, যেখানে গ্লুকোজ ভেঙে ল্যাকটিক অ্যাসিড উৎপন্ন হয়। ইথানল হলো একটি পদার্থ, যা কিছু অবাত শ্বসন প্রক্রিয়ায় উৎপন্ন হয়।",
+          "whyCorrect": "অবাত শ্বসনে গ্লুকোজ ভেঙে ল্যাকটিক অ্যাসিড উৎপন্ন হয়।",
+          "whyTricked": "ইথানল হলো একটি পদার্থ, যা কিছু অবাত শ্বসন প্রক্রিয়ায় উৎপন্ন হয়, তবে এটি মানব পেশিকোষে গ্লুকোজ ভাঙ্গার ফলে উৎপন্ন হয় না।",
+          "trapQuestion": "অক্সিজেনের অনুপস্থিতিতে মানব পেশিকোষে গ্লুকোজ ভেঙে কী উৎপন্ন হয়?"
+        },
+        {
+          "topic": "স্নায়ুতন্ত্র",
+          "explanation": "অ্যাক্সন হলো স্নায়ুকোষের দীর্ঘ প্রবর্ধন, যা স্নায়ু সংকেত বহন করে। সোমা হলো স্নায়ুকোষের কেন্দ্রীয় অংশ, যেখানে স্নায়ুকোষের নিউক্লিয়াস অবস্থিত।",
+          "whyCorrect": "অ্যাক্সন হলো স্নায়ুকোষের দীর্ঘ প্রবর্ধন, যা স্নায়ু সংকেত বহন করে।",
+          "whyTricked": "সোমা হলো স্নায়ুকোষের কেন্দ্রীয় অংশ, তবে এটি দীর্ঘ প্রবর্ধন নয়।",
+          "trapQuestion": "মানবদেহে স্নায়ুকোষের দীর্ঘ প্রবর্ধনকে কী বলে?"
+        },
+        {
+          "topic": "কোষ বিভাজন",
+          "explanation": "মিয়োসিস হলো একটি কোষ বিভাজন প্রক্রিয়া, যেখানে দুটি অপত্য কোষ তৈরি হয়। মিয়োসিসের ফলে চারটি অপত্য কোষ তৈরি হয়।",
+          "whyCorrect": "মিয়োসিসের ফলে চারটি অপত্য কোষ তৈরি হয়।",
+          "whyTricked": "মিয়োসিসের ফলে দুটি অপত্য কোষ তৈরি হয় না, বরং চারটি অপত্য কোষ তৈরি হয়।",
+          "trapQuestion": "মিয়োসিস কোষ বিভাজনের ফলে কতটি অপত্য কোষ তৈরি হয়?"
+        }
+      ]
+    },
+    "notesSource": "ai"
+  }
+]

@@ -75,12 +75,18 @@ export default function App() {
     try {
       const { data } = await axios.post(`${API}/attempts`, { mood, items });
       setAttempt(data);
-      setNotes(null);
-      setNotesSource(null);
+      if (data.notes) {
+        setNotes(data.notes);
+        setNotesSource(data.notesSource || null);
+      } else {
+        setNotes(null);
+        setNotesSource(null);
+      }
       setView("result");
       refreshHistory();
     } catch (e) {
       toast.error("Failed to save results. Please try again.");
+      throw e;
     }
   };
 

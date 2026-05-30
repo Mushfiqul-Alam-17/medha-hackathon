@@ -18,6 +18,8 @@ export default function Exam({ questions, mood, onFinish, lang, showConfidence =
   const q = questions[qi];
 
   const commitQuestion = useCallback((finalIndex, conf) => {
+    if (itemsRef.current.length > qi) return; // Prevent duplicate commits for the same question
+    
     const timeTaken = (Date.now() - startRef.current) / 1000;
     itemsRef.current.push({
       questionId: q.id,
@@ -26,17 +28,23 @@ export default function Exam({ questions, mood, onFinish, lang, showConfidence =
       timeTaken: Math.max(0.5, timeTaken),
       confidence: conf,
     });
-  }, [q]);
+  }, [q, qi]);
+
+  const [submitting, setSubmitting] = useState(false);
 
   const goNext = useCallback((finalIndex, conf) => {
+    if (submitting) return;
+    
     clearInterval(tickRef.current);
     commitQuestion(finalIndex, conf);
     if (qi < questions.length - 1) {
       setQi((p) => p + 1);
     } else {
-      onFinish(itemsRef.current, mood);
+      setSubmitting(true);
+      // Give App.js a chance to catch failure and re-enable if needed
+      Promise.resolve(onFinish(itemsRef.current, mood)).catch(() => setSubmitting(false));
     }
-  }, [qi, questions.length, commitQuestion, onFinish, mood]);
+  }, [qi, questions.length, commitQuestion, onFinish, mood, submitting]);
 
   useEffect(() => {
     setSelected(null);
@@ -122,7 +130,7 @@ export default function Exam({ questions, mood, onFinish, lang, showConfidence =
         <div className="exam-nav">
           <button className="btn btn-ghost" data-testid="skip-button" onClick={() => goNext(selected, confidence)}>{t("skip", lang)}</button>
           <button className="btn btn-primary" data-testid="next-button"
-            disabled={selected === null || (showConfidence && confidence === null)}
+            disabled={submitting || selected === null || (showConfidence && confidence === null)}
             onClick={() => goNext(selected, showConfidence ? confidence : "none")}>
             {isLast ? t("finishExam", lang) : t("next", lang)}
           </button>
