@@ -23,7 +23,7 @@ logger = logging.getLogger("medha")
 # ──────────────────────────────────────────────────────────────
 #  Persistent storage (JSON fallback for demo)
 # ──────────────────────────────────────────────────────────────
-DB_FILE = "attempts.json"
+DB_FILE = ROOT_DIR / "attempts.json"
 
 def load_db() -> List[Dict[str, Any]]:
     if os.path.exists(DB_FILE):
@@ -647,7 +647,7 @@ async def generate_notes(req: NotesRequest):
     if notes:
         logger.info("✅ Notes generated via Groq")
         result_notes = notes
-        source = "ai"
+        source = "groq"
 
     # Try OpenRouter second
     if not result_notes:
@@ -655,7 +655,7 @@ async def generate_notes(req: NotesRequest):
         if notes:
             logger.info("✅ Notes generated via OpenRouter")
             result_notes = notes
-            source = "ai"
+            source = "openrouter"
 
     # Try Gemini third
     if not result_notes:
@@ -663,7 +663,7 @@ async def generate_notes(req: NotesRequest):
         if notes:
             logger.info("✅ Notes generated via Gemini")
             result_notes = notes
-            source = "ai"
+            source = "gemini"
 
     # Final fallback: deterministic
     if not result_notes:

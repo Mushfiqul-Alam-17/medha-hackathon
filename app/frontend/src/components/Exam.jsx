@@ -17,6 +17,11 @@ export default function Exam({ questions, mood, onFinish, lang, showConfidence =
 
   const q = questions[qi];
 
+  const selectedRef = useRef(null);
+  const confidenceRef = useRef(null);
+  selectedRef.current = selected;
+  confidenceRef.current = confidence;
+
   const commitQuestion = useCallback((finalIndex, conf) => {
     if (itemsRef.current.length > qi) return; // Prevent duplicate commits for the same question
     
@@ -57,13 +62,7 @@ export default function Exam({ questions, mood, onFinish, lang, showConfidence =
       setSecLeft((s) => {
         if (s <= 1) {
           clearInterval(tickRef.current);
-          setSelected((selNow) => {
-            setConfidence((confNow) => {
-              goNext(selNow, confNow);
-              return confNow;
-            });
-            return selNow;
-          });
+          goNext(selectedRef.current, confidenceRef.current);
           return 0;
         }
         return s - 1;
@@ -74,6 +73,7 @@ export default function Exam({ questions, mood, onFinish, lang, showConfidence =
   }, [qi]);
 
   const pickOption = (i) => {
+    if (selected === i) return;
     setSelected(i);
     clicksRef.current.push(LETTERS[i]);
   };

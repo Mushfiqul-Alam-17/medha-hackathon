@@ -134,7 +134,17 @@ export default function StudyNotes({ loading, notes, source, onDownload, lang })
               );
             })}
 
-            {source && <div className="note-src">— {source === "ai" ? "✨ AI-generated · Powered by Google Gemini" : "📚 MEDHA Behavioral Notes"} —</div>}
+            {source && (
+              <div className="note-src">
+                — {
+                  source === "groq" ? "✨ AI-generated · Powered by Groq (Llama 3.3 70B)" :
+                  source === "openrouter" ? "✨ AI-generated · Powered by OpenRouter (Gemma 4)" :
+                  source === "gemini" ? "✨ AI-generated · Powered by Google Gemini" :
+                  source === "fallback" ? "📚 MEDHA Behavioral Notes (Offline Mode)" :
+                  "✨ AI-generated Study Notes"
+                } —
+              </div>
+            )}
           </>
         )}
       </div>
