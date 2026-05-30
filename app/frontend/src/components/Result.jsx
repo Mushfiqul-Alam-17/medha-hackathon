@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
-import { Check, X } from "lucide-react";
+import { Check, X, AlertTriangle, SkipForward } from "lucide-react";
 import { LETTERS, scoreTitle, t } from "../utils/lang";
 
 const CIRC = 2 * Math.PI * 50;
+const NEG_PENALTY = 0.25;
 
 export default function Result({ attempt, onViewDNA, lang }) {
   const items = attempt.items;
@@ -14,6 +15,19 @@ export default function Result({ attempt, onViewDNA, lang }) {
     const tm = setTimeout(() => setOffset(CIRC * (1 - correct / total)), 250);
     return () => clearTimeout(tm);
   }, [correct, total]);
+
+  // Negative marking calculation
+  const wrong = items.filter((it) => it.finalAnswerIndex !== null && !it.isCorrect).length;
+  const skipped = items.filter((it) => it.finalAnswerIndex === null).length;
+  const rawScore = correct;
+  const negDeduction = +(wrong * NEG_PENALTY).toFixed(2);
+  const finalScore = +(rawScore - negDeduction).toFixed(2);
+
+  // Skip coach: guessed + wrong
+  const guessedWrong = items.filter(
+    (it) => it.confidence === "guessing" && !it.isCorrect && it.finalAnswerIndex !== null
+  );
+  const savedMarks = +(guessedWrong.length * NEG_PENALTY).toFixed(2);
 
   const sub = t("scoreSub", lang).replace("{total}", total).replace("{avg}", attempt.readiness.avgTime);
 
@@ -37,6 +51,66 @@ export default function Result({ attempt, onViewDNA, lang }) {
           </div>
         </div>
 
+        {/* Negative Marking Card */}
+        <div className="card neg-card">
+          <h3 className="neg-title">
+            <AlertTriangle size={18} style={{ marginRight: 6, color: "var(--amber)" }} />
+            {lang === "bn" ? "নেগেটিভ মার্কিং বিশ্লেষণ" : "Negative Marking Analysis"}
+          </h3>
+          <div className="neg-grid">
+            <div className="neg-item">
+              <div className="neg-val" style={{ color: "var(--green)" }}>+{rawScore}</div>
+              <div className="neg-lbl">{lang === "bn" ? "সঠিক উত্তর" : "Correct"}</div>
+            </div>
+            <div className="neg-item">
+              <div className="neg-val" style={{ color: "var(--red)" }}>−{negDeduction}</div>
+              <div className="neg-lbl">{lang === "bn" ? "ভুল জরিমানা" : "Wrong Penalty"}</div>
+            </div>
+            <div className="neg-item">
+              <div className="neg-val" style={{ color: "var(--text-dim)" }}>{skipped}</div>
+              <div className="neg-lbl">{lang === "bn" ? "স্কিপ (০ প্রভাব)" : "Skipped (0 impact)"}</div>
+            </div>
+            <div className="neg-item neg-final">
+              <div className="neg-val" style={{ color: "var(--accent)", fontSize: 28 }}>{finalScore}</div>
+              <div className="neg-lbl">{lang === "bn" ? "চূড়ান্ত স্কোর" : "Final Score"}</div>
+            </div>
+          </div>
+          <div className="neg-formula">
+            {lang === "bn"
+              ? `সূত্র: ${rawScore} − (${wrong} × ০.২৫) = ${finalScore}`
+              : `Formula: ${rawScore} − (${wrong} × 0.25) = ${finalScore}`}
+          </div>
+        </div>
+
+        {/* Skip Coach */}
+        {guessedWrong.length > 0 && (
+          <div className="card skip-card">
+            <h3 className="skip-title">
+              <SkipForward size={18} style={{ marginRight: 6, color: "var(--accent)" }} />
+              {lang === "bn" ? "স্কিপ কোচ" : "Skip Strategy Coach"}
+            </h3>
+            <p className="skip-text">
+              {lang === "bn"
+                ? `তুমি ${guessedWrong.length}টি প্রশ্নে অনুমান করে ভুল করেছ। এগুলো স্কিপ করলে তোমার +${savedMarks} মার্কস বাঁচত!`
+                : `You guessed on ${guessedWrong.length} question${guessedWrong.length > 1 ? "s" : ""} and got them wrong. Skipping would have saved you +${savedMarks} marks!`}
+            </p>
+            <div className="skip-questions">
+              {guessedWrong.map((it, i) => (
+                <div className="skip-q" key={it.questionId}>
+                  <span className="skip-q-mark">−{NEG_PENALTY}</span>
+                  <span className="skip-q-text">{it.questionText.slice(0, 60)}…</span>
+                </div>
+              ))}
+            </div>
+            <div className="skip-tip">
+              {lang === "bn"
+                ? "💡 পরীক্ষায় অনুমান ≠ উত্তর দেওয়া। সন্দেহ থাকলে স্কিপ করো — নেগেটিভ মার্কিং বেশি ক্ষতিকর।"
+                : "💡 In real exams, guessing ≠ answering. When in doubt, skip — negative marks hurt more than a blank."}
+            </div>
+          </div>
+        )}
+
+        {/* Question List */}
         <div className="result-list">
           {items.map((it, i) => (
             <div className="card result-card" key={it.questionId} data-testid={`result-card-${i}`}>

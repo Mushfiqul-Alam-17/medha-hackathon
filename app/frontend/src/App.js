@@ -10,10 +10,12 @@ import MoodCheck from "@/components/MoodCheck";
 import Exam from "@/components/Exam";
 import Result from "@/components/Result";
 import DnaReport from "@/components/DnaReport";
+import ClassifierPanel from "@/components/ClassifierPanel";
 import StudyNotes from "@/components/StudyNotes";
 import Readiness from "@/components/Readiness";
 import AnxietyScore from "@/components/AnxietyScore";
 import ShareCard from "@/components/ShareCard";
+import History from "@/components/History";
 
 const BACKEND = process.env.REACT_APP_BACKEND_URL || "https://medha-api.onrender.com";
 const API = `${BACKEND}/api`;
@@ -52,6 +54,13 @@ export default function App() {
     axios.get(`${API}/chapters`).then((r) => setChapters(r.data.chapters)).catch(() => {});
   }, []);
 
+  // Load history on mount and after each attempt
+  const refreshHistory = useCallback(() => {
+    axios.get(`${API}/attempts`).then((r) => setHistory(r.data.attempts)).catch(() => {});
+  }, []);
+
+  useEffect(() => { refreshHistory(); }, [refreshHistory]);
+
   const examDone = !!attempt;
 
   const handleStart = () => setView("mood");
@@ -69,7 +78,7 @@ export default function App() {
       setNotes(null);
       setNotesSource(null);
       setView("result");
-      axios.get(`${API}/attempts`).then((r) => setHistory(r.data.attempts)).catch(() => {});
+      refreshHistory();
     } catch (e) {
       toast.error("Failed to save results. Please try again.");
     }
@@ -131,7 +140,7 @@ export default function App() {
       {introDone && (
         <>
           <NavBar view={view} examDone={examDone} onNav={handleNav} onRetake={handleRetake}
-            lang={lang} onToggleLang={toggleLang} />
+            lang={lang} onToggleLang={toggleLang} historyCount={history.length} />
 
           {view === "landing" && <Landing onStart={handleStart} lang={lang}
             onDemo={() => document.querySelector(".classifier-grid")?.scrollIntoView({ behavior: "smooth" })} />}
@@ -141,6 +150,7 @@ export default function App() {
           )}
           {view === "result" && attempt && <Result attempt={attempt} onViewDNA={() => setView("dna")} lang={lang} />}
           {view === "dna" && attempt && <DnaReport groups={attempt.groups} onViewNotes={loadNotes} lang={lang} />}
+          {view === "classifier" && attempt && <ClassifierPanel attempt={attempt} lang={lang} />}
           {view === "notes" && attempt && (
             <StudyNotes loading={notesLoading} notes={notes} source={notesSource} onDownload={downloadNotes} lang={lang} />
           )}
@@ -149,6 +159,7 @@ export default function App() {
           )}
           {view === "anxiety" && attempt && <AnxietyScore attempt={attempt} lang={lang} />}
           {view === "share" && attempt && <ShareCard attempt={attempt} lang={lang} />}
+          {view === "history" && <History history={history} onRetake={handleRetake} lang={lang} />}
         </>
       )}
     </div>

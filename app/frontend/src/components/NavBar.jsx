@@ -1,17 +1,19 @@
-import { Dna, Languages } from "lucide-react";
+import { Dna, Languages, Clock } from "lucide-react";
 import { t } from "../utils/lang";
 
-export default function NavBar({ view, examDone, onNav, onRetake, lang, onToggleLang }) {
+export default function NavBar({ view, examDone, onNav, onRetake, lang, onToggleLang, historyCount }) {
   const tabs = [
     { key: "landing", label: t("navHome", lang) },
     ...(examDone ? [
       { key: "result", label: t("navExam", lang) },
       { key: "dna", label: t("navDna", lang) },
+      { key: "classifier", label: lang === "bn" ? "ক্লাসিফায়ার" : "Classifier" },
       { key: "notes", label: t("navNotes", lang) },
       { key: "readiness", label: t("navReadiness", lang) },
       { key: "anxiety", label: t("navAnxiety", lang) },
       { key: "share", label: t("share", lang) },
     ] : []),
+    { key: "history", label: lang === "bn" ? "ইতিহাস" : "History", badge: historyCount || 0 },
   ];
 
   return (
@@ -23,7 +25,11 @@ export default function NavBar({ view, examDone, onNav, onRetake, lang, onToggle
       <div className="nav-tabs">
         {tabs.map((tb) => (
           <button key={tb.key} className={`nav-tab ${view === tb.key ? "active" : ""}`}
-            data-testid={`nav-${tb.key}`} onClick={() => onNav(tb.key)}>{tb.label}</button>
+            data-testid={`nav-${tb.key}`} onClick={() => onNav(tb.key)}>
+            {tb.key === "history" && <Clock size={13} style={{ marginRight: 3, verticalAlign: "middle" }} />}
+            {tb.label}
+            {tb.badge > 0 && <span className="nav-badge">{tb.badge}</span>}
+          </button>
         ))}
         {examDone && (
           <button className="nav-tab" data-testid="nav-retake" onClick={onRetake}

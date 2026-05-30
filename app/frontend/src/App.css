@@ -507,10 +507,136 @@ h1, h2, h3 { font-family: var(--display); letter-spacing: -0.02em; margin: 0; }
   .metric-grid { grid-template-columns: 1fr 1fr; }
   .anx-hero { flex-direction: column; align-items: flex-start; }
 }
+/* ---------- Nav Badge ---------- */
+.nav-badge {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-width: 18px; height: 18px; border-radius: 9px;
+  background: var(--accent); color: #fff; font-size: 10px; font-weight: 600;
+  margin-left: 4px; padding: 0 5px;
+}
+
+/* ---------- Negative Marking Card ---------- */
+.neg-card { margin-bottom: 20px; }
+.neg-title { font-family: var(--display); font-size: 17px; margin-bottom: 16px; display: flex; align-items: center; }
+.neg-grid {
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 14px;
+}
+.neg-item { text-align: center; }
+.neg-val { font-family: var(--mono); font-size: 22px; font-weight: 600; }
+.neg-lbl { font-size: 12px; color: var(--text-dim); margin-top: 4px; }
+.neg-final { border-left: 2px solid var(--border-hi); padding-left: 12px; }
+.neg-formula {
+  font-family: var(--mono); font-size: 13px; color: var(--text-dim);
+  text-align: center; padding-top: 12px; border-top: 1px solid var(--border);
+}
+
+/* ---------- Skip Coach ---------- */
+.skip-card { margin-bottom: 20px; border-left: 3px solid var(--accent); }
+.skip-title { font-family: var(--display); font-size: 17px; margin-bottom: 10px; display: flex; align-items: center; }
+.skip-text { font-size: 15px; color: var(--text); margin-bottom: 12px; line-height: 1.5; }
+.skip-questions { display: flex; flex-direction: column; gap: 6px; margin-bottom: 14px; }
+.skip-q {
+  display: flex; align-items: center; gap: 8px; padding: 8px 12px;
+  background: rgba(255, 79, 106, 0.08); border-radius: var(--r-sm); font-size: 13px;
+}
+.skip-q-mark { font-family: var(--mono); color: var(--red); font-weight: 600; min-width: 36px; }
+.skip-q-text { color: var(--text-dim); }
+.skip-tip {
+  font-size: 13px; color: var(--text-dim); padding: 10px 14px;
+  background: rgba(124, 111, 255, 0.06); border-radius: var(--r-sm);
+}
+
+/* ---------- Classifier Panel ---------- */
+.clf-model-info {
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 24px;
+}
+.clf-stat { text-align: center; padding: 16px 10px; }
+.clf-stat-icon { color: var(--accent); margin-bottom: 8px; display: flex; justify-content: center; }
+.clf-stat-val { font-family: var(--mono); font-size: 18px; font-weight: 600; color: var(--text); }
+.clf-stat-lbl { font-size: 12px; color: var(--text-dim); margin-top: 4px; }
+
+.clf-dist { display: flex; flex-direction: column; gap: 10px; }
+.clf-dist-row { display: flex; align-items: center; gap: 12px; }
+.clf-dist-label { font-family: var(--mono); font-size: 12px; min-width: 120px; text-align: right; }
+.clf-dist-bar-track {
+  flex: 1; height: 20px; background: var(--surface-2); border-radius: var(--r-sm); overflow: hidden;
+}
+.clf-dist-bar-fill { height: 100%; border-radius: var(--r-sm); }
+.clf-dist-count { font-family: var(--mono); font-size: 13px; color: var(--text-dim); min-width: 32px; }
+
+.clf-question { margin-bottom: 12px; }
+.clf-q-header { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; }
+.clf-q-num { font-family: var(--mono); font-size: 14px; color: var(--text-dim); font-weight: 600; }
+.clf-q-label {
+  font-family: var(--mono); font-size: 11px; font-weight: 600;
+  padding: 3px 10px; border-radius: 20px; letter-spacing: 0.5px;
+}
+.clf-q-correct { font-size: 16px; margin-left: auto; font-weight: 700; }
+.clf-q-correct.yes { color: var(--green); }
+.clf-q-correct.no { color: var(--red); }
+.clf-q-text { font-size: 14px; color: var(--text-dim); margin-bottom: 10px; line-height: 1.5; }
+
+.clf-features {
+  display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px;
+  padding: 10px 12px; background: rgba(124, 111, 255, 0.04); border-radius: var(--r-sm);
+}
+.clf-feat {
+  font-family: var(--mono); font-size: 12px; color: var(--text-dim);
+  padding: 2px 8px; background: var(--surface-2); border-radius: 4px;
+}
+.clf-feat b { color: var(--text); }
+
+.clf-probs { display: flex; flex-direction: column; gap: 6px; }
+.clf-prob-row { display: flex; align-items: center; gap: 8px; }
+.clf-prob-label { font-family: var(--mono); font-size: 11px; color: var(--text-dim); min-width: 110px; text-align: right; }
+.clf-prob-track {
+  flex: 1; height: 14px; background: var(--surface-2); border-radius: 7px; overflow: hidden;
+}
+.clf-prob-fill { height: 100%; border-radius: 7px; }
+.clf-prob-pct { font-family: var(--mono); font-size: 11px; color: var(--text-dim); min-width: 44px; }
+
+.clf-arch { border: 1px dashed var(--border-hi); }
+.clf-arch-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.clf-arch-grid > div { display: flex; gap: 8px; padding: 5px 0; border-bottom: 1px solid var(--border); }
+.clf-arch-key { font-family: var(--mono); font-size: 12px; color: var(--text-dim); min-width: 100px; }
+.clf-arch-val { font-family: var(--mono); font-size: 12px; color: var(--text); }
+
+/* ---------- History ---------- */
+.hist-summary {
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 24px;
+}
+.hist-list { display: flex; flex-direction: column; gap: 10px; }
+.hist-card {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 16px 20px; transition: border-color 0.2s;
+}
+.hist-card:hover { border-color: var(--accent); }
+.hist-card-left { display: flex; align-items: center; gap: 14px; }
+.hist-card-num {
+  font-family: var(--mono); font-size: 14px; color: var(--text-dim); font-weight: 600;
+  min-width: 28px;
+}
+.hist-card-date { font-size: 14px; color: var(--text); font-weight: 500; }
+.hist-card-mood { display: flex; align-items: center; gap: 8px; margin-top: 4px; }
+.hist-mood-chip {
+  font-size: 11px; padding: 2px 8px; border-radius: 12px;
+  background: rgba(124, 111, 255, 0.1); color: var(--accent);
+}
+.hist-card-meta { font-size: 12px; color: var(--text-dim); }
+.hist-card-right { text-align: right; }
+.hist-card-score { font-family: var(--mono); font-size: 28px; font-weight: 700; }
+.hist-card-score-label { font-size: 11px; color: var(--text-dim); margin-top: 2px; }
+
 @media (max-width: 560px) {
   .feature-grid, .classifier-grid, .how-grid, .stats-row, .metric-grid { grid-template-columns: 1fr; }
   .result-hero { flex-direction: column; text-align: center; }
   .share-stats-row { justify-content: center; }
   .nav-tabs { gap: 2px; }
   .nav-tab { padding: 6px 8px; font-size: 11px; }
+  .clf-model-info { grid-template-columns: repeat(2, 1fr); }
+  .clf-arch-grid { grid-template-columns: 1fr; }
+  .neg-grid { grid-template-columns: repeat(2, 1fr); }
+  .hist-summary { grid-template-columns: repeat(2, 1fr); }
+  .clf-dist-label { min-width: 80px; font-size: 10px; }
+  .clf-prob-label { min-width: 80px; font-size: 10px; }
 }
