@@ -2,10 +2,11 @@ import { useEffect, useState } from "react";
 import { Check, X, AlertTriangle, SkipForward } from "lucide-react";
 import { LETTERS, scoreTitle, t } from "../utils/lang";
 
+const BACKEND = process.env.REACT_APP_BACKEND_URL || "https://medha-api.onrender.com";
 const CIRC = 2 * Math.PI * 50;
 const NEG_PENALTY = 0.25;
 
-export default function Result({ attempt, onViewDNA, lang }) {
+export default function Result({ attempt, onViewDNA, lang, onOpenPdf }) {
   const items = attempt.items;
   const correct = attempt.readiness.correct;
   const total = attempt.readiness.total;
@@ -127,6 +128,25 @@ export default function Result({ attempt, onViewDNA, lang }) {
                   );
                 })}
               </div>
+              {it.pdf_file && it.pdf_page && (
+                <div style={{ marginTop: 12, display: "flex", justifyContent: "flex-end" }}>
+                  <a 
+                    href={`${BACKEND}/static/pdfs/${it.pdf_file}#page=${it.pdf_page}`} 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    onClick={(e) => {
+                      if (onOpenPdf) {
+                        e.preventDefault();
+                        onOpenPdf(it.pdf_file, it.pdf_page, it.options[it.correctAnswerIndex]);
+                      }
+                    }}
+                    className="btn btn-ghost"
+                    style={{ padding: "4px 8px", fontSize: 12, display: "inline-flex", alignItems: "center", gap: 4 }}
+                  >
+                    📖 {lang === "bn" ? `মূল বইয়ের রেফারেন্স (পৃষ্ঠা ${it.pdf_page})` : `Textbook Ref (Page ${it.pdf_page})`}
+                  </a>
+                </div>
+              )}
             </div>
           ))}
         </div>

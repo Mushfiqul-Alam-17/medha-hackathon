@@ -1,0 +1,11 @@
+{
+  "main_count": 1218,
+  "backup_count": 436,
+  "from_backup": 487,
+  "not_from_backup": 731,
+  "perfect": 1218,
+  "minor": 0,
+  "bad": 0,
+  "bad_lines": [],
+  "backup_missing": 87
+}

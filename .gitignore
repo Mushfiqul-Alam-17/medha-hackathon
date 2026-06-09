@@ -1,11 +1,31 @@
 node_modules/
 venv/
 __pycache__/
+*.pyc
 .env
+.env.*
+!.env.example
 .DS_Store
 build/
 dist/
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
+*.db
+*.sqlite3
+*.log
+.vscode/
+.idea/
+*.zip
+*.pdf
+
+# Data files (large)
+app/backend/attempts.json
+
+# Temp files
+business_plan_text.txt
+data_processed/
+
+# Old files
+extract.py
+fix_quotes.py
+guide
+MEDHA_BUILD_PLAN.md
+MEDHA_FORM_SUBMISSION_ANSWERS.md

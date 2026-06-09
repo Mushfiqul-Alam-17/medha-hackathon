@@ -1,6 +1,32 @@
 import { Download } from "lucide-react";
 import { t } from "../utils/lang";
 
+const BACKEND = process.env.REACT_APP_BACKEND_URL || "https://medha-api.onrender.com";
+
+function PDFLink({ pdfFile, pdfPage, lang, onOpenPdf, correctAnswer }) {
+  if (!pdfFile || !pdfPage) return null;
+  const handleClick = (e) => {
+    if (onOpenPdf) {
+      e.preventDefault();
+      onOpenPdf(pdfFile, pdfPage, correctAnswer);
+    }
+  };
+  return (
+    <div className="note-pdf-link" style={{ marginTop: 12 }}>
+      <a 
+        href={`${BACKEND}/static/pdfs/${pdfFile}#page=${pdfPage}`} 
+        target="_blank" 
+        rel="noopener noreferrer" 
+        onClick={handleClick}
+        className="btn btn-ghost" 
+        style={{ padding: "6px 12px", fontSize: 13, display: "inline-flex", alignItems: "center", gap: 6 }}
+      >
+        📖 {lang === "bn" ? `বইয়ে রি-রিড করুন (পৃষ্ঠা ${pdfPage})` : `Reread Textbook (Page ${pdfPage})`}
+      </a>
+    </div>
+  );
+}
+
 function NoteRow({ label, children }) {
   return (
     <div className="note-row">
@@ -24,7 +50,7 @@ function ComparisonTable({ rows }) {
   );
 }
 
-export default function StudyNotes({ loading, notes, source, onDownload, lang }) {
+export default function StudyNotes({ loading, notes, source, onDownload, lang, onOpenPdf }) {
   const empty = notes && !notes.slow?.length && !notes.confused?.length && !notes.danger?.length;
 
   // Section counter for numbering
@@ -82,6 +108,7 @@ export default function StudyNotes({ loading, notes, source, onDownload, lang })
                     </div>
                   )}
                   {n.trapQuestion && <div className="note-trap">🪤 {t("trapQ", lang)} "{n.trapQuestion}"</div>}
+                  <PDFLink pdfFile={n.pdfFile || n.pdf_file} pdfPage={n.pdfPage || n.pdf_page} lang={lang} onOpenPdf={onOpenPdf} correctAnswer={n.correct_answer} />
                 </div>
               );
             })}
@@ -103,6 +130,7 @@ export default function StudyNotes({ loading, notes, source, onDownload, lang })
                     </div>
                   )}
                   {n.trapQuestion && <div className="note-trap">🪤 {t("trapQ", lang)} "{n.trapQuestion}"</div>}
+                  <PDFLink pdfFile={n.pdfFile || n.pdf_file} pdfPage={n.pdfPage || n.pdf_page} lang={lang} onOpenPdf={onOpenPdf} correctAnswer={n.correct_answer} />
                 </div>
               );
             })}
@@ -130,6 +158,7 @@ export default function StudyNotes({ loading, notes, source, onDownload, lang })
                     </div>
                   )}
                   {n.trapQuestion && <div className="note-trap">🪤 {t("trapQ", lang)} "{n.trapQuestion}"</div>}
+                  <PDFLink pdfFile={n.pdfFile || n.pdf_file} pdfPage={n.pdfPage || n.pdf_page} lang={lang} onOpenPdf={onOpenPdf} correctAnswer={n.correct_answer} />
                 </div>
               );
             })}

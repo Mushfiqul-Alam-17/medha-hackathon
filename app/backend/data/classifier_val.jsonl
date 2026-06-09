@@ -1,0 +1,1050 @@
+{"text": "Topic: জীবের বৃদ্ধি ও বিকাশ | time_ratio: 1.000 | switches: 2 | confidence: unsure | correct: false | difficulty: medium", "label": "GROWTH_AREA"}
+{"text": "Topic: জৈব অণু | time_ratio: 0.457 | switches: 0 | confidence: sure | correct: false | difficulty: hard", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: Microbiology | time_ratio: 0.363 | switches: 0 | confidence: guessing | correct: true | difficulty: medium", "label": "TRUST_GAP"}
+{"text": "Topic: পরিবেশ দূষণ | time_ratio: 0.732 | switches: 3 | confidence: guessing | correct: false | difficulty: medium", "label": "GROWTH_AREA"}
+{"text": "Topic: পরিবেশ দূষণ | time_ratio: 0.837 | switches: 3 | confidence: unsure | correct: true | difficulty: easy", "label": "TRUST_GAP"}
+{"text": "Topic: Genetics | time_ratio: 0.439 | switches: 0 | confidence: sure | correct: true | difficulty: hard", "label": "MASTERY"}
+{"text": "Topic: Photosynthesis | time_ratio: 0.136 | switches: 0 | confidence: sure | correct: true | difficulty: medium", "label": "MASTERY"}
+{"text": "Topic: Biomolecules | time_ratio: 0.625 | switches: 2 | confidence: guessing | correct: false | difficulty: medium", "label": "GROWTH_AREA"}
+{"text": "Topic: Cell Structure | time_ratio: 0.312 | switches: 1 | confidence: unsure | correct: true | difficulty: medium", "label": "TRUST_GAP"}
+{"text": "Topic: কোষ ও এর গঠন | time_ratio: 0.679 | switches: 1 | confidence: sure | correct: true | difficulty: hard", "label": "TRUST_GAP"}
+{"text": "Topic: Virus & Bacteria | time_ratio: 0.352 | switches: 0 | confidence: sure | correct: false | difficulty: hard", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: Blood & Circulation | time_ratio: 0.433 | switches: 0 | confidence: sure | correct: true | difficulty: easy", "label": "MASTERY"}
+{"text": "Topic: জীবের বৃদ্ধি ও বিকাশ | time_ratio: 0.892 | switches: 3 | confidence: guessing | correct: true | difficulty: easy", "label": "TRUST_GAP"}
+{"text": "Topic: কোষ বিভাজন | time_ratio: 0.735 | switches: 0 | confidence: sure | correct: false | difficulty: medium", "label": "GROWTH_AREA"}
+{"text": "Topic: Blood & Circulation | time_ratio: 0.384 | switches: 0 | confidence: sure | correct: true | difficulty: medium", "label": "MASTERY"}
+{"text": "Topic: প্রজনন | time_ratio: 0.691 | switches: 0 | confidence: guessing | correct: false | difficulty: medium", "label": "GROWTH_AREA"}
+{"text": "Topic: Heredity | time_ratio: 0.706 | switches: 2 | confidence: sure | correct: true | difficulty: easy", "label": "TRUST_GAP"}
+{"text": "Topic: রেচন | time_ratio: 0.144 | switches: 0 | confidence: sure | correct: true | difficulty: medium", "label": "MASTERY"}
+{"text": "Topic: Biomolecules | time_ratio: 0.791 | switches: 1 | confidence: unsure | correct: false | difficulty: medium", "label": "GROWTH_AREA"}
+{"text": "Topic: Tissue | time_ratio: 0.804 | switches: 2 | confidence: guessing | correct: true | difficulty: medium", "label": "TRUST_GAP"}
+{"text": "Topic: শ্বসন | time_ratio: 0.303 | switches: 0 | confidence: sure | correct: true | difficulty: medium", "label": "MASTERY"}
+{"text": "Topic: Biotechnology | time_ratio: 0.339 | switches: 0 | confidence: sure | correct: true | difficulty: medium", "label": "MASTERY"}
+{"text": "Topic: অণুজীববিজ্ঞান | time_ratio: 0.651 | switches: 1 | confidence: sure | correct: true | difficulty: medium", "label": "TRUST_GAP"}
+{"text": "Topic: হরমোন | time_ratio: 1.000 | switches: 3 | confidence: unsure | correct: false | difficulty: hard", "label": "GROWTH_AREA"}
+{"text": "Topic: সালোকসংশ্লেষণ | time_ratio: 0.368 | switches: 0 | confidence: sure | correct: true | difficulty: easy", "label": "MASTERY"}
+{"text": "Topic: উদ্ভিদবিজ্ঞান | time_ratio: 0.565 | switches: 2 | confidence: unsure | correct: true | difficulty: easy", "label": "TRUST_GAP"}
+{"text": "Topic: হরমোন | time_ratio: 0.442 | switches: 0 | confidence: sure | correct: true | difficulty: hard", "label": "MASTERY"}
+{"text": "Topic: Photosynthesis | time_ratio: 0.400 | switches: 0 | confidence: sure | correct: true | difficulty: medium", "label": "MASTERY"}
+{"text": "Topic: Enzymes | time_ratio: 0.870 | switches: 2 | confidence: sure | correct: true | difficulty: hard", "label": "TRUST_GAP"}
+{"text": "Topic: জৈব অণু | time_ratio: 0.763 | switches: 1 | confidence: unsure | correct: true | difficulty: medium", "label": "TRUST_GAP"}
+{"text": "Topic: প্রজনন | time_ratio: 0.816 | switches: 0 | confidence: guessing | correct: true | difficulty: easy", "label": "TRUST_GAP"}
+{"text": "Topic: রক্ত ও সংবহন | time_ratio: 0.814 | switches: 1 | confidence: guessing | correct: false | difficulty: hard", "label": "GROWTH_AREA"}
+{"text": "Topic: জীবের বৃদ্ধি ও বিকাশ | time_ratio: 0.466 | switches: 0 | confidence: sure | correct: true | difficulty: medium", "label": "MASTERY"}
+{"text": "Topic: প্রাণিবৈচিত্র্য | time_ratio: 0.730 | switches: 2 | confidence: guessing | correct: true | difficulty: medium", "label": "TRUST_GAP"}
+{"text": "Topic: বংশগতি | time_ratio: 0.135 | switches: 0 | confidence: sure | correct: true | difficulty: hard", "label": "MASTERY"}
+{"text": "Topic: Hormones | time_ratio: 0.738 | switches: 1 | confidence: unsure | correct: false | difficulty: medium", "label": "GROWTH_AREA"}
+{"text": "Topic: কোষ ও এর গঠন | time_ratio: 0.423 | switches: 2 | confidence: unsure | correct: true | difficulty: medium", "label": "TRUST_GAP"}
+{"text": "Topic: বংশগতি | time_ratio: 0.667 | switches: 2 | confidence: unsure | correct: true | difficulty: hard", "label": "TRUST_GAP"}
+{"text": "Topic: Enzymes | time_ratio: 0.170 | switches: 0 | confidence: sure | correct: true | difficulty: hard", "label": "MASTERY"}
+{"text": "Topic: কোষ বিভাজন | time_ratio: 0.112 | switches: 0 | confidence: sure | correct: true | difficulty: medium", "label": "MASTERY"}
+{"text": "Topic: Hormones | time_ratio: 0.431 | switches: 1 | confidence: sure | correct: false | difficulty: medium", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: Reproduction | time_ratio: 0.710 | switches: 0 | confidence: guessing | correct: false | difficulty: hard", "label": "GROWTH_AREA"}
+{"text": "Topic: Hormones | time_ratio: 0.232 | switches: 0 | confidence: sure | correct: true | difficulty: easy", "label": "MASTERY"}
+{"text": "Topic: কোষ বিভাজন | time_ratio: 1.000 | switches: 3 | confidence: guessing | correct: false | difficulty: easy", "label": "GROWTH_AREA"}
+{"text": "Topic: প্রাণিবৈচিত্র্য | time_ratio: 0.474 | switches: 2 | confidence: unsure | correct: false | difficulty: medium", "label": "GROWTH_AREA"}
+{"text": "Topic: জীব প্রযুক্তি | time_ratio: 0.830 | switches: 2 | confidence: unsure | correct: false | difficulty: easy", "label": "GROWTH_AREA"}
+{"text": "Topic: Nervous System | time_ratio: 0.710 | switches: 0 | confidence: unsure | correct: true | difficulty: easy", "label": "TRUST_GAP"}
+{"text": "Topic: Biomolecules | time_ratio: 0.067 | switches: 1 | confidence: sure | correct: false | difficulty: medium", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: নিউক্লিক অ্যাসিড | time_ratio: 0.515 | switches: 0 | confidence: unsure | correct: true | difficulty: hard", "label": "TRUST_GAP"}
+{"text": "Topic: Respiration | time_ratio: 0.443 | switches: 0 | confidence: sure | correct: false | difficulty: medium", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: রেচন | time_ratio: 0.603 | switches: 2 | confidence: unsure | correct: true | difficulty: medium", "label": "TRUST_GAP"}
+{"text": "Topic: Genetics | time_ratio: 0.624 | switches: 2 | confidence: sure | correct: false | difficulty: medium", "label": "GROWTH_AREA"}
+{"text": "Topic: নিউক্লিক অ্যাসিড | time_ratio: 0.844 | switches: 5 | confidence: guessing | correct: false | difficulty: medium", "label": "GROWTH_AREA"}
+{"text": "Topic: প্রাণিবৈচিত্র্য | time_ratio: 0.962 | switches: 0 | confidence: unsure | correct: true | difficulty: hard", "label": "TRUST_GAP"}
+{"text": "Topic: Reproduction | time_ratio: 0.931 | switches: 1 | confidence: unsure | correct: true | difficulty: medium", "label": "TRUST_GAP"}
+{"text": "Topic: পরিবেশ দূষণ | time_ratio: 0.158 | switches: 0 | confidence: sure | correct: true | difficulty: medium", "label": "MASTERY"}
+{"text": "Topic: নিউক্লিক অ্যাসিড | time_ratio: 0.057 | switches: 0 | confidence: sure | correct: false | difficulty: easy", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: স্নায়ুতন্ত্র | time_ratio: 0.701 | switches: 2 | confidence: unsure | correct: true | difficulty: hard", "label": "TRUST_GAP"}
+{"text": "Topic: Tissue | time_ratio: 0.226 | switches: 1 | confidence: sure | correct: true | difficulty: hard", "label": "MASTERY"}
+{"text": "Topic: জিনতত্ত্ব | time_ratio: 0.492 | switches: 1 | confidence: sure | correct: false | difficulty: medium", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: নিউক্লিক অ্যাসিড | time_ratio: 0.582 | switches: 0 | confidence: sure | correct: false | difficulty: hard", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: নিউক্লিক অ্যাসিড | time_ratio: 0.557 | switches: 2 | confidence: unsure | correct: false | difficulty: hard", "label": "GROWTH_AREA"}
+{"text": "Topic: ভাইরাস ও ব্যাকটেরিয়া | time_ratio: 0.665 | switches: 2 | confidence: sure | correct: false | difficulty: hard", "label": "GROWTH_AREA"}
+{"text": "Topic: মানব শরীরতত্ত্ব | time_ratio: 1.000 | switches: 1 | confidence: unsure | correct: false | difficulty: hard", "label": "GROWTH_AREA"}
+{"text": "Topic: প্রাণিবৈচিত্র্য | time_ratio: 0.560 | switches: 1 | confidence: unsure | correct: true | difficulty: hard", "label": "TRUST_GAP"}
+{"text": "Topic: Heredity | time_ratio: 0.528 | switches: 0 | confidence: sure | correct: false | difficulty: easy", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: জীব প্রযুক্তি | time_ratio: 0.979 | switches: 1 | confidence: guessing | correct: true | difficulty: medium", "label": "TRUST_GAP"}
+{"text": "Topic: এনজাইম | time_ratio: 0.383 | switches: 1 | confidence: guessing | correct: true | difficulty: hard", "label": "TRUST_GAP"}
+{"text": "Topic: Virus & Bacteria | time_ratio: 0.648 | switches: 2 | confidence: unsure | correct: true | difficulty: easy", "label": "TRUST_GAP"}
+{"text": "Topic: Nucleic Acids | time_ratio: 0.291 | switches: 1 | confidence: sure | correct: false | difficulty: hard", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: ভাইরাস ও ব্যাকটেরিয়া | time_ratio: 0.727 | switches: 1 | confidence: sure | correct: false | difficulty: hard", "label": "GROWTH_AREA"}
+{"text": "Topic: Reproduction | time_ratio: 0.494 | switches: 0 | confidence: sure | correct: true | difficulty: medium", "label": "MASTERY"}
+{"text": "Topic: বংশগতি | time_ratio: 0.576 | switches: 0 | confidence: unsure | correct: true | difficulty: easy", "label": "TRUST_GAP"}
+{"text": "Topic: শ্বসন | time_ratio: 0.500 | switches: 0 | confidence: sure | correct: true | difficulty: easy", "label": "MASTERY"}
+{"text": "Topic: Environmental Pollution | time_ratio: 0.772 | switches: 0 | confidence: unsure | correct: false | difficulty: hard", "label": "GROWTH_AREA"}
+{"text": "Topic: জীবের বৃদ্ধি ও বিকাশ | time_ratio: 0.718 | switches: 3 | confidence: unsure | correct: true | difficulty: easy", "label": "TRUST_GAP"}
+{"text": "Topic: শ্বসন | time_ratio: 0.670 | switches: 2 | confidence: guessing | correct: false | difficulty: medium", "label": "GROWTH_AREA"}
+{"text": "Topic: জিনতত্ত্ব | time_ratio: 0.299 | switches: 2 | confidence: unsure | correct: true | difficulty: medium", "label": "TRUST_GAP"}
+{"text": "Topic: স্নায়ুতন্ত্র | time_ratio: 0.634 | switches: 1 | confidence: sure | correct: false | difficulty: easy", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: কোষ বিভাজন | time_ratio: 0.816 | switches: 0 | confidence: sure | correct: true | difficulty: medium", "label": "TRUST_GAP"}
+{"text": "Topic: বংশগতি | time_ratio: 0.899 | switches: 1 | confidence: unsure | correct: false | difficulty: medium", "label": "GROWTH_AREA"}
+{"text": "Topic: প্রাণিবৈচিত্র্য | time_ratio: 0.379 | switches: 1 | confidence: sure | correct: false | difficulty: easy", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: Heredity | time_ratio: 1.000 | switches: 0 | confidence: unsure | correct: false | difficulty: medium", "label": "GROWTH_AREA"}
+{"text": "Topic: Cell Structure | time_ratio: 0.770 | switches: 0 | confidence: unsure | correct: true | difficulty: hard", "label": "TRUST_GAP"}
+{"text": "Topic: হরমোন | time_ratio: 0.223 | switches: 0 | confidence: sure | correct: false | difficulty: easy", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: শ্বসন | time_ratio: 0.205 | switches: 0 | confidence: sure | correct: false | difficulty: easy", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: পরিবেশ দূষণ | time_ratio: 0.358 | switches: 1 | confidence: sure | correct: true | difficulty: medium", "label": "MASTERY"}
+{"text": "Topic: এনজাইম | time_ratio: 0.216 | switches: 0 | confidence: sure | correct: false | difficulty: medium", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: পরিবেশ দূষণ | time_ratio: 0.117 | switches: 0 | confidence: sure | correct: true | difficulty: hard", "label": "MASTERY"}
+{"text": "Topic: প্রাণিবৈচিত্র্য | time_ratio: 0.314 | switches: 2 | confidence: guessing | correct: false | difficulty: hard", "label": "GROWTH_AREA"}
+{"text": "Topic: বংশগতি | time_ratio: 0.066 | switches: 0 | confidence: sure | correct: true | difficulty: easy", "label": "MASTERY"}
+{"text": "Topic: কোষ ও এর গঠন | time_ratio: 0.087 | switches: 1 | confidence: sure | correct: true | difficulty: medium", "label": "MASTERY"}
+{"text": "Topic: হরমোন | time_ratio: 0.328 | switches: 0 | confidence: unsure | correct: true | difficulty: medium", "label": "TRUST_GAP"}
+{"text": "Topic: Excretion | time_ratio: 0.464 | switches: 1 | confidence: unsure | correct: true | difficulty: hard", "label": "TRUST_GAP"}
+{"text": "Topic: Blood & Circulation | time_ratio: 0.223 | switches: 0 | confidence: sure | correct: false | difficulty: easy", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: অণুজীববিজ্ঞান | time_ratio: 0.316 | switches: 0 | confidence: sure | correct: true | difficulty: easy", "label": "MASTERY"}
+{"text": "Topic: Environmental Pollution | time_ratio: 0.967 | switches: 3 | confidence: unsure | correct: false | difficulty: medium", "label": "GROWTH_AREA"}
+{"text": "Topic: নিউক্লিক অ্যাসিড | time_ratio: 0.525 | switches: 2 | confidence: sure | correct: false | difficulty: hard", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: Genetics | time_ratio: 0.604 | switches: 1 | confidence: unsure | correct: true | difficulty: easy", "label": "TRUST_GAP"}
+{"text": "Topic: জৈব অণু | time_ratio: 0.620 | switches: 3 | confidence: unsure | correct: false | difficulty: hard", "label": "GROWTH_AREA"}
+{"text": "Topic: Human Physiology | time_ratio: 0.621 | switches: 3 | confidence: unsure | correct: false | difficulty: easy", "label": "GROWTH_AREA"}
+{"text": "Topic: Tissue | time_ratio: 0.381 | switches: 0 | confidence: sure | correct: true | difficulty: medium", "label": "MASTERY"}
+{"text": "Topic: জৈব অণু | time_ratio: 0.579 | switches: 2 | confidence: unsure | correct: true | difficulty: easy", "label": "TRUST_GAP"}
+{"text": "Topic: জৈব অণু | time_ratio: 0.881 | switches: 0 | confidence: unsure | correct: false | difficulty: hard", "label": "GROWTH_AREA"}
+{"text": "Topic: রেচন | time_ratio: 0.406 | switches: 0 | confidence: sure | correct: true | difficulty: medium", "label": "MASTERY"}
+{"text": "Topic: Nervous System | time_ratio: 0.084 | switches: 0 | confidence: sure | correct: false | difficulty: easy", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: সালোকসংশ্লেষণ | time_ratio: 0.399 | switches: 0 | confidence: sure | correct: true | difficulty: hard", "label": "MASTERY"}
+{"text": "Topic: শ্বসন | time_ratio: 1.000 | switches: 1 | confidence: unsure | correct: false | difficulty: hard", "label": "GROWTH_AREA"}
+{"text": "Topic: পরিবেশ দূষণ | time_ratio: 0.336 | switches: 0 | confidence: sure | correct: false | difficulty: medium", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: Photosynthesis | time_ratio: 0.895 | switches: 1 | confidence: sure | correct: true | difficulty: medium", "label": "TRUST_GAP"}
+{"text": "Topic: প্রাণী আচরণ | time_ratio: 0.713 | switches: 2 | confidence: sure | correct: false | difficulty: medium", "label": "GROWTH_AREA"}
+{"text": "Topic: Photosynthesis | time_ratio: 0.740 | switches: 1 | confidence: unsure | correct: true | difficulty: easy", "label": "TRUST_GAP"}
+{"text": "Topic: Enzymes | time_ratio: 0.671 | switches: 2 | confidence: sure | correct: true | difficulty: hard", "label": "TRUST_GAP"}
+{"text": "Topic: কোষ বিভাজন | time_ratio: 0.499 | switches: 0 | confidence: sure | correct: true | difficulty: medium", "label": "MASTERY"}
+{"text": "Topic: উদ্ভিদবিজ্ঞান | time_ratio: 0.726 | switches: 2 | confidence: unsure | correct: true | difficulty: medium", "label": "TRUST_GAP"}
+{"text": "Topic: পরিবেশ দূষণ | time_ratio: 0.419 | switches: 0 | confidence: sure | correct: true | difficulty: medium", "label": "MASTERY"}
+{"text": "Topic: টিস্যু | time_ratio: 0.819 | switches: 3 | confidence: unsure | correct: true | difficulty: medium", "label": "TRUST_GAP"}
+{"text": "Topic: Human Physiology | time_ratio: 0.331 | switches: 0 | confidence: sure | correct: true | difficulty: easy", "label": "MASTERY"}
+{"text": "Topic: জৈব অণু | time_ratio: 0.276 | switches: 0 | confidence: sure | correct: true | difficulty: medium", "label": "MASTERY"}
+{"text": "Topic: Botany | time_ratio: 0.596 | switches: 1 | confidence: guessing | correct: false | difficulty: medium", "label": "GROWTH_AREA"}
+{"text": "Topic: Enzymes | time_ratio: 0.671 | switches: 2 | confidence: unsure | correct: true | difficulty: easy", "label": "TRUST_GAP"}
+{"text": "Topic: প্রাণী আচরণ | time_ratio: 0.733 | switches: 1 | confidence: unsure | correct: true | difficulty: medium", "label": "TRUST_GAP"}
+{"text": "Topic: রক্ত ও সংবহন | time_ratio: 0.365 | switches: 0 | confidence: guessing | correct: true | difficulty: medium", "label": "TRUST_GAP"}
+{"text": "Topic: Biomolecules | time_ratio: 0.218 | switches: 0 | confidence: sure | correct: true | difficulty: medium", "label": "MASTERY"}
+{"text": "Topic: Microbiology | time_ratio: 0.312 | switches: 0 | confidence: sure | correct: false | difficulty: easy", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: রেচন | time_ratio: 0.289 | switches: 0 | confidence: sure | correct: false | difficulty: hard", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: ভাইরাস ও ব্যাকটেরিয়া | time_ratio: 0.678 | switches: 0 | confidence: unsure | correct: true | difficulty: easy", "label": "TRUST_GAP"}
+{"text": "Topic: Excretion | time_ratio: 0.163 | switches: 2 | confidence: guessing | correct: false | difficulty: hard", "label": "GROWTH_AREA"}
+{"text": "Topic: প্রাণিবৈচিত্র্য | time_ratio: 0.226 | switches: 0 | confidence: sure | correct: true | difficulty: hard", "label": "MASTERY"}
+{"text": "Topic: প্রাণিবৈচিত্র্য | time_ratio: 1.000 | switches: 1 | confidence: guessing | correct: false | difficulty: easy", "label": "GROWTH_AREA"}
+{"text": "Topic: জীবের বৃদ্ধি ও বিকাশ | time_ratio: 0.932 | switches: 2 | confidence: unsure | correct: false | difficulty: medium", "label": "GROWTH_AREA"}
+{"text": "Topic: জীবের বৃদ্ধি ও বিকাশ | time_ratio: 0.485 | switches: 2 | confidence: unsure | correct: true | difficulty: medium", "label": "TRUST_GAP"}
+{"text": "Topic: শ্বসন | time_ratio: 0.650 | switches: 0 | confidence: sure | correct: true | difficulty: hard", "label": "TRUST_GAP"}
+{"text": "Topic: প্রাণিবৈচিত্র্য | time_ratio: 0.544 | switches: 2 | confidence: sure | correct: false | difficulty: medium", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: Excretion | time_ratio: 0.671 | switches: 1 | confidence: unsure | correct: false | difficulty: medium", "label": "GROWTH_AREA"}
+{"text": "Topic: Botany | time_ratio: 0.393 | switches: 0 | confidence: sure | correct: false | difficulty: hard", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: Reproduction | time_ratio: 1.000 | switches: 2 | confidence: guessing | correct: false | difficulty: medium", "label": "GROWTH_AREA"}
+{"text": "Topic: স্নায়ুতন্ত্র | time_ratio: 0.162 | switches: 1 | confidence: sure | correct: false | difficulty: hard", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: Biotechnology | time_ratio: 0.179 | switches: 0 | confidence: sure | correct: true | difficulty: medium", "label": "MASTERY"}
+{"text": "Topic: পরিবেশ দূষণ | time_ratio: 0.420 | switches: 0 | confidence: sure | correct: true | difficulty: easy", "label": "MASTERY"}
+{"text": "Topic: Nucleic Acids | time_ratio: 0.089 | switches: 0 | confidence: sure | correct: true | difficulty: medium", "label": "MASTERY"}
+{"text": "Topic: Ecology | time_ratio: 0.463 | switches: 0 | confidence: sure | correct: true | difficulty: medium", "label": "MASTERY"}
+{"text": "Topic: Environmental Pollution | time_ratio: 0.484 | switches: 0 | confidence: sure | correct: true | difficulty: medium", "label": "MASTERY"}
+{"text": "Topic: Respiration | time_ratio: 0.784 | switches: 1 | confidence: guessing | correct: true | difficulty: easy", "label": "TRUST_GAP"}
+{"text": "Topic: মানব শরীরতত্ত্ব | time_ratio: 0.155 | switches: 1 | confidence: sure | correct: true | difficulty: medium", "label": "MASTERY"}
+{"text": "Topic: জীবের বৃদ্ধি ও বিকাশ | time_ratio: 0.272 | switches: 0 | confidence: sure | correct: true | difficulty: hard", "label": "MASTERY"}
+{"text": "Topic: Heredity | time_ratio: 0.180 | switches: 0 | confidence: sure | correct: false | difficulty: medium", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: উদ্ভিদবিজ্ঞান | time_ratio: 0.101 | switches: 0 | confidence: sure | correct: true | difficulty: easy", "label": "MASTERY"}
+{"text": "Topic: শ্বসন | time_ratio: 0.125 | switches: 1 | confidence: guessing | correct: false | difficulty: medium", "label": "GROWTH_AREA"}
+{"text": "Topic: Botany | time_ratio: 0.726 | switches: 1 | confidence: guessing | correct: true | difficulty: medium", "label": "TRUST_GAP"}
+{"text": "Topic: Growth & Development | time_ratio: 0.912 | switches: 0 | confidence: unsure | correct: true | difficulty: medium", "label": "TRUST_GAP"}
+{"text": "Topic: বাস্তুবিদ্যা | time_ratio: 0.167 | switches: 0 | confidence: sure | correct: true | difficulty: hard", "label": "MASTERY"}
+{"text": "Topic: Botany | time_ratio: 0.609 | switches: 3 | confidence: unsure | correct: true | difficulty: hard", "label": "TRUST_GAP"}
+{"text": "Topic: প্রাণিবৈচিত্র্য | time_ratio: 0.336 | switches: 2 | confidence: guessing | correct: true | difficulty: medium", "label": "TRUST_GAP"}
+{"text": "Topic: ভাইরাস ও ব্যাকটেরিয়া | time_ratio: 0.273 | switches: 0 | confidence: sure | correct: true | difficulty: medium", "label": "MASTERY"}
+{"text": "Topic: কোষ ও এর গঠন | time_ratio: 0.503 | switches: 0 | confidence: sure | correct: false | difficulty: hard", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: স্নায়ুতন্ত্র | time_ratio: 0.316 | switches: 0 | confidence: sure | correct: true | difficulty: easy", "label": "MASTERY"}
+{"text": "Topic: নিউক্লিক অ্যাসিড | time_ratio: 0.391 | switches: 0 | confidence: sure | correct: true | difficulty: easy", "label": "MASTERY"}
+{"text": "Topic: Blood & Circulation | time_ratio: 0.599 | switches: 0 | confidence: unsure | correct: true | difficulty: hard", "label": "TRUST_GAP"}
+{"text": "Topic: প্রাণী আচরণ | time_ratio: 0.211 | switches: 0 | confidence: sure | correct: false | difficulty: medium", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: হরমোন | time_ratio: 0.343 | switches: 0 | confidence: sure | correct: true | difficulty: medium", "label": "MASTERY"}
+{"text": "Topic: Tissue | time_ratio: 0.285 | switches: 0 | confidence: sure | correct: true | difficulty: medium", "label": "MASTERY"}
+{"text": "Topic: Blood & Circulation | time_ratio: 0.745 | switches: 3 | confidence: unsure | correct: false | difficulty: easy", "label": "GROWTH_AREA"}
+{"text": "Topic: Blood & Circulation | time_ratio: 0.691 | switches: 1 | confidence: unsure | correct: true | difficulty: hard", "label": "TRUST_GAP"}
+{"text": "Topic: ভাইরাস ও ব্যাকটেরিয়া | time_ratio: 1.000 | switches: 0 | confidence: guessing | correct: false | difficulty: easy", "label": "GROWTH_AREA"}
+{"text": "Topic: প্রাণী আচরণ | time_ratio: 0.545 | switches: 0 | confidence: guessing | correct: false | difficulty: medium", "label": "GROWTH_AREA"}
+{"text": "Topic: Hormones | time_ratio: 1.000 | switches: 0 | confidence: guessing | correct: false | difficulty: easy", "label": "GROWTH_AREA"}
+{"text": "Topic: Biotechnology | time_ratio: 0.344 | switches: 0 | confidence: sure | correct: false | difficulty: easy", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: জৈব অণু | time_ratio: 0.841 | switches: 2 | confidence: guessing | correct: true | difficulty: easy", "label": "TRUST_GAP"}
+{"text": "Topic: Cell Structure | time_ratio: 0.909 | switches: 1 | confidence: unsure | correct: true | difficulty: medium", "label": "TRUST_GAP"}
+{"text": "Topic: পরিবেশ দূষণ | time_ratio: 0.311 | switches: 3 | confidence: unsure | correct: false | difficulty: medium", "label": "GROWTH_AREA"}
+{"text": "Topic: Nucleic Acids | time_ratio: 0.712 | switches: 2 | confidence: unsure | correct: false | difficulty: medium", "label": "GROWTH_AREA"}
+{"text": "Topic: পরিবেশ দূষণ | time_ratio: 0.611 | switches: 1 | confidence: guessing | correct: false | difficulty: medium", "label": "GROWTH_AREA"}
+{"text": "Topic: সালোকসংশ্লেষণ | time_ratio: 0.691 | switches: 3 | confidence: unsure | correct: false | difficulty: hard", "label": "GROWTH_AREA"}
+{"text": "Topic: শ্বসন | time_ratio: 0.454 | switches: 0 | confidence: sure | correct: true | difficulty: medium", "label": "MASTERY"}
+{"text": "Topic: মানব শরীরতত্ত্ব | time_ratio: 1.000 | switches: 0 | confidence: guessing | correct: false | difficulty: medium", "label": "GROWTH_AREA"}
+{"text": "Topic: Photosynthesis | time_ratio: 0.315 | switches: 0 | confidence: sure | correct: false | difficulty: medium", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: Animal Behavior | time_ratio: 0.394 | switches: 0 | confidence: sure | correct: true | difficulty: medium", "label": "MASTERY"}
+{"text": "Topic: Nucleic Acids | time_ratio: 0.080 | switches: 0 | confidence: sure | correct: true | difficulty: medium", "label": "MASTERY"}
+{"text": "Topic: Botany | time_ratio: 0.581 | switches: 2 | confidence: guessing | correct: false | difficulty: medium", "label": "GROWTH_AREA"}
+{"text": "Topic: Reproduction | time_ratio: 0.453 | switches: 0 | confidence: sure | correct: true | difficulty: easy", "label": "MASTERY"}
+{"text": "Topic: পরিবেশ দূষণ | time_ratio: 0.347 | switches: 0 | confidence: sure | correct: true | difficulty: medium", "label": "MASTERY"}
+{"text": "Topic: Excretion | time_ratio: 0.134 | switches: 1 | confidence: sure | correct: false | difficulty: easy", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: জীব প্রযুক্তি | time_ratio: 0.570 | switches: 2 | confidence: sure | correct: true | difficulty: easy", "label": "TRUST_GAP"}
+{"text": "Topic: এনজাইম | time_ratio: 0.349 | switches: 2 | confidence: unsure | correct: true | difficulty: hard", "label": "TRUST_GAP"}
+{"text": "Topic: রেচন | time_ratio: 0.210 | switches: 2 | confidence: sure | correct: false | difficulty: medium", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: কোষ বিভাজন | time_ratio: 0.355 | switches: 0 | confidence: sure | correct: true | difficulty: hard", "label": "MASTERY"}
+{"text": "Topic: Biomolecules | time_ratio: 0.489 | switches: 0 | confidence: sure | correct: false | difficulty: easy", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: ভাইরাস ও ব্যাকটেরিয়া | time_ratio: 0.372 | switches: 2 | confidence: guessing | correct: false | difficulty: hard", "label": "GROWTH_AREA"}
+{"text": "Topic: বংশগতি | time_ratio: 0.224 | switches: 1 | confidence: sure | correct: false | difficulty: medium", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: Cell Structure | time_ratio: 0.210 | switches: 0 | confidence: sure | correct: false | difficulty: hard", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: এনজাইম | time_ratio: 0.427 | switches: 0 | confidence: sure | correct: true | difficulty: medium", "label": "MASTERY"}
+{"text": "Topic: শ্বসন | time_ratio: 0.634 | switches: 1 | confidence: sure | correct: false | difficulty: easy", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: শ্বসন | time_ratio: 0.370 | switches: 0 | confidence: sure | correct: true | difficulty: easy", "label": "MASTERY"}
+{"text": "Topic: বংশগতি | time_ratio: 1.000 | switches: 3 | confidence: guessing | correct: false | difficulty: easy", "label": "GROWTH_AREA"}
+{"text": "Topic: উদ্ভিদবিজ্ঞান | time_ratio: 0.203 | switches: 1 | confidence: sure | correct: true | difficulty: easy", "label": "MASTERY"}
+{"text": "Topic: টিস্যু | time_ratio: 0.483 | switches: 2 | confidence: guessing | correct: true | difficulty: easy", "label": "TRUST_GAP"}
+{"text": "Topic: মানব শরীরতত্ত্ব | time_ratio: 0.177 | switches: 2 | confidence: sure | correct: false | difficulty: easy", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: Tissue | time_ratio: 0.632 | switches: 2 | confidence: guessing | correct: false | difficulty: hard", "label": "GROWTH_AREA"}
+{"text": "Topic: শ্বসন | time_ratio: 0.559 | switches: 0 | confidence: sure | correct: false | difficulty: easy", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: Environmental Pollution | time_ratio: 0.707 | switches: 2 | confidence: sure | correct: true | difficulty: easy", "label": "TRUST_GAP"}
+{"text": "Topic: Environmental Pollution | time_ratio: 0.448 | switches: 0 | confidence: sure | correct: true | difficulty: easy", "label": "MASTERY"}
+{"text": "Topic: জৈব অণু | time_ratio: 0.412 | switches: 2 | confidence: unsure | correct: false | difficulty: hard", "label": "GROWTH_AREA"}
+{"text": "Topic: Animal Diversity | time_ratio: 0.450 | switches: 1 | confidence: unsure | correct: true | difficulty: easy", "label": "TRUST_GAP"}
+{"text": "Topic: Animal Diversity | time_ratio: 0.840 | switches: 1 | confidence: unsure | correct: false | difficulty: medium", "label": "GROWTH_AREA"}
+{"text": "Topic: টিস্যু | time_ratio: 0.477 | switches: 0 | confidence: sure | correct: true | difficulty: hard", "label": "MASTERY"}
+{"text": "Topic: Cell Structure | time_ratio: 0.756 | switches: 1 | confidence: guessing | correct: false | difficulty: hard", "label": "GROWTH_AREA"}
+{"text": "Topic: Reproduction | time_ratio: 0.883 | switches: 3 | confidence: guessing | correct: true | difficulty: medium", "label": "TRUST_GAP"}
+{"text": "Topic: অণুজীববিজ্ঞান | time_ratio: 0.656 | switches: 0 | confidence: guessing | correct: false | difficulty: medium", "label": "GROWTH_AREA"}
+{"text": "Topic: পরিবেশ দূষণ | time_ratio: 0.252 | switches: 1 | confidence: sure | correct: true | difficulty: easy", "label": "MASTERY"}
+{"text": "Topic: Enzymes | time_ratio: 0.804 | switches: 2 | confidence: unsure | correct: true | difficulty: easy", "label": "TRUST_GAP"}
+{"text": "Topic: Genetics | time_ratio: 0.519 | switches: 3 | confidence: guessing | correct: false | difficulty: hard", "label": "GROWTH_AREA"}
+{"text": "Topic: Animal Diversity | time_ratio: 0.605 | switches: 1 | confidence: sure | correct: false | difficulty: easy", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: প্রাণী আচরণ | time_ratio: 0.414 | switches: 2 | confidence: sure | correct: false | difficulty: hard", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: Reproduction | time_ratio: 0.185 | switches: 0 | confidence: sure | correct: true | difficulty: hard", "label": "MASTERY"}
+{"text": "Topic: কোষ বিভাজন | time_ratio: 0.598 | switches: 2 | confidence: unsure | correct: false | difficulty: easy", "label": "GROWTH_AREA"}
+{"text": "Topic: প্রজনন | time_ratio: 0.641 | switches: 2 | confidence: unsure | correct: true | difficulty: medium", "label": "TRUST_GAP"}
+{"text": "Topic: Reproduction | time_ratio: 0.567 | switches: 0 | confidence: unsure | correct: true | difficulty: easy", "label": "TRUST_GAP"}
+{"text": "Topic: প্রাণিবৈচিত্র্য | time_ratio: 0.091 | switches: 1 | confidence: sure | correct: true | difficulty: hard", "label": "MASTERY"}
+{"text": "Topic: উদ্ভিদবিজ্ঞান | time_ratio: 0.580 | switches: 0 | confidence: unsure | correct: true | difficulty: medium", "label": "TRUST_GAP"}
+{"text": "Topic: বাস্তুবিদ্যা | time_ratio: 0.702 | switches: 2 | confidence: unsure | correct: true | difficulty: medium", "label": "TRUST_GAP"}
+{"text": "Topic: বংশগতি | time_ratio: 0.449 | switches: 2 | confidence: sure | correct: false | difficulty: hard", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: Ecology | time_ratio: 0.171 | switches: 0 | confidence: sure | correct: true | difficulty: medium", "label": "MASTERY"}
+{"text": "Topic: Biotechnology | time_ratio: 0.625 | switches: 3 | confidence: unsure | correct: true | difficulty: easy", "label": "TRUST_GAP"}
+{"text": "Topic: উদ্ভিদবিজ্ঞান | time_ratio: 0.480 | switches: 0 | confidence: sure | correct: true | difficulty: medium", "label": "MASTERY"}
+{"text": "Topic: Reproduction | time_ratio: 0.417 | switches: 2 | confidence: unsure | correct: true | difficulty: hard", "label": "TRUST_GAP"}
+{"text": "Topic: প্রাণী আচরণ | time_ratio: 0.261 | switches: 0 | confidence: sure | correct: true | difficulty: hard", "label": "MASTERY"}
+{"text": "Topic: Genetics | time_ratio: 0.350 | switches: 2 | confidence: guessing | correct: true | difficulty: medium", "label": "TRUST_GAP"}
+{"text": "Topic: টিস্যু | time_ratio: 0.252 | switches: 1 | confidence: sure | correct: true | difficulty: medium", "label": "MASTERY"}
+{"text": "Topic: Biotechnology | time_ratio: 0.393 | switches: 0 | confidence: sure | correct: true | difficulty: hard", "label": "MASTERY"}
+{"text": "Topic: প্রজনন | time_ratio: 0.761 | switches: 2 | confidence: unsure | correct: false | difficulty: easy", "label": "GROWTH_AREA"}
+{"text": "Topic: বাস্তুবিদ্যা | time_ratio: 0.896 | switches: 3 | confidence: unsure | correct: true | difficulty: hard", "label": "TRUST_GAP"}
+{"text": "Topic: Blood & Circulation | time_ratio: 0.428 | switches: 2 | confidence: unsure | correct: true | difficulty: medium", "label": "TRUST_GAP"}
+{"text": "Topic: Tissue | time_ratio: 0.420 | switches: 1 | confidence: sure | correct: false | difficulty: medium", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: সালোকসংশ্লেষণ | time_ratio: 0.113 | switches: 0 | confidence: sure | correct: true | difficulty: medium", "label": "MASTERY"}
+{"text": "Topic: জৈব অণু | time_ratio: 0.425 | switches: 0 | confidence: sure | correct: true | difficulty: easy", "label": "MASTERY"}
+{"text": "Topic: প্রাণী আচরণ | time_ratio: 0.459 | switches: 0 | confidence: sure | correct: true | difficulty: medium", "label": "MASTERY"}
+{"text": "Topic: Biotechnology | time_ratio: 0.283 | switches: 0 | confidence: sure | correct: true | difficulty: easy", "label": "MASTERY"}
+{"text": "Topic: জিনতত্ত্ব | time_ratio: 1.000 | switches: 1 | confidence: guessing | correct: false | difficulty: easy", "label": "GROWTH_AREA"}
+{"text": "Topic: Cell Division | time_ratio: 0.502 | switches: 0 | confidence: sure | correct: false | difficulty: medium", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: রেচন | time_ratio: 0.599 | switches: 2 | confidence: guessing | correct: false | difficulty: easy", "label": "GROWTH_AREA"}
+{"text": "Topic: টিস্যু | time_ratio: 0.994 | switches: 1 | confidence: unsure | correct: true | difficulty: easy", "label": "TRUST_GAP"}
+{"text": "Topic: কোষ ও এর গঠন | time_ratio: 0.185 | switches: 1 | confidence: sure | correct: false | difficulty: medium", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: Heredity | time_ratio: 0.225 | switches: 0 | confidence: sure | correct: true | difficulty: hard", "label": "MASTERY"}
+{"text": "Topic: এনজাইম | time_ratio: 0.155 | switches: 0 | confidence: sure | correct: true | difficulty: medium", "label": "MASTERY"}
+{"text": "Topic: Cell Structure | time_ratio: 0.658 | switches: 0 | confidence: unsure | correct: true | difficulty: medium", "label": "TRUST_GAP"}
+{"text": "Topic: ভাইরাস ও ব্যাকটেরিয়া | time_ratio: 0.841 | switches: 1 | confidence: sure | correct: true | difficulty: easy", "label": "TRUST_GAP"}
+{"text": "Topic: প্রাণিবৈচিত্র্য | time_ratio: 0.232 | switches: 2 | confidence: guessing | correct: false | difficulty: hard", "label": "GROWTH_AREA"}
+{"text": "Topic: Virus & Bacteria | time_ratio: 0.334 | switches: 1 | confidence: sure | correct: false | difficulty: hard", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: প্রাণিবৈচিত্র্য | time_ratio: 0.458 | switches: 1 | confidence: sure | correct: true | difficulty: easy", "label": "MASTERY"}
+{"text": "Topic: উদ্ভিদবিজ্ঞান | time_ratio: 0.336 | switches: 0 | confidence: sure | correct: true | difficulty: medium", "label": "MASTERY"}
+{"text": "Topic: পরিবেশ দূষণ | time_ratio: 0.360 | switches: 0 | confidence: guessing | correct: true | difficulty: medium", "label": "TRUST_GAP"}
+{"text": "Topic: কোষ বিভাজন | time_ratio: 0.770 | switches: 1 | confidence: sure | correct: true | difficulty: medium", "label": "TRUST_GAP"}
+{"text": "Topic: Tissue | time_ratio: 0.404 | switches: 0 | confidence: sure | correct: true | difficulty: medium", "label": "MASTERY"}
+{"text": "Topic: Respiration | time_ratio: 0.848 | switches: 3 | confidence: sure | correct: true | difficulty: medium", "label": "TRUST_GAP"}
+{"text": "Topic: Photosynthesis | time_ratio: 0.642 | switches: 0 | confidence: sure | correct: false | difficulty: easy", "label": "GROWTH_AREA"}
+{"text": "Topic: জীবের বৃদ্ধি ও বিকাশ | time_ratio: 0.301 | switches: 1 | confidence: sure | correct: false | difficulty: easy", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: Reproduction | time_ratio: 0.208 | switches: 2 | confidence: sure | correct: false | difficulty: medium", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: Human Physiology | time_ratio: 1.000 | switches: 1 | confidence: guessing | correct: false | difficulty: hard", "label": "GROWTH_AREA"}
+{"text": "Topic: Cell Division | time_ratio: 0.747 | switches: 0 | confidence: guessing | correct: true | difficulty: easy", "label": "TRUST_GAP"}
+{"text": "Topic: টিস্যু | time_ratio: 0.117 | switches: 0 | confidence: sure | correct: true | difficulty: easy", "label": "MASTERY"}
+{"text": "Topic: জীব প্রযুক্তি | time_ratio: 0.879 | switches: 1 | confidence: unsure | correct: true | difficulty: hard", "label": "TRUST_GAP"}
+{"text": "Topic: Animal Behavior | time_ratio: 0.456 | switches: 0 | confidence: sure | correct: true | difficulty: hard", "label": "MASTERY"}
+{"text": "Topic: এনজাইম | time_ratio: 0.213 | switches: 0 | confidence: sure | correct: true | difficulty: medium", "label": "MASTERY"}
+{"text": "Topic: রেচন | time_ratio: 0.226 | switches: 0 | confidence: sure | correct: true | difficulty: hard", "label": "MASTERY"}
+{"text": "Topic: নিউক্লিক অ্যাসিড | time_ratio: 1.000 | switches: 1 | confidence: guessing | correct: false | difficulty: medium", "label": "GROWTH_AREA"}
+{"text": "Topic: Tissue | time_ratio: 0.726 | switches: 2 | confidence: guessing | correct: true | difficulty: medium", "label": "TRUST_GAP"}
+{"text": "Topic: কোষ ও এর গঠন | time_ratio: 0.890 | switches: 1 | confidence: unsure | correct: true | difficulty: hard", "label": "TRUST_GAP"}
+{"text": "Topic: শ্বসন | time_ratio: 0.749 | switches: 2 | confidence: unsure | correct: false | difficulty: medium", "label": "GROWTH_AREA"}
+{"text": "Topic: বংশগতি | time_ratio: 0.710 | switches: 2 | confidence: unsure | correct: false | difficulty: easy", "label": "GROWTH_AREA"}
+{"text": "Topic: Environmental Pollution | time_ratio: 0.426 | switches: 0 | confidence: sure | correct: false | difficulty: hard", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: জিনতত্ত্ব | time_ratio: 0.394 | switches: 0 | confidence: sure | correct: true | difficulty: medium", "label": "MASTERY"}
+{"text": "Topic: শ্বসন | time_ratio: 0.940 | switches: 2 | confidence: guessing | correct: true | difficulty: medium", "label": "TRUST_GAP"}
+{"text": "Topic: কোষ ও এর গঠন | time_ratio: 0.118 | switches: 1 | confidence: sure | correct: true | difficulty: easy", "label": "MASTERY"}
+{"text": "Topic: নিউক্লিক অ্যাসিড | time_ratio: 0.461 | switches: 1 | confidence: sure | correct: false | difficulty: hard", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: Hormones | time_ratio: 0.889 | switches: 1 | confidence: guessing | correct: false | difficulty: hard", "label": "GROWTH_AREA"}
+{"text": "Topic: Growth & Development | time_ratio: 0.440 | switches: 0 | confidence: sure | correct: true | difficulty: hard", "label": "MASTERY"}
+{"text": "Topic: জীব প্রযুক্তি | time_ratio: 0.339 | switches: 0 | confidence: guessing | correct: false | difficulty: medium", "label": "GROWTH_AREA"}
+{"text": "Topic: Reproduction | time_ratio: 0.256 | switches: 1 | confidence: sure | correct: true | difficulty: medium", "label": "MASTERY"}
+{"text": "Topic: পরিবেশ দূষণ | time_ratio: 0.334 | switches: 0 | confidence: sure | correct: true | difficulty: medium", "label": "MASTERY"}
+{"text": "Topic: Heredity | time_ratio: 0.777 | switches: 2 | confidence: unsure | correct: false | difficulty: easy", "label": "GROWTH_AREA"}
+{"text": "Topic: কোষ ও এর গঠন | time_ratio: 0.469 | switches: 2 | confidence: guessing | correct: false | difficulty: medium", "label": "GROWTH_AREA"}
+{"text": "Topic: Tissue | time_ratio: 0.581 | switches: 1 | confidence: guessing | correct: false | difficulty: medium", "label": "GROWTH_AREA"}
+{"text": "Topic: নিউক্লিক অ্যাসিড | time_ratio: 0.549 | switches: 1 | confidence: guessing | correct: false | difficulty: medium", "label": "GROWTH_AREA"}
+{"text": "Topic: পরিবেশ দূষণ | time_ratio: 0.619 | switches: 1 | confidence: sure | correct: false | difficulty: medium", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: Genetics | time_ratio: 0.889 | switches: 1 | confidence: guessing | correct: true | difficulty: medium", "label": "TRUST_GAP"}
+{"text": "Topic: Excretion | time_ratio: 0.651 | switches: 2 | confidence: guessing | correct: false | difficulty: medium", "label": "GROWTH_AREA"}
+{"text": "Topic: বংশগতি | time_ratio: 0.064 | switches: 0 | confidence: sure | correct: false | difficulty: medium", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: বাস্তুবিদ্যা | time_ratio: 0.250 | switches: 0 | confidence: sure | correct: true | difficulty: easy", "label": "MASTERY"}
+{"text": "Topic: Genetics | time_ratio: 0.744 | switches: 1 | confidence: unsure | correct: true | difficulty: easy", "label": "TRUST_GAP"}
+{"text": "Topic: এনজাইম | time_ratio: 0.481 | switches: 0 | confidence: sure | correct: true | difficulty: easy", "label": "MASTERY"}
+{"text": "Topic: টিস্যু | time_ratio: 0.600 | switches: 1 | confidence: guessing | correct: true | difficulty: easy", "label": "TRUST_GAP"}
+{"text": "Topic: অণুজীববিজ্ঞান | time_ratio: 0.508 | switches: 1 | confidence: unsure | correct: true | difficulty: easy", "label": "TRUST_GAP"}
+{"text": "Topic: সালোকসংশ্লেষণ | time_ratio: 0.582 | switches: 0 | confidence: unsure | correct: true | difficulty: hard", "label": "TRUST_GAP"}
+{"text": "Topic: Heredity | time_ratio: 0.253 | switches: 2 | confidence: unsure | correct: true | difficulty: easy", "label": "TRUST_GAP"}
+{"text": "Topic: Excretion | time_ratio: 0.814 | switches: 5 | confidence: guessing | correct: false | difficulty: medium", "label": "GROWTH_AREA"}
+{"text": "Topic: ভাইরাস ও ব্যাকটেরিয়া | time_ratio: 0.633 | switches: 0 | confidence: sure | correct: true | difficulty: medium", "label": "TRUST_GAP"}
+{"text": "Topic: Cell Structure | time_ratio: 0.114 | switches: 0 | confidence: sure | correct: false | difficulty: hard", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: হরমোন | time_ratio: 0.452 | switches: 0 | confidence: sure | correct: true | difficulty: hard", "label": "MASTERY"}
+{"text": "Topic: কোষ ও এর গঠন | time_ratio: 0.414 | switches: 4 | confidence: unsure | correct: false | difficulty: hard", "label": "GROWTH_AREA"}
+{"text": "Topic: Virus & Bacteria | time_ratio: 1.000 | switches: 2 | confidence: unsure | correct: false | difficulty: hard", "label": "GROWTH_AREA"}
+{"text": "Topic: মানব শরীরতত্ত্ব | time_ratio: 1.000 | switches: 0 | confidence: guessing | correct: false | difficulty: hard", "label": "GROWTH_AREA"}
+{"text": "Topic: শ্বসন | time_ratio: 0.187 | switches: 0 | confidence: sure | correct: true | difficulty: medium", "label": "MASTERY"}
+{"text": "Topic: জৈব অণু | time_ratio: 0.380 | switches: 2 | confidence: unsure | correct: false | difficulty: hard", "label": "GROWTH_AREA"}
+{"text": "Topic: নিউক্লিক অ্যাসিড | time_ratio: 1.000 | switches: 0 | confidence: unsure | correct: false | difficulty: hard", "label": "GROWTH_AREA"}
+{"text": "Topic: Reproduction | time_ratio: 0.138 | switches: 0 | confidence: sure | correct: false | difficulty: medium", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: Virus & Bacteria | time_ratio: 0.417 | switches: 0 | confidence: sure | correct: true | difficulty: easy", "label": "MASTERY"}
+{"text": "Topic: Microbiology | time_ratio: 0.634 | switches: 1 | confidence: guessing | correct: true | difficulty: medium", "label": "TRUST_GAP"}
+{"text": "Topic: Photosynthesis | time_ratio: 0.226 | switches: 0 | confidence: unsure | correct: true | difficulty: medium", "label": "TRUST_GAP"}
+{"text": "Topic: কোষ বিভাজন | time_ratio: 0.298 | switches: 0 | confidence: sure | correct: true | difficulty: hard", "label": "MASTERY"}
+{"text": "Topic: Botany | time_ratio: 0.455 | switches: 1 | confidence: sure | correct: false | difficulty: hard", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: স্নায়ুতন্ত্র | time_ratio: 0.264 | switches: 0 | confidence: sure | correct: true | difficulty: medium", "label": "MASTERY"}
+{"text": "Topic: উদ্ভিদবিজ্ঞান | time_ratio: 0.413 | switches: 0 | confidence: sure | correct: false | difficulty: medium", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: Biotechnology | time_ratio: 0.529 | switches: 2 | confidence: unsure | correct: true | difficulty: medium", "label": "TRUST_GAP"}
+{"text": "Topic: Human Physiology | time_ratio: 0.441 | switches: 3 | confidence: guessing | correct: true | difficulty: medium", "label": "TRUST_GAP"}
+{"text": "Topic: টিস্যু | time_ratio: 0.767 | switches: 1 | confidence: unsure | correct: false | difficulty: hard", "label": "GROWTH_AREA"}
+{"text": "Topic: বংশগতি | time_ratio: 0.516 | switches: 0 | confidence: sure | correct: false | difficulty: easy", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: অণুজীববিজ্ঞান | time_ratio: 1.000 | switches: 1 | confidence: guessing | correct: false | difficulty: hard", "label": "GROWTH_AREA"}
+{"text": "Topic: রেচন | time_ratio: 0.115 | switches: 2 | confidence: sure | correct: false | difficulty: hard", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: Genetics | time_ratio: 0.628 | switches: 1 | confidence: unsure | correct: true | difficulty: easy", "label": "TRUST_GAP"}
+{"text": "Topic: Biomolecules | time_ratio: 0.434 | switches: 0 | confidence: sure | correct: false | difficulty: medium", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: জৈব অণু | time_ratio: 0.163 | switches: 1 | confidence: sure | correct: false | difficulty: hard", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: জীব প্রযুক্তি | time_ratio: 0.421 | switches: 0 | confidence: sure | correct: false | difficulty: medium", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: শ্বসন | time_ratio: 0.760 | switches: 0 | confidence: unsure | correct: true | difficulty: medium", "label": "TRUST_GAP"}
+{"text": "Topic: নিউক্লিক অ্যাসিড | time_ratio: 0.869 | switches: 4 | confidence: guessing | correct: true | difficulty: hard", "label": "TRUST_GAP"}
+{"text": "Topic: জীব প্রযুক্তি | time_ratio: 0.468 | switches: 2 | confidence: unsure | correct: true | difficulty: medium", "label": "TRUST_GAP"}
+{"text": "Topic: বংশগতি | time_ratio: 0.728 | switches: 1 | confidence: unsure | correct: false | difficulty: hard", "label": "GROWTH_AREA"}
+{"text": "Topic: অণুজীববিজ্ঞান | time_ratio: 0.496 | switches: 0 | confidence: sure | correct: true | difficulty: easy", "label": "MASTERY"}
+{"text": "Topic: হরমোন | time_ratio: 0.317 | switches: 1 | confidence: sure | correct: false | difficulty: medium", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: রেচন | time_ratio: 0.641 | switches: 1 | confidence: sure | correct: false | difficulty: hard", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: Biotechnology | time_ratio: 0.376 | switches: 0 | confidence: sure | correct: true | difficulty: hard", "label": "MASTERY"}
+{"text": "Topic: অণুজীববিজ্ঞান | time_ratio: 0.268 | switches: 2 | confidence: unsure | correct: true | difficulty: hard", "label": "TRUST_GAP"}
+{"text": "Topic: সালোকসংশ্লেষণ | time_ratio: 0.471 | switches: 0 | confidence: sure | correct: false | difficulty: hard", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: মানব শরীরতত্ত্ব | time_ratio: 0.885 | switches: 1 | confidence: unsure | correct: true | difficulty: medium", "label": "TRUST_GAP"}
+{"text": "Topic: নিউক্লিক অ্যাসিড | time_ratio: 0.253 | switches: 1 | confidence: sure | correct: true | difficulty: medium", "label": "MASTERY"}
+{"text": "Topic: জীবের বৃদ্ধি ও বিকাশ | time_ratio: 1.000 | switches: 3 | confidence: guessing | correct: false | difficulty: medium", "label": "GROWTH_AREA"}
+{"text": "Topic: Tissue | time_ratio: 0.252 | switches: 1 | confidence: sure | correct: false | difficulty: hard", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: Heredity | time_ratio: 0.636 | switches: 1 | confidence: sure | correct: false | difficulty: medium", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: Botany | time_ratio: 0.232 | switches: 2 | confidence: guessing | correct: false | difficulty: hard", "label": "GROWTH_AREA"}
+{"text": "Topic: Human Physiology | time_ratio: 0.854 | switches: 2 | confidence: guessing | correct: false | difficulty: hard", "label": "GROWTH_AREA"}
+{"text": "Topic: স্নায়ুতন্ত্র | time_ratio: 0.252 | switches: 0 | confidence: sure | correct: true | difficulty: easy", "label": "MASTERY"}
+{"text": "Topic: রেচন | time_ratio: 0.227 | switches: 2 | confidence: sure | correct: true | difficulty: easy", "label": "TRUST_GAP"}
+{"text": "Topic: Respiration | time_ratio: 0.062 | switches: 0 | confidence: sure | correct: false | difficulty: hard", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: Animal Diversity | time_ratio: 0.090 | switches: 2 | confidence: sure | correct: false | difficulty: easy", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: এনজাইম | time_ratio: 0.354 | switches: 0 | confidence: sure | correct: false | difficulty: easy", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: Animal Diversity | time_ratio: 0.458 | switches: 0 | confidence: sure | correct: true | difficulty: hard", "label": "MASTERY"}
+{"text": "Topic: Respiration | time_ratio: 0.198 | switches: 2 | confidence: sure | correct: false | difficulty: medium", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: বংশগতি | time_ratio: 0.308 | switches: 3 | confidence: unsure | correct: false | difficulty: medium", "label": "GROWTH_AREA"}
+{"text": "Topic: এনজাইম | time_ratio: 0.644 | switches: 0 | confidence: guessing | correct: false | difficulty: hard", "label": "GROWTH_AREA"}
+{"text": "Topic: রক্ত ও সংবহন | time_ratio: 0.615 | switches: 2 | confidence: unsure | correct: false | difficulty: easy", "label": "GROWTH_AREA"}
+{"text": "Topic: প্রজনন | time_ratio: 0.416 | switches: 1 | confidence: unsure | correct: true | difficulty: medium", "label": "TRUST_GAP"}
+{"text": "Topic: কোষ ও এর গঠন | time_ratio: 1.000 | switches: 3 | confidence: guessing | correct: false | difficulty: medium", "label": "GROWTH_AREA"}
+{"text": "Topic: স্নায়ুতন্ত্র | time_ratio: 1.000 | switches: 1 | confidence: guessing | correct: false | difficulty: medium", "label": "GROWTH_AREA"}
+{"text": "Topic: কোষ বিভাজন | time_ratio: 0.934 | switches: 0 | confidence: unsure | correct: true | difficulty: medium", "label": "TRUST_GAP"}
+{"text": "Topic: Microbiology | time_ratio: 0.557 | switches: 0 | confidence: guessing | correct: false | difficulty: medium", "label": "GROWTH_AREA"}
+{"text": "Topic: রেচন | time_ratio: 0.902 | switches: 0 | confidence: unsure | correct: false | difficulty: hard", "label": "GROWTH_AREA"}
+{"text": "Topic: ভাইরাস ও ব্যাকটেরিয়া | time_ratio: 0.268 | switches: 1 | confidence: sure | correct: false | difficulty: medium", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: বাস্তুবিদ্যা | time_ratio: 0.102 | switches: 1 | confidence: guessing | correct: false | difficulty: medium", "label": "GROWTH_AREA"}
+{"text": "Topic: রেচন | time_ratio: 0.391 | switches: 0 | confidence: sure | correct: true | difficulty: easy", "label": "MASTERY"}
+{"text": "Topic: Ecology | time_ratio: 0.546 | switches: 1 | confidence: guessing | correct: true | difficulty: easy", "label": "TRUST_GAP"}
+{"text": "Topic: প্রাণী আচরণ | time_ratio: 0.796 | switches: 0 | confidence: unsure | correct: true | difficulty: hard", "label": "TRUST_GAP"}
+{"text": "Topic: Microbiology | time_ratio: 0.390 | switches: 0 | confidence: guessing | correct: false | difficulty: hard", "label": "GROWTH_AREA"}
+{"text": "Topic: Biomolecules | time_ratio: 0.739 | switches: 0 | confidence: unsure | correct: true | difficulty: medium", "label": "TRUST_GAP"}
+{"text": "Topic: বংশগতি | time_ratio: 0.305 | switches: 0 | confidence: sure | correct: true | difficulty: easy", "label": "MASTERY"}
+{"text": "Topic: ভাইরাস ও ব্যাকটেরিয়া | time_ratio: 0.359 | switches: 0 | confidence: guessing | correct: false | difficulty: hard", "label": "GROWTH_AREA"}
+{"text": "Topic: হরমোন | time_ratio: 0.184 | switches: 1 | confidence: sure | correct: true | difficulty: easy", "label": "MASTERY"}
+{"text": "Topic: Genetics | time_ratio: 0.762 | switches: 3 | confidence: unsure | correct: true | difficulty: medium", "label": "TRUST_GAP"}
+{"text": "Topic: Nucleic Acids | time_ratio: 0.275 | switches: 0 | confidence: sure | correct: true | difficulty: medium", "label": "MASTERY"}
+{"text": "Topic: পরিবেশ দূষণ | time_ratio: 1.000 | switches: 0 | confidence: unsure | correct: false | difficulty: medium", "label": "GROWTH_AREA"}
+{"text": "Topic: পরিবেশ দূষণ | time_ratio: 0.978 | switches: 2 | confidence: guessing | correct: false | difficulty: easy", "label": "GROWTH_AREA"}
+{"text": "Topic: সালোকসংশ্লেষণ | time_ratio: 0.822 | switches: 0 | confidence: unsure | correct: false | difficulty: medium", "label": "GROWTH_AREA"}
+{"text": "Topic: এনজাইম | time_ratio: 0.597 | switches: 0 | confidence: sure | correct: false | difficulty: medium", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: জিনতত্ত্ব | time_ratio: 1.000 | switches: 0 | confidence: unsure | correct: false | difficulty: hard", "label": "GROWTH_AREA"}
+{"text": "Topic: বাস্তুবিদ্যা | time_ratio: 0.969 | switches: 1 | confidence: guessing | correct: false | difficulty: hard", "label": "GROWTH_AREA"}
+{"text": "Topic: টিস্যু | time_ratio: 0.280 | switches: 2 | confidence: sure | correct: false | difficulty: medium", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: কোষ বিভাজন | time_ratio: 0.816 | switches: 2 | confidence: guessing | correct: true | difficulty: easy", "label": "TRUST_GAP"}
+{"text": "Topic: বংশগতি | time_ratio: 0.526 | switches: 0 | confidence: unsure | correct: true | difficulty: medium", "label": "TRUST_GAP"}
+{"text": "Topic: Cell Division | time_ratio: 0.644 | switches: 0 | confidence: unsure | correct: true | difficulty: hard", "label": "TRUST_GAP"}
+{"text": "Topic: রেচন | time_ratio: 0.544 | switches: 1 | confidence: sure | correct: false | difficulty: medium", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: অণুজীববিজ্ঞান | time_ratio: 0.107 | switches: 1 | confidence: sure | correct: false | difficulty: medium", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: Tissue | time_ratio: 0.410 | switches: 2 | confidence: guessing | correct: false | difficulty: medium", "label": "GROWTH_AREA"}
+{"text": "Topic: জৈব অণু | time_ratio: 0.808 | switches: 2 | confidence: guessing | correct: false | difficulty: medium", "label": "GROWTH_AREA"}
+{"text": "Topic: সালোকসংশ্লেষণ | time_ratio: 0.903 | switches: 1 | confidence: guessing | correct: true | difficulty: medium", "label": "TRUST_GAP"}
+{"text": "Topic: বাস্তুবিদ্যা | time_ratio: 0.309 | switches: 1 | confidence: sure | correct: true | difficulty: medium", "label": "MASTERY"}
+{"text": "Topic: স্নায়ুতন্ত্র | time_ratio: 0.150 | switches: 0 | confidence: sure | correct: true | difficulty: easy", "label": "MASTERY"}
+{"text": "Topic: Heredity | time_ratio: 1.000 | switches: 1 | confidence: guessing | correct: false | difficulty: medium", "label": "GROWTH_AREA"}
+{"text": "Topic: জীবের বৃদ্ধি ও বিকাশ | time_ratio: 0.222 | switches: 2 | confidence: guessing | correct: true | difficulty: easy", "label": "TRUST_GAP"}
+{"text": "Topic: Virus & Bacteria | time_ratio: 0.360 | switches: 3 | confidence: sure | correct: true | difficulty: hard", "label": "TRUST_GAP"}
+{"text": "Topic: টিস্যু | time_ratio: 0.492 | switches: 0 | confidence: sure | correct: true | difficulty: medium", "label": "MASTERY"}
+{"text": "Topic: হরমোন | time_ratio: 0.138 | switches: 0 | confidence: sure | correct: true | difficulty: easy", "label": "MASTERY"}
+{"text": "Topic: অণুজীববিজ্ঞান | time_ratio: 0.604 | switches: 2 | confidence: guessing | correct: false | difficulty: medium", "label": "GROWTH_AREA"}
+{"text": "Topic: টিস্যু | time_ratio: 0.407 | switches: 0 | confidence: sure | correct: false | difficulty: hard", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: উদ্ভিদবিজ্ঞান | time_ratio: 0.337 | switches: 0 | confidence: sure | correct: true | difficulty: medium", "label": "MASTERY"}
+{"text": "Topic: এনজাইম | time_ratio: 0.851 | switches: 5 | confidence: guessing | correct: false | difficulty: hard", "label": "GROWTH_AREA"}
+{"text": "Topic: Ecology | time_ratio: 0.652 | switches: 2 | confidence: sure | correct: true | difficulty: hard", "label": "TRUST_GAP"}
+{"text": "Topic: Biotechnology | time_ratio: 0.703 | switches: 3 | confidence: unsure | correct: false | difficulty: hard", "label": "GROWTH_AREA"}
+{"text": "Topic: জীবের বৃদ্ধি ও বিকাশ | time_ratio: 0.446 | switches: 0 | confidence: sure | correct: true | difficulty: hard", "label": "MASTERY"}
+{"text": "Topic: Hormones | time_ratio: 0.247 | switches: 3 | confidence: guessing | correct: true | difficulty: medium", "label": "TRUST_GAP"}
+{"text": "Topic: প্রাণী আচরণ | time_ratio: 0.766 | switches: 1 | confidence: sure | correct: true | difficulty: hard", "label": "TRUST_GAP"}
+{"text": "Topic: টিস্যু | time_ratio: 0.904 | switches: 0 | confidence: sure | correct: true | difficulty: easy", "label": "TRUST_GAP"}
+{"text": "Topic: Microbiology | time_ratio: 0.753 | switches: 3 | confidence: unsure | correct: false | difficulty: medium", "label": "GROWTH_AREA"}
+{"text": "Topic: জীবের বৃদ্ধি ও বিকাশ | time_ratio: 0.208 | switches: 0 | confidence: guessing | correct: false | difficulty: medium", "label": "GROWTH_AREA"}
+{"text": "Topic: মানব শরীরতত্ত্ব | time_ratio: 0.444 | switches: 0 | confidence: sure | correct: false | difficulty: medium", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: অণুজীববিজ্ঞান | time_ratio: 0.329 | switches: 3 | confidence: unsure | correct: false | difficulty: easy", "label": "GROWTH_AREA"}
+{"text": "Topic: জিনতত্ত্ব | time_ratio: 0.992 | switches: 2 | confidence: unsure | correct: false | difficulty: hard", "label": "GROWTH_AREA"}
+{"text": "Topic: Animal Behavior | time_ratio: 0.877 | switches: 2 | confidence: unsure | correct: true | difficulty: medium", "label": "TRUST_GAP"}
+{"text": "Topic: Reproduction | time_ratio: 0.627 | switches: 0 | confidence: unsure | correct: true | difficulty: medium", "label": "TRUST_GAP"}
+{"text": "Topic: Cell Division | time_ratio: 0.820 | switches: 3 | confidence: unsure | correct: true | difficulty: hard", "label": "TRUST_GAP"}
+{"text": "Topic: স্নায়ুতন্ত্র | time_ratio: 0.175 | switches: 0 | confidence: sure | correct: false | difficulty: medium", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: প্রাণী আচরণ | time_ratio: 0.288 | switches: 0 | confidence: sure | correct: false | difficulty: hard", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: জিনতত্ত্ব | time_ratio: 1.000 | switches: 0 | confidence: guessing | correct: false | difficulty: medium", "label": "GROWTH_AREA"}
+{"text": "Topic: প্রজনন | time_ratio: 1.000 | switches: 0 | confidence: guessing | correct: false | difficulty: easy", "label": "GROWTH_AREA"}
+{"text": "Topic: জীব প্রযুক্তি | time_ratio: 0.702 | switches: 4 | confidence: unsure | correct: true | difficulty: medium", "label": "TRUST_GAP"}
+{"text": "Topic: কোষ বিভাজন | time_ratio: 0.728 | switches: 1 | confidence: guessing | correct: true | difficulty: hard", "label": "TRUST_GAP"}
+{"text": "Topic: জীব প্রযুক্তি | time_ratio: 0.780 | switches: 0 | confidence: unsure | correct: false | difficulty: medium", "label": "GROWTH_AREA"}
+{"text": "Topic: Nucleic Acids | time_ratio: 0.910 | switches: 2 | confidence: sure | correct: false | difficulty: medium", "label": "GROWTH_AREA"}
+{"text": "Topic: Reproduction | time_ratio: 0.517 | switches: 1 | confidence: unsure | correct: true | difficulty: easy", "label": "TRUST_GAP"}
+{"text": "Topic: জৈব অণু | time_ratio: 0.425 | switches: 0 | confidence: sure | correct: true | difficulty: easy", "label": "MASTERY"}
+{"text": "Topic: রেচন | time_ratio: 0.492 | switches: 0 | confidence: sure | correct: true | difficulty: medium", "label": "MASTERY"}
+{"text": "Topic: Reproduction | time_ratio: 0.901 | switches: 1 | confidence: sure | correct: false | difficulty: easy", "label": "GROWTH_AREA"}
+{"text": "Topic: Cell Division | time_ratio: 0.211 | switches: 0 | confidence: sure | correct: true | difficulty: medium", "label": "MASTERY"}
+{"text": "Topic: উদ্ভিদবিজ্ঞান | time_ratio: 0.113 | switches: 0 | confidence: sure | correct: true | difficulty: medium", "label": "MASTERY"}
+{"text": "Topic: Hormones | time_ratio: 0.771 | switches: 2 | confidence: unsure | correct: true | difficulty: easy", "label": "TRUST_GAP"}
+{"text": "Topic: রক্ত ও সংবহন | time_ratio: 0.512 | switches: 0 | confidence: sure | correct: true | difficulty: easy", "label": "TRUST_GAP"}
+{"text": "Topic: Enzymes | time_ratio: 0.416 | switches: 0 | confidence: sure | correct: true | difficulty: medium", "label": "MASTERY"}
+{"text": "Topic: Tissue | time_ratio: 0.471 | switches: 1 | confidence: sure | correct: false | difficulty: medium", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: বংশগতি | time_ratio: 0.934 | switches: 0 | confidence: unsure | correct: false | difficulty: hard", "label": "GROWTH_AREA"}
+{"text": "Topic: Botany | time_ratio: 0.304 | switches: 0 | confidence: sure | correct: false | difficulty: medium", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: জিনতত্ত্ব | time_ratio: 0.852 | switches: 2 | confidence: guessing | correct: false | difficulty: hard", "label": "GROWTH_AREA"}
+{"text": "Topic: কোষ ও এর গঠন | time_ratio: 0.877 | switches: 1 | confidence: guessing | correct: false | difficulty: hard", "label": "GROWTH_AREA"}
+{"text": "Topic: টিস্যু | time_ratio: 0.484 | switches: 1 | confidence: unsure | correct: true | difficulty: medium", "label": "TRUST_GAP"}
+{"text": "Topic: Nucleic Acids | time_ratio: 0.171 | switches: 1 | confidence: sure | correct: false | difficulty: hard", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: Photosynthesis | time_ratio: 0.503 | switches: 1 | confidence: sure | correct: false | difficulty: medium", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: জীবের বৃদ্ধি ও বিকাশ | time_ratio: 0.670 | switches: 3 | confidence: guessing | correct: false | difficulty: hard", "label": "GROWTH_AREA"}
+{"text": "Topic: প্রাণিবৈচিত্র্য | time_ratio: 0.116 | switches: 0 | confidence: sure | correct: false | difficulty: medium", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: এনজাইম | time_ratio: 1.000 | switches: 2 | confidence: unsure | correct: false | difficulty: hard", "label": "GROWTH_AREA"}
+{"text": "Topic: উদ্ভিদবিজ্ঞান | time_ratio: 0.452 | switches: 0 | confidence: sure | correct: true | difficulty: medium", "label": "MASTERY"}
+{"text": "Topic: শ্বসন | time_ratio: 0.764 | switches: 1 | confidence: sure | correct: true | difficulty: hard", "label": "TRUST_GAP"}
+{"text": "Topic: Nucleic Acids | time_ratio: 0.223 | switches: 0 | confidence: sure | correct: false | difficulty: easy", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: Animal Diversity | time_ratio: 0.439 | switches: 0 | confidence: sure | correct: false | difficulty: hard", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: কোষ ও এর গঠন | time_ratio: 0.289 | switches: 1 | confidence: guessing | correct: true | difficulty: easy", "label": "TRUST_GAP"}
+{"text": "Topic: কোষ ও এর গঠন | time_ratio: 0.386 | switches: 2 | confidence: unsure | correct: true | difficulty: easy", "label": "TRUST_GAP"}
+{"text": "Topic: Reproduction | time_ratio: 0.403 | switches: 1 | confidence: sure | correct: false | difficulty: hard", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: Growth & Development | time_ratio: 0.339 | switches: 2 | confidence: guessing | correct: false | difficulty: medium", "label": "GROWTH_AREA"}
+{"text": "Topic: Botany | time_ratio: 0.567 | switches: 1 | confidence: sure | correct: false | difficulty: medium", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: মানব শরীরতত্ত্ব | time_ratio: 0.433 | switches: 0 | confidence: sure | correct: true | difficulty: easy", "label": "MASTERY"}
+{"text": "Topic: Blood & Circulation | time_ratio: 0.101 | switches: 0 | confidence: sure | correct: true | difficulty: easy", "label": "MASTERY"}
+{"text": "Topic: প্রাণিবৈচিত্র্য | time_ratio: 0.528 | switches: 0 | confidence: sure | correct: false | difficulty: medium", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: Heredity | time_ratio: 0.413 | switches: 1 | confidence: sure | correct: true | difficulty: medium", "label": "MASTERY"}
+{"text": "Topic: Cell Division | time_ratio: 0.246 | switches: 0 | confidence: sure | correct: true | difficulty: easy", "label": "MASTERY"}
+{"text": "Topic: Growth & Development | time_ratio: 0.412 | switches: 1 | confidence: sure | correct: false | difficulty: hard", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: Cell Structure | time_ratio: 1.000 | switches: 0 | confidence: unsure | correct: false | difficulty: hard", "label": "GROWTH_AREA"}
+{"text": "Topic: টিস্যু | time_ratio: 0.543 | switches: 2 | confidence: guessing | correct: false | difficulty: hard", "label": "GROWTH_AREA"}
+{"text": "Topic: উদ্ভিদবিজ্ঞান | time_ratio: 0.271 | switches: 0 | confidence: sure | correct: true | difficulty: hard", "label": "MASTERY"}
+{"text": "Topic: Animal Diversity | time_ratio: 0.727 | switches: 0 | confidence: unsure | correct: false | difficulty: easy", "label": "GROWTH_AREA"}
+{"text": "Topic: সালোকসংশ্লেষণ | time_ratio: 0.412 | switches: 0 | confidence: sure | correct: true | difficulty: easy", "label": "MASTERY"}
+{"text": "Topic: নিউক্লিক অ্যাসিড | time_ratio: 0.649 | switches: 1 | confidence: sure | correct: false | difficulty: easy", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: Excretion | time_ratio: 0.577 | switches: 1 | confidence: unsure | correct: true | difficulty: easy", "label": "TRUST_GAP"}
+{"text": "Topic: Animal Behavior | time_ratio: 0.249 | switches: 2 | confidence: unsure | correct: true | difficulty: medium", "label": "TRUST_GAP"}
+{"text": "Topic: প্রাণিবৈচিত্র্য | time_ratio: 0.812 | switches: 2 | confidence: guessing | correct: true | difficulty: hard", "label": "TRUST_GAP"}
+{"text": "Topic: Heredity | time_ratio: 0.572 | switches: 0 | confidence: sure | correct: true | difficulty: hard", "label": "TRUST_GAP"}
+{"text": "Topic: উদ্ভিদবিজ্ঞান | time_ratio: 0.697 | switches: 1 | confidence: guessing | correct: true | difficulty: hard", "label": "TRUST_GAP"}
+{"text": "Topic: এনজাইম | time_ratio: 0.407 | switches: 2 | confidence: unsure | correct: true | difficulty: medium", "label": "TRUST_GAP"}
+{"text": "Topic: পরিবেশ দূষণ | time_ratio: 0.626 | switches: 3 | confidence: unsure | correct: true | difficulty: medium", "label": "TRUST_GAP"}
+{"text": "Topic: কোষ ও এর গঠন | time_ratio: 1.000 | switches: 1 | confidence: guessing | correct: false | difficulty: medium", "label": "GROWTH_AREA"}
+{"text": "Topic: জৈব অণু | time_ratio: 0.434 | switches: 1 | confidence: guessing | correct: false | difficulty: easy", "label": "GROWTH_AREA"}
+{"text": "Topic: প্রজনন | time_ratio: 0.088 | switches: 0 | confidence: sure | correct: false | difficulty: medium", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: Biomolecules | time_ratio: 0.185 | switches: 0 | confidence: sure | correct: true | difficulty: hard", "label": "MASTERY"}
+{"text": "Topic: পরিবেশ দূষণ | time_ratio: 0.591 | switches: 1 | confidence: unsure | correct: true | difficulty: medium", "label": "TRUST_GAP"}
+{"text": "Topic: কোষ বিভাজন | time_ratio: 0.659 | switches: 1 | confidence: unsure | correct: true | difficulty: hard", "label": "TRUST_GAP"}
+{"text": "Topic: জৈব অণু | time_ratio: 0.065 | switches: 1 | confidence: sure | correct: false | difficulty: easy", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: Botany | time_ratio: 0.396 | switches: 0 | confidence: sure | correct: false | difficulty: medium", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: Growth & Development | time_ratio: 0.421 | switches: 1 | confidence: unsure | correct: true | difficulty: medium", "label": "TRUST_GAP"}
+{"text": "Topic: টিস্যু | time_ratio: 0.297 | switches: 0 | confidence: sure | correct: false | difficulty: hard", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: Enzymes | time_ratio: 0.928 | switches: 1 | confidence: unsure | correct: true | difficulty: medium", "label": "TRUST_GAP"}
+{"text": "Topic: Biomolecules | time_ratio: 0.308 | switches: 4 | confidence: unsure | correct: false | difficulty: medium", "label": "GROWTH_AREA"}
+{"text": "Topic: সালোকসংশ্লেষণ | time_ratio: 0.435 | switches: 1 | confidence: sure | correct: false | difficulty: medium", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: প্রজনন | time_ratio: 0.284 | switches: 3 | confidence: sure | correct: true | difficulty: hard", "label": "TRUST_GAP"}
+{"text": "Topic: Biotechnology | time_ratio: 0.879 | switches: 0 | confidence: guessing | correct: false | difficulty: medium", "label": "GROWTH_AREA"}
+{"text": "Topic: Biomolecules | time_ratio: 0.809 | switches: 2 | confidence: unsure | correct: true | difficulty: medium", "label": "TRUST_GAP"}
+{"text": "Topic: Heredity | time_ratio: 0.777 | switches: 2 | confidence: guessing | correct: true | difficulty: hard", "label": "TRUST_GAP"}
+{"text": "Topic: Photosynthesis | time_ratio: 0.367 | switches: 0 | confidence: sure | correct: true | difficulty: hard", "label": "MASTERY"}
+{"text": "Topic: Enzymes | time_ratio: 0.464 | switches: 1 | confidence: sure | correct: false | difficulty: medium", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: Heredity | time_ratio: 0.250 | switches: 1 | confidence: sure | correct: false | difficulty: hard", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: Nervous System | time_ratio: 0.896 | switches: 0 | confidence: unsure | correct: true | difficulty: medium", "label": "TRUST_GAP"}
+{"text": "Topic: Respiration | time_ratio: 0.356 | switches: 1 | confidence: guessing | correct: false | difficulty: medium", "label": "GROWTH_AREA"}
+{"text": "Topic: সালোকসংশ্লেষণ | time_ratio: 0.973 | switches: 0 | confidence: sure | correct: false | difficulty: hard", "label": "GROWTH_AREA"}
+{"text": "Topic: কোষ ও এর গঠন | time_ratio: 0.521 | switches: 2 | confidence: unsure | correct: true | difficulty: medium", "label": "TRUST_GAP"}
+{"text": "Topic: Heredity | time_ratio: 0.582 | switches: 0 | confidence: sure | correct: false | difficulty: medium", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: প্রাণিবৈচিত্র্য | time_ratio: 0.552 | switches: 2 | confidence: guessing | correct: true | difficulty: easy", "label": "TRUST_GAP"}
+{"text": "Topic: Nucleic Acids | time_ratio: 0.875 | switches: 2 | confidence: guessing | correct: false | difficulty: hard", "label": "GROWTH_AREA"}
+{"text": "Topic: ভাইরাস ও ব্যাকটেরিয়া | time_ratio: 0.380 | switches: 1 | confidence: sure | correct: false | difficulty: easy", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: অণুজীববিজ্ঞান | time_ratio: 0.085 | switches: 0 | confidence: sure | correct: true | difficulty: medium", "label": "MASTERY"}
+{"text": "Topic: উদ্ভিদবিজ্ঞান | time_ratio: 0.221 | switches: 0 | confidence: sure | correct: true | difficulty: medium", "label": "MASTERY"}
+{"text": "Topic: Botany | time_ratio: 0.986 | switches: 1 | confidence: unsure | correct: true | difficulty: hard", "label": "TRUST_GAP"}
+{"text": "Topic: রক্ত ও সংবহন | time_ratio: 0.708 | switches: 2 | confidence: unsure | correct: false | difficulty: hard", "label": "GROWTH_AREA"}
+{"text": "Topic: জীবের বৃদ্ধি ও বিকাশ | time_ratio: 0.438 | switches: 0 | confidence: sure | correct: false | difficulty: easy", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: প্রাণী আচরণ | time_ratio: 0.495 | switches: 0 | confidence: sure | correct: false | difficulty: hard", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: কোষ ও এর গঠন | time_ratio: 0.565 | switches: 0 | confidence: unsure | correct: true | difficulty: medium", "label": "TRUST_GAP"}
+{"text": "Topic: Genetics | time_ratio: 0.880 | switches: 1 | confidence: unsure | correct: false | difficulty: medium", "label": "GROWTH_AREA"}
+{"text": "Topic: বংশগতি | time_ratio: 0.737 | switches: 0 | confidence: guessing | correct: false | difficulty: medium", "label": "GROWTH_AREA"}
+{"text": "Topic: Microbiology | time_ratio: 0.729 | switches: 0 | confidence: sure | correct: true | difficulty: medium", "label": "TRUST_GAP"}
+{"text": "Topic: Cell Division | time_ratio: 0.454 | switches: 0 | confidence: sure | correct: true | difficulty: hard", "label": "MASTERY"}
+{"text": "Topic: রেচন | time_ratio: 0.125 | switches: 3 | confidence: guessing | correct: false | difficulty: hard", "label": "GROWTH_AREA"}
+{"text": "Topic: শ্বসন | time_ratio: 0.279 | switches: 2 | confidence: unsure | correct: true | difficulty: hard", "label": "TRUST_GAP"}
+{"text": "Topic: জীব প্রযুক্তি | time_ratio: 0.885 | switches: 0 | confidence: unsure | correct: false | difficulty: hard", "label": "GROWTH_AREA"}
+{"text": "Topic: Botany | time_ratio: 0.919 | switches: 0 | confidence: unsure | correct: true | difficulty: hard", "label": "TRUST_GAP"}
+{"text": "Topic: Photosynthesis | time_ratio: 0.210 | switches: 0 | confidence: sure | correct: false | difficulty: medium", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: প্রজনন | time_ratio: 0.746 | switches: 4 | confidence: unsure | correct: false | difficulty: medium", "label": "GROWTH_AREA"}
+{"text": "Topic: অণুজীববিজ্ঞান | time_ratio: 0.651 | switches: 2 | confidence: unsure | correct: true | difficulty: hard", "label": "TRUST_GAP"}
+{"text": "Topic: কোষ ও এর গঠন | time_ratio: 0.458 | switches: 0 | confidence: sure | correct: true | difficulty: easy", "label": "MASTERY"}
+{"text": "Topic: Biotechnology | time_ratio: 0.721 | switches: 2 | confidence: guessing | correct: true | difficulty: easy", "label": "TRUST_GAP"}
+{"text": "Topic: কোষ বিভাজন | time_ratio: 0.117 | switches: 1 | confidence: guessing | correct: false | difficulty: easy", "label": "GROWTH_AREA"}
+{"text": "Topic: জীব প্রযুক্তি | time_ratio: 0.845 | switches: 3 | confidence: unsure | correct: true | difficulty: medium", "label": "TRUST_GAP"}
+{"text": "Topic: Cell Division | time_ratio: 0.586 | switches: 1 | confidence: unsure | correct: true | difficulty: hard", "label": "TRUST_GAP"}
+{"text": "Topic: উদ্ভিদবিজ্ঞান | time_ratio: 0.631 | switches: 2 | confidence: guessing | correct: true | difficulty: hard", "label": "TRUST_GAP"}
+{"text": "Topic: Botany | time_ratio: 0.110 | switches: 0 | confidence: sure | correct: true | difficulty: medium", "label": "MASTERY"}
+{"text": "Topic: হরমোন | time_ratio: 0.349 | switches: 0 | confidence: unsure | correct: true | difficulty: medium", "label": "TRUST_GAP"}
+{"text": "Topic: Respiration | time_ratio: 0.384 | switches: 1 | confidence: sure | correct: true | difficulty: medium", "label": "MASTERY"}
+{"text": "Topic: স্নায়ুতন্ত্র | time_ratio: 0.366 | switches: 0 | confidence: sure | correct: true | difficulty: medium", "label": "MASTERY"}
+{"text": "Topic: স্নায়ুতন্ত্র | time_ratio: 0.304 | switches: 0 | confidence: sure | correct: true | difficulty: medium", "label": "MASTERY"}
+{"text": "Topic: জিনতত্ত্ব | time_ratio: 0.622 | switches: 0 | confidence: unsure | correct: true | difficulty: hard", "label": "TRUST_GAP"}
+{"text": "Topic: Environmental Pollution | time_ratio: 0.545 | switches: 2 | confidence: unsure | correct: true | difficulty: medium", "label": "TRUST_GAP"}
+{"text": "Topic: জীব প্রযুক্তি | time_ratio: 0.847 | switches: 3 | confidence: unsure | correct: true | difficulty: medium", "label": "TRUST_GAP"}
+{"text": "Topic: রক্ত ও সংবহন | time_ratio: 0.615 | switches: 2 | confidence: unsure | correct: true | difficulty: medium", "label": "TRUST_GAP"}
+{"text": "Topic: প্রাণী আচরণ | time_ratio: 1.000 | switches: 1 | confidence: sure | correct: false | difficulty: easy", "label": "GROWTH_AREA"}
+{"text": "Topic: Hormones | time_ratio: 0.447 | switches: 0 | confidence: sure | correct: true | difficulty: medium", "label": "MASTERY"}
+{"text": "Topic: রেচন | time_ratio: 0.071 | switches: 1 | confidence: sure | correct: false | difficulty: medium", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: পরিবেশ দূষণ | time_ratio: 0.529 | switches: 0 | confidence: sure | correct: false | difficulty: hard", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: কোষ বিভাজন | time_ratio: 0.182 | switches: 0 | confidence: sure | correct: true | difficulty: easy", "label": "MASTERY"}
+{"text": "Topic: Nucleic Acids | time_ratio: 0.681 | switches: 2 | confidence: unsure | correct: true | difficulty: easy", "label": "TRUST_GAP"}
+{"text": "Topic: সালোকসংশ্লেষণ | time_ratio: 0.062 | switches: 0 | confidence: sure | correct: true | difficulty: easy", "label": "MASTERY"}
+{"text": "Topic: পরিবেশ দূষণ | time_ratio: 0.575 | switches: 1 | confidence: sure | correct: false | difficulty: hard", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: টিস্যু | time_ratio: 0.150 | switches: 0 | confidence: sure | correct: false | difficulty: medium", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: বাস্তুবিদ্যা | time_ratio: 1.000 | switches: 3 | confidence: guessing | correct: false | difficulty: easy", "label": "GROWTH_AREA"}
+{"text": "Topic: Animal Diversity | time_ratio: 0.582 | switches: 1 | confidence: sure | correct: false | difficulty: hard", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: টিস্যু | time_ratio: 1.000 | switches: 2 | confidence: unsure | correct: false | difficulty: hard", "label": "GROWTH_AREA"}
+{"text": "Topic: প্রাণী আচরণ | time_ratio: 0.423 | switches: 1 | confidence: sure | correct: false | difficulty: medium", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: Heredity | time_ratio: 0.070 | switches: 0 | confidence: sure | correct: true | difficulty: hard", "label": "MASTERY"}
+{"text": "Topic: রক্ত ও সংবহন | time_ratio: 0.729 | switches: 2 | confidence: guessing | correct: false | difficulty: medium", "label": "GROWTH_AREA"}
+{"text": "Topic: রেচন | time_ratio: 0.546 | switches: 1 | confidence: sure | correct: false | difficulty: medium", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: Biotechnology | time_ratio: 0.617 | switches: 2 | confidence: guessing | correct: false | difficulty: hard", "label": "GROWTH_AREA"}
+{"text": "Topic: জীব প্রযুক্তি | time_ratio: 0.809 | switches: 1 | confidence: guessing | correct: false | difficulty: easy", "label": "GROWTH_AREA"}
+{"text": "Topic: প্রাণী আচরণ | time_ratio: 0.306 | switches: 1 | confidence: sure | correct: true | difficulty: hard", "label": "MASTERY"}
+{"text": "Topic: রেচন | time_ratio: 0.282 | switches: 0 | confidence: sure | correct: false | difficulty: hard", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: বাস্তুবিদ্যা | time_ratio: 0.294 | switches: 0 | confidence: sure | correct: false | difficulty: easy", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: মানব শরীরতত্ত্ব | time_ratio: 0.830 | switches: 2 | confidence: guessing | correct: true | difficulty: hard", "label": "TRUST_GAP"}
+{"text": "Topic: Respiration | time_ratio: 0.531 | switches: 2 | confidence: unsure | correct: false | difficulty: medium", "label": "GROWTH_AREA"}
+{"text": "Topic: উদ্ভিদবিজ্ঞান | time_ratio: 0.866 | switches: 0 | confidence: guessing | correct: false | difficulty: hard", "label": "GROWTH_AREA"}
+{"text": "Topic: জৈব অণু | time_ratio: 0.783 | switches: 3 | confidence: unsure | correct: true | difficulty: easy", "label": "TRUST_GAP"}
+{"text": "Topic: প্রজনন | time_ratio: 0.243 | switches: 0 | confidence: sure | correct: false | difficulty: medium", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: Excretion | time_ratio: 0.681 | switches: 3 | confidence: guessing | correct: false | difficulty: medium", "label": "GROWTH_AREA"}
+{"text": "Topic: Virus & Bacteria | time_ratio: 0.100 | switches: 0 | confidence: sure | correct: false | difficulty: hard", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: বংশগতি | time_ratio: 0.256 | switches: 0 | confidence: sure | correct: false | difficulty: easy", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: Human Physiology | time_ratio: 0.707 | switches: 1 | confidence: guessing | correct: true | difficulty: easy", "label": "TRUST_GAP"}
+{"text": "Topic: Cell Structure | time_ratio: 0.091 | switches: 0 | confidence: sure | correct: true | difficulty: medium", "label": "MASTERY"}
+{"text": "Topic: Growth & Development | time_ratio: 0.698 | switches: 1 | confidence: unsure | correct: true | difficulty: medium", "label": "TRUST_GAP"}
+{"text": "Topic: কোষ বিভাজন | time_ratio: 0.599 | switches: 1 | confidence: sure | correct: false | difficulty: easy", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: মানব শরীরতত্ত্ব | time_ratio: 0.073 | switches: 1 | confidence: sure | correct: false | difficulty: hard", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: স্নায়ুতন্ত্র | time_ratio: 0.850 | switches: 2 | confidence: unsure | correct: false | difficulty: hard", "label": "GROWTH_AREA"}
+{"text": "Topic: Animal Behavior | time_ratio: 0.054 | switches: 0 | confidence: sure | correct: false | difficulty: medium", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: Biotechnology | time_ratio: 0.868 | switches: 0 | confidence: guessing | correct: false | difficulty: medium", "label": "GROWTH_AREA"}
+{"text": "Topic: উদ্ভিদবিজ্ঞান | time_ratio: 0.505 | switches: 1 | confidence: unsure | correct: true | difficulty: easy", "label": "TRUST_GAP"}
+{"text": "Topic: কোষ ও এর গঠন | time_ratio: 0.634 | switches: 1 | confidence: sure | correct: false | difficulty: hard", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: সালোকসংশ্লেষণ | time_ratio: 0.723 | switches: 2 | confidence: unsure | correct: false | difficulty: medium", "label": "GROWTH_AREA"}
+{"text": "Topic: পরিবেশ দূষণ | time_ratio: 0.084 | switches: 0 | confidence: sure | correct: false | difficulty: hard", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: সালোকসংশ্লেষণ | time_ratio: 0.577 | switches: 3 | confidence: guessing | correct: true | difficulty: hard", "label": "TRUST_GAP"}
+{"text": "Topic: অণুজীববিজ্ঞান | time_ratio: 0.902 | switches: 1 | confidence: unsure | correct: true | difficulty: hard", "label": "TRUST_GAP"}
+{"text": "Topic: পরিবেশ দূষণ | time_ratio: 0.699 | switches: 1 | confidence: sure | correct: true | difficulty: hard", "label": "TRUST_GAP"}
+{"text": "Topic: Human Physiology | time_ratio: 0.465 | switches: 3 | confidence: guessing | correct: true | difficulty: medium", "label": "TRUST_GAP"}
+{"text": "Topic: Animal Behavior | time_ratio: 0.820 | switches: 0 | confidence: guessing | correct: true | difficulty: hard", "label": "TRUST_GAP"}
+{"text": "Topic: Reproduction | time_ratio: 0.860 | switches: 0 | confidence: unsure | correct: true | difficulty: medium", "label": "TRUST_GAP"}
+{"text": "Topic: সালোকসংশ্লেষণ | time_ratio: 0.375 | switches: 0 | confidence: sure | correct: true | difficulty: medium", "label": "MASTERY"}
+{"text": "Topic: সালোকসংশ্লেষণ | time_ratio: 0.779 | switches: 1 | confidence: unsure | correct: false | difficulty: hard", "label": "GROWTH_AREA"}
+{"text": "Topic: নিউক্লিক অ্যাসিড | time_ratio: 0.677 | switches: 1 | confidence: unsure | correct: true | difficulty: hard", "label": "TRUST_GAP"}
+{"text": "Topic: রেচন | time_ratio: 0.154 | switches: 0 | confidence: guessing | correct: false | difficulty: hard", "label": "GROWTH_AREA"}
+{"text": "Topic: Reproduction | time_ratio: 0.837 | switches: 3 | confidence: unsure | correct: true | difficulty: hard", "label": "TRUST_GAP"}
+{"text": "Topic: Cell Division | time_ratio: 0.500 | switches: 3 | confidence: guessing | correct: false | difficulty: hard", "label": "GROWTH_AREA"}
+{"text": "Topic: Nucleic Acids | time_ratio: 0.097 | switches: 0 | confidence: sure | correct: true | difficulty: easy", "label": "MASTERY"}
+{"text": "Topic: Environmental Pollution | time_ratio: 0.609 | switches: 0 | confidence: sure | correct: true | difficulty: hard", "label": "TRUST_GAP"}
+{"text": "Topic: জিনতত্ত্ব | time_ratio: 0.723 | switches: 0 | confidence: guessing | correct: false | difficulty: medium", "label": "GROWTH_AREA"}
+{"text": "Topic: Photosynthesis | time_ratio: 0.178 | switches: 0 | confidence: sure | correct: true | difficulty: easy", "label": "MASTERY"}
+{"text": "Topic: Heredity | time_ratio: 0.684 | switches: 0 | confidence: guessing | correct: false | difficulty: easy", "label": "GROWTH_AREA"}
+{"text": "Topic: জীব প্রযুক্তি | time_ratio: 0.104 | switches: 1 | confidence: sure | correct: false | difficulty: medium", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: বংশগতি | time_ratio: 1.000 | switches: 2 | confidence: guessing | correct: false | difficulty: hard", "label": "GROWTH_AREA"}
+{"text": "Topic: Genetics | time_ratio: 0.309 | switches: 2 | confidence: sure | correct: false | difficulty: medium", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: Microbiology | time_ratio: 0.457 | switches: 0 | confidence: sure | correct: true | difficulty: medium", "label": "MASTERY"}
+{"text": "Topic: Growth & Development | time_ratio: 0.760 | switches: 1 | confidence: unsure | correct: false | difficulty: hard", "label": "GROWTH_AREA"}
+{"text": "Topic: Environmental Pollution | time_ratio: 1.000 | switches: 1 | confidence: guessing | correct: false | difficulty: hard", "label": "GROWTH_AREA"}
+{"text": "Topic: Animal Behavior | time_ratio: 0.188 | switches: 1 | confidence: unsure | correct: true | difficulty: medium", "label": "TRUST_GAP"}
+{"text": "Topic: উদ্ভিদবিজ্ঞান | time_ratio: 0.440 | switches: 0 | confidence: sure | correct: true | difficulty: medium", "label": "MASTERY"}
+{"text": "Topic: Nervous System | time_ratio: 0.222 | switches: 0 | confidence: sure | correct: true | difficulty: medium", "label": "MASTERY"}
+{"text": "Topic: Environmental Pollution | time_ratio: 0.792 | switches: 1 | confidence: guessing | correct: true | difficulty: medium", "label": "TRUST_GAP"}
+{"text": "Topic: Reproduction | time_ratio: 0.781 | switches: 2 | confidence: guessing | correct: true | difficulty: hard", "label": "TRUST_GAP"}
+{"text": "Topic: প্রজনন | time_ratio: 0.204 | switches: 2 | confidence: sure | correct: true | difficulty: medium", "label": "TRUST_GAP"}
+{"text": "Topic: জীবের বৃদ্ধি ও বিকাশ | time_ratio: 1.000 | switches: 1 | confidence: guessing | correct: false | difficulty: easy", "label": "GROWTH_AREA"}
+{"text": "Topic: রক্ত ও সংবহন | time_ratio: 0.256 | switches: 1 | confidence: sure | correct: false | difficulty: easy", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: অণুজীববিজ্ঞান | time_ratio: 1.000 | switches: 2 | confidence: unsure | correct: false | difficulty: medium", "label": "GROWTH_AREA"}
+{"text": "Topic: Environmental Pollution | time_ratio: 0.853 | switches: 2 | confidence: unsure | correct: false | difficulty: medium", "label": "GROWTH_AREA"}
+{"text": "Topic: বংশগতি | time_ratio: 0.248 | switches: 1 | confidence: sure | correct: true | difficulty: easy", "label": "MASTERY"}
+{"text": "Topic: জিনতত্ত্ব | time_ratio: 0.413 | switches: 2 | confidence: sure | correct: false | difficulty: hard", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: রেচন | time_ratio: 0.322 | switches: 0 | confidence: sure | correct: false | difficulty: hard", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: জীব প্রযুক্তি | time_ratio: 0.172 | switches: 2 | confidence: sure | correct: false | difficulty: hard", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: মানব শরীরতত্ত্ব | time_ratio: 0.335 | switches: 0 | confidence: sure | correct: false | difficulty: hard", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: প্রাণিবৈচিত্র্য | time_ratio: 0.365 | switches: 0 | confidence: sure | correct: false | difficulty: medium", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: প্রাণিবৈচিত্র্য | time_ratio: 0.449 | switches: 0 | confidence: sure | correct: true | difficulty: medium", "label": "MASTERY"}
+{"text": "Topic: প্রাণী আচরণ | time_ratio: 0.794 | switches: 2 | confidence: unsure | correct: false | difficulty: easy", "label": "GROWTH_AREA"}
+{"text": "Topic: প্রাণিবৈচিত্র্য | time_ratio: 0.065 | switches: 0 | confidence: sure | correct: false | difficulty: hard", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: Hormones | time_ratio: 0.443 | switches: 0 | confidence: sure | correct: true | difficulty: medium", "label": "MASTERY"}
+{"text": "Topic: Reproduction | time_ratio: 0.522 | switches: 1 | confidence: sure | correct: false | difficulty: medium", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: উদ্ভিদবিজ্ঞান | time_ratio: 0.582 | switches: 0 | confidence: sure | correct: false | difficulty: hard", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: প্রজনন | time_ratio: 0.426 | switches: 0 | confidence: sure | correct: false | difficulty: hard", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: জীবের বৃদ্ধি ও বিকাশ | time_ratio: 0.725 | switches: 2 | confidence: guessing | correct: true | difficulty: medium", "label": "TRUST_GAP"}
+{"text": "Topic: রেচন | time_ratio: 0.766 | switches: 0 | confidence: guessing | correct: false | difficulty: medium", "label": "GROWTH_AREA"}
+{"text": "Topic: মানব শরীরতত্ত্ব | time_ratio: 0.665 | switches: 3 | confidence: guessing | correct: false | difficulty: hard", "label": "GROWTH_AREA"}
+{"text": "Topic: স্নায়ুতন্ত্র | time_ratio: 0.453 | switches: 1 | confidence: unsure | correct: true | difficulty: hard", "label": "TRUST_GAP"}
+{"text": "Topic: মানব শরীরতত্ত্ব | time_ratio: 0.071 | switches: 0 | confidence: sure | correct: true | difficulty: medium", "label": "MASTERY"}
+{"text": "Topic: প্রজনন | time_ratio: 1.000 | switches: 2 | confidence: guessing | correct: false | difficulty: medium", "label": "GROWTH_AREA"}
+{"text": "Topic: বংশগতি | time_ratio: 0.275 | switches: 1 | confidence: sure | correct: false | difficulty: medium", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: Heredity | time_ratio: 0.100 | switches: 2 | confidence: sure | correct: false | difficulty: easy", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: Hormones | time_ratio: 0.178 | switches: 0 | confidence: sure | correct: true | difficulty: medium", "label": "MASTERY"}
+{"text": "Topic: কোষ ও এর গঠন | time_ratio: 0.416 | switches: 0 | confidence: sure | correct: true | difficulty: medium", "label": "MASTERY"}
+{"text": "Topic: পরিবেশ দূষণ | time_ratio: 0.260 | switches: 1 | confidence: sure | correct: false | difficulty: hard", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: Nucleic Acids | time_ratio: 1.000 | switches: 3 | confidence: guessing | correct: false | difficulty: hard", "label": "GROWTH_AREA"}
+{"text": "Topic: জীবের বৃদ্ধি ও বিকাশ | time_ratio: 0.557 | switches: 2 | confidence: guessing | correct: true | difficulty: medium", "label": "TRUST_GAP"}
+{"text": "Topic: অণুজীববিজ্ঞান | time_ratio: 0.311 | switches: 1 | confidence: sure | correct: false | difficulty: medium", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: নিউক্লিক অ্যাসিড | time_ratio: 0.555 | switches: 0 | confidence: sure | correct: false | difficulty: medium", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: সালোকসংশ্লেষণ | time_ratio: 1.000 | switches: 3 | confidence: sure | correct: false | difficulty: medium", "label": "GROWTH_AREA"}
+{"text": "Topic: Reproduction | time_ratio: 0.551 | switches: 2 | confidence: sure | correct: false | difficulty: medium", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: প্রাণিবৈচিত্র্য | time_ratio: 0.467 | switches: 0 | confidence: sure | correct: true | difficulty: easy", "label": "MASTERY"}
+{"text": "Topic: অণুজীববিজ্ঞান | time_ratio: 0.151 | switches: 1 | confidence: guessing | correct: false | difficulty: medium", "label": "GROWTH_AREA"}
+{"text": "Topic: Nervous System | time_ratio: 0.529 | switches: 2 | confidence: unsure | correct: false | difficulty: easy", "label": "GROWTH_AREA"}
+{"text": "Topic: Botany | time_ratio: 0.705 | switches: 4 | confidence: unsure | correct: false | difficulty: medium", "label": "GROWTH_AREA"}
+{"text": "Topic: নিউক্লিক অ্যাসিড | time_ratio: 0.114 | switches: 0 | confidence: sure | correct: false | difficulty: easy", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: কোষ ও এর গঠন | time_ratio: 0.893 | switches: 2 | confidence: unsure | correct: true | difficulty: hard", "label": "TRUST_GAP"}
+{"text": "Topic: পরিবেশ দূষণ | time_ratio: 0.879 | switches: 1 | confidence: unsure | correct: true | difficulty: medium", "label": "TRUST_GAP"}
+{"text": "Topic: Blood & Circulation | time_ratio: 1.000 | switches: 1 | confidence: unsure | correct: false | difficulty: hard", "label": "GROWTH_AREA"}
+{"text": "Topic: Excretion | time_ratio: 0.177 | switches: 0 | confidence: sure | correct: false | difficulty: medium", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: Animal Behavior | time_ratio: 0.406 | switches: 0 | confidence: sure | correct: true | difficulty: hard", "label": "MASTERY"}
+{"text": "Topic: Heredity | time_ratio: 0.655 | switches: 4 | confidence: unsure | correct: false | difficulty: hard", "label": "GROWTH_AREA"}
+{"text": "Topic: হরমোন | time_ratio: 0.575 | switches: 1 | confidence: sure | correct: false | difficulty: medium", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: রক্ত ও সংবহন | time_ratio: 0.537 | switches: 1 | confidence: sure | correct: false | difficulty: medium", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: জিনতত্ত্ব | time_ratio: 0.788 | switches: 3 | confidence: sure | correct: true | difficulty: medium", "label": "TRUST_GAP"}
+{"text": "Topic: Cell Structure | time_ratio: 0.778 | switches: 2 | confidence: unsure | correct: false | difficulty: medium", "label": "GROWTH_AREA"}
+{"text": "Topic: Environmental Pollution | time_ratio: 0.260 | switches: 0 | confidence: sure | correct: true | difficulty: hard", "label": "MASTERY"}
+{"text": "Topic: সালোকসংশ্লেষণ | time_ratio: 0.057 | switches: 1 | confidence: sure | correct: false | difficulty: medium", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: Environmental Pollution | time_ratio: 0.447 | switches: 0 | confidence: sure | correct: false | difficulty: medium", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: নিউক্লিক অ্যাসিড | time_ratio: 0.989 | switches: 1 | confidence: unsure | correct: true | difficulty: hard", "label": "TRUST_GAP"}
+{"text": "Topic: Biotechnology | time_ratio: 0.840 | switches: 1 | confidence: unsure | correct: true | difficulty: easy", "label": "TRUST_GAP"}
+{"text": "Topic: জৈব অণু | time_ratio: 0.412 | switches: 0 | confidence: sure | correct: false | difficulty: medium", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: Cell Division | time_ratio: 0.811 | switches: 1 | confidence: unsure | correct: true | difficulty: easy", "label": "TRUST_GAP"}
+{"text": "Topic: সালোকসংশ্লেষণ | time_ratio: 0.183 | switches: 1 | confidence: sure | correct: true | difficulty: easy", "label": "MASTERY"}
+{"text": "Topic: জিনতত্ত্ব | time_ratio: 0.289 | switches: 1 | confidence: sure | correct: true | difficulty: hard", "label": "MASTERY"}
+{"text": "Topic: Blood & Circulation | time_ratio: 1.000 | switches: 0 | confidence: guessing | correct: false | difficulty: hard", "label": "GROWTH_AREA"}
+{"text": "Topic: প্রাণিবৈচিত্র্য | time_ratio: 1.000 | switches: 1 | confidence: unsure | correct: false | difficulty: hard", "label": "GROWTH_AREA"}
+{"text": "Topic: প্রাণিবৈচিত্র্য | time_ratio: 0.284 | switches: 1 | confidence: sure | correct: false | difficulty: hard", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: Excretion | time_ratio: 0.602 | switches: 2 | confidence: unsure | correct: false | difficulty: medium", "label": "GROWTH_AREA"}
+{"text": "Topic: Environmental Pollution | time_ratio: 0.755 | switches: 2 | confidence: guessing | correct: true | difficulty: hard", "label": "TRUST_GAP"}
+{"text": "Topic: Human Physiology | time_ratio: 0.440 | switches: 0 | confidence: sure | correct: true | difficulty: easy", "label": "MASTERY"}
+{"text": "Topic: প্রাণী আচরণ | time_ratio: 0.414 | switches: 0 | confidence: sure | correct: true | difficulty: medium", "label": "MASTERY"}
+{"text": "Topic: Genetics | time_ratio: 0.610 | switches: 3 | confidence: sure | correct: true | difficulty: easy", "label": "TRUST_GAP"}
+{"text": "Topic: Virus & Bacteria | time_ratio: 0.775 | switches: 2 | confidence: unsure | correct: false | difficulty: easy", "label": "GROWTH_AREA"}
+{"text": "Topic: Human Physiology | time_ratio: 0.745 | switches: 0 | confidence: guessing | correct: true | difficulty: easy", "label": "TRUST_GAP"}
+{"text": "Topic: বাস্তুবিদ্যা | time_ratio: 0.420 | switches: 3 | confidence: unsure | correct: false | difficulty: medium", "label": "GROWTH_AREA"}
+{"text": "Topic: Genetics | time_ratio: 0.120 | switches: 1 | confidence: sure | correct: false | difficulty: medium", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: শ্বসন | time_ratio: 0.156 | switches: 2 | confidence: sure | correct: false | difficulty: hard", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: Human Physiology | time_ratio: 0.549 | switches: 1 | confidence: sure | correct: false | difficulty: medium", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: Botany | time_ratio: 0.509 | switches: 2 | confidence: unsure | correct: false | difficulty: hard", "label": "GROWTH_AREA"}
+{"text": "Topic: সালোকসংশ্লেষণ | time_ratio: 0.767 | switches: 2 | confidence: unsure | correct: false | difficulty: medium", "label": "GROWTH_AREA"}
+{"text": "Topic: Botany | time_ratio: 0.769 | switches: 0 | confidence: unsure | correct: true | difficulty: hard", "label": "TRUST_GAP"}
+{"text": "Topic: Tissue | time_ratio: 0.505 | switches: 2 | confidence: unsure | correct: false | difficulty: hard", "label": "GROWTH_AREA"}
+{"text": "Topic: জিনতত্ত্ব | time_ratio: 0.231 | switches: 2 | confidence: unsure | correct: true | difficulty: medium", "label": "TRUST_GAP"}
+{"text": "Topic: Enzymes | time_ratio: 0.371 | switches: 0 | confidence: sure | correct: false | difficulty: easy", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: স্নায়ুতন্ত্র | time_ratio: 0.812 | switches: 0 | confidence: unsure | correct: true | difficulty: hard", "label": "TRUST_GAP"}
+{"text": "Topic: Ecology | time_ratio: 0.251 | switches: 0 | confidence: sure | correct: true | difficulty: easy", "label": "MASTERY"}
+{"text": "Topic: কোষ বিভাজন | time_ratio: 0.117 | switches: 0 | confidence: sure | correct: false | difficulty: medium", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: জৈব অণু | time_ratio: 0.720 | switches: 1 | confidence: unsure | correct: false | difficulty: medium", "label": "GROWTH_AREA"}
+{"text": "Topic: Nucleic Acids | time_ratio: 0.327 | switches: 0 | confidence: sure | correct: true | difficulty: medium", "label": "MASTERY"}
+{"text": "Topic: Photosynthesis | time_ratio: 0.374 | switches: 0 | confidence: sure | correct: true | difficulty: medium", "label": "MASTERY"}
+{"text": "Topic: Heredity | time_ratio: 0.399 | switches: 1 | confidence: sure | correct: false | difficulty: medium", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: Growth & Development | time_ratio: 0.385 | switches: 1 | confidence: sure | correct: false | difficulty: hard", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: কোষ বিভাজন | time_ratio: 0.808 | switches: 4 | confidence: guessing | correct: false | difficulty: medium", "label": "GROWTH_AREA"}
+{"text": "Topic: এনজাইম | time_ratio: 0.226 | switches: 2 | confidence: unsure | correct: true | difficulty: medium", "label": "TRUST_GAP"}
+{"text": "Topic: Hormones | time_ratio: 0.169 | switches: 1 | confidence: sure | correct: false | difficulty: hard", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: জীবের বৃদ্ধি ও বিকাশ | time_ratio: 0.893 | switches: 2 | confidence: unsure | correct: true | difficulty: medium", "label": "TRUST_GAP"}
+{"text": "Topic: কোষ বিভাজন | time_ratio: 0.319 | switches: 0 | confidence: sure | correct: false | difficulty: medium", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: নিউক্লিক অ্যাসিড | time_ratio: 0.855 | switches: 1 | confidence: unsure | correct: true | difficulty: hard", "label": "TRUST_GAP"}
+{"text": "Topic: Respiration | time_ratio: 0.491 | switches: 0 | confidence: sure | correct: true | difficulty: medium", "label": "MASTERY"}
+{"text": "Topic: কোষ বিভাজন | time_ratio: 0.103 | switches: 2 | confidence: sure | correct: false | difficulty: easy", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: জীবের বৃদ্ধি ও বিকাশ | time_ratio: 0.314 | switches: 0 | confidence: sure | correct: true | difficulty: medium", "label": "MASTERY"}
+{"text": "Topic: Reproduction | time_ratio: 0.386 | switches: 0 | confidence: sure | correct: false | difficulty: hard", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: Biomolecules | time_ratio: 0.755 | switches: 1 | confidence: unsure | correct: true | difficulty: hard", "label": "TRUST_GAP"}
+{"text": "Topic: বাস্তুবিদ্যা | time_ratio: 0.449 | switches: 0 | confidence: sure | correct: false | difficulty: medium", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: Animal Behavior | time_ratio: 0.628 | switches: 2 | confidence: guessing | correct: true | difficulty: hard", "label": "TRUST_GAP"}
+{"text": "Topic: কোষ বিভাজন | time_ratio: 0.565 | switches: 0 | confidence: sure | correct: false | difficulty: medium", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: Animal Diversity | time_ratio: 0.295 | switches: 0 | confidence: sure | correct: true | difficulty: medium", "label": "MASTERY"}
+{"text": "Topic: Environmental Pollution | time_ratio: 0.299 | switches: 0 | confidence: sure | correct: false | difficulty: easy", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: কোষ বিভাজন | time_ratio: 0.200 | switches: 0 | confidence: sure | correct: true | difficulty: medium", "label": "MASTERY"}
+{"text": "Topic: Ecology | time_ratio: 0.971 | switches: 3 | confidence: unsure | correct: true | difficulty: hard", "label": "TRUST_GAP"}
+{"text": "Topic: বাস্তুবিদ্যা | time_ratio: 0.274 | switches: 1 | confidence: unsure | correct: true | difficulty: easy", "label": "TRUST_GAP"}
+{"text": "Topic: Respiration | time_ratio: 0.526 | switches: 1 | confidence: sure | correct: false | difficulty: medium", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: জৈব অণু | time_ratio: 0.103 | switches: 0 | confidence: sure | correct: true | difficulty: medium", "label": "MASTERY"}
+{"text": "Topic: Ecology | time_ratio: 0.158 | switches: 0 | confidence: sure | correct: true | difficulty: medium", "label": "MASTERY"}
+{"text": "Topic: উদ্ভিদবিজ্ঞান | time_ratio: 0.586 | switches: 3 | confidence: unsure | correct: true | difficulty: medium", "label": "TRUST_GAP"}
+{"text": "Topic: Ecology | time_ratio: 0.858 | switches: 2 | confidence: guessing | correct: false | difficulty: medium", "label": "GROWTH_AREA"}
+{"text": "Topic: প্রজনন | time_ratio: 0.862 | switches: 1 | confidence: guessing | correct: false | difficulty: hard", "label": "GROWTH_AREA"}
+{"text": "Topic: বাস্তুবিদ্যা | time_ratio: 0.122 | switches: 1 | confidence: guessing | correct: false | difficulty: easy", "label": "GROWTH_AREA"}
+{"text": "Topic: প্রাণিবৈচিত্র্য | time_ratio: 0.195 | switches: 0 | confidence: sure | correct: false | difficulty: hard", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: পরিবেশ দূষণ | time_ratio: 1.000 | switches: 2 | confidence: guessing | correct: false | difficulty: hard", "label": "GROWTH_AREA"}
+{"text": "Topic: Blood & Circulation | time_ratio: 0.762 | switches: 0 | confidence: guessing | correct: false | difficulty: hard", "label": "GROWTH_AREA"}
+{"text": "Topic: শ্বসন | time_ratio: 0.069 | switches: 0 | confidence: sure | correct: true | difficulty: hard", "label": "MASTERY"}
+{"text": "Topic: সালোকসংশ্লেষণ | time_ratio: 0.579 | switches: 2 | confidence: guessing | correct: false | difficulty: hard", "label": "GROWTH_AREA"}
+{"text": "Topic: স্নায়ুতন্ত্র | time_ratio: 0.074 | switches: 0 | confidence: sure | correct: false | difficulty: easy", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: প্রাণী আচরণ | time_ratio: 0.762 | switches: 1 | confidence: unsure | correct: false | difficulty: medium", "label": "GROWTH_AREA"}
+{"text": "Topic: Cell Structure | time_ratio: 0.252 | switches: 0 | confidence: guessing | correct: false | difficulty: easy", "label": "GROWTH_AREA"}
+{"text": "Topic: এনজাইম | time_ratio: 0.360 | switches: 0 | confidence: sure | correct: true | difficulty: easy", "label": "MASTERY"}
+{"text": "Topic: শ্বসন | time_ratio: 0.575 | switches: 3 | confidence: sure | correct: true | difficulty: hard", "label": "TRUST_GAP"}
+{"text": "Topic: উদ্ভিদবিজ্ঞান | time_ratio: 0.708 | switches: 3 | confidence: unsure | correct: true | difficulty: easy", "label": "TRUST_GAP"}
+{"text": "Topic: জিনতত্ত্ব | time_ratio: 0.601 | switches: 2 | confidence: unsure | correct: true | difficulty: hard", "label": "TRUST_GAP"}
+{"text": "Topic: Ecology | time_ratio: 0.739 | switches: 2 | confidence: unsure | correct: false | difficulty: easy", "label": "GROWTH_AREA"}
+{"text": "Topic: Animal Behavior | time_ratio: 0.228 | switches: 1 | confidence: unsure | correct: true | difficulty: medium", "label": "TRUST_GAP"}
+{"text": "Topic: প্রজনন | time_ratio: 0.185 | switches: 0 | confidence: sure | correct: true | difficulty: medium", "label": "MASTERY"}
+{"text": "Topic: Virus & Bacteria | time_ratio: 1.000 | switches: 0 | confidence: sure | correct: false | difficulty: easy", "label": "GROWTH_AREA"}
+{"text": "Topic: এনজাইম | time_ratio: 0.803 | switches: 1 | confidence: unsure | correct: true | difficulty: medium", "label": "TRUST_GAP"}
+{"text": "Topic: Genetics | time_ratio: 0.458 | switches: 2 | confidence: unsure | correct: true | difficulty: medium", "label": "TRUST_GAP"}
+{"text": "Topic: রক্ত ও সংবহন | time_ratio: 0.441 | switches: 1 | confidence: guessing | correct: true | difficulty: easy", "label": "TRUST_GAP"}
+{"text": "Topic: উদ্ভিদবিজ্ঞান | time_ratio: 0.112 | switches: 0 | confidence: sure | correct: false | difficulty: medium", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: Nervous System | time_ratio: 0.669 | switches: 1 | confidence: guessing | correct: true | difficulty: medium", "label": "TRUST_GAP"}
+{"text": "Topic: কোষ বিভাজন | time_ratio: 0.133 | switches: 2 | confidence: guessing | correct: false | difficulty: easy", "label": "GROWTH_AREA"}
+{"text": "Topic: বাস্তুবিদ্যা | time_ratio: 0.171 | switches: 0 | confidence: sure | correct: true | difficulty: easy", "label": "MASTERY"}
+{"text": "Topic: Reproduction | time_ratio: 0.639 | switches: 4 | confidence: sure | correct: true | difficulty: hard", "label": "TRUST_GAP"}
+{"text": "Topic: প্রাণী আচরণ | time_ratio: 0.475 | switches: 3 | confidence: guessing | correct: false | difficulty: medium", "label": "GROWTH_AREA"}
+{"text": "Topic: অণুজীববিজ্ঞান | time_ratio: 0.312 | switches: 0 | confidence: sure | correct: false | difficulty: medium", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: Biotechnology | time_ratio: 0.292 | switches: 1 | confidence: unsure | correct: true | difficulty: medium", "label": "TRUST_GAP"}
+{"text": "Topic: জীব প্রযুক্তি | time_ratio: 0.647 | switches: 1 | confidence: unsure | correct: false | difficulty: hard", "label": "GROWTH_AREA"}
+{"text": "Topic: জৈব অণু | time_ratio: 0.645 | switches: 2 | confidence: unsure | correct: false | difficulty: hard", "label": "GROWTH_AREA"}
+{"text": "Topic: হরমোন | time_ratio: 0.820 | switches: 2 | confidence: unsure | correct: true | difficulty: hard", "label": "TRUST_GAP"}
+{"text": "Topic: জিনতত্ত্ব | time_ratio: 0.184 | switches: 0 | confidence: guessing | correct: false | difficulty: easy", "label": "GROWTH_AREA"}
+{"text": "Topic: কোষ বিভাজন | time_ratio: 0.506 | switches: 2 | confidence: unsure | correct: true | difficulty: medium", "label": "TRUST_GAP"}
+{"text": "Topic: Growth & Development | time_ratio: 0.487 | switches: 0 | confidence: sure | correct: false | difficulty: easy", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: Botany | time_ratio: 1.000 | switches: 3 | confidence: guessing | correct: false | difficulty: medium", "label": "GROWTH_AREA"}
+{"text": "Topic: পরিবেশ দূষণ | time_ratio: 0.159 | switches: 0 | confidence: sure | correct: false | difficulty: medium", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: টিস্যু | time_ratio: 0.690 | switches: 1 | confidence: sure | correct: false | difficulty: medium", "label": "GROWTH_AREA"}
+{"text": "Topic: প্রাণী আচরণ | time_ratio: 0.535 | switches: 1 | confidence: sure | correct: false | difficulty: medium", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: হরমোন | time_ratio: 0.529 | switches: 0 | confidence: sure | correct: false | difficulty: medium", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: টিস্যু | time_ratio: 0.954 | switches: 0 | confidence: unsure | correct: false | difficulty: medium", "label": "GROWTH_AREA"}
+{"text": "Topic: হরমোন | time_ratio: 1.000 | switches: 1 | confidence: unsure | correct: false | difficulty: hard", "label": "GROWTH_AREA"}
+{"text": "Topic: রক্ত ও সংবহন | time_ratio: 0.424 | switches: 0 | confidence: sure | correct: true | difficulty: hard", "label": "MASTERY"}
+{"text": "Topic: Nervous System | time_ratio: 0.622 | switches: 0 | confidence: guessing | correct: false | difficulty: hard", "label": "GROWTH_AREA"}
+{"text": "Topic: Virus & Bacteria | time_ratio: 0.201 | switches: 0 | confidence: sure | correct: true | difficulty: easy", "label": "MASTERY"}
+{"text": "Topic: মানব শরীরতত্ত্ব | time_ratio: 0.375 | switches: 0 | confidence: sure | correct: false | difficulty: medium", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: জীবের বৃদ্ধি ও বিকাশ | time_ratio: 0.443 | switches: 0 | confidence: sure | correct: false | difficulty: hard", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: প্রজনন | time_ratio: 0.421 | switches: 1 | confidence: unsure | correct: true | difficulty: hard", "label": "TRUST_GAP"}
+{"text": "Topic: Photosynthesis | time_ratio: 0.301 | switches: 2 | confidence: guessing | correct: true | difficulty: easy", "label": "TRUST_GAP"}
+{"text": "Topic: Enzymes | time_ratio: 0.883 | switches: 2 | confidence: unsure | correct: true | difficulty: hard", "label": "TRUST_GAP"}
+{"text": "Topic: শ্বসন | time_ratio: 0.269 | switches: 2 | confidence: guessing | correct: false | difficulty: medium", "label": "GROWTH_AREA"}
+{"text": "Topic: সালোকসংশ্লেষণ | time_ratio: 0.668 | switches: 2 | confidence: guessing | correct: false | difficulty: medium", "label": "GROWTH_AREA"}
+{"text": "Topic: বংশগতি | time_ratio: 0.372 | switches: 0 | confidence: sure | correct: true | difficulty: easy", "label": "MASTERY"}
+{"text": "Topic: পরিবেশ দূষণ | time_ratio: 1.000 | switches: 1 | confidence: sure | correct: false | difficulty: hard", "label": "GROWTH_AREA"}
+{"text": "Topic: Heredity | time_ratio: 0.664 | switches: 3 | confidence: guessing | correct: false | difficulty: medium", "label": "GROWTH_AREA"}
+{"text": "Topic: Cell Division | time_ratio: 0.114 | switches: 0 | confidence: sure | correct: false | difficulty: medium", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: Nervous System | time_ratio: 0.301 | switches: 0 | confidence: sure | correct: true | difficulty: hard", "label": "MASTERY"}
+{"text": "Topic: Growth & Development | time_ratio: 0.346 | switches: 3 | confidence: unsure | correct: false | difficulty: hard", "label": "GROWTH_AREA"}
+{"text": "Topic: প্রজনন | time_ratio: 0.170 | switches: 0 | confidence: sure | correct: true | difficulty: medium", "label": "MASTERY"}
+{"text": "Topic: সালোকসংশ্লেষণ | time_ratio: 0.995 | switches: 2 | confidence: unsure | correct: false | difficulty: medium", "label": "GROWTH_AREA"}
+{"text": "Topic: Animal Diversity | time_ratio: 0.323 | switches: 0 | confidence: sure | correct: true | difficulty: medium", "label": "MASTERY"}
+{"text": "Topic: Excretion | time_ratio: 0.484 | switches: 0 | confidence: sure | correct: true | difficulty: easy", "label": "MASTERY"}
+{"text": "Topic: বংশগতি | time_ratio: 0.255 | switches: 2 | confidence: sure | correct: false | difficulty: hard", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: জিনতত্ত্ব | time_ratio: 0.151 | switches: 0 | confidence: sure | correct: true | difficulty: hard", "label": "MASTERY"}
+{"text": "Topic: বাস্তুবিদ্যা | time_ratio: 0.493 | switches: 1 | confidence: sure | correct: true | difficulty: hard", "label": "MASTERY"}
+{"text": "Topic: Biomolecules | time_ratio: 0.462 | switches: 0 | confidence: sure | correct: true | difficulty: hard", "label": "MASTERY"}
+{"text": "Topic: Virus & Bacteria | time_ratio: 0.290 | switches: 0 | confidence: sure | correct: true | difficulty: medium", "label": "MASTERY"}
+{"text": "Topic: Nervous System | time_ratio: 0.729 | switches: 1 | confidence: guessing | correct: false | difficulty: hard", "label": "GROWTH_AREA"}
+{"text": "Topic: উদ্ভিদবিজ্ঞান | time_ratio: 0.793 | switches: 3 | confidence: guessing | correct: true | difficulty: medium", "label": "TRUST_GAP"}
+{"text": "Topic: এনজাইম | time_ratio: 0.446 | switches: 3 | confidence: sure | correct: true | difficulty: medium", "label": "TRUST_GAP"}
+{"text": "Topic: বাস্তুবিদ্যা | time_ratio: 0.531 | switches: 1 | confidence: unsure | correct: true | difficulty: medium", "label": "TRUST_GAP"}
+{"text": "Topic: ভাইরাস ও ব্যাকটেরিয়া | time_ratio: 0.191 | switches: 0 | confidence: sure | correct: true | difficulty: medium", "label": "MASTERY"}
+{"text": "Topic: Nucleic Acids | time_ratio: 0.980 | switches: 0 | confidence: guessing | correct: false | difficulty: hard", "label": "GROWTH_AREA"}
+{"text": "Topic: জৈব অণু | time_ratio: 0.737 | switches: 0 | confidence: unsure | correct: true | difficulty: hard", "label": "TRUST_GAP"}
+{"text": "Topic: Photosynthesis | time_ratio: 0.898 | switches: 0 | confidence: unsure | correct: false | difficulty: medium", "label": "GROWTH_AREA"}
+{"text": "Topic: Biotechnology | time_ratio: 0.069 | switches: 0 | confidence: sure | correct: false | difficulty: medium", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: এনজাইম | time_ratio: 1.000 | switches: 0 | confidence: unsure | correct: false | difficulty: medium", "label": "GROWTH_AREA"}
+{"text": "Topic: জীবের বৃদ্ধি ও বিকাশ | time_ratio: 0.462 | switches: 0 | confidence: sure | correct: false | difficulty: easy", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: কোষ ও এর গঠন | time_ratio: 0.875 | switches: 0 | confidence: unsure | correct: true | difficulty: medium", "label": "TRUST_GAP"}
+{"text": "Topic: Excretion | time_ratio: 0.880 | switches: 0 | confidence: unsure | correct: true | difficulty: hard", "label": "TRUST_GAP"}
+{"text": "Topic: Blood & Circulation | time_ratio: 0.762 | switches: 2 | confidence: guessing | correct: false | difficulty: medium", "label": "GROWTH_AREA"}
+{"text": "Topic: Nucleic Acids | time_ratio: 0.395 | switches: 1 | confidence: sure | correct: false | difficulty: medium", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: Nervous System | time_ratio: 0.132 | switches: 0 | confidence: sure | correct: true | difficulty: medium", "label": "MASTERY"}
+{"text": "Topic: টিস্যু | time_ratio: 0.801 | switches: 2 | confidence: sure | correct: true | difficulty: easy", "label": "TRUST_GAP"}
+{"text": "Topic: Growth & Development | time_ratio: 0.837 | switches: 2 | confidence: sure | correct: true | difficulty: medium", "label": "TRUST_GAP"}
+{"text": "Topic: অণুজীববিজ্ঞান | time_ratio: 0.736 | switches: 0 | confidence: unsure | correct: true | difficulty: medium", "label": "TRUST_GAP"}
+{"text": "Topic: জীব প্রযুক্তি | time_ratio: 0.430 | switches: 1 | confidence: unsure | correct: true | difficulty: hard", "label": "TRUST_GAP"}
+{"text": "Topic: রেচন | time_ratio: 0.744 | switches: 2 | confidence: unsure | correct: false | difficulty: easy", "label": "GROWTH_AREA"}
+{"text": "Topic: হরমোন | time_ratio: 0.259 | switches: 3 | confidence: guessing | correct: false | difficulty: medium", "label": "GROWTH_AREA"}
+{"text": "Topic: Hormones | time_ratio: 0.214 | switches: 1 | confidence: guessing | correct: false | difficulty: hard", "label": "GROWTH_AREA"}
+{"text": "Topic: কোষ বিভাজন | time_ratio: 0.699 | switches: 3 | confidence: unsure | correct: true | difficulty: medium", "label": "TRUST_GAP"}
+{"text": "Topic: রেচন | time_ratio: 0.200 | switches: 0 | confidence: sure | correct: false | difficulty: medium", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: মানব শরীরতত্ত্ব | time_ratio: 0.320 | switches: 0 | confidence: sure | correct: false | difficulty: medium", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: স্নায়ুতন্ত্র | time_ratio: 0.118 | switches: 3 | confidence: guessing | correct: false | difficulty: medium", "label": "GROWTH_AREA"}
+{"text": "Topic: অণুজীববিজ্ঞান | time_ratio: 0.493 | switches: 0 | confidence: sure | correct: true | difficulty: easy", "label": "MASTERY"}
+{"text": "Topic: পরিবেশ দূষণ | time_ratio: 0.938 | switches: 1 | confidence: sure | correct: false | difficulty: easy", "label": "GROWTH_AREA"}
+{"text": "Topic: নিউক্লিক অ্যাসিড | time_ratio: 0.150 | switches: 0 | confidence: sure | correct: true | difficulty: hard", "label": "MASTERY"}
+{"text": "Topic: বংশগতি | time_ratio: 0.164 | switches: 0 | confidence: sure | correct: false | difficulty: hard", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: Botany | time_ratio: 0.412 | switches: 0 | confidence: sure | correct: true | difficulty: medium", "label": "MASTERY"}
+{"text": "Topic: কোষ বিভাজন | time_ratio: 0.578 | switches: 1 | confidence: guessing | correct: true | difficulty: hard", "label": "TRUST_GAP"}
+{"text": "Topic: জিনতত্ত্ব | time_ratio: 0.598 | switches: 2 | confidence: sure | correct: false | difficulty: hard", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: রক্ত ও সংবহন | time_ratio: 0.302 | switches: 0 | confidence: sure | correct: false | difficulty: medium", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: প্রজনন | time_ratio: 0.348 | switches: 2 | confidence: unsure | correct: true | difficulty: hard", "label": "TRUST_GAP"}
+{"text": "Topic: Photosynthesis | time_ratio: 0.323 | switches: 1 | confidence: sure | correct: false | difficulty: medium", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: Nervous System | time_ratio: 0.212 | switches: 0 | confidence: sure | correct: true | difficulty: hard", "label": "MASTERY"}
+{"text": "Topic: প্রজনন | time_ratio: 1.000 | switches: 1 | confidence: guessing | correct: false | difficulty: hard", "label": "GROWTH_AREA"}
+{"text": "Topic: জিনতত্ত্ব | time_ratio: 0.734 | switches: 2 | confidence: unsure | correct: false | difficulty: easy", "label": "GROWTH_AREA"}
+{"text": "Topic: কোষ বিভাজন | time_ratio: 1.000 | switches: 1 | confidence: unsure | correct: false | difficulty: hard", "label": "GROWTH_AREA"}
+{"text": "Topic: প্রজনন | time_ratio: 0.164 | switches: 0 | confidence: sure | correct: true | difficulty: medium", "label": "MASTERY"}
+{"text": "Topic: সালোকসংশ্লেষণ | time_ratio: 0.094 | switches: 0 | confidence: sure | correct: true | difficulty: medium", "label": "MASTERY"}
+{"text": "Topic: Microbiology | time_ratio: 0.706 | switches: 3 | confidence: guessing | correct: false | difficulty: medium", "label": "GROWTH_AREA"}
+{"text": "Topic: কোষ ও এর গঠন | time_ratio: 0.269 | switches: 2 | confidence: guessing | correct: false | difficulty: medium", "label": "GROWTH_AREA"}
+{"text": "Topic: Excretion | time_ratio: 1.000 | switches: 2 | confidence: unsure | correct: false | difficulty: hard", "label": "GROWTH_AREA"}
+{"text": "Topic: Reproduction | time_ratio: 0.643 | switches: 1 | confidence: unsure | correct: true | difficulty: medium", "label": "TRUST_GAP"}
+{"text": "Topic: টিস্যু | time_ratio: 0.889 | switches: 3 | confidence: unsure | correct: false | difficulty: hard", "label": "GROWTH_AREA"}
+{"text": "Topic: বংশগতি | time_ratio: 0.723 | switches: 1 | confidence: unsure | correct: false | difficulty: medium", "label": "GROWTH_AREA"}
+{"text": "Topic: Nucleic Acids | time_ratio: 0.519 | switches: 0 | confidence: sure | correct: true | difficulty: hard", "label": "MASTERY"}
+{"text": "Topic: বংশগতি | time_ratio: 0.312 | switches: 0 | confidence: sure | correct: false | difficulty: medium", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: Nervous System | time_ratio: 0.300 | switches: 4 | confidence: sure | correct: true | difficulty: medium", "label": "TRUST_GAP"}
+{"text": "Topic: বংশগতি | time_ratio: 1.000 | switches: 0 | confidence: unsure | correct: false | difficulty: medium", "label": "GROWTH_AREA"}
+{"text": "Topic: এনজাইম | time_ratio: 0.779 | switches: 2 | confidence: unsure | correct: false | difficulty: easy", "label": "GROWTH_AREA"}
+{"text": "Topic: বংশগতি | time_ratio: 0.628 | switches: 2 | confidence: unsure | correct: false | difficulty: hard", "label": "GROWTH_AREA"}
+{"text": "Topic: উদ্ভিদবিজ্ঞান | time_ratio: 0.792 | switches: 2 | confidence: guessing | correct: false | difficulty: medium", "label": "GROWTH_AREA"}
+{"text": "Topic: Respiration | time_ratio: 0.893 | switches: 2 | confidence: unsure | correct: true | difficulty: easy", "label": "TRUST_GAP"}
+{"text": "Topic: নিউক্লিক অ্যাসিড | time_ratio: 0.102 | switches: 0 | confidence: sure | correct: false | difficulty: medium", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: Microbiology | time_ratio: 0.805 | switches: 0 | confidence: unsure | correct: true | difficulty: hard", "label": "TRUST_GAP"}
+{"text": "Topic: টিস্যু | time_ratio: 0.984 | switches: 2 | confidence: guessing | correct: true | difficulty: medium", "label": "TRUST_GAP"}
+{"text": "Topic: জৈব অণু | time_ratio: 1.000 | switches: 1 | confidence: unsure | correct: false | difficulty: hard", "label": "GROWTH_AREA"}
+{"text": "Topic: কোষ ও এর গঠন | time_ratio: 0.473 | switches: 3 | confidence: guessing | correct: false | difficulty: medium", "label": "GROWTH_AREA"}
+{"text": "Topic: Blood & Circulation | time_ratio: 0.357 | switches: 0 | confidence: sure | correct: true | difficulty: hard", "label": "MASTERY"}
+{"text": "Topic: Animal Behavior | time_ratio: 0.504 | switches: 1 | confidence: sure | correct: false | difficulty: easy", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: জীবের বৃদ্ধি ও বিকাশ | time_ratio: 0.948 | switches: 4 | confidence: guessing | correct: false | difficulty: medium", "label": "GROWTH_AREA"}
+{"text": "Topic: Heredity | time_ratio: 0.834 | switches: 1 | confidence: unsure | correct: false | difficulty: medium", "label": "GROWTH_AREA"}
+{"text": "Topic: মানব শরীরতত্ত্ব | time_ratio: 0.463 | switches: 1 | confidence: sure | correct: true | difficulty: easy", "label": "MASTERY"}
+{"text": "Topic: ভাইরাস ও ব্যাকটেরিয়া | time_ratio: 0.117 | switches: 0 | confidence: sure | correct: true | difficulty: medium", "label": "MASTERY"}
+{"text": "Topic: হরমোন | time_ratio: 0.689 | switches: 2 | confidence: unsure | correct: true | difficulty: medium", "label": "TRUST_GAP"}
+{"text": "Topic: এনজাইম | time_ratio: 0.459 | switches: 0 | confidence: sure | correct: false | difficulty: hard", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: হরমোন | time_ratio: 0.104 | switches: 0 | confidence: sure | correct: false | difficulty: medium", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: Blood & Circulation | time_ratio: 0.595 | switches: 3 | confidence: unsure | correct: true | difficulty: medium", "label": "TRUST_GAP"}
+{"text": "Topic: জিনতত্ত্ব | time_ratio: 0.821 | switches: 3 | confidence: unsure | correct: true | difficulty: easy", "label": "TRUST_GAP"}
+{"text": "Topic: Environmental Pollution | time_ratio: 0.176 | switches: 0 | confidence: sure | correct: true | difficulty: medium", "label": "MASTERY"}
+{"text": "Topic: Heredity | time_ratio: 0.130 | switches: 0 | confidence: sure | correct: true | difficulty: easy", "label": "MASTERY"}
+{"text": "Topic: মানব শরীরতত্ত্ব | time_ratio: 0.874 | switches: 1 | confidence: unsure | correct: true | difficulty: easy", "label": "TRUST_GAP"}
+{"text": "Topic: বংশগতি | time_ratio: 0.057 | switches: 0 | confidence: sure | correct: true | difficulty: medium", "label": "MASTERY"}
+{"text": "Topic: Genetics | time_ratio: 0.236 | switches: 0 | confidence: sure | correct: true | difficulty: hard", "label": "MASTERY"}
+{"text": "Topic: Botany | time_ratio: 1.000 | switches: 0 | confidence: unsure | correct: false | difficulty: medium", "label": "GROWTH_AREA"}
+{"text": "Topic: প্রাণিবৈচিত্র্য | time_ratio: 1.000 | switches: 1 | confidence: unsure | correct: false | difficulty: hard", "label": "GROWTH_AREA"}
+{"text": "Topic: মানব শরীরতত্ত্ব | time_ratio: 0.228 | switches: 1 | confidence: sure | correct: true | difficulty: medium", "label": "MASTERY"}
+{"text": "Topic: কোষ বিভাজন | time_ratio: 0.488 | switches: 0 | confidence: sure | correct: true | difficulty: easy", "label": "MASTERY"}
+{"text": "Topic: Biotechnology | time_ratio: 0.732 | switches: 0 | confidence: sure | correct: true | difficulty: hard", "label": "TRUST_GAP"}
+{"text": "Topic: রক্ত ও সংবহন | time_ratio: 0.554 | switches: 0 | confidence: guessing | correct: false | difficulty: hard", "label": "GROWTH_AREA"}
+{"text": "Topic: Photosynthesis | time_ratio: 1.000 | switches: 3 | confidence: guessing | correct: false | difficulty: hard", "label": "GROWTH_AREA"}
+{"text": "Topic: জিনতত্ত্ব | time_ratio: 0.080 | switches: 0 | confidence: sure | correct: true | difficulty: medium", "label": "MASTERY"}
+{"text": "Topic: স্নায়ুতন্ত্র | time_ratio: 1.000 | switches: 1 | confidence: guessing | correct: false | difficulty: hard", "label": "GROWTH_AREA"}
+{"text": "Topic: Tissue | time_ratio: 0.153 | switches: 1 | confidence: guessing | correct: false | difficulty: easy", "label": "GROWTH_AREA"}
+{"text": "Topic: পরিবেশ দূষণ | time_ratio: 0.069 | switches: 0 | confidence: sure | correct: true | difficulty: medium", "label": "MASTERY"}
+{"text": "Topic: বাস্তুবিদ্যা | time_ratio: 0.189 | switches: 0 | confidence: sure | correct: true | difficulty: medium", "label": "MASTERY"}
+{"text": "Topic: মানব শরীরতত্ত্ব | time_ratio: 0.928 | switches: 3 | confidence: guessing | correct: false | difficulty: hard", "label": "GROWTH_AREA"}
+{"text": "Topic: প্রজনন | time_ratio: 0.851 | switches: 2 | confidence: guessing | correct: false | difficulty: hard", "label": "GROWTH_AREA"}
+{"text": "Topic: Biomolecules | time_ratio: 0.508 | switches: 3 | confidence: guessing | correct: true | difficulty: hard", "label": "TRUST_GAP"}
+{"text": "Topic: Nervous System | time_ratio: 0.454 | switches: 0 | confidence: sure | correct: true | difficulty: hard", "label": "MASTERY"}
+{"text": "Topic: Heredity | time_ratio: 0.428 | switches: 0 | confidence: sure | correct: true | difficulty: easy", "label": "MASTERY"}
+{"text": "Topic: প্রাণী আচরণ | time_ratio: 0.748 | switches: 3 | confidence: guessing | correct: false | difficulty: medium", "label": "GROWTH_AREA"}
+{"text": "Topic: টিস্যু | time_ratio: 0.628 | switches: 3 | confidence: guessing | correct: false | difficulty: hard", "label": "GROWTH_AREA"}
+{"text": "Topic: উদ্ভিদবিজ্ঞান | time_ratio: 0.336 | switches: 1 | confidence: sure | correct: false | difficulty: medium", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: জৈব অণু | time_ratio: 0.799 | switches: 1 | confidence: guessing | correct: true | difficulty: hard", "label": "TRUST_GAP"}
+{"text": "Topic: পরিবেশ দূষণ | time_ratio: 0.621 | switches: 1 | confidence: sure | correct: true | difficulty: medium", "label": "TRUST_GAP"}
+{"text": "Topic: Animal Behavior | time_ratio: 0.721 | switches: 0 | confidence: unsure | correct: true | difficulty: medium", "label": "TRUST_GAP"}
+{"text": "Topic: বংশগতি | time_ratio: 0.434 | switches: 0 | confidence: sure | correct: true | difficulty: hard", "label": "MASTERY"}
+{"text": "Topic: Cell Division | time_ratio: 0.461 | switches: 0 | confidence: sure | correct: true | difficulty: hard", "label": "MASTERY"}
+{"text": "Topic: Hormones | time_ratio: 0.345 | switches: 0 | confidence: sure | correct: false | difficulty: easy", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: বাস্তুবিদ্যা | time_ratio: 0.140 | switches: 0 | confidence: sure | correct: true | difficulty: easy", "label": "MASTERY"}
+{"text": "Topic: রক্ত ও সংবহন | time_ratio: 0.879 | switches: 2 | confidence: unsure | correct: false | difficulty: hard", "label": "GROWTH_AREA"}
+{"text": "Topic: বাস্তুবিদ্যা | time_ratio: 1.000 | switches: 2 | confidence: unsure | correct: false | difficulty: easy", "label": "GROWTH_AREA"}
+{"text": "Topic: Cell Division | time_ratio: 0.903 | switches: 2 | confidence: guessing | correct: false | difficulty: hard", "label": "GROWTH_AREA"}
+{"text": "Topic: Environmental Pollution | time_ratio: 0.734 | switches: 2 | confidence: unsure | correct: true | difficulty: easy", "label": "TRUST_GAP"}
+{"text": "Topic: জীবের বৃদ্ধি ও বিকাশ | time_ratio: 0.737 | switches: 3 | confidence: unsure | correct: true | difficulty: medium", "label": "TRUST_GAP"}
+{"text": "Topic: হরমোন | time_ratio: 0.895 | switches: 2 | confidence: unsure | correct: false | difficulty: medium", "label": "GROWTH_AREA"}
+{"text": "Topic: জীবের বৃদ্ধি ও বিকাশ | time_ratio: 0.900 | switches: 1 | confidence: unsure | correct: false | difficulty: hard", "label": "GROWTH_AREA"}
+{"text": "Topic: হরমোন | time_ratio: 0.069 | switches: 1 | confidence: sure | correct: false | difficulty: hard", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: বংশগতি | time_ratio: 0.671 | switches: 1 | confidence: guessing | correct: false | difficulty: hard", "label": "GROWTH_AREA"}
+{"text": "Topic: জীবের বৃদ্ধি ও বিকাশ | time_ratio: 0.435 | switches: 0 | confidence: sure | correct: false | difficulty: hard", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: Botany | time_ratio: 0.304 | switches: 0 | confidence: sure | correct: false | difficulty: easy", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: Heredity | time_ratio: 0.844 | switches: 4 | confidence: unsure | correct: false | difficulty: hard", "label": "GROWTH_AREA"}
+{"text": "Topic: মানব শরীরতত্ত্ব | time_ratio: 0.080 | switches: 0 | confidence: sure | correct: false | difficulty: medium", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: নিউক্লিক অ্যাসিড | time_ratio: 0.577 | switches: 2 | confidence: unsure | correct: true | difficulty: easy", "label": "TRUST_GAP"}
+{"text": "Topic: প্রজনন | time_ratio: 0.590 | switches: 2 | confidence: guessing | correct: true | difficulty: medium", "label": "TRUST_GAP"}
+{"text": "Topic: Tissue | time_ratio: 0.527 | switches: 0 | confidence: sure | correct: false | difficulty: hard", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: রক্ত ও সংবহন | time_ratio: 0.070 | switches: 0 | confidence: sure | correct: false | difficulty: hard", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: বাস্তুবিদ্যা | time_ratio: 0.466 | switches: 1 | confidence: unsure | correct: true | difficulty: medium", "label": "TRUST_GAP"}
+{"text": "Topic: নিউক্লিক অ্যাসিড | time_ratio: 0.458 | switches: 0 | confidence: sure | correct: true | difficulty: medium", "label": "MASTERY"}
+{"text": "Topic: Excretion | time_ratio: 0.834 | switches: 2 | confidence: guessing | correct: true | difficulty: medium", "label": "TRUST_GAP"}
+{"text": "Topic: প্রজনন | time_ratio: 1.000 | switches: 3 | confidence: guessing | correct: false | difficulty: hard", "label": "GROWTH_AREA"}
+{"text": "Topic: প্রাণী আচরণ | time_ratio: 0.150 | switches: 0 | confidence: unsure | correct: true | difficulty: medium", "label": "TRUST_GAP"}
+{"text": "Topic: Cell Division | time_ratio: 0.790 | switches: 0 | confidence: guessing | correct: false | difficulty: easy", "label": "GROWTH_AREA"}
+{"text": "Topic: সালোকসংশ্লেষণ | time_ratio: 0.431 | switches: 0 | confidence: sure | correct: false | difficulty: hard", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: Biotechnology | time_ratio: 0.337 | switches: 0 | confidence: sure | correct: true | difficulty: medium", "label": "MASTERY"}
+{"text": "Topic: Botany | time_ratio: 0.110 | switches: 0 | confidence: sure | correct: false | difficulty: easy", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: নিউক্লিক অ্যাসিড | time_ratio: 0.139 | switches: 0 | confidence: sure | correct: true | difficulty: hard", "label": "MASTERY"}
+{"text": "Topic: জীবের বৃদ্ধি ও বিকাশ | time_ratio: 0.711 | switches: 2 | confidence: sure | correct: true | difficulty: medium", "label": "TRUST_GAP"}
+{"text": "Topic: Tissue | time_ratio: 1.000 | switches: 3 | confidence: unsure | correct: false | difficulty: medium", "label": "GROWTH_AREA"}
+{"text": "Topic: হরমোন | time_ratio: 0.974 | switches: 2 | confidence: guessing | correct: true | difficulty: hard", "label": "TRUST_GAP"}
+{"text": "Topic: Human Physiology | time_ratio: 0.377 | switches: 2 | confidence: unsure | correct: true | difficulty: medium", "label": "TRUST_GAP"}
+{"text": "Topic: নিউক্লিক অ্যাসিড | time_ratio: 0.546 | switches: 1 | confidence: unsure | correct: true | difficulty: medium", "label": "TRUST_GAP"}
+{"text": "Topic: Ecology | time_ratio: 0.200 | switches: 0 | confidence: sure | correct: true | difficulty: easy", "label": "MASTERY"}
+{"text": "Topic: টিস্যু | time_ratio: 0.344 | switches: 0 | confidence: sure | correct: true | difficulty: medium", "label": "MASTERY"}
+{"text": "Topic: Virus & Bacteria | time_ratio: 0.228 | switches: 0 | confidence: guessing | correct: false | difficulty: hard", "label": "GROWTH_AREA"}
+{"text": "Topic: Biomolecules | time_ratio: 0.878 | switches: 0 | confidence: guessing | correct: false | difficulty: hard", "label": "GROWTH_AREA"}
+{"text": "Topic: Environmental Pollution | time_ratio: 0.309 | switches: 0 | confidence: sure | correct: true | difficulty: hard", "label": "MASTERY"}
+{"text": "Topic: Respiration | time_ratio: 0.758 | switches: 2 | confidence: unsure | correct: false | difficulty: easy", "label": "GROWTH_AREA"}
+{"text": "Topic: Cell Division | time_ratio: 0.054 | switches: 0 | confidence: sure | correct: true | difficulty: medium", "label": "MASTERY"}
+{"text": "Topic: টিস্যু | time_ratio: 0.446 | switches: 1 | confidence: sure | correct: true | difficulty: medium", "label": "MASTERY"}
+{"text": "Topic: Animal Behavior | time_ratio: 0.377 | switches: 0 | confidence: sure | correct: true | difficulty: medium", "label": "MASTERY"}
+{"text": "Topic: Blood & Circulation | time_ratio: 0.097 | switches: 1 | confidence: sure | correct: true | difficulty: medium", "label": "MASTERY"}
+{"text": "Topic: Enzymes | time_ratio: 0.768 | switches: 2 | confidence: guessing | correct: false | difficulty: hard", "label": "GROWTH_AREA"}
+{"text": "Topic: Animal Behavior | time_ratio: 0.684 | switches: 1 | confidence: guessing | correct: false | difficulty: hard", "label": "GROWTH_AREA"}
+{"text": "Topic: Environmental Pollution | time_ratio: 0.556 | switches: 1 | confidence: guessing | correct: false | difficulty: hard", "label": "GROWTH_AREA"}
+{"text": "Topic: প্রজনন | time_ratio: 0.591 | switches: 0 | confidence: unsure | correct: true | difficulty: easy", "label": "TRUST_GAP"}
+{"text": "Topic: বাস্তুবিদ্যা | time_ratio: 0.440 | switches: 2 | confidence: sure | correct: true | difficulty: medium", "label": "TRUST_GAP"}
+{"text": "Topic: Blood & Circulation | time_ratio: 0.086 | switches: 2 | confidence: sure | correct: false | difficulty: medium", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: প্রজনন | time_ratio: 0.562 | switches: 0 | confidence: sure | correct: false | difficulty: easy", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: Environmental Pollution | time_ratio: 0.621 | switches: 0 | confidence: guessing | correct: false | difficulty: hard", "label": "GROWTH_AREA"}
+{"text": "Topic: এনজাইম | time_ratio: 0.442 | switches: 1 | confidence: sure | correct: false | difficulty: hard", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: Virus & Bacteria | time_ratio: 0.676 | switches: 3 | confidence: guessing | correct: true | difficulty: hard", "label": "TRUST_GAP"}
+{"text": "Topic: হরমোন | time_ratio: 0.120 | switches: 0 | confidence: sure | correct: true | difficulty: easy", "label": "MASTERY"}
+{"text": "Topic: Hormones | time_ratio: 0.780 | switches: 1 | confidence: guessing | correct: true | difficulty: medium", "label": "TRUST_GAP"}
+{"text": "Topic: Animal Diversity | time_ratio: 0.183 | switches: 1 | confidence: sure | correct: false | difficulty: easy", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: Tissue | time_ratio: 0.361 | switches: 1 | confidence: sure | correct: false | difficulty: medium", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: Excretion | time_ratio: 0.647 | switches: 2 | confidence: guessing | correct: false | difficulty: medium", "label": "GROWTH_AREA"}
+{"text": "Topic: Virus & Bacteria | time_ratio: 0.437 | switches: 2 | confidence: unsure | correct: true | difficulty: medium", "label": "TRUST_GAP"}
+{"text": "Topic: Heredity | time_ratio: 0.153 | switches: 0 | confidence: unsure | correct: true | difficulty: medium", "label": "TRUST_GAP"}
+{"text": "Topic: Botany | time_ratio: 0.787 | switches: 2 | confidence: guessing | correct: false | difficulty: medium", "label": "GROWTH_AREA"}
+{"text": "Topic: Cell Division | time_ratio: 0.330 | switches: 0 | confidence: guessing | correct: false | difficulty: medium", "label": "GROWTH_AREA"}
+{"text": "Topic: জীব প্রযুক্তি | time_ratio: 0.526 | switches: 2 | confidence: sure | correct: true | difficulty: medium", "label": "TRUST_GAP"}
+{"text": "Topic: Heredity | time_ratio: 0.559 | switches: 0 | confidence: sure | correct: false | difficulty: hard", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: Blood & Circulation | time_ratio: 0.448 | switches: 0 | confidence: sure | correct: false | difficulty: medium", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: Biomolecules | time_ratio: 0.893 | switches: 2 | confidence: guessing | correct: false | difficulty: easy", "label": "GROWTH_AREA"}
+{"text": "Topic: টিস্যু | time_ratio: 0.434 | switches: 0 | confidence: sure | correct: true | difficulty: hard", "label": "MASTERY"}
+{"text": "Topic: প্রাণী আচরণ | time_ratio: 0.555 | switches: 1 | confidence: unsure | correct: true | difficulty: medium", "label": "TRUST_GAP"}
+{"text": "Topic: জিনতত্ত্ব | time_ratio: 0.212 | switches: 0 | confidence: sure | correct: true | difficulty: hard", "label": "MASTERY"}
+{"text": "Topic: মানব শরীরতত্ত্ব | time_ratio: 0.253 | switches: 0 | confidence: sure | correct: true | difficulty: hard", "label": "MASTERY"}
+{"text": "Topic: Nervous System | time_ratio: 0.070 | switches: 0 | confidence: sure | correct: true | difficulty: easy", "label": "MASTERY"}
+{"text": "Topic: Microbiology | time_ratio: 1.000 | switches: 2 | confidence: guessing | correct: false | difficulty: medium", "label": "GROWTH_AREA"}
+{"text": "Topic: Enzymes | time_ratio: 0.129 | switches: 0 | confidence: sure | correct: false | difficulty: hard", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: হরমোন | time_ratio: 0.996 | switches: 0 | confidence: sure | correct: true | difficulty: medium", "label": "TRUST_GAP"}
+{"text": "Topic: কোষ বিভাজন | time_ratio: 1.000 | switches: 1 | confidence: guessing | correct: false | difficulty: hard", "label": "GROWTH_AREA"}
+{"text": "Topic: নিউক্লিক অ্যাসিড | time_ratio: 0.321 | switches: 0 | confidence: sure | correct: true | difficulty: hard", "label": "MASTERY"}
+{"text": "Topic: জৈব অণু | time_ratio: 0.527 | switches: 0 | confidence: unsure | correct: true | difficulty: easy", "label": "TRUST_GAP"}
+{"text": "Topic: রক্ত ও সংবহন | time_ratio: 0.284 | switches: 2 | confidence: guessing | correct: true | difficulty: medium", "label": "TRUST_GAP"}
+{"text": "Topic: প্রাণিবৈচিত্র্য | time_ratio: 0.299 | switches: 2 | confidence: guessing | correct: false | difficulty: hard", "label": "GROWTH_AREA"}
+{"text": "Topic: Environmental Pollution | time_ratio: 0.357 | switches: 0 | confidence: sure | correct: true | difficulty: easy", "label": "MASTERY"}
+{"text": "Topic: জীবের বৃদ্ধি ও বিকাশ | time_ratio: 0.187 | switches: 1 | confidence: sure | correct: true | difficulty: medium", "label": "MASTERY"}
+{"text": "Topic: জৈব অণু | time_ratio: 0.588 | switches: 0 | confidence: guessing | correct: true | difficulty: easy", "label": "TRUST_GAP"}
+{"text": "Topic: স্নায়ুতন্ত্র | time_ratio: 0.530 | switches: 2 | confidence: guessing | correct: true | difficulty: hard", "label": "TRUST_GAP"}
+{"text": "Topic: বংশগতি | time_ratio: 0.470 | switches: 4 | confidence: unsure | correct: false | difficulty: hard", "label": "GROWTH_AREA"}
+{"text": "Topic: জীবের বৃদ্ধি ও বিকাশ | time_ratio: 0.664 | switches: 0 | confidence: unsure | correct: true | difficulty: medium", "label": "TRUST_GAP"}
+{"text": "Topic: শ্বসন | time_ratio: 0.907 | switches: 1 | confidence: unsure | correct: true | difficulty: medium", "label": "TRUST_GAP"}
+{"text": "Topic: Nervous System | time_ratio: 0.494 | switches: 0 | confidence: sure | correct: true | difficulty: hard", "label": "MASTERY"}
+{"text": "Topic: Cell Structure | time_ratio: 0.820 | switches: 2 | confidence: sure | correct: true | difficulty: medium", "label": "TRUST_GAP"}
+{"text": "Topic: প্রজনন | time_ratio: 0.436 | switches: 1 | confidence: sure | correct: false | difficulty: easy", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: Hormones | time_ratio: 0.981 | switches: 1 | confidence: unsure | correct: true | difficulty: hard", "label": "TRUST_GAP"}
+{"text": "Topic: টিস্যু | time_ratio: 0.717 | switches: 4 | confidence: guessing | correct: false | difficulty: hard", "label": "GROWTH_AREA"}
+{"text": "Topic: সালোকসংশ্লেষণ | time_ratio: 0.142 | switches: 0 | confidence: sure | correct: false | difficulty: medium", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: অণুজীববিজ্ঞান | time_ratio: 0.607 | switches: 0 | confidence: unsure | correct: true | difficulty: hard", "label": "TRUST_GAP"}
+{"text": "Topic: হরমোন | time_ratio: 0.467 | switches: 1 | confidence: sure | correct: true | difficulty: hard", "label": "MASTERY"}
+{"text": "Topic: উদ্ভিদবিজ্ঞান | time_ratio: 0.491 | switches: 1 | confidence: unsure | correct: true | difficulty: hard", "label": "TRUST_GAP"}
+{"text": "Topic: Excretion | time_ratio: 0.185 | switches: 3 | confidence: guessing | correct: false | difficulty: hard", "label": "GROWTH_AREA"}
+{"text": "Topic: ভাইরাস ও ব্যাকটেরিয়া | time_ratio: 0.278 | switches: 1 | confidence: unsure | correct: true | difficulty: easy", "label": "TRUST_GAP"}
+{"text": "Topic: কোষ বিভাজন | time_ratio: 0.372 | switches: 3 | confidence: unsure | correct: false | difficulty: easy", "label": "GROWTH_AREA"}
+{"text": "Topic: মানব শরীরতত্ত্ব | time_ratio: 0.558 | switches: 2 | confidence: guessing | correct: false | difficulty: hard", "label": "GROWTH_AREA"}
+{"text": "Topic: প্রাণী আচরণ | time_ratio: 0.495 | switches: 0 | confidence: sure | correct: false | difficulty: medium", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: হরমোন | time_ratio: 0.553 | switches: 1 | confidence: unsure | correct: true | difficulty: medium", "label": "TRUST_GAP"}
+{"text": "Topic: Respiration | time_ratio: 0.388 | switches: 0 | confidence: sure | correct: true | difficulty: medium", "label": "MASTERY"}
+{"text": "Topic: জীবের বৃদ্ধি ও বিকাশ | time_ratio: 0.224 | switches: 0 | confidence: sure | correct: true | difficulty: hard", "label": "MASTERY"}
+{"text": "Topic: Blood & Circulation | time_ratio: 0.437 | switches: 3 | confidence: guessing | correct: false | difficulty: medium", "label": "GROWTH_AREA"}
+{"text": "Topic: Biotechnology | time_ratio: 0.243 | switches: 2 | confidence: guessing | correct: false | difficulty: easy", "label": "GROWTH_AREA"}
+{"text": "Topic: Ecology | time_ratio: 0.363 | switches: 0 | confidence: sure | correct: false | difficulty: hard", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: Animal Behavior | time_ratio: 0.075 | switches: 1 | confidence: sure | correct: false | difficulty: medium", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: রেচন | time_ratio: 0.451 | switches: 0 | confidence: guessing | correct: false | difficulty: hard", "label": "GROWTH_AREA"}
+{"text": "Topic: প্রাণিবৈচিত্র্য | time_ratio: 0.167 | switches: 0 | confidence: sure | correct: false | difficulty: medium", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: রক্ত ও সংবহন | time_ratio: 0.612 | switches: 1 | confidence: sure | correct: false | difficulty: easy", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: Genetics | time_ratio: 1.000 | switches: 1 | confidence: sure | correct: false | difficulty: medium", "label": "GROWTH_AREA"}
+{"text": "Topic: জৈব অণু | time_ratio: 0.697 | switches: 2 | confidence: unsure | correct: true | difficulty: medium", "label": "TRUST_GAP"}
+{"text": "Topic: কোষ বিভাজন | time_ratio: 0.101 | switches: 2 | confidence: sure | correct: false | difficulty: medium", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: Tissue | time_ratio: 0.314 | switches: 0 | confidence: sure | correct: true | difficulty: medium", "label": "MASTERY"}
+{"text": "Topic: Hormones | time_ratio: 0.294 | switches: 2 | confidence: sure | correct: false | difficulty: medium", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: বাস্তুবিদ্যা | time_ratio: 0.285 | switches: 1 | confidence: guessing | correct: true | difficulty: medium", "label": "TRUST_GAP"}
+{"text": "Topic: প্রাণিবৈচিত্র্য | time_ratio: 0.579 | switches: 0 | confidence: sure | correct: false | difficulty: easy", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: কোষ ও এর গঠন | time_ratio: 0.168 | switches: 0 | confidence: sure | correct: true | difficulty: easy", "label": "MASTERY"}
+{"text": "Topic: Animal Behavior | time_ratio: 0.086 | switches: 0 | confidence: sure | correct: true | difficulty: easy", "label": "MASTERY"}
+{"text": "Topic: প্রাণী আচরণ | time_ratio: 0.447 | switches: 1 | confidence: guessing | correct: false | difficulty: easy", "label": "GROWTH_AREA"}
+{"text": "Topic: প্রাণী আচরণ | time_ratio: 0.453 | switches: 0 | confidence: sure | correct: true | difficulty: hard", "label": "MASTERY"}
+{"text": "Topic: কোষ বিভাজন | time_ratio: 0.596 | switches: 4 | confidence: sure | correct: true | difficulty: hard", "label": "TRUST_GAP"}
+{"text": "Topic: Microbiology | time_ratio: 0.558 | switches: 0 | confidence: sure | correct: true | difficulty: easy", "label": "TRUST_GAP"}
+{"text": "Topic: Tissue | time_ratio: 0.096 | switches: 0 | confidence: sure | correct: true | difficulty: medium", "label": "MASTERY"}
+{"text": "Topic: প্রাণিবৈচিত্র্য | time_ratio: 1.000 | switches: 1 | confidence: guessing | correct: false | difficulty: medium", "label": "GROWTH_AREA"}
+{"text": "Topic: Reproduction | time_ratio: 0.886 | switches: 1 | confidence: sure | correct: false | difficulty: medium", "label": "GROWTH_AREA"}
+{"text": "Topic: প্রজনন | time_ratio: 0.146 | switches: 0 | confidence: sure | correct: true | difficulty: easy", "label": "MASTERY"}
+{"text": "Topic: কোষ বিভাজন | time_ratio: 0.559 | switches: 0 | confidence: sure | correct: false | difficulty: medium", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: কোষ বিভাজন | time_ratio: 0.212 | switches: 0 | confidence: sure | correct: false | difficulty: easy", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: Cell Structure | time_ratio: 1.000 | switches: 1 | confidence: sure | correct: false | difficulty: easy", "label": "GROWTH_AREA"}
+{"text": "Topic: জিনতত্ত্ব | time_ratio: 0.200 | switches: 0 | confidence: sure | correct: true | difficulty: medium", "label": "MASTERY"}
+{"text": "Topic: Excretion | time_ratio: 1.000 | switches: 1 | confidence: unsure | correct: false | difficulty: easy", "label": "GROWTH_AREA"}
+{"text": "Topic: হরমোন | time_ratio: 0.484 | switches: 0 | confidence: sure | correct: true | difficulty: easy", "label": "MASTERY"}
+{"text": "Topic: Human Physiology | time_ratio: 0.680 | switches: 2 | confidence: guessing | correct: true | difficulty: hard", "label": "TRUST_GAP"}
+{"text": "Topic: প্রজনন | time_ratio: 0.936 | switches: 1 | confidence: unsure | correct: false | difficulty: hard", "label": "GROWTH_AREA"}
+{"text": "Topic: Animal Behavior | time_ratio: 0.271 | switches: 0 | confidence: sure | correct: true | difficulty: medium", "label": "MASTERY"}
+{"text": "Topic: মানব শরীরতত্ত্ব | time_ratio: 0.507 | switches: 2 | confidence: guessing | correct: true | difficulty: medium", "label": "TRUST_GAP"}
+{"text": "Topic: জীবের বৃদ্ধি ও বিকাশ | time_ratio: 1.000 | switches: 1 | confidence: unsure | correct: false | difficulty: hard", "label": "GROWTH_AREA"}
+{"text": "Topic: প্রাণিবৈচিত্র্য | time_ratio: 0.128 | switches: 2 | confidence: sure | correct: false | difficulty: easy", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: জৈব অণু | time_ratio: 0.749 | switches: 2 | confidence: guessing | correct: false | difficulty: medium", "label": "GROWTH_AREA"}
+{"text": "Topic: স্নায়ুতন্ত্র | time_ratio: 0.808 | switches: 0 | confidence: unsure | correct: true | difficulty: medium", "label": "TRUST_GAP"}
+{"text": "Topic: জিনতত্ত্ব | time_ratio: 0.269 | switches: 0 | confidence: sure | correct: false | difficulty: medium", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: Photosynthesis | time_ratio: 0.186 | switches: 2 | confidence: guessing | correct: false | difficulty: hard", "label": "GROWTH_AREA"}
+{"text": "Topic: Nucleic Acids | time_ratio: 0.386 | switches: 0 | confidence: sure | correct: true | difficulty: medium", "label": "MASTERY"}
+{"text": "Topic: Nervous System | time_ratio: 0.415 | switches: 0 | confidence: sure | correct: true | difficulty: hard", "label": "MASTERY"}
+{"text": "Topic: প্রাণী আচরণ | time_ratio: 0.563 | switches: 0 | confidence: sure | correct: false | difficulty: hard", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: Animal Behavior | time_ratio: 0.895 | switches: 2 | confidence: unsure | correct: false | difficulty: hard", "label": "GROWTH_AREA"}
+{"text": "Topic: কোষ বিভাজন | time_ratio: 1.000 | switches: 2 | confidence: guessing | correct: false | difficulty: medium", "label": "GROWTH_AREA"}
+{"text": "Topic: Microbiology | time_ratio: 0.713 | switches: 1 | confidence: unsure | correct: true | difficulty: medium", "label": "TRUST_GAP"}
+{"text": "Topic: Human Physiology | time_ratio: 0.437 | switches: 2 | confidence: guessing | correct: false | difficulty: medium", "label": "GROWTH_AREA"}
+{"text": "Topic: শ্বসন | time_ratio: 0.258 | switches: 0 | confidence: sure | correct: false | difficulty: hard", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: Blood & Circulation | time_ratio: 0.263 | switches: 0 | confidence: sure | correct: false | difficulty: hard", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: রক্ত ও সংবহন | time_ratio: 0.558 | switches: 1 | confidence: guessing | correct: false | difficulty: hard", "label": "GROWTH_AREA"}
+{"text": "Topic: জীবের বৃদ্ধি ও বিকাশ | time_ratio: 0.250 | switches: 0 | confidence: sure | correct: false | difficulty: medium", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: অণুজীববিজ্ঞান | time_ratio: 0.081 | switches: 0 | confidence: sure | correct: true | difficulty: hard", "label": "MASTERY"}
+{"text": "Topic: বংশগতি | time_ratio: 0.576 | switches: 3 | confidence: unsure | correct: true | difficulty: easy", "label": "TRUST_GAP"}
+{"text": "Topic: রক্ত ও সংবহন | time_ratio: 0.996 | switches: 3 | confidence: unsure | correct: false | difficulty: medium", "label": "GROWTH_AREA"}
+{"text": "Topic: মানব শরীরতত্ত্ব | time_ratio: 0.385 | switches: 0 | confidence: sure | correct: true | difficulty: medium", "label": "MASTERY"}
+{"text": "Topic: Biomolecules | time_ratio: 0.132 | switches: 0 | confidence: sure | correct: true | difficulty: easy", "label": "MASTERY"}
+{"text": "Topic: এনজাইম | time_ratio: 0.278 | switches: 0 | confidence: sure | correct: true | difficulty: medium", "label": "MASTERY"}
+{"text": "Topic: সালোকসংশ্লেষণ | time_ratio: 0.258 | switches: 0 | confidence: sure | correct: false | difficulty: hard", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: Photosynthesis | time_ratio: 0.222 | switches: 0 | confidence: sure | correct: true | difficulty: medium", "label": "MASTERY"}
+{"text": "Topic: Microbiology | time_ratio: 0.237 | switches: 0 | confidence: sure | correct: true | difficulty: medium", "label": "MASTERY"}
+{"text": "Topic: জৈব অণু | time_ratio: 0.812 | switches: 3 | confidence: unsure | correct: true | difficulty: medium", "label": "TRUST_GAP"}
+{"text": "Topic: শ্বসন | time_ratio: 0.600 | switches: 2 | confidence: unsure | correct: true | difficulty: medium", "label": "TRUST_GAP"}
+{"text": "Topic: Excretion | time_ratio: 0.652 | switches: 1 | confidence: unsure | correct: true | difficulty: medium", "label": "TRUST_GAP"}
+{"text": "Topic: Excretion | time_ratio: 0.776 | switches: 3 | confidence: guessing | correct: false | difficulty: easy", "label": "GROWTH_AREA"}
+{"text": "Topic: অণুজীববিজ্ঞান | time_ratio: 0.577 | switches: 2 | confidence: unsure | correct: true | difficulty: hard", "label": "TRUST_GAP"}
+{"text": "Topic: Enzymes | time_ratio: 0.468 | switches: 2 | confidence: unsure | correct: true | difficulty: easy", "label": "TRUST_GAP"}
+{"text": "Topic: Growth & Development | time_ratio: 0.770 | switches: 2 | confidence: guessing | correct: true | difficulty: easy", "label": "TRUST_GAP"}
+{"text": "Topic: প্রজনন | time_ratio: 0.719 | switches: 2 | confidence: unsure | correct: false | difficulty: hard", "label": "GROWTH_AREA"}
+{"text": "Topic: Nervous System | time_ratio: 0.570 | switches: 0 | confidence: sure | correct: false | difficulty: medium", "label": "PRIORITY_FOCUS"}
+{"text": "Topic: রক্ত ও সংবহন | time_ratio: 0.750 | switches: 1 | confidence: guessing | correct: true | difficulty: medium", "label": "TRUST_GAP"}
+{"text": "Topic: স্নায়ুতন্ত্র | time_ratio: 0.260 | switches: 0 | confidence: sure | correct: false | difficulty: medium", "label": "PRIORITY_FOCUS"}

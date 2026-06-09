@@ -1,0 +1,4042 @@
+[
+  {
+    "input": "Question: কোষ বিভাজনের সময় কোষপ্লেট তৈরিতে সাহায্য করে কোন অঙ্গাণু?\nStudent answered: লাইসোসোম (Wrong)\nCorrect answer: গলগি বস্তু\nBehavioral state: PRIORITY_FOCUS\nChapter: কোষ ও কোষ অঙ্গাণু\n",
+    "q_bn": "কোষ বিভাজনের সময় কোষপ্লেট তৈরিতে সাহায্য করে কোন অঙ্গাণু?",
+    "student_ans": "লাইসোসোম",
+    "correct_ans": "গলগি বস্তু",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "কোষ ও কোষ অঙ্গাণু",
+    "is_correct": false,
+    "q_id": "BIO-C01-2025-001"
+  },
+  {
+    "input": "Question: কোষ বিভাজনের সময় কোষপ্লেট তৈরিতে সাহায্য করে কোন অঙ্গাণু?\nStudent answered: মাইক্রোটিবিউলস (Wrong)\nCorrect answer: গলগি বস্তু\nBehavioral state: GROWTH_AREA\nChapter: কোষ ও কোষ অঙ্গাণু\n",
+    "q_bn": "কোষ বিভাজনের সময় কোষপ্লেট তৈরিতে সাহায্য করে কোন অঙ্গাণু?",
+    "student_ans": "মাইক্রোটিবিউলস",
+    "correct_ans": "গলগি বস্তু",
+    "state": "GROWTH_AREA",
+    "chapter": "কোষ ও কোষ অঙ্গাণু",
+    "is_correct": false,
+    "q_id": "BIO-C01-2025-001"
+  },
+  {
+    "input": "Question: রেসিট্রিকশন এনজাইমের কাজ-\nStudent answered: DNA খণ্ডকে জোড়া লাগানো (Wrong)\nCorrect answer: কাঙ্খিত DNA কে নির্দিষ্ট স্থানে ছেদন করা\nBehavioral state: PRIORITY_FOCUS\nChapter: জিনতত্ত্ব ও বিবর্তন\n",
+    "q_bn": "রেসিট্রিকশন এনজাইমের কাজ-",
+    "student_ans": "DNA খণ্ডকে জোড়া লাগানো",
+    "correct_ans": "কাঙ্খিত DNA কে নির্দিষ্ট স্থানে ছেদন করা",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "জিনতত্ত্ব ও বিবর্তন",
+    "is_correct": false,
+    "q_id": "BIO-C03-2025-001"
+  },
+  {
+    "input": "Question: রেসিট্রিকশন এনজাইমের কাজ-\nStudent answered: নির্দিষ্ট জীবে রিকম্বিমেন্ট DNA প্রবেশ করানো (Wrong)\nCorrect answer: কাঙ্খিত DNA কে নির্দিষ্ট স্থানে ছেদন করা\nBehavioral state: GROWTH_AREA\nChapter: জিনতত্ত্ব ও বিবর্তন\n",
+    "q_bn": "রেসিট্রিকশন এনজাইমের কাজ-",
+    "student_ans": "নির্দিষ্ট জীবে রিকম্বিমেন্ট DNA প্রবেশ করানো",
+    "correct_ans": "কাঙ্খিত DNA কে নির্দিষ্ট স্থানে ছেদন করা",
+    "state": "GROWTH_AREA",
+    "chapter": "জিনতত্ত্ব ও বিবর্তন",
+    "is_correct": false,
+    "q_id": "BIO-C03-2025-001"
+  },
+  {
+    "input": "Question: অ্যাসপটিক সার্জারির জনক কে?\nStudent answered: রবার্ট কক (Wrong)\nCorrect answer: জোসেফ লিস্টার\nBehavioral state: PRIORITY_FOCUS\nChapter: বিবিধ ও সাধারণ\n",
+    "q_bn": "অ্যাসপটিক সার্জারির জনক কে?",
+    "student_ans": "রবার্ট কক",
+    "correct_ans": "জোসেফ লিস্টার",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "বিবিধ ও সাধারণ",
+    "is_correct": false,
+    "q_id": "BIO-C19-2025-001"
+  },
+  {
+    "input": "Question: অ্যাসপটিক সার্জারির জনক কে?\nStudent answered: লুই পাস্তুর (Wrong)\nCorrect answer: জোসেফ লিস্টার\nBehavioral state: GROWTH_AREA\nChapter: বিবিধ ও সাধারণ\n",
+    "q_bn": "অ্যাসপটিক সার্জারির জনক কে?",
+    "student_ans": "লুই পাস্তুর",
+    "correct_ans": "জোসেফ লিস্টার",
+    "state": "GROWTH_AREA",
+    "chapter": "বিবিধ ও সাধারণ",
+    "is_correct": false,
+    "q_id": "BIO-C19-2025-001"
+  },
+  {
+    "input": "Question: নিচের কোন ধরনের উদ্ভিদকে ইপিমেরালাস (Ephemerals) বলা হয়?\nStudent answered: লবণ সহনশীল (Wrong)\nCorrect answer: খরা এড়ানো\nBehavioral state: PRIORITY_FOCUS\nChapter: উদ্ভিদবিজ্ঞান ও শ্রেণীবিন্যাস\n",
+    "q_bn": "নিচের কোন ধরনের উদ্ভিদকে ইপিমেরালাস (Ephemerals) বলা হয়?",
+    "student_ans": "লবণ সহনশীল",
+    "correct_ans": "খরা এড়ানো",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "উদ্ভিদবিজ্ঞান ও শ্রেণীবিন্যাস",
+    "is_correct": false,
+    "q_id": "BIO-C06-2025-001"
+  },
+  {
+    "input": "Question: নিচের কোন ধরনের উদ্ভিদকে ইপিমেরালাস (Ephemerals) বলা হয়?\nStudent answered: খরা প্রতিরোধী (Wrong)\nCorrect answer: খরা এড়ানো\nBehavioral state: GROWTH_AREA\nChapter: উদ্ভিদবিজ্ঞান ও শ্রেণীবিন্যাস\n",
+    "q_bn": "নিচের কোন ধরনের উদ্ভিদকে ইপিমেরালাস (Ephemerals) বলা হয়?",
+    "student_ans": "খরা প্রতিরোধী",
+    "correct_ans": "খরা এড়ানো",
+    "state": "GROWTH_AREA",
+    "chapter": "উদ্ভিদবিজ্ঞান ও শ্রেণীবিন্যাস",
+    "is_correct": false,
+    "q_id": "BIO-C06-2025-001"
+  },
+  {
+    "input": "Question: নিচের কোনটিতে হাইড্রার বহিঃকোষীয় পরিপাক সংঘটিত হয়?\nStudent answered: গ্যাসট্রোডার্মিস (Wrong)\nCorrect answer: সিলেন্টেরন\nBehavioral state: PRIORITY_FOCUS\nChapter: প্রাণীর বিভিন্নতা\n",
+    "q_bn": "নিচের কোনটিতে হাইড্রার বহিঃকোষীয় পরিপাক সংঘটিত হয়?",
+    "student_ans": "গ্যাসট্রোডার্মিস",
+    "correct_ans": "সিলেন্টেরন",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "প্রাণীর বিভিন্নতা",
+    "is_correct": false,
+    "q_id": "BIO-C08-2025-001"
+  },
+  {
+    "input": "Question: নিচের কোনটিতে হাইড্রার বহিঃকোষীয় পরিপাক সংঘটিত হয়?\nStudent answered: হাইপোস্টোম (Wrong)\nCorrect answer: সিলেন্টেরন\nBehavioral state: GROWTH_AREA\nChapter: প্রাণীর বিভিন্নতা\n",
+    "q_bn": "নিচের কোনটিতে হাইড্রার বহিঃকোষীয় পরিপাক সংঘটিত হয়?",
+    "student_ans": "হাইপোস্টোম",
+    "correct_ans": "সিলেন্টেরন",
+    "state": "GROWTH_AREA",
+    "chapter": "প্রাণীর বিভিন্নতা",
+    "is_correct": false,
+    "q_id": "BIO-C08-2025-001"
+  },
+  {
+    "input": "Question: মস্তিষ্কের কোন অংশ মানুষের ক্ষুধা নিয়ন্ত্রণ করে?\nStudent answered: সেরিবেলাম (Wrong)\nCorrect answer: হাইপোথ্যালামাস\nBehavioral state: PRIORITY_FOCUS\nChapter: স্নায়ুতন্ত্র\n",
+    "q_bn": "মস্তিষ্কের কোন অংশ মানুষের ক্ষুধা নিয়ন্ত্রণ করে?",
+    "student_ans": "সেরিবেলাম",
+    "correct_ans": "হাইপোথ্যালামাস",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "স্নায়ুতন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C13-2025-001"
+  },
+  {
+    "input": "Question: মস্তিষ্কের কোন অংশ মানুষের ক্ষুধা নিয়ন্ত্রণ করে?\nStudent answered: সেরিব্রাম (Wrong)\nCorrect answer: হাইপোথ্যালামাস\nBehavioral state: GROWTH_AREA\nChapter: স্নায়ুতন্ত্র\n",
+    "q_bn": "মস্তিষ্কের কোন অংশ মানুষের ক্ষুধা নিয়ন্ত্রণ করে?",
+    "student_ans": "সেরিব্রাম",
+    "correct_ans": "হাইপোথ্যালামাস",
+    "state": "GROWTH_AREA",
+    "chapter": "স্নায়ুতন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C13-2025-001"
+  },
+  {
+    "input": "Question: নিচের কোনটি মালভেসি গোত্রের উদ্ভিদ?\nStudent answered: চোরকাটা (Wrong)\nCorrect answer: কার্পাস তুলা\nBehavioral state: GROWTH_AREA\nChapter: উদ্ভিদবিজ্ঞান ও শ্রেণীবিন্যাস\n",
+    "q_bn": "নিচের কোনটি মালভেসি গোত্রের উদ্ভিদ?",
+    "student_ans": "চোরকাটা",
+    "correct_ans": "কার্পাস তুলা",
+    "state": "GROWTH_AREA",
+    "chapter": "উদ্ভিদবিজ্ঞান ও শ্রেণীবিন্যাস",
+    "is_correct": false,
+    "q_id": "BIO-C06-2025-002"
+  },
+  {
+    "input": "Question: নিচের কোনটিকে সংক্রমণক্ষম পূর্ণাঙ্গ ভাইরাস কণা বলে?\nStudent answered: প্রিয়ন (Wrong)\nCorrect answer: ভিরিয়ন\nBehavioral state: PRIORITY_FOCUS\nChapter: অণুজীব ও ভাইরাস\n",
+    "q_bn": "নিচের কোনটিকে সংক্রমণক্ষম পূর্ণাঙ্গ ভাইরাস কণা বলে?",
+    "student_ans": "প্রিয়ন",
+    "correct_ans": "ভিরিয়ন",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "অণুজীব ও ভাইরাস",
+    "is_correct": false,
+    "q_id": "BIO-C05-2025-001"
+  },
+  {
+    "input": "Question: নিচের কোনটিকে সংক্রমণক্ষম পূর্ণাঙ্গ ভাইরাস কণা বলে?\nStudent answered: ভিরয়েড (Wrong)\nCorrect answer: ভিরিয়ন\nBehavioral state: GROWTH_AREA\nChapter: অণুজীব ও ভাইরাস\n",
+    "q_bn": "নিচের কোনটিকে সংক্রমণক্ষম পূর্ণাঙ্গ ভাইরাস কণা বলে?",
+    "student_ans": "ভিরয়েড",
+    "correct_ans": "ভিরিয়ন",
+    "state": "GROWTH_AREA",
+    "chapter": "অণুজীব ও ভাইরাস",
+    "is_correct": false,
+    "q_id": "BIO-C05-2025-001"
+  },
+  {
+    "input": "Question: ডেলটয়েট টিউবারসিটি কোন অস্থির অংশ?\nStudent answered: আলনা (Ulna) (Wrong)\nCorrect answer: হিউমেরাস (Humerus)\nBehavioral state: PRIORITY_FOCUS\nChapter: কঙ্কাল ও পেশী তন্ত্র\n",
+    "q_bn": "ডেলটয়েট টিউবারসিটি কোন অস্থির অংশ?",
+    "student_ans": "আলনা (Ulna)",
+    "correct_ans": "হিউমেরাস (Humerus)",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "কঙ্কাল ও পেশী তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C15-2025-001"
+  },
+  {
+    "input": "Question: ডেলটয়েট টিউবারসিটি কোন অস্থির অংশ?\nStudent answered: রেডিয়াস (Radius) (Wrong)\nCorrect answer: হিউমেরাস (Humerus)\nBehavioral state: GROWTH_AREA\nChapter: কঙ্কাল ও পেশী তন্ত্র\n",
+    "q_bn": "ডেলটয়েট টিউবারসিটি কোন অস্থির অংশ?",
+    "student_ans": "রেডিয়াস (Radius)",
+    "correct_ans": "হিউমেরাস (Humerus)",
+    "state": "GROWTH_AREA",
+    "chapter": "কঙ্কাল ও পেশী তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C15-2025-001"
+  },
+  {
+    "input": "Question: ফুসফসের আবরণকে কী বলে?\nStudent answered: গ্লিসন ক্যাপসুল (Wrong)\nCorrect answer: প্লিоরা\nBehavioral state: PRIORITY_FOCUS\nChapter: শ্বসন তন্ত্র\n",
+    "q_bn": "ফুসফসের আবরণকে কী বলে?",
+    "student_ans": "গ্লিসন ক্যাপসুল",
+    "correct_ans": "প্লিоরা",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "শ্বসন তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C11-2025-001"
+  },
+  {
+    "input": "Question: ফুসফসের আবরণকে কী বলে?\nStudent answered: পেরিকার্ডিয়াম (Wrong)\nCorrect answer: প্লিоরা\nBehavioral state: GROWTH_AREA\nChapter: শ্বসন তন্ত্র\n",
+    "q_bn": "ফুসফসের আবরণকে কী বলে?",
+    "student_ans": "পেরিকার্ডিয়াম",
+    "correct_ans": "প্লিоরা",
+    "state": "GROWTH_AREA",
+    "chapter": "শ্বসন তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C11-2025-001"
+  },
+  {
+    "input": "Question: ক্রেবস চক্র কোষের কোথায় সংঘটিত হয়?\nStudent answered: রাইবোসোম (Wrong)\nCorrect answer: মাইটোকন্ড্রিয়া\nBehavioral state: PRIORITY_FOCUS\nChapter: কোষ ও কোষ অঙ্গাণু\n",
+    "q_bn": "ক্রেবস চক্র কোষের কোথায় সংঘটিত হয়?",
+    "student_ans": "রাইবোসোম",
+    "correct_ans": "মাইটোকন্ড্রিয়া",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "কোষ ও কোষ অঙ্গাণু",
+    "is_correct": false,
+    "q_id": "BIO-C01-2025-002"
+  },
+  {
+    "input": "Question: ক্রেবস চক্র কোষের কোথায় সংঘটিত হয়?\nStudent answered: সাইটোপ্লাজম (Wrong)\nCorrect answer: মাইটোকন্ড্রিয়া\nBehavioral state: GROWTH_AREA\nChapter: কোষ ও কোষ অঙ্গাণু\n",
+    "q_bn": "ক্রেবস চক্র কোষের কোথায় সংঘটিত হয়?",
+    "student_ans": "সাইটোপ্লাজম",
+    "correct_ans": "মাইটোকন্ড্রিয়া",
+    "state": "GROWTH_AREA",
+    "chapter": "কোষ ও কোষ অঙ্গাণু",
+    "is_correct": false,
+    "q_id": "BIO-C01-2025-002"
+  },
+  {
+    "input": "Question: নিচের কোনটি মানুষের দ্বিতীয় মস্তিষ্ক হিসাবে পরিচিত?\nStudent answered: মেডুলা অবলংগটা (Medulla oblongata) (Wrong)\nCorrect answer: এন্টোরিক স্নায়ুতন্ত্র (Enteric nervous system)\nBehavioral state: PRIORITY_FOCUS\nChapter: স্নায়ুতন্ত্র\n",
+    "q_bn": "নিচের কোনটি মানুষের দ্বিতীয় মস্তিষ্ক হিসাবে পরিচিত?",
+    "student_ans": "মেডুলা অবলংগটা (Medulla oblongata)",
+    "correct_ans": "এন্টোরিক স্নায়ুতন্ত্র (Enteric nervous system)",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "স্নায়ুতন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C13-2025-002"
+  },
+  {
+    "input": "Question: নিচের কোনটি মানুষের দ্বিতীয় মস্তিষ্ক হিসাবে পরিচিত?\nStudent answered: এক্সট্রিনসিক স্নায়ুতন্ত্র (Extrinsic nervous system) (Wrong)\nCorrect answer: এন্টোরিক স্নায়ুতন্ত্র (Enteric nervous system)\nBehavioral state: GROWTH_AREA\nChapter: স্নায়ুতন্ত্র\n",
+    "q_bn": "নিচের কোনটি মানুষের দ্বিতীয় মস্তিষ্ক হিসাবে পরিচিত?",
+    "student_ans": "এক্সট্রিনসিক স্নায়ুতন্ত্র (Extrinsic nervous system)",
+    "correct_ans": "এন্টোরিক স্নায়ুতন্ত্র (Enteric nervous system)",
+    "state": "GROWTH_AREA",
+    "chapter": "স্নায়ুতন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C13-2025-002"
+  },
+  {
+    "input": "Question: জেনেটিক ইঞ্জিনিয়ারিং এর প্রধান জীবজ সাধনী (living tool) হলো-\nStudent answered: এফ-ফ্যাক্টর (Wrong)\nCorrect answer: প্লাজমিড\nBehavioral state: PRIORITY_FOCUS\nChapter: জীবপ্রযুক্তি\n",
+    "q_bn": "জেনেটিক ইঞ্জিনিয়ারিং এর প্রধান জীবজ সাধনী (living tool) হলো-",
+    "student_ans": "এফ-ফ্যাক্টর",
+    "correct_ans": "প্লাজমিড",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "জীবপ্রযুক্তি",
+    "is_correct": false,
+    "q_id": "BIO-C04-2025-001"
+  },
+  {
+    "input": "Question: জেনেটিক ইঞ্জিনিয়ারিং এর প্রধান জীবজ সাধনী (living tool) হলো-\nStudent answered: রেস্ট্রিকশন এনজাইম (Wrong)\nCorrect answer: প্লাজমিড\nBehavioral state: GROWTH_AREA\nChapter: জীবপ্রযুক্তি\n",
+    "q_bn": "জেনেটিক ইঞ্জিনিয়ারিং এর প্রধান জীবজ সাধনী (living tool) হলো-",
+    "student_ans": "রেস্ট্রিকশন এনজাইম",
+    "correct_ans": "প্লাজমিড",
+    "state": "GROWTH_AREA",
+    "chapter": "জীবপ্রযুক্তি",
+    "is_correct": false,
+    "q_id": "BIO-C04-2025-001"
+  },
+  {
+    "input": "Question: নিচের কোন হরমোনটি মানুষের ডিম্বাশয় থেকে নিঃসৃত হয়?\nStudent answered: অক্সিটোসিন (Wrong)\nCorrect answer: প্রোজেস্টেরন\nBehavioral state: PRIORITY_FOCUS\nChapter: অন্তঃক্ষরা তন্ত্র\n",
+    "q_bn": "নিচের কোন হরমোনটি মানুষের ডিম্বাশয় থেকে নিঃসৃত হয়?",
+    "student_ans": "অক্সিটোসিন",
+    "correct_ans": "প্রোজেস্টেরন",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "অন্তঃক্ষরা তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C14-2025-001"
+  },
+  {
+    "input": "Question: নিচের কোন হরমোনটি মানুষের ডিম্বাশয় থেকে নিঃসৃত হয়?\nStudent answered: প্রোল্যাকটিন (Wrong)\nCorrect answer: প্রোজেস্টেরন\nBehavioral state: GROWTH_AREA\nChapter: অন্তঃক্ষরা তন্ত্র\n",
+    "q_bn": "নিচের কোন হরমোনটি মানুষের ডিম্বাশয় থেকে নিঃসৃত হয়?",
+    "student_ans": "প্রোল্যাকটিন",
+    "correct_ans": "প্রোজেস্টেরন",
+    "state": "GROWTH_AREA",
+    "chapter": "অন্তঃক্ষরা তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C14-2025-001"
+  },
+  {
+    "input": "Question: কোন চক্রের মাধ্যমে যকৃতে ইউরিয়া তৈরি হয়?\nStudent answered: কার্বন চক্র (Wrong)\nCorrect answer: অরনিথিন চক্র\nBehavioral state: PRIORITY_FOCUS\nChapter: রেচন তন্ত্র\n",
+    "q_bn": "কোন চক্রের মাধ্যমে যকৃতে ইউরিয়া তৈরি হয়?",
+    "student_ans": "কার্বন চক্র",
+    "correct_ans": "অরনিথিন চক্র",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "রেচন তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C12-2025-001"
+  },
+  {
+    "input": "Question: কোন চক্রের মাধ্যমে যকৃতে ইউরিয়া তৈরি হয়?\nStudent answered: নাইট্রোজেন চক্র (Wrong)\nCorrect answer: অরনিথিন চক্র\nBehavioral state: GROWTH_AREA\nChapter: রেচন তন্ত্র\n",
+    "q_bn": "কোন চক্রের মাধ্যমে যকৃতে ইউরিয়া তৈরি হয়?",
+    "student_ans": "নাইট্রোজেন চক্র",
+    "correct_ans": "অরনিথিন চক্র",
+    "state": "GROWTH_AREA",
+    "chapter": "রেচন তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C12-2025-001"
+  },
+  {
+    "input": "Question: ভাইরাসের বংশবৃদ্ধিতে পোষকের কোন অঙ্গাণুতে প্রোটিন তৈরি হয়?\nStudent answered: মাইটোকন্ড্রিয়া (Wrong)\nCorrect answer: রাইবোসোম\nBehavioral state: PRIORITY_FOCUS\nChapter: কোষ ও কোষ অঙ্গাণু\n",
+    "q_bn": "ভাইরাসের বংশবৃদ্ধিতে পোষকের কোন অঙ্গাণুতে প্রোটিন তৈরি হয়?",
+    "student_ans": "মাইটোকন্ড্রিয়া",
+    "correct_ans": "রাইবোসোম",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "কোষ ও কোষ অঙ্গাণু",
+    "is_correct": false,
+    "q_id": "BIO-C01-2025-003"
+  },
+  {
+    "input": "Question: ভাইরাসের বংশবৃদ্ধিতে পোষকের কোন অঙ্গাণুতে প্রোটিন তৈরি হয়?\nStudent answered: কোষ আবরণী (Wrong)\nCorrect answer: রাইবোসোম\nBehavioral state: GROWTH_AREA\nChapter: কোষ ও কোষ অঙ্গাণু\n",
+    "q_bn": "ভাইরাসের বংশবৃদ্ধিতে পোষকের কোন অঙ্গাণুতে প্রোটিন তৈরি হয়?",
+    "student_ans": "কোষ আবরণী",
+    "correct_ans": "রাইবোসোম",
+    "state": "GROWTH_AREA",
+    "chapter": "কোষ ও কোষ অঙ্গাণু",
+    "is_correct": false,
+    "q_id": "BIO-C01-2025-003"
+  },
+  {
+    "input": "Question: কোন কোষ হেপারিন তৈরী ও নিঃসরণ করে?\nStudent answered: নিউট্রোফিল (Wrong)\nCorrect answer: বেসোফিল\nBehavioral state: PRIORITY_FOCUS\nChapter: সংবহন তন্ত্র\n",
+    "q_bn": "কোন কোষ হেপারিন তৈরী ও নিঃসরণ করে?",
+    "student_ans": "নিউট্রোফিল",
+    "correct_ans": "বেসোফিল",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "সংবহন তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C10-2025-001"
+  },
+  {
+    "input": "Question: কোন কোষ হেপারিন তৈরী ও নিঃসরণ করে?\nStudent answered: মনোসাইট (Wrong)\nCorrect answer: বেসোফিল\nBehavioral state: GROWTH_AREA\nChapter: সংবহন তন্ত্র\n",
+    "q_bn": "কোন কোষ হেপারিন তৈরী ও নিঃসরণ করে?",
+    "student_ans": "মনোসাইট",
+    "correct_ans": "বেসোফিল",
+    "state": "GROWTH_AREA",
+    "chapter": "সংবহন তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C10-2025-001"
+  },
+  {
+    "input": "Question: ডাক্টাস ভেইরি রুই মাছের কোন তন্ত্রের অংশ?\nStudent answered: ধমনিতন্ত্র (Wrong)\nCorrect answer: শিরাতন্ত্র\nBehavioral state: PRIORITY_FOCUS\nChapter: সংবহন তন্ত্র\n",
+    "q_bn": "ডাক্টাস ভেইরি রুই মাছের কোন তন্ত্রের অংশ?",
+    "student_ans": "ধমনিতন্ত্র",
+    "correct_ans": "শিরাতন্ত্র",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "সংবহন তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C10-2025-002"
+  },
+  {
+    "input": "Question: ডাক্টাস ভেইরি রুই মাছের কোন তন্ত্রের অংশ?\nStudent answered: শ্বসনতন্ত্র (Wrong)\nCorrect answer: শিরাতন্ত্র\nBehavioral state: GROWTH_AREA\nChapter: সংবহন তন্ত্র\n",
+    "q_bn": "ডাক্টাস ভেইরি রুই মাছের কোন তন্ত্রের অংশ?",
+    "student_ans": "শ্বসনতন্ত্র",
+    "correct_ans": "শিরাতন্ত্র",
+    "state": "GROWTH_AREA",
+    "chapter": "সংবহন তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C10-2025-002"
+  },
+  {
+    "input": "Question: মানবদেহে কোন ধাতুর আধিক্যে হিমোগ্লোবিনের উৎপাদন বাধাপ্রাপ্ত হয়?\nStudent answered: ক্রোমিয়াম (Cr) (Wrong)\nCorrect answer: ক্যাডমিয়াম (Cd)\nBehavioral state: PRIORITY_FOCUS\nChapter: সংবহন তন্ত্র\n",
+    "q_bn": "মানবদেহে কোন ধাতুর আধিক্যে হিমোগ্লোবিনের উৎপাদন বাধাপ্রাপ্ত হয়?",
+    "student_ans": "ক্রোমিয়াম (Cr)",
+    "correct_ans": "ক্যাডমিয়াম (Cd)",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "সংবহন তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C10-2025-003"
+  },
+  {
+    "input": "Question: মানবদেহে কোন ধাতুর আধিক্যে হিমোগ্লোবিনের উৎপাদন বাধাপ্রাপ্ত হয়?\nStudent answered: আয়রন (Fe) (Wrong)\nCorrect answer: ক্যাডমিয়াম (Cd)\nBehavioral state: GROWTH_AREA\nChapter: সংবহন তন্ত্র\n",
+    "q_bn": "মানবদেহে কোন ধাতুর আধিক্যে হিমোগ্লোবিনের উৎপাদন বাধাপ্রাপ্ত হয়?",
+    "student_ans": "আয়রন (Fe)",
+    "correct_ans": "ক্যাডমিয়াম (Cd)",
+    "state": "GROWTH_AREA",
+    "chapter": "সংবহন তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C10-2025-003"
+  },
+  {
+    "input": "Question: জেনেটিকভাবে নিয়ন্ত্রিত কোষের মৃত্যুকে কি বলে?\nStudent answered: অ্যাপোফাইসিস (Wrong)\nCorrect answer: অ্যাপোপটসিস\nBehavioral state: PRIORITY_FOCUS\nChapter: বিবিধ ও সাধারণ\n",
+    "q_bn": "জেনেটিকভাবে নিয়ন্ত্রিত কোষের মৃত্যুকে কি বলে?",
+    "student_ans": "অ্যাপোফাইসিস",
+    "correct_ans": "অ্যাপোপটসিস",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "বিবিধ ও সাধারণ",
+    "is_correct": false,
+    "q_id": "BIO-C19-2025-002"
+  },
+  {
+    "input": "Question: জেনেটিকভাবে নিয়ন্ত্রিত কোষের মৃত্যুকে কি বলে?\nStudent answered: মেটাস্টোসিস (Wrong)\nCorrect answer: অ্যাপোপটসিস\nBehavioral state: GROWTH_AREA\nChapter: বিবিধ ও সাধারণ\n",
+    "q_bn": "জেনেটিকভাবে নিয়ন্ত্রিত কোষের মৃত্যুকে কি বলে?",
+    "student_ans": "মেটাস্টোসিস",
+    "correct_ans": "অ্যাপোপটসিস",
+    "state": "GROWTH_AREA",
+    "chapter": "বিবিধ ও সাধারণ",
+    "is_correct": false,
+    "q_id": "BIO-C19-2025-002"
+  },
+  {
+    "input": "Question: নিচের কোন এনজাইমটি জমাট রক্ত গলাতে ব্যবহৃত হয়?\nStudent answered: ইউরিয়েজ (Wrong)\nCorrect answer: ইউরোবাইলেজ (ইউরোকাইনেজ)\nBehavioral state: PRIORITY_FOCUS\nChapter: পরিপাক তন্ত্র\n",
+    "q_bn": "নিচের কোন এনজাইমটি জমাট রক্ত গলাতে ব্যবহৃত হয়?",
+    "student_ans": "ইউরিয়েজ",
+    "correct_ans": "ইউরোবাইলেজ (ইউরোকাইনেজ)",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "পরিপাক তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C09-2025-001"
+  },
+  {
+    "input": "Question: নিচের কোন এনজাইমটি জমাট রক্ত গলাতে ব্যবহৃত হয়?\nStudent answered: ট্রিপসিন (Wrong)\nCorrect answer: ইউরোবাইলেজ (ইউরোকাইনেজ)\nBehavioral state: GROWTH_AREA\nChapter: পরিপাক তন্ত্র\n",
+    "q_bn": "নিচের কোন এনজাইমটি জমাট রক্ত গলাতে ব্যবহৃত হয়?",
+    "student_ans": "ট্রিপসিন",
+    "correct_ans": "ইউরোবাইলেজ (ইউরোকাইনেজ)",
+    "state": "GROWTH_AREA",
+    "chapter": "পরিপাক তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C09-2025-001"
+  },
+  {
+    "input": "Question: নিচের কোনটি নাইট্রোজেনবিহীন পদার্থ?\nStudent answered: ক্রিয়েটিনিন (Wrong)\nCorrect answer: ল্যাকটিক অ্যাসিড\nBehavioral state: PRIORITY_FOCUS\nChapter: রেচন তন্ত্র\n",
+    "q_bn": "নিচের কোনটি নাইট্রোজেনবিহীন পদার্থ?",
+    "student_ans": "ক্রিয়েটিনিন",
+    "correct_ans": "ল্যাকটিক অ্যাসিড",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "রেচন তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C12-2025-002"
+  },
+  {
+    "input": "Question: নিচের কোনটি নাইট্রোজেনবিহীন পদার্থ?\nStudent answered: ইউরিয়া (Wrong)\nCorrect answer: ল্যাকটিক অ্যাসিড\nBehavioral state: GROWTH_AREA\nChapter: রেচন তন্ত্র\n",
+    "q_bn": "নিচের কোনটি নাইট্রোজেনবিহীন পদার্থ?",
+    "student_ans": "ইউরিয়া",
+    "correct_ans": "ল্যাকটিক অ্যাসিড",
+    "state": "GROWTH_AREA",
+    "chapter": "রেচন তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C12-2025-002"
+  },
+  {
+    "input": "Question: শর্করা জাতীয় খাদ্য থেকে লিভারে সঞ্চিত উপাদান কোনটি?\nStudent answered: ফ্রুক্টোজ (Wrong)\nCorrect answer: গ্লাইকোজেন\nBehavioral state: PRIORITY_FOCUS\nChapter: পরিপাক তন্ত্র\n",
+    "q_bn": "শর্করা জাতীয় খাদ্য থেকে লিভারে সঞ্চিত উপাদান কোনটি?",
+    "student_ans": "ফ্রুক্টোজ",
+    "correct_ans": "গ্লাইকোজেন",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "পরিপাক তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C09-2025-002"
+  },
+  {
+    "input": "Question: শর্করা জাতীয় খাদ্য থেকে লিভারে সঞ্চিত উপাদান কোনটি?\nStudent answered: সুক্রোজ (Wrong)\nCorrect answer: গ্লাইকোজেন\nBehavioral state: GROWTH_AREA\nChapter: পরিপাক তন্ত্র\n",
+    "q_bn": "শর্করা জাতীয় খাদ্য থেকে লিভারে সঞ্চিত উপাদান কোনটি?",
+    "student_ans": "সুক্রোজ",
+    "correct_ans": "গ্লাইকোজেন",
+    "state": "GROWTH_AREA",
+    "chapter": "পরিপাক তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C09-2025-002"
+  },
+  {
+    "input": "Question: পূর্ণবয়স্ক সুস্থ মানুষের দুই বৃক্কে প্রতি মিনিটে মোট রক্ত সঞ্চালনের পরিমাণ—\nStudent answered: ২৫০ মি.লি. (Wrong)\nCorrect answer: ১২০০ মি.লি.\nBehavioral state: PRIORITY_FOCUS\nChapter: সংবহন তন্ত্র\n",
+    "q_bn": "পূর্ণবয়স্ক সুস্থ মানুষের দুই বৃক্কে প্রতি মিনিটে মোট রক্ত সঞ্চালনের পরিমাণ—",
+    "student_ans": "২৫০ মি.লি.",
+    "correct_ans": "১২০০ মি.লি.",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "সংবহন তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C10-2025-004"
+  },
+  {
+    "input": "Question: পূর্ণবয়স্ক সুস্থ মানুষের দুই বৃক্কে প্রতি মিনিটে মোট রক্ত সঞ্চালনের পরিমাণ—\nStudent answered: ৩৭৫ মি.লি. (Wrong)\nCorrect answer: ১২০০ মি.লি.\nBehavioral state: GROWTH_AREA\nChapter: সংবহন তন্ত্র\n",
+    "q_bn": "পূর্ণবয়স্ক সুস্থ মানুষের দুই বৃক্কে প্রতি মিনিটে মোট রক্ত সঞ্চালনের পরিমাণ—",
+    "student_ans": "৩৭৫ মি.লি.",
+    "correct_ans": "১২০০ মি.লি.",
+    "state": "GROWTH_AREA",
+    "chapter": "সংবহন তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C10-2025-004"
+  },
+  {
+    "input": "Question: কোনটির উপস্থিতিতে স্নেহ পদার্থের ইমালসিফিকেশন হয়?\nStudent answered: হরমোন (Wrong)\nCorrect answer: এনজাইম\nBehavioral state: PRIORITY_FOCUS\nChapter: পরিপাক তন্ত্র\n",
+    "q_bn": "কোনটির উপস্থিতিতে স্নেহ পদার্থের ইমালসিফিকেশন হয়?",
+    "student_ans": "হরমোন",
+    "correct_ans": "এনজাইম",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "পরিপাক তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C09-2025-003"
+  },
+  {
+    "input": "Question: কোনটির উপস্থিতিতে স্নেহ পদার্থের ইমালসিফিকেশন হয়?\nStudent answered: বাইল সল্ট (পিত্ত লবণ) (Wrong)\nCorrect answer: এনজাইম\nBehavioral state: GROWTH_AREA\nChapter: পরিপাক তন্ত্র\n",
+    "q_bn": "কোনটির উপস্থিতিতে স্নেহ পদার্থের ইমালসিফিকেশন হয়?",
+    "student_ans": "বাইল সল্ট (পিত্ত লবণ)",
+    "correct_ans": "এনজাইম",
+    "state": "GROWTH_AREA",
+    "chapter": "পরিপাক তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C09-2025-003"
+  },
+  {
+    "input": "Question: রিকম্বিনেন্ট DNA টেকনোলজির মাধ্যমে সৃষ্ট উদ্ভিদকে কি বলে?\nStudent answered: সাইব্রিড (Cybrid) (Wrong)\nCorrect answer: ট্রান্সজেনিক (Transgenic)\nBehavioral state: PRIORITY_FOCUS\nChapter: জিনতত্ত্ব ও বিবর্তন\n",
+    "q_bn": "রিকম্বিনেন্ট DNA টেকনোলজির মাধ্যমে সৃষ্ট উদ্ভিদকে কি বলে?",
+    "student_ans": "সাইব্রিড (Cybrid)",
+    "correct_ans": "ট্রান্সজেনিক (Transgenic)",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "জিনতত্ত্ব ও বিবর্তন",
+    "is_correct": false,
+    "q_id": "BIO-C03-2025-002"
+  },
+  {
+    "input": "Question: রিকম্বিনেন্ট DNA টেকনোলজির মাধ্যমে সৃষ্ট উদ্ভিদকে কি বলে?\nStudent answered: হাইব্রিড (Hybrid) (Wrong)\nCorrect answer: ট্রান্সজেনিক (Transgenic)\nBehavioral state: GROWTH_AREA\nChapter: জিনতত্ত্ব ও বিবর্তন\n",
+    "q_bn": "রিকম্বিনেন্ট DNA টেকনোলজির মাধ্যমে সৃষ্ট উদ্ভিদকে কি বলে?",
+    "student_ans": "হাইব্রিড (Hybrid)",
+    "correct_ans": "ট্রান্সজেনিক (Transgenic)",
+    "state": "GROWTH_AREA",
+    "chapter": "জিনতত্ত্ব ও বিবর্তন",
+    "is_correct": false,
+    "q_id": "BIO-C03-2025-002"
+  },
+  {
+    "input": "Question: কোষ বিভাজনের সময় কোষপ্লেট তৈরিতে সাহায্য করে কোন অঙ্গাণু?\nStudent answered: মাইক্রোটিবিউলস (Microtubules) (Wrong)\nCorrect answer: গলগি বস্তু (Golgi bodies)\nBehavioral state: PRIORITY_FOCUS\nChapter: কোষ ও কোষ অঙ্গাণু\n",
+    "q_bn": "কোষ বিভাজনের সময় কোষপ্লেট তৈরিতে সাহায্য করে কোন অঙ্গাণু?",
+    "student_ans": "মাইক্রোটিবিউলস (Microtubules)",
+    "correct_ans": "গলগি বস্তু (Golgi bodies)",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "কোষ ও কোষ অঙ্গাণু",
+    "is_correct": false,
+    "q_id": "BIO-C01-2024-004"
+  },
+  {
+    "input": "Question: কোষ বিভাজনের সময় কোষপ্লেট তৈরিতে সাহায্য করে কোন অঙ্গাণু?\nStudent answered: রাইবোসোম (Ribosomes) (Wrong)\nCorrect answer: গলগি বস্তু (Golgi bodies)\nBehavioral state: GROWTH_AREA\nChapter: কোষ ও কোষ অঙ্গাণু\n",
+    "q_bn": "কোষ বিভাজনের সময় কোষপ্লেট তৈরিতে সাহায্য করে কোন অঙ্গাণু?",
+    "student_ans": "রাইবোসোম (Ribosomes)",
+    "correct_ans": "গলগি বস্তু (Golgi bodies)",
+    "state": "GROWTH_AREA",
+    "chapter": "কোষ ও কোষ অঙ্গাণু",
+    "is_correct": false,
+    "q_id": "BIO-C01-2024-004"
+  },
+  {
+    "input": "Question: রেসট্রিকশন এনজাইমের কাজ-\nStudent answered: DNA খণ্ডকে জোড়া লাগানো (Wrong)\nCorrect answer: কাঙ্ক্ষিত DNA কে নির্দিষ্ট স্থানে ছেদন করা\nBehavioral state: PRIORITY_FOCUS\nChapter: জিনতত্ত্ব ও বিবর্তন\n",
+    "q_bn": "রেসট্রিকশন এনজাইমের কাজ-",
+    "student_ans": "DNA খণ্ডকে জোড়া লাগানো",
+    "correct_ans": "কাঙ্ক্ষিত DNA কে নির্দিষ্ট স্থানে ছেদন করা",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "জিনতত্ত্ব ও বিবর্তন",
+    "is_correct": false,
+    "q_id": "BIO-C03-2024-003"
+  },
+  {
+    "input": "Question: রেসট্রিকশন এনজাইমের কাজ-\nStudent answered: নির্দিষ্ট জীবে রিকম্বিনেন্ট DNA প্রবেশ করানো (Wrong)\nCorrect answer: কাঙ্ক্ষিত DNA কে নির্দিষ্ট স্থানে ছেদন করা\nBehavioral state: GROWTH_AREA\nChapter: জিনতত্ত্ব ও বিবর্তন\n",
+    "q_bn": "রেসট্রিকশন এনজাইমের কাজ-",
+    "student_ans": "নির্দিষ্ট জীবে রিকম্বিনেন্ট DNA প্রবেশ করানো",
+    "correct_ans": "কাঙ্ক্ষিত DNA কে নির্দিষ্ট স্থানে ছেদন করা",
+    "state": "GROWTH_AREA",
+    "chapter": "জিনতত্ত্ব ও বিবর্তন",
+    "is_correct": false,
+    "q_id": "BIO-C03-2024-003"
+  },
+  {
+    "input": "Question: নিচের কোন ধরনের উদ্ভিদকে ইপিমেরালস (Ephemerals) বলা হয়?\nStudent answered: লবণ সহনশীল (Wrong)\nCorrect answer: খরা এড়ানো\nBehavioral state: PRIORITY_FOCUS\nChapter: বিবিধ ও সাধারণ\n",
+    "q_bn": "নিচের কোন ধরনের উদ্ভিদকে ইপিমেরালস (Ephemerals) বলা হয়?",
+    "student_ans": "লবণ সহনশীল",
+    "correct_ans": "খরা এড়ানো",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "বিবিধ ও সাধারণ",
+    "is_correct": false,
+    "q_id": "BIO-C19-2024-003"
+  },
+  {
+    "input": "Question: নিচের কোন ধরনের উদ্ভিদকে ইপিমেরালস (Ephemerals) বলা হয়?\nStudent answered: খরা প্রতিরোধী (Wrong)\nCorrect answer: খরা এড়ানো\nBehavioral state: GROWTH_AREA\nChapter: বিবিধ ও সাধারণ\n",
+    "q_bn": "নিচের কোন ধরনের উদ্ভিদকে ইপিমেরালস (Ephemerals) বলা হয়?",
+    "student_ans": "খরা প্রতিরোধী",
+    "correct_ans": "খরা এড়ানো",
+    "state": "GROWTH_AREA",
+    "chapter": "বিবিধ ও সাধারণ",
+    "is_correct": false,
+    "q_id": "BIO-C19-2024-003"
+  },
+  {
+    "input": "Question: নিচের কোনটিকে সংক্রমণক্ষম পূর্ণাঙ্গ ভাইরাস কণা বলে?\nStudent answered: ভিরয়েড (Wrong)\nCorrect answer: ভিরিয়ন\nBehavioral state: PRIORITY_FOCUS\nChapter: অণুজীব ও ভাইরাস\n",
+    "q_bn": "নিচের কোনটিকে সংক্রমণক্ষম পূর্ণাঙ্গ ভাইরাস কণা বলে?",
+    "student_ans": "ভিরয়েড",
+    "correct_ans": "ভিরিয়ন",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "অণুজীব ও ভাইরাস",
+    "is_correct": false,
+    "q_id": "BIO-C05-2024-002"
+  },
+  {
+    "input": "Question: নিচের কোনটিকে সংক্রমণক্ষম পূর্ণাঙ্গ ভাইরাস কণা বলে?\nStudent answered: নিউক্লিওক্যাপসিড (Wrong)\nCorrect answer: ভিরিয়ন\nBehavioral state: GROWTH_AREA\nChapter: অণুজীব ও ভাইরাস\n",
+    "q_bn": "নিচের কোনটিকে সংক্রমণক্ষম পূর্ণাঙ্গ ভাইরাস কণা বলে?",
+    "student_ans": "নিউক্লিওক্যাপসিড",
+    "correct_ans": "ভিরিয়ন",
+    "state": "GROWTH_AREA",
+    "chapter": "অণুজীব ও ভাইরাস",
+    "is_correct": false,
+    "q_id": "BIO-C05-2024-002"
+  },
+  {
+    "input": "Question: ক্রেবস চক্র কোথায় সংঘটিত হয়?\nStudent answered: রাইবোসোম (Wrong)\nCorrect answer: মাইটোকন্ড্রিয়া\nBehavioral state: PRIORITY_FOCUS\nChapter: কোষ ও কোষ অঙ্গাণু\n",
+    "q_bn": "ক্রেবস চক্র কোথায় সংঘটিত হয়?",
+    "student_ans": "রাইবোসোম",
+    "correct_ans": "মাইটোকন্ড্রিয়া",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "কোষ ও কোষ অঙ্গাণু",
+    "is_correct": false,
+    "q_id": "BIO-C01-2024-005"
+  },
+  {
+    "input": "Question: ক্রেবস চক্র কোথায় সংঘটিত হয়?\nStudent answered: ক্লোরোপ্লাস্ট (Wrong)\nCorrect answer: মাইটোকন্ড্রিয়া\nBehavioral state: GROWTH_AREA\nChapter: কোষ ও কোষ অঙ্গাণু\n",
+    "q_bn": "ক্রেবস চক্র কোথায় সংঘটিত হয়?",
+    "student_ans": "ক্লোরোপ্লাস্ট",
+    "correct_ans": "মাইটোকন্ড্রিয়া",
+    "state": "GROWTH_AREA",
+    "chapter": "কোষ ও কোষ অঙ্গাণু",
+    "is_correct": false,
+    "q_id": "BIO-C01-2024-005"
+  },
+  {
+    "input": "Question: জেনেটিক ইঞ্জিনিয়ারিং এর প্রধান জীবজ সাধনী (living tool) হলো-\nStudent answered: রেসট্রিকশন এনজাইম (Wrong)\nCorrect answer: প্লাজমিড\nBehavioral state: PRIORITY_FOCUS\nChapter: জীবপ্রযুক্তি\n",
+    "q_bn": "জেনেটিক ইঞ্জিনিয়ারিং এর প্রধান জীবজ সাধনী (living tool) হলো-",
+    "student_ans": "রেসট্রিকশন এনজাইম",
+    "correct_ans": "প্লাজমিড",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "জীবপ্রযুক্তি",
+    "is_correct": false,
+    "q_id": "BIO-C04-2024-003"
+  },
+  {
+    "input": "Question: জেনেটিক ইঞ্জিনিয়ারিং এর প্রধান জীবজ সাধনী (living tool) হলো-\nStudent answered: এক্সপ্লান্ট (Wrong)\nCorrect answer: প্লাজমিড\nBehavioral state: GROWTH_AREA\nChapter: জীবপ্রযুক্তি\n",
+    "q_bn": "জেনেটিক ইঞ্জিনিয়ারিং এর প্রধান জীবজ সাধনী (living tool) হলো-",
+    "student_ans": "এক্সপ্লান্ট",
+    "correct_ans": "প্লাজমিড",
+    "state": "GROWTH_AREA",
+    "chapter": "জীবপ্রযুক্তি",
+    "is_correct": false,
+    "q_id": "BIO-C04-2024-003"
+  },
+  {
+    "input": "Question: ভাইরাসের বংশবৃদ্ধিতে পোষকের কোন অঙ্গাণুতে প্রোটিন তৈরি হয়?\nStudent answered: কোষ আবরণী (Wrong)\nCorrect answer: রাইবোসোম\nBehavioral state: PRIORITY_FOCUS\nChapter: কোষ ও কোষ অঙ্গাণু\n",
+    "q_bn": "ভাইরাসের বংশবৃদ্ধিতে পোষকের কোন অঙ্গাণুতে প্রোটিন তৈরি হয়?",
+    "student_ans": "কোষ আবরণী",
+    "correct_ans": "রাইবোসোম",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "কোষ ও কোষ অঙ্গাণু",
+    "is_correct": false,
+    "q_id": "BIO-C01-2024-006"
+  },
+  {
+    "input": "Question: ভাইরাসের বংশবৃদ্ধিতে পোষকের কোন অঙ্গাণুতে প্রোটিন তৈরি হয়?\nStudent answered: মাইটোকন্ড্রিয়া (Wrong)\nCorrect answer: রাইবোসোম\nBehavioral state: GROWTH_AREA\nChapter: কোষ ও কোষ অঙ্গাণু\n",
+    "q_bn": "ভাইরাসের বংশবৃদ্ধিতে পোষকের কোন অঙ্গাণুতে প্রোটিন তৈরি হয়?",
+    "student_ans": "মাইটোকন্ড্রিয়া",
+    "correct_ans": "রাইবোসোম",
+    "state": "GROWTH_AREA",
+    "chapter": "কোষ ও কোষ অঙ্গাণু",
+    "is_correct": false,
+    "q_id": "BIO-C01-2024-006"
+  },
+  {
+    "input": "Question: জেনেটিকভাবে নিয়ন্ত্রিত কোষের মৃত্যুকে কী বলে?\nStudent answered: মেটাস্টেসিস (Wrong)\nCorrect answer: অ্যাপোপটসিস\nBehavioral state: PRIORITY_FOCUS\nChapter: বিবিধ ও সাধারণ\n",
+    "q_bn": "জেনেটিকভাবে নিয়ন্ত্রিত কোষের মৃত্যুকে কী বলে?",
+    "student_ans": "মেটাস্টেসিস",
+    "correct_ans": "অ্যাপোপটসিস",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "বিবিধ ও সাধারণ",
+    "is_correct": false,
+    "q_id": "BIO-C19-2024-004"
+  },
+  {
+    "input": "Question: জেনেটিকভাবে নিয়ন্ত্রিত কোষের মৃত্যুকে কী বলে?\nStudent answered: অ্যাপোফাইসিস (Wrong)\nCorrect answer: অ্যাপোপটসিস\nBehavioral state: GROWTH_AREA\nChapter: বিবিধ ও সাধারণ\n",
+    "q_bn": "জেনেটিকভাবে নিয়ন্ত্রিত কোষের মৃত্যুকে কী বলে?",
+    "student_ans": "অ্যাপোফাইসিস",
+    "correct_ans": "অ্যাপোপটসিস",
+    "state": "GROWTH_AREA",
+    "chapter": "বিবিধ ও সাধারণ",
+    "is_correct": false,
+    "q_id": "BIO-C19-2024-004"
+  },
+  {
+    "input": "Question: নিচের কোন এনজাইমটি জমাট রক্ত গলাতে ব্যবহৃত হয়?\nStudent answered: ইউরিয়েড (Wrong)\nCorrect answer: ইউরোবাইলেজ\nBehavioral state: PRIORITY_FOCUS\nChapter: পরিপাক তন্ত্র\n",
+    "q_bn": "নিচের কোন এনজাইমটি জমাট রক্ত গলাতে ব্যবহৃত হয়?",
+    "student_ans": "ইউরিয়েড",
+    "correct_ans": "ইউরোবাইলেজ",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "পরিপাক তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C09-2024-004"
+  },
+  {
+    "input": "Question: নিচের কোন এনজাইমটি জমাট রক্ত গলাতে ব্যবহৃত হয়?\nStudent answered: পেপসিন (Wrong)\nCorrect answer: ইউরোবাইলেজ\nBehavioral state: GROWTH_AREA\nChapter: পরিপাক তন্ত্র\n",
+    "q_bn": "নিচের কোন এনজাইমটি জমাট রক্ত গলাতে ব্যবহৃত হয়?",
+    "student_ans": "পেপসিন",
+    "correct_ans": "ইউরোবাইলেজ",
+    "state": "GROWTH_AREA",
+    "chapter": "পরিপাক তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C09-2024-004"
+  },
+  {
+    "input": "Question: রিকম্বিনেট DNA টেকনলজির মাধ্যমে সৃষ্ট উদ্ভিদকে কী বলে?\nStudent answered: সাইব্রিড (Cybrid) (Wrong)\nCorrect answer: ট্রান্সজেনিক (Transgenic)\nBehavioral state: PRIORITY_FOCUS\nChapter: জিনতত্ত্ব ও বিবর্তন\n",
+    "q_bn": "রিকম্বিনেট DNA টেকনলজির মাধ্যমে সৃষ্ট উদ্ভিদকে কী বলে?",
+    "student_ans": "সাইব্রিড (Cybrid)",
+    "correct_ans": "ট্রান্সজেনিক (Transgenic)",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "জিনতত্ত্ব ও বিবর্তন",
+    "is_correct": false,
+    "q_id": "BIO-C03-2024-004"
+  },
+  {
+    "input": "Question: রিকম্বিনেট DNA টেকনলজির মাধ্যমে সৃষ্ট উদ্ভিদকে কী বলে?\nStudent answered: ক্লোন (Clone) (Wrong)\nCorrect answer: ট্রান্সজেনিক (Transgenic)\nBehavioral state: GROWTH_AREA\nChapter: জিনতত্ত্ব ও বিবর্তন\n",
+    "q_bn": "রিকম্বিনেট DNA টেকনলজির মাধ্যমে সৃষ্ট উদ্ভিদকে কী বলে?",
+    "student_ans": "ক্লোন (Clone)",
+    "correct_ans": "ট্রান্সজেনিক (Transgenic)",
+    "state": "GROWTH_AREA",
+    "chapter": "জিনতত্ত্ব ও বিবর্তন",
+    "is_correct": false,
+    "q_id": "BIO-C03-2024-004"
+  },
+  {
+    "input": "Question: নিচের কোনটিতে হাইড্রার বহিঃকোষীয় পরিপাক সংঘটিত হয়?\nStudent answered: হাইপোস্টোম (Wrong)\nCorrect answer: সিলেন্টেরন\nBehavioral state: PRIORITY_FOCUS\nChapter: প্রাণীর বিভিন্নতা\n",
+    "q_bn": "নিচের কোনটিতে হাইড্রার বহিঃকোষীয় পরিপাক সংঘটিত হয়?",
+    "student_ans": "হাইপোস্টোম",
+    "correct_ans": "সিলেন্টেরন",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "প্রাণীর বিভিন্নতা",
+    "is_correct": false,
+    "q_id": "BIO-C08-2024-002"
+  },
+  {
+    "input": "Question: নিচের কোনটিতে হাইড্রার বহিঃকোষীয় পরিপাক সংঘটিত হয়?\nStudent answered: কর্ষিকা (Wrong)\nCorrect answer: সিলেন্টেরন\nBehavioral state: GROWTH_AREA\nChapter: প্রাণীর বিভিন্নতা\n",
+    "q_bn": "নিচের কোনটিতে হাইড্রার বহিঃকোষীয় পরিপাক সংঘটিত হয়?",
+    "student_ans": "কর্ষিকা",
+    "correct_ans": "সিলেন্টেরন",
+    "state": "GROWTH_AREA",
+    "chapter": "প্রাণীর বিভিন্নতা",
+    "is_correct": false,
+    "q_id": "BIO-C08-2024-002"
+  },
+  {
+    "input": "Question: মস্তিষ্কের কোন অংশ মানুষের ক্ষুধা নিয়ন্ত্রণ করে?\nStudent answered: সেরিবেলাম (Wrong)\nCorrect answer: হাইপোথ্যালামাস\nBehavioral state: PRIORITY_FOCUS\nChapter: স্নায়ুতন্ত্র\n",
+    "q_bn": "মস্তিষ্কের কোন অংশ মানুষের ক্ষুধা নিয়ন্ত্রণ করে?",
+    "student_ans": "সেরিবেলাম",
+    "correct_ans": "হাইপোথ্যালামাস",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "স্নায়ুতন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C13-2024-003"
+  },
+  {
+    "input": "Question: মস্তিষ্কের কোন অংশ মানুষের ক্ষুধা নিয়ন্ত্রণ করে?\nStudent answered: সেরিব্রাম (Wrong)\nCorrect answer: হাইপোথ্যালামাস\nBehavioral state: GROWTH_AREA\nChapter: স্নায়ুতন্ত্র\n",
+    "q_bn": "মস্তিষ্কের কোন অংশ মানুষের ক্ষুধা নিয়ন্ত্রণ করে?",
+    "student_ans": "সেরিব্রাম",
+    "correct_ans": "হাইপোথ্যালামাস",
+    "state": "GROWTH_AREA",
+    "chapter": "স্নায়ুতন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C13-2024-003"
+  },
+  {
+    "input": "Question: ডেলটয়েড টিউবারসিটি কোন অস্থির অংশ?\nStudent answered: স্ক্যাপুলা (Scapula) (Wrong)\nCorrect answer: হিউমেরাস (Humerus)\nBehavioral state: PRIORITY_FOCUS\nChapter: কঙ্কাল ও পেশী তন্ত্র\n",
+    "q_bn": "ডেলটয়েড টিউবারসিটি কোন অস্থির অংশ?",
+    "student_ans": "স্ক্যাপুলা (Scapula)",
+    "correct_ans": "হিউমেরাস (Humerus)",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "কঙ্কাল ও পেশী তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C15-2024-002"
+  },
+  {
+    "input": "Question: ডেলটয়েড টিউবারসিটি কোন অস্থির অংশ?\nStudent answered: রেডিয়াস (Radius) (Wrong)\nCorrect answer: হিউমেরাস (Humerus)\nBehavioral state: GROWTH_AREA\nChapter: কঙ্কাল ও পেশী তন্ত্র\n",
+    "q_bn": "ডেলটয়েড টিউবারসিটি কোন অস্থির অংশ?",
+    "student_ans": "রেডিয়াস (Radius)",
+    "correct_ans": "হিউমেরাস (Humerus)",
+    "state": "GROWTH_AREA",
+    "chapter": "কঙ্কাল ও পেশী তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C15-2024-002"
+  },
+  {
+    "input": "Question: ফুসফুসের আবরণকে কী বলে?\nStudent answered: পেরিকার্ডিয়াম (Wrong)\nCorrect answer: প্লিওরা\nBehavioral state: PRIORITY_FOCUS\nChapter: শ্বসন তন্ত্র\n",
+    "q_bn": "ফুসফুসের আবরণকে কী বলে?",
+    "student_ans": "পেরিকার্ডিয়াম",
+    "correct_ans": "প্লিওরা",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "শ্বসন তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C11-2024-002"
+  },
+  {
+    "input": "Question: ফুসফুসের আবরণকে কী বলে?\nStudent answered: ডায়াফ্রাম (Wrong)\nCorrect answer: প্লিওরা\nBehavioral state: GROWTH_AREA\nChapter: শ্বসন তন্ত্র\n",
+    "q_bn": "ফুসফুসের আবরণকে কী বলে?",
+    "student_ans": "ডায়াফ্রাম",
+    "correct_ans": "প্লিওরা",
+    "state": "GROWTH_AREA",
+    "chapter": "শ্বসন তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C11-2024-002"
+  },
+  {
+    "input": "Question: নিচের কোনটি মানুষের দ্বিতীয় মস্তিষ্ক হিসাবে পরিচিত?\nStudent answered: এক্সট্রিনসিক স্নায়ুতন্ত্র (Extrinsic nervous system) (Wrong)\nCorrect answer: এন্টেরিক স্নায়ুতন্ত্র (Enteric nervous system)\nBehavioral state: PRIORITY_FOCUS\nChapter: স্নায়ুতন্ত্র\n",
+    "q_bn": "নিচের কোনটি মানুষের দ্বিতীয় মস্তিষ্ক হিসাবে পরিচিত?",
+    "student_ans": "এক্সট্রিনসিক স্নায়ুতন্ত্র (Extrinsic nervous system)",
+    "correct_ans": "এন্টেরিক স্নায়ুতন্ত্র (Enteric nervous system)",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "স্নায়ুতন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C13-2024-004"
+  },
+  {
+    "input": "Question: নিচের কোনটি মানুষের দ্বিতীয় মস্তিষ্ক হিসাবে পরিচিত?\nStudent answered: মেডুলা অবলংগটা (Medulla oblongata) (Wrong)\nCorrect answer: এন্টেরিক স্নায়ুতন্ত্র (Enteric nervous system)\nBehavioral state: GROWTH_AREA\nChapter: স্নায়ুতন্ত্র\n",
+    "q_bn": "নিচের কোনটি মানুষের দ্বিতীয় মস্তিষ্ক হিসাবে পরিচিত?",
+    "student_ans": "মেডুলা অবলংগটা (Medulla oblongata)",
+    "correct_ans": "এন্টেরিক স্নায়ুতন্ত্র (Enteric nervous system)",
+    "state": "GROWTH_AREA",
+    "chapter": "স্নায়ুতন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C13-2024-004"
+  },
+  {
+    "input": "Question: কানের কোন অংশ ভারসাম্য রক্ষায় কাজ করে?\nStudent answered: টিমপেনিক পর্দা (Wrong)\nCorrect answer: ভেস্টিবুলার যন্ত্র\nBehavioral state: PRIORITY_FOCUS\nChapter: ইন্দ্রিয় তন্ত্র\n",
+    "q_bn": "কানের কোন অংশ ভারসাম্য রক্ষায় কাজ করে?",
+    "student_ans": "টিমপেনিক পর্দা",
+    "correct_ans": "ভেস্টিবুলার যন্ত্র",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "ইন্দ্রিয় তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C18-2024-002"
+  },
+  {
+    "input": "Question: কানের কোন অংশ ভারসাম্য রক্ষায় কাজ করে?\nStudent answered: ককলিয়ার বডি (Wrong)\nCorrect answer: ভেস্টিবুলার যন্ত্র\nBehavioral state: GROWTH_AREA\nChapter: ইন্দ্রিয় তন্ত্র\n",
+    "q_bn": "কানের কোন অংশ ভারসাম্য রক্ষায় কাজ করে?",
+    "student_ans": "ককলিয়ার বডি",
+    "correct_ans": "ভেস্টিবুলার যন্ত্র",
+    "state": "GROWTH_AREA",
+    "chapter": "ইন্দ্রিয় তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C18-2024-002"
+  },
+  {
+    "input": "Question: নিচের কোন হরমোনটি মানুষের ডিম্বাশয় থেকে নিঃসৃত হয়?\nStudent answered: প্রোল্যাকটিন (Wrong)\nCorrect answer: প্রজেস্টেরন\nBehavioral state: PRIORITY_FOCUS\nChapter: অন্তঃক্ষরা তন্ত্র\n",
+    "q_bn": "নিচের কোন হরমোনটি মানুষের ডিম্বাশয় থেকে নিঃসৃত হয়?",
+    "student_ans": "প্রোল্যাকটিন",
+    "correct_ans": "প্রজেস্টেরন",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "অন্তঃক্ষরা তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C14-2024-002"
+  },
+  {
+    "input": "Question: নিচের কোন হরমোনটি মানুষের ডিম্বাশয় থেকে নিঃসৃত হয়?\nStudent answered: থাইরোনিন (Wrong)\nCorrect answer: প্রজেস্টেরন\nBehavioral state: GROWTH_AREA\nChapter: অন্তঃক্ষরা তন্ত্র\n",
+    "q_bn": "নিচের কোন হরমোনটি মানুষের ডিম্বাশয় থেকে নিঃসৃত হয়?",
+    "student_ans": "থাইরোনিন",
+    "correct_ans": "প্রজেস্টেরন",
+    "state": "GROWTH_AREA",
+    "chapter": "অন্তঃক্ষরা তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C14-2024-002"
+  },
+  {
+    "input": "Question: কোন চক্রের মাধ্যমে যকৃতে ইউরিয়া তৈরি হয়?\nStudent answered: ক্রেবস চক্র (Wrong)\nCorrect answer: অরনিথিন চক্র\nBehavioral state: PRIORITY_FOCUS\nChapter: উদ্ভিদ শরীরতত্ত্ব\n",
+    "q_bn": "কোন চক্রের মাধ্যমে যকৃতে ইউরিয়া তৈরি হয়?",
+    "student_ans": "ক্রেবস চক্র",
+    "correct_ans": "অরনিথিন চক্র",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "উদ্ভিদ শরীরতত্ত্ব",
+    "is_correct": false,
+    "q_id": "BIO-C07-2024-001"
+  },
+  {
+    "input": "Question: কোন চক্রের মাধ্যমে যকৃতে ইউরিয়া তৈরি হয়?\nStudent answered: নাইট্রোজেন চক্র (Wrong)\nCorrect answer: অরনিথিন চক্র\nBehavioral state: GROWTH_AREA\nChapter: উদ্ভিদ শরীরতত্ত্ব\n",
+    "q_bn": "কোন চক্রের মাধ্যমে যকৃতে ইউরিয়া তৈরি হয়?",
+    "student_ans": "নাইট্রোজেন চক্র",
+    "correct_ans": "অরনিথিন চক্র",
+    "state": "GROWTH_AREA",
+    "chapter": "উদ্ভিদ শরীরতত্ত্ব",
+    "is_correct": false,
+    "q_id": "BIO-C07-2024-001"
+  },
+  {
+    "input": "Question: কোন কোষ হেপারিন তৈরি ও নিঃসরণ করে?\nStudent answered: লিম্ফোসাইট (Wrong)\nCorrect answer: বেসোফিল\nBehavioral state: PRIORITY_FOCUS\nChapter: সংবহন তন্ত্র\n",
+    "q_bn": "কোন কোষ হেপারিন তৈরি ও নিঃসরণ করে?",
+    "student_ans": "লিম্ফোসাইট",
+    "correct_ans": "বেসোফিল",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "সংবহন তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C10-2024-005"
+  },
+  {
+    "input": "Question: কোন কোষ হেপারিন তৈরি ও নিঃসরণ করে?\nStudent answered: মনোসাইট (Wrong)\nCorrect answer: বেসোফিল\nBehavioral state: GROWTH_AREA\nChapter: সংবহন তন্ত্র\n",
+    "q_bn": "কোন কোষ হেপারিন তৈরি ও নিঃসরণ করে?",
+    "student_ans": "মনোসাইট",
+    "correct_ans": "বেসোফিল",
+    "state": "GROWTH_AREA",
+    "chapter": "সংবহন তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C10-2024-005"
+  },
+  {
+    "input": "Question: ডাক্টাস ক্যুভেইরি রুই মাছের কোন তন্ত্রের অংশ?\nStudent answered: রেচনতন্ত্র (Wrong)\nCorrect answer: শিরাতন্ত্র\nBehavioral state: PRIORITY_FOCUS\nChapter: সংবহন তন্ত্র\n",
+    "q_bn": "ডাক্টাস ক্যুভেইরি রুই মাছের কোন তন্ত্রের অংশ?",
+    "student_ans": "রেচনতন্ত্র",
+    "correct_ans": "শিরাতন্ত্র",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "সংবহন তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C10-2024-006"
+  },
+  {
+    "input": "Question: ডাক্টাস ক্যুভেইরি রুই মাছের কোন তন্ত্রের অংশ?\nStudent answered: ধমনিতন্ত্র (Wrong)\nCorrect answer: শিরাতন্ত্র\nBehavioral state: GROWTH_AREA\nChapter: সংবহন তন্ত্র\n",
+    "q_bn": "ডাক্টাস ক্যুভেইরি রুই মাছের কোন তন্ত্রের অংশ?",
+    "student_ans": "ধমনিতন্ত্র",
+    "correct_ans": "শিরাতন্ত্র",
+    "state": "GROWTH_AREA",
+    "chapter": "সংবহন তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C10-2024-006"
+  },
+  {
+    "input": "Question: পূর্ণবয়স্ক সুস্থ মানুষের দুই বৃক্কে প্রতি মিনিটে মোট রক্ত সঞ্চালনের পরিমাণ-\nStudent answered: ১৫০ মিঃ লিঃ (Wrong)\nCorrect answer: ১২০০ মিঃ লিঃ\nBehavioral state: PRIORITY_FOCUS\nChapter: সংবহন তন্ত্র\n",
+    "q_bn": "পূর্ণবয়স্ক সুস্থ মানুষের দুই বৃক্কে প্রতি মিনিটে মোট রক্ত সঞ্চালনের পরিমাণ-",
+    "student_ans": "১৫০ মিঃ লিঃ",
+    "correct_ans": "১২০০ মিঃ লিঃ",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "সংবহন তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C10-2024-007"
+  },
+  {
+    "input": "Question: পূর্ণবয়স্ক সুস্থ মানুষের দুই বৃক্কে প্রতি মিনিটে মোট রক্ত সঞ্চালনের পরিমাণ-\nStudent answered: ৩৭৫ মিঃ লিঃ (Wrong)\nCorrect answer: ১২০০ মিঃ লিঃ\nBehavioral state: GROWTH_AREA\nChapter: সংবহন তন্ত্র\n",
+    "q_bn": "পূর্ণবয়স্ক সুস্থ মানুষের দুই বৃক্কে প্রতি মিনিটে মোট রক্ত সঞ্চালনের পরিমাণ-",
+    "student_ans": "৩৭৫ মিঃ লিঃ",
+    "correct_ans": "১২০০ মিঃ লিঃ",
+    "state": "GROWTH_AREA",
+    "chapter": "সংবহন তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C10-2024-007"
+  },
+  {
+    "input": "Question: কোনটির উপস্থিতিতে স্নেহ পদার্থের ইমালসিফিকেশন হয়?\nStudent answered: ভিটামিন (Wrong)\nCorrect answer: বাইল সল্ট\nBehavioral state: PRIORITY_FOCUS\nChapter: পরিপাক তন্ত্র\n",
+    "q_bn": "কোনটির উপস্থিতিতে স্নেহ পদার্থের ইমালসিফিকেশন হয়?",
+    "student_ans": "ভিটামিন",
+    "correct_ans": "বাইল সল্ট",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "পরিপাক তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C09-2024-005"
+  },
+  {
+    "input": "Question: কোনটির উপস্থিতিতে স্নেহ পদার্থের ইমালসিফিকেশন হয়?\nStudent answered: হরমোন (Wrong)\nCorrect answer: বাইল সল্ট\nBehavioral state: GROWTH_AREA\nChapter: পরিপাক তন্ত্র\n",
+    "q_bn": "কোনটির উপস্থিতিতে স্নেহ পদার্থের ইমালসিফিকেশন হয়?",
+    "student_ans": "হরমোন",
+    "correct_ans": "বাইল সল্ট",
+    "state": "GROWTH_AREA",
+    "chapter": "পরিপাক তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C09-2024-005"
+  },
+  {
+    "input": "Question: নিচের কোনটি ক্যান্সার সৃষ্টি করতে পারে?\nStudent answered: ইথানল (C₂H₄OH) (Wrong)\nCorrect answer: ফর্মালডিহাইড (HCHO)\nBehavioral state: PRIORITY_FOCUS\nChapter: বিবিধ ও সাধারণ\n",
+    "q_bn": "নিচের কোনটি ক্যান্সার সৃষ্টি করতে পারে?",
+    "student_ans": "ইথানল (C₂H₄OH)",
+    "correct_ans": "ফর্মালডিহাইড (HCHO)",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "বিবিধ ও সাধারণ",
+    "is_correct": false,
+    "q_id": "BIO-C19-2024-005"
+  },
+  {
+    "input": "Question: নিচের কোনটি ক্যান্সার সৃষ্টি করতে পারে?\nStudent answered: মিথানল (CH₂OH) (Wrong)\nCorrect answer: ফর্মালডিহাইড (HCHO)\nBehavioral state: GROWTH_AREA\nChapter: বিবিধ ও সাধারণ\n",
+    "q_bn": "নিচের কোনটি ক্যান্সার সৃষ্টি করতে পারে?",
+    "student_ans": "মিথানল (CH₂OH)",
+    "correct_ans": "ফর্মালডিহাইড (HCHO)",
+    "state": "GROWTH_AREA",
+    "chapter": "বিবিধ ও সাধারণ",
+    "is_correct": false,
+    "q_id": "BIO-C19-2024-005"
+  },
+  {
+    "input": "Question: মানবদেহে কোন ধাতুর আধিক্যে হিমোগ্লোবিনের উৎপাদন বাঁধাপ্রাপ্ত হয়?\nStudent answered: আয়রন (Fe) (Wrong)\nCorrect answer: ক্রোমিয়াম (Cr)\nBehavioral state: PRIORITY_FOCUS\nChapter: সংবহন তন্ত্র\n",
+    "q_bn": "মানবদেহে কোন ধাতুর আধিক্যে হিমোগ্লোবিনের উৎপাদন বাঁধাপ্রাপ্ত হয়?",
+    "student_ans": "আয়রন (Fe)",
+    "correct_ans": "ক্রোমিয়াম (Cr)",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "সংবহন তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C10-2024-008"
+  },
+  {
+    "input": "Question: মানবদেহে কোন ধাতুর আধিক্যে হিমোগ্লোবিনের উৎপাদন বাঁধাপ্রাপ্ত হয়?\nStudent answered: ক্যাডমিয়াম (Cd) (Wrong)\nCorrect answer: ক্রোমিয়াম (Cr)\nBehavioral state: GROWTH_AREA\nChapter: সংবহন তন্ত্র\n",
+    "q_bn": "মানবদেহে কোন ধাতুর আধিক্যে হিমোগ্লোবিনের উৎপাদন বাঁধাপ্রাপ্ত হয়?",
+    "student_ans": "ক্যাডমিয়াম (Cd)",
+    "correct_ans": "ক্রোমিয়াম (Cr)",
+    "state": "GROWTH_AREA",
+    "chapter": "সংবহন তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C10-2024-008"
+  },
+  {
+    "input": "Question: শর্করা জাতীয় খাদ্য থেকে লিভারে সঞ্চিত উপাদান কোনটি?\nStudent answered: সুক্রোজ (Wrong)\nCorrect answer: গ্লাইকোজেন\nBehavioral state: PRIORITY_FOCUS\nChapter: পরিপাক তন্ত্র\n",
+    "q_bn": "শর্করা জাতীয় খাদ্য থেকে লিভারে সঞ্চিত উপাদান কোনটি?",
+    "student_ans": "সুক্রোজ",
+    "correct_ans": "গ্লাইকোজেন",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "পরিপাক তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C09-2024-006"
+  },
+  {
+    "input": "Question: শর্করা জাতীয় খাদ্য থেকে লিভারে সঞ্চিত উপাদান কোনটি?\nStudent answered: গ্লুকোজ (Wrong)\nCorrect answer: গ্লাইকোজেন\nBehavioral state: GROWTH_AREA\nChapter: পরিপাক তন্ত্র\n",
+    "q_bn": "শর্করা জাতীয় খাদ্য থেকে লিভারে সঞ্চিত উপাদান কোনটি?",
+    "student_ans": "গ্লুকোজ",
+    "correct_ans": "গ্লাইকোজেন",
+    "state": "GROWTH_AREA",
+    "chapter": "পরিপাক তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C09-2024-006"
+  },
+  {
+    "input": "Question: অ্যাসেপটিক সার্জারির জনক কে?\nStudent answered: রবার্ট কক (Wrong)\nCorrect answer: জোসেফ লিস্টার\nBehavioral state: PRIORITY_FOCUS\nChapter: বিবিধ ও সাধারণ\n",
+    "q_bn": "অ্যাসেপটিক সার্জারির জনক কে?",
+    "student_ans": "রবার্ট কক",
+    "correct_ans": "জোসেফ লিস্টার",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "বিবিধ ও সাধারণ",
+    "is_correct": false,
+    "q_id": "BIO-C19-2024-006"
+  },
+  {
+    "input": "Question: অ্যাসেপটিক সার্জারির জনক কে?\nStudent answered: লুই পাস্তুর (Wrong)\nCorrect answer: জোসেফ লিস্টার\nBehavioral state: GROWTH_AREA\nChapter: বিবিধ ও সাধারণ\n",
+    "q_bn": "অ্যাসেপটিক সার্জারির জনক কে?",
+    "student_ans": "লুই পাস্তুর",
+    "correct_ans": "জোসেফ লিস্টার",
+    "state": "GROWTH_AREA",
+    "chapter": "বিবিধ ও সাধারণ",
+    "is_correct": false,
+    "q_id": "BIO-C19-2024-006"
+  },
+  {
+    "input": "Question: কোন ছত্রাক খাদ্য হিসেবে ব্যবহার হয়?\nStudent answered: অ্যাসপারজিলাস ফ্লেভাস (Wrong)\nCorrect answer: অ্যাগারিকাস ক্যাম্পেস্ট্রিস\nBehavioral state: PRIORITY_FOCUS\nChapter: অণুজীব ও ভাইরাস\n",
+    "q_bn": "কোন ছত্রাক খাদ্য হিসেবে ব্যবহার হয়?",
+    "student_ans": "অ্যাসপারজিলাস ফ্লেভাস",
+    "correct_ans": "অ্যাগারিকাস ক্যাম্পেস্ট্রিস",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "অণুজীব ও ভাইরাস",
+    "is_correct": false,
+    "q_id": "BIO-C05-2023-003"
+  },
+  {
+    "input": "Question: কোন ছত্রাক খাদ্য হিসেবে ব্যবহার হয়?\nStudent answered: স্যাকারোমাইসিস (Wrong)\nCorrect answer: অ্যাগারিকাস ক্যাম্পেস্ট্রিস\nBehavioral state: GROWTH_AREA\nChapter: অণুজীব ও ভাইরাস\n",
+    "q_bn": "কোন ছত্রাক খাদ্য হিসেবে ব্যবহার হয়?",
+    "student_ans": "স্যাকারোমাইসিস",
+    "correct_ans": "অ্যাগারিকাস ক্যাম্পেস্ট্রিস",
+    "state": "GROWTH_AREA",
+    "chapter": "অণুজীব ও ভাইরাস",
+    "is_correct": false,
+    "q_id": "BIO-C05-2023-003"
+  },
+  {
+    "input": "Question: কোন হেপাটাইটিস ভাইরাস দূষিত পানি ও খাদ্যের মাধ্যমে সংক্রমণ ঘটায়?\nStudent answered: হেপাটাইটিস সি ভাইরাস (Wrong)\nCorrect answer: হেপাটাইটিস এ ভাইরাস\nBehavioral state: PRIORITY_FOCUS\nChapter: অণুজীব ও ভাইরাস\n",
+    "q_bn": "কোন হেপাটাইটিস ভাইরাস দূষিত পানি ও খাদ্যের মাধ্যমে সংক্রমণ ঘটায়?",
+    "student_ans": "হেপাটাইটিস সি ভাইরাস",
+    "correct_ans": "হেপাটাইটিস এ ভাইরাস",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "অণুজীব ও ভাইরাস",
+    "is_correct": false,
+    "q_id": "BIO-C05-2023-004"
+  },
+  {
+    "input": "Question: কোন হেপাটাইটিস ভাইরাস দূষিত পানি ও খাদ্যের মাধ্যমে সংক্রমণ ঘটায়?\nStudent answered: হেপাটাইটিস বি ভাইরাস (Wrong)\nCorrect answer: হেপাটাইটিস এ ভাইরাস\nBehavioral state: GROWTH_AREA\nChapter: অণুজীব ও ভাইরাস\n",
+    "q_bn": "কোন হেপাটাইটিস ভাইরাস দূষিত পানি ও খাদ্যের মাধ্যমে সংক্রমণ ঘটায়?",
+    "student_ans": "হেপাটাইটিস বি ভাইরাস",
+    "correct_ans": "হেপাটাইটিস এ ভাইরাস",
+    "state": "GROWTH_AREA",
+    "chapter": "অণুজীব ও ভাইরাস",
+    "is_correct": false,
+    "q_id": "BIO-C05-2023-004"
+  },
+  {
+    "input": "Question: বীরশ্রেষ্ঠ ল্যান্স নায়েক নুর মোহাম্মদ শেখ কোন সেক্টরে মুক্তিযুদ্ধে অংশগ্রহণ করেন?\nStudent answered: ৬ নং সেক্টর (Wrong)\nCorrect answer: ৮ নং সেক্টর\nBehavioral state: PRIORITY_FOCUS\nChapter: বিবিধ ও সাধারণ\n",
+    "q_bn": "বীরশ্রেষ্ঠ ল্যান্স নায়েক নুর মোহাম্মদ শেখ কোন সেক্টরে মুক্তিযুদ্ধে অংশগ্রহণ করেন?",
+    "student_ans": "৬ নং সেক্টর",
+    "correct_ans": "৮ নং সেক্টর",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "বিবিধ ও সাধারণ",
+    "is_correct": false,
+    "q_id": "BIO-C19-2023-007"
+  },
+  {
+    "input": "Question: বীরশ্রেষ্ঠ ল্যান্স নায়েক নুর মোহাম্মদ শেখ কোন সেক্টরে মুক্তিযুদ্ধে অংশগ্রহণ করেন?\nStudent answered: ৯ নং সেক্টর (Wrong)\nCorrect answer: ৮ নং সেক্টর\nBehavioral state: GROWTH_AREA\nChapter: বিবিধ ও সাধারণ\n",
+    "q_bn": "বীরশ্রেষ্ঠ ল্যান্স নায়েক নুর মোহাম্মদ শেখ কোন সেক্টরে মুক্তিযুদ্ধে অংশগ্রহণ করেন?",
+    "student_ans": "৯ নং সেক্টর",
+    "correct_ans": "৮ নং সেক্টর",
+    "state": "GROWTH_AREA",
+    "chapter": "বিবিধ ও সাধারণ",
+    "is_correct": false,
+    "q_id": "BIO-C19-2023-007"
+  },
+  {
+    "input": "Question: ব্যাকটেরিয়া সম্পর্কে কোনটি সঠিক?\nStudent answered: অকোষী (Wrong)\nCorrect answer: এনজাইম সমৃদ্ধ\nBehavioral state: PRIORITY_FOCUS\nChapter: পরিপাক তন্ত্র\n",
+    "q_bn": "ব্যাকটেরিয়া সম্পর্কে কোনটি সঠিক?",
+    "student_ans": "অকোষী",
+    "correct_ans": "এনজাইম সমৃদ্ধ",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "পরিপাক তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C09-2023-007"
+  },
+  {
+    "input": "Question: ব্যাকটেরিয়া সম্পর্কে কোনটি সঠিক?\nStudent answered: জীবন্ত আশ্রয় আবশ্যক (Wrong)\nCorrect answer: এনজাইম সমৃদ্ধ\nBehavioral state: GROWTH_AREA\nChapter: পরিপাক তন্ত্র\n",
+    "q_bn": "ব্যাকটেরিয়া সম্পর্কে কোনটি সঠিক?",
+    "student_ans": "জীবন্ত আশ্রয় আবশ্যক",
+    "correct_ans": "এনজাইম সমৃদ্ধ",
+    "state": "GROWTH_AREA",
+    "chapter": "পরিপাক তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C09-2023-007"
+  },
+  {
+    "input": "Question: সোমাটিক এমব্রায়োজেনেসিস পদ্ধতিতে সর্বপ্রথম কোন উদ্ভিদ উৎপাদন করা হয়?\nStudent answered: বেল (Wrong)\nCorrect answer: গাজর\nBehavioral state: PRIORITY_FOCUS\nChapter: বিবিধ ও সাধারণ\n",
+    "q_bn": "সোমাটিক এমব্রায়োজেনেসিস পদ্ধতিতে সর্বপ্রথম কোন উদ্ভিদ উৎপাদন করা হয়?",
+    "student_ans": "বেল",
+    "correct_ans": "গাজর",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "বিবিধ ও সাধারণ",
+    "is_correct": false,
+    "q_id": "BIO-C19-2023-008"
+  },
+  {
+    "input": "Question: সোমাটিক এমব্রায়োজেনেসিস পদ্ধতিতে সর্বপ্রথম কোন উদ্ভিদ উৎপাদন করা হয়?\nStudent answered: বেগুন (Wrong)\nCorrect answer: গাজর\nBehavioral state: GROWTH_AREA\nChapter: বিবিধ ও সাধারণ\n",
+    "q_bn": "সোমাটিক এমব্রায়োজেনেসিস পদ্ধতিতে সর্বপ্রথম কোন উদ্ভিদ উৎপাদন করা হয়?",
+    "student_ans": "বেগুন",
+    "correct_ans": "গাজর",
+    "state": "GROWTH_AREA",
+    "chapter": "বিবিধ ও সাধারণ",
+    "is_correct": false,
+    "q_id": "BIO-C19-2023-008"
+  },
+  {
+    "input": "Question: কোনটি উদ্ভিদ দেহের রোগ সৃষ্টিকারী ভাইরাস?\nStudent answered: ফুট অ্যান্ড মাউথ ভাইরাস (Wrong)\nCorrect answer: টুংরো ভাইরাস\nBehavioral state: PRIORITY_FOCUS\nChapter: অণুজীব ও ভাইরাস\n",
+    "q_bn": "কোনটি উদ্ভিদ দেহের রোগ সৃষ্টিকারী ভাইরাস?",
+    "student_ans": "ফুট অ্যান্ড মাউথ ভাইরাস",
+    "correct_ans": "টুংরো ভাইরাস",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "অণুজীব ও ভাইরাস",
+    "is_correct": false,
+    "q_id": "BIO-C05-2023-005"
+  },
+  {
+    "input": "Question: কোনটি উদ্ভিদ দেহের রোগ সৃষ্টিকারী ভাইরাস?\nStudent answered: ফ্ল্যাভি ভাইরাস (Wrong)\nCorrect answer: টুংরো ভাইরাস\nBehavioral state: GROWTH_AREA\nChapter: অণুজীব ও ভাইরাস\n",
+    "q_bn": "কোনটি উদ্ভিদ দেহের রোগ সৃষ্টিকারী ভাইরাস?",
+    "student_ans": "ফ্ল্যাভি ভাইরাস",
+    "correct_ans": "টুংরো ভাইরাস",
+    "state": "GROWTH_AREA",
+    "chapter": "অণুজীব ও ভাইরাস",
+    "is_correct": false,
+    "q_id": "BIO-C05-2023-005"
+  },
+  {
+    "input": "Question: কোনটি জাতক লিপিড?\nStudent answered: ফসফোলিপিড (Wrong)\nCorrect answer: স্টেরয়েড\nBehavioral state: PRIORITY_FOCUS\nChapter: বিবিধ ও সাধারণ\n",
+    "q_bn": "কোনটি জাতক লিপিড?",
+    "student_ans": "ফসফোলিপিড",
+    "correct_ans": "স্টেরয়েড",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "বিবিধ ও সাধারণ",
+    "is_correct": false,
+    "q_id": "BIO-C19-2023-009"
+  },
+  {
+    "input": "Question: কোনটি জাতক লিপিড?\nStudent answered: মোম (Wrong)\nCorrect answer: স্টেরয়েড\nBehavioral state: GROWTH_AREA\nChapter: বিবিধ ও সাধারণ\n",
+    "q_bn": "কোনটি জাতক লিপিড?",
+    "student_ans": "মোম",
+    "correct_ans": "স্টেরয়েড",
+    "state": "GROWTH_AREA",
+    "chapter": "বিবিধ ও সাধারণ",
+    "is_correct": false,
+    "q_id": "BIO-C19-2023-009"
+  },
+  {
+    "input": "Question: কোনটি গাঠনিক প্রোটিন?\nStudent answered: হিমোগ্লোবিন (Wrong)\nCorrect answer: কোলাজেন\nBehavioral state: PRIORITY_FOCUS\nChapter: সংবহন তন্ত্র\n",
+    "q_bn": "কোনটি গাঠনিক প্রোটিন?",
+    "student_ans": "হিমোগ্লোবিন",
+    "correct_ans": "কোলাজেন",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "সংবহন তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C10-2023-009"
+  },
+  {
+    "input": "Question: কোনটি গাঠনিক প্রোটিন?\nStudent answered: মায়োগ্লোবিন (Wrong)\nCorrect answer: কোলাজেন\nBehavioral state: GROWTH_AREA\nChapter: সংবহন তন্ত্র\n",
+    "q_bn": "কোনটি গাঠনিক প্রোটিন?",
+    "student_ans": "মায়োগ্লোবিন",
+    "correct_ans": "কোলাজেন",
+    "state": "GROWTH_AREA",
+    "chapter": "সংবহন তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C10-2023-009"
+  },
+  {
+    "input": "Question: দেহকোষের ক্ষেত্রে কোনটি সঠিক?\nStudent answered: মিউটেশনের মাধ্যমে সন্তানে সঞ্চারিত হয় (Wrong)\nCorrect answer: দেহের বিভিন্ন\nBehavioral state: PRIORITY_FOCUS\nChapter: জিনতত্ত্ব ও বিবর্তন\n",
+    "q_bn": "দেহকোষের ক্ষেত্রে কোনটি সঠিক?",
+    "student_ans": "মিউটেশনের মাধ্যমে সন্তানে সঞ্চারিত হয়",
+    "correct_ans": "দেহের বিভিন্ন",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "জিনতত্ত্ব ও বিবর্তন",
+    "is_correct": false,
+    "q_id": "BIO-C03-2023-005"
+  },
+  {
+    "input": "Question: দেহকোষের ক্ষেত্রে কোনটি সঠিক?\nStudent answered: হ্যাপ্লয়েড সংখ্যক (Wrong)\nCorrect answer: দেহের বিভিন্ন\nBehavioral state: GROWTH_AREA\nChapter: জিনতত্ত্ব ও বিবর্তন\n",
+    "q_bn": "দেহকোষের ক্ষেত্রে কোনটি সঠিক?",
+    "student_ans": "হ্যাপ্লয়েড সংখ্যক",
+    "correct_ans": "দেহের বিভিন্ন",
+    "state": "GROWTH_AREA",
+    "chapter": "জিনতত্ত্ব ও বিবর্তন",
+    "is_correct": false,
+    "q_id": "BIO-C03-2023-005"
+  },
+  {
+    "input": "Question: অ্যাথলেট'স ফুট (Athlete's foot) এর কারণ কি?\nStudent answered: virus ও ব্যাকটেরিয়ার সংক্রমণ (Wrong)\nCorrect answer: ছত্রাক ও ব্যাকটেরিয়ার সংক্রমণ\nBehavioral state: PRIORITY_FOCUS\nChapter: অণুজীব ও ভাইরাস\n",
+    "q_bn": "অ্যাথলেট'স ফুট (Athlete's foot) এর কারণ কি?",
+    "student_ans": "virus ও ব্যাকটেরিয়ার সংক্রমণ",
+    "correct_ans": "ছত্রাক ও ব্যাকটেরিয়ার সংক্রমণ",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "অণুজীব ও ভাইরাস",
+    "is_correct": false,
+    "q_id": "BIO-C05-2023-006"
+  },
+  {
+    "input": "Question: অ্যাথলেট'স ফুট (Athlete's foot) এর কারণ কি?\nStudent answered: আঘাতজনিত (Wrong)\nCorrect answer: ছত্রাক ও ব্যাকটেরিয়ার সংক্রমণ\nBehavioral state: GROWTH_AREA\nChapter: অণুজীব ও ভাইরাস\n",
+    "q_bn": "অ্যাথলেট'স ফুট (Athlete's foot) এর কারণ কি?",
+    "student_ans": "আঘাতজনিত",
+    "correct_ans": "ছত্রাক ও ব্যাকটেরিয়ার সংক্রমণ",
+    "state": "GROWTH_AREA",
+    "chapter": "অণুজীব ও ভাইরাস",
+    "is_correct": false,
+    "q_id": "BIO-C05-2023-006"
+  },
+  {
+    "input": "Question: কোনটি জীববৈচিত্র সংরক্ষণের জন্য এক্স সিটু কনজারভেশন নয়?\nStudent answered: টিস্যু (Wrong)\nCorrect answer: ইকো পার্ক\nBehavioral state: PRIORITY_FOCUS\nChapter: বিবিধ ও সাধারণ\n",
+    "q_bn": "কোনটি জীববৈচিত্র সংরক্ষণের জন্য এক্স সিটু কনজারভেশন নয়?",
+    "student_ans": "টিস্যু",
+    "correct_ans": "ইকো পার্ক",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "বিবিধ ও সাধারণ",
+    "is_correct": false,
+    "q_id": "BIO-C19-2023-010"
+  },
+  {
+    "input": "Question: কোনটি জীববৈচিত্র সংরক্ষণের জন্য এক্স সিটু কনজারভেশন নয়?\nStudent answered: পশু পালন (Wrong)\nCorrect answer: ইকো পার্ক\nBehavioral state: GROWTH_AREA\nChapter: বিবিধ ও সাধারণ\n",
+    "q_bn": "কোনটি জীববৈচিত্র সংরক্ষণের জন্য এক্স সিটু কনজারভেশন নয়?",
+    "student_ans": "পশু পালন",
+    "correct_ans": "ইকো পার্ক",
+    "state": "GROWTH_AREA",
+    "chapter": "বিবিধ ও সাধারণ",
+    "is_correct": false,
+    "q_id": "BIO-C19-2023-010"
+  },
+  {
+    "input": "Question: ডায়াটম বিষয়ে কোনটি সঠিক?\nStudent answered: সামুদ্রিক শ্যাওলা (moss) হিসাবে পরিচিত (Wrong)\nCorrect answer: জলজ বাস্তুতন্ত্রের উৎপাদক\nBehavioral state: PRIORITY_FOCUS\nChapter: বিবিধ ও সাধারণ\n",
+    "q_bn": "ডায়াটম বিষয়ে কোনটি সঠিক?",
+    "student_ans": "সামুদ্রিক শ্যাওলা (moss) হিসাবে পরিচিত",
+    "correct_ans": "জলজ বাস্তুতন্ত্রের উৎপাদক",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "বিবিধ ও সাধারণ",
+    "is_correct": false,
+    "q_id": "BIO-C19-2023-011"
+  },
+  {
+    "input": "Question: ডায়াটম বিষয়ে কোনটি সঠিক?\nStudent answered: ওষুধি (Wrong)\nCorrect answer: জলজ বাস্তুতন্ত্রের উৎপাদক\nBehavioral state: GROWTH_AREA\nChapter: বিবিধ ও সাধারণ\n",
+    "q_bn": "ডায়াটম বিষয়ে কোনটি সঠিক?",
+    "student_ans": "ওষুধি",
+    "correct_ans": "জলজ বাস্তুতন্ত্রের উৎপাদক",
+    "state": "GROWTH_AREA",
+    "chapter": "বিবিধ ও সাধারণ",
+    "is_correct": false,
+    "q_id": "BIO-C19-2023-011"
+  },
+  {
+    "input": "Question: \"পিরানহা\" কোন প্রাণীভৌগিলিক অঞ্চলের প্রাণী?\nStudent answered: ইথিওপিয়ান (Wrong)\nCorrect answer: নিওট্রপিক্যাল\nBehavioral state: PRIORITY_FOCUS\nChapter: বিবিধ ও সাধারণ\n",
+    "q_bn": "\"পিরানহা\" কোন প্রাণীভৌগিলিক অঞ্চলের প্রাণী?",
+    "student_ans": "ইথিওপিয়ান",
+    "correct_ans": "নিওট্রপিক্যাল",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "বিবিধ ও সাধারণ",
+    "is_correct": false,
+    "q_id": "BIO-C19-2023-012"
+  },
+  {
+    "input": "Question: \"পিরানহা\" কোন প্রাণীভৌগিলিক অঞ্চলের প্রাণী?\nStudent answered: নিআর্কটিক (Wrong)\nCorrect answer: নিওট্রপিক্যাল\nBehavioral state: GROWTH_AREA\nChapter: বিবিধ ও সাধারণ\n",
+    "q_bn": "\"পিরানহা\" কোন প্রাণীভৌগিলিক অঞ্চলের প্রাণী?",
+    "student_ans": "নিআর্কটিক",
+    "correct_ans": "নিওট্রপিক্যাল",
+    "state": "GROWTH_AREA",
+    "chapter": "বিবিধ ও সাধারণ",
+    "is_correct": false,
+    "q_id": "BIO-C19-2023-012"
+  },
+  {
+    "input": "Question: এনজাইমের বিষয়ে কোনটি সঠিক?\nStudent answered: ভিটামিন থেকে পাওয়া যায় (Wrong)\nCorrect answer: আমিষ দিয়ে\nBehavioral state: PRIORITY_FOCUS\nChapter: পরিপাক তন্ত্র\n",
+    "q_bn": "এনজাইমের বিষয়ে কোনটি সঠিক?",
+    "student_ans": "ভিটামিন থেকে পাওয়া যায়",
+    "correct_ans": "আমিষ দিয়ে",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "পরিপাক তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C09-2023-008"
+  },
+  {
+    "input": "Question: এনজাইমের বিষয়ে কোনটি সঠিক?\nStudent answered: আণবিক ওজন 500 Daltons এর (Wrong)\nCorrect answer: আমিষ দিয়ে\nBehavioral state: GROWTH_AREA\nChapter: পরিপাক তন্ত্র\n",
+    "q_bn": "এনজাইমের বিষয়ে কোনটি সঠিক?",
+    "student_ans": "আণবিক ওজন 500 Daltons এর",
+    "correct_ans": "আমিষ দিয়ে",
+    "state": "GROWTH_AREA",
+    "chapter": "পরিপাক তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C09-2023-008"
+  },
+  {
+    "input": "Question: মুখে খাওয়ার পোলিও ভ্যাকসিনটি কোন ধরনের ভ্যাকসিন?\nStudent answered: উপএকক টিকা (Wrong)\nCorrect answer: জীবস্মৃত জীবন্ত টিকা\nBehavioral state: PRIORITY_FOCUS\nChapter: রোগ প্রতিরোধ ও রক্তের গ্রুপ\n",
+    "q_bn": "মুখে খাওয়ার পোলিও ভ্যাকসিনটি কোন ধরনের ভ্যাকসিন?",
+    "student_ans": "উপএকক টিকা",
+    "correct_ans": "জীবস্মৃত জীবন্ত টিকা",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "রোগ প্রতিরোধ ও রক্তের গ্রুপ",
+    "is_correct": false,
+    "q_id": "BIO-C17-2023-001"
+  },
+  {
+    "input": "Question: মুখে খাওয়ার পোলিও ভ্যাকসিনটি কোন ধরনের ভ্যাকসিন?\nStudent answered: অনুবন্ধী টিকা (Wrong)\nCorrect answer: জীবস্মৃত জীবন্ত টিকা\nBehavioral state: GROWTH_AREA\nChapter: রোগ প্রতিরোধ ও রক্তের গ্রুপ\n",
+    "q_bn": "মুখে খাওয়ার পোলিও ভ্যাকসিনটি কোন ধরনের ভ্যাকসিন?",
+    "student_ans": "অনুবন্ধী টিকা",
+    "correct_ans": "জীবস্মৃত জীবন্ত টিকা",
+    "state": "GROWTH_AREA",
+    "chapter": "রোগ প্রতিরোধ ও রক্তের গ্রুপ",
+    "is_correct": false,
+    "q_id": "BIO-C17-2023-001"
+  },
+  {
+    "input": "Question: নিচের কোনটি ম্যাক্রোফেজের কাজ নয়?\nStudent answered: জীর্ণ (Wrong)\nCorrect answer: বিভিন্ন ধরনের\nBehavioral state: PRIORITY_FOCUS\nChapter: বিবিধ ও সাধারণ\n",
+    "q_bn": "নিচের কোনটি ম্যাক্রোফেজের কাজ নয়?",
+    "student_ans": "জীর্ণ",
+    "correct_ans": "বিভিন্ন ধরনের",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "বিবিধ ও সাধারণ",
+    "is_correct": false,
+    "q_id": "BIO-C19-2023-013"
+  },
+  {
+    "input": "Question: নিচের কোনটি ম্যাক্রোফেজের কাজ নয়?\nStudent answered: রিঅ্যাকটিভ অক্সিজেন ইন্টারমিডিয়েট তৈরী (Wrong)\nCorrect answer: বিভিন্ন ধরনের\nBehavioral state: GROWTH_AREA\nChapter: বিবিধ ও সাধারণ\n",
+    "q_bn": "নিচের কোনটি ম্যাক্রোফেজের কাজ নয়?",
+    "student_ans": "রিঅ্যাকটিভ অক্সিজেন ইন্টারমিডিয়েট তৈরী",
+    "correct_ans": "বিভিন্ন ধরনের",
+    "state": "GROWTH_AREA",
+    "chapter": "বিবিধ ও সাধারণ",
+    "is_correct": false,
+    "q_id": "BIO-C19-2023-013"
+  },
+  {
+    "input": "Question: অন্তঃশ্বসন-\nStudent answered: এনজাইম দ্বারা প্রভাবিত হয় না (Wrong)\nCorrect answer: নির্দিষ্ট পরিমাণ শক্তি উৎপন্ন\nBehavioral state: PRIORITY_FOCUS\nChapter: উদ্ভিদ শরীরতত্ত্ব\n",
+    "q_bn": "অন্তঃশ্বসন-",
+    "student_ans": "এনজাইম দ্বারা প্রভাবিত হয় না",
+    "correct_ans": "নির্দিষ্ট পরিমাণ শক্তি উৎপন্ন",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "উদ্ভিদ শরীরতত্ত্ব",
+    "is_correct": false,
+    "q_id": "BIO-C07-2023-002"
+  },
+  {
+    "input": "Question: অন্তঃশ্বসন-\nStudent answered: একটি ভৌত রাসায়নিক প্রক্রিয়া (Wrong)\nCorrect answer: নির্দিষ্ট পরিমাণ শক্তি উৎপন্ন\nBehavioral state: GROWTH_AREA\nChapter: উদ্ভিদ শরীরতত্ত্ব\n",
+    "q_bn": "অন্তঃশ্বসন-",
+    "student_ans": "একটি ভৌত রাসায়নিক প্রক্রিয়া",
+    "correct_ans": "নির্দিষ্ট পরিমাণ শক্তি উৎপন্ন",
+    "state": "GROWTH_AREA",
+    "chapter": "উদ্ভিদ শরীরতত্ত্ব",
+    "is_correct": false,
+    "q_id": "BIO-C07-2023-002"
+  },
+  {
+    "input": "Question: গ্লুকাগন-\nStudent answered: অগ্নাশয়ের ডেলটা (Wrong)\nCorrect answer: ইনসুলিনের সাথে বিপরীতভাবে সম্পর্কিত\nBehavioral state: PRIORITY_FOCUS\nChapter: অন্তঃক্ষরা তন্ত্র\n",
+    "q_bn": "গ্লুকাগন-",
+    "student_ans": "অগ্নাশয়ের ডেলটা",
+    "correct_ans": "ইনসুলিনের সাথে বিপরীতভাবে সম্পর্কিত",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "অন্তঃক্ষরা তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C14-2023-003"
+  },
+  {
+    "input": "Question: গ্লুকাগন-\nStudent answered: একটি পলিপেপটাইড এনজাইম (Wrong)\nCorrect answer: ইনসুলিনের সাথে বিপরীতভাবে সম্পর্কিত\nBehavioral state: GROWTH_AREA\nChapter: অন্তঃক্ষরা তন্ত্র\n",
+    "q_bn": "গ্লুকাগন-",
+    "student_ans": "একটি পলিপেপটাইড এনজাইম",
+    "correct_ans": "ইনসুলিনের সাথে বিপরীতভাবে সম্পর্কিত",
+    "state": "GROWTH_AREA",
+    "chapter": "অন্তঃক্ষরা তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C14-2023-003"
+  },
+  {
+    "input": "Question: বাংলাদেশকে স্বীকৃতি প্রদানকারী প্রথম ইউরোপীয় দেশ কোনটি?\nStudent answered: স্পেন (Wrong)\nCorrect answer: পূর্ব জার্মানী\nBehavioral state: PRIORITY_FOCUS\nChapter: বিবিধ ও সাধারণ\n",
+    "q_bn": "বাংলাদেশকে স্বীকৃতি প্রদানকারী প্রথম ইউরোপীয় দেশ কোনটি?",
+    "student_ans": "স্পেন",
+    "correct_ans": "পূর্ব জার্মানী",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "বিবিধ ও সাধারণ",
+    "is_correct": false,
+    "q_id": "BIO-C19-2023-014"
+  },
+  {
+    "input": "Question: বাংলাদেশকে স্বীকৃতি প্রদানকারী প্রথম ইউরোপীয় দেশ কোনটি?\nStudent answered: ফ্রান্স (Wrong)\nCorrect answer: পূর্ব জার্মানী\nBehavioral state: GROWTH_AREA\nChapter: বিবিধ ও সাধারণ\n",
+    "q_bn": "বাংলাদেশকে স্বীকৃতি প্রদানকারী প্রথম ইউরোপীয় দেশ কোনটি?",
+    "student_ans": "ফ্রান্স",
+    "correct_ans": "পূর্ব জার্মানী",
+    "state": "GROWTH_AREA",
+    "chapter": "বিবিধ ও সাধারণ",
+    "is_correct": false,
+    "q_id": "BIO-C19-2023-014"
+  },
+  {
+    "input": "Question: মানবদেহে কোনটি ওষধি/লুপ্তপ্রায় অঙ্গ?\nStudent answered: স্ক্যাপুলা (Wrong)\nCorrect answer: থাইমাস\nBehavioral state: PRIORITY_FOCUS\nChapter: কঙ্কাল ও পেশী তন্ত্র\n",
+    "q_bn": "মানবদেহে কোনটি ওষধি/লুপ্তপ্রায় অঙ্গ?",
+    "student_ans": "স্ক্যাপুলা",
+    "correct_ans": "থাইমাস",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "কঙ্কাল ও পেশী তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C15-2023-003"
+  },
+  {
+    "input": "Question: মানবদেহে কোনটি ওষধি/লুপ্তপ্রায় অঙ্গ?\nStudent answered: ক্যানাইন দাঁত (Wrong)\nCorrect answer: থাইমাস\nBehavioral state: GROWTH_AREA\nChapter: কঙ্কাল ও পেশী তন্ত্র\n",
+    "q_bn": "মানবদেহে কোনটি ওষধি/লুপ্তপ্রায় অঙ্গ?",
+    "student_ans": "ক্যানাইন দাঁত",
+    "correct_ans": "থাইমাস",
+    "state": "GROWTH_AREA",
+    "chapter": "কঙ্কাল ও পেশী তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C15-2023-003"
+  },
+  {
+    "input": "Question: The Word 'recalcitrant' means-\nStudent answered: বশীভূত (Wrong)\nCorrect answer: বিদ্রোহী\nBehavioral state: PRIORITY_FOCUS\nChapter: বিবিধ ও সাধারণ\n",
+    "q_bn": "The Word 'recalcitrant' means-",
+    "student_ans": "বশীভূত",
+    "correct_ans": "বিদ্রোহী",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "বিবিধ ও সাধারণ",
+    "is_correct": false,
+    "q_id": "BIO-C19-2023-015"
+  },
+  {
+    "input": "Question: The Word 'recalcitrant' means-\nStudent answered: বাধ্য (Wrong)\nCorrect answer: বিদ্রোহী\nBehavioral state: GROWTH_AREA\nChapter: বিবিধ ও সাধারণ\n",
+    "q_bn": "The Word 'recalcitrant' means-",
+    "student_ans": "বাধ্য",
+    "correct_ans": "বিদ্রোহী",
+    "state": "GROWTH_AREA",
+    "chapter": "বিবিধ ও সাধারণ",
+    "is_correct": false,
+    "q_id": "BIO-C19-2023-015"
+  },
+  {
+    "input": "Question: অস্ত্রের প্রথম প্রতিরক্ষার স্তর কোনটি?\nStudent answered: ত্বক, ফ্যাগোসাইটস ও (Wrong)\nCorrect answer: পাকস্থলির অ্যাসিড, মাইক্রোবায়োম ও মলত্যাগ\nBehavioral state: PRIORITY_FOCUS\nChapter: পরিপাক তন্ত্র\n",
+    "q_bn": "অস্ত্রের প্রথম প্রতিরক্ষার স্তর কোনটি?",
+    "student_ans": "ত্বক, ফ্যাগোসাইটস ও",
+    "correct_ans": "পাকস্থলির অ্যাসিড, মাইক্রোবায়োম ও মলত্যাগ",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "পরিপাক তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C09-2023-009"
+  },
+  {
+    "input": "Question: অস্ত্রের প্রথম প্রতিরক্ষার স্তর কোনটি?\nStudent answered: লালা, পাকস্থলির এনজাইম ও ফ্যাগোসাইটস (Wrong)\nCorrect answer: পাকস্থলির অ্যাসিড, মাইক্রোবায়োম ও মলত্যাগ\nBehavioral state: GROWTH_AREA\nChapter: পরিপাক তন্ত্র\n",
+    "q_bn": "অস্ত্রের প্রথম প্রতিরক্ষার স্তর কোনটি?",
+    "student_ans": "লালা, পাকস্থলির এনজাইম ও ফ্যাগোসাইটস",
+    "correct_ans": "পাকস্থলির অ্যাসিড, মাইক্রোবায়োম ও মলত্যাগ",
+    "state": "GROWTH_AREA",
+    "chapter": "পরিপাক তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C09-2023-009"
+  },
+  {
+    "input": "Question: পাকস্থলীর পাচক রসে H+ আয়নের মোলার ঘনমাত্রা কত, যখন pH এর মান 1.4?\nStudent answered: ৪.০ মোলার (Wrong)\nCorrect answer: ০.০৪ মোলার\nBehavioral state: PRIORITY_FOCUS\nChapter: পরিপাক তন্ত্র\n",
+    "q_bn": "পাকস্থলীর পাচক রসে H+ আয়নের মোলার ঘনমাত্রা কত, যখন pH এর মান 1.4?",
+    "student_ans": "৪.০ মোলার",
+    "correct_ans": "০.০৪ মোলার",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "পরিপাক তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C09-2023-010"
+  },
+  {
+    "input": "Question: পাকস্থলীর পাচক রসে H+ আয়নের মোলার ঘনমাত্রা কত, যখন pH এর মান 1.4?\nStudent answered: ০.৪ মোলার (Wrong)\nCorrect answer: ০.০৪ মোলার\nBehavioral state: GROWTH_AREA\nChapter: পরিপাক তন্ত্র\n",
+    "q_bn": "পাকস্থলীর পাচক রসে H+ আয়নের মোলার ঘনমাত্রা কত, যখন pH এর মান 1.4?",
+    "student_ans": "০.৪ মোলার",
+    "correct_ans": "০.০৪ মোলার",
+    "state": "GROWTH_AREA",
+    "chapter": "পরিপাক তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C09-2023-010"
+  },
+  {
+    "input": "Question: কোনটি প্লাজমিডের বৈশিষ্ট্য?\nStudent answered: 100 µm পর্যন্ত লম্বা হতে পারে (Wrong)\nCorrect answer: এক ব্যাকটেরিয়া থেকে অন্য ব্যাকটেরিয়ায় স্থানান্তরে সক্ষম\nBehavioral state: PRIORITY_FOCUS\nChapter: জীবপ্রযুক্তি\n",
+    "q_bn": "কোনটি প্লাজমিডের বৈশিষ্ট্য?",
+    "student_ans": "100 µm পর্যন্ত লম্বা হতে পারে",
+    "correct_ans": "এক ব্যাকটেরিয়া থেকে অন্য ব্যাকটেরিয়ায় স্থানান্তরে সক্ষম",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "জীবপ্রযুক্তি",
+    "is_correct": false,
+    "q_id": "BIO-C04-2023-005"
+  },
+  {
+    "input": "Question: কোনটি প্লাজমিডের বৈশিষ্ট্য?\nStudent answered: কোষের (Wrong)\nCorrect answer: এক ব্যাকটেরিয়া থেকে অন্য ব্যাকটেরিয়ায় স্থানান্তরে সক্ষম\nBehavioral state: GROWTH_AREA\nChapter: জীবপ্রযুক্তি\n",
+    "q_bn": "কোনটি প্লাজমিডের বৈশিষ্ট্য?",
+    "student_ans": "কোষের",
+    "correct_ans": "এক ব্যাকটেরিয়া থেকে অন্য ব্যাকটেরিয়ায় স্থানান্তরে সক্ষম",
+    "state": "GROWTH_AREA",
+    "chapter": "জীবপ্রযুক্তি",
+    "is_correct": false,
+    "q_id": "BIO-C04-2023-005"
+  },
+  {
+    "input": "Question: কোন ছত্রাক খাদ্য হিসেবে ব্যবহার হয়?\nStudent answered: স্যাকারোমাইসিস সেরেভিসি (Wrong)\nCorrect answer: অ্যাগারিকাস ক্যাম্পেস্ট্রিস\nBehavioral state: GROWTH_AREA\nChapter: অণুজীব ও ভাইরাস\n",
+    "q_bn": "কোন ছত্রাক খাদ্য হিসেবে ব্যবহার হয়?",
+    "student_ans": "স্যাকারোমাইসিস সেরেভিসি",
+    "correct_ans": "অ্যাগারিকাস ক্যাম্পেস্ট্রিস",
+    "state": "GROWTH_AREA",
+    "chapter": "অণুজীব ও ভাইরাস",
+    "is_correct": false,
+    "q_id": "BIO-C05-2022-007"
+  },
+  {
+    "input": "Question: দেহকোষের ক্ষেত্রে কোনটি সঠিক?\nStudent answered: মিউটেশনের মাধ্যমে সন্তানে সঞ্চারিত হয় (Wrong)\nCorrect answer: দেহের বিভিন্ন কোষে বিভেদিত হতে পারে\nBehavioral state: PRIORITY_FOCUS\nChapter: জিনতত্ত্ব ও বিবর্তন\n",
+    "q_bn": "দেহকোষের ক্ষেত্রে কোনটি সঠিক?",
+    "student_ans": "মিউটেশনের মাধ্যমে সন্তানে সঞ্চারিত হয়",
+    "correct_ans": "দেহের বিভিন্ন কোষে বিভেদিত হতে পারে",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "জিনতত্ত্ব ও বিবর্তন",
+    "is_correct": false,
+    "q_id": "BIO-C03-2022-006"
+  },
+  {
+    "input": "Question: দেহকোষের ক্ষেত্রে কোনটি সঠিক?\nStudent answered: হ্যাপ্লয়েড সংখ্যক ক্রেমোসোম থাকে (Wrong)\nCorrect answer: দেহের বিভিন্ন কোষে বিভেদিত হতে পারে\nBehavioral state: GROWTH_AREA\nChapter: জিনতত্ত্ব ও বিবর্তন\n",
+    "q_bn": "দেহকোষের ক্ষেত্রে কোনটি সঠিক?",
+    "student_ans": "হ্যাপ্লয়েড সংখ্যক ক্রেমোসোম থাকে",
+    "correct_ans": "দেহের বিভিন্ন কোষে বিভেদিত হতে পারে",
+    "state": "GROWTH_AREA",
+    "chapter": "জিনতত্ত্ব ও বিবর্তন",
+    "is_correct": false,
+    "q_id": "BIO-C03-2022-006"
+  },
+  {
+    "input": "Question: অ্যাথলেট'স ফুট (Athlete's foot) এর কারণ কি?\nStudent answered: ভাইরাস ও ব্যাকটেরিয়ার সংক্রমণ (Wrong)\nCorrect answer: ছত্রাক ও ব্যাকটেরিয়ার সংক্রমণ\nBehavioral state: PRIORITY_FOCUS\nChapter: অণুজীব ও ভাইরাস\n",
+    "q_bn": "অ্যাথলেট'স ফুট (Athlete's foot) এর কারণ কি?",
+    "student_ans": "ভাইরাস ও ব্যাকটেরিয়ার সংক্রমণ",
+    "correct_ans": "ছত্রাক ও ব্যাকটেরিয়ার সংক্রমণ",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "অণুজীব ও ভাইরাস",
+    "is_correct": false,
+    "q_id": "BIO-C05-2022-010"
+  },
+  {
+    "input": "Question: অ্যাথলেট'স ফুট (Athlete's foot) এর কারণ কি?\nStudent answered: আঘাতজনিত ক্ষত (Wrong)\nCorrect answer: ছত্রাক ও ব্যাকটেরিয়ার সংক্রমণ\nBehavioral state: GROWTH_AREA\nChapter: অণুজীব ও ভাইরাস\n",
+    "q_bn": "অ্যাথলেট'স ফুট (Athlete's foot) এর কারণ কি?",
+    "student_ans": "আঘাতজনিত ক্ষত",
+    "correct_ans": "ছত্রাক ও ব্যাকটেরিয়ার সংক্রমণ",
+    "state": "GROWTH_AREA",
+    "chapter": "অণুজীব ও ভাইরাস",
+    "is_correct": false,
+    "q_id": "BIO-C05-2022-010"
+  },
+  {
+    "input": "Question: কোনটি জীববৈচিত্র সংরক্ষণের জন্য এক্স সিটু কনজারভেশন নয়?\nStudent answered: টিস্যু কালচার (Wrong)\nCorrect answer: ইকো পার্ক\nBehavioral state: PRIORITY_FOCUS\nChapter: জীবপ্রযুক্তি\n",
+    "q_bn": "কোনটি জীববৈচিত্র সংরক্ষণের জন্য এক্স সিটু কনজারভেশন নয়?",
+    "student_ans": "টিস্যু কালচার",
+    "correct_ans": "ইকো পার্ক",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "জীবপ্রযুক্তি",
+    "is_correct": false,
+    "q_id": "BIO-C04-2022-006"
+  },
+  {
+    "input": "Question: কোনটি জীববৈচিত্র সংরক্ষণের জন্য এক্স সিটু কনজারভেশন নয়?\nStudent answered: পশু পালন (Wrong)\nCorrect answer: ইকো পার্ক\nBehavioral state: GROWTH_AREA\nChapter: জীবপ্রযুক্তি\n",
+    "q_bn": "কোনটি জীববৈচিত্র সংরক্ষণের জন্য এক্স সিটু কনজারভেশন নয়?",
+    "student_ans": "পশু পালন",
+    "correct_ans": "ইকো পার্ক",
+    "state": "GROWTH_AREA",
+    "chapter": "জীবপ্রযুক্তি",
+    "is_correct": false,
+    "q_id": "BIO-C04-2022-006"
+  },
+  {
+    "input": "Question: ডায়াটম বিষয়ে কোনটি সঠিক?\nStudent answered: ওষুধি গুন আছে (Wrong)\nCorrect answer: জলজ বাস্তুতন্ত্রের উৎপাদক\nBehavioral state: GROWTH_AREA\nChapter: বিবিধ ও সাধারণ\n",
+    "q_bn": "ডায়াটম বিষয়ে কোনটি সঠিক?",
+    "student_ans": "ওষুধি গুন আছে",
+    "correct_ans": "জলজ বাস্তুতন্ত্রের উৎপাদক",
+    "state": "GROWTH_AREA",
+    "chapter": "বিবিধ ও সাধারণ",
+    "is_correct": false,
+    "q_id": "BIO-C19-2022-018"
+  },
+  {
+    "input": "Question: \"পিরানহা\" কোন প্রাণীভৌগিলিক অঞ্চলের প্রাণী?\nStudent answered: ইথিওপিয়ান (Wrong)\nCorrect answer: নিওট্রপিক্যাল\nBehavioral state: PRIORITY_FOCUS\nChapter: বিবিধ ও সাধারণ\n",
+    "q_bn": "\"পিরানহা\" কোন প্রাণীভৌগিলিক অঞ্চলের প্রাণী?",
+    "student_ans": "ইথিওপিয়ান",
+    "correct_ans": "নিওট্রপিক্যাল",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "বিবিধ ও সাধারণ",
+    "is_correct": false,
+    "q_id": "BIO-C19-2022-019"
+  },
+  {
+    "input": "Question: \"পিরানহা\" কোন প্রাণীভৌগিলিক অঞ্চলের প্রাণী?\nStudent answered: নিআর্কটিক (Wrong)\nCorrect answer: নিওট্রপিক্যাল\nBehavioral state: GROWTH_AREA\nChapter: বিবিধ ও সাধারণ\n",
+    "q_bn": "\"পিরানহা\" কোন প্রাণীভৌগিলিক অঞ্চলের প্রাণী?",
+    "student_ans": "নিআর্কটিক",
+    "correct_ans": "নিওট্রপিক্যাল",
+    "state": "GROWTH_AREA",
+    "chapter": "বিবিধ ও সাধারণ",
+    "is_correct": false,
+    "q_id": "BIO-C19-2022-019"
+  },
+  {
+    "input": "Question: এনজাইমের বিষয়ে কোনটি সঠিক?\nStudent answered: ভিটামিন থেকে পাওয়া যায় (Wrong)\nCorrect answer: আমিষ দিয়ে গঠিত\nBehavioral state: PRIORITY_FOCUS\nChapter: পরিপাক তন্ত্র\n",
+    "q_bn": "এনজাইমের বিষয়ে কোনটি সঠিক?",
+    "student_ans": "ভিটামিন থেকে পাওয়া যায়",
+    "correct_ans": "আমিষ দিয়ে গঠিত",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "পরিপাক তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C09-2022-012"
+  },
+  {
+    "input": "Question: এনজাইমের বিষয়ে কোনটি সঠিক?\nStudent answered: আণবিক ওজন 500 Daltons এর কম (Wrong)\nCorrect answer: আমিষ দিয়ে গঠিত\nBehavioral state: GROWTH_AREA\nChapter: পরিপাক তন্ত্র\n",
+    "q_bn": "এনজাইমের বিষয়ে কোনটি সঠিক?",
+    "student_ans": "আণবিক ওজন 500 Daltons এর কম",
+    "correct_ans": "আমিষ দিয়ে গঠিত",
+    "state": "GROWTH_AREA",
+    "chapter": "পরিপাক তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C09-2022-012"
+  },
+  {
+    "input": "Question: নিচের কোনটি ম্যাক্রোফেজের কাজ নয়?\nStudent answered: জীর্ণ কোষকে অপসারণ করা (Wrong)\nCorrect answer: বিভিন্ন ধরনের এন্টিবডি তৈরী করা\nBehavioral state: PRIORITY_FOCUS\nChapter: বিবিধ ও সাধারণ\n",
+    "q_bn": "নিচের কোনটি ম্যাক্রোফেজের কাজ নয়?",
+    "student_ans": "জীর্ণ কোষকে অপসারণ করা",
+    "correct_ans": "বিভিন্ন ধরনের এন্টিবডি তৈরী করা",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "বিবিধ ও সাধারণ",
+    "is_correct": false,
+    "q_id": "BIO-C19-2022-020"
+  },
+  {
+    "input": "Question: নিচের কোনটি ম্যাক্রোফেজের কাজ নয়?\nStudent answered: রিঅ্যাকティブ অক্সিজেন ইন্টারমিডেইট তৈরী করা (Wrong)\nCorrect answer: বিভিন্ন ধরনের এন্টিবডি তৈরী করা\nBehavioral state: GROWTH_AREA\nChapter: বিবিধ ও সাধারণ\n",
+    "q_bn": "নিচের কোনটি ম্যাক্রোফেজের কাজ নয়?",
+    "student_ans": "রিঅ্যাকティブ অক্সিজেন ইন্টারমিডেইট তৈরী করা",
+    "correct_ans": "বিভিন্ন ধরনের এন্টিবডি তৈরী করা",
+    "state": "GROWTH_AREA",
+    "chapter": "বিবিধ ও সাধারণ",
+    "is_correct": false,
+    "q_id": "BIO-C19-2022-020"
+  },
+  {
+    "input": "Question: অন্তঃশ্বসন-\nStudent answered: এনজাইম দ্বারা প্রভাবিত হয় না (Wrong)\nCorrect answer: নির্দিষ্ট পরিমাণ শক্তি উৎপন্ন করে\nBehavioral state: PRIORITY_FOCUS\nChapter: উদ্ভিদ শরীরতত্ত্ব\n",
+    "q_bn": "অন্তঃশ্বসন-",
+    "student_ans": "এনজাইম দ্বারা প্রভাবিত হয় না",
+    "correct_ans": "নির্দিষ্ট পরিমাণ শক্তি উৎপন্ন করে",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "উদ্ভিদ শরীরতত্ত্ব",
+    "is_correct": false,
+    "q_id": "BIO-C07-2022-003"
+  },
+  {
+    "input": "Question: অন্তঃশ্বসন-\nStudent answered: একটি ভৌত রাসায়নিক প্রক্রিয়া (Wrong)\nCorrect answer: নির্দিষ্ট পরিমাণ শক্তি উৎপন্ন করে\nBehavioral state: GROWTH_AREA\nChapter: উদ্ভিদ শরীরতত্ত্ব\n",
+    "q_bn": "অন্তঃশ্বসন-",
+    "student_ans": "একটি ভৌত রাসায়নিক প্রক্রিয়া",
+    "correct_ans": "নির্দিষ্ট পরিমাণ শক্তি উৎপন্ন করে",
+    "state": "GROWTH_AREA",
+    "chapter": "উদ্ভিদ শরীরতত্ত্ব",
+    "is_correct": false,
+    "q_id": "BIO-C07-2022-003"
+  },
+  {
+    "input": "Question: গ্লুকাগন-\nStudent answered: অগ্নাশয়ের ডেলটা কোষ থেকে নিঃসৃত হয় (Wrong)\nCorrect answer: ইনসুলিনের সাথে বিপরীতভাবে সম্পর্কিত\nBehavioral state: PRIORITY_FOCUS\nChapter: অন্তঃক্ষরা তন্ত্র\n",
+    "q_bn": "গ্লুকাগন-",
+    "student_ans": "অগ্নাশয়ের ডেলটা কোষ থেকে নিঃসৃত হয়",
+    "correct_ans": "ইনসুলিনের সাথে বিপরীতভাবে সম্পর্কিত",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "অন্তঃক্ষরা তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C14-2022-004"
+  },
+  {
+    "input": "Question: মানবদেহে কোনটি লুপ্তপ্রায় অঙ্গ?\nStudent answered: স্ক্যাপুলা (Wrong)\nCorrect answer: থাইমাস\nBehavioral state: PRIORITY_FOCUS\nChapter: কঙ্কাল ও পেশী তন্ত্র\n",
+    "q_bn": "মানবদেহে কোনটি লুপ্তপ্রায় অঙ্গ?",
+    "student_ans": "স্ক্যাপুলা",
+    "correct_ans": "থাইমাস",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "কঙ্কাল ও পেশী তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C15-2022-004"
+  },
+  {
+    "input": "Question: মানবদেহে কোনটি লুপ্তপ্রায় অঙ্গ?\nStudent answered: ক্যানাইন দাঁত (Wrong)\nCorrect answer: থাইমাস\nBehavioral state: GROWTH_AREA\nChapter: কঙ্কাল ও পেশী তন্ত্র\n",
+    "q_bn": "মানবদেহে কোনটি লুপ্তপ্রায় অঙ্গ?",
+    "student_ans": "ক্যানাইন দাঁত",
+    "correct_ans": "থাইমাস",
+    "state": "GROWTH_AREA",
+    "chapter": "কঙ্কাল ও পেশী তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C15-2022-004"
+  },
+  {
+    "input": "Question: অস্ত্রের প্রথম প্রতিরক্ষার স্তর কোনটি?\nStudent answered: ত্বক, ফ্যাগোসাইটস ও কমপ্লিমেন্ট তন্ত্র (Wrong)\nCorrect answer: পাকস্থলির অ্যাসিড, মাইক্রোবায়োম ও মলত্যাগ\nBehavioral state: PRIORITY_FOCUS\nChapter: পরিপাক তন্ত্র\n",
+    "q_bn": "অস্ত্রের প্রথম প্রতিরক্ষার স্তর কোনটি?",
+    "student_ans": "ত্বক, ফ্যাগোসাইটস ও কমপ্লিমেন্ট তন্ত্র",
+    "correct_ans": "পাকস্থলির অ্যাসিড, মাইক্রোবায়োম ও মলত্যাগ",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "পরিপাক তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C09-2022-013"
+  },
+  {
+    "input": "Question: কোনটি প্লাজমিডের বৈশিষ্ট্য?\nStudent answered: কোষের ক্রোমোসোমের মত (Wrong)\nCorrect answer: এক ব্যাকটেরিয়া থেকে অন্য ব্যাকটেরিয়ায় স্থানান্তরে সক্ষম\nBehavioral state: GROWTH_AREA\nChapter: জীবপ্রযুক্তি\n",
+    "q_bn": "কোনটি প্লাজমিডের বৈশিষ্ট্য?",
+    "student_ans": "কোষের ক্রোমোসোমের মত",
+    "correct_ans": "এক ব্যাকটেরিয়া থেকে অন্য ব্যাকটেরিয়ায় স্থানান্তরে সক্ষম",
+    "state": "GROWTH_AREA",
+    "chapter": "জীবপ্রযুক্তি",
+    "is_correct": false,
+    "q_id": "BIO-C04-2022-007"
+  },
+  {
+    "input": "Question: টিস্যু কালচার এর মাধ্যমে বাণিজ্যিকভাবে বাংলাদেশে কোনটি প্রজনন করা হয়?\nStudent answered: ভুট্টা (Wrong)\nCorrect answer: স্ট্রবেরি\nBehavioral state: PRIORITY_FOCUS\nChapter: জীবপ্রযুক্তি\n",
+    "q_bn": "টিস্যু কালচার এর মাধ্যমে বাণিজ্যিকভাবে বাংলাদেশে কোনটি প্রজনন করা হয়?",
+    "student_ans": "ভুট্টা",
+    "correct_ans": "স্ট্রবেরি",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "জীবপ্রযুক্তি",
+    "is_correct": false,
+    "q_id": "BIO-C04-2021-008"
+  },
+  {
+    "input": "Question: টিস্যু কালচার এর মাধ্যমে বাণিজ্যিকভাবে বাংলাদেশে কোনটি প্রজনন করা হয়?\nStudent answered: ধান (Wrong)\nCorrect answer: স্ট্রবেরি\nBehavioral state: GROWTH_AREA\nChapter: জীবপ্রযুক্তি\n",
+    "q_bn": "টিস্যু কালচার এর মাধ্যমে বাণিজ্যিকভাবে বাংলাদেশে কোনটি প্রজনন করা হয়?",
+    "student_ans": "ধান",
+    "correct_ans": "স্ট্রবেরি",
+    "state": "GROWTH_AREA",
+    "chapter": "জীবপ্রযুক্তি",
+    "is_correct": false,
+    "q_id": "BIO-C04-2021-008"
+  },
+  {
+    "input": "Question: পাতার গ্রাউন্ড টিস্যুকে বলা হয়-\nStudent answered: ক্যাম্বিয়াম (cambium) (Wrong)\nCorrect answer: মেসোফিল (mesophyll)\nBehavioral state: PRIORITY_FOCUS\nChapter: বিবিধ ও সাধারণ\n",
+    "q_bn": "পাতার গ্রাউন্ড টিস্যুকে বলা হয়-",
+    "student_ans": "ক্যাম্বিয়াম (cambium)",
+    "correct_ans": "মেসোফিল (mesophyll)",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "বিবিধ ও সাধারণ",
+    "is_correct": false,
+    "q_id": "BIO-C19-2021-023"
+  },
+  {
+    "input": "Question: পাতার গ্রাউন্ড টিস্যুকে বলা হয়-\nStudent answered: কর্টেক্স (cortex) (Wrong)\nCorrect answer: মেসোফিল (mesophyll)\nBehavioral state: GROWTH_AREA\nChapter: বিবিধ ও সাধারণ\n",
+    "q_bn": "পাতার গ্রাউন্ড টিস্যুকে বলা হয়-",
+    "student_ans": "কর্টেক্স (cortex)",
+    "correct_ans": "মেসোফিল (mesophyll)",
+    "state": "GROWTH_AREA",
+    "chapter": "বিবিধ ও সাধারণ",
+    "is_correct": false,
+    "q_id": "BIO-C19-2021-023"
+  },
+  {
+    "input": "Question: অক্সিজেনের অনুপস্থিতিতে কোষের মধ্যে শ্বসনের কোন ধাপ ঘটে?\nStudent answered: জারণমূলক ফসফোরাইলেশন (Wrong)\nCorrect answer: গ্লাইকোলাইসিস\nBehavioral state: PRIORITY_FOCUS\nChapter: উদ্ভিদ শরীরতত্ত্ব\n",
+    "q_bn": "অক্সিজেনের অনুপস্থিতিতে কোষের মধ্যে শ্বসনের কোন ধাপ ঘটে?",
+    "student_ans": "জারণমূলক ফসফোরাইলেশন",
+    "correct_ans": "গ্লাইকোলাইসিস",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "উদ্ভিদ শরীরতত্ত্ব",
+    "is_correct": false,
+    "q_id": "BIO-C07-2021-004"
+  },
+  {
+    "input": "Question: অক্সিজেনের অনুপস্থিতিতে কোষের মধ্যে শ্বসনের কোন ধাপ ঘটে?\nStudent answered: ইলেকট্রন পরিবহন (Wrong)\nCorrect answer: গ্লাইকোলাইসিস\nBehavioral state: GROWTH_AREA\nChapter: উদ্ভিদ শরীরতত্ত্ব\n",
+    "q_bn": "অক্সিজেনের অনুপস্থিতিতে কোষের মধ্যে শ্বসনের কোন ধাপ ঘটে?",
+    "student_ans": "ইলেকট্রন পরিবহন",
+    "correct_ans": "গ্লাইকোলাইসিস",
+    "state": "GROWTH_AREA",
+    "chapter": "উদ্ভিদ শরীরতত্ত্ব",
+    "is_correct": false,
+    "q_id": "BIO-C07-2021-004"
+  },
+  {
+    "input": "Question: কোষ চক্রের কোন দশায় DNA সংশ্লেষণ ঘটে?\nStudent answered: G1 দশায় (Wrong)\nCorrect answer: S দশায়\nBehavioral state: PRIORITY_FOCUS\nChapter: জিনতত্ত্ব ও বিবর্তন\n",
+    "q_bn": "কোষ চক্রের কোন দশায় DNA সংশ্লেষণ ঘটে?",
+    "student_ans": "G1 দশায়",
+    "correct_ans": "S দশায়",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "জিনতত্ত্ব ও বিবর্তন",
+    "is_correct": false,
+    "q_id": "BIO-C03-2021-007"
+  },
+  {
+    "input": "Question: কোষ চক্রের কোন দশায় DNA সংশ্লেষণ ঘটে?\nStudent answered: G2 দশায় (Wrong)\nCorrect answer: S দশায়\nBehavioral state: GROWTH_AREA\nChapter: জিনতত্ত্ব ও বিবর্তন\n",
+    "q_bn": "কোষ চক্রের কোন দশায় DNA সংশ্লেষণ ঘটে?",
+    "student_ans": "G2 দশায়",
+    "correct_ans": "S দশায়",
+    "state": "GROWTH_AREA",
+    "chapter": "জিনতত্ত্ব ও বিবর্তন",
+    "is_correct": false,
+    "q_id": "BIO-C03-2021-007"
+  },
+  {
+    "input": "Question: কোন পদ্ধতিতে নিষেক ছাড়াই ভ্রূণ সৃষ্টি হয়?\nStudent answered: ওজেনেসিস (Wrong)\nCorrect answer: অ্যাপোগ্যামি\nBehavioral state: PRIORITY_FOCUS\nChapter: জনন তন্ত্র\n",
+    "q_bn": "কোন পদ্ধতিতে নিষেক ছাড়াই ভ্রূণ সৃষ্টি হয়?",
+    "student_ans": "ওজেনেসিস",
+    "correct_ans": "অ্যাপোগ্যামি",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "জনন তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C16-2021-001"
+  },
+  {
+    "input": "Question: কোন পদ্ধতিতে নিষেক ছাড়াই ভ্রূণ সৃষ্টি হয়?\nStudent answered: স্পোরোজেনেসিস (Wrong)\nCorrect answer: অ্যাপোগ্যামি\nBehavioral state: GROWTH_AREA\nChapter: জনন তন্ত্র\n",
+    "q_bn": "কোন পদ্ধতিতে নিষেক ছাড়াই ভ্রূণ সৃষ্টি হয়?",
+    "student_ans": "স্পোরোজেনেসিস",
+    "correct_ans": "অ্যাপোগ্যামি",
+    "state": "GROWTH_AREA",
+    "chapter": "জনন তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C16-2021-001"
+  },
+  {
+    "input": "Question: বায়ুমণ্ডলের কোন ভৌত অবস্থা পরিবর্তনে উদ্ভিদের প্রস্বেদন বৃদ্ধি পায়?\nStudent answered: আলোর স্বল্পতা (Wrong)\nCorrect answer: আর্দ্রতা হ্রাস\nBehavioral state: PRIORITY_FOCUS\nChapter: উদ্ভিদ শরীরতত্ত্ব\n",
+    "q_bn": "বায়ুমণ্ডলের কোন ভৌত অবস্থা পরিবর্তনে উদ্ভিদের প্রস্বেদন বৃদ্ধি পায়?",
+    "student_ans": "আলোর স্বল্পতা",
+    "correct_ans": "আর্দ্রতা হ্রাস",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "উদ্ভিদ শরীরতত্ত্ব",
+    "is_correct": false,
+    "q_id": "BIO-C07-2021-005"
+  },
+  {
+    "input": "Question: বায়ুমণ্ডলের কোন ভৌত অবস্থা পরিবর্তনে উদ্ভিদের প্রস্বেদন বৃদ্ধি পায়?\nStudent answered: তাপমাত্রা হ্রাস (Wrong)\nCorrect answer: আর্দ্রতা হ্রাস\nBehavioral state: GROWTH_AREA\nChapter: উদ্ভিদ শরীরতত্ত্ব\n",
+    "q_bn": "বায়ুমণ্ডলের কোন ভৌত অবস্থা পরিবর্তনে উদ্ভিদের প্রস্বেদন বৃদ্ধি পায়?",
+    "student_ans": "তাপমাত্রা হ্রাস",
+    "correct_ans": "আর্দ্রতা হ্রাস",
+    "state": "GROWTH_AREA",
+    "chapter": "উদ্ভিদ শরীরতত্ত্ব",
+    "is_correct": false,
+    "q_id": "BIO-C07-2021-005"
+  },
+  {
+    "input": "Question: উদ্ভিদ কোষের অভ্যন্তরে pH রক্ষা করে কোনটি?\nStudent answered: সাইটোপ্লাজম (Wrong)\nCorrect answer: কোষ গহ্বর\nBehavioral state: PRIORITY_FOCUS\nChapter: কোষ ও কোষ অঙ্গাণু\n",
+    "q_bn": "উদ্ভিদ কোষের অভ্যন্তরে pH রক্ষা করে কোনটি?",
+    "student_ans": "সাইটোপ্লাজম",
+    "correct_ans": "কোষ গহ্বর",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "কোষ ও কোষ অঙ্গাণু",
+    "is_correct": false,
+    "q_id": "BIO-C01-2021-007"
+  },
+  {
+    "input": "Question: উদ্ভিদ কোষের অভ্যন্তরে pH রক্ষা করে কোনটি?\nStudent answered: গ্লাইঅক্সিজোম (Wrong)\nCorrect answer: কোষ গহ্বর\nBehavioral state: GROWTH_AREA\nChapter: কোষ ও কোষ অঙ্গাণু\n",
+    "q_bn": "উদ্ভিদ কোষের অভ্যন্তরে pH রক্ষা করে কোনটি?",
+    "student_ans": "গ্লাইঅক্সিজোম",
+    "correct_ans": "কোষ গহ্বর",
+    "state": "GROWTH_AREA",
+    "chapter": "কোষ ও কোষ অঙ্গাণু",
+    "is_correct": false,
+    "q_id": "BIO-C01-2021-007"
+  },
+  {
+    "input": "Question: মানবদেহের কোন অঙ্গে সবচেয়ে বেশী মাত্রায় রক্ত প্রবাহিত হয়?\nStudent answered: মস্তিষ্ক (Wrong)\nCorrect answer: যকৃত\nBehavioral state: PRIORITY_FOCUS\nChapter: উদ্ভিদবিজ্ঞান ও শ্রেণীবিন্যাস\n",
+    "q_bn": "মানবদেহের কোন অঙ্গে সবচেয়ে বেশী মাত্রায় রক্ত প্রবাহিত হয়?",
+    "student_ans": "মস্তিষ্ক",
+    "correct_ans": "যকৃত",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "উদ্ভিদবিজ্ঞান ও শ্রেণীবিন্যাস",
+    "is_correct": false,
+    "q_id": "BIO-C06-2021-004"
+  },
+  {
+    "input": "Question: মানবদেহের কোন অঙ্গে সবচেয়ে বেশী মাত্রায় রক্ত প্রবাহিত হয়?\nStudent answered: অস্ত্র (Wrong)\nCorrect answer: যকৃত\nBehavioral state: GROWTH_AREA\nChapter: উদ্ভিদবিজ্ঞান ও শ্রেণীবিন্যাস\n",
+    "q_bn": "মানবদেহের কোন অঙ্গে সবচেয়ে বেশী মাত্রায় রক্ত প্রবাহিত হয়?",
+    "student_ans": "অস্ত্র",
+    "correct_ans": "যকৃত",
+    "state": "GROWTH_AREA",
+    "chapter": "উদ্ভিদবিজ্ঞান ও শ্রেণীবিন্যাস",
+    "is_correct": false,
+    "q_id": "BIO-C06-2021-004"
+  },
+  {
+    "input": "Question: ভ্রূণ অবস্থায় মাতৃগর্ভে কখন প্রথম হৃদস্পন্দন শুরু হয়?\nStudent answered: অষ্টম সপ্তাহ (Wrong)\nCorrect answer: ষষ্ঠ সপ্তাহ\nBehavioral state: PRIORITY_FOCUS\nChapter: জনন তন্ত্র\n",
+    "q_bn": "ভ্রূণ অবস্থায় মাতৃগর্ভে কখন প্রথম হৃদস্পন্দন শুরু হয়?",
+    "student_ans": "অষ্টম সপ্তাহ",
+    "correct_ans": "ষষ্ঠ সপ্তাহ",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "জনন তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C16-2021-002"
+  },
+  {
+    "input": "Question: ভ্রূণ অবস্থায় মাতৃগর্ভে কখন প্রথম হৃদস্পন্দন শুরু হয়?\nStudent answered: দ্বাদশ সপ্তাহ (Wrong)\nCorrect answer: ষষ্ঠ সপ্তাহ\nBehavioral state: GROWTH_AREA\nChapter: জনন তন্ত্র\n",
+    "q_bn": "ভ্রূণ অবস্থায় মাতৃগর্ভে কখন প্রথম হৃদস্পন্দন শুরু হয়?",
+    "student_ans": "দ্বাদশ সপ্তাহ",
+    "correct_ans": "ষষ্ঠ সপ্তাহ",
+    "state": "GROWTH_AREA",
+    "chapter": "জনন তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C16-2021-002"
+  },
+  {
+    "input": "Question: কোন পদ্ধতিতে কোভিড ১৯ ভ্যাক্সিন প্রস্তুত করা হয় না?\nStudent answered: নিষ্ক্রিয় (inactivated) (Wrong)\nCorrect answer: বিষভিত্তিক (toxoid)\nBehavioral state: PRIORITY_FOCUS\nChapter: জিনতত্ত্ব ও বিবর্তন\n",
+    "q_bn": "কোন পদ্ধতিতে কোভিড ১৯ ভ্যাক্সিন প্রস্তুত করা হয় না?",
+    "student_ans": "নিষ্ক্রিয় (inactivated)",
+    "correct_ans": "বিষভিত্তিক (toxoid)",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "জিনতত্ত্ব ও বিবর্তন",
+    "is_correct": false,
+    "q_id": "BIO-C03-2021-008"
+  },
+  {
+    "input": "Question: কোন পদ্ধতিতে কোভিড ১৯ ভ্যাক্সিন প্রস্তুত করা হয় না?\nStudent answered: এমআরএনএ (mRNA) (Wrong)\nCorrect answer: বিষভিত্তিক (toxoid)\nBehavioral state: GROWTH_AREA\nChapter: জিনতত্ত্ব ও বিবর্তন\n",
+    "q_bn": "কোন পদ্ধতিতে কোভিড ১৯ ভ্যাক্সিন প্রস্তুত করা হয় না?",
+    "student_ans": "এমআরএনএ (mRNA)",
+    "correct_ans": "বিষভিত্তিক (toxoid)",
+    "state": "GROWTH_AREA",
+    "chapter": "জিনতত্ত্ব ও বিবর্তন",
+    "is_correct": false,
+    "q_id": "BIO-C03-2021-008"
+  },
+  {
+    "input": "Question: কোন রক্ত কণিকা \"Cell-mediated immunity\" এর সাথে সম্পৃক্ত?\nStudent answered: নিউট্রোফিল (neutrophil) (Wrong)\nCorrect answer: টি-লিম্ফোসাইট (T-lymphocyte)\nBehavioral state: PRIORITY_FOCUS\nChapter: সংবহন তন্ত্র\n",
+    "q_bn": "কোন রক্ত কণিকা \"Cell-mediated immunity\" এর সাথে সম্পৃক্ত?",
+    "student_ans": "নিউট্রোফিল (neutrophil)",
+    "correct_ans": "টি-লিম্ফোসাইট (T-lymphocyte)",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "সংবহন তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C10-2021-011"
+  },
+  {
+    "input": "Question: কোন রক্ত কণিকা \"Cell-mediated immunity\" এর সাথে সম্পৃক্ত?\nStudent answered: বেসোফিল (basophil) (Wrong)\nCorrect answer: টি-লিম্ফোসাইট (T-lymphocyte)\nBehavioral state: GROWTH_AREA\nChapter: সংবহন তন্ত্র\n",
+    "q_bn": "কোন রক্ত কণিকা \"Cell-mediated immunity\" এর সাথে সম্পৃক্ত?",
+    "student_ans": "বেসোফিল (basophil)",
+    "correct_ans": "টি-লিম্ফোসাইট (T-lymphocyte)",
+    "state": "GROWTH_AREA",
+    "chapter": "সংবহন তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C10-2021-011"
+  },
+  {
+    "input": "Question: কোন এনজাইম আমিষ পরিপাকে সাহায্য করে?\nStudent answered: অ্যামাইলেজ (Wrong)\nCorrect answer: ট্রিপসিন\nBehavioral state: PRIORITY_FOCUS\nChapter: পরিপাক তন্ত্র\n",
+    "q_bn": "কোন এনজাইম আমিষ পরিপাকে সাহায্য করে?",
+    "student_ans": "অ্যামাইলেজ",
+    "correct_ans": "ট্রিপসিন",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "পরিপাক তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C09-2021-016"
+  },
+  {
+    "input": "Question: কোন এনজাইম আমিষ পরিপাকে সাহায্য করে?\nStudent answered: লাইপেজ (Wrong)\nCorrect answer: ট্রিপসিন\nBehavioral state: GROWTH_AREA\nChapter: পরিপাক তন্ত্র\n",
+    "q_bn": "কোন এনজাইম আমিষ পরিপাকে সাহায্য করে?",
+    "student_ans": "লাইপেজ",
+    "correct_ans": "ট্রিপসিন",
+    "state": "GROWTH_AREA",
+    "chapter": "পরিপাক তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C09-2021-016"
+  },
+  {
+    "input": "Question: কোন এনজাইম লালা গ্রন্থিতে পাওয়া যায়?\nStudent answered: অ্যামাইলেজ (Wrong)\nCorrect answer: টায়ালিন\nBehavioral state: PRIORITY_FOCUS\nChapter: পরিপাক তন্ত্র\n",
+    "q_bn": "কোন এনজাইম লালা গ্রন্থিতে পাওয়া যায়?",
+    "student_ans": "অ্যামাইলেজ",
+    "correct_ans": "টায়ালিন",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "পরিপাক তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C09-2021-017"
+  },
+  {
+    "input": "Question: কোন এনজাইম লালা গ্রন্থিতে পাওয়া যায়?\nStudent answered: পেপসিন (Wrong)\nCorrect answer: টায়ালিন\nBehavioral state: GROWTH_AREA\nChapter: পরিপাক তন্ত্র\n",
+    "q_bn": "কোন এনজাইম লালা গ্রন্থিতে পাওয়া যায়?",
+    "student_ans": "পেপসিন",
+    "correct_ans": "টায়ালিন",
+    "state": "GROWTH_AREA",
+    "chapter": "পরিপাক তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C09-2021-017"
+  },
+  {
+    "input": "Question: উদ্ভিদ দ্বারা সবচেয়ে দ্রুত শোষিত হয় কোন আয়নটি?\nStudent answered: ম্যাগনেসিয়াম (Mg²⁺) (Wrong)\nCorrect answer: পটাসিয়াম (K⁺)\nBehavioral state: PRIORITY_FOCUS\nChapter: বিবিধ ও সাধারণ\n",
+    "q_bn": "উদ্ভিদ দ্বারা সবচেয়ে দ্রুত শোষিত হয় কোন আয়নটি?",
+    "student_ans": "ম্যাগনেসিয়াম (Mg²⁺)",
+    "correct_ans": "পটাসিয়াম (K⁺)",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "বিবিধ ও সাধারণ",
+    "is_correct": false,
+    "q_id": "BIO-C19-2021-024"
+  },
+  {
+    "input": "Question: উদ্ভিদ দ্বারা সবচেয়ে দ্রুত শোষিত হয় কোন আয়নটি?\nStudent answered: ক্যালসিয়াম (Ca²⁺) (Wrong)\nCorrect answer: পটাসিয়াম (K⁺)\nBehavioral state: GROWTH_AREA\nChapter: বিবিধ ও সাধারণ\n",
+    "q_bn": "উদ্ভিদ দ্বারা সবচেয়ে দ্রুত শোষিত হয় কোন আয়নটি?",
+    "student_ans": "ক্যালসিয়াম (Ca²⁺)",
+    "correct_ans": "পটাসিয়াম (K⁺)",
+    "state": "GROWTH_AREA",
+    "chapter": "বিবিধ ও সাধারণ",
+    "is_correct": false,
+    "q_id": "BIO-C19-2021-024"
+  },
+  {
+    "input": "Question: ইথানোয়িক অ্যানহাইড্রাইডের সংকেত কোনটি?\nStudent answered: অ্যাসিটাইল অ্যাসিটোন (CH₃-CO-CH₂CO-CH₃) (Wrong)\nCorrect answer: অ্যাসিটিক অ্যানহাইড্রাইড (CH₃COO-COCH₃)\nBehavioral state: PRIORITY_FOCUS\nChapter: প্রাণীর বিভিন্নতা\n",
+    "q_bn": "ইথানোয়িক অ্যানহাইড্রাইডের সংকেত কোনটি?",
+    "student_ans": "অ্যাসিটাইল অ্যাসিটোন (CH₃-CO-CH₂CO-CH₃)",
+    "correct_ans": "অ্যাসিটিক অ্যানহাইড্রাইড (CH₃COO-COCH₃)",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "প্রাণীর বিভিন্নতা",
+    "is_correct": false,
+    "q_id": "BIO-C08-2021-003"
+  },
+  {
+    "input": "Question: ইথানোয়িক অ্যানহাইড্রাইডের সংকেত কোনটি?\nStudent answered: অক্সালিক অ্যাসিড ডাই-মিথাইল এস্টার (CH₃-COO-COO-CH₃) (Wrong)\nCorrect answer: অ্যাসিটিক অ্যানহাইড্রাইড (CH₃COO-COCH₃)\nBehavioral state: GROWTH_AREA\nChapter: প্রাণীর বিভিন্নতা\n",
+    "q_bn": "ইথানোয়িক অ্যানহাইড্রাইডের সংকেত কোনটি?",
+    "student_ans": "অক্সালিক অ্যাসিড ডাই-মিথাইল এস্টার (CH₃-COO-COO-CH₃)",
+    "correct_ans": "অ্যাসিটিক অ্যানহাইড্রাইড (CH₃COO-COCH₃)",
+    "state": "GROWTH_AREA",
+    "chapter": "প্রাণীর বিভিন্নতা",
+    "is_correct": false,
+    "q_id": "BIO-C08-2021-003"
+  },
+  {
+    "input": "Question: ঘাসফড়িং এর কোন গ্রন্থি থেকে জুভেনাইল হরমোন ক্ষরিত হয়?\nStudent answered: কর্পোরা কার্ডিয়াকা (Wrong)\nCorrect answer: কর্পোরা অ্যালাটা\nBehavioral state: PRIORITY_FOCUS\nChapter: অন্তঃক্ষরা তন্ত্র\n",
+    "q_bn": "ঘাসফড়িং এর কোন গ্রন্থি থেকে জুভেনাইল হরমোন ক্ষরিত হয়?",
+    "student_ans": "কর্পোরা কার্ডিয়াকা",
+    "correct_ans": "কর্পোরা অ্যালাটা",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "অন্তঃক্ষরা তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C14-2021-005"
+  },
+  {
+    "input": "Question: ঘাসফড়িং এর কোন গ্রন্থি থেকে জুভেনাইল হরমোন ক্ষরিত হয়?\nStudent answered: ইন্টারসেরিব্রাল গ্রন্থিকোষ (Wrong)\nCorrect answer: কর্পোরা অ্যালাটা\nBehavioral state: GROWTH_AREA\nChapter: অন্তঃক্ষরা তন্ত্র\n",
+    "q_bn": "ঘাসফড়িং এর কোন গ্রন্থি থেকে জুভেনাইল হরমোন ক্ষরিত হয়?",
+    "student_ans": "ইন্টারসেরিব্রাল গ্রন্থিকোষ",
+    "correct_ans": "কর্পোরা অ্যালাটা",
+    "state": "GROWTH_AREA",
+    "chapter": "অন্তঃক্ষরা তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C14-2021-005"
+  },
+  {
+    "input": "Question: কেঁচো কোন অঙ্গের মাধ্যমে শ্বাসপ্রশ্বাস নেয়?\nStudent answered: ফুলকা (Wrong)\nCorrect answer: ত্বক\nBehavioral state: PRIORITY_FOCUS\nChapter: শ্বসন তন্ত্র\n",
+    "q_bn": "কেঁচো কোন অঙ্গের মাধ্যমে শ্বাসপ্রশ্বাস নেয়?",
+    "student_ans": "ফুলকা",
+    "correct_ans": "ত্বক",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "শ্বসন তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C11-2021-003"
+  },
+  {
+    "input": "Question: কেঁচো কোন অঙ্গের মাধ্যমে শ্বাসপ্রশ্বাস নেয়?\nStudent answered: ফুসফুস (Wrong)\nCorrect answer: ত্বক\nBehavioral state: GROWTH_AREA\nChapter: শ্বসন তন্ত্র\n",
+    "q_bn": "কেঁচো কোন অঙ্গের মাধ্যমে শ্বাসপ্রশ্বাস নেয়?",
+    "student_ans": "ফুসফুস",
+    "correct_ans": "ত্বক",
+    "state": "GROWTH_AREA",
+    "chapter": "শ্বসন তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C11-2021-003"
+  },
+  {
+    "input": "Question: মানবদেহের ক্ষত নিরাময়ে কোনটি অপরিহার্য?\nStudent answered: অ্যামাইটোসিস (amitosis) (Wrong)\nCorrect answer: মাইটোসিস (mitosis)\nBehavioral state: PRIORITY_FOCUS\nChapter: কোষ বিভাজন\n",
+    "q_bn": "মানবদেহের ক্ষত নিরাময়ে কোনটি অপরিহার্য?",
+    "student_ans": "অ্যামাইটোসিস (amitosis)",
+    "correct_ans": "মাইটোসিস (mitosis)",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "কোষ বিভাজন",
+    "is_correct": false,
+    "q_id": "BIO-C02-2021-001"
+  },
+  {
+    "input": "Question: মানবদেহের ক্ষত নিরাময়ে কোনটি অপরিহার্য?\nStudent answered: সিনপসিস (synopsis) (Wrong)\nCorrect answer: মাইটোসিস (mitosis)\nBehavioral state: GROWTH_AREA\nChapter: কোষ বিভাজন\n",
+    "q_bn": "মানবদেহের ক্ষত নিরাময়ে কোনটি অপরিহার্য?",
+    "student_ans": "সিনপসিস (synopsis)",
+    "correct_ans": "মাইটোসিস (mitosis)",
+    "state": "GROWTH_AREA",
+    "chapter": "কোষ বিভাজন",
+    "is_correct": false,
+    "q_id": "BIO-C02-2021-001"
+  },
+  {
+    "input": "Question: কোনটি বংশগতির বাহক?\nStudent answered: লাইসোজোম (Wrong)\nCorrect answer: ক্রোমোজোম\nBehavioral state: PRIORITY_FOCUS\nChapter: জিনতত্ত্ব ও বিবর্তন\n",
+    "q_bn": "কোনটি বংশগতির বাহক?",
+    "student_ans": "লাইসোজোম",
+    "correct_ans": "ক্রোমোজোম",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "জিনতত্ত্ব ও বিবর্তন",
+    "is_correct": false,
+    "q_id": "BIO-C03-2021-009"
+  },
+  {
+    "input": "Question: কোনটি বংশগতির বাহক?\nStudent answered: রাইবোজোম (Wrong)\nCorrect answer: ক্রোমোজোম\nBehavioral state: GROWTH_AREA\nChapter: জিনতত্ত্ব ও বিবর্তন\n",
+    "q_bn": "কোনটি বংশগতির বাহক?",
+    "student_ans": "রাইবোজোম",
+    "correct_ans": "ক্রোমোজোম",
+    "state": "GROWTH_AREA",
+    "chapter": "জিনতত্ত্ব ও বিবর্তন",
+    "is_correct": false,
+    "q_id": "BIO-C03-2021-009"
+  },
+  {
+    "input": "Question: মানুষের হৃদপিণ্ডের কোন প্রকোষ্ঠের প্রাচীর সবচেয়ে পুরু?\nStudent answered: ডান নিলয় (Wrong)\nCorrect answer: বাম নিলয়\nBehavioral state: PRIORITY_FOCUS\nChapter: সংবহন তন্ত্র\n",
+    "q_bn": "মানুষের হৃদপিণ্ডের কোন প্রকোষ্ঠের প্রাচীর সবচেয়ে পুরু?",
+    "student_ans": "ডান নিলয়",
+    "correct_ans": "বাম নিলয়",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "সংবহন তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C10-2021-012"
+  },
+  {
+    "input": "Question: মানুষের হৃদপিণ্ডের কোন প্রকোষ্ঠের প্রাচীর সবচেয়ে পুরু?\nStudent answered: ডান অলিন্দ (Wrong)\nCorrect answer: বাম নিলয়\nBehavioral state: GROWTH_AREA\nChapter: সংবহন তন্ত্র\n",
+    "q_bn": "মানুষের হৃদপিণ্ডের কোন প্রকোষ্ঠের প্রাচীর সবচেয়ে পুরু?",
+    "student_ans": "ডান অলিন্দ",
+    "correct_ans": "বাম নিলয়",
+    "state": "GROWTH_AREA",
+    "chapter": "সংবহন তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C10-2021-012"
+  },
+  {
+    "input": "Question: শ্যাওলাগুলোর (algae) অযৌন প্রজনন কোনটি দ্বারা সম্পন্ন হয়?\nStudent answered: খণ্ডায়ন (Wrong)\nCorrect answer: স্পোর\nBehavioral state: PRIORITY_FOCUS\nChapter: জনন তন্ত্র\n",
+    "q_bn": "শ্যাওলাগুলোর (algae) অযৌন প্রজনন কোনটি দ্বারা সম্পন্ন হয়?",
+    "student_ans": "খণ্ডায়ন",
+    "correct_ans": "স্পোর",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "জনন তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C16-2020-003"
+  },
+  {
+    "input": "Question: শ্যাওলাগুলোর (algae) অযৌন প্রজনন কোনটি দ্বারা সম্পন্ন হয়?\nStudent answered: টিউবার (Wrong)\nCorrect answer: স্পোর\nBehavioral state: GROWTH_AREA\nChapter: জনন তন্ত্র\n",
+    "q_bn": "শ্যাওলাগুলোর (algae) অযৌন প্রজনন কোনটি দ্বারা সম্পন্ন হয়?",
+    "student_ans": "টিউবার",
+    "correct_ans": "স্পোর",
+    "state": "GROWTH_AREA",
+    "chapter": "জনন তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C16-2020-003"
+  },
+  {
+    "input": "Question: কোনটি ভাইরাস বৃদ্ধিতে বাধা দেয়?\nStudent answered: লাইসোজাইম (Wrong)\nCorrect answer: ইন্টারফেরন\nBehavioral state: PRIORITY_FOCUS\nChapter: অণুজীব ও ভাইরাস\n",
+    "q_bn": "কোনটি ভাইরাস বৃদ্ধিতে বাধা দেয়?",
+    "student_ans": "লাইসোজাইম",
+    "correct_ans": "ইন্টারফেরন",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "অণুজীব ও ভাইরাস",
+    "is_correct": false,
+    "q_id": "BIO-C05-2020-011"
+  },
+  {
+    "input": "Question: কোনটি ভাইরাস বৃদ্ধিতে বাধা দেয়?\nStudent answered: ডেফেনসিন (Wrong)\nCorrect answer: ইন্টারফেরন\nBehavioral state: GROWTH_AREA\nChapter: অণুজীব ও ভাইরাস\n",
+    "q_bn": "কোনটি ভাইরাস বৃদ্ধিতে বাধা দেয়?",
+    "student_ans": "ডেফেনসিন",
+    "correct_ans": "ইন্টারফেরন",
+    "state": "GROWTH_AREA",
+    "chapter": "অণুজীব ও ভাইরাস",
+    "is_correct": false,
+    "q_id": "BIO-C05-2020-011"
+  },
+  {
+    "input": "Question: নিম্নের কোনটিতে কুঁড়ি সৃষ্টি (Budding) হয়?\nStudent answered: হিবিসকাস রোজা-সাইনেনসিস (জবা) (Wrong)\nCorrect answer: গোলাপ\nBehavioral state: PRIORITY_FOCUS\nChapter: বিবিধ ও সাধারণ\n",
+    "q_bn": "নিম্নের কোনটিতে কুঁড়ি সৃষ্টি (Budding) হয়?",
+    "student_ans": "হিবিসকাস রোজা-সাইনেনসিস (জবা)",
+    "correct_ans": "গোলাপ",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "বিবিধ ও সাধারণ",
+    "is_correct": false,
+    "q_id": "BIO-C19-2020-025"
+  },
+  {
+    "input": "Question: নিম্নের কোনটিতে কুঁড়ি সৃষ্টি (Budding) হয়?\nStudent answered: লেবু (Wrong)\nCorrect answer: গোলাপ\nBehavioral state: GROWTH_AREA\nChapter: বিবিধ ও সাধারণ\n",
+    "q_bn": "নিম্নের কোনটিতে কুঁড়ি সৃষ্টি (Budding) হয়?",
+    "student_ans": "লেবু",
+    "correct_ans": "গোলাপ",
+    "state": "GROWTH_AREA",
+    "chapter": "বিবিধ ও সাধারণ",
+    "is_correct": false,
+    "q_id": "BIO-C19-2020-025"
+  },
+  {
+    "input": "Question: উদ্ভিদ দ্বারা কোন anion টি সবচেয়ে দ্রুত শোষিত হয়?\nStudent answered: SO₄²⁻ (সালফেট) (Wrong)\nCorrect answer: NO₃⁻ (নাইট্রেট)\nBehavioral state: PRIORITY_FOCUS\nChapter: বিবিধ ও সাধারণ\n",
+    "q_bn": "উদ্ভিদ দ্বারা কোন anion টি সবচেয়ে দ্রুত শোষিত হয়?",
+    "student_ans": "SO₄²⁻ (সালফেট)",
+    "correct_ans": "NO₃⁻ (নাইট্রেট)",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "বিবিধ ও সাধারণ",
+    "is_correct": false,
+    "q_id": "BIO-C19-2020-026"
+  },
+  {
+    "input": "Question: উদ্ভিদ দ্বারা কোন anion টি সবচেয়ে দ্রুত শোষিত হয়?\nStudent answered: OH⁻ (হাইড্রক্সিল) (Wrong)\nCorrect answer: NO₃⁻ (নাইট্রেট)\nBehavioral state: GROWTH_AREA\nChapter: বিবিধ ও সাধারণ\n",
+    "q_bn": "উদ্ভিদ দ্বারা কোন anion টি সবচেয়ে দ্রুত শোষিত হয়?",
+    "student_ans": "OH⁻ (হাইড্রক্সিল)",
+    "correct_ans": "NO₃⁻ (নাইট্রেট)",
+    "state": "GROWTH_AREA",
+    "chapter": "বিবিধ ও সাধারণ",
+    "is_correct": false,
+    "q_id": "BIO-C19-2020-026"
+  },
+  {
+    "input": "Question: ছত্রাক কোষ প্রাচীরের প্রধান উপাদান কী?\nStudent answered: গ্লাইকোজেন (Wrong)\nCorrect answer: কাইটিন\nBehavioral state: PRIORITY_FOCUS\nChapter: অণুজীব ও ভাইরাস\n",
+    "q_bn": "ছত্রাক কোষ প্রাচীরের প্রধান উপাদান কী?",
+    "student_ans": "গ্লাইকোজেন",
+    "correct_ans": "কাইটিন",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "অণুজীব ও ভাইরাস",
+    "is_correct": false,
+    "q_id": "BIO-C05-2020-012"
+  },
+  {
+    "input": "Question: ছত্রাক কোষ প্রাচীরের প্রধান উপাদান কী?\nStudent answered: স্টার্চ (Wrong)\nCorrect answer: কাইটিন\nBehavioral state: GROWTH_AREA\nChapter: অণুজীব ও ভাইরাস\n",
+    "q_bn": "ছত্রাক কোষ প্রাচীরের প্রধান উপাদান কী?",
+    "student_ans": "স্টার্চ",
+    "correct_ans": "কাইটিন",
+    "state": "GROWTH_AREA",
+    "chapter": "অণুজীব ও ভাইরাস",
+    "is_correct": false,
+    "q_id": "BIO-C05-2020-012"
+  },
+  {
+    "input": "Question: কোষের কোথায় ক্রেবস চক্র (Krebs cycle) সংঘটিত হয়?\nStudent answered: রাইবোসোম (Wrong)\nCorrect answer: মাইটোকন্ড্রিয়া\nBehavioral state: PRIORITY_FOCUS\nChapter: উদ্ভিদ শরীরতত্ত্ব\n",
+    "q_bn": "কোষের কোথায় ক্রেবস চক্র (Krebs cycle) সংঘটিত হয়?",
+    "student_ans": "রাইবোসোম",
+    "correct_ans": "মাইটোকন্ড্রিয়া",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "উদ্ভিদ শরীরতত্ত্ব",
+    "is_correct": false,
+    "q_id": "BIO-C07-2020-007"
+  },
+  {
+    "input": "Question: কোষের কোথায় ক্রেবস চক্র (Krebs cycle) সংঘটিত হয়?\nStudent answered: ক্লোরোপ্লাস্ট (Wrong)\nCorrect answer: মাইটোকন্ড্রিয়া\nBehavioral state: GROWTH_AREA\nChapter: উদ্ভিদ শরীরতত্ত্ব\n",
+    "q_bn": "কোষের কোথায় ক্রেবস চক্র (Krebs cycle) সংঘটিত হয়?",
+    "student_ans": "ক্লোরোপ্লাস্ট",
+    "correct_ans": "মাইটোকন্ড্রিয়া",
+    "state": "GROWTH_AREA",
+    "chapter": "উদ্ভিদ শরীরতত্ত্ব",
+    "is_correct": false,
+    "q_id": "BIO-C07-2020-007"
+  },
+  {
+    "input": "Question: মানুষের সোমাটিক কোষে কয়টি অটোসোম থাকে?\nStudent answered: ২২ (Wrong)\nCorrect answer: ৪৪\nBehavioral state: PRIORITY_FOCUS\nChapter: বিবিধ ও সাধারণ\n",
+    "q_bn": "মানুষের সোমাটিক কোষে কয়টি অটোসোম থাকে?",
+    "student_ans": "২২",
+    "correct_ans": "৪৪",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "বিবিধ ও সাধারণ",
+    "is_correct": false,
+    "q_id": "BIO-C19-2020-027"
+  },
+  {
+    "input": "Question: মানুষের সোমাটিক কোষে কয়টি অটোসোম থাকে?\nStudent answered: ৪৬ (Wrong)\nCorrect answer: ৪৪\nBehavioral state: GROWTH_AREA\nChapter: বিবিধ ও সাধারণ\n",
+    "q_bn": "মানুষের সোমাটিক কোষে কয়টি অটোসোম থাকে?",
+    "student_ans": "৪৬",
+    "correct_ans": "৪৪",
+    "state": "GROWTH_AREA",
+    "chapter": "বিবিধ ও সাধারণ",
+    "is_correct": false,
+    "q_id": "BIO-C19-2020-027"
+  },
+  {
+    "input": "Question: নিচের কোনটি ফসফোলিপিড?\nStudent answered: টারপিন (Terpene) (Wrong)\nCorrect answer: লেসিথিন (Lecithin)\nBehavioral state: PRIORITY_FOCUS\nChapter: বিবিধ ও সাধারণ\n",
+    "q_bn": "নিচের কোনটি ফসফোলিপিড?",
+    "student_ans": "টারপিন (Terpene)",
+    "correct_ans": "লেসিথিন (Lecithin)",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "বিবিধ ও সাধারণ",
+    "is_correct": false,
+    "q_id": "BIO-C19-2020-028"
+  },
+  {
+    "input": "Question: নিচের কোনটি ফসফোলিপিড?\nStudent answered: সুবেরিন (Suberin) (Wrong)\nCorrect answer: লেসিথিন (Lecithin)\nBehavioral state: GROWTH_AREA\nChapter: বিবিধ ও সাধারণ\n",
+    "q_bn": "নিচের কোনটি ফসফোলিপিড?",
+    "student_ans": "সুবেরিন (Suberin)",
+    "correct_ans": "লেসিথিন (Lecithin)",
+    "state": "GROWTH_AREA",
+    "chapter": "বিবিধ ও সাধারণ",
+    "is_correct": false,
+    "q_id": "BIO-C19-2020-028"
+  },
+  {
+    "input": "Question: কোন প্রযুক্তিতে ইনসুলিন তৈরি করা হয়?\nStudent answered: এক্সপ্লান্ট কালচার (Explant culture) (Wrong)\nCorrect answer: রিকম্বিনেন্ট ডিএনএ টেকনোলজি (Recombinant DNA technology)\nBehavioral state: PRIORITY_FOCUS\nChapter: জীবপ্রযুক্তি\n",
+    "q_bn": "কোন প্রযুক্তিতে ইনসুলিন তৈরি করা হয়?",
+    "student_ans": "এক্সপ্লান্ট কালচার (Explant culture)",
+    "correct_ans": "রিকম্বিনেন্ট ডিএনএ টেকনোলজি (Recombinant DNA technology)",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "জীবপ্রযুক্তি",
+    "is_correct": false,
+    "q_id": "BIO-C04-2020-009"
+  },
+  {
+    "input": "Question: কোন প্রযুক্তিতে ইনসুলিন তৈরি করা হয়?\nStudent answered: ন্যানো টেকনোলজি (Nanotechnology) (Wrong)\nCorrect answer: রিকম্বিনেন্ট ডিএনএ টেকনোলজি (Recombinant DNA technology)\nBehavioral state: GROWTH_AREA\nChapter: জীবপ্রযুক্তি\n",
+    "q_bn": "কোন প্রযুক্তিতে ইনসুলিন তৈরি করা হয়?",
+    "student_ans": "ন্যানো টেকনোলজি (Nanotechnology)",
+    "correct_ans": "রিকম্বিনেন্ট ডিএনএ টেকনোলজি (Recombinant DNA technology)",
+    "state": "GROWTH_AREA",
+    "chapter": "জীবপ্রযুক্তি",
+    "is_correct": false,
+    "q_id": "BIO-C04-2020-009"
+  },
+  {
+    "input": "Question: Golgi complex কোনটি সংশ্লেষ (Synthesis) করে না?\nStudent answered: লাইসোসোম (Wrong)\nCorrect answer: রাইবোসোম\nBehavioral state: PRIORITY_FOCUS\nChapter: বিবিধ ও সাধারণ\n",
+    "q_bn": "Golgi complex কোনটি সংশ্লেষ (Synthesis) করে না?",
+    "student_ans": "লাইসোসোম",
+    "correct_ans": "রাইবোসোম",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "বিবিধ ও সাধারণ",
+    "is_correct": false,
+    "q_id": "BIO-C19-2020-029"
+  },
+  {
+    "input": "Question: Golgi complex কোনটি সংশ্লেষ (Synthesis) করে না?\nStudent answered: এনজাইম (Wrong)\nCorrect answer: রাইবোসোম\nBehavioral state: GROWTH_AREA\nChapter: বিবিধ ও সাধারণ\n",
+    "q_bn": "Golgi complex কোনটি সংশ্লেষ (Synthesis) করে না?",
+    "student_ans": "এনজাইম",
+    "correct_ans": "রাইবোসোম",
+    "state": "GROWTH_AREA",
+    "chapter": "বিবিধ ও সাধারণ",
+    "is_correct": false,
+    "q_id": "BIO-C19-2020-029"
+  },
+  {
+    "input": "Question: Alveolus থেকে অক্সিজেন রক্তে কিভাবে প্রবেশ করে?\nStudent answered: শ্বসন (Wrong)\nCorrect answer: ব্যাপন\nBehavioral state: PRIORITY_FOCUS\nChapter: সংবহন তন্ত্র\n",
+    "q_bn": "Alveolus থেকে অক্সিজেন রক্তে কিভাবে প্রবেশ করে?",
+    "student_ans": "শ্বসন",
+    "correct_ans": "ব্যাপন",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "সংবহন তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C10-2020-013"
+  },
+  {
+    "input": "Question: Alveolus থেকে অক্সিজেন রক্তে কিভাবে প্রবেশ করে?\nStudent answered: প্রস্বেদন (Wrong)\nCorrect answer: ব্যাপন\nBehavioral state: GROWTH_AREA\nChapter: সংবহন তন্ত্র\n",
+    "q_bn": "Alveolus থেকে অক্সিজেন রক্তে কিভাবে প্রবেশ করে?",
+    "student_ans": "প্রস্বেদন",
+    "correct_ans": "ব্যাপন",
+    "state": "GROWTH_AREA",
+    "chapter": "সংবহন তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C10-2020-013"
+  },
+  {
+    "input": "Question: কোনটি Exocrine গ্রন্থি নয়?\nStudent answered: যকৃত (Wrong)\nCorrect answer: থাইরয়েড গ্রন্থি\nBehavioral state: PRIORITY_FOCUS\nChapter: অন্তঃক্ষরা তন্ত্র\n",
+    "q_bn": "কোনটি Exocrine গ্রন্থি নয়?",
+    "student_ans": "যকৃত",
+    "correct_ans": "থাইরয়েড গ্রন্থি",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "অন্তঃক্ষরা তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C14-2020-006"
+  },
+  {
+    "input": "Question: কোনটি Exocrine গ্রন্থি নয়?\nStudent answered: লালা গ্রন্থি (Wrong)\nCorrect answer: থাইরয়েড গ্রন্থি\nBehavioral state: GROWTH_AREA\nChapter: অন্তঃক্ষরা তন্ত্র\n",
+    "q_bn": "কোনটি Exocrine গ্রন্থি নয়?",
+    "student_ans": "লালা গ্রন্থি",
+    "correct_ans": "থাইরয়েড গ্রন্থি",
+    "state": "GROWTH_AREA",
+    "chapter": "অন্তঃক্ষরা তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C14-2020-006"
+  },
+  {
+    "input": "Question: কোনটি হাড়ের সাথে পেশি সংযুক্ত করে?\nStudent answered: লিগামেন্ট (Wrong)\nCorrect answer: টেন্ডন\nBehavioral state: PRIORITY_FOCUS\nChapter: বিবিধ ও সাধারণ\n",
+    "q_bn": "কোনটি হাড়ের সাথে পেশি সংযুক্ত করে?",
+    "student_ans": "লিগামেন্ট",
+    "correct_ans": "টেন্ডন",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "বিবিধ ও সাধারণ",
+    "is_correct": false,
+    "q_id": "BIO-C19-2020-030"
+  },
+  {
+    "input": "Question: কোনটি হাড়ের সাথে পেশি সংযুক্ত করে?\nStudent answered: সাইনোভিয়াম (Wrong)\nCorrect answer: টেন্ডন\nBehavioral state: GROWTH_AREA\nChapter: বিবিধ ও সাধারণ\n",
+    "q_bn": "কোনটি হাড়ের সাথে পেশি সংযুক্ত করে?",
+    "student_ans": "সাইনোভিয়াম",
+    "correct_ans": "টেন্ডন",
+    "state": "GROWTH_AREA",
+    "chapter": "বিবিধ ও সাধারণ",
+    "is_correct": false,
+    "q_id": "BIO-C19-2020-030"
+  },
+  {
+    "input": "Question: কোনটি আমিষ পরিপাককারী (digesting) এনজাইম?\nStudent answered: ল্যাক্টেজ (Wrong)\nCorrect answer: পেপসিন\nBehavioral state: PRIORITY_FOCUS\nChapter: পরিপাক তন্ত্র\n",
+    "q_bn": "কোনটি আমিষ পরিপাককারী (digesting) এনজাইম?",
+    "student_ans": "ল্যাক্টেজ",
+    "correct_ans": "পেপসিন",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "পরিপাক তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C09-2020-018"
+  },
+  {
+    "input": "Question: কোনটি আমিষ পরিপাককারী (digesting) এনজাইম?\nStudent answered: আইসোমল্টেজ (Wrong)\nCorrect answer: পেপসিন\nBehavioral state: GROWTH_AREA\nChapter: পরিপাক তন্ত্র\n",
+    "q_bn": "কোনটি আমিষ পরিপাককারী (digesting) এনজাইম?",
+    "student_ans": "আইসোমল্টেজ",
+    "correct_ans": "পেপসিন",
+    "state": "GROWTH_AREA",
+    "chapter": "পরিপাক তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C09-2020-018"
+  },
+  {
+    "input": "Question: নেমাটোসিস্টের (Nematocyst) ভিতরে বিষাক্ত তরল পদার্থের নাম কি?\nStudent answered: হিমোসায়ানিন (Wrong)\nCorrect answer: হিপনোটক্সিন\nBehavioral state: PRIORITY_FOCUS\nChapter: বিবিধ ও সাধারণ\n",
+    "q_bn": "নেমাটোসিস্টের (Nematocyst) ভিতরে বিষাক্ত তরল পদার্থের নাম কি?",
+    "student_ans": "হিমোসায়ানিন",
+    "correct_ans": "হিপনোটক্সিন",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "বিবিধ ও সাধারণ",
+    "is_correct": false,
+    "q_id": "BIO-C19-2020-031"
+  },
+  {
+    "input": "Question: নেমাটোসিস্টের (Nematocyst) ভিতরে বিষাক্ত তরল পদার্থের নাম কি?\nStudent answered: হিমোজয়েন (Wrong)\nCorrect answer: হিপনোটক্সিন\nBehavioral state: GROWTH_AREA\nChapter: বিবিধ ও সাধারণ\n",
+    "q_bn": "নেমাটোসিস্টের (Nematocyst) ভিতরে বিষাক্ত তরল পদার্থের নাম কি?",
+    "student_ans": "হিমোজয়েন",
+    "correct_ans": "হিপনোটক্সিন",
+    "state": "GROWTH_AREA",
+    "chapter": "বিবিধ ও সাধারণ",
+    "is_correct": false,
+    "q_id": "BIO-C19-2020-031"
+  },
+  {
+    "input": "Question: ঘাসফড়িং এর রক্ত কণিকার নাম কি?\nStudent answered: এরিথ্রোসাইট (Wrong)\nCorrect answer: হিমোসাইট\nBehavioral state: PRIORITY_FOCUS\nChapter: সংবহন তন্ত্র\n",
+    "q_bn": "ঘাসফড়িং এর রক্ত কণিকার নাম কি?",
+    "student_ans": "এরিথ্রোসাইট",
+    "correct_ans": "হিমোসাইট",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "সংবহন তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C10-2020-014"
+  },
+  {
+    "input": "Question: ঘাসফড়িং এর রক্ত কণিকার নাম কি?\nStudent answered: থ্রম্বোসাইট (Wrong)\nCorrect answer: হিমোসাইট\nBehavioral state: GROWTH_AREA\nChapter: সংবহন তন্ত্র\n",
+    "q_bn": "ঘাসফড়িং এর রক্ত কণিকার নাম কি?",
+    "student_ans": "থ্রম্বোসাইট",
+    "correct_ans": "হিমোসাইট",
+    "state": "GROWTH_AREA",
+    "chapter": "সংবহন তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C10-2020-014"
+  },
+  {
+    "input": "Question: ক্ষুদ্রান্ত্রের কোন স্তরে পানপাত্র সেল (Goblet cell) পাওয়া যায়?\nStudent answered: মাসকুলারিস মিউকোসাল (Wrong)\nCorrect answer: মিউকোসা\nBehavioral state: PRIORITY_FOCUS\nChapter: পরিপাক তন্ত্র\n",
+    "q_bn": "ক্ষুদ্রান্ত্রের কোন স্তরে পানপাত্র সেল (Goblet cell) পাওয়া যায়?",
+    "student_ans": "মাসকুলারিস মিউকোসাল",
+    "correct_ans": "মিউকোসা",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "পরিপাক তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C09-2020-019"
+  },
+  {
+    "input": "Question: ক্ষুদ্রান্ত্রের কোন স্তরে পানপাত্র সেল (Goblet cell) পাওয়া যায়?\nStudent answered: সাবমিউকোসা (Wrong)\nCorrect answer: মিউকোসা\nBehavioral state: GROWTH_AREA\nChapter: পরিপাক তন্ত্র\n",
+    "q_bn": "ক্ষুদ্রান্ত্রের কোন স্তরে পানপাত্র সেল (Goblet cell) পাওয়া যায়?",
+    "student_ans": "সাবমিউকোসা",
+    "correct_ans": "মিউকোসা",
+    "state": "GROWTH_AREA",
+    "chapter": "পরিপাক তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C09-2020-019"
+  },
+  {
+    "input": "Question: মাথার খুলিতে কয়টি হাড় রয়েছে?\nStudent answered: ৩৩ (Wrong)\nCorrect answer: ২৯\nBehavioral state: PRIORITY_FOCUS\nChapter: বিবিধ ও সাধারণ\n",
+    "q_bn": "মাথার খুলিতে কয়টি হাড় রয়েছে?",
+    "student_ans": "৩৩",
+    "correct_ans": "২৯",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "বিবিধ ও সাধারণ",
+    "is_correct": false,
+    "q_id": "BIO-C19-2020-032"
+  },
+  {
+    "input": "Question: মাথার খুলিতে কয়টি হাড় রয়েছে?\nStudent answered: ১৭ (Wrong)\nCorrect answer: ২৯\nBehavioral state: GROWTH_AREA\nChapter: বিবিধ ও সাধারণ\n",
+    "q_bn": "মাথার খুলিতে কয়টি হাড় রয়েছে?",
+    "student_ans": "১৭",
+    "correct_ans": "২৯",
+    "state": "GROWTH_AREA",
+    "chapter": "বিবিধ ও সাধারণ",
+    "is_correct": false,
+    "q_id": "BIO-C19-2020-032"
+  },
+  {
+    "input": "Question: কোনটি attenuated টিকা?\nStudent answered: হেপাটাইটিস বি ভ্যাকসিন (Wrong)\nCorrect answer: বিসিজি ভ্যাকসিন\nBehavioral state: PRIORITY_FOCUS\nChapter: রোগ প্রতিরোধ ও রক্তের গ্রুপ\n",
+    "q_bn": "কোনটি attenuated টিকা?",
+    "student_ans": "হেপাটাইটিস বি ভ্যাকসিন",
+    "correct_ans": "বিসিজি ভ্যাকসিন",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "রোগ প্রতিরোধ ও রক্তের গ্রুপ",
+    "is_correct": false,
+    "q_id": "BIO-C17-2020-003"
+  },
+  {
+    "input": "Question: কোনটি attenuated টিকা?\nStudent answered: টিটেনাস ভ্যাকসিন (Wrong)\nCorrect answer: বিসিজি ভ্যাকসিন\nBehavioral state: GROWTH_AREA\nChapter: রোগ প্রতিরোধ ও রক্তের গ্রুপ\n",
+    "q_bn": "কোনটি attenuated টিকা?",
+    "student_ans": "টিটেনাস ভ্যাকসিন",
+    "correct_ans": "বিসিজি ভ্যাকসিন",
+    "state": "GROWTH_AREA",
+    "chapter": "রোগ প্রতিরোধ ও রক্তের গ্রুপ",
+    "is_correct": false,
+    "q_id": "BIO-C17-2020-003"
+  },
+  {
+    "input": "Question: কোন কোষ ম্যাক্রোফেজে (macrophages) রূপান্তরিত হয়?\nStudent answered: বেসোফিল (Wrong)\nCorrect answer: মনোসাইট\nBehavioral state: PRIORITY_FOCUS\nChapter: বিবিধ ও সাধারণ\n",
+    "q_bn": "কোন কোষ ম্যাক্রোফেজে (macrophages) রূপান্তরিত হয়?",
+    "student_ans": "বেসোফিল",
+    "correct_ans": "মনোসাইট",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "বিবিধ ও সাধারণ",
+    "is_correct": false,
+    "q_id": "BIO-C19-2020-033"
+  },
+  {
+    "input": "Question: কোন কোষ ম্যাক্রোফেজে (macrophages) রূপান্তরিত হয়?\nStudent answered: লিম্ফোসাইট (Wrong)\nCorrect answer: মনোসাইট\nBehavioral state: GROWTH_AREA\nChapter: বিবিধ ও সাধারণ\n",
+    "q_bn": "কোন কোষ ম্যাক্রোফেজে (macrophages) রূপান্তরিত হয়?",
+    "student_ans": "লিম্ফোসাইট",
+    "correct_ans": "মনোসাইট",
+    "state": "GROWTH_AREA",
+    "chapter": "বিবিধ ও সাধারণ",
+    "is_correct": false,
+    "q_id": "BIO-C19-2020-033"
+  },
+  {
+    "input": "Question: কোন পদ্ধতিতে Hydra লম্বা দূরত্ব অতিক্রম করে?\nStudent answered: সাঁতার (Wrong)\nCorrect answer: হামাগুড়ি (looping)\nBehavioral state: PRIORITY_FOCUS\nChapter: বিবিধ ও সাধারণ\n",
+    "q_bn": "কোন পদ্ধতিতে Hydra লম্বা দূরত্ব অতিক্রম করে?",
+    "student_ans": "সাঁতার",
+    "correct_ans": "হামাগুড়ি (looping)",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "বিবিধ ও সাধারণ",
+    "is_correct": false,
+    "q_id": "BIO-C19-2020-034"
+  },
+  {
+    "input": "Question: কোন পদ্ধতিতে Hydra লম্বা দূরত্ব অতিক্রম করে?\nStudent answered: গ্লাইডিং (gliding) (Wrong)\nCorrect answer: হামাগুড়ি (looping)\nBehavioral state: GROWTH_AREA\nChapter: বিবিধ ও সাধারণ\n",
+    "q_bn": "কোন পদ্ধতিতে Hydra লম্বা দূরত্ব অতিক্রম করে?",
+    "student_ans": "গ্লাইডিং (gliding)",
+    "correct_ans": "হামাগুড়ি (looping)",
+    "state": "GROWTH_AREA",
+    "chapter": "বিবিধ ও সাধারণ",
+    "is_correct": false,
+    "q_id": "BIO-C19-2020-034"
+  },
+  {
+    "input": "Question: কোন এনজাইম অগ্ন্যাশয়ে নাই?\nStudent answered: ট্রিপসিন (Wrong)\nCorrect answer: টায়ালিন\nBehavioral state: PRIORITY_FOCUS\nChapter: পরিপাক তন্ত্র\n",
+    "q_bn": "কোন এনজাইম অগ্ন্যাশয়ে নাই?",
+    "student_ans": "ট্রিপসিন",
+    "correct_ans": "টায়ালিন",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "পরিপাক তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C09-2020-020"
+  },
+  {
+    "input": "Question: কোন এনজাইম অগ্ন্যাশয়ে নাই?\nStudent answered: অ্যামাইলেজ (Wrong)\nCorrect answer: টায়ালিন\nBehavioral state: GROWTH_AREA\nChapter: পরিপাক তন্ত্র\n",
+    "q_bn": "কোন এনজাইম অগ্ন্যাশয়ে নাই?",
+    "student_ans": "অ্যামাইলেজ",
+    "correct_ans": "টায়ালিন",
+    "state": "GROWTH_AREA",
+    "chapter": "পরিপাক তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C09-2020-020"
+  },
+  {
+    "input": "Question: ভ্রূণে লোহিত কণিকাসমূহ নিম্নের কোথায় তৈরি হয়?\nStudent answered: অগ্ন্যাশয় (Wrong)\nCorrect answer: প্লীহা\nBehavioral state: PRIORITY_FOCUS\nChapter: সংবহন তন্ত্র\n",
+    "q_bn": "ভ্রূণে লোহিত কণিকাসমূহ নিম্নের কোথায় তৈরি হয়?",
+    "student_ans": "অগ্ন্যাশয়",
+    "correct_ans": "প্লীহা",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "সংবহন তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C10-2020-015"
+  },
+  {
+    "input": "Question: ভ্রূণে লোহিত কণিকাসমূহ নিম্নের কোথায় তৈরি হয়?\nStudent answered: অস্থিমজ্জা (Wrong)\nCorrect answer: প্লীহা\nBehavioral state: GROWTH_AREA\nChapter: সংবহন তন্ত্র\n",
+    "q_bn": "ভ্রূণে লোহিত কণিকাসমূহ নিম্নের কোথায় তৈরি হয়?",
+    "student_ans": "অস্থিমজ্জা",
+    "correct_ans": "প্লীহা",
+    "state": "GROWTH_AREA",
+    "chapter": "সংবহন তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C10-2020-015"
+  },
+  {
+    "input": "Question: প্রশ্বাস বায়ুতে কার্বন ডাই অক্সাইড (CO₂) এর পরিমাণ কত?\nStudent answered: ১৩.৭% (Wrong)\nCorrect answer: ০.৪%\nBehavioral state: PRIORITY_FOCUS\nChapter: বিবিধ ও সাধারণ\n",
+    "q_bn": "প্রশ্বাস বায়ুতে কার্বন ডাই অক্সাইড (CO₂) এর পরিমাণ কত?",
+    "student_ans": "১৩.৭%",
+    "correct_ans": "০.৪%",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "বিবিধ ও সাধারণ",
+    "is_correct": false,
+    "q_id": "BIO-C19-2020-035"
+  },
+  {
+    "input": "Question: প্রশ্বাস বায়ুতে কার্বন ডাই অক্সাইড (CO₂) এর পরিমাণ কত?\nStudent answered: ২০.০% (Wrong)\nCorrect answer: ০.৪%\nBehavioral state: GROWTH_AREA\nChapter: বিবিধ ও সাধারণ\n",
+    "q_bn": "প্রশ্বাস বায়ুতে কার্বন ডাই অক্সাইড (CO₂) এর পরিমাণ কত?",
+    "student_ans": "২০.০%",
+    "correct_ans": "০.৪%",
+    "state": "GROWTH_AREA",
+    "chapter": "বিবিধ ও সাধারণ",
+    "is_correct": false,
+    "q_id": "BIO-C19-2020-035"
+  },
+  {
+    "input": "Question: প্রাণিজগতের বৃহত্তম Phylum কোনটি?\nStudent answered: মোলাস্কা (Wrong)\nCorrect answer: আর্থ্রোপোডা\nBehavioral state: PRIORITY_FOCUS\nChapter: বিবিধ ও সাধারণ\n",
+    "q_bn": "প্রাণিজগতের বৃহত্তম Phylum কোনটি?",
+    "student_ans": "মোলাস্কা",
+    "correct_ans": "আর্থ্রোপোডা",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "বিবিধ ও সাধারণ",
+    "is_correct": false,
+    "q_id": "BIO-C19-2020-036"
+  },
+  {
+    "input": "Question: প্রাণিজগতের বৃহত্তম Phylum কোনটি?\nStudent answered: অ্যানেলিডা (Wrong)\nCorrect answer: আর্থ্রোপোডা\nBehavioral state: GROWTH_AREA\nChapter: বিবিধ ও সাধারণ\n",
+    "q_bn": "প্রাণিজগতের বৃহত্তম Phylum কোনটি?",
+    "student_ans": "অ্যানেলিডা",
+    "correct_ans": "আর্থ্রোপোডা",
+    "state": "GROWTH_AREA",
+    "chapter": "বিবিধ ও সাধারণ",
+    "is_correct": false,
+    "q_id": "BIO-C19-2020-036"
+  },
+  {
+    "input": "Question: লিভারের কোন লোবটি পিত্তথলির সাথে সংযুক্ত থাকে?\nStudent answered: বাম লোব (Wrong)\nCorrect answer: কোয়াড্রেট লোব\nBehavioral state: PRIORITY_FOCUS\nChapter: পরিপাক তন্ত্র\n",
+    "q_bn": "লিভারের কোন লোবটি পিত্তথলির সাথে সংযুক্ত থাকে?",
+    "student_ans": "বাম লোব",
+    "correct_ans": "কোয়াড্রেট লোব",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "পরিপাক তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C09-2020-021"
+  },
+  {
+    "input": "Question: লিভারের কোন লোবটি পিত্তথলির সাথে সংযুক্ত থাকে?\nStudent answered: কডেট লোব (Wrong)\nCorrect answer: কোয়াড্রেট লোব\nBehavioral state: GROWTH_AREA\nChapter: পরিপাক তন্ত্র\n",
+    "q_bn": "লিভারের কোন লোবটি পিত্তথলির সাথে সংযুক্ত থাকে?",
+    "student_ans": "কডেট লোব",
+    "correct_ans": "কোয়াড্রেট লোব",
+    "state": "GROWTH_AREA",
+    "chapter": "পরিপাক তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C09-2020-021"
+  },
+  {
+    "input": "Question: গ্রোথ হরমোন কোথায় তৈরি হয়?\nStudent answered: হাইপোথ্যালামাস (Wrong)\nCorrect answer: পিটুইটারি গ্রন্থি\nBehavioral state: PRIORITY_FOCUS\nChapter: অন্তঃক্ষরা তন্ত্র\n",
+    "q_bn": "গ্রোথ হরমোন কোথায় তৈরি হয়?",
+    "student_ans": "হাইপোথ্যালামাস",
+    "correct_ans": "পিটুইটারি গ্রন্থি",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "অন্তঃক্ষরা তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C14-2020-007"
+  },
+  {
+    "input": "Question: গ্রোথ হরমোন কোথায় তৈরি হয়?\nStudent answered: অ্যাড্রেনাল গ্রন্থি (Wrong)\nCorrect answer: পিটুইটারি গ্রন্থি\nBehavioral state: GROWTH_AREA\nChapter: অন্তঃক্ষরা তন্ত্র\n",
+    "q_bn": "গ্রোথ হরমোন কোথায় তৈরি হয়?",
+    "student_ans": "অ্যাড্রেনাল গ্রন্থি",
+    "correct_ans": "পিটুইটারি গ্রন্থি",
+    "state": "GROWTH_AREA",
+    "chapter": "অন্তঃক্ষরা তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C14-2020-007"
+  },
+  {
+    "input": "Question: কোনটি মানুষের পশ্চাৎ মস্তিষ্কের অংশ নয়?\nStudent answered: পনস (Wrong)\nCorrect answer: থ্যালামাস\nBehavioral state: PRIORITY_FOCUS\nChapter: স্নায়ুতন্ত্র\n",
+    "q_bn": "কোনটি মানুষের পশ্চাৎ মস্তিষ্কের অংশ নয়?",
+    "student_ans": "পনস",
+    "correct_ans": "থ্যালামাস",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "স্নায়ুতন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C13-2019-005"
+  },
+  {
+    "input": "Question: কোনটি মানুষের পশ্চাৎ মস্তিষ্কের অংশ নয়?\nStudent answered: সেরেবেলাম (Wrong)\nCorrect answer: থ্যালামাস\nBehavioral state: GROWTH_AREA\nChapter: স্নায়ুতন্ত্র\n",
+    "q_bn": "কোনটি মানুষের পশ্চাৎ মস্তিষ্কের অংশ নয়?",
+    "student_ans": "সেরেবেলাম",
+    "correct_ans": "থ্যালামাস",
+    "state": "GROWTH_AREA",
+    "chapter": "স্নায়ুতন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C13-2019-005"
+  },
+  {
+    "input": "Question: অডিটরিয়ামে কতজন দর্শক ঢুকছেন বা বের হচ্ছেন তা গণনার জন্য স্বয়ংক্রিয় যন্ত্রে নিচের কোনটি ব্যবহৃত হয়?\nStudent answered: এক্স রে (Wrong)\nCorrect answer: আলোকতড়িৎ\nBehavioral state: PRIORITY_FOCUS\nChapter: ইন্দ্রিয় তন্ত্র\n",
+    "q_bn": "অডিটরিয়ামে কতজন দর্শক ঢুকছেন বা বের হচ্ছেন তা গণনার জন্য স্বয়ংক্রিয় যন্ত্রে নিচের কোনটি ব্যবহৃত হয়?",
+    "student_ans": "এক্স রে",
+    "correct_ans": "আলোকতড়িৎ",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "ইন্দ্রিয় তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C18-2019-003"
+  },
+  {
+    "input": "Question: অডিটরিয়ামে কতজন দর্শক ঢুকছেন বা বের হচ্ছেন তা গণনার জন্য স্বয়ংক্রিয় যন্ত্রে নিচের কোনটি ব্যবহৃত হয়?\nStudent answered: গামা রে (Wrong)\nCorrect answer: আলোকতড়িৎ\nBehavioral state: GROWTH_AREA\nChapter: ইন্দ্রিয় তন্ত্র\n",
+    "q_bn": "অডিটরিয়ামে কতজন দর্শক ঢুকছেন বা বের হচ্ছেন তা গণনার জন্য স্বয়ংক্রিয় যন্ত্রে নিচের কোনটি ব্যবহৃত হয়?",
+    "student_ans": "গামা রে",
+    "correct_ans": "আলোকতড়িৎ",
+    "state": "GROWTH_AREA",
+    "chapter": "ইন্দ্রিয় তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C18-2019-003"
+  },
+  {
+    "input": "Question: মানবদেহের সবচেয়ে ছোট অনাল গ্রন্থি কোনটি?\nStudent answered: শুক্রাশয় (Wrong)\nCorrect answer: পিটুইটারি\nBehavioral state: PRIORITY_FOCUS\nChapter: অন্তঃক্ষরা তন্ত্র\n",
+    "q_bn": "মানবদেহের সবচেয়ে ছোট অনাল গ্রন্থি কোনটি?",
+    "student_ans": "শুক্রাশয়",
+    "correct_ans": "পিটুইটারি",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "অন্তঃক্ষরা তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C14-2019-008"
+  },
+  {
+    "input": "Question: মানবদেহের সবচেয়ে ছোট অনাল গ্রন্থি কোনটি?\nStudent answered: সুপ্রারেনাল (Wrong)\nCorrect answer: পিটুইটারি\nBehavioral state: GROWTH_AREA\nChapter: অন্তঃক্ষরা তন্ত্র\n",
+    "q_bn": "মানবদেহের সবচেয়ে ছোট অনাল গ্রন্থি কোনটি?",
+    "student_ans": "সুপ্রারেনাল",
+    "correct_ans": "পিটুইটারি",
+    "state": "GROWTH_AREA",
+    "chapter": "অন্তঃক্ষরা তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C14-2019-008"
+  },
+  {
+    "input": "Question: ঘাস ফড়িংয়ের পুঞ্জাক্ষীর কোন অংশটি আলো গ্রহণ করে?\nStudent answered: কর্নিয়াজেন (Wrong)\nCorrect answer: নিডোব্লাস্ট\nBehavioral state: PRIORITY_FOCUS\nChapter: প্রাণীর বিভিন্নতা\n",
+    "q_bn": "ঘাস ফড়িংয়ের পুঞ্জাক্ষীর কোন অংশটি আলো গ্রহণ করে?",
+    "student_ans": "কর্নিয়াজেন",
+    "correct_ans": "নিডোব্লাস্ট",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "প্রাণীর বিভিন্নতা",
+    "is_correct": false,
+    "q_id": "BIO-C08-2019-004"
+  },
+  {
+    "input": "Question: ঘাস ফড়িংয়ের পুঞ্জাক্ষীর কোন অংশটি আলো গ্রহণ করে?\nStudent answered: পেশী আবরণী (Wrong)\nCorrect answer: নিডোব্লাস্ট\nBehavioral state: GROWTH_AREA\nChapter: প্রাণীর বিভিন্নতা\n",
+    "q_bn": "ঘাস ফড়িংয়ের পুঞ্জাক্ষীর কোন অংশটি আলো গ্রহণ করে?",
+    "student_ans": "পেশী আবরণী",
+    "correct_ans": "নিডোব্লাস্ট",
+    "state": "GROWTH_AREA",
+    "chapter": "প্রাণীর বিভিন্নতা",
+    "is_correct": false,
+    "q_id": "BIO-C08-2019-004"
+  },
+  {
+    "input": "Question: মুখবিবরে 'র‍্যাভুলা' নামক অংশ থাকে কোন পর্বের প্রাণীতে?\nStudent answered: আর্থ্রোপোডা (Wrong)\nCorrect answer: মোলাস্কা\nBehavioral state: PRIORITY_FOCUS\nChapter: বিবিধ ও সাধারণ\n",
+    "q_bn": "মুখবিবরে 'র‍্যাভুলা' নামক অংশ থাকে কোন পর্বের প্রাণীতে?",
+    "student_ans": "আর্থ্রোপোডা",
+    "correct_ans": "মোলাস্কা",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "বিবিধ ও সাধারণ",
+    "is_correct": false,
+    "q_id": "BIO-C19-2019-037"
+  },
+  {
+    "input": "Question: মুখবিবরে 'র‍্যাভুলা' নামক অংশ থাকে কোন পর্বের প্রাণীতে?\nStudent answered: নেমাটোডা (Wrong)\nCorrect answer: মোলাস্কা\nBehavioral state: GROWTH_AREA\nChapter: বিবিধ ও সাধারণ\n",
+    "q_bn": "মুখবিবরে 'র‍্যাভুলা' নামক অংশ থাকে কোন পর্বের প্রাণীতে?",
+    "student_ans": "নেমাটোডা",
+    "correct_ans": "মোলাস্কা",
+    "state": "GROWTH_AREA",
+    "chapter": "বিবিধ ও সাধারণ",
+    "is_correct": false,
+    "q_id": "BIO-C19-2019-037"
+  },
+  {
+    "input": "Question: হাইড্রার বহিঃত্বকে সমগ্র অংশ জুড়ে অবস্থান করে কোনটি?\nStudent answered: নিডোব্লাস্ট (Wrong)\nCorrect answer: পেশী আবরণী\nBehavioral state: PRIORITY_FOCUS\nChapter: প্রাণীর বিভিন্নতা\n",
+    "q_bn": "হাইড্রার বহিঃত্বকে সমগ্র অংশ জুড়ে অবস্থান করে কোনটি?",
+    "student_ans": "নিডোব্লাস্ট",
+    "correct_ans": "পেশী আবরণী",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "প্রাণীর বিভিন্নতা",
+    "is_correct": false,
+    "q_id": "BIO-C08-2019-005"
+  },
+  {
+    "input": "Question: হাইড্রার বহিঃত্বকে সমগ্র অংশ জুড়ে অবস্থান করে কোনটি?\nStudent answered: স্নায়ু (Wrong)\nCorrect answer: পেশী আবরণী\nBehavioral state: GROWTH_AREA\nChapter: প্রাণীর বিভিন্নতা\n",
+    "q_bn": "হাইড্রার বহিঃত্বকে সমগ্র অংশ জুড়ে অবস্থান করে কোনটি?",
+    "student_ans": "স্নায়ু",
+    "correct_ans": "পেশী আবরণী",
+    "state": "GROWTH_AREA",
+    "chapter": "প্রাণীর বিভিন্নতা",
+    "is_correct": false,
+    "q_id": "BIO-C08-2019-005"
+  },
+  {
+    "input": "Question: হৃদপিন্ডের কোন কপাটিকায় তিনটি কাম্প (cusp) থাকে না?\nStudent answered: অ্যাওর্টিক (Wrong)\nCorrect answer: বাম এন্ট্রিওভেন্ট্রিকুলার\nBehavioral state: PRIORITY_FOCUS\nChapter: রোগ প্রতিরোধ ও রক্তের গ্রুপ\n",
+    "q_bn": "হৃদপিন্ডের কোন কপাটিকায় তিনটি কাম্প (cusp) থাকে না?",
+    "student_ans": "অ্যাওর্টিক",
+    "correct_ans": "বাম এন্ট্রিওভেন্ট্রিকুলার",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "রোগ প্রতিরোধ ও রক্তের গ্রুপ",
+    "is_correct": false,
+    "q_id": "BIO-C17-2019-004"
+  },
+  {
+    "input": "Question: হৃদপিন্ডের কোন কপাটিকায় তিনটি কাম্প (cusp) থাকে না?\nStudent answered: পালমোনারী (Wrong)\nCorrect answer: বাম এন্ট্রিওভেন্ট্রিকুলার\nBehavioral state: GROWTH_AREA\nChapter: রোগ প্রতিরোধ ও রক্তের গ্রুপ\n",
+    "q_bn": "হৃদপিন্ডের কোন কপাটিকায় তিনটি কাম্প (cusp) থাকে না?",
+    "student_ans": "পালমোনারী",
+    "correct_ans": "বাম এন্ট্রিওভেন্ট্রিকুলার",
+    "state": "GROWTH_AREA",
+    "chapter": "রোগ প্রতিরোধ ও রক্তের গ্রুপ",
+    "is_correct": false,
+    "q_id": "BIO-C17-2019-004"
+  },
+  {
+    "input": "Question: হেপারিন তৈরি ও নিঃসরণ করা কোন কোষের কাজ?\nStudent answered: মনোসাইট (Wrong)\nCorrect answer: বেসোফিল\nBehavioral state: PRIORITY_FOCUS\nChapter: বিবিধ ও সাধারণ\n",
+    "q_bn": "হেপারিন তৈরি ও নিঃসরণ করা কোন কোষের কাজ?",
+    "student_ans": "মনোসাইট",
+    "correct_ans": "বেসোফিল",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "বিবিধ ও সাধারণ",
+    "is_correct": false,
+    "q_id": "BIO-C19-2019-038"
+  },
+  {
+    "input": "Question: হেপারিন তৈরি ও নিঃসরণ করা কোন কোষের কাজ?\nStudent answered: নিউট্রোফিল (Wrong)\nCorrect answer: বেসোফিল\nBehavioral state: GROWTH_AREA\nChapter: বিবিধ ও সাধারণ\n",
+    "q_bn": "হেপারিন তৈরি ও নিঃসরণ করা কোন কোষের কাজ?",
+    "student_ans": "নিউট্রোফিল",
+    "correct_ans": "বেসোফিল",
+    "state": "GROWTH_AREA",
+    "chapter": "বিবিধ ও সাধারণ",
+    "is_correct": false,
+    "q_id": "BIO-C19-2019-038"
+  },
+  {
+    "input": "Question: নিচের কোনটি প্রোক্যাম্বিয়াম হতে সৃষ্টি হয় না?\nStudent answered: জাইলেম (Wrong)\nCorrect answer: কর্টেক্স\nBehavioral state: PRIORITY_FOCUS\nChapter: বিবিধ ও সাধারণ\n",
+    "q_bn": "নিচের কোনটি প্রোক্যাম্বিয়াম হতে সৃষ্টি হয় না?",
+    "student_ans": "জাইলেম",
+    "correct_ans": "কর্টেক্স",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "বিবিধ ও সাধারণ",
+    "is_correct": false,
+    "q_id": "BIO-C19-2019-039"
+  },
+  {
+    "input": "Question: নিচের কোনটি প্রোক্যাম্বিয়াম হতে সৃষ্টি হয় না?\nStudent answered: ক্যাম্বিয়াম (Wrong)\nCorrect answer: কর্টেক্স\nBehavioral state: GROWTH_AREA\nChapter: বিবিধ ও সাধারণ\n",
+    "q_bn": "নিচের কোনটি প্রোক্যাম্বিয়াম হতে সৃষ্টি হয় না?",
+    "student_ans": "ক্যাম্বিয়াম",
+    "correct_ans": "কর্টেক্স",
+    "state": "GROWTH_AREA",
+    "chapter": "বিবিধ ও সাধারণ",
+    "is_correct": false,
+    "q_id": "BIO-C19-2019-039"
+  },
+  {
+    "input": "Question: সালোকসংশ্লেষণের আলোক পর্যায়ে উৎপন্ন হয় কোনটি?\nStudent answered: ATP ও শর্করা (Wrong)\nCorrect answer: এনএডিপিএইচ এটিপি\nBehavioral state: PRIORITY_FOCUS\nChapter: উদ্ভিদ শরীরতত্ত্ব\n",
+    "q_bn": "সালোকসংশ্লেষণের আলোক পর্যায়ে উৎপন্ন হয় কোনটি?",
+    "student_ans": "ATP ও শর্করা",
+    "correct_ans": "এনএডিপিএইচ এটিপি",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "উদ্ভিদ শরীরতত্ত্ব",
+    "is_correct": false,
+    "q_id": "BIO-C07-2019-008"
+  },
+  {
+    "input": "Question: সালোকসংশ্লেষণের আলোক পর্যায়ে উৎপন্ন হয় কোনটি?\nStudent answered: NADP ও শর্করা (Wrong)\nCorrect answer: এনএডিপিএইচ এটিপি\nBehavioral state: GROWTH_AREA\nChapter: উদ্ভিদ শরীরতত্ত্ব\n",
+    "q_bn": "সালোকসংশ্লেষণের আলোক পর্যায়ে উৎপন্ন হয় কোনটি?",
+    "student_ans": "NADP ও শর্করা",
+    "correct_ans": "এনএডিপিএইচ এটিপি",
+    "state": "GROWTH_AREA",
+    "chapter": "উদ্ভিদ শরীরতত্ত্ব",
+    "is_correct": false,
+    "q_id": "BIO-C07-2019-008"
+  },
+  {
+    "input": "Question: নিষেকের ফলে কোনটি উৎপন্ন হয় না?\nStudent answered: সস্যকলা (Wrong)\nCorrect answer: জাইগোস্পোর\nBehavioral state: PRIORITY_FOCUS\nChapter: জনন তন্ত্র\n",
+    "q_bn": "নিষেকের ফলে কোনটি উৎপন্ন হয় না?",
+    "student_ans": "সস্যকলা",
+    "correct_ans": "জাইগোস্পোর",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "জনন তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C16-2019-004"
+  },
+  {
+    "input": "Question: নিষেকের ফলে কোনটি উৎপন্ন হয় না?\nStudent answered: ভ্রূণ (Wrong)\nCorrect answer: জাইগোস্পোর\nBehavioral state: GROWTH_AREA\nChapter: জনন তন্ত্র\n",
+    "q_bn": "নিষেকের ফলে কোনটি উৎপন্ন হয় না?",
+    "student_ans": "ভ্রূণ",
+    "correct_ans": "জাইগোস্পোর",
+    "state": "GROWTH_AREA",
+    "chapter": "জনন তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C16-2019-004"
+  },
+  {
+    "input": "Question: মাস্টার ব্লু-প্রিন্ট বলা হয় কোনটিকে?\nStudent answered: ক্রোমোসোম (Wrong)\nCorrect answer: ডিএনএ\nBehavioral state: PRIORITY_FOCUS\nChapter: জিনতত্ত্ব ও বিবর্তন\n",
+    "q_bn": "মাস্টার ব্লু-প্রিন্ট বলা হয় কোনটিকে?",
+    "student_ans": "ক্রোমোসোম",
+    "correct_ans": "ডিএনএ",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "জিনতত্ত্ব ও বিবর্তন",
+    "is_correct": false,
+    "q_id": "BIO-C03-2019-010"
+  },
+  {
+    "input": "Question: মাস্টার ব্লু-প্রিন্ট বলা হয় কোনটিকে?\nStudent answered: নিউক্লিয়াস (Wrong)\nCorrect answer: ডিএনএ\nBehavioral state: GROWTH_AREA\nChapter: জিনতত্ত্ব ও বিবর্তন\n",
+    "q_bn": "মাস্টার ব্লু-প্রিন্ট বলা হয় কোনটিকে?",
+    "student_ans": "নিউক্লিয়াস",
+    "correct_ans": "ডিএনএ",
+    "state": "GROWTH_AREA",
+    "chapter": "জিনতত্ত্ব ও বিবর্তন",
+    "is_correct": false,
+    "q_id": "BIO-C03-2019-010"
+  },
+  {
+    "input": "Question: নিচের কোনটি উদ্ভিদটি নোনা পানিতে জন্মায় না?\nStudent answered: সুন্দরী (Heritiera) (Wrong)\nCorrect answer: বাবলা (Acacia)\nBehavioral state: PRIORITY_FOCUS\nChapter: রোগ প্রতিরোধ ও রক্তের গ্রুপ\n",
+    "q_bn": "নিচের কোনটি উদ্ভিদটি নোনা পানিতে জন্মায় না?",
+    "student_ans": "সুন্দরী (Heritiera)",
+    "correct_ans": "বাবলা (Acacia)",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "রোগ প্রতিরোধ ও রক্তের গ্রুপ",
+    "is_correct": false,
+    "q_id": "BIO-C17-2019-005"
+  },
+  {
+    "input": "Question: নিচের কোনটি উদ্ভিদটি নোনা পানিতে জন্মায় না?\nStudent answered: পশুর (Zylocarpus) (Wrong)\nCorrect answer: বাবলা (Acacia)\nBehavioral state: GROWTH_AREA\nChapter: রোগ প্রতিরোধ ও রক্তের গ্রুপ\n",
+    "q_bn": "নিচের কোনটি উদ্ভিদটি নোনা পানিতে জন্মায় না?",
+    "student_ans": "পশুর (Zylocarpus)",
+    "correct_ans": "বাবলা (Acacia)",
+    "state": "GROWTH_AREA",
+    "chapter": "রোগ প্রতিরোধ ও রক্তের গ্রুপ",
+    "is_correct": false,
+    "q_id": "BIO-C17-2019-005"
+  },
+  {
+    "input": "Question: নিচের কোনটি RNA ভাইরাসের উদাহরণ নয়?\nStudent answered: জলাতঙ্ক ভাইরাস (Wrong)\nCorrect answer: ভ্যারিওলা ভাইরাস\nBehavioral state: PRIORITY_FOCUS\nChapter: জিনতত্ত্ব ও বিবর্তন\n",
+    "q_bn": "নিচের কোনটি RNA ভাইরাসের উদাহরণ নয়?",
+    "student_ans": "জলাতঙ্ক ভাইরাস",
+    "correct_ans": "ভ্যারিওলা ভাইরাস",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "জিনতত্ত্ব ও বিবর্তন",
+    "is_correct": false,
+    "q_id": "BIO-C03-2019-011"
+  },
+  {
+    "input": "Question: নিচের কোনটি RNA ভাইরাসের উদাহরণ নয়?\nStudent answered: পোলিও ভাইরাস (Wrong)\nCorrect answer: ভ্যারিওলা ভাইরাস\nBehavioral state: GROWTH_AREA\nChapter: জিনতত্ত্ব ও বিবর্তন\n",
+    "q_bn": "নিচের কোনটি RNA ভাইরাসের উদাহরণ নয়?",
+    "student_ans": "পোলিও ভাইরাস",
+    "correct_ans": "ভ্যারিওলা ভাইরাস",
+    "state": "GROWTH_AREA",
+    "chapter": "জিনতত্ত্ব ও বিবর্তন",
+    "is_correct": false,
+    "q_id": "BIO-C03-2019-011"
+  },
+  {
+    "input": "Question: নিচের কোনটি বাদামি শৈবালের (Phaeophayta) সঞ্চিত খাদ্য নয়?\nStudent answered: ল্যামিনারিন (Wrong)\nCorrect answer: স্টার্চ\nBehavioral state: PRIORITY_FOCUS\nChapter: বিবিধ ও সাধারণ\n",
+    "q_bn": "নিচের কোনটি বাদামি শৈবালের (Phaeophayta) সঞ্চিত খাদ্য নয়?",
+    "student_ans": "ল্যামিনারিন",
+    "correct_ans": "স্টার্চ",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "বিবিধ ও সাধারণ",
+    "is_correct": false,
+    "q_id": "BIO-C19-2019-040"
+  },
+  {
+    "input": "Question: নিচের কোনটি বাদামি শৈবালের (Phaeophayta) সঞ্চিত খাদ্য নয়?\nStudent answered: এলগিন (Wrong)\nCorrect answer: স্টার্চ\nBehavioral state: GROWTH_AREA\nChapter: বিবিধ ও সাধারণ\n",
+    "q_bn": "নিচের কোনটি বাদামি শৈবালের (Phaeophayta) সঞ্চিত খাদ্য নয়?",
+    "student_ans": "এলগিন",
+    "correct_ans": "স্টার্চ",
+    "state": "GROWTH_AREA",
+    "chapter": "বিবিধ ও সাধারণ",
+    "is_correct": false,
+    "q_id": "BIO-C19-2019-040"
+  },
+  {
+    "input": "Question: বিশ্বের সবচেয়ে ক্ষুদ্রতম আবৃতবীজী উদ্ভিদ কোনটি?\nStudent answered: পিস্টিয়া (Wrong)\nCorrect answer: উলফিয়া\nBehavioral state: PRIORITY_FOCUS\nChapter: বিবিধ ও সাধারণ\n",
+    "q_bn": "বিশ্বের সবচেয়ে ক্ষুদ্রতম আবৃতবীজী উদ্ভিদ কোনটি?",
+    "student_ans": "পিস্টিয়া",
+    "correct_ans": "উলফিয়া",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "বিবিধ ও সাধারণ",
+    "is_correct": false,
+    "q_id": "BIO-C19-2019-041"
+  },
+  {
+    "input": "Question: বিশ্বের সবচেয়ে ক্ষুদ্রতম আবৃতবীজী উদ্ভিদ কোনটি?\nStudent answered: অ্যাজোলা (Wrong)\nCorrect answer: উলফিয়া\nBehavioral state: GROWTH_AREA\nChapter: বিবিধ ও সাধারণ\n",
+    "q_bn": "বিশ্বের সবচেয়ে ক্ষুদ্রতম আবৃতবীজী উদ্ভিদ কোনটি?",
+    "student_ans": "অ্যাজোলা",
+    "correct_ans": "উলফিয়া",
+    "state": "GROWTH_AREA",
+    "chapter": "বিবিধ ও সাধারণ",
+    "is_correct": false,
+    "q_id": "BIO-C19-2019-041"
+  },
+  {
+    "input": "Question: প্রোটোনেমা নিচের কোন উদ্ভিদে পাওয়া যায়?\nStudent answered: নগ্নবীজী উদ্ভিদ (Wrong)\nCorrect answer: মস\nBehavioral state: PRIORITY_FOCUS\nChapter: উদ্ভিদবিজ্ঞান ও শ্রেণীবিন্যাস\n",
+    "q_bn": "প্রোটোনেমা নিচের কোন উদ্ভিদে পাওয়া যায়?",
+    "student_ans": "নগ্নবীজী উদ্ভিদ",
+    "correct_ans": "মস",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "উদ্ভিদবিজ্ঞান ও শ্রেণীবিন্যাস",
+    "is_correct": false,
+    "q_id": "BIO-C06-2019-005"
+  },
+  {
+    "input": "Question: প্রোটোনেমা নিচের কোন উদ্ভিদে পাওয়া যায়?\nStudent answered: গুপ্তবীজী উদ্ভিদ (Wrong)\nCorrect answer: মস\nBehavioral state: GROWTH_AREA\nChapter: উদ্ভিদবিজ্ঞান ও শ্রেণীবিন্যাস\n",
+    "q_bn": "প্রোটোনেমা নিচের কোন উদ্ভিদে পাওয়া যায়?",
+    "student_ans": "গুপ্তবীজী উদ্ভিদ",
+    "correct_ans": "মস",
+    "state": "GROWTH_AREA",
+    "chapter": "উদ্ভিদবিজ্ঞান ও শ্রেণীবিন্যাস",
+    "is_correct": false,
+    "q_id": "BIO-C06-2019-005"
+  },
+  {
+    "input": "Question: মাইটোসিস কোষ বিভাজনের কোন পর্যায়ে প্রতিটি ক্রোমাটিড একটি অপত্য ক্রোমোজোমে পরিণত হয়?\nStudent answered: মেটাফেজ (Wrong)\nCorrect answer: অ্যানাফেজ\nBehavioral state: PRIORITY_FOCUS\nChapter: কোষ বিভাজন\n",
+    "q_bn": "মাইটোসিস কোষ বিভাজনের কোন পর্যায়ে প্রতিটি ক্রোমাটিড একটি অপত্য ক্রোমোজোমে পরিণত হয়?",
+    "student_ans": "মেটাফেজ",
+    "correct_ans": "অ্যানাফেজ",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "কোষ বিভাজন",
+    "is_correct": false,
+    "q_id": "BIO-C02-2019-002"
+  },
+  {
+    "input": "Question: মাইটোসিস কোষ বিভাজনের কোন পর্যায়ে প্রতিটি ক্রোমাটিড একটি অপত্য ক্রোমোজোমে পরিণত হয়?\nStudent answered: টেলোফেজ (Wrong)\nCorrect answer: অ্যানাফেজ\nBehavioral state: GROWTH_AREA\nChapter: কোষ বিভাজন\n",
+    "q_bn": "মাইটোসিস কোষ বিভাজনের কোন পর্যায়ে প্রতিটি ক্রোমাটিড একটি অপত্য ক্রোমোজোমে পরিণত হয়?",
+    "student_ans": "টেলোফেজ",
+    "correct_ans": "অ্যানাফেজ",
+    "state": "GROWTH_AREA",
+    "chapter": "কোষ বিভাজন",
+    "is_correct": false,
+    "q_id": "BIO-C02-2019-002"
+  },
+  {
+    "input": "Question: নিচের কোন অঙ্গাণুটি কোষে Translation প্রক্রিয়ার সাথে জড়িত?\nStudent answered: লাইসোসোম (Wrong)\nCorrect answer: রাইবোসোম\nBehavioral state: PRIORITY_FOCUS\nChapter: কোষ ও কোষ অঙ্গাণু\n",
+    "q_bn": "নিচের কোন অঙ্গাণুটি কোষে Translation প্রক্রিয়ার সাথে জড়িত?",
+    "student_ans": "লাইসোসোম",
+    "correct_ans": "রাইবোসোম",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "কোষ ও কোষ অঙ্গাণু",
+    "is_correct": false,
+    "q_id": "BIO-C01-2019-008"
+  },
+  {
+    "input": "Question: নিচের কোন অঙ্গাণুটি কোষে Translation প্রক্রিয়ার সাথে জড়িত?\nStudent answered: এন্ডোপ্লাজমিক রেটিকুলাম (Wrong)\nCorrect answer: রাইবোসোম\nBehavioral state: GROWTH_AREA\nChapter: কোষ ও কোষ অঙ্গাণু\n",
+    "q_bn": "নিচের কোন অঙ্গাণুটি কোষে Translation প্রক্রিয়ার সাথে জড়িত?",
+    "student_ans": "এন্ডোপ্লাজমিক রেটিকুলাম",
+    "correct_ans": "রাইবোসোম",
+    "state": "GROWTH_AREA",
+    "chapter": "কোষ ও কোষ অঙ্গাণু",
+    "is_correct": false,
+    "q_id": "BIO-C01-2019-008"
+  },
+  {
+    "input": "Question: স্পিরিট ল্যাম্প সম্পর্কে সত্য কোনটি?\nStudent answered: শিখা নিয়ন্ত্রণ (Wrong)\nCorrect answer: সাশ্রয়ী\nBehavioral state: PRIORITY_FOCUS\nChapter: বিবিধ ও সাধারণ\n",
+    "q_bn": "স্পিরিট ল্যাম্প সম্পর্কে সত্য কোনটি?",
+    "student_ans": "শিখা নিয়ন্ত্রণ",
+    "correct_ans": "সাশ্রয়ী",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "বিবিধ ও সাধারণ",
+    "is_correct": false,
+    "q_id": "BIO-C19-2019-042"
+  },
+  {
+    "input": "Question: স্পিরিট ল্যাম্প সম্পর্কে সত্য কোনটি?\nStudent answered: মিথানল এর জ্বালানি (Wrong)\nCorrect answer: সাশ্রয়ী\nBehavioral state: GROWTH_AREA\nChapter: বিবিধ ও সাধারণ\n",
+    "q_bn": "স্পিরিট ল্যাম্প সম্পর্কে সত্য কোনটি?",
+    "student_ans": "মিথানল এর জ্বালানি",
+    "correct_ans": "সাশ্রয়ী",
+    "state": "GROWTH_AREA",
+    "chapter": "বিবিধ ও সাধারণ",
+    "is_correct": false,
+    "q_id": "BIO-C19-2019-042"
+  },
+  {
+    "input": "Question: লিভার সিরোসিস করতে পারে নিচের কোনটি?\nStudent answered: জৈব অক্সাইড (Wrong)\nCorrect answer: হ্যালোজেনযুক্ত যৌগ\nBehavioral state: PRIORITY_FOCUS\nChapter: বিবিধ ও সাধারণ\n",
+    "q_bn": "লিভার সিরোসিস করতে পারে নিচের কোনটি?",
+    "student_ans": "জৈব অক্সাইড",
+    "correct_ans": "হ্যালোজেনযুক্ত যৌগ",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "বিবিধ ও সাধারণ",
+    "is_correct": false,
+    "q_id": "BIO-C19-2019-043"
+  },
+  {
+    "input": "Question: লিভার সিরোসিস করতে পারে নিচের কোনটি?\nStudent answered: অ্যানিলিন (Wrong)\nCorrect answer: হ্যালোজেনযুক্ত যৌগ\nBehavioral state: GROWTH_AREA\nChapter: বিবিধ ও সাধারণ\n",
+    "q_bn": "লিভার সিরোসিস করতে পারে নিচের কোনটি?",
+    "student_ans": "অ্যানিলিন",
+    "correct_ans": "হ্যালোজেনযুক্ত যৌগ",
+    "state": "GROWTH_AREA",
+    "chapter": "বিবিধ ও সাধারণ",
+    "is_correct": false,
+    "q_id": "BIO-C19-2019-043"
+  },
+  {
+    "input": "Question: ঐচ্ছিক পেশী নিচের কোনটির দ্বারা অস্থির সাথে সংযুক্ত থাকে?\nStudent answered: লিগামেন্ট (Wrong)\nCorrect answer: টেনডন\nBehavioral state: PRIORITY_FOCUS\nChapter: কঙ্কাল ও পেশী তন্ত্র\n",
+    "q_bn": "ঐচ্ছিক পেশী নিচের কোনটির দ্বারা অস্থির সাথে সংযুক্ত থাকে?",
+    "student_ans": "লিগামেন্ট",
+    "correct_ans": "টেনডন",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "কঙ্কাল ও পেশী তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C15-2019-005"
+  },
+  {
+    "input": "Question: ঐচ্ছিক পেশী নিচের কোনটির দ্বারা অস্থির সাথে সংযুক্ত থাকে?\nStudent answered: পেরিমাইসিয়াম (Wrong)\nCorrect answer: টেনডন\nBehavioral state: GROWTH_AREA\nChapter: কঙ্কাল ও পেশী তন্ত্র\n",
+    "q_bn": "ঐচ্ছিক পেশী নিচের কোনটির দ্বারা অস্থির সাথে সংযুক্ত থাকে?",
+    "student_ans": "পেরিমাইসিয়াম",
+    "correct_ans": "টেনডন",
+    "state": "GROWTH_AREA",
+    "chapter": "কঙ্কাল ও পেশী তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C15-2019-005"
+  },
+  {
+    "input": "Question: নিচের কোন হরমোন রক্তে সোডিয়ামের মাত্রা নিয়ন্ত্রণ করে?\nStudent answered: অ্যানজিওটেনসিন (Wrong)\nCorrect answer: অ্যালডোস্টেরন\nBehavioral state: PRIORITY_FOCUS\nChapter: সংবহন তন্ত্র\n",
+    "q_bn": "নিচের কোন হরমোন রক্তে সোডিয়ামের মাত্রা নিয়ন্ত্রণ করে?",
+    "student_ans": "অ্যানজিওটেনসিন",
+    "correct_ans": "অ্যালডোস্টেরন",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "সংবহন তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C10-2019-016"
+  },
+  {
+    "input": "Question: নিচের কোন হরমোন রক্তে সোডিয়ামের মাত্রা নিয়ন্ত্রণ করে?\nStudent answered: অ্যান্টিডাইইউরেটিক হরমোন (Wrong)\nCorrect answer: অ্যালডোস্টেরন\nBehavioral state: GROWTH_AREA\nChapter: সংবহন তন্ত্র\n",
+    "q_bn": "নিচের কোন হরমোন রক্তে সোডিয়ামের মাত্রা নিয়ন্ত্রণ করে?",
+    "student_ans": "অ্যান্টিডাইইউরেটিক হরমোন",
+    "correct_ans": "অ্যালডোস্টেরন",
+    "state": "GROWTH_AREA",
+    "chapter": "সংবহন তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C10-2019-016"
+  },
+  {
+    "input": "Question: নিষেকের পর ডিম্বক কিসে পরিণত হয়?\nStudent answered: ফল (Wrong)\nCorrect answer: বীজ\nBehavioral state: PRIORITY_FOCUS\nChapter: জনন তন্ত্র\n",
+    "q_bn": "নিষেকের পর ডিম্বক কিসে পরিণত হয়?",
+    "student_ans": "ফল",
+    "correct_ans": "বীজ",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "জনন তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C16-2018-005"
+  },
+  {
+    "input": "Question: নিষেকের পর ডিম্বক কিসে পরিণত হয়?\nStudent answered: টেস্টা (Wrong)\nCorrect answer: বীজ\nBehavioral state: GROWTH_AREA\nChapter: জনন তন্ত্র\n",
+    "q_bn": "নিষেকের পর ডিম্বক কিসে পরিণত হয়?",
+    "student_ans": "টেস্টা",
+    "correct_ans": "বীজ",
+    "state": "GROWTH_AREA",
+    "chapter": "জনন তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C16-2018-005"
+  },
+  {
+    "input": "Question: উদ্ভিদের পুষ্টির জন্য মাইক্রো মৌল কোনটি?\nStudent answered: কার্বন (Wrong)\nCorrect answer: কপার\nBehavioral state: PRIORITY_FOCUS\nChapter: বিবিধ ও সাধারণ\n",
+    "q_bn": "উদ্ভিদের পুষ্টির জন্য মাইক্রো মৌল কোনটি?",
+    "student_ans": "কার্বন",
+    "correct_ans": "কপার",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "বিবিধ ও সাধারণ",
+    "is_correct": false,
+    "q_id": "BIO-C19-2018-044"
+  },
+  {
+    "input": "Question: উদ্ভিদের পুষ্টির জন্য মাইক্রো মৌল কোনটি?\nStudent answered: সালফার (Wrong)\nCorrect answer: কপার\nBehavioral state: GROWTH_AREA\nChapter: বিবিধ ও সাধারণ\n",
+    "q_bn": "উদ্ভিদের পুষ্টির জন্য মাইক্রো মৌল কোনটি?",
+    "student_ans": "সালফার",
+    "correct_ans": "কপার",
+    "state": "GROWTH_AREA",
+    "chapter": "বিবিধ ও সাধারণ",
+    "is_correct": false,
+    "q_id": "BIO-C19-2018-044"
+  },
+  {
+    "input": "Question: নিচের কোন হরমোনটি পাকস্থলির হাইড্রোক্লোরিক এসিড নিঃসরণ নিয়ন্ত্রণ করে?\nStudent answered: সিক্রেটিন (Wrong)\nCorrect answer: গ্যাস্ট্রিন\nBehavioral state: PRIORITY_FOCUS\nChapter: অন্তঃক্ষরা তন্ত্র\n",
+    "q_bn": "নিচের কোন হরমোনটি পাকস্থলির হাইড্রোক্লোরিক এসিড নিঃসরণ নিয়ন্ত্রণ করে?",
+    "student_ans": "সিক্রেটিন",
+    "correct_ans": "গ্যাস্ট্রিন",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "অন্তঃক্ষরা তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C14-2018-009"
+  },
+  {
+    "input": "Question: নিচের কোন হরমোনটি পাকস্থলির হাইড্রোক্লোরিক এসিড নিঃসরণ নিয়ন্ত্রণ করে?\nStudent answered: সোমাটোস্ট্যাটিন (Wrong)\nCorrect answer: গ্যাস্ট্রিন\nBehavioral state: GROWTH_AREA\nChapter: অন্তঃক্ষরা তন্ত্র\n",
+    "q_bn": "নিচের কোন হরমোনটি পাকস্থলির হাইড্রোক্লোরিক এসিড নিঃসরণ নিয়ন্ত্রণ করে?",
+    "student_ans": "সোমাটোস্ট্যাটিন",
+    "correct_ans": "গ্যাস্ট্রিন",
+    "state": "GROWTH_AREA",
+    "chapter": "অন্তঃক্ষরা তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C14-2018-009"
+  },
+  {
+    "input": "Question: মানবদেহের করোটিকাতে কতগুলো অস্থি আছে?\nStudent answered: ১৭টি (Wrong)\nCorrect answer: ৪টি\nBehavioral state: PRIORITY_FOCUS\nChapter: কঙ্কাল ও পেশী তন্ত্র\n",
+    "q_bn": "মানবদেহের করোটিকাতে কতগুলো অস্থি আছে?",
+    "student_ans": "১৭টি",
+    "correct_ans": "৪টি",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "কঙ্কাল ও পেশী তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C15-2018-006"
+  },
+  {
+    "input": "Question: মানবদেহের করোটিকাতে কতগুলো অস্থি আছে?\nStudent answered: ১০টি (Wrong)\nCorrect answer: ৪টি\nBehavioral state: GROWTH_AREA\nChapter: কঙ্কাল ও পেশী তন্ত্র\n",
+    "q_bn": "মানবদেহের করোটিকাতে কতগুলো অস্থি আছে?",
+    "student_ans": "১০টি",
+    "correct_ans": "৪টি",
+    "state": "GROWTH_AREA",
+    "chapter": "কঙ্কাল ও পেশী তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C15-2018-006"
+  },
+  {
+    "input": "Question: নিচের কোনটি ভাইরাসজনিত জ্বর নয়?\nStudent answered: চিকুনগুনিয়া জ্বর (Wrong)\nCorrect answer: টাইফয়েড জ্বর\nBehavioral state: PRIORITY_FOCUS\nChapter: অণুজীব ও ভাইরাস\n",
+    "q_bn": "নিচের কোনটি ভাইরাসজনিত জ্বর নয়?",
+    "student_ans": "চিকুনগুনিয়া জ্বর",
+    "correct_ans": "টাইফয়েড জ্বর",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "অণুজীব ও ভাইরাস",
+    "is_correct": false,
+    "q_id": "BIO-C05-2018-013"
+  },
+  {
+    "input": "Question: নিচের কোনটি ভাইরাসজনিত জ্বর নয়?\nStudent answered: ইনফ্লুয়েঞ্জা জ্বর (Wrong)\nCorrect answer: টাইফয়েড জ্বর\nBehavioral state: GROWTH_AREA\nChapter: অণুজীব ও ভাইরাস\n",
+    "q_bn": "নিচের কোনটি ভাইরাসজনিত জ্বর নয়?",
+    "student_ans": "ইনফ্লুয়েঞ্জা জ্বর",
+    "correct_ans": "টাইফয়েড জ্বর",
+    "state": "GROWTH_AREA",
+    "chapter": "অণুজীব ও ভাইরাস",
+    "is_correct": false,
+    "q_id": "BIO-C05-2018-013"
+  },
+  {
+    "input": "Question: অগ্নিশৈবাল (Fire Algae) নামে পরিচিত নিচের কোনটি?\nStudent answered: ক্রাইসোফাইটা (Wrong)\nCorrect answer: পাইরোফাইটা\nBehavioral state: PRIORITY_FOCUS\nChapter: রোগ প্রতিরোধ ও রক্তের গ্রুপ\n",
+    "q_bn": "অগ্নিশৈবাল (Fire Algae) নামে পরিচিত নিচের কোনটি?",
+    "student_ans": "ক্রাইসোফাইটা",
+    "correct_ans": "পাইরোফাইটা",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "রোগ প্রতিরোধ ও রক্তের গ্রুপ",
+    "is_correct": false,
+    "q_id": "BIO-C17-2018-006"
+  },
+  {
+    "input": "Question: অগ্নিশৈবাল (Fire Algae) নামে পরিচিত নিচের কোনটি?\nStudent answered: ফিওফাইটা (Wrong)\nCorrect answer: পাইরোফাইটা\nBehavioral state: GROWTH_AREA\nChapter: রোগ প্রতিরোধ ও রক্তের গ্রুপ\n",
+    "q_bn": "অগ্নিশৈবাল (Fire Algae) নামে পরিচিত নিচের কোনটি?",
+    "student_ans": "ফিওফাইটা",
+    "correct_ans": "পাইরোফাইটা",
+    "state": "GROWTH_AREA",
+    "chapter": "রোগ প্রতিরোধ ও রক্তের গ্রুপ",
+    "is_correct": false,
+    "q_id": "BIO-C17-2018-006"
+  },
+  {
+    "input": "Question: কোনটি সাইকাস (Cycas) উদ্ভিদের বৈশিষ্ট্য?\nStudent answered: গ্যামেটোফাইট বিদ্যমান (Wrong)\nCorrect answer: পক্ষল যৌগিকপত্র বিশিষ্ট\nBehavioral state: PRIORITY_FOCUS\nChapter: ইন্দ্রিয় তন্ত্র\n",
+    "q_bn": "কোনটি সাইকাস (Cycas) উদ্ভিদের বৈশিষ্ট্য?",
+    "student_ans": "গ্যামেটোফাইট বিদ্যমান",
+    "correct_ans": "পক্ষল যৌগিকপত্র বিশিষ্ট",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "ইন্দ্রিয় তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C18-2018-004"
+  },
+  {
+    "input": "Question: কোনটি সাইকাস (Cycas) উদ্ভিদের বৈশিষ্ট্য?\nStudent answered: সমরেণুপ্রসূ (Wrong)\nCorrect answer: পক্ষল যৌগিকপত্র বিশিষ্ট\nBehavioral state: GROWTH_AREA\nChapter: ইন্দ্রিয় তন্ত্র\n",
+    "q_bn": "কোনটি সাইকাস (Cycas) উদ্ভিদের বৈশিষ্ট্য?",
+    "student_ans": "সমরেণুপ্রসূ",
+    "correct_ans": "পক্ষল যৌগিকপত্র বিশিষ্ট",
+    "state": "GROWTH_AREA",
+    "chapter": "ইন্দ্রিয় তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C18-2018-004"
+  },
+  {
+    "input": "Question: উদ্ভিদকোষের সাইটোপ্লাজমে সর্ববৃহৎ অঙ্গাণুটির নাম কি?\nStudent answered: মাইটোকন্ড্রিয়া (Wrong)\nCorrect answer: ক্লোরোপ্লাস্ট\nBehavioral state: PRIORITY_FOCUS\nChapter: কোষ ও কোষ অঙ্গাণু\n",
+    "q_bn": "উদ্ভিদকোষের সাইটোপ্লাজমে সর্ববৃহৎ অঙ্গাণুটির নাম কি?",
+    "student_ans": "মাইটোকন্ড্রিয়া",
+    "correct_ans": "ক্লোরোপ্লাস্ট",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "কোষ ও কোষ অঙ্গাণু",
+    "is_correct": false,
+    "q_id": "BIO-C01-2018-009"
+  },
+  {
+    "input": "Question: উদ্ভিদকোষের সাইটোপ্লাজমে সর্ববৃহৎ অঙ্গাণুটির নাম কি?\nStudent answered: লাইসোসোম (Wrong)\nCorrect answer: ক্লোরোপ্লাস্ট\nBehavioral state: GROWTH_AREA\nChapter: কোষ ও কোষ অঙ্গাণু\n",
+    "q_bn": "উদ্ভিদকোষের সাইটোপ্লাজমে সর্ববৃহৎ অঙ্গাণুটির নাম কি?",
+    "student_ans": "লাইসোসোম",
+    "correct_ans": "ক্লোরোপ্লাস্ট",
+    "state": "GROWTH_AREA",
+    "chapter": "কোষ ও কোষ অঙ্গাণু",
+    "is_correct": false,
+    "q_id": "BIO-C01-2018-009"
+  },
+  {
+    "input": "Question: জেনেটিক্যালি নিয়ন্ত্রিত কোষ মৃত্যুকে কি বলে?\nStudent answered: মাইটোসিস (Wrong)\nCorrect answer: অ্যাপোপটোসিস\nBehavioral state: PRIORITY_FOCUS\nChapter: বিবিধ ও সাধারণ\n",
+    "q_bn": "জেনেটিক্যালি নিয়ন্ত্রিত কোষ মৃত্যুকে কি বলে?",
+    "student_ans": "মাইটোসিস",
+    "correct_ans": "অ্যাপোপটোসিস",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "বিবিধ ও সাধারণ",
+    "is_correct": false,
+    "q_id": "BIO-C19-2018-045"
+  },
+  {
+    "input": "Question: জেনেটিক্যালি নিয়ন্ত্রিত কোষ মৃত্যুকে কি বলে?\nStudent answered: মিয়োসিস (Wrong)\nCorrect answer: অ্যাপোপটোসিস\nBehavioral state: GROWTH_AREA\nChapter: বিবিধ ও সাধারণ\n",
+    "q_bn": "জেনেটিক্যালি নিয়ন্ত্রিত কোষ মৃত্যুকে কি বলে?",
+    "student_ans": "মিয়োসিস",
+    "correct_ans": "অ্যাপোপটোসিস",
+    "state": "GROWTH_AREA",
+    "chapter": "বিবিধ ও সাধারণ",
+    "is_correct": false,
+    "q_id": "BIO-C19-2018-045"
+  },
+  {
+    "input": "Question: নিচের কোনটি মানুষের শরীরের জন্য অত্যাবশ্যকীয় অ্যামাইনো এসিড নয়?\nStudent answered: ফিনাইল অ্যালানিন (Wrong)\nCorrect answer: গ্লাইসিন\nBehavioral state: PRIORITY_FOCUS\nChapter: বিবিধ ও সাধারণ\n",
+    "q_bn": "নিচের কোনটি মানুষের শরীরের জন্য অত্যাবশ্যকীয় অ্যামাইনো এসিড নয়?",
+    "student_ans": "ফিনাইল অ্যালানিন",
+    "correct_ans": "গ্লাইসিন",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "বিবিধ ও সাধারণ",
+    "is_correct": false,
+    "q_id": "BIO-C19-2018-046"
+  },
+  {
+    "input": "Question: নিচের কোনটি মানুষের শরীরের জন্য অত্যাবশ্যকীয় অ্যামাইনো এসিড নয়?\nStudent answered: থ্রিওনিন (Wrong)\nCorrect answer: গ্লাইসিন\nBehavioral state: GROWTH_AREA\nChapter: বিবিধ ও সাধারণ\n",
+    "q_bn": "নিচের কোনটি মানুষের শরীরের জন্য অত্যাবশ্যকীয় অ্যামাইনো এসিড নয়?",
+    "student_ans": "থ্রিওনিন",
+    "correct_ans": "গ্লাইসিন",
+    "state": "GROWTH_AREA",
+    "chapter": "বিবিধ ও সাধারণ",
+    "is_correct": false,
+    "q_id": "BIO-C19-2018-046"
+  },
+  {
+    "input": "Question: পর্যায় সারণীতে d-ব্লকের মৌল সংখ্যা কয়টি?\nStudent answered: ৪৩টি (Wrong)\nCorrect answer: ৪১টি\nBehavioral state: PRIORITY_FOCUS\nChapter: বিবিধ ও সাধারণ\n",
+    "q_bn": "পর্যায় সারণীতে d-ব্লকের মৌল সংখ্যা কয়টি?",
+    "student_ans": "৪৩টি",
+    "correct_ans": "৪১টি",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "বিবিধ ও সাধারণ",
+    "is_correct": false,
+    "q_id": "BIO-C19-2018-047"
+  },
+  {
+    "input": "Question: পর্যায় সারণীতে d-ব্লকের মৌল সংখ্যা কয়টি?\nStudent answered: ১৫টি (Wrong)\nCorrect answer: ৪১টি\nBehavioral state: GROWTH_AREA\nChapter: বিবিধ ও সাধারণ\n",
+    "q_bn": "পর্যায় সারণীতে d-ব্লকের মৌল সংখ্যা কয়টি?",
+    "student_ans": "১৫টি",
+    "correct_ans": "৪১টি",
+    "state": "GROWTH_AREA",
+    "chapter": "বিবিধ ও সাধারণ",
+    "is_correct": false,
+    "q_id": "BIO-C19-2018-047"
+  },
+  {
+    "input": "Question: সারফেকট্যান্ট কোথায় পাওয়া যায়-\nStudent answered: শ্বাসনালিতে (Wrong)\nCorrect answer: অ্যালভিওলাসে\nBehavioral state: PRIORITY_FOCUS\nChapter: শ্বসন তন্ত্র\n",
+    "q_bn": "সারফেকট্যান্ট কোথায় পাওয়া যায়-",
+    "student_ans": "শ্বাসনালিতে",
+    "correct_ans": "অ্যালভিওলাসে",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "শ্বসন তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C11-2018-004"
+  },
+  {
+    "input": "Question: সারফেকট্যান্ট কোথায় পাওয়া যায়-\nStudent answered: ব্রঙ্কাসে (Wrong)\nCorrect answer: অ্যালভিওলাসে\nBehavioral state: GROWTH_AREA\nChapter: শ্বসন তন্ত্র\n",
+    "q_bn": "সারফেকট্যান্ট কোথায় পাওয়া যায়-",
+    "student_ans": "ব্রঙ্কাসে",
+    "correct_ans": "অ্যালভিওলাসে",
+    "state": "GROWTH_AREA",
+    "chapter": "শ্বসন তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C11-2018-004"
+  },
+  {
+    "input": "Question: নিচের কোনটি দ্বিঅরীয় প্রতিসাম্য প্রাণির উদাহরণ?\nStudent answered: জেলী ফিস (Wrong)\nCorrect answer: টিনোফোরা\nBehavioral state: PRIORITY_FOCUS\nChapter: প্রাণীর বিভিন্নতা\n",
+    "q_bn": "নিচের কোনটি দ্বিঅরীয় প্রতিসাম্য প্রাণির উদাহরণ?",
+    "student_ans": "জেলী ফিস",
+    "correct_ans": "টিনোফোরা",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "প্রাণীর বিভিন্নতা",
+    "is_correct": false,
+    "q_id": "BIO-C08-2018-006"
+  },
+  {
+    "input": "Question: নিচের কোনটি দ্বিঅরীয় প্রতিসাম্য প্রাণির উদাহরণ?\nStudent answered: সী অ্যানিমন (Wrong)\nCorrect answer: টিনোফোরা\nBehavioral state: GROWTH_AREA\nChapter: প্রাণীর বিভিন্নতা\n",
+    "q_bn": "নিচের কোনটি দ্বিঅরীয় প্রতিসাম্য প্রাণির উদাহরণ?",
+    "student_ans": "সী অ্যানিমন",
+    "correct_ans": "টিনোফোরা",
+    "state": "GROWTH_AREA",
+    "chapter": "প্রাণীর বিভিন্নতা",
+    "is_correct": false,
+    "q_id": "BIO-C08-2018-006"
+  },
+  {
+    "input": "Question: হাইড্রার খাদ্য নয় কোনটি?\nStudent answered: ড্যাফনিয়া (Wrong)\nCorrect answer: ছোট ঘাস\nBehavioral state: PRIORITY_FOCUS\nChapter: প্রাণীর বিভিন্নতা\n",
+    "q_bn": "হাইড্রার খাদ্য নয় কোনটি?",
+    "student_ans": "ড্যাফনিয়া",
+    "correct_ans": "ছোট ঘাস",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "প্রাণীর বিভিন্নতা",
+    "is_correct": false,
+    "q_id": "BIO-C08-2018-007"
+  },
+  {
+    "input": "Question: হাইড্রার খাদ্য নয় কোনটি?\nStudent answered: খণ্ডকায়িত প্রাণী (Wrong)\nCorrect answer: ছোট ঘাস\nBehavioral state: GROWTH_AREA\nChapter: প্রাণীর বিভিন্নতা\n",
+    "q_bn": "হাইড্রার খাদ্য নয় কোনটি?",
+    "student_ans": "খণ্ডকায়িত প্রাণী",
+    "correct_ans": "ছোট ঘাস",
+    "state": "GROWTH_AREA",
+    "chapter": "প্রাণীর বিভিন্নতা",
+    "is_correct": false,
+    "q_id": "BIO-C08-2018-007"
+  },
+  {
+    "input": "Question: Hearing the noise, the boy woke up. Here the word 'hearing' is a/an-\nStudent answered: ক্রিয়া (verb) (Wrong)\nCorrect answer: কৃদন্ত (participle)\nBehavioral state: PRIORITY_FOCUS\nChapter: বিবিধ ও সাধারণ\n",
+    "q_bn": "Hearing the noise, the boy woke up. Here the word 'hearing' is a/an-",
+    "student_ans": "ক্রিয়া (verb)",
+    "correct_ans": "কৃদন্ত (participle)",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "বিবিধ ও সাধারণ",
+    "is_correct": false,
+    "q_id": "BIO-C19-2018-048"
+  },
+  {
+    "input": "Question: Hearing the noise, the boy woke up. Here the word 'hearing' is a/an-\nStudent answered: ক্রিয়াবিশেষণ (adverb) (Wrong)\nCorrect answer: কৃদন্ত (participle)\nBehavioral state: GROWTH_AREA\nChapter: বিবিধ ও সাধারণ\n",
+    "q_bn": "Hearing the noise, the boy woke up. Here the word 'hearing' is a/an-",
+    "student_ans": "ক্রিয়াবিশেষণ (adverb)",
+    "correct_ans": "কৃদন্ত (participle)",
+    "state": "GROWTH_AREA",
+    "chapter": "বিবিধ ও সাধারণ",
+    "is_correct": false,
+    "q_id": "BIO-C19-2018-048"
+  },
+  {
+    "input": "Question: মৃদু এসিড ও সবল ক্ষারের টাইট্রেশনে ব্যবহৃত নিদের্শক কোনটি?\nStudent answered: মিথাইল অরেঞ্জ (Wrong)\nCorrect answer: ফেনফথ্যালিন\nBehavioral state: PRIORITY_FOCUS\nChapter: বিবিধ ও সাধারণ\n",
+    "q_bn": "মৃদু এসিড ও সবল ক্ষারের টাইট্রেশনে ব্যবহৃত নিদের্শক কোনটি?",
+    "student_ans": "মিথাইল অরেঞ্জ",
+    "correct_ans": "ফেনফথ্যালিন",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "বিবিধ ও সাধারণ",
+    "is_correct": false,
+    "q_id": "BIO-C19-2018-049"
+  },
+  {
+    "input": "Question: মৃদু এসিড ও সবল ক্ষারের টাইট্রেশনে ব্যবহৃত নিদের্শক কোনটি?\nStudent answered: মিথাইল রেড (Wrong)\nCorrect answer: ফেনফথ্যালিন\nBehavioral state: GROWTH_AREA\nChapter: বিবিধ ও সাধারণ\n",
+    "q_bn": "মৃদু এসিড ও সবল ক্ষারের টাইট্রেশনে ব্যবহৃত নিদের্শক কোনটি?",
+    "student_ans": "মিথাইল রেড",
+    "correct_ans": "ফেনফথ্যালিন",
+    "state": "GROWTH_AREA",
+    "chapter": "বিবিধ ও সাধারণ",
+    "is_correct": false,
+    "q_id": "BIO-C19-2018-049"
+  },
+  {
+    "input": "Question: হেনলির লুপের অবস্থান বৃক্কের কোথায়?\nStudent answered: এফারেন্ট ধমনিকাতে (Wrong)\nCorrect answer: বৃক্কীয় নালিকায়\nBehavioral state: PRIORITY_FOCUS\nChapter: রেচন তন্ত্র\n",
+    "q_bn": "হেনলির লুপের অবস্থান বৃক্কের কোথায়?",
+    "student_ans": "এফারেন্ট ধমনিকাতে",
+    "correct_ans": "বৃক্কীয় নালিকায়",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "রেচন তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C12-2018-003"
+  },
+  {
+    "input": "Question: হেনলির লুপের অবস্থান বৃক্কের কোথায়?\nStudent answered: ইফারেন্ট ধমনিকাতে (Wrong)\nCorrect answer: বৃক্কীয় নালিকায়\nBehavioral state: GROWTH_AREA\nChapter: রেচন তন্ত্র\n",
+    "q_bn": "হেনলির লুপের অবস্থান বৃক্কের কোথায়?",
+    "student_ans": "ইফারেন্ট ধমনিকাতে",
+    "correct_ans": "বৃক্কীয় নালিকায়",
+    "state": "GROWTH_AREA",
+    "chapter": "রেচন তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C12-2018-003"
+  },
+  {
+    "input": "Question: মারসুপিয়াল স্তন্যপায়ী প্রাণী কোন মহাদেশে পাওয়া যায়?\nStudent answered: ইউরোপ (Wrong)\nCorrect answer: অস্ট্রেলিয়া\nBehavioral state: PRIORITY_FOCUS\nChapter: বিবিধ ও সাধারণ\n",
+    "q_bn": "মারসুপিয়াল স্তন্যপায়ী প্রাণী কোন মহাদেশে পাওয়া যায়?",
+    "student_ans": "ইউরোপ",
+    "correct_ans": "অস্ট্রেলিয়া",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "বিবিধ ও সাধারণ",
+    "is_correct": false,
+    "q_id": "BIO-C19-2018-050"
+  },
+  {
+    "input": "Question: মারসুপিয়াল স্তন্যপায়ী প্রাণী কোন মহাদেশে পাওয়া যায়?\nStudent answered: আফ্রিকা (Wrong)\nCorrect answer: অস্ট্রেলিয়া\nBehavioral state: GROWTH_AREA\nChapter: বিবিধ ও সাধারণ\n",
+    "q_bn": "মারসুপিয়াল স্তন্যপায়ী প্রাণী কোন মহাদেশে পাওয়া যায়?",
+    "student_ans": "আফ্রিকা",
+    "correct_ans": "অস্ট্রেলিয়া",
+    "state": "GROWTH_AREA",
+    "chapter": "বিবিধ ও সাধারণ",
+    "is_correct": false,
+    "q_id": "BIO-C19-2018-050"
+  },
+  {
+    "input": "Question: হৃদ-ফুসফুস যন্ত্র (Heart-Lung machine) কোন কাজে ব্যবহৃত হয়?\nStudent answered: রক্তচাপ নিয়ন্ত্রণ (Wrong)\nCorrect answer: হৃৎপিন্ডের বাইপাস সার্জারিতে\nBehavioral state: PRIORITY_FOCUS\nChapter: সংবহন তন্ত্র\n",
+    "q_bn": "হৃদ-ফুসফুস যন্ত্র (Heart-Lung machine) কোন কাজে ব্যবহৃত হয়?",
+    "student_ans": "রক্তচাপ নিয়ন্ত্রণ",
+    "correct_ans": "হৃৎপিন্ডের বাইপাস সার্জারিতে",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "সংবহন তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C10-2018-017"
+  },
+  {
+    "input": "Question: হৃদ-ফুসফুস যন্ত্র (Heart-Lung machine) কোন কাজে ব্যবহৃত হয়?\nStudent answered: পেসমেকার বসাতে (Wrong)\nCorrect answer: হৃৎপিন্ডের বাইপাস সার্জারিতে\nBehavioral state: GROWTH_AREA\nChapter: সংবহন তন্ত্র\n",
+    "q_bn": "হৃদ-ফুসফুস যন্ত্র (Heart-Lung machine) কোন কাজে ব্যবহৃত হয়?",
+    "student_ans": "পেসমেকার বসাতে",
+    "correct_ans": "হৃৎপিন্ডের বাইপাস সার্জারিতে",
+    "state": "GROWTH_AREA",
+    "chapter": "সংবহন তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C10-2018-017"
+  },
+  {
+    "input": "Question: কোনটি মানব দেহের টার্সাল অস্থির অন্তর্ভূক্ত নয়?\nStudent answered: কিউনিফর্ম (Wrong)\nCorrect answer: ট্রাপেজিয়াম\nBehavioral state: PRIORITY_FOCUS\nChapter: কঙ্কাল ও পেশী তন্ত্র\n",
+    "q_bn": "কোনটি মানব দেহের টার্সাল অস্থির অন্তর্ভূক্ত নয়?",
+    "student_ans": "কিউনিফর্ম",
+    "correct_ans": "ট্রাপেজিয়াম",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "কঙ্কাল ও পেশী তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C15-2014-007"
+  },
+  {
+    "input": "Question: কোনটি মানব দেহের টার্সাল অস্থির অন্তর্ভূক্ত নয়?\nStudent answered: কিউবয়েড (Wrong)\nCorrect answer: ট্রাপেজিয়াম\nBehavioral state: GROWTH_AREA\nChapter: কঙ্কাল ও পেশী তন্ত্র\n",
+    "q_bn": "কোনটি মানব দেহের টার্সাল অস্থির অন্তর্ভূক্ত নয়?",
+    "student_ans": "কিউবয়েড",
+    "correct_ans": "ট্রাপেজিয়াম",
+    "state": "GROWTH_AREA",
+    "chapter": "কঙ্কাল ও পেশী তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C15-2014-007"
+  },
+  {
+    "input": "Question: লিথাল জিন সর্বপ্রথম বর্ণনা করেন নিচের কোন বিজ্ঞানী?\nStudent answered: ম্যান্ডেল (Wrong)\nCorrect answer: ক্যুনো\nBehavioral state: PRIORITY_FOCUS\nChapter: জিনতত্ত্ব ও বিবর্তন\n",
+    "q_bn": "লিথাল জিন সর্বপ্রথম বর্ণনা করেন নিচের কোন বিজ্ঞানী?",
+    "student_ans": "ম্যান্ডেল",
+    "correct_ans": "ক্যুনো",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "জিনতত্ত্ব ও বিবর্তন",
+    "is_correct": false,
+    "q_id": "BIO-C03-2014-012"
+  },
+  {
+    "input": "Question: লিথাল জিন সর্বপ্রথম বর্ণনা করেন নিচের কোন বিজ্ঞানী?\nStudent answered: দ্য ভ্রিস (Wrong)\nCorrect answer: ক্যুনো\nBehavioral state: GROWTH_AREA\nChapter: জিনতত্ত্ব ও বিবর্তন\n",
+    "q_bn": "লিথাল জিন সর্বপ্রথম বর্ণনা করেন নিচের কোন বিজ্ঞানী?",
+    "student_ans": "দ্য ভ্রিস",
+    "correct_ans": "ক্যুনো",
+    "state": "GROWTH_AREA",
+    "chapter": "জিনতত্ত্ব ও বিবর্তন",
+    "is_correct": false,
+    "q_id": "BIO-C03-2014-012"
+  },
+  {
+    "input": "Question: যেটি স্নায়ুতন্ত্রের সাথে সম্পর্কিত নয়-\nStudent answered: এপিনেফ্রিন (Wrong)\nCorrect answer: মেলানিন\nBehavioral state: PRIORITY_FOCUS\nChapter: ইন্দ্রিয় তন্ত্র\n",
+    "q_bn": "যেটি স্নায়ুতন্ত্রের সাথে সম্পর্কিত নয়-",
+    "student_ans": "এপিনেফ্রিন",
+    "correct_ans": "মেলানিন",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "ইন্দ্রিয় তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C18-2014-005"
+  },
+  {
+    "input": "Question: যেটি স্নায়ুতন্ত্রের সাথে সম্পর্কিত নয়-\nStudent answered: গ্লাইসিন (Wrong)\nCorrect answer: মেলানিন\nBehavioral state: GROWTH_AREA\nChapter: ইন্দ্রিয় তন্ত্র\n",
+    "q_bn": "যেটি স্নায়ুতন্ত্রের সাথে সম্পর্কিত নয়-",
+    "student_ans": "গ্লাইসিন",
+    "correct_ans": "মেলানিন",
+    "state": "GROWTH_AREA",
+    "chapter": "ইন্দ্রিয় তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C18-2014-005"
+  },
+  {
+    "input": "Question: কোনটি অক্ষিপেশি নয়?\nStudent answered: সুপিরিয়র রেক্টাস (Wrong)\nCorrect answer: অক্সটারনাল রেক্টাস\nBehavioral state: PRIORITY_FOCUS\nChapter: বিবিধ ও সাধারণ\n",
+    "q_bn": "কোনটি অক্ষিপেশি নয়?",
+    "student_ans": "সুপিরিয়র রেক্টাস",
+    "correct_ans": "অক্সটারনাল রেক্টাস",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "বিবিধ ও সাধারণ",
+    "is_correct": false,
+    "q_id": "BIO-C19-2014-051"
+  },
+  {
+    "input": "Question: কোনটি অক্ষিপেশি নয়?\nStudent answered: ইন্টারনাল অবলিক (Wrong)\nCorrect answer: অক্সটারনাল রেক্টাস\nBehavioral state: GROWTH_AREA\nChapter: বিবিধ ও সাধারণ\n",
+    "q_bn": "কোনটি অক্ষিপেশি নয়?",
+    "student_ans": "ইন্টারনাল অবলিক",
+    "correct_ans": "অক্সটারনাল রেক্টাস",
+    "state": "GROWTH_AREA",
+    "chapter": "বিবিধ ও সাধারণ",
+    "is_correct": false,
+    "q_id": "BIO-C19-2014-051"
+  },
+  {
+    "input": "Question: ফার্মেন্টেশনের ক্ষেত্রে কোন উক্তিটি সঠিক?\nStudent answered: এটি কোষের মধ্যে হয় (Wrong)\nCorrect answer: ফার্মেন্টেশন প্রক্রিয়া এক প্রকার অবাত শ্বসন\nBehavioral state: PRIORITY_FOCUS\nChapter: পরিপাক তন্ত্র\n",
+    "q_bn": "ফার্মেন্টেশনের ক্ষেত্রে কোন উক্তিটি সঠিক?",
+    "student_ans": "এটি কোষের মধ্যে হয়",
+    "correct_ans": "ফার্মেন্টেশন প্রক্রিয়া এক প্রকার অবাত শ্বসন",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "পরিপাক তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C09-2014-023"
+  },
+  {
+    "input": "Question: ফার্মেন্টেশনের ক্ষেত্রে কোন উক্তিটি সঠিক?\nStudent answered: এতে কোষের মধ্যে সৃষ্ট বিভিন্ন এনজাইম সরাসরি বিক্রিয়ায় অংশগ্রহণ করে (Wrong)\nCorrect answer: ফার্মেন্টেশন প্রক্রিয়া এক প্রকার অবাত শ্বসন\nBehavioral state: GROWTH_AREA\nChapter: পরিপাক তন্ত্র\n",
+    "q_bn": "ফার্মেন্টেশনের ক্ষেত্রে কোন উক্তিটি সঠিক?",
+    "student_ans": "এতে কোষের মধ্যে সৃষ্ট বিভিন্ন এনজাইম সরাসরি বিক্রিয়ায় অংশগ্রহণ করে",
+    "correct_ans": "ফার্মেন্টেশন প্রক্রিয়া এক প্রকার অবাত শ্বসন",
+    "state": "GROWTH_AREA",
+    "chapter": "পরিপাক তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C09-2014-023"
+  },
+  {
+    "input": "Question: বিরল অ্যামিনো এসিড হলো-\nStudent answered: লাইসিন (Wrong)\nCorrect answer: হাইড্রোক্সিপ্রোলিন\nBehavioral state: PRIORITY_FOCUS\nChapter: বিবিধ ও সাধারণ\n",
+    "q_bn": "বিরল অ্যামিনো এসিড হলো-",
+    "student_ans": "লাইসিন",
+    "correct_ans": "হাইড্রোক্সিপ্রোলিন",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "বিবিধ ও সাধারণ",
+    "is_correct": false,
+    "q_id": "BIO-C19-2014-052"
+  },
+  {
+    "input": "Question: বিরল অ্যামিনো এসিড হলো-\nStudent answered: হাইড্রোক্সিলাইসিন (Wrong)\nCorrect answer: হাইড্রোক্সিপ্রোলিন\nBehavioral state: GROWTH_AREA\nChapter: বিবিধ ও সাধারণ\n",
+    "q_bn": "বিরল অ্যামিনো এসিড হলো-",
+    "student_ans": "হাইড্রোক্সিলাইসিন",
+    "correct_ans": "হাইড্রোক্সিপ্রোলিন",
+    "state": "GROWTH_AREA",
+    "chapter": "বিবিধ ও সাধারণ",
+    "is_correct": false,
+    "q_id": "BIO-C19-2014-052"
+  },
+  {
+    "input": "Question: নিম্নের কোন উক্তিটি ইউক্যারিয়টিক (সুকেন্দ্রিক) নিউক্লিয়াসের বেলায় প্রযোজ্য নয়?\nStudent answered: একাধিক ক্রোমোজম থাকে (Wrong)\nCorrect answer: ইহা কোষস্থ সাইটোপ্লাজমে অবস্থিত একটি বিশেষ অংশ\nBehavioral state: PRIORITY_FOCUS\nChapter: কোষ ও কোষ অঙ্গাণু\n",
+    "q_bn": "নিম্নের কোন উক্তিটি ইউক্যারিয়টিক (সুকেন্দ্রিক) নিউক্লিয়াসের বেলায় প্রযোজ্য নয়?",
+    "student_ans": "একাধিক ক্রোমোজম থাকে",
+    "correct_ans": "ইহা কোষস্থ সাইটোপ্লাজমে অবস্থিত একটি বিশেষ অংশ",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "কোষ ও কোষ অঙ্গাণু",
+    "is_correct": false,
+    "q_id": "BIO-C01-2014-010"
+  },
+  {
+    "input": "Question: নিম্নের কোন উক্তিটি ইউক্যারিয়টিক (সুকেন্দ্রিক) নিউক্লিয়াসের বেলায় প্রযোজ্য নয়?\nStudent answered: ইহা ঝিল্লি দ্বারা আবৃত (Wrong)\nCorrect answer: ইহা কোষস্থ সাইটোপ্লাজমে অবস্থিত একটি বিশেষ অংশ\nBehavioral state: GROWTH_AREA\nChapter: কোষ ও কোষ অঙ্গাণু\n",
+    "q_bn": "নিম্নের কোন উক্তিটি ইউক্যারিয়টিক (সুকেন্দ্রিক) নিউক্লিয়াসের বেলায় প্রযোজ্য নয়?",
+    "student_ans": "ইহা ঝিল্লি দ্বারা আবৃত",
+    "correct_ans": "ইহা কোষস্থ সাইটোপ্লাজমে অবস্থিত একটি বিশেষ অংশ",
+    "state": "GROWTH_AREA",
+    "chapter": "কোষ ও কোষ অঙ্গাণু",
+    "is_correct": false,
+    "q_id": "BIO-C01-2014-010"
+  },
+  {
+    "input": "Question: নিম্নের কোন গোত্রের হতে ভোজ্য তেল উৎপন্ন হয়?\nStudent answered: লিলিয়েসি (Wrong)\nCorrect answer: ক্রুসিফেরি\nBehavioral state: PRIORITY_FOCUS\nChapter: উদ্ভিদবিজ্ঞান ও শ্রেণীবিন্যাস\n",
+    "q_bn": "নিম্নের কোন গোত্রের হতে ভোজ্য তেল উৎপন্ন হয়?",
+    "student_ans": "লিলিয়েসি",
+    "correct_ans": "ক্রুসিফেরি",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "উদ্ভিদবিজ্ঞান ও শ্রেণীবিন্যাস",
+    "is_correct": false,
+    "q_id": "BIO-C06-2014-006"
+  },
+  {
+    "input": "Question: নিম্নের কোন গোত্রের হতে ভোজ্য তেল উৎপন্ন হয়?\nStudent answered: সোলানেসি (Wrong)\nCorrect answer: ক্রুসিফেরি\nBehavioral state: GROWTH_AREA\nChapter: উদ্ভিদবিজ্ঞান ও শ্রেণীবিন্যাস\n",
+    "q_bn": "নিম্নের কোন গোত্রের হতে ভোজ্য তেল উৎপন্ন হয়?",
+    "student_ans": "সোলানেসি",
+    "correct_ans": "ক্রুসিফেরি",
+    "state": "GROWTH_AREA",
+    "chapter": "উদ্ভিদবিজ্ঞান ও শ্রেণীবিন্যাস",
+    "is_correct": false,
+    "q_id": "BIO-C06-2014-006"
+  },
+  {
+    "input": "Question: পুষ্পপাপড়ির অনুপস্থিত উপস্থিতি ও সংযুক্তির উপর ভিত্তি করে দ্বি-বীজপত্রী উদ্ভিদ কত প্রকার?\nStudent answered: পাঁচ (Wrong)\nCorrect answer: সাত\nBehavioral state: PRIORITY_FOCUS\nChapter: বিবিধ ও সাধারণ\n",
+    "q_bn": "পুষ্পপাপড়ির অনুপস্থিত উপস্থিতি ও সংযুক্তির উপর ভিত্তি করে দ্বি-বীজপত্রী উদ্ভিদ কত প্রকার?",
+    "student_ans": "পাঁচ",
+    "correct_ans": "সাত",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "বিবিধ ও সাধারণ",
+    "is_correct": false,
+    "q_id": "BIO-C19-2014-053"
+  },
+  {
+    "input": "Question: পুষ্পপাপড়ির অনুপস্থিত উপস্থিতি ও সংযুক্তির উপর ভিত্তি করে দ্বি-বীজপত্রী উদ্ভিদ কত প্রকার?\nStudent answered: তিন (Wrong)\nCorrect answer: সাত\nBehavioral state: GROWTH_AREA\nChapter: বিবিধ ও সাধারণ\n",
+    "q_bn": "পুষ্পপাপড়ির অনুপস্থিত উপস্থিতি ও সংযুক্তির উপর ভিত্তি করে দ্বি-বীজপত্রী উদ্ভিদ কত প্রকার?",
+    "student_ans": "তিন",
+    "correct_ans": "সাত",
+    "state": "GROWTH_AREA",
+    "chapter": "বিবিধ ও সাধারণ",
+    "is_correct": false,
+    "q_id": "BIO-C19-2014-053"
+  },
+  {
+    "input": "Question: আরশোলার পরিপাকীয় খাদ্য পৌষ্টিকতন্ত্রের কোন অংশ হতে পরিশোষিত হয়?\nStudent answered: মেসেন্টেয়ন ও গির্জাড (Wrong)\nCorrect answer: ক্রপ ও যকৃত\nBehavioral state: PRIORITY_FOCUS\nChapter: পরিপাক তন্ত্র\n",
+    "q_bn": "আরশোলার পরিপাকীয় খাদ্য পৌষ্টিকতন্ত্রের কোন অংশ হতে পরিশোষিত হয়?",
+    "student_ans": "মেসেন্টেয়ন ও গির্জাড",
+    "correct_ans": "ক্রপ ও যকৃত",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "পরিপাক তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C09-2014-024"
+  },
+  {
+    "input": "Question: আরশোলার পরিপাকীয় খাদ্য পৌষ্টিকতন্ত্রের কোন অংশ হতে পরিশোষিত হয়?\nStudent answered: মেসেন্টেরন ও ক্রপ (Wrong)\nCorrect answer: ক্রপ ও যকৃত\nBehavioral state: GROWTH_AREA\nChapter: পরিপাক তন্ত্র\n",
+    "q_bn": "আরশোলার পরিপাকীয় খাদ্য পৌষ্টিকতন্ত্রের কোন অংশ হতে পরিশোষিত হয়?",
+    "student_ans": "মেসেন্টেরন ও ক্রপ",
+    "correct_ans": "ক্রপ ও যকৃত",
+    "state": "GROWTH_AREA",
+    "chapter": "পরিপাক তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C09-2014-024"
+  },
+  {
+    "input": "Question: মাটিতে নাইট্রোজেনের পরিমাণ বাড়ায় যে উদ্ভিদ-\nStudent answered: আম (Wrong)\nCorrect answer: ছোলা\nBehavioral state: PRIORITY_FOCUS\nChapter: বিবিধ ও সাধারণ\n",
+    "q_bn": "মাটিতে নাইট্রোজেনের পরিমাণ বাড়ায় যে উদ্ভিদ-",
+    "student_ans": "আম",
+    "correct_ans": "ছোলা",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "বিবিধ ও সাধারণ",
+    "is_correct": false,
+    "q_id": "BIO-C19-2014-054"
+  },
+  {
+    "input": "Question: মাটিতে নাইট্রোজেনের পরিমাণ বাড়ায় যে উদ্ভিদ-\nStudent answered: ভুট্টা (Wrong)\nCorrect answer: ছোলা\nBehavioral state: GROWTH_AREA\nChapter: বিবিধ ও সাধারণ\n",
+    "q_bn": "মাটিতে নাইট্রোজেনের পরিমাণ বাড়ায় যে উদ্ভিদ-",
+    "student_ans": "ভুট্টা",
+    "correct_ans": "ছোলা",
+    "state": "GROWTH_AREA",
+    "chapter": "বিবিধ ও সাধারণ",
+    "is_correct": false,
+    "q_id": "BIO-C19-2014-054"
+  },
+  {
+    "input": "Question: মালভেসি গোত্রের পরাগধানী ও পরাগরেণুর বৈশিষ্ট্য নিম্নের কোনটি?\nStudent answered: বহুপ্রকোষ্ঠী, হৃৎপিণ্ডাকার এবং কন্টকবিহীন (Wrong)\nCorrect answer: একপ্রকোষ্ঠী, বৃক্কাকার এবং কন্টকিত\nBehavioral state: PRIORITY_FOCUS\nChapter: উদ্ভিদবিজ্ঞান ও শ্রেণীবিন্যাস\n",
+    "q_bn": "মালভেসি গোত্রের পরাগধানী ও পরাগরেণুর বৈশিষ্ট্য নিম্নের কোনটি?",
+    "student_ans": "বহুপ্রকোষ্ঠী, হৃৎপিণ্ডাকার এবং কন্টকবিহীন",
+    "correct_ans": "একপ্রকোষ্ঠী, বৃক্কাকার এবং কন্টকিত",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "উদ্ভিদবিজ্ঞান ও শ্রেণীবিন্যাস",
+    "is_correct": false,
+    "q_id": "BIO-C06-2014-007"
+  },
+  {
+    "input": "Question: মালভেসি গোত্রের পরাগধানী ও পরাগরেণুর বৈশিষ্ট্য নিম্নের কোনটি?\nStudent answered: বহুপ্রকোষ্ঠী, বৃক্কাকার এবং কন্টকিত (Wrong)\nCorrect answer: একপ্রকোষ্ঠী, বৃক্কাকার এবং কন্টকিত\nBehavioral state: GROWTH_AREA\nChapter: উদ্ভিদবিজ্ঞান ও শ্রেণীবিন্যাস\n",
+    "q_bn": "মালভেসি গোত্রের পরাগধানী ও পরাগরেণুর বৈশিষ্ট্য নিম্নের কোনটি?",
+    "student_ans": "বহুপ্রকোষ্ঠী, বৃক্কাকার এবং কন্টকিত",
+    "correct_ans": "একপ্রকোষ্ঠী, বৃক্কাকার এবং কন্টকিত",
+    "state": "GROWTH_AREA",
+    "chapter": "উদ্ভিদবিজ্ঞান ও শ্রেণীবিন্যাস",
+    "is_correct": false,
+    "q_id": "BIO-C06-2014-007"
+  },
+  {
+    "input": "Question: ভাইরাস-এর গঠনে কোন জোড়াটি সঠিক?\nStudent answered: শর্করা ও অ্যামাইনো এসিড (Wrong)\nCorrect answer: প্রোটিন এবং নিউক্লিক এসিড\nBehavioral state: PRIORITY_FOCUS\nChapter: অণুজীব ও ভাইরাস\n",
+    "q_bn": "ভাইরাস-এর গঠনে কোন জোড়াটি সঠিক?",
+    "student_ans": "শর্করা ও অ্যামাইনো এসিড",
+    "correct_ans": "প্রোটিন এবং নিউক্লিক এসিড",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "অণুজীব ও ভাইরাস",
+    "is_correct": false,
+    "q_id": "BIO-C05-2014-014"
+  },
+  {
+    "input": "Question: ভাইরাস-এর গঠনে কোন জোড়াটি সঠিক?\nStudent answered: প্রোটিন এবং অ্যামাইনো এসিড (Wrong)\nCorrect answer: প্রোটিন এবং নিউক্লিক এসিড\nBehavioral state: GROWTH_AREA\nChapter: অণুজীব ও ভাইরাস\n",
+    "q_bn": "ভাইরাস-এর গঠনে কোন জোড়াটি সঠিক?",
+    "student_ans": "প্রোটিন এবং অ্যামাইনো এসিড",
+    "correct_ans": "প্রোটিন এবং নিউক্লিক এসিড",
+    "state": "GROWTH_AREA",
+    "chapter": "অণুজীব ও ভাইরাস",
+    "is_correct": false,
+    "q_id": "BIO-C05-2014-014"
+  },
+  {
+    "input": "Question: জিন এর ক্ষেত্রে কোনটি সঠিক নয়?\nStudent answered: বংশগতির ধারক ও বাহক (Wrong)\nCorrect answer: আত্ম প্রজননে অক্ষম\nBehavioral state: PRIORITY_FOCUS\nChapter: জিনতত্ত্ব ও বিবর্তন\n",
+    "q_bn": "জিন এর ক্ষেত্রে কোনটি সঠিক নয়?",
+    "student_ans": "বংশগতির ধারক ও বাহক",
+    "correct_ans": "আত্ম প্রজননে অক্ষম",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "জিনতত্ত্ব ও বিবর্তন",
+    "is_correct": false,
+    "q_id": "BIO-C03-2014-013"
+  },
+  {
+    "input": "Question: জিন এর ক্ষেত্রে কোনটি সঠিক নয়?\nStudent answered: DNA দ্বারা গঠিত (Wrong)\nCorrect answer: আত্ম প্রজননে অক্ষম\nBehavioral state: GROWTH_AREA\nChapter: জিনতত্ত্ব ও বিবর্তন\n",
+    "q_bn": "জিন এর ক্ষেত্রে কোনটি সঠিক নয়?",
+    "student_ans": "DNA দ্বারা গঠিত",
+    "correct_ans": "আত্ম প্রজননে অক্ষম",
+    "state": "GROWTH_AREA",
+    "chapter": "জিনতত্ত্ব ও বিবর্তন",
+    "is_correct": false,
+    "q_id": "BIO-C03-2014-013"
+  },
+  {
+    "input": "Question: মস্তিষ্কের বিকাশের জন্য নিম্নের কোনটি একান্ত প্রয়োজন?\nStudent answered: মল্টোজ (Wrong)\nCorrect answer: গ্যালাকটোজ\nBehavioral state: PRIORITY_FOCUS\nChapter: পরিপাক তন্ত্র\n",
+    "q_bn": "মস্তিষ্কের বিকাশের জন্য নিম্নের কোনটি একান্ত প্রয়োজন?",
+    "student_ans": "মল্টোজ",
+    "correct_ans": "গ্যালাকটোজ",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "পরিপাক তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C09-2014-025"
+  },
+  {
+    "input": "Question: মস্তিষ্কের বিকাশের জন্য নিম্নের কোনটি একান্ত প্রয়োজন?\nStudent answered: ল্যাকটোজ (Wrong)\nCorrect answer: গ্যালাকটোজ\nBehavioral state: GROWTH_AREA\nChapter: পরিপাক তন্ত্র\n",
+    "q_bn": "মস্তিষ্কের বিকাশের জন্য নিম্নের কোনটি একান্ত প্রয়োজন?",
+    "student_ans": "ল্যাকটোজ",
+    "correct_ans": "গ্যালাকটোজ",
+    "state": "GROWTH_AREA",
+    "chapter": "পরিপাক তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C09-2014-025"
+  },
+  {
+    "input": "Question: নিম্নের কোনটি পুরুষ প্রজননতন্ত্রের অন্তর্ভূক্ত নয়?\nStudent answered: প্রস্টেট গ্রন্থি (Wrong)\nCorrect answer: বার্থোলিন এর গ্রন্থি\nBehavioral state: PRIORITY_FOCUS\nChapter: জনন তন্ত্র\n",
+    "q_bn": "নিম্নের কোনটি পুরুষ প্রজননতন্ত্রের অন্তর্ভূক্ত নয়?",
+    "student_ans": "প্রস্টেট গ্রন্থি",
+    "correct_ans": "বার্থোলিন এর গ্রন্থি",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "জনন তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C16-2014-006"
+  },
+  {
+    "input": "Question: নিম্নের কোনটি পুরুষ প্রজননতন্ত্রের অন্তর্ভূক্ত নয়?\nStudent answered: কাওপার এর গ্রন্থি (Wrong)\nCorrect answer: বার্থোলিন এর গ্রন্থি\nBehavioral state: GROWTH_AREA\nChapter: জনন তন্ত্র\n",
+    "q_bn": "নিম্নের কোনটি পুরুষ প্রজননতন্ত্রের অন্তর্ভূক্ত নয়?",
+    "student_ans": "কাওপার এর গ্রন্থি",
+    "correct_ans": "বার্থোলিন এর গ্রন্থি",
+    "state": "GROWTH_AREA",
+    "chapter": "জনন তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C16-2014-006"
+  },
+  {
+    "input": "Question: তড়্যিৎ-রাসায়নিক কোষ সম্পর্কে নিম্নের কোনটি সঠিক নয়?\nStudent answered: শুষ্ক কোষের ছদন নিবারক কঠিন MnO2 (Wrong)\nCorrect answer: ল্যাকলেন্স কোষের বিদ্যুৎ উত্তেজক তরল লঘু H2SO4\nBehavioral state: PRIORITY_FOCUS\nChapter: ইন্দ্রিয় তন্ত্র\n",
+    "q_bn": "তড়্যিৎ-রাসায়নিক কোষ সম্পর্কে নিম্নের কোনটি সঠিক নয়?",
+    "student_ans": "শুষ্ক কোষের ছদন নিবারক কঠিন MnO2",
+    "correct_ans": "ল্যাকলেন্স কোষের বিদ্যুৎ উত্তেজক তরল লঘু H2SO4",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "ইন্দ্রিয় তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C18-2014-006"
+  },
+  {
+    "input": "Question: তড়্যিৎ-রাসায়নিক কোষ সম্পর্কে নিম্নের কোনটি সঠিক নয়?\nStudent answered: ওয়েস্টন ক্যাডমিয়াম একটি আদর্শ বিদ্যুৎ কোষ (Wrong)\nCorrect answer: ল্যাকলেন্স কোষের বিদ্যুৎ উত্তেজক তরল লঘু H2SO4\nBehavioral state: GROWTH_AREA\nChapter: ইন্দ্রিয় তন্ত্র\n",
+    "q_bn": "তড়্যিৎ-রাসায়নিক কোষ সম্পর্কে নিম্নের কোনটি সঠিক নয়?",
+    "student_ans": "ওয়েস্টন ক্যাডমিয়াম একটি আদর্শ বিদ্যুৎ কোষ",
+    "correct_ans": "ল্যাকলেন্স কোষের বিদ্যুৎ উত্তেজক তরল লঘু H2SO4",
+    "state": "GROWTH_AREA",
+    "chapter": "ইন্দ্রিয় তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C18-2014-006"
+  },
+  {
+    "input": "Question: মস্তিষ্ক সম্পর্কে নিম্নের কোন তথ্যটি সঠিক?\nStudent answered: স্মৃতিশক্তি নিয়ন্ত্রণ কেন্দ্র হাইপোথ্যালামাসে থাকে (Wrong)\nCorrect answer: পরিপাক নিয়ন্ত্রণ কেন্দ্র মেডুলা অবলংগটায় থাকে\nBehavioral state: PRIORITY_FOCUS\nChapter: স্নায়ুতন্ত্র\n",
+    "q_bn": "মস্তিষ্ক সম্পর্কে নিম্নের কোন তথ্যটি সঠিক?",
+    "student_ans": "স্মৃতিশক্তি নিয়ন্ত্রণ কেন্দ্র হাইপোথ্যালামাসে থাকে",
+    "correct_ans": "পরিপাক নিয়ন্ত্রণ কেন্দ্র মেডুলা অবলংগটায় থাকে",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "স্নায়ুতন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C13-2014-006"
+  },
+  {
+    "input": "Question: মস্তিষ্ক সম্পর্কে নিম্নের কোন তথ্যটি সঠিক?\nStudent answered: চলনে সমন্বয় সাধন করে থ্যালামাস (Wrong)\nCorrect answer: পরিপাক নিয়ন্ত্রণ কেন্দ্র মেডুলা অবলংগটায় থাকে\nBehavioral state: GROWTH_AREA\nChapter: স্নায়ুতন্ত্র\n",
+    "q_bn": "মস্তিষ্ক সম্পর্কে নিম্নের কোন তথ্যটি সঠিক?",
+    "student_ans": "চলনে সমন্বয় সাধন করে থ্যালামাস",
+    "correct_ans": "পরিপাক নিয়ন্ত্রণ কেন্দ্র মেডুলা অবলংগটায় থাকে",
+    "state": "GROWTH_AREA",
+    "chapter": "স্নায়ুতন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C13-2014-006"
+  },
+  {
+    "input": "Question: ক্রেবস চক্র সংঘটিত হয়-\nStudent answered: রাইবোজোমে (Wrong)\nCorrect answer: মাইটোকন্ড্রিয়ায়\nBehavioral state: PRIORITY_FOCUS\nChapter: কোষ ও কোষ অঙ্গাণু\n",
+    "q_bn": "ক্রেবস চক্র সংঘটিত হয়-",
+    "student_ans": "রাইবোজোমে",
+    "correct_ans": "মাইটোকন্ড্রিয়ায়",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "কোষ ও কোষ অঙ্গাণু",
+    "is_correct": false,
+    "q_id": "BIO-C01-2014-011"
+  },
+  {
+    "input": "Question: ক্রেবস চক্র সংঘটিত হয়-\nStudent answered: গলগি বডিতে (Wrong)\nCorrect answer: মাইটোকন্ড্রিয়ায়\nBehavioral state: GROWTH_AREA\nChapter: কোষ ও কোষ অঙ্গাণু\n",
+    "q_bn": "ক্রেবস চক্র সংঘটিত হয়-",
+    "student_ans": "গলগি বডিতে",
+    "correct_ans": "মাইটোকন্ড্রিয়ায়",
+    "state": "GROWTH_AREA",
+    "chapter": "কোষ ও কোষ অঙ্গাণু",
+    "is_correct": false,
+    "q_id": "BIO-C01-2014-011"
+  },
+  {
+    "input": "Question: মানবদেহে পিত্ত উৎপন্ন হয়-\nStudent answered: ল্যারিংক্সে (Wrong)\nCorrect answer: যকৃতে\nBehavioral state: PRIORITY_FOCUS\nChapter: পরিপাক তন্ত্র\n",
+    "q_bn": "মানবদেহে পিত্ত উৎপন্ন হয়-",
+    "student_ans": "ল্যারিংক্সে",
+    "correct_ans": "যকৃতে",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "পরিপাক তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C09-2014-026"
+  },
+  {
+    "input": "Question: মানবদেহে পিত্ত উৎপন্ন হয়-\nStudent answered: পিত্তথলিতে (Wrong)\nCorrect answer: যকৃতে\nBehavioral state: GROWTH_AREA\nChapter: পরিপাক তন্ত্র\n",
+    "q_bn": "মানবদেহে পিত্ত উৎপন্ন হয়-",
+    "student_ans": "পিত্তথলিতে",
+    "correct_ans": "যকৃতে",
+    "state": "GROWTH_AREA",
+    "chapter": "পরিপাক তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C09-2014-026"
+  },
+  {
+    "input": "Question: নিম্নের কোন তথ্যটি নেফ্রনের জন্য প্রযোজ্য হবে?\nStudent answered: প্রত্যেক বৃক্কে 10 কোটি নেফ্রন থাকে (Wrong)\nCorrect answer: ভ্রূণীয় মেসোডার্ম খেকে সৃষ্ট হয়\nBehavioral state: PRIORITY_FOCUS\nChapter: রেচন তন্ত্র\n",
+    "q_bn": "নিম্নের কোন তথ্যটি নেফ্রনের জন্য প্রযোজ্য হবে?",
+    "student_ans": "প্রত্যেক বৃক্কে 10 কোটি নেফ্রন থাকে",
+    "correct_ans": "ভ্রূণীয় মেসোডার্ম খেকে সৃষ্ট হয়",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "রেচন তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C12-2014-004"
+  },
+  {
+    "input": "Question: নিম্নের কোন তথ্যটি নেফ্রনের জন্য প্রযোজ্য হবে?\nStudent answered: ভ্রূণীয় এক্টোডার্ম থেকে সৃষ্ট হয় (Wrong)\nCorrect answer: ভ্রূণীয় মেসোডার্ম খেকে সৃষ্ট হয়\nBehavioral state: GROWTH_AREA\nChapter: রেচন তন্ত্র\n",
+    "q_bn": "নিম্নের কোন তথ্যটি নেফ্রনের জন্য প্রযোজ্য হবে?",
+    "student_ans": "ভ্রূণীয় এক্টোডার্ম থেকে সৃষ্ট হয়",
+    "correct_ans": "ভ্রূণীয় মেসোডার্ম খেকে সৃষ্ট হয়",
+    "state": "GROWTH_AREA",
+    "chapter": "রেচন তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C12-2014-004"
+  },
+  {
+    "input": "Question: মূ্ত্রের উপাদান নয় কোনটি?\nStudent answered: ইউরিক এসিড (Wrong)\nCorrect answer: বিলিরুবিন\nBehavioral state: PRIORITY_FOCUS\nChapter: রেচন তন্ত্র\n",
+    "q_bn": "মূ্ত্রের উপাদান নয় কোনটি?",
+    "student_ans": "ইউরিক এসিড",
+    "correct_ans": "বিলিরুবিন",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "রেচন তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C12-2014-005"
+  },
+  {
+    "input": "Question: মূ্ত্রের উপাদান নয় কোনটি?\nStudent answered: ইউরোক্রোম (Wrong)\nCorrect answer: বিলিরুবিন\nBehavioral state: GROWTH_AREA\nChapter: রেচন তন্ত্র\n",
+    "q_bn": "মূ্ত্রের উপাদান নয় কোনটি?",
+    "student_ans": "ইউরোক্রোম",
+    "correct_ans": "বিলিরুবিন",
+    "state": "GROWTH_AREA",
+    "chapter": "রেচন তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C12-2014-005"
+  },
+  {
+    "input": "Question: কোনটিতে জনুক্রম ঘটে না?\nStudent answered: মিউকর (Wrong)\nCorrect answer: ব্যাক্টেরিয়া\nBehavioral state: PRIORITY_FOCUS\nChapter: উদ্ভিদবিজ্ঞান ও শ্রেণীবিন্যাস\n",
+    "q_bn": "কোনটিতে জনুক্রম ঘটে না?",
+    "student_ans": "মিউকর",
+    "correct_ans": "ব্যাক্টেরিয়া",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "উদ্ভিদবিজ্ঞান ও শ্রেণীবিন্যাস",
+    "is_correct": false,
+    "q_id": "BIO-C06-2014-008"
+  },
+  {
+    "input": "Question: কোনটিতে জনুক্রম ঘটে না?\nStudent answered: স্পাইরোগাইয়া (Wrong)\nCorrect answer: ব্যাক্টেরিয়া\nBehavioral state: GROWTH_AREA\nChapter: উদ্ভিদবিজ্ঞান ও শ্রেণীবিন্যাস\n",
+    "q_bn": "কোনটিতে জনুক্রম ঘটে না?",
+    "student_ans": "স্পাইরোগাইয়া",
+    "correct_ans": "ব্যাক্টেরিয়া",
+    "state": "GROWTH_AREA",
+    "chapter": "উদ্ভিদবিজ্ঞান ও শ্রেণীবিন্যাস",
+    "is_correct": false,
+    "q_id": "BIO-C06-2014-008"
+  },
+  {
+    "input": "Question: ছত্রাকের সঞ্চিত খাদ্য-\nStudent answered: চর্বি ও প্রোটিন (Wrong)\nCorrect answer: গ্লাইকোজেন ও তৈল বিন্দু\nBehavioral state: PRIORITY_FOCUS\nChapter: অণুজীব ও ভাইরাস\n",
+    "q_bn": "ছত্রাকের সঞ্চিত খাদ্য-",
+    "student_ans": "চর্বি ও প্রোটিন",
+    "correct_ans": "গ্লাইকোজেন ও তৈল বিন্দু",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "অণুজীব ও ভাইরাস",
+    "is_correct": false,
+    "q_id": "BIO-C05-2014-015"
+  },
+  {
+    "input": "Question: ছত্রাকের সঞ্চিত খাদ্য-\nStudent answered: গ্লাইকোজেন ও সেলুলোজ (Wrong)\nCorrect answer: গ্লাইকোজেন ও তৈল বিন্দু\nBehavioral state: GROWTH_AREA\nChapter: অণুজীব ও ভাইরাস\n",
+    "q_bn": "ছত্রাকের সঞ্চিত খাদ্য-",
+    "student_ans": "গ্লাইকোজেন ও সেলুলোজ",
+    "correct_ans": "গ্লাইকোজেন ও তৈল বিন্দু",
+    "state": "GROWTH_AREA",
+    "chapter": "অণুজীব ও ভাইরাস",
+    "is_correct": false,
+    "q_id": "BIO-C05-2014-015"
+  },
+  {
+    "input": "Question: কোনটি স্বাভাবিক ব্যাকটেরিয়ার গঠনে অনুপস্থিত?\nStudent answered: ফ্ল্যাজেলা (Wrong)\nCorrect answer: ক্রোমাটোফোন\nBehavioral state: PRIORITY_FOCUS\nChapter: অণুজীব ও ভাইরাস\n",
+    "q_bn": "কোনটি স্বাভাবিক ব্যাকটেরিয়ার গঠনে অনুপস্থিত?",
+    "student_ans": "ফ্ল্যাজেলা",
+    "correct_ans": "ক্রোমাটোফোন",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "অণুজীব ও ভাইরাস",
+    "is_correct": false,
+    "q_id": "BIO-C05-2014-016"
+  },
+  {
+    "input": "Question: কোনটি স্বাভাবিক ব্যাকটেরিয়ার গঠনে অনুপস্থিত?\nStudent answered: ক্যাপসুল (Wrong)\nCorrect answer: ক্রোমাটোফোন\nBehavioral state: GROWTH_AREA\nChapter: অণুজীব ও ভাইরাস\n",
+    "q_bn": "কোনটি স্বাভাবিক ব্যাকটেরিয়ার গঠনে অনুপস্থিত?",
+    "student_ans": "ক্যাপসুল",
+    "correct_ans": "ক্রোমাটোফোন",
+    "state": "GROWTH_AREA",
+    "chapter": "অণুজীব ও ভাইরাস",
+    "is_correct": false,
+    "q_id": "BIO-C05-2014-016"
+  },
+  {
+    "input": "Question: নিম্নের কোন অবস্থানে প্লাজমোডিয়ামের সাইজন্ট পাওয়া যায়?\nStudent answered: মানুষের শ্বেত কণিকায় (Wrong)\nCorrect answer: মানুষের লোহিত রক্ত কণিকায়\nBehavioral state: PRIORITY_FOCUS\nChapter: সংবহন তন্ত্র\n",
+    "q_bn": "নিম্নের কোন অবস্থানে প্লাজমোডিয়ামের সাইজন্ট পাওয়া যায়?",
+    "student_ans": "মানুষের শ্বেত কণিকায়",
+    "correct_ans": "মানুষের লোহিত রক্ত কণিকায়",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "সংবহন তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C10-2014-018"
+  },
+  {
+    "input": "Question: নিম্নের কোন অবস্থানে প্লাজমোডিয়ামের সাইজন্ট পাওয়া যায়?\nStudent answered: অ্যানোফিলিস মশকীর লালাগ্রন্থিতে (Wrong)\nCorrect answer: মানুষের লোহিত রক্ত কণিকায়\nBehavioral state: GROWTH_AREA\nChapter: সংবহন তন্ত্র\n",
+    "q_bn": "নিম্নের কোন অবস্থানে প্লাজমোডিয়ামের সাইজন্ট পাওয়া যায়?",
+    "student_ans": "অ্যানোফিলিস মশকীর লালাগ্রন্থিতে",
+    "correct_ans": "মানুষের লোহিত রক্ত কণিকায়",
+    "state": "GROWTH_AREA",
+    "chapter": "সংবহন তন্ত্র",
+    "is_correct": false,
+    "q_id": "BIO-C10-2014-018"
+  },
+  {
+    "input": "Question: পৃথিবীর আদিপ্রাণী যে পর্বের অ্ন্তর্ভূক্ত তা হলো-\nStudent answered: পরিফেরা (Wrong)\nCorrect answer: প্রোটোজোয়া\nBehavioral state: PRIORITY_FOCUS\nChapter: প্রাণীর বিভিন্নতা\n",
+    "q_bn": "পৃথিবীর আদিপ্রাণী যে পর্বের অ্ন্তর্ভূক্ত তা হলো-",
+    "student_ans": "পরিফেরা",
+    "correct_ans": "প্রোটোজোয়া",
+    "state": "PRIORITY_FOCUS",
+    "chapter": "প্রাণীর বিভিন্নতা",
+    "is_correct": false,
+    "q_id": "BIO-C08-2014-008"
+  },
+  {
+    "input": "Question: পৃথিবীর আদিপ্রাণী যে পর্বের অ্ন্তর্ভূক্ত তা হলো-\nStudent answered: কর্ডাটা (Wrong)\nCorrect answer: প্রোটোজোয়া\nBehavioral state: GROWTH_AREA\nChapter: প্রাণীর বিভিন্নতা\n",
+    "q_bn": "পৃথিবীর আদিপ্রাণী যে পর্বের অ্ন্তর্ভূক্ত তা হলো-",
+    "student_ans": "কর্ডাটা",
+    "correct_ans": "প্রোটোজোয়া",
+    "state": "GROWTH_AREA",
+    "chapter": "প্রাণীর বিভিন্নতা",
+    "is_correct": false,
+    "q_id": "BIO-C08-2014-008"
+  }
+]

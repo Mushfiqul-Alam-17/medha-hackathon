@@ -1,0 +1,135 @@
+[
+  {
+    "chapter_code": "BIO-C19",
+    "chapter_name_bn": "বিবিধ ও সাধারণ",
+    "chapter_name_en": "Miscellaneous",
+    "appearances": 54,
+    "exam_weight": "high"
+  },
+  {
+    "chapter_code": "BIO-C09",
+    "chapter_name_bn": "পরিপাক তন্ত্র",
+    "chapter_name_en": "Digestive System",
+    "appearances": 26,
+    "exam_weight": "high"
+  },
+  {
+    "chapter_code": "BIO-C10",
+    "chapter_name_bn": "সংবহন তন্ত্র",
+    "chapter_name_en": "Circulatory System",
+    "appearances": 18,
+    "exam_weight": "medium"
+  },
+  {
+    "chapter_code": "BIO-C05",
+    "chapter_name_bn": "অণুজীব ও ভাইরাস",
+    "chapter_name_en": "Microorganisms & Viruses",
+    "appearances": 16,
+    "exam_weight": "medium"
+  },
+  {
+    "chapter_code": "BIO-C03",
+    "chapter_name_bn": "জিনতত্ত্ব ও বিবর্তন",
+    "chapter_name_en": "Genetics & Evolution",
+    "appearances": 13,
+    "exam_weight": "medium"
+  },
+  {
+    "chapter_code": "BIO-C01",
+    "chapter_name_bn": "কোষ ও কোষ অঙ্গাণু",
+    "chapter_name_en": "Cell Structure & Organelles",
+    "appearances": 11,
+    "exam_weight": "medium"
+  },
+  {
+    "chapter_code": "BIO-C04",
+    "chapter_name_bn": "জীবপ্রযুক্তি",
+    "chapter_name_en": "Biotechnology",
+    "appearances": 9,
+    "exam_weight": "low"
+  },
+  {
+    "chapter_code": "BIO-C14",
+    "chapter_name_bn": "অন্তঃক্ষরা তন্ত্র",
+    "chapter_name_en": "Endocrine System",
+    "appearances": 9,
+    "exam_weight": "low"
+  },
+  {
+    "chapter_code": "BIO-C06",
+    "chapter_name_bn": "উদ্ভিদবিজ্ঞান ও শ্রেণীবিন্যাস",
+    "chapter_name_en": "Plant Classification",
+    "appearances": 8,
+    "exam_weight": "low"
+  },
+  {
+    "chapter_code": "BIO-C07",
+    "chapter_name_bn": "উদ্ভিদ শরীরতত্ত্ব",
+    "chapter_name_en": "Plant Physiology",
+    "appearances": 8,
+    "exam_weight": "low"
+  },
+  {
+    "chapter_code": "BIO-C08",
+    "chapter_name_bn": "প্রাণীর বিভিন্নতা",
+    "chapter_name_en": "Animal Diversity",
+    "appearances": 8,
+    "exam_weight": "low"
+  },
+  {
+    "chapter_code": "BIO-C15",
+    "chapter_name_bn": "কঙ্কাল ও পেশী তন্ত্র",
+    "chapter_name_en": "Skeletal & Muscular System",
+    "appearances": 7,
+    "exam_weight": "low"
+  },
+  {
+    "chapter_code": "BIO-C13",
+    "chapter_name_bn": "স্নায়ুতন্ত্র",
+    "chapter_name_en": "Nervous System",
+    "appearances": 6,
+    "exam_weight": "low"
+  },
+  {
+    "chapter_code": "BIO-C16",
+    "chapter_name_bn": "জনন তন্ত্র",
+    "chapter_name_en": "Reproduction",
+    "appearances": 6,
+    "exam_weight": "low"
+  },
+  {
+    "chapter_code": "BIO-C17",
+    "chapter_name_bn": "রোগ প্রতিরোধ ও রক্তের গ্রুপ",
+    "chapter_name_en": "Immunity & Blood Groups",
+    "appearances": 6,
+    "exam_weight": "low"
+  },
+  {
+    "chapter_code": "BIO-C18",
+    "chapter_name_bn": "ইন্দ্রিয় তন্ত্র",
+    "chapter_name_en": "Sense Organs",
+    "appearances": 6,
+    "exam_weight": "low"
+  },
+  {
+    "chapter_code": "BIO-C12",
+    "chapter_name_bn": "রেচন তন্ত্র",
+    "chapter_name_en": "Excretory System",
+    "appearances": 5,
+    "exam_weight": "low"
+  },
+  {
+    "chapter_code": "BIO-C11",
+    "chapter_name_bn": "শ্বসন তন্ত্র",
+    "chapter_name_en": "Respiratory System",
+    "appearances": 4,
+    "exam_weight": "low"
+  },
+  {
+    "chapter_code": "BIO-C02",
+    "chapter_name_bn": "কোষ বিভাজন",
+    "chapter_name_en": "Cell Division",
+    "appearances": 2,
+    "exam_weight": "low"
+  }
+]
