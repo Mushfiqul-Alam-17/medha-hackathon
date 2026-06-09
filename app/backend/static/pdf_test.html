@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEDHA — Textbook PDF & Exam Tester</title>
+    <!-- Google Fonts Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #0f172a;
+            --bg-card: #1e293b;
+            --primary: #6366f1;
+            --primary-hover: #4f46e5;
+            --success: #10b981;
+            --error: #ef4444;
+            --text: #f8fafc;
+            --text-secondary: #94a3b8;
+            --border: rgba(255, 255, 255, 0.08);
+            --border-hover: rgba(255, 255, 255, 0.15);
+            --transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Top Header */
+        header {
+            background-color: var(--bg-card);
+            border-bottom: 1px solid var(--border);
+            padding: 12px 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 10;
+            height: 64px;
+            flex-shrink: 0;
+        }
+
+        .logo-section h1 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+            background: linear-gradient(135deg, #a5b4fc, #6366f1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .header-actions {
+            display: flex;
+            gap: 12px;
+        }
+
+        button {
+            font-family: inherit;
+            cursor: pointer;
+            border: none;
+            outline: none;
+            border-radius: 8px;
+            transition: var(--transition);
+        }
+
+        .btn-primary {
+            background-color: var(--primary);
+            color: white;
+            padding: 8px 16px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .btn-primary:hover {
+            background-color: var(--primary-hover);
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(99, 102, 241, 0.25);
+        }
+
+        .btn-secondary {
+            background-color: rgba(255, 255, 255, 0.05);
+            color: var(--text);
+            border: 1px solid var(--border);
+            padding: 8px 14px;
+            font-weight: 500;
+            font-size: 0.85rem;
+        }
+
+        .btn-secondary:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+            border-color: var(--border-hover);
+        }
+
+        .btn-secondary.active {
+            background-color: rgba(99, 102, 241, 0.15);
+            border-color: var(--primary);
+            color: #a5b4fc;
+        }
+
+        /* Main Workspace Container */
+        .workspace {
+            display: flex;
+            flex: 1;
+            overflow: hidden;
+            width: 100%;
+        }
+
+        /* Left Panel - Exam */
+        .left-panel {
+            width: 50%;
+            height: 100%;
+            overflow-y: auto;
+            border-right: 1px solid var(--border);
+            padding: 24px;
+            background: linear-gradient(180deg, #0f172a 0%, #090d16 100%);
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        /* Right Panel - PDF Viewer */
+        .right-panel {
+            width: 50%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            background-color: #0b0f19;
+            position: relative;
+        }
+
+        .pdf-toolbar {
+            background-color: var(--bg-card);
+            border-bottom: 1px solid var(--border);
+            padding: 8px 16px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 48px;
+            flex-shrink: 0;
+        }
+
+        .pdf-title {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            font-weight: 500;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 70%;
+        }
+
+        .iframe-container {
+            flex: 1;
+            width: 100%;
+            height: 100%;
+            position: relative;
+            background-color: #1a1e29;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            background-color: #1a1e29;
+        }
+
+        /* Exam Status Bar */
+        .status-bar {
+            background-color: rgba(255, 255, 255, 0.02);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 12px 18px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-shrink: 0;
+        }
+
+        .stats-info {
+            display: flex;
+            gap: 16px;
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+        }
+
+        .stats-val {
+            color: var(--text);
+            font-weight: 600;
+        }
+
+        /* Question Cards */
+        .questions-container {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            padding-bottom: 40px;
+        }
+
+        .question-card {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 20px;
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .question-card:hover {
+            border-color: var(--border-hover);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .question-card.active-highlight {
+            border-color: var(--primary);
+            box-shadow: 0 0 0 1px var(--primary);
+        }
+
+        .q-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+            margin-bottom: 12px;
+        }
+
+        .q-tag {
+            background-color: rgba(255, 255, 255, 0.05);
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-weight: 600;
+            color: #818cf8;
+        }
+
+        .q-difficulty {
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 0.7rem;
+            letter-spacing: 0.05em;
+        }
+
+        .difficulty-easy { color: var(--success); }
+        .difficulty-medium { color: #fbbf24; }
+        .difficulty-hard { color: var(--error); }
+
+        .q-text {
+            font-size: 1.05rem;
+            font-weight: 600;
+            line-height: 1.5;
+            margin-bottom: 16px;
+            color: var(--text);
+        }
+
+        .options-list {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .option-btn {
+            background-color: rgba(255, 255, 255, 0.02);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 12px 16px;
+            text-align: left;
+            font-size: 0.95rem;
+            color: var(--text);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            transition: var(--transition);
+        }
+
+        .option-btn:hover:not(:disabled) {
+            background-color: rgba(255, 255, 255, 0.06);
+            border-color: var(--border-hover);
+        }
+
+        .option-btn:disabled {
+            cursor: not-allowed;
+        }
+
+        .option-label {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .option-index {
+            background-color: rgba(255, 255, 255, 0.08);
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: var(--text-secondary);
+            flex-shrink: 0;
+        }
+
+        /* Option Feedback States */
+        .option-btn.correct {
+            background-color: rgba(16, 185, 129, 0.15) !important;
+            border-color: var(--success) !important;
+            color: #6ee7b7;
+        }
+
+        .option-btn.correct .option-index {
+            background-color: var(--success);
+            color: white;
+        }
+
+        .option-btn.wrong {
+            background-color: rgba(239, 68, 68, 0.15) !important;
+            border-color: var(--error) !important;
+            color: #fca5a5;
+        }
+
+        .option-btn.wrong .option-index {
+            background-color: var(--error);
+            color: white;
+        }
+
+        /* Question Feedback Banner */
+        .q-feedback {
+            margin-top: 14px;
+            padding: 10px 14px;
+            border-radius: 8px;
+            font-size: 0.85rem;
+            line-height: 1.4;
+            display: none;
+            animation: fadeIn 0.3s ease;
+        }
+
+        .q-feedback.show {
+            display: block;
+        }
+
+        .q-feedback.correct-feedback {
+            background-color: rgba(16, 185, 129, 0.08);
+            border-left: 4px solid var(--success);
+            color: #a7f3d0;
+        }
+
+        .q-feedback.wrong-feedback {
+            background-color: rgba(239, 68, 68, 0.08);
+            border-left: 4px solid var(--error);
+            color: #fecaca;
+        }
+
+        .feedback-action {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 8px;
+            padding-top: 8px;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .btn-textbook {
+            background-color: rgba(99, 102, 241, 0.15);
+            color: #a5b4fc;
+            padding: 4px 10px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            border-radius: 6px;
+            border: 1px solid rgba(99, 102, 241, 0.3);
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .btn-textbook:hover {
+            background-color: rgba(99, 102, 241, 0.25);
+            border-color: var(--primary);
+        }
+
+        /* Loading Spinner Overlay */
+        .loader-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(15, 23, 42, 0.7);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 16px;
+            z-index: 5;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.2s ease;
+        }
+
+        .loader-container.show {
+            opacity: 1;
+            pointer-events: all;
+        }
+
+        .spinner {
+            width: 40px;
+            height: 40px;
+            border: 4px solid rgba(255, 255, 255, 0.1);
+            border-top: 4px solid var(--primary);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        /* Initial/Empty PDF State */
+        .pdf-placeholder {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 12px;
+            background-color: #0b0f19;
+            color: var(--text-secondary);
+            text-align: center;
+            padding: 24px;
+            z-index: 2;
+        }
+
+        .pdf-placeholder svg {
+            color: rgba(255, 255, 255, 0.1);
+            margin-bottom: 8px;
+        }
+
+        /* Animations */
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(4px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Utility Indicator */
+        .indicator {
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            margin-right: 6px;
+        }
+        .indicator-green { background-color: var(--success); }
+        .indicator-red { background-color: var(--error); }
+
+    </style>
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header>
+        <div class="logo-section">
+            <h1>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                MEDHA PDF-EXAM INTEGRITY TESTER
+            </h1>
+        </div>
+        <div class="header-actions">
+            <!-- Manual PDF loading triggers -->
+            <button class="btn-secondary" id="btn-manual-botany" onclick="loadPdfManual('ABUL_HASAN_BIO_1st_paper.pdf', 1, 'কোষ')">
+                🍃 Botany (Abul Hasan Sir)
+            </button>
+            <button class="btn-secondary" id="btn-manual-zoology" onclick="loadPdfManual('Azmol_BIO_2nd_paper.pdf', 1, 'প্রাণী')">
+                🦎 Zoology (Gazi Azmol Sir)
+            </button>
+            <button class="btn-primary" onclick="generateExam()">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"/></svg>
+                10-Question Exam
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Workspace -->
+    <div class="workspace">
+        
+        <!-- Left Panel: Exam Interface -->
+        <div class="left-panel">
+            
+            <div class="status-bar">
+                <div style="font-weight: 600; font-size: 0.95rem;">Exam Status</div>
+                <div class="stats-info">
+                    <div>Questions Answered: <span id="stat-answered" class="stats-val">0/10</span></div>
+                    <div>Score: <span id="stat-score" class="stats-val">0</span></div>
+                </div>
+            </div>
+
+            <div class="loader-container" id="exam-loader">
+                <div class="spinner"></div>
+                <div style="font-weight: 500; font-size: 0.9rem;">Fetching questions from SQLite...</div>
+            </div>
+
+            <!-- List of Questions -->
+            <div class="questions-container" id="questions-box">
+                <!-- Dynamically populated question cards -->
+            </div>
+            
+        </div>
+
+        <!-- Right Panel: PDF Viewer -->
+        <div class="right-panel">
+            <div class="pdf-toolbar">
+                <div class="pdf-title" id="pdf-header-title">No Document Loaded</div>
+                <div style="display: flex; gap: 8px;">
+                    <button class="btn-secondary" style="padding: 4px 8px; font-size: 0.75rem; border-radius: 4px;" onclick="reloadActivePdf()">
+                        🔄 Reload PDF
+                    </button>
+                </div>
+            </div>
+
+            <!-- PDF Empty State Placeholder -->
+            <div class="pdf-placeholder" id="pdf-view-placeholder">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><line x1="10" y1="9" x2="8" y2="9"/></svg>
+                <div style="font-weight: 600; font-size: 1rem;">Textbook Frame View</div>
+                <div style="font-size: 0.8rem; max-width: 300px; line-height: 1.4;">
+                    Click a question option or use the top navigation bar to load textbooks and jump directly to pages.
+                </div>
+            </div>
+
+            <!-- Actual PDF Iframe -->
+            <div class="iframe-container">
+                <iframe id="pdf-frame" src="" type="application/pdf"></iframe>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- JavaScript logic -->
+    <script>
+        const API_HOST = window.location.origin;
+        let activeQuestions = [];
+        let score = 0;
+        let answeredCount = 0;
+        let currentLoadedPdf = null;
+        let currentLoadedPage = null;
+        let currentHighlight = null;
+
+        // Auto load 10 questions on startup
+        window.addEventListener('DOMContentLoaded', () => {
+            generateExam();
+        });
+
+        // Generate a new 10-question random exam
+        async function generateExam() {
+            const loader = document.getElementById('exam-loader');
+            const box = document.getElementById('questions-box');
+            
+            loader.classList.add('show');
+            box.innerHTML = '';
+            
+            score = 0;
+            answeredCount = 0;
+            updateStatusBar();
+
+            try {
+                const response = await fetch(`${API_HOST}/api/questions/test-bank?count=10`);
+                if (!response.ok) throw new Error('API failed');
+                
+                activeQuestions = await response.json();
+                loader.classList.remove('show');
+                
+                if (activeQuestions.length === 0) {
+                    box.innerHTML = `<div style="text-align:center; padding:40px; color:var(--text-secondary);">No questions found in Database.</div>`;
+                    return;
+                }
+
+                renderQuestions(activeQuestions);
+            } catch (error) {
+                console.error(error);
+                loader.classList.remove('show');
+                box.innerHTML = `<div style="text-align:center; padding:40px; color:var(--error); font-weight:600;">Failed to fetch database questions. Make sure FastAPI server is running on Port 8000.</div>`;
+            }
+        }
+
+        // Render questions to left panel
+        function renderQuestions(questions) {
+            const box = document.getElementById('questions-box');
+            box.innerHTML = '';
+
+            questions.forEach((q, idx) => {
+                const card = document.createElement('div');
+                card.className = 'question-card';
+                card.id = `q-card-${q.id}`;
+                
+                const difficultyClass = `difficulty-${q.difficulty.toLowerCase()}`;
+                
+                const optionsHtml = [
+                    { key: 'A', text: q.option_a_bn },
+                    { key: 'B', text: q.option_b_bn },
+                    { key: 'C', text: q.option_c_bn },
+                    { key: 'D', text: q.option_d_bn }
+                ].map(opt => {
+                    return `
+                        <button class="option-btn" id="q-${q.id}-opt-${opt.key}" onclick="submitOption(${q.id}, '${opt.key}', '${q.correct}')">
+                            <span class="option-label">
+                                <span class="option-index">${opt.key}</span>
+                                <span>${opt.text}</span>
+                            </span>
+                        </button>
+                    `;
+                }).join('');
+
+                card.innerHTML = `
+                    <div class="q-meta">
+                        <span class="q-tag">${q.chapter_name || 'সাধারণ অধ্যায়'}</span>
+                        <span class="q-difficulty ${difficultyClass}">${q.difficulty}</span>
+                    </div>
+                    <div class="q-text">${idx + 1}. ${q.question_bn}</div>
+                    <div class="options-list">
+                        ${optionsHtml}
+                    </div>
+                    <div class="q-feedback" id="feedback-${q.id}">
+                        <div style="font-weight:600;" id="feedback-title-${q.id}">-</div>
+                        <div style="margin-top:4px;" id="feedback-detail-${q.id}"></div>
+                        <div class="feedback-action">
+                            <span style="font-size:0.75rem; color:var(--text-secondary);">
+                                📚 ${q.pdf_file ? q.pdf_file.replace(/_/g, ' ') : 'N/A'} (Page ${q.pdf_page || 'N/A'})
+                            </span>
+                            <button class="btn-textbook" onclick="loadPdfHighlight('${q.pdf_file}', ${q.pdf_page}, '${q.topic || q.option_a_bn.substring(0,6)}')">
+                                Open Textbook 🡥
+                            </button>
+                        </div>
+                    </div>
+                `;
+                box.appendChild(card);
+            });
+        }
+
+        // Submit option click and highlight textbook
+        function submitOption(questionId, selected, correct) {
+            // Disable all option buttons for this question
+            const letters = ['A', 'B', 'C', 'D'];
+            letters.forEach(key => {
+                const btn = document.getElementById(`q-${questionId}-opt-${key}`);
+                if (btn) btn.disabled = true;
+            });
+
+            const selectedBtn = document.getElementById(`q-${questionId}-opt-${selected}`);
+            const correctBtn = document.getElementById(`q-${questionId}-opt-${correct}`);
+            const feedbackBox = document.getElementById(`feedback-${questionId}`);
+            const feedbackTitle = document.getElementById(`feedback-title-${questionId}`);
+            const feedbackDetail = document.getElementById(`feedback-detail-${questionId}`);
+            const card = document.getElementById(`q-card-${questionId}`);
+
+            // Remove highlight class from all other cards, add to this one
+            document.querySelectorAll('.question-card').forEach(c => c.classList.remove('active-highlight'));
+            card.classList.add('active-highlight');
+
+            const qObj = activeQuestions.find(q => q.id === questionId);
+            const isCorrect = selected === correct;
+            answeredCount++;
+
+            if (isCorrect) {
+                score++;
+                selectedBtn.classList.add('correct');
+                feedbackBox.className = 'q-feedback show correct-feedback';
+                feedbackTitle.innerHTML = '🎉 সঠিক উত্তর!';
+                feedbackDetail.innerHTML = qObj.trap_note ? `<b>নোট:</b> ${qObj.trap_note}` : 'আপনার ধারণা সম্পূর্ণরূপে সঠিক।';
+            } else {
+                selectedBtn.classList.add('wrong');
+                correctBtn.classList.add('correct');
+                feedbackBox.className = 'q-feedback show wrong-feedback';
+                feedbackTitle.innerHTML = '❌ ভুল উত্তর!';
+                feedbackDetail.innerHTML = `সঠিক উত্তর হলো <b>${correct}</b>। ${qObj.trap_note ? `<b>নোট:</b> ${qObj.trap_note}` : ''}`;
+            }
+
+            updateStatusBar();
+
+            // Automatically open PDF textbook and highlight page
+            if (qObj.pdf_file && qObj.pdf_page) {
+                // Determine keyword to search in PDF (use topic if available, else first option word)
+                const searchKeyword = qObj.topic || qObj.option_a_bn.split(' ')[0] || '';
+                loadPdfHighlight(qObj.pdf_file, qObj.pdf_page, searchKeyword);
+            }
+        }
+
+        // Update status bar stats
+        function updateStatusBar() {
+            document.getElementById('stat-answered').innerHTML = `${answeredCount}/10`;
+            document.getElementById('stat-score').innerHTML = score;
+        }
+
+        // Highlight and load PDF to iframe
+        function loadPdfHighlight(filename, page, searchWord) {
+            if (!filename) {
+                console.warn("No PDF filename mapped for this question.");
+                return;
+            }
+            
+            // Normalize filename just in case
+            filename = filename.replace(/\s+/g, '_');
+            
+            const pdfUrl = `${API_HOST}/static/pdfs/${filename}#page=${page}&search=${encodeURIComponent(searchWord)}`;
+            
+            // Hide placeholder and show frame
+            document.getElementById('pdf-view-placeholder').style.display = 'none';
+            const frame = document.getElementById('pdf-frame');
+            frame.src = pdfUrl;
+            
+            // Keep track of current state
+            currentLoadedPdf = filename;
+            currentLoadedPage = page;
+            currentHighlight = searchWord;
+
+            // Update top bar title
+            document.getElementById('pdf-header-title').innerHTML = `📖 ${filename.replace(/_/g, ' ').replace('.pdf', '')} — Page ${page} (Keyword: "${searchWord}")`;
+            
+            // Toggle active manual buttons
+            toggleManualButtonStates(filename);
+        }
+
+        // Manual button click
+        function loadPdfManual(filename, page, searchWord) {
+            loadPdfHighlight(filename, page, searchWord);
+        }
+
+        // Toggle manual buttons highlight states
+        function toggleManualButtonStates(filename) {
+            const btnBotany = document.getElementById('btn-manual-botany');
+            const btnZoology = document.getElementById('btn-manual-zoology');
+            
+            btnBotany.classList.remove('active');
+            btnZoology.classList.remove('active');
+
+            if (filename.includes('1st')) {
+                btnBotany.classList.add('active');
+            } else if (filename.includes('2nd') || filename.includes('Azmol')) {
+                btnZoology.classList.add('active');
+            }
+        }
+
+        // Reload the currently active PDF
+        function reloadActivePdf() {
+            if (currentLoadedPdf) {
+                loadPdfHighlight(currentLoadedPdf, currentLoadedPage, currentHighlight);
+            } else {
+                // If nothing loaded, load Botany default
+                loadPdfManual('ABUL_HASAN_BIO_1st_paper.pdf', 1, 'কোষ');
+            }
+        }
+    </script>
+</body>
+</html>

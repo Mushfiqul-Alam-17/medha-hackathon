@@ -26,3 +26,25 @@ def start_exam_questions(
 def list_chapters(db: Session = Depends(get_db)):
     """Get chapter list and historical frequency data."""
     return get_chapter_frequencies(db)
+
+
+@router.get("/test-bank")
+def get_test_bank(count: int = 10, db: Session = Depends(get_db)):
+    """Fetch random questions WITH answers and PDF locations for the test site."""
+    from models import Question
+    from sqlalchemy.sql.expression import func
+    questions = db.query(Question).order_by(func.random()).limit(count).all()
+    return [{
+        "id": q.id,
+        "chapter_name": q.chapter_name,
+        "topic": q.topic,
+        "question_bn": q.question_bn,
+        "option_a_bn": q.option_a_bn,
+        "option_b_bn": q.option_b_bn,
+        "option_c_bn": q.option_c_bn,
+        "option_d_bn": q.option_d_bn,
+        "correct": q.correct,
+        "pdf_file": q.pdf_file,
+        "pdf_page": q.pdf_page,
+        "trap_note": q.trap_note
+    } for q in questions]
