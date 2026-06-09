@@ -16,6 +16,13 @@ print("Connecting to DB...")
 conn = sqlite3.connect(db_path)
 cur = conn.cursor()
 
+def normalize(text):
+    text = re.sub(r'\s+', '', text)
+    text = text.replace('DNA', 'ডিএনএ')
+    text = text.replace('RNA', 'আরএনএ')
+    text = text.replace('Synthesis', 'এসynthesis')
+    return text
+
 # Load all database questions to build a fast lookup dict by question_bn
 cur.execute("SELECT question_bn, pdf_file, pdf_page FROM questions")
 db_qs = cur.fetchall()
@@ -23,7 +30,7 @@ db_qs = cur.fetchall()
 q_map = {}
 for q_bn, pdf_file, pdf_page in db_qs:
     # Clean text to prevent minor whitespace/formatting issues from blocking match
-    clean_q = re.sub(r'\s+', '', q_bn)
+    clean_q = normalize(q_bn)
     q_map[clean_q] = (pdf_file, pdf_page)
 
 print(f"Loaded {len(q_map)} lookup questions from DB.")
@@ -46,7 +53,7 @@ for r in records:
     q_match = re.search(r"Question:\s*(.*?)\n", inp)
     if q_match:
         q_text = q_match.group(1).strip()
-        clean_q = re.sub(r'\s+', '', q_text)
+        clean_q = normalize(q_text)
         
         if clean_q in q_map:
             pdf_file, pdf_page = q_map[clean_q]
