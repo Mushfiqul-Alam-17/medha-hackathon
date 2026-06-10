@@ -549,6 +549,10 @@
 
             <!-- Actual PDF Iframe -->
             <div class="iframe-container">
+                <div class="loader-container" id="pdf-loader">
+                    <div class="spinner"></div>
+                    <div style="font-weight: 500; font-size: 0.9rem; color: #a5b4fc;">Loading PDF Textbook...</div>
+                </div>
                 <iframe id="pdf-frame" src="" type="application/pdf"></iframe>
             </div>
         </div>
@@ -565,9 +569,16 @@
         let currentLoadedPage = null;
         let currentHighlight = null;
 
-        // Auto load 10 questions on startup
+        // Auto load 10 questions on startup and setup iframe load listener
         window.addEventListener('DOMContentLoaded', () => {
             generateExam();
+            
+            // Setup iframe onload listener to hide loader
+            const frame = document.getElementById('pdf-frame');
+            frame.addEventListener('load', () => {
+                const loader = document.getElementById('pdf-loader');
+                if (loader) loader.classList.remove('show');
+            });
         });
 
         // Generate a new 10-question random exam
@@ -612,7 +623,8 @@
                 card.className = 'question-card';
                 card.id = `q-card-${q.id}`;
                 
-                const difficultyClass = `difficulty-${q.difficulty.toLowerCase()}`;
+                const diff = q.difficulty || 'medium';
+                const difficultyClass = `difficulty-${diff.toLowerCase()}`;
                 
                 const optionsHtml = [
                     { key: 'A', text: q.option_a_bn },
@@ -633,7 +645,7 @@
                 card.innerHTML = `
                     <div class="q-meta">
                         <span class="q-tag">${q.chapter_name || 'সাধারণ অধ্যায়'}</span>
-                        <span class="q-difficulty ${difficultyClass}">${q.difficulty}</span>
+                        <span class="q-difficulty ${difficultyClass}">${diff}</span>
                     </div>
                     <div class="q-text">${idx + 1}. ${q.question_bn}</div>
                     <div class="options-list">
@@ -722,10 +734,19 @@
             
             const pdfUrl = `${API_HOST}/static/pdfs/${filename}#page=${page}&search=${encodeURIComponent(searchWord)}`;
             
-            // Hide placeholder and show frame
+            // Hide placeholder
             document.getElementById('pdf-view-placeholder').style.display = 'none';
+            
+            // Show loader
+            const loader = document.getElementById('pdf-loader');
+            if (loader) loader.classList.add('show');
+            
             const frame = document.getElementById('pdf-frame');
-            frame.src = pdfUrl;
+            
+            // Force reload by resetting source first to about:blank.
+            // This is critical on Chrome/Firefox to trigger the PDF viewer to jump
+            // to a new hash page when the document name remains the same.
+            frame.src = 'about:blank';
             
             // Keep track of current state
             currentLoadedPdf = filename;
@@ -737,6 +758,11 @@
             
             // Toggle active manual buttons
             toggleManualButtonStates(filename);
+            
+            // Wait slightly before setting source to ensure the reset is registered
+            setTimeout(() => {
+                frame.src = pdfUrl;
+            }, 50);
         }
 
         // Manual button click

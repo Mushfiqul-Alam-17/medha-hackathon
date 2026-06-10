@@ -46,5 +46,6 @@ def get_test_bank(count: int = 10, db: Session = Depends(get_db)):
         "correct": q.correct,
         "pdf_file": q.pdf_file,
         "pdf_page": q.pdf_page,
-        "trap_note": q.trap_note
+        "trap_note": q.trap_note,
+        "difficulty": q.difficulty
     } for q in questions]

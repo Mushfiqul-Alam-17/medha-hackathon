@@ -45,12 +45,21 @@ app.include_router(notes.router, prefix="/api")
 app.include_router(profile.router, prefix="/api")
 app.include_router(attempts.router, prefix="/api")
 
-# Serve static textbook PDFs
+# Serve static textbook PDFs with aggressive Cache-Control headers
 from fastapi.staticfiles import StaticFiles
+from fastapi.responses import FileResponse
 from pathlib import Path
+
+class CachedStaticFiles(StaticFiles):
+    def file_response(self, *args, **kwargs):
+        response = super().file_response(*args, **kwargs)
+        # Aggressive cache headers for textbook PDFs and assets
+        response.headers["Cache-Control"] = "public, max-age=31536000, immutable"
+        return response
+
 static_dir = Path(__file__).parent / "static"
 if static_dir.exists():
-    app.mount("/static", StaticFiles(directory=str(static_dir)), name="static")
+    app.mount("/static", CachedStaticFiles(directory=str(static_dir)), name="static")
 
 
 @app.get("/", tags=["health"])
