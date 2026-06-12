@@ -237,7 +237,7 @@ export default function StudyNotes({ loading, notes, source, onDownload, lang, o
           </div>
         )}
 
-        {type === "confused" && n.comparisonTable && (
+        {n.comparisonTable && n.comparisonTable.length > 0 && (
           <ComparisonTable rows={n.comparisonTable} />
         )}
 

@@ -126,6 +126,9 @@ function parseNotes(sections) {
           whyTricked: item.wrong_answer ? `তোমার উত্তর: ${item.wrong_answer}` : null,
           memoryTrick: item.memory_trick,
           trapQuestion: item.trap_note,
+          comparisonTable: item.confusable_note ? [
+            { concept: "মনে রেখো", description: item.confusable_note, isCorrect: true }
+          ] : [],
           pdf_file: item.pdf_file,
           pdf_page: item.pdf_page,
           textbook_ref: item.textbook_ref,
@@ -139,6 +142,9 @@ function parseNotes(sections) {
           explanation: item.explanation,
           speedNote: item.frame,
           memoryTrick: item.memory_trick,
+          comparisonTable: item.confusable_note ? [
+            { concept: "মনে রেখো", description: item.confusable_note, isCorrect: true }
+          ] : [],
           pdf_file: item.pdf_file,
           pdf_page: item.pdf_page,
           textbook_ref: item.textbook_ref,
@@ -535,7 +541,7 @@ export default function App() {
                   </div>
                   <button onClick={() => setActivePdf(null)} className="btn btn-ghost" style={{ padding: "8px 16px", borderRadius: 8 }}>{lang === "bn" ? "বন্ধ করুন" : "Close"}</button>
                 </div>
-                <iframe src={`${BACKEND}/static/pdfs/${activePdf.file}#page=${activePdf.page}`} style={{ flex: 1, width: "100%", border: "none", background: "#f5f5f5" }} />
+                <iframe src={`${import.meta.env.VITE_PDF_BASE_URL || `${BACKEND}/static/pdfs`}/${activePdf.file}#page=${activePdf.page}`} style={{ flex: 1, width: "100%", border: "none", background: "#f5f5f5" }} />
               </div>
             </div>
           )}
