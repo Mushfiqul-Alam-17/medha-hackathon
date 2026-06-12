@@ -44,17 +44,52 @@ def get_explainer_pool_question_bns() -> list[str]:
     return ordered
 
 
-def _build_question_row(q_data: dict, pdf_mappings: dict) -> Question:
+def _build_question_row(q_data: dict, pdf_mappings: dict, explainer_chapters: dict = None) -> Question:
     opts = q_data.get("options", {})
     q_id = q_data.get("id")
     mapping = pdf_mappings.get(q_id)
+
+    q_bn = q_data.get("question_bn", "")
+    spelling_map = {
+        "ফুসফসের আবরণকে কী বলে?": "ফুসফুসের আবরণকে কী বলে?"
+    }
+    reversed_spelling_map = {v: k for k, v in spelling_map.items()}
+    lookup_bn = reversed_spelling_map.get(q_bn, q_bn)
+
+    chapter_name = q_data.get("chapter_name_bn", "")
+    topic = q_data.get("chapter_name_en") or q_data.get("topic", "")
+
+    if explainer_chapters and lookup_bn in explainer_chapters:
+        chapter_name = explainer_chapters[lookup_bn]
+        # Translate topic to English name
+        bengali_to_english_topic = {
+            "কোষ বিভাজন": "Cell Division",
+            "উদ্ভিদ শারীরতত্ত্ব": "Plant Physiology",
+            "কোষ ও এর গঠন": "Cell & Its Structure",
+            "কোষ রসায়ন": "Cell Chemistry",
+            "চলন ও অঙ্গচালনা": "Locomotion & Movement",
+            "সমন্বয় ও নিয়ন্ত্রণ": "Coordination & Control",
+            "সমন্বয় ও নিয়ন্ত্রণ": "Coordination & Control",
+            "শ্বসন ও শ্বাসক্রিয়া": "Respiration",
+            "পরিপাক ও শোষণ": "Digestion & Absorption",
+            "বর্জ্য ও নিষ্কাশন": "Excretion & Elimination",
+            "জীবপ্রযুক্তি": "Biotechnology",
+            "শৈবাল ও ছত্রাক": "Algae & Fungi",
+            "অণুজীব": "Microorganisms",
+            "সাধারণ জ্ঞান": "General Knowledge",
+            "রক্ত ও সঞ্চালন": "Blood & Circulation",
+            "প্রাণীর পরিচিতি": "Introduction to Animals",
+            "মানব জীবনের ধারাবাহিকতা": "Continuity of Human Life",
+            "জীবের পরিবেশ, বিস্তার ও সংরক্ষণ": "Organism Environment, Distribution & Conservation",
+        }
+        topic = bengali_to_english_topic.get(chapter_name, topic)
 
     return Question(
         year=str(q_data.get("year", "Unknown")),
         subject=q_data.get("subject", "Biology"),
         chapter_code=q_data.get("chapter_code", "EXPLAINER"),
-        chapter_name=q_data.get("chapter_name_bn", ""),
-        topic=q_data.get("chapter_name_en") or q_data.get("topic", ""),
+        chapter_name=chapter_name,
+        topic=topic,
         difficulty=q_data.get("difficulty", "medium"),
         question_bn=q_data.get("question_bn", ""),
         question_en=q_data.get("question_en") or None,
@@ -128,11 +163,30 @@ def run(force: bool = False):
         db.commit()
         print(f"Cleared {deleted} existing questions.")
 
+    # Load explainer_chapters mapping
+    explainer_chapters = {}
+    with open(EXPLAINER_JSONL, encoding="utf-8") as f:
+        for i, line in enumerate(f, 1):
+            if i > EXPLAINER_LINE_CUTOFF:
+                break
+            if not line.strip():
+                continue
+            data = json.loads(line)
+            q_text = None
+            chapter = None
+            for part in data["input"].split("\n"):
+                if part.startswith("Question:"):
+                    q_text = part[len("Question:") :].strip()
+                elif part.startswith("Chapter:"):
+                    chapter = part[len("Chapter:") :].strip()
+            if q_text and chapter:
+                explainer_chapters[q_text] = chapter
+
     loaded_count = 0
     for q_bn in pool_bns:
         lookup_bn = spelling_map.get(q_bn, q_bn)
         if lookup_bn in clean_by_bn:
-            db.add(_build_question_row(clean_by_bn[lookup_bn], pdf_mappings))
+            db.add(_build_question_row(clean_by_bn[lookup_bn], pdf_mappings, explainer_chapters))
             loaded_count += 1
         else:
             print(f"Skipping seeding of missing question: {q_bn}")

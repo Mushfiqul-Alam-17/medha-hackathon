@@ -19,6 +19,32 @@ def clean_text(text):
     # Remove whitespace and punctuation to make matching robust
     return re.sub(r'[\s\W_]+', '', text).strip()
 
+def to_ascii_int(digit_str):
+    if not digit_str:
+        return None
+    bengali_to_ascii = str.maketrans('০১২৩৪৫৬৭৮৯', '0123456789')
+    ascii_str = digit_str.translate(bengali_to_ascii)
+    try:
+        return int(ascii_str)
+    except ValueError:
+        return None
+
+def extract_page_number(ref_str):
+    if not ref_str:
+        return None
+    # Matches 'পৃষ্ঠা', 'পৃঃ', 'page', 'Page', 'p.' followed by digits
+    match = re.search(r'(?:\u09aa\u09c3\u09b7\u09cd\u09a0\u09be|\u09aa\u09c3\u0983|[Pp]age|p\.)\s*([0-9\u09e6-\u09ef]+)', ref_str)
+    if not match:
+        match = re.search(r'([0-9\u09e6-\u09ef]+)\s*$', ref_str)
+    if not match:
+        matches = re.findall(r'([0-9\u09e6-\u09ef]+)', ref_str)
+        if matches:
+            if len(matches) > 1:
+                return matches[-1]
+            return matches[0]
+        return None
+    return match.group(1)
+
 print(f"Connecting to database at {db_path}...")
 conn = sqlite3.connect(db_path)
 cursor = conn.cursor()
@@ -76,9 +102,7 @@ for q_id, q_bn in db_questions:
             pdf_file = "Azmol_BIO_2nd_paper.pdf"
             
         # Determine page number
-        page_match = re.search(r'\d+', ref_str)
-        if page_match:
-            pdf_page = int(page_match.group(0))
+        pdf_page = to_ascii_int(extract_page_number(ref_str))
             
         # Fallbacks for specific topics if file or page is missing from parsed ref
         if not pdf_file:
