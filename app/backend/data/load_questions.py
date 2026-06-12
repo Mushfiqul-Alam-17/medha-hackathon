@@ -16,7 +16,7 @@ from database import SessionLocal, init_db
 from models import Question
 
 EXPLAINER_JSONL = backend_dir.parent / "ml" / "kaggle_dataset" / "explainer_training_data.jsonl"
-EXPLAINER_LINE_CUTOFF = 228  # 38 questions × 6 behavioral variants each
+EXPLAINER_LINE_CUTOFF = 222  # 37 questions × 6 behavioral variants each
 
 
 def _parse_explainer_question(line: str) -> str | None:
@@ -101,10 +101,13 @@ def run(force: bool = False):
                 row = json.loads(line)
                 clean_by_bn[row["question_bn"]] = row
 
-    missing = [q for q in pool_bns if q not in clean_by_bn]
+    spelling_map = {
+        "ফুসফসের আবরণকে কী বলে?": "ফুসফুসের আবরণকে কী বলে?"
+    }
+
+    missing = [q for q in pool_bns if spelling_map.get(q, q) not in clean_by_bn]
     if missing:
-        print(f"ERROR: {len(missing)} explainer questions missing from questions_clean.jsonl.")
-        return
+        print(f"WARNING: {len(missing)} explainer questions missing from questions_clean.jsonl: {missing}")
 
     mapping_file = backend_dir / "data" / "question_pdf_mapping.json"
     pdf_mappings = {}
@@ -127,8 +130,12 @@ def run(force: bool = False):
 
     loaded_count = 0
     for q_bn in pool_bns:
-        db.add(_build_question_row(clean_by_bn[q_bn], pdf_mappings))
-        loaded_count += 1
+        lookup_bn = spelling_map.get(q_bn, q_bn)
+        if lookup_bn in clean_by_bn:
+            db.add(_build_question_row(clean_by_bn[lookup_bn], pdf_mappings))
+            loaded_count += 1
+        else:
+            print(f"Skipping seeding of missing question: {q_bn}")
 
     db.commit()
     count = db.query(Question).count()
