@@ -22,7 +22,7 @@ try:
     if explainer_path.exists():
         with open(explainer_path, encoding="utf-8") as f:
             for i, line in enumerate(f):
-                if i >= 228:
+                if i >= 222:
                     break
                 if not line.strip():
                     continue

@@ -139,8 +139,18 @@ def run(force: bool = False):
 
     db.commit()
     count = db.query(Question).count()
-    print(f"[SUCCESS] Seeded {loaded_count} explainer-pool questions (total in DB: {count}).")
     db.close()
+
+    # Sync textbook/PDF references to database
+    import subprocess
+    import sys
+    print("Syncing textbook references to database...")
+    script_path = Path(__file__).parent / "sync_db_refs.py"
+    try:
+        subprocess.run([sys.executable, str(script_path)], check=True)
+        print("Textbook references synced successfully.")
+    except Exception as e:
+        print(f"Error syncing textbook references: {e}")
 
 
 if __name__ == "__main__":
