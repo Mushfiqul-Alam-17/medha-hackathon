@@ -126,9 +126,6 @@ function parseNotes(sections) {
           whyTricked: item.wrong_answer ? `তোমার উত্তর: ${item.wrong_answer}` : null,
           memoryTrick: item.memory_trick,
           trapQuestion: item.trap_note,
-          comparisonTable: item.confusable_note ? [
-            { concept: "মনে রেখো", description: item.confusable_note, isCorrect: true }
-          ] : [],
           pdf_file: item.pdf_file,
           pdf_page: item.pdf_page,
           textbook_ref: item.textbook_ref,
@@ -142,9 +139,6 @@ function parseNotes(sections) {
           explanation: item.explanation,
           speedNote: item.frame,
           memoryTrick: item.memory_trick,
-          comparisonTable: item.confusable_note ? [
-            { concept: "মনে রেখো", description: item.confusable_note, isCorrect: true }
-          ] : [],
           pdf_file: item.pdf_file,
           pdf_page: item.pdf_page,
           textbook_ref: item.textbook_ref,
