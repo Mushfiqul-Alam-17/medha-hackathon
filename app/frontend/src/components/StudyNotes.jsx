@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { t } from "../utils/lang";
 import { useReveal, useToast } from "../hooks/useAnimations";
 
-const BACKEND = import.meta.env.VITE_BACKEND_URL || "http://localhost:8000";
+const BACKEND = import.meta.env.VITE_BACKEND_URL || (window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1" ? "http://localhost:8000" : "https://medha-api.onrender.com");
 
 function PremiumNotesLoader({ lang }) {
   const [step, setStep] = useState(0);

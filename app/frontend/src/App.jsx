@@ -18,7 +18,7 @@ import ShareCard from "@/components/ShareCard";
 import History from "@/components/History";
 import { localizeQuestion, localizeResultItem } from "@/utils/medha";
 
-const BACKEND = import.meta.env.VITE_BACKEND_URL || "http://localhost:8000";
+const BACKEND = import.meta.env.VITE_BACKEND_URL || (window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1" ? "http://localhost:8000" : "https://medha-api.onrender.com");
 const API = `${BACKEND}/api`;
 
 const MOCK_ATTEMPT = {

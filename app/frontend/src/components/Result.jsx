@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Check, X, AlertTriangle, SkipForward, ArrowRight, BookOpen } from "lucide-react";
 import { LETTERS, scoreTitle, t } from "../utils/lang";
 
-const BACKEND = import.meta.env.VITE_BACKEND_URL || "http://localhost:8000";
+const BACKEND = import.meta.env.VITE_BACKEND_URL || (window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1" ? "http://localhost:8000" : "https://medha-api.onrender.com");
 const CIRC = 414.7; // 2 * Math.PI * 66
 const NEG_PENALTY = 0.25;
 

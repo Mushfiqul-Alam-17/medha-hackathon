@@ -20,6 +20,19 @@ logger = logging.getLogger("medha")
 # Initialize DB tables
 init_db()
 
+# Auto-seed database if questions table is empty
+try:
+    from database import SessionLocal
+    from models import Question
+    from data import load_questions
+    db = SessionLocal()
+    if db.query(Question).count() == 0:
+        logger.info("Questions table is empty. Auto-seeding database from questions_clean.jsonl...")
+        load_questions.run(force=True)
+    db.close()
+except Exception as e:
+    logger.error(f"Error during auto-seeding database: {e}")
+
 # Create FastAPI app
 app = FastAPI(
     title="MEDHA API",
@@ -89,4 +102,8 @@ async def health_check():
 
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run("main:app", host="0.0.0.0", port=8000, reload=True)
+    import os
+    port = int(os.getenv("PORT", 8000))
+    # Disable reload on production/Render to optimize performance and stability
+    reload = False if os.getenv("PORT") else True
+    uvicorn.run("main:app", host="0.0.0.0", port=port, reload=reload)
