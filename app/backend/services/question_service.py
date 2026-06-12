@@ -18,10 +18,10 @@ def get_exam_questions(db: Session, count: int = 15, chapter: Optional[str] = No
     """
     query = db.query(Question)
     
-    if chapter:
+    if chapter and chapter != "TEST15":
         query = query.filter(Question.chapter_code == chapter)
-        
-    # Get random questions using SQLite random function
+
+    # DB is seeded with the explainer proofread pool only (38 questions)
     questions = query.order_by(func.random()).limit(count).all()
     
     # Convert ORM models to Pydantic schemas (which automatically drops sensitive fields)

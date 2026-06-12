@@ -57,7 +57,8 @@ def api_generate_notes(req: schemas.NotesGenerate, db: Session = Depends(get_db)
             "memory_trick": q.memory_trick,
             "trap_note": q.trap_note,
             "pdf_file": q.pdf_file,
-            "pdf_page": q.pdf_page
+            "pdf_page": q.pdf_page,
+            "textbook_ref": q.textbook_ref
         })
 
     # 3. Build DNA Groups

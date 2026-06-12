@@ -63,10 +63,11 @@ This creates/overwrites:
 
 1. Go to https://kaggle.com → Sign In (create account if needed)
 2. Click **Datasets** → **New Dataset**
-3. Dataset name: `medha-classifier-data`
-4. Upload these 2 files:
-   - `data/classifier_train.jsonl`
-   - `data/classifier_val.jsonl`
+3. Dataset name: `medha-ml-dataset`
+4. Upload all 3 files from `app/ml/kaggle_dataset/`:
+   - `classifier_train.jsonl`
+   - `classifier_val.jsonl`
+   - `explainer_training_data.jsonl`
 5. Set visibility: **Private**
 6. Click **Create**
 
@@ -78,7 +79,7 @@ This creates/overwrites:
    - **Accelerator:** `GPU T4 x2`
    - **Internet:** `On` (required to download BanglaBERT)
    - **Persistence:** `Files only`
-4. Click **Add data** → search your `medha-classifier-data` dataset → Add
+4. Click **Add data** → search your `medha-ml-dataset` dataset → Add
 
 ### STEP 5: Paste Training Code
 
@@ -147,8 +148,8 @@ def load_jsonl(filepath):
     return data
 
 # Kaggle dataset path
-TRAIN_PATH = "/kaggle/input/medha-classifier-data/classifier_train.jsonl"
-VAL_PATH = "/kaggle/input/medha-classifier-data/classifier_val.jsonl"
+TRAIN_PATH = "/kaggle/input/medha-ml-dataset/classifier_train.jsonl"
+VAL_PATH = "/kaggle/input/medha-ml-dataset/classifier_val.jsonl"
 
 train_data = load_jsonl(TRAIN_PATH)
 val_data = load_jsonl(VAL_PATH)

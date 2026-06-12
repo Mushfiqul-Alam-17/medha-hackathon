@@ -18,7 +18,7 @@ class Settings:
     # HuggingFace Classifier
     HF_TOKEN: str = os.getenv("HF_TOKEN", "")
     HF_MODEL_ID: str = os.getenv("HF_MODEL_ID", "")
-    HF_API_URL: str = f"https://api-inference.huggingface.co/models/{os.getenv('HF_MODEL_ID', '')}"
+    HF_API_URL: str = f"https://router.huggingface.co/hf-inference/models/{os.getenv('HF_MODEL_ID', '')}"
 
     # AI APIs (for future use — notes are assembled, not generated)
     GROQ_API_KEY: str = os.getenv("GROQ_API_KEY", "")

@@ -8,8 +8,8 @@ dest_dir = backend_dir / "static" / "pdfs"
 # Ensure destination directory exists
 dest_dir.mkdir(parents=True, exist_ok=True)
 
-src_pdf1 = r"c:\Users\mushf\Downloads\Medha\ABUL HASAN BIO 1st paper.pdf"
-src_pdf2 = r"c:\Users\mushf\Downloads\Medha\Azmol BIO 2nd paper.pdf"
+src_pdf1 = r"c:\Users\mushf\Downloads\ABUL HASAN BIO 1st paper.pdf"
+src_pdf2 = r"c:\Users\mushf\Downloads\Azmol BIO 2nd paper.pdf"
 
 dest_pdf1 = dest_dir / "ABUL_HASAN_BIO_1st_paper.pdf"
 dest_pdf2 = dest_dir / "Azmol_BIO_2nd_paper.pdf"

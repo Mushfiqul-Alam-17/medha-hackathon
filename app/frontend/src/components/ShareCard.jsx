@@ -1,11 +1,11 @@
-import { useRef, useCallback } from "react";
-import { Download, Share2 } from "lucide-react";
+import { useRef, useCallback, useMemo } from "react";
+import { Download, Share2, MessageCircle, Facebook } from "lucide-react";
 import { t, computeAnxiety } from "../utils/lang";
 
 export default function ShareCard({ attempt, lang }) {
   const canvasRef = useRef(null);
-  const r = attempt.readiness;
-  const anx = computeAnxiety(attempt);
+  const r = useMemo(() => attempt.readiness || {}, [attempt.readiness]);
+  const anx = useMemo(() => computeAnxiety(attempt), [attempt]);
 
   const generateCard = useCallback(() => {
     const canvas = canvasRef.current;
@@ -14,152 +14,172 @@ export default function ShareCard({ attempt, lang }) {
     const W = 800, H = 480;
     canvas.width = W; canvas.height = H;
 
-    // Background
+    // Background (Dark theme for high contrast social shares)
     const bg = ctx.createLinearGradient(0, 0, W, H);
-    bg.addColorStop(0, "#0e0e11"); bg.addColorStop(1, "#16161a");
+    bg.addColorStop(0, "#1C1815"); bg.addColorStop(1, "#2D2420");
     ctx.fillStyle = bg; ctx.fillRect(0, 0, W, H);
 
-    // Accent glow
-    const glow = ctx.createRadialGradient(W * 0.5, 0, 0, W * 0.5, 0, 400);
-    glow.addColorStop(0, "rgba(124,111,255,0.18)"); glow.addColorStop(1, "transparent");
+    // Accent orange radial glow
+    const glow = ctx.createRadialGradient(W - 60, 60, 0, W - 60, 60, 320);
+    glow.addColorStop(0, "rgba(211,74,32,0.35)"); glow.addColorStop(1, "transparent");
     ctx.fillStyle = glow; ctx.fillRect(0, 0, W, H);
 
-    // Border
+    // Rounded Border
     ctx.strokeStyle = "rgba(255,255,255,0.08)"; ctx.lineWidth = 1;
-    ctx.roundRect(8, 8, W - 16, H - 16, 16); ctx.stroke();
+    ctx.roundRect(8, 8, W - 16, H - 16, 20); ctx.stroke();
 
-    // Logo
-    ctx.fillStyle = "#fff"; ctx.font = "bold 28px 'Segoe UI', sans-serif";
-    ctx.fillText("MEDHA", 36, 52);
-    ctx.fillStyle = "#7c6fff"; ctx.font = "600 28px 'Segoe UI', sans-serif";
-    ctx.fillText(".", 36 + ctx.measureText("MEDHA").width, 52);
-
-    // Tagline
-    ctx.fillStyle = "#a1a1aa"; ctx.font = "13px 'Segoe UI', sans-serif";
-    ctx.fillText("Behavioral Intelligence Exam Report", 36, 74);
+    // Wordmark
+    ctx.fillStyle = "#fff"; ctx.font = "bold 26px 'Plus Jakarta Sans', sans-serif";
+    ctx.fillText("MEDHA", 40, 56);
+    ctx.fillStyle = "rgba(255,255,255,0.4)"; ctx.font = "12px 'Plus Jakarta Sans', sans-serif";
+    ctx.fillText("BEHAVIORAL DNA", 40, 78);
 
     // Divider
     ctx.strokeStyle = "rgba(255,255,255,0.08)"; ctx.beginPath();
-    ctx.moveTo(36, 90); ctx.lineTo(W - 36, 90); ctx.stroke();
+    ctx.moveTo(40, 94); ctx.lineTo(W - 40, 94); ctx.stroke();
 
-    // Score ring (drawn manually)
-    const cx = 140, cy = 200, rad = 56;
-    ctx.beginPath(); ctx.arc(cx, cy, rad, 0, Math.PI * 2);
-    ctx.strokeStyle = "rgba(255,255,255,0.06)"; ctx.lineWidth = 8; ctx.stroke();
-
-    const pct = r.correct / r.total;
-    const arcColor = pct >= 0.6 ? "#22c97a" : pct >= 0.4 ? "#f5a623" : "#ff4f6a";
-    ctx.beginPath();
-    ctx.arc(cx, cy, rad, -Math.PI / 2, -Math.PI / 2 + Math.PI * 2 * pct);
-    ctx.strokeStyle = arcColor; ctx.lineWidth = 8; ctx.lineCap = "round"; ctx.stroke();
-
-    ctx.fillStyle = "#fff"; ctx.font = "bold 36px 'Segoe UI', sans-serif";
-    ctx.textAlign = "center"; ctx.fillText(`${r.correct}`, cx, cy + 6);
-    ctx.fillStyle = "#a1a1aa"; ctx.font = "14px 'Segoe UI', sans-serif";
-    ctx.fillText(`/ ${r.total}`, cx, cy + 26);
-    ctx.textAlign = "left";
+    // Score readouts
+    ctx.fillStyle = "rgba(255,255,255,0.6)"; ctx.font = "13px 'Plus Jakarta Sans', sans-serif";
+    ctx.fillText(lang === "bn" ? "ভর্তি প্রস্তুতি স্তর" : "MBBS Readiness Index", 40, 140);
+    ctx.fillStyle = "#D34A20"; ctx.font = "bold 82px 'Hind Siliguri', serif";
+    ctx.fillText(`${r.score ?? 70}%`, 40, 220);
 
     // Stats grid
     const stats = [
-      { label: "Readiness", value: `${r.score}%`, color: "#7c6fff" },
-      { label: "Mastered", value: `${r.master}`, color: "#22c97a" },
-      { label: "Confused", value: `${r.confused}`, color: "#f5a623" },
-      { label: "Danger", value: `${r.danger}`, color: "#ff4f6a" },
-      { label: "Avg Time", value: `${r.avgTime}s`, color: "#7c6fff" },
-      { label: "Anxiety", value: `${anx.score}`, color: anx.score > 50 ? "#ff4f6a" : "#22c97a" },
+      { label: lang === "bn" ? "সঠিক" : "Correct", value: `${r.correct}/${r.total}`, color: "#395F54" },
+      { label: lang === "bn" ? "মাস্টার" : "Mastered", value: `${r.master}`, color: "#395F54" },
+      { label: lang === "bn" ? "ধীর" : "Slow", value: `${r.slow}`, color: "#C37A28" },
+      { label: lang === "bn" ? "গোলমাল" : "Confused", value: `${r.confused}`, color: "#5057A6" },
+      { label: lang === "bn" ? "বিপদ" : "Danger", value: `${r.danger}`, color: "#C03A2A" },
+      { label: lang === "bn" ? "গড় সময়" : "Avg Time", value: `${r.avgTime}s`, color: "#D34A20" },
     ];
 
-    let sx = 260, sy = 120;
+    let sx = 340, sy = 150;
     stats.forEach((s, i) => {
-      const x = sx + (i % 3) * 170;
-      const y = sy + Math.floor(i / 3) * 80;
-      ctx.fillStyle = s.color; ctx.font = "bold 28px 'Segoe UI', monospace";
-      ctx.fillText(s.value, x, y);
-      ctx.fillStyle = "#6b6b76"; ctx.font = "12px 'Segoe UI', sans-serif";
-      ctx.fillText(s.label, x, y + 20);
+      const x = sx + (i % 3) * 140;
+      const y = sy + Math.floor(i / 3) * 90;
+
+      // Stats title
+      ctx.fillStyle = "rgba(255,255,255,0.4)"; ctx.font = "11px 'Plus Jakarta Sans', sans-serif";
+      ctx.fillText(s.label.toUpperCase(), x, y);
+
+      // Stats value
+      ctx.fillStyle = "#fff"; ctx.font = "bold 26px 'Hind Siliguri', serif";
+      ctx.fillText(s.value, x, y + 28);
     });
 
-    // Group pills row
-    const groups = [
-      { label: "Mastered", count: r.master, color: "#22c97a" },
-      { label: "Slow", count: r.slow, color: "#f5a623" },
-      { label: "Confused", count: r.confused, color: "#7c6fff" },
-      { label: "Danger", count: r.danger, color: "#ff4f6a" },
-    ];
-    let px = 36;
-    const py2 = 330;
-    ctx.font = "600 13px 'Segoe UI', sans-serif";
-    groups.forEach((g) => {
-      const text = `${g.label}: ${g.count}`;
-      const tw = ctx.measureText(text).width + 24;
-      ctx.fillStyle = g.color + "1a"; ctx.beginPath();
-      ctx.roundRect(px, py2, tw, 30, 12); ctx.fill();
-      ctx.strokeStyle = g.color + "40"; ctx.lineWidth = 1;
-      ctx.beginPath(); ctx.roundRect(px, py2, tw, 30, 12); ctx.stroke();
-      ctx.fillStyle = g.color;
-      ctx.fillText(text, px + 12, py2 + 20);
-      px += tw + 10;
-    });
+    // Pill
+    ctx.fillStyle = "rgba(255, 255, 255, 0.05)"; ctx.beginPath();
+    ctx.roundRect(40, 310, 240, 36, 18); ctx.fill();
+    ctx.fillStyle = "rgba(255,255,255,0.7)"; ctx.font = "600 12px 'Plus Jakarta Sans', sans-serif";
+    ctx.fillText(lang === "bn" ? "উদ্বেগ লেভেল: মাঝারি" : `Anxiety Level: ${anx.level.toUpperCase()}`, 60, 332);
 
-    // Footer
-    ctx.fillStyle = "rgba(255,255,255,0.06)";
-    ctx.fillRect(36, H - 60, W - 72, 1);
-    ctx.fillStyle = "#6b6b76"; ctx.font = "12px 'Segoe UI', sans-serif";
-    ctx.fillText("Generated by MEDHA — Behavioral Intelligence Exam Platform", 36, H - 30);
-    ctx.fillText(new Date().toLocaleDateString("en-GB", { day: "2-digit", month: "short", year: "numeric" }), W - 140, H - 30);
+    // Footer Line
+    ctx.strokeStyle = "rgba(255,255,255,0.06)"; ctx.beginPath();
+    ctx.moveTo(40, H - 70); ctx.lineTo(W - 40, H - 70); ctx.stroke();
 
-    // Download
+    // Footer Branding
+    ctx.fillStyle = "rgba(255,255,255,0.3)"; ctx.font = "12px 'Plus Jakarta Sans', sans-serif";
+    ctx.fillText("Generated by MEDHA — Biology Behavioral Exam Prep", 40, H - 36);
+    ctx.fillText("MBBS Admission 2025", W - 180, H - 36);
+
+    // Trigger Download
     const link = document.createElement("a");
-    link.download = "medha-report-card.png";
+    link.download = "medha-behavioral-dna.png";
     link.href = canvas.toDataURL("image/png");
     link.click();
-  }, [r, anx]);
+  }, [r, anx, lang]);
 
   return (
-    <div className="view" data-testid="share-view">
-      <div className="wrap">
-        <div className="section-head">
-          <span className="pill"><Share2 size={13} /> {t("shareTitle", lang)}</span>
-          <h2 style={{ marginTop: 16 }}>{t("shareTitle", lang)}</h2>
-          <p>{t("shareSub", lang)}</p>
+    <div className="view fade-in" data-testid="share-view" style={{ background: "var(--paper)" }}>
+      <div className="container-md screen-inner" style={{ paddingTop: 32 }}>
+        
+        {/* Title */}
+        <div className="reveal show" style={{ marginBottom: 28 }}>
+          <span className="pill" style={{ display: "inline-flex", alignItems: "center", gap: 6 }}>
+            <Share2 size={13} />
+            {lang === "bn" ? "ফলাফল শেয়ার" : "Share Results"}
+          </span>
+          <h2 className="display" style={{ fontSize: "clamp(32px, 5vw, 48px)", marginTop: 14, marginBottom: 8 }}>
+            {lang === "bn" ? "অর্জিত সাফল্য শেয়ার করুন" : "Share Your Achievements"}
+          </h2>
+          <p style={{ color: "var(--muted)", fontSize: "14.5px", lineHeight: 1.7 }}>
+            {lang === "bn"
+              ? "আপনার কগনিটিভ মাস্টারির সাফল্য উদযাপন করুন। সহপাঠী ও শিক্ষকদের সাথে কার্ডটি শেয়ার করুন।"
+              : "Celebrate your cognitive mastery. Share your personalized Medha DNA card with classmates, mentors, or on social media."}
+          </p>
         </div>
 
-        <div className="share-preview card">
-          <div className="share-preview-inner">
-            <div className="share-logo">MEDHA<span>.</span></div>
-            <div className="share-tag">Behavioral Intelligence Exam Report</div>
-            <div className="share-stats-row">
-              <div className="share-stat">
-                <span className="ss-val" style={{ color: "var(--accent)" }}>{r.score}%</span>
-                <span className="ss-lbl">Readiness</span>
+        {/* 2-Column layout */}
+        <div className="share-grid">
+          
+          {/* Left: preview and share tools */}
+          <div>
+            <div className="share-stat-chips">
+              <div className="share-chip">
+                <div className="share-chip-lbl">{lang === "bn" ? "সঠিক" : "Correct"}</div>
+                <div className="share-chip-val" style={{ color: "var(--master)" }}>{r.correct} / {r.total}</div>
               </div>
-              <div className="share-stat">
-                <span className="ss-val" style={{ color: "var(--green)" }}>{r.correct}/{r.total}</span>
-                <span className="ss-lbl">Correct</span>
+              <div className="share-chip">
+                <div className="share-chip-lbl">{lang === "bn" ? "রেডিনেস" : "Readiness"}</div>
+                <div className="share-chip-val" style={{ color: "var(--brand)" }}>{r.score}%</div>
               </div>
-              <div className="share-stat">
-                <span className="ss-val" style={{ color: "var(--green)" }}>{r.master}</span>
-                <span className="ss-lbl">Mastered</span>
+              <div className="share-chip">
+                <div className="share-chip-lbl">{lang === "bn" ? "উদ্বেগ" : "Anxiety"}</div>
+                <div className="share-chip-val" style={{ color: anx.score > 50 ? "var(--danger)" : "var(--master)" }}>{anx.score}</div>
               </div>
-              <div className="share-stat">
-                <span className="ss-val" style={{ color: "var(--red)" }}>{r.danger}</span>
-                <span className="ss-lbl">Danger</span>
-              </div>
-              <div className="share-stat">
-                <span className="ss-val" style={{ color: anx.score > 50 ? "var(--red)" : "var(--green)" }}>{anx.score}</span>
-                <span className="ss-lbl">Anxiety</span>
+            </div>
+
+            <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
+              <button className="btn btn-primary" style={{ padding: "12px 20px", display: "inline-flex", alignItems: "center", justifyContent: "center", gap: 8, borderRadius: 12 }} onClick={generateCard}>
+                <Download size={16} />
+                {t("shareDownload", lang)}
+              </button>
+
+              <div className="platform-btns">
+                <a className="platform-btn whatsapp" href={`https://api.whatsapp.com/send?text=${encodeURIComponent(`I completed the MEDHA Behavioral Exam! My MBBS Readiness Index is ${r.score}%. Check out your learning DNA!`)}`} target="_blank" rel="noopener noreferrer">
+                  <MessageCircle size={16} />
+                  WhatsApp
+                </a>
+                <a className="platform-btn facebook" href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+                  <Facebook size={16} />
+                  Facebook
+                </a>
               </div>
             </div>
           </div>
+
+          {/* Right: Premium Dark Card Preview */}
+          <div style={{ display: "flex", justifyContent: "center" }}>
+            <div className="share-card-preview" style={{ position: "relative", width: "100%", maxWidth: 380 }}>
+              <div className="share-card-accent"></div>
+              <div className="sc-brand" style={{ letterSpacing: ".15em" }}>MEDHA — BEHAVIORAL DNA</div>
+              <div className="sc-score" style={{ color: "white", fontSize: 64, fontWeight: 700, fontFamily: "'Hind Siliguri', serif" }}>
+                {r.score}%
+              </div>
+              <div className="sc-label" style={{ opacity: 0.6, fontSize: 13, marginBottom: 40 }}>
+                {lang === "bn" ? "ভর্তি প্রস্তুতি স্তর" : "MBBS Readiness Index"}
+              </div>
+              <div className="sc-bottom" style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-end" }}>
+                <div>
+                  <div style={{ fontSize: 20, fontWeight: 700, fontFamily: "'Hind Siliguri', serif", color: "white" }}>
+                    {r.correct} / {r.total}
+                  </div>
+                  <div style={{ fontSize: 11, opacity: 0.5, textTransform: "uppercase" }}>
+                    {lang === "bn" ? "সঠিক উত্তর" : "Correct"}
+                  </div>
+                </div>
+                <div className="sc-tag" style={{ opacity: 0.5, fontSize: 11 }}>MBBS 2025</div>
+              </div>
+            </div>
+          </div>
+
         </div>
 
         <canvas ref={canvasRef} style={{ display: "none" }} />
 
-        <div style={{ marginTop: 20, display: "flex", justifyContent: "center" }}>
-          <button className="btn btn-primary" data-testid="download-card" onClick={generateCard}>
-            <Download size={16} style={{ marginRight: 8, verticalAlign: "middle" }} />
-            {t("shareDownload", lang)}
-          </button>
+        <div className="page-footer" style={{ paddingBottom: 40, marginTop: 40 }}>
+          {lang === "bn" ? "মেধা — কগনিটিভ DNA কার্ড" : "MEDHA — Cognitive DNA Sharing"}
         </div>
       </div>
     </div>

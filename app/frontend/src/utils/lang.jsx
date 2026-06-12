@@ -205,6 +205,32 @@ const S = {
 
 export function t(key, lang = "en") { return S[lang]?.[key] || S.en[key] || key; }
 
+/** Pick bilingual question fields — English default, Bangla when toggled. */
+export function localizeQuestion(q, lang = "en") {
+  // Exam-related fields (chapter name, question text, and options) must always be in Bengali
+  return {
+    id: q.id,
+    chapter: q.chapter_name,
+    text: q.question_bn,
+    options: [
+      q.option_a_bn,
+      q.option_b_bn,
+      q.option_c_bn,
+      q.option_d_bn,
+    ],
+  };
+}
+
+export function localizeResultItem(item, lang = "en") {
+  // Exam-related fields (chapter name, question text, and options) must always be in Bengali
+  return {
+    ...item,
+    questionText: item.question_bn ?? item.questionText,
+    options: item.options_bn ?? item.options,
+    chapter: item.chapter_name || item.chapter,
+  };
+}
+
 export function buildInsight(item, lang = "en") {
   const tm = item.timeTaken;
   const switched = item.switchCount >= 1;
@@ -233,7 +259,14 @@ export function groupDefs(lang = "en") {
 
 export const GROUP_DEFS = groupDefs("en");
 
-export function scoreTitle(pct) {
+export function scoreTitle(pct, lang = "en") {
+  if (lang === "bn") {
+    if (pct === 1) return "অসাধারণ স্কোর";
+    if (pct >= 0.8) return "দুর্দান্ত প্রস্তুতি";
+    if (pct >= 0.6) return "ভালো চেষ্টা";
+    if (pct >= 0.4) return "আরও চেষ্টা করো";
+    return "অনুশীলন প্রয়োজন";
+  }
   if (pct === 1) return "Perfect Score";
   if (pct >= 0.8) return "Excellent Work";
   if (pct >= 0.6) return "Good Effort";

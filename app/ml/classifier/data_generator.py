@@ -21,7 +21,7 @@ import os
 from pathlib import Path
 
 # ── Configuration ──
-TOTAL_EXAMPLES = 5000
+TOTAL_EXAMPLES = 10000
 TRAIN_SPLIT = 0.80
 RANDOM_SEED = 42
 EQUILIBRIUM_SECONDS = 45  # 2025-26 BD medical format: 75min / 100 questions
@@ -76,12 +76,12 @@ def generate_priority_focus_example():
     """
     PRIORITY_FOCUS: Confidently wrong — most dangerous state.
     - correct=false
-    - time_ratio <= 0.6 (answered fast — didn't stop to think)
+    - time_ratio <= 0.8 (answered within normal/slightly extended thinking time)
     - confidence = sure (believed the wrong answer)
-    - switches <= 2
+    - switches <= 2 (decisive)
     """
     topic = random_topic()
-    time_ratio = round(random.uniform(0.05, 0.60), 3)
+    time_ratio = round(random.uniform(0.05, 0.80), 3)
     switches = random.choices([0, 1, 2], weights=[60, 30, 10])[0]
     confidence = "sure"
     correct = False
@@ -94,67 +94,68 @@ def generate_trust_gap_example():
     """
     TRUST_GAP: Knows it but doesn't trust themselves.
     - correct=true
-    - BUT: slow (time_ratio > 0.5) OR switched answers (>=2) OR not confident
-    - At least one uncertainty signal must be present
+    - Either:
+      - confidence = "sure" + (slow (time_ratio > 0.5) OR switched (switches >= 2))
+      - OR confidence = "unsure"
+    - Excludes confidence = "guessing" (which represents a lucky guess/GROWTH_AREA)
     """
     topic = random_topic()
     correct = True
-
-    # At least one uncertainty signal
-    uncertainty_type = random.choice(["slow", "switched", "unsure", "mixed"])
-
-    if uncertainty_type == "slow":
-        time_ratio = round(random.uniform(0.51, 1.0), 3)
-        switches = random.choices([0, 1], weights=[60, 40])[0]
-        confidence = random.choices(["sure", "unsure"], weights=[40, 60])[0]
-    elif uncertainty_type == "switched":
-        time_ratio = round(random.uniform(0.20, 0.90), 3)
-        switches = random.choices([2, 3, 4], weights=[60, 30, 10])[0]
-        confidence = random.choices(CONFIDENCES, weights=[30, 50, 20])[0]
-    elif uncertainty_type == "unsure":
-        time_ratio = round(random.uniform(0.15, 0.85), 3)
-        switches = random.choices([0, 1, 2], weights=[40, 40, 20])[0]
-        confidence = random.choices(["unsure", "guessing"], weights=[70, 30])[0]
-    else:  # mixed — multiple uncertainty signals
-        time_ratio = round(random.uniform(0.50, 1.0), 3)
-        switches = random.choices([1, 2, 3], weights=[40, 40, 20])[0]
-        confidence = random.choices(["unsure", "guessing"], weights=[60, 40])[0]
-
     difficulty = random.choices(DIFFICULTIES, weights=[25, 45, 30])[0]
+
+    pattern = random.choice(["slow_sure", "switched_sure", "unsure"])
+    if pattern == "slow_sure":
+        time_ratio = round(random.uniform(0.51, 1.0), 3)
+        switches = random.choices([0, 1], weights=[65, 35])[0]
+        confidence = "sure"
+    elif pattern == "switched_sure":
+        time_ratio = round(random.uniform(0.20, 0.90), 3)
+        switches = random.choices([2, 3, 4], weights=[60, 35, 5])[0]
+        confidence = "sure"
+    else:  # unsure
+        time_ratio = round(random.uniform(0.10, 0.90), 3)
+        switches = random.choices([0, 1, 2], weights=[45, 45, 10])[0]
+        confidence = "unsure"
 
     return _build_example(topic, time_ratio, switches, confidence, correct, difficulty, "TRUST_GAP")
 
 
 def generate_growth_area_example():
     """
-    GROWTH_AREA: Doesn't know it and knows they don't.
-    - correct=false
-    - slow or uncertain (not confidently wrong — that's PRIORITY_FOCUS)
-    - Typically: time_ratio > 0.6, or guessing, or many switches
+    GROWTH_AREA: Lacks knowledge & knows it / Lucky guess.
+    - Case A: Incorrect + unconfident (unsure/guessing)
+    - Case B: Incorrect + slow/undecisive (even if "sure")
+    - Case C: Expired time
+    - Case D: Lucky Guess (correct but guessing)
     """
     topic = random_topic()
-    correct = False
-
-    pattern = random.choice(["slow_wrong", "guessing_wrong", "confused_wrong", "expired"])
-
-    if pattern == "slow_wrong":
-        time_ratio = round(random.uniform(0.61, 1.0), 3)
-        switches = random.choices([0, 1, 2], weights=[40, 35, 25])[0]
-        confidence = random.choices(CONFIDENCES, weights=[15, 50, 35])[0]
-    elif pattern == "guessing_wrong":
-        time_ratio = round(random.uniform(0.10, 0.90), 3)
-        switches = random.choices([0, 1, 2, 3], weights=[30, 30, 25, 15])[0]
-        confidence = "guessing"
-    elif pattern == "confused_wrong":
-        time_ratio = round(random.uniform(0.30, 1.0), 3)
-        switches = random.choices([2, 3, 4, 5], weights=[35, 35, 20, 10])[0]
-        confidence = random.choices(["unsure", "guessing"], weights=[60, 40])[0]
-    else:  # expired — ran out of time
-        time_ratio = 1.0
-        switches = random.choices([0, 1, 2, 3], weights=[25, 30, 25, 20])[0]
-        confidence = random.choices(CONFIDENCES, weights=[10, 40, 50])[0]
-
     difficulty = random.choices(DIFFICULTIES, weights=[15, 40, 45])[0]
+
+    pattern = random.choice(["wrong_unconfident", "wrong_slow_undecisive", "wrong_expired", "lucky_guess"])
+    if pattern == "wrong_unconfident":
+        correct = False
+        time_ratio = round(random.uniform(0.10, 0.95), 3)
+        switches = random.choices([0, 1, 2], weights=[45, 45, 10])[0]
+        confidence = random.choice(["unsure", "guessing"])
+    elif pattern == "wrong_slow_undecisive":
+        correct = False
+        if random.random() < 0.5:
+            time_ratio = round(random.uniform(0.81, 1.0), 3)
+            switches = random.choices([0, 1, 2], weights=[40, 40, 20])[0]
+        else:
+            time_ratio = round(random.uniform(0.10, 0.90), 3)
+            switches = random.choices([3, 4, 5], weights=[60, 30, 10])[0]
+        confidence = "sure"
+    elif pattern == "wrong_expired":
+        correct = False
+        time_ratio = 1.0
+        switches = random.choices([0, 1, 2, 3], weights=[30, 30, 25, 15])[0]
+        confidence = random.choice(CONFIDENCES)
+    else:  # lucky_guess
+        correct = True
+        time_ratio = round(random.uniform(0.15, 1.0), 3)
+        switches = random.choices([0, 1, 2, 3, 4], weights=[20, 30, 30, 15, 5])[0]
+        confidence = "guessing"
 
     return _build_example(topic, time_ratio, switches, confidence, correct, difficulty, "GROWTH_AREA")
 
@@ -186,36 +187,36 @@ def add_boundary_noise(examples):
         if case_type == "mastery_edge":
             # Fast + correct + sure but RIGHT at the time boundary
             topic = random_topic()
-            time_ratio = round(random.uniform(0.45, 0.55), 3)
+            time_ratio = round(random.uniform(0.48, 0.52), 3)
             noisy_examples.append(_build_example(
-                topic, time_ratio, 0, "sure", True,
+                topic, time_ratio, 1, "sure", True,
                 random.choice(DIFFICULTIES), "MASTERY"
             ))
 
         elif case_type == "priority_edge":
             # Wrong + sure but slightly slow — edge between PRIORITY_FOCUS and GROWTH_AREA
             topic = random_topic()
-            time_ratio = round(random.uniform(0.55, 0.65), 3)
+            time_ratio = round(random.uniform(0.75, 0.85), 3)
             noisy_examples.append(_build_example(
-                topic, time_ratio, 1, "sure", False,
+                topic, time_ratio, 2, "sure", False,
                 random.choice(DIFFICULTIES), "PRIORITY_FOCUS"
             ))
 
         elif case_type == "trust_edge":
             # Correct + 1 switch — edge between MASTERY and TRUST_GAP
             topic = random_topic()
-            time_ratio = round(random.uniform(0.35, 0.55), 3)
+            time_ratio = round(random.uniform(0.40, 0.60), 3)
             noisy_examples.append(_build_example(
                 topic, time_ratio, 1, "unsure", True,
                 random.choice(DIFFICULTIES), "TRUST_GAP"
             ))
 
         else:  # growth_edge
-            # Wrong + unsure + moderate time — clear GROWTH_AREA
+            # Correct + guessing but very fast — edge between lucky guess and mastery/trust gap
             topic = random_topic()
-            time_ratio = round(random.uniform(0.50, 0.80), 3)
+            time_ratio = round(random.uniform(0.10, 0.30), 3)
             noisy_examples.append(_build_example(
-                topic, time_ratio, 2, "unsure", False,
+                topic, time_ratio, 0, "guessing", True,
                 random.choice(DIFFICULTIES), "GROWTH_AREA"
             ))
 
@@ -229,10 +230,10 @@ def generate_dataset():
     # Target distribution: roughly balanced with slight natural skew
     # Real exam data tends to have fewer MASTERY and more GROWTH_AREA
     counts = {
-        "MASTERY": int(TOTAL_EXAMPLES * 0.23),          # ~1150
-        "PRIORITY_FOCUS": int(TOTAL_EXAMPLES * 0.22),   # ~1100
-        "TRUST_GAP": int(TOTAL_EXAMPLES * 0.27),        # ~1350
-        "GROWTH_AREA": int(TOTAL_EXAMPLES * 0.28),      # ~1400
+        "MASTERY": int(TOTAL_EXAMPLES * 0.23),          # ~2300
+        "PRIORITY_FOCUS": int(TOTAL_EXAMPLES * 0.22),   # ~2200
+        "TRUST_GAP": int(TOTAL_EXAMPLES * 0.27),        # ~2700
+        "GROWTH_AREA": int(TOTAL_EXAMPLES * 0.28),      # ~2800
     }
 
     generators = {
@@ -257,10 +258,14 @@ def generate_dataset():
     return examples
 
 
+
 def save_dataset(examples):
-    """Split and save to JSONL files."""
+    """Split and save to JSONL files in both ml/classifier/data/ and ml/kaggle_dataset/."""
     data_dir = Path(__file__).parent / "data"
     data_dir.mkdir(exist_ok=True)
+    
+    kaggle_dir = Path(__file__).parent.parent / "kaggle_dataset"
+    kaggle_dir.mkdir(exist_ok=True)
 
     split_idx = int(len(examples) * TRAIN_SPLIT)
     train_data = examples[:split_idx]
@@ -268,14 +273,19 @@ def save_dataset(examples):
 
     train_file = data_dir / "classifier_train.jsonl"
     val_file = data_dir / "classifier_val.jsonl"
+    
+    kaggle_train = kaggle_dir / "classifier_train.jsonl"
+    kaggle_val = kaggle_dir / "classifier_val.jsonl"
 
-    with open(train_file, "w", encoding="utf-8") as f:
-        for ex in train_data:
-            f.write(json.dumps(ex, ensure_ascii=False) + "\n")
+    for path in [train_file, kaggle_train]:
+        with open(path, "w", encoding="utf-8") as f:
+            for ex in train_data:
+                f.write(json.dumps(ex, ensure_ascii=False) + "\n")
 
-    with open(val_file, "w", encoding="utf-8") as f:
-        for ex in val_data:
-            f.write(json.dumps(ex, ensure_ascii=False) + "\n")
+    for path in [val_file, kaggle_val]:
+        with open(path, "w", encoding="utf-8") as f:
+            for ex in val_data:
+                f.write(json.dumps(ex, ensure_ascii=False) + "\n")
 
     return train_file, val_file, len(train_data), len(val_data)
 

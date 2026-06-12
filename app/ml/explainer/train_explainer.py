@@ -12,30 +12,39 @@ Changes from v1:
 
 Instructions:
 1. New Kaggle notebook → Settings → GPU T4 x2 → Internet ON
-2. Upload explainer_training_data.jsonl as dataset (named: medha-explainer-data)
+2. Upload the unified dataset from app/ml/kaggle_dataset as dataset (named: medha-ml-dataset)
 3. Add HF_TOKEN as a Kaggle Secret
 4. Paste entire script into a single cell and run
 
 Expected training time: 2-3 hours on T4 x2
 """
 
-# ── CELL 1: Install ────────────────────────────────────────────────────────────
+# ── CELL 1: Install & Setup (Foolproof Clean Version) ────────────────────────
 import subprocess
+import os
+
+print("Installing required training libraries...")
 subprocess.run([
     "pip", "install", "-q",
-    "transformers==4.44.0",
-    "datasets", "peft",
-    "bitsandbytes", "accelerate",
-    "trl==0.9.6",          # pin trl version — API is stable here
-    "huggingface_hub"
+    "transformers>=4.45.0",
+    "datasets==2.20.0",
+    "peft==0.12.0",
+    "bitsandbytes>=0.43.0",
+    "accelerate>=0.30.0",
+    "trl==0.9.6"
 ])
 
-import os, json, torch
+import os, warnings
+os.environ["TOKENIZERS_PARALLELISM"] = "false"
+warnings.filterwarnings("ignore")
+
+import json, torch
 from pathlib import Path
 
 # ── CONFIGURATION ─────────────────────────────────────────────────────────────
-HF_USERNAME  = "YOUR_HF_USERNAME"
-HF_TOKEN     = "YOUR_HF_TOKEN"
+# !! UPDATE THESE BEFORE RUNNING !!
+HF_USERNAME  = "medha-training"   # Will be automatically resolved from HF_TOKEN in Cell 2
+HF_TOKEN     = os.getenv("HF_TOKEN", "")
 MODEL_NAME   = "medha-explainer-v1"
 BASE_MODEL   = "Qwen/Qwen2.5-3B-Instruct"
 
@@ -48,16 +57,25 @@ VAL_SPLIT    = 0.1          # 10% validation
 SEED         = 42
 
 # ── CELL 2: Login ──────────────────────────────────────────────────────────────
-from huggingface_hub import login
+from huggingface_hub import login, HfApi
 login(token=HF_TOKEN)
-print("Logged in ✅")
+try:
+    HF_USERNAME = HfApi().whoami(token=HF_TOKEN)["name"]
+    print(f"Logged in to HuggingFace as user: '{HF_USERNAME}' ✅")
+except Exception as e:
+    print(f"Logged in to HuggingFace. Could not fetch username automatically ({e}). Using default: '{HF_USERNAME}'")
+
 
 # ── CELL 3: Load Data ──────────────────────────────────────────────────────────
 from datasets import Dataset
 
-DATA_PATH = "/kaggle/input/medha-explainer-data/explainer_training_data.jsonl"
-if not os.path.exists(DATA_PATH):
+import glob
+data_files = glob.glob("/kaggle/input/**/explainer_training_data.jsonl", recursive=True)
+if data_files:
+    DATA_PATH = data_files[0]
+else:
     DATA_PATH = "explainer_training_data.jsonl"
+print(f"Using DATA_PATH: {DATA_PATH}")
 
 raw_data = []
 with open(DATA_PATH, "r", encoding="utf-8") as f:
@@ -175,7 +193,7 @@ from trl import SFTTrainer, DataCollatorForCompletionOnlyLM
 
 # Response template — only compute loss on assistant's reply
 # This token sequence marks the start of the assistant's turn
-response_template_str = "<|im_start|>assistant\n"
+response_template_str = "assistant\n"  # Fixed tokenizer special token bug
 response_template_ids = tokenizer.encode(response_template_str, add_special_tokens=False)
 print(f"Response template token IDs: {response_template_ids}")
 
@@ -183,6 +201,24 @@ collator = DataCollatorForCompletionOnlyLM(
     response_template=response_template_ids,
     tokenizer=tokenizer,
 )
+
+from transformers import TrainerCallback
+
+class ProgressCallback(TrainerCallback):
+    """Custom callback to provide a clean real-time training dashboard in stdout."""
+    def on_log(self, args, state, control, logs=None, **kwargs):
+        if logs and "loss" in logs:
+            loss = logs["loss"]
+            step = state.global_step
+            epoch = logs.get("epoch", 0.0)
+            lr = logs.get("learning_rate", 0.0)
+            print(f"📊 [Step {step:04d}] Epoch {epoch:.2f} | Loss: {loss:.4f} | LR: {lr:.2e}")
+
+    def on_evaluate(self, args, state, control, metrics=None, **kwargs):
+        if metrics:
+            epoch = metrics.get("epoch", 0.0)
+            loss = metrics.get("eval_loss", 0.0)
+            print(f"✨ [Evaluation] Epoch {epoch:.2f} | Val Loss: {loss:.4f}")
 
 training_args = TrainingArguments(
     output_dir                  = "./qwen-medha-output",
@@ -197,7 +233,7 @@ training_args = TrainingArguments(
     metric_for_best_model       = "eval_loss",
     greater_is_better           = False,
     save_total_limit            = 2,
-    logging_steps               = 20,
+    logging_steps               = 5,            # Log every 5 steps for frequent visibility
     warmup_ratio                = 0.05,
     lr_scheduler_type           = "cosine",
     seed                        = SEED,
@@ -216,7 +252,9 @@ trainer = SFTTrainer(
     dataset_text_field = "text",     # FIXED: was formatting_func in v1
     max_seq_length     = MAX_SEQ_LEN,
     tokenizer          = tokenizer,
+    callbacks          = [ProgressCallback()],
 )
+
 
 # ── CELL 8: TRAIN ──────────────────────────────────────────────────────────────
 print("\n" + "="*60)

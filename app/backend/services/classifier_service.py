@@ -69,18 +69,27 @@ def _rule_based_fallback(result: Dict) -> Dict:
     Same logic used in demo. Reliable, zero-latency, always available.
     """
     t = result["time_taken"] / settings.EQUILIBRIUM_SECONDS
-    switches = max(0, len(result.get("click_path", [])) - 1)
-    confident = result.get("confidence_tap", "") == "sure"
-    correct = result["is_correct"]
+    switches = max(0, len(result.get("click_path", [])) - 1) if result.get("click_path") else 0
+    confidence_tap = result.get("confidence_tap", "unsure")
+    correct = result.get("is_correct", False)
+    skipped = result.get("skipped", False)
+    expired = result.get("time_expired", False)
 
-    if correct and t <= 0.5 and confident and switches <= 1:
-        label = "MASTERY"
-    elif not correct and t <= 0.6 and confident and switches <= 2:
-        label = "PRIORITY_FOCUS"
-    elif correct and (t > 0.5 or switches >= 2 or not confident):
-        label = "TRUST_GAP"
-    else:
+    if skipped or expired:
         label = "GROWTH_AREA"
+    elif correct:
+        if confidence_tap == "guessing":
+            label = "GROWTH_AREA"  # Lucky guess represents a knowledge gap
+        elif t <= 0.5 and switches <= 1 and confidence_tap == "sure":
+            label = "MASTERY"
+        else:
+            label = "TRUST_GAP"
+    else:
+        # Confidently wrong within reasonable timeframe represents a misconception
+        if confidence_tap == "sure" and t <= 0.8 and switches <= 2:
+            label = "PRIORITY_FOCUS"
+        else:
+            label = "GROWTH_AREA"
 
     # Generate pseudo-confidence scores
     confidence = {l: 0.0 for l in LABEL_ORDER}

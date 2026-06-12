@@ -126,6 +126,7 @@ class Question(Base):
     pdf_file = Column(String, nullable=True)         # filename e.g. "biology_part1.pdf"
     pdf_page = Column(Integer, nullable=True)        # 1-indexed page number
     pdf_bbox = Column(JSON, nullable=True)           # [x0, y0, x1, y1]
+    textbook_ref = Column(String, nullable=True)
 
 
 class CumulativeProfile(Base):
